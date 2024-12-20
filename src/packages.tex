@@ -1,0 +1,232 @@
+% Document packages
+% -----------------
+
+% Font and language packages
+\usepackage{fontspec}                 % Kazakh and Russian fonts
+\usepackage{polyglossia}              % Multilingual support
+
+\setmainlanguage{russian}
+\setotherlanguages{english}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+
+% Hyperlink and color packages
+\usepackage{hyperref}      % Hyperlinks within the document
+\usepackage{xcolor}                   % Color support
+
+% Table packages
+\usepackage{booktabs}                 % Enhanced table formatting
+\usepackage{tabularx}                 % Enhanced table environments
+\usepackage{longtable}                % Tables spanning multiple pages
+\usepackage{multirow}                 % Multi-row cells in tables
+\usepackage{makecell}                 % Additional table commands
+\usepackage{chngcntr}                 % Customizing table and figure numbering
+
+% Graphics packages
+\usepackage{graphicx}                 % Including graphics in the document
+\usepackage{svg}
+%\usepackage{wrapfig}                  % Wrapping text around figures
+
+% Mathematical packages
+\usepackage{amsmath}                  % Additional math symbols and environments
+\usepackage{unicode-math}
+
+% Document settings
+% ----------------
+
+% Page layout package
+\usepackage[margin=2cm]{geometry}     % Customizing page layout and margins
+
+% Text formatting packages
+\usepackage[normalem]{ulem}           % Underlining and emphasis styles
+\usepackage{calc}                     % Mathematical calculations in LaTeX commands
+\usepackage{soul}                     % Additional text formatting options
+\usepackage{multicol}
+
+% Section formatting package
+\usepackage{sectsty}                  % Customizing section headings
+\usepackage{titlesec}
+% Redefine the format of the section title
+\titleformat{\section}[block]{\centering\bfseries\large}{}{0pt}{}[]
+\titleformat{\chapter}[display]
+  {\centering\large\bfseries\itshape}{}{1em}{\large}
+% Decrease the top margin for chapter titles
+\titlespacing*{\chapter}{0pt}{-100pt}{1em}
+% Additional packages
+% -------------------
+
+% Float and caption packages
+\usepackage{float}                    % Enhanced placement of figures and tables
+\usepackage{subcaption}               % Subfigures and subtables
+
+% Links and URL package
+\hypersetup{
+    colorlinks=true,                   % Color links instead of boxes
+    linkcolor=black,                    % Color of internal links
+    urlcolor=blue!80!black,               % Color of external links
+    bookmarks=true,
+    bookmarksopen=true,
+    bookmarksnumbered=true,
+}
+
+% Graphics path
+\graphicspath{{assets}}
+
+% Colors
+\definecolor{lightblue}{RGB}{0,116,180}
+
+% Header packages
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\fancyfoot[LE,RO]{\thepage}
+\fancyhead[RE]{ҚазТБУ ХАБАРШЫСЫ - VESTNIK KazUTB - ВЕСТНИК КазУТБ}
+\renewcommand{\headrulewidth}{2pt}% 2pt header rule
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{lightblue}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\headheight}{22pt}
+\addtolength{\topmargin}{-10pt}
+\renewcommand{\footrulewidth}{2pt}
+\renewcommand{\footrule}{\hbox to\headwidth{%
+  \color{lightblue}\leaders\hrule height \footrulewidth\hfill}}
+\addto\captionsrussian{\renewcommand{\contentsname}{\large МАЗМҰНЫ – СОДЕРЖАНИЕ – CONTENTS}}
+
+\setlength{\parskip}{0.3em}
+\setlength{\parindent}{1em}
+\usepackage{enumitem}
+
+% Decrease padding in itemize
+\setlist[itemize]{itemsep=0.3em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.5em}
+
+% Decrease padding in enumerate
+\setlist[enumerate]{itemsep=0.3em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.5em}
+
+\usepackage{mdframed}
+
+\usepackage{tocloft}
+% Adjust vertical space before and after TOC title
+\setlength{\cftbeforetoctitleskip}{-3em} % Space before the TOC title
+\setlength{\cftaftertoctitleskip}{-2em} % Space after the TOC title
+
+\cftsetindents{part}{0em}{2em}
+\cftsetindents{chapter}{0em}{2em}
+\cftsetindents{section}{0.5em}{0em}
+\cftsetindents{subsection}{0em}{2em}
+\renewcommand{\cftchapfont}{\itshape\bfseries}
+
+\makeatletter
+\renewcommand*\l@part[2]{%
+  \ifnum \c@tocdepth >-2\relax
+    \addpenalty{-\@highpenalty}%
+    \addvspace{1.25em \@plus\p@}%
+    \setlength\@tempdima{3em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      {\leavevmode
+       \hspace*{\fill}\centering\bfseries\itshape #1\hspace*{\fill}}\par
+       \nobreak
+         \global\@nobreaktrue
+         \everypar{\global\@nobreakfalse\everypar{}}%
+    \endgroup
+  \fi}
+\makeatother
+
+\renewcommand\cfttoctitlefont{\hfill\large\bfseries}
+\renewcommand\cftaftertoctitle{\hfill\mbox{}}
+
+\renewcommand{\part}[1]{\addcontentsline{toc}{part}{#1}}
+
+\newcommand{\sectionwithauthors}[2]{%
+  \section*{#2}%
+  \addcontentsline{toc}{section}{%
+    #1 \\ % Authors
+    \normalfont\normalsize\itshape #2 % Section Title
+  }%
+  \setcounter{figure}{0}%
+  \setcounter{table}{0}%
+  \setcounter{equation}{0}%
+}
+
+% Front page
+\usepackage{pdfpages}
+
+% Рис.1 -
+\usepackage{caption}
+\renewcommand{\thefigure}{\arabic{figure}}
+\DeclareCaptionLabelFormat{figureformat}{#1 #2}
+\DeclareCaptionLabelSeparator{figureformat}{ - }
+\captionsetup[figure]{font={bf, small}, labelformat=figureformat, labelsep=figureformat, justification=centering}
+
+% Таблица 1 -
+\numberwithin{table}{section}
+\renewcommand{\thetable}{\arabic{table}}
+\DeclareCaptionLabelFormat{tableformat}{Таблица #2}
+\DeclareCaptionLabelSeparator{tableformat}{ - }
+\captionsetup[table]{font={bf, small}, labelformat=tableformat, labelsep=tableformat, justification=centering}
+
+\renewcommand{\theequation}{\arabic{equation}}
+\newenvironment{noparindent}{%
+  \setlength{\parindent}{0pt}%
+}{%
+  \setlength{\parindent}{2pt}%
+}
+% Define the aliases for superscript and subscript
+\newcommand{\tsp}[1]{\textsuperscript{#1}}
+\newcommand{\tsb}[1]{\textsubscript{#1}}
+
+\usepackage{makecell}
+
+\newcommand{\envelope}{\textsuperscript{\includegraphics[width=1em]{media/envelope}}}
+
+
+\titleformat{\section}[block]{\normalfont\centering\fontsize{11}{13}\selectfont\bfseries}{}{0pt}{}
+
+\titlespacing{\section}{0pt}{1em}{1em}
+
+\newcommand{\smal}{\fontsize{11}{13}\selectfont}
+
+\newenvironment{authors}{
+    \begin{center}
+    \fontsize{11}{13}\selectfont
+    \bfseries
+}{
+    \vspace{-\baselineskip}
+    \end{center}
+}
+
+\newenvironment{affiliations}{%
+  \begin{center}
+    \fontsize{10}{12}\selectfont
+}{%
+  \end{center}
+}
+
+\newcommand{\sectionheading}[1]{%
+  \begin{center}
+    {\fontsize{11}{13}\selectfont\textbf{#1}}%
+  \end{center}
+}
+
+\usepackage{listings}
+\lstset{
+    language=Python,  % You can set the language, or leave it for generic code
+    basicstyle=\ttfamily\small, % Use a monospaced font with smaller size
+    keywordstyle=\color{blue}, % Color keywords
+    commentstyle=\color{gray}, % Color comments
+    stringstyle=\color{red}, % Color strings
+    numbers=none, % Disable line numbers
+    tabsize=4, % Set tab size
+    breaklines=true, % Automatically break long lines
+}
+
+% Define a new column type 'C' for centered p columns
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} 
+
+% Hyphentation penalty
+\hyphenpenalty=5000
+\exhyphenpenalty=5000
