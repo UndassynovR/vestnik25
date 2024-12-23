@@ -65,7 +65,7 @@
 \hypersetup{
     colorlinks=true,                   % Color links instead of boxes
     linkcolor=black,                    % Color of internal links
-    urlcolor=blue!80!black,               % Color of external links
+    urlcolor=black,               % Color of external links
     bookmarks=true,
     bookmarksopen=true,
     bookmarksnumbered=true,
@@ -170,11 +170,6 @@
 \captionsetup[table]{font={bf, small}, labelformat=tableformat, labelsep=tableformat, justification=centering}
 
 \renewcommand{\theequation}{\arabic{equation}}
-\newenvironment{noparindent}{%
-  \setlength{\parindent}{0pt}%
-}{%
-  \setlength{\parindent}{2pt}%
-}
 % Define the aliases for superscript and subscript
 \newcommand{\tsp}[1]{\textsuperscript{#1}}
 \newcommand{\tsb}[1]{\textsubscript{#1}}
@@ -187,30 +182,6 @@
 \titleformat{\section}[block]{\normalfont\centering\fontsize{11}{13}\selectfont\bfseries}{}{0pt}{}
 
 \titlespacing{\section}{0pt}{1em}{1em}
-
-\newcommand{\smal}{\fontsize{11}{13}\selectfont}
-
-\newenvironment{authors}{
-    \begin{center}
-    \fontsize{11}{13}\selectfont
-    \bfseries
-}{
-    \vspace{-\baselineskip}
-    \end{center}
-}
-
-\newenvironment{affiliations}{%
-  \begin{center}
-    \fontsize{10}{12}\selectfont
-}{%
-  \end{center}
-}
-
-\newcommand{\sectionheading}[1]{%
-  \begin{center}
-    {\fontsize{11}{13}\selectfont\textbf{#1}}%
-  \end{center}
-}
 
 \usepackage{listings}
 \lstset{
@@ -230,3 +201,33 @@
 % Hyphentation penalty
 \hyphenpenalty=5000
 \exhyphenpenalty=5000
+
+% Environments
+\newcommand{\id}[1]{%
+    {\fontsize{11}{13}\selectfont%
+    \newpage%
+    #1\par}%
+}
+
+\newenvironment{articleheader}{
+    \begin{center}%
+    \fontsize{11}{13}\selectfont\centering%
+}{%
+    \end{center}%
+}
+
+\newenvironment{affiliation}{
+    \fontsize{10}{12}\selectfont\centering%
+}{%
+    \par%
+}
+
+\newenvironment{noparindent}{%
+  \fontsize{10}{12}\selectfont%
+  \setlength{\parindent}{0pt}%
+}{%
+  \setlength{\parindent}{2pt}%
+  \par%
+}
+
+\usepackage{ragged2e}
