@@ -209,16 +209,18 @@
     #1\par}%
 }
 
-\newenvironment{articleheader}{
+\newenvironment{articleheader}{%
     \begin{center}%
-    \fontsize{11}{13}\selectfont\centering%
+    \fontsize{11}{12}\selectfont % Slightly smaller line height for the header
 }{%
     \end{center}%
 }
 
-\newenvironment{affiliation}{
-    \fontsize{10}{6}\selectfont\centering%
-    \vspace{-1.3\baselineskip} % Reduces bottom space
+\newenvironment{affiliation}{%
+    \fontsize{10}{10}\selectfont % Smaller font size
+    \setlength{\parskip}{0pt} % Remove space between paragraphs
+    \centering
+    \vspace{-1.3em} % Reduce space between header and affiliation
 }{%
     \par%
 }

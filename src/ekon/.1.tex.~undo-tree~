@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"df5382b8402c20e464051acbc08193299fd9c917"
+"9b8e702b1241079977b6303e57092b9dd823c306"
 [nil nil nil nil (26472 62436 647612 326000) 0 nil]
 ([nil nil ((#("
 " 0 1 (fontified t)) . 1) (undo-tree-id2 . -1) (t 26472 61456 883917 99000)) nil (26472 62436 647611 366000) 0 nil])
@@ -181,7 +181,29 @@ nil
 ([nil nil ((#("\\textsuperscript{\\envelope }" 0 16 (face font-lock-keyword-face fontified t) 16 17 (fontified t) 17 26 (face font-lock-keyword-face fontified t) 26 28 (fontified t)) . 119) (undo-tree-id1511 . -27) (undo-tree-id1512 . -1) (undo-tree-id1513 . -1) (undo-tree-id1514 . -1) (undo-tree-id1515 . -1) (undo-tree-id1516 . -1) (undo-tree-id1517 . -1) (undo-tree-id1518 . -1) (undo-tree-id1519 . -1) (undo-tree-id1520 . -1) (undo-tree-id1521 . -1) (undo-tree-id1522 . -1) (undo-tree-id1523 . -1) (undo-tree-id1524 . -1) (undo-tree-id1525 . -1) (undo-tree-id1526 . -1) (undo-tree-id1527 . -28)) nil (26473 1766 195614 124000) 0 nil])
 ([nil nil ((#("²" 0 1 (fontified t)) . 121) (undo-tree-id1509 . -1) (undo-tree-id1510 . -1)) nil (26473 1766 195593 576000) 0 nil])
 ([nil nil ((#("²" 0 1 (fontified t)) . 136) (undo-tree-id1507 . -1) (undo-tree-id1508 . -1)) nil (26473 1766 195589 695000) 0 nil])
-([nil current ((201 . 202) (#("
+([nil nil ((201 . 202) (#("
 " 0 1 (fontified t)) . -201) (undo-tree-id1505 . -1) (140 . 141) (#("
 " 0 1 (fontified t)) . -140) (undo-tree-id1506 . -1) 136) nil (26473 1766 195584 148000) 0 nil])
+([nil nil ((53325 . 54117) (#("emph{{\\bfseries Авторлар туралы мәлімет}}
+
+\\begin{noparindent}
+Батцэнгэл Хуухээ - экономика ғылымдарының докторы, профессор, Қазіргі
+заманғы зерттеулер институтының директоры, Моңғол жоғары оқу орнынан
+кейінгі білім беру университеті, Моңголия, е-mail:
+\\href{mailto:battsengel1@mail.ru}{\\nolinkurl{battsengel1@mail.ru}};
+
+Касымова С.Б. - «Экономика және басқару» кафедрасының аға оқытушысы,
+магистр, Қ.Құлажанов атындағы Қазақ технология және бизнес университеті,
+е-mail: \\href{mailto:Sanim_81@list.ru}{\\nolinkurl{Sanim\\_81@list.ru}};
+
+Мустафаев К.С. -- э.ғ.к., қауымд профессор, Қ.Құлажанов атындағы Қазақ
+технология және бизнес университеті, е-mail:
+\\href{mailto:astana_kzo@mail.ru}{\\nolinkurl{astana\\_kzo@mail.ru}}.
+\\end{noparindent}
+
+\\emph{{\\bfseries Information about the author}}
+
+\\begin{noparindent}" 0 4 (face font-lock-keyword-face) 5 6 (face (italic)) 6 15 (face (font-lock-keyword-face italic)) 15 39 (face (italic bold)) 39 40 (face (italic)) 43 49 (face font-lock-keyword-face) 49 50 (latex-env-pair t) 50 61 (face font-lock-function-name-face latex-env-pair t) 61 62 (latex-env-pair t) 253 258 (face font-lock-keyword-face) 259 285 (face tex-verbatim) 287 293 (face font-lock-keyword-face) 293 297 (face font-lock-keyword-face) 298 317 (face tex-verbatim) 338 339 (face font-lock-keyword-face) 339 361 (face font-lock-string-face) 361 362 (face font-lock-keyword-face) 472 477 (face font-lock-keyword-face) 478 501 (face tex-verbatim) 503 513 (face font-lock-keyword-face) 514 531 (face tex-verbatim) 652 657 (face font-lock-keyword-face) 658 676 (face tex-verbatim) 676 683 (face tex-verbatim) 685 695 (face font-lock-keyword-face) 696 715 (face tex-verbatim) 719 723 (face font-lock-keyword-face) 723 724 (latex-env-pair t) 724 735 (face font-lock-function-name-face latex-env-pair t) 735 736 (latex-env-pair t) 738 743 (face font-lock-keyword-face) 744 745 (face (italic)) 745 754 (face (font-lock-keyword-face italic)) 754 783 (face (italic bold)) 783 784 (face (italic)) 787 793 (face font-lock-keyword-face) 793 794 (latex-env-pair t) 794 805 (face font-lock-function-name-face latex-env-pair t) 805 806 (latex-env-pair t)) . 53325) (t 26473 1766 252507 324000)) nil (26473 4713 378789 41000) 0 nil])
+([nil current ((#("
+" 0 1 (fontified t)) . 342) (undo-tree-id0 . -1) (t 26473 4690 958699 679000)) nil (26473 4713 378785 395000) 0 nil])
 nil
