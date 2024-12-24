@@ -1,528 +1,507 @@
-\id{МРНТИ 81.93.29}
+\id{IRSTI 50.43.15}
 
-{\bfseries ПРОГРАММНО-АППАРАТНЫЙ КОМПЛЕКС ДАКТИЛОСКОПИЧЕСКОЙ ИДЕНТИФИКАЦИИ
-ЧЕЛОВЕКА}
+\begin{articleheader}
+\sectionwithauthors{A.Tulegulov, K. Akishev, D.Zhamangarin, N.Yurkov, L. Akisheva, S.A. Altynbek, N.S. Smakova}{EVALUATION OF THE USE OF AUTOMATED CONTROL SYSTEMS FOR SOLVING TRAFFIC CONTROL PROBLEMS}
 
-{\bfseries \textsuperscript{1,2} Т.С. Шорманов, \textsuperscript{2}А.Т.
-Мазакова, \textsuperscript{1} М.С. Алиаскар, \textsuperscript{2}А.Д.
-Бургегулов, \textsuperscript{2}А.А. Саметова,}
+{\bfseries \textsuperscript{1}A.Tulegulov\textsuperscript{\envelope },
+\textsuperscript{1}K. Akishev, \textsuperscript{1}D.Zhamangarin,
+\textsuperscript{2}N.Yurkov, \textsuperscript{3}L. Akisheva, \textsuperscript{1}S.A. Altynbek, \textsuperscript{1}N.S. Smakova}
+\end{articleheader}
 
-{\bfseries \textsuperscript{1}Н.Т. Исимов, \textsuperscript{2}Ш.А.
-Джомартова, \textsuperscript{1,2}Т.Ж. Мазаков\textsuperscript{\envelope }}
+\begin{affiliation}
+\textsuperscript{1}K. Kulazhanov Kazakh University of Technology and
+Business, Astana, Kazakhstan,
 
-\textsuperscript{1} Международный инженерно-технологический университет,
-Алматы, Казахстан,
+\textsuperscript{2}Penza State University, Penza, Russia,
 
-\textsuperscript{2} Казахский национальный университет имени аль-Фараби,
-Алматы, Казахстан
+\textsuperscript{3}Nazarbayev Intellectual School, Astana, Kazakhstan,
 
-{\bfseries \textsuperscript{\envelope }}Корреспондент-автор: tmazakov@mail.ru
+\raggedright {\bfseries \textsuperscript{\envelope }}Correspondent-author: \href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}}
+\end{affiliation}
 
-Дактилоскопическая идентификация основывается на уникальности кожных
-рисунков на пальцах рук, которые формируются в процессе эмбрионального
-развития и не меняются на протяжении жизни человека. Каждый отпечаток
-пальца имеет свои особенности, включая линии, завитки, поры, выступы и
-другие микроскопические характеристики.
+One of the most pressing problems of megacities is traffic jams. With
+the growth of the urban population, there are more and more of them.
+Given the fact that there is no metro in Astana, the number of vehicles
+is growing quite quickly and urban public transport is also replenished
+with new buses every year. Attempts to introduce bus lanes partially
+eliminate the problem for public transport, but at the same time creates
+problems for private individual transport.
 
-Современные программно-аппаратные комплексы дактилоскопической
-идентификации человека обеспечивают высокую точность и скорость
-обработки отпечатков пальцев, что делает их востребованными в различных
-сферах, таких как правоохранительные органы, система безопасности, а
-также в биометрических системах доступа.
+Theoretically, there are various solutions to the problem of congestion
+on urban highways, but in practice we face a number of additional
+problems. Attempts to create intelligent systems for regulating urban
+transport do not yield tangible results due to a chaotic approach to the
+main problem.
 
-В работе рассматривается разработка системы дактилоскопической
-идентификации, объединяющей программное обеспечение и аппаратные
-компоненты. Предложенная система, основанная на использовании
-микроконтроллера Arduino и сканера отпечатков пальцев FPM10A,
-предназначена для выполнения операций по хранению, обработке,
-идентификации и визуализации данных отпечатков пальцев. Для
-идентификации личности были выбраны особенности структуры папиллярных
-линий на пальцах рук.
+Transport system management is a set of various measures aimed at the
+effective functioning of this system through coordination, organization,
+and ordering of the elements of this system, both among themselves and
+with the external environment. The Intelligent Transport System (ITS) is
+a management system that implements innovative developments for managing
+traffic flows. As a result of using such systems, we get the so-called
+"smart roads". The article examines one of the components of ITS -- the
+smart traffic light system.
 
-Экспериментальные исследования подтвердили устойчивость разработанной
-системы к изменениям масштаба, поворотам изображений и небольшим
-искажениям.
+{\bfseries Keywords:} algorithms, information systems, traffic jams,
+integrated systems, information modeling, program code.
 
-{\bfseries Ключевые слова:} биометрические технологии, дактилоскопическая
-идентификация, программно-аппаратные системы, микроконтроллер.
+\begin{articleheader}
+{\bfseries ЖОЛ ҚОЗҒАЛЫСЫН БАҚЫЛАУ МІНДЕТТЕРІН ШЕШУ ҮШІН АВТОМАТТАНДЫРЫЛҒАН
+БАСҚАРУ ЖҮЙЕЛЕРІН ПАЙДАЛАНУДЫ БАҒАЛАУ}
 
-{\bfseries АДАМДЫ САУАҚ ІЗІМЕН АНЫҚТАУ ҮШІН БАҒДАРЛАМАЛЫҚ-АППАРАТТЫҚ КЕШЕН}
+{\bfseries \textsuperscript{1}А.Д.
+Тулегулов\textsuperscript{\envelope },\textsuperscript{1}К.М. Акишев,
+\textsuperscript{1}Д.С. Жамангарин, \textsuperscript{2}Н.К. Юрков,
+\textsuperscript{3}Л.К. Акишева,}
 
-{\bfseries \textsuperscript{1,2} Т.С. Шорманов, \textsuperscript{2}Ә.Т.
-Мазақова, \textsuperscript{1} М.С. Әлиасқар, \textsuperscript{2}А.Д.
-Бургегулов, \textsuperscript{2}А.А. Саметова,}
+{\bfseries \textsuperscript{1}С. А.Алтынбек, \textsuperscript{1}Н.С.
+Смакова}
+\end{articleheader}
 
-{\bfseries \textsuperscript{1} Н.Т. Исимов, \textsuperscript{2}Ш.А.
-Джомартова, \textsuperscript{1,2}Т.Ж. Мазақов\textsuperscript{\envelope }}
+\begin{affiliation}
+\textsuperscript{1}Қ. Құлажанов атындағы Қазақ технология және бизнес
+университеті, Астана, Қазақстан,
 
-\textsuperscript{1}Халықаралық инженерлік және технология университеті,
+\textsuperscript{2}Пенза мемлекеттік университеті, Пена, Ресей,
 
-\textsuperscript{2}Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы,
-Қазақстан,
+\textsuperscript{3}Назарбаев Зияткерлік мектебі, Астана, Қазақстан,
 
-e-mail:tmazakov@mail.ru
+e-mail: \href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}}
+\end{affiliation}
 
-Саусақ ізін анықтау эмбриональды даму кезінде қалыптасатын және адамның
-өмір бойы өзгермейтін саусақтардағы тері үлгілерінің бірегейлігіне
-негізделген. Әрбір саусақ ізінің өзіндік сипаттамалары бар, соның ішінде
-сызықтар, бұйралар, тесіктер, жоталар және басқа микроскопиялық
-сипаттамалар.
+Мегаполистердің ең ауыр проблемаларының бірі-көлік кептелісі. Қала
+халқының өсуімен олардың саны артып келеді. Астанада метро жоқ екенін
+ескерсек, автокөлік саны тез өсуде және қалалық қоғамдық көлік жыл сайын
+жаңа автобустармен толықтырылып отырады. Автобус жолақтарын енгізу
+әрекеттері қоғамдық көлік мәселесін ішінара жеңілдетеді, бірақ сонымен
+бірге жеке жеке көлікке қиындық тудырады.
 
-Адамның саусақ ізін сәйкестендіруге арналған заманауи
-бағдарламалық-аппараттық жүйелер саусақ іздерін өңдеудің жоғары дәлдігі
-мен жылдамдығын қамтамасыз етеді, бұл оларды құқық қорғау органдары,
-қауіпсіздік жүйелері сияқты әртүрлі салаларда, сондай-ақ биометриялық
-қол жеткізу жүйелерінде сұранысқа ие етеді.
+Теориялық тұрғыдан қалалық магистральдардың кептелісі мәселесін шешудің
+әртүрлі нұсқалары бар, бірақ іс жүзінде біз бірқатар қосымша мәселелерге
+тап боламыз. Қалалық көлікті реттеудің интеллектуалды жүйелерін құру
+әрекеттері негізгі проблемаларға хаотикалық көзқарасқа байланысты
+айтарлықтай нәтиже бермейді.
 
-Жұмыста бағдарламалық және аппараттық құрамдас бөліктерді біріктіретін
-саусақ ізін сәйкестендіру жүйесінің дамуы талқыланады. Arduino
-микроконтроллерін және FPM10A саусақ ізі сканерін пайдалануға
-негізделген ұсынылған жүйе саусақ ізі деректерін сақтау, өңдеу, анықтау
-және визуализациялау операцияларын орындауға арналған. Жеке тұлғаны
-анықтау үшін саусақтардағы папиллярлық сызықтардың құрылымының
-ерекшеліктері таңдалды. Эксперименттік зерттеулер әзірленген жүйенің
-масштабтағы өзгерістерге, кескіннің айналуына және шамалы бұрмалануына
-тұрақтылығын растады.
+One of the problems is that congestion and situations are created at the
+main intersections of roads when flows of cars from one direction do not
+have time to complete the maneuver when turning and do not allow cars to
+move from the other direction accordingly. Attempts to create prohibited
+"islands" have not yielded any special results, since they do not allow
+automating the operation of traffic lights in terms of setting the glow
+time of the warning yellow color. There have even been illegal attempts
+to impose fines for driving through yellow traffic lights. The purpose
+of this article is to evaluate the use of automated control systems to
+solve traffic control problems.
 
-{\bfseries Түйін сөздер:} биометриялық технологиялар, саусақ іздерін
-сәйкестендіру, бағдарламалық-аппараттық жүйелер, микроконтроллер.
+{\bfseries Түйін сөздер:} алгоритмдер, ақпараттық жүйелер, көлік кептелісі,
+интеграцияланған жүйелер, ақпараттық модельдеу, бағдарлама коды.
 
-{\bfseries HARDWARE AND SOFTWARE COMPLEX FOR HUMAN DACTYLOSCOPIC
-IDENTIFICATION}
+\begin{articleheader}
+{\bfseries ОЦЕНКА ИСПОЛЬЗОВАНИЯ АВТОМАТИЗИРОВАННЫХ СИСТЕМ УПРАВЛЕНИЯ ДЛЯ
+РЕШЕНИЯ ЗАДАЧ КОНТРОЛЯ ДОРОЖНОГО ДВИЖЕНИЯ}
 
-{\bfseries \textsuperscript{1,2} T.S. Shormanov, \textsuperscript{2}A.T.
-Mazakova, \textsuperscript{1}M.S. Aliaskar, ²A.D.Burgegulov,
-\textsuperscript{2}A.A. Sametova,}
+{\bfseries \textsuperscript{1}А.Д. Тулегулов\textsuperscript{\envelope } ,
+\textsuperscript{1}К.М. Акишев, \textsuperscript{1}Д.С. Жамангарин,
+\textsuperscript{2}Н.К. Юрков, \textsuperscript{3}Л.К. Акишева,
+\textsuperscript{1}С.А.Алтынбек, \textsuperscript{1}Н.С.Смакова}
+\end{articleheader}
 
-{\bfseries \textsuperscript{1}N.T. Isimov, \textsuperscript{2}Sh.A.
-Jomartova, \textsuperscript{1,2}T.Zh. Mazakov\textsuperscript{\envelope }}
+\begin{affiliation}
+\textsuperscript{1}Казахский университет технологии и бизнеса имени К.
+Кулажанова, Астана, Казахстан
 
-\textsuperscript{1} International Engineering and Technology University,
-Almaty, Kazakhstan,
+\textsuperscript{2}Пензенский государственный университет, Пенза, Россия
 
-\textsuperscript{2} Kazakh National University named after Al-Farabi,
-Almaty, Kazakhstan,
+\textsuperscript{3}Назарбаев интеллектуальная школа, Астана, Казахстан,
 
-e-mail:tmazakov@mail.ru
+e-mail: \href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}}
+\end{affiliation}
 
-Fingerprint identification is based on the uniqueness of skin patterns
-on the fingers, which are formed during embryonic development and do not
-change throughout a person' s life. Each fingerprint has
-its own characteristics, including lines, curls, pores, protrusions and
-other microscopic characteristics.
+Одной из наиболее наболевших проблем мегаполисов являются автомобильные
+пробки. С ростом городского населения их становится все больше и больше.
+Учитывая тот факт, что в Астане отсутствует метро количество
+автотранспорта растет довольно быстро и городской общественный транспорт
+также ежегодно пополняется новыми автобусами. Попытки введения
+автобусных полос частично снимают проблему для общественного транспорта,
+но в то же время создает проблем для частного индивидуального
+транспорта.
 
-Modern software and hardware systems for fingerprint identification of a
-person provide high accuracy and speed of fingerprint processing, which
-makes them in demand in various areas, such as law enforcement agencies,
-security systems, as well as in biometric access systems.
+Теоретически существуют различные варианты решения проблемы
+загруженности городских магистралей, но на практике мы сталкиваемся с
+рядом дополнительных проблем. Попытки создать интеллектуальные системы
+регулирования городского транспорта не дают ощутимых результатов по
+причине хаотичного подхода к основной проблем.
 
-The paper considers the development of a fingerprint identification
-system that combines software and hardware components. The proposed
-system, based on the Arduino microcontroller and the FPM10A fingerprint
-scanner, is designed to perform operations on storing, processing,
-identifying and visualizing fingerprint data. The features of the
-structure of the papillary lines on the fingers were selected for
-personal identification. Experimental studies confirmed the stability of
-the developed system to changes in scale, image rotation and minor
-distortions.
+Одной из проблем является то, что на основных перекрестках дорог
+создаются заторы и ситуации, когда потоки автомашин с одного из
+направлений при повороте не успевают завершить маневр и не позволяют
+соответственно двигаться автомашинам с другого направления. Попытки
+создавать запрещенные «островки» не дали особых результатов, так как не
+позволяют автоматизировать работу светофоров с точки зрения установки
+времени свечения предупреждающего желтого цвета. Даже были незаконные
+попытки введения штрафов за проезд на желтый свет светофора. В данной
+статье поставлена цель сделать оценку использования автоматизированных
+систем управления для решения задач контроля дорожного движения.
 
-{\bfseries Keywords:} biometric technologies, fingerprint identification,
-hardware and software systems, microcontroller.
+Ключевые слова: автоматизированные системы управления, алгоритмы,
+информационные системы, транспортные пробки, интегрированные системы,
+информационное моделирование, код программы.
 
-{\bfseries Введение.} Современные методы защиты информации и объектов
-требуют высокой степени надежности, которая зависит от специфики и
-уровня безопасности, необходимого в конкретной ситуации. Одним из
-наиболее эффективных решений являются биометрические системы, в
-частности технологии идентификации личности по отпечаткам пальцев. Эти
-системы получили широкое распространение благодаря своей адаптивности,
-высокой точности и удобству использования. Применение биометрических
-технологий, таких как сканирование отпечатков пальцев, не только
-усиливает уровень защиты, но и устраняет необходимость в традиционных
-средствах доступа, таких как ключи или карты, заменяя их уникальным,
-неизменным биометрическим признаком {[}1{]}.
+\begin{multicols}{2}
+{\bfseries Introduction.} Traffic in conditions of congestion of roads with
+traffic and pedestrian flows requires innovative ways of regulation.
+Automated traffic management systems, which are a complex of technical
+means implementing certain technological algorithms for traffic flow
+management, have recently become increasingly relevant. The algorithm
+assumes the implementation of the principle of decomposition of
+decision-making, which can be considered generally accepted for network
+adaptive management methods. The decomposition of management is based on
+the division of the area into mutually overlapping zones. The center of
+each zone is an adjustable intersection, and the zone itself covers all
+intersections adjacent to the central one. The main purpose of the
+introduction of automated traffic management systems is to reduce the
+total delays of vehicles on a certain section of the road network, in
+the area of operation of this system -- at an intersection, in an area
+or city{[}1-2{]}.
 
-Дактилоскопические системы функционируют на основе сравнения полученных
-отпечатков с хранимыми в базе данных. Методика сопоставления
-определяется областью применения технологии. Уникальность отпечатков
-пальцев обусловлена анатомическими особенностями строения кожного
-рисунка, который формируется под влиянием генетических и экологических
-факторов {[}2{]}.
+Microcontroller intellectualization of traffic lights is a modern and
+promising direction for improving traffic light facilities. The presence
+of a digital reprogrammable microcontroller, such as the Siemens LOGO!
+230rce, and small microcontrollers with built-in ESP32 Cam video cameras
+open up wide opportunities for the use of modern software and hardware
+that allow interactively intellectualize the process of optimizing
+traffic flows without significant material costs.
 
-Идентификационные признаки папиллярных узоров делятся на глобальные и
-локальные. Глобальные признаки (например, тип узора, направление линий)
-видимы невооруженным глазом, в то время как локальные признаки, или
-минуции (раздвоения, разрывы и окончания линий), требуют специального
-анализа. Методы, основанные на локальных признаках, обладают большей
-надежностью и детализированностью, что делает их предпочтительными для
-биометрической идентификации. Однако, такие факторы, как давление при
-сканировании, влажность кожи и возрастные изменения, могут влиять на
-качество изображения отпечатков, что требует использования устойчивых к
-искажениям алгоритмов {[}3{]}.
+{\bfseries Materials and methods.} The Siemens LOGO! 230RCE microcontroller
+in combination with the updated DC-2 linear controller allows you to
+optimize the algorithm of the entire information intelligent system. The
+technology of improvement of the DC-2 linear controller does not present
+great electrical complexity. Figure 1 shows the internal arrangement of
+the elements of the DC-2 controller. The device of the 230RCE
+programmable logic controller (PLC) is also presented here{[}3{]}.
+\end{multicols}
 
-{\bfseries Материалы и методы.} Программно-аппаратные комплексы для
-идентификации по отпечаткам пальцев состоят из нескольких ключевых
-элементов, которые взаимодействуют друг с другом для реализации
-технологии.
-
-\emph{Аппаратные компоненты включают:}
-
-1) Сканеры отпечатков пальцев:
-
-\begin{itemize}
-\item
-  Оптические сканеры: используют светодиоды (LED) для подсветки пальца и
-  камеры для захвата изображения. Это один из наиболее популярных типов,
-  однако он может быть подвержен загрязнениям и повреждениям.
-\item
-  Полимерные (сенсорные) сканеры: используют электрическое поле для
-  захвата изображения. Они обеспечивают более высокую точность и
-  защищенность от грязи, а также могут быть более компактными.
-\item
-  Ультразвуковые сканеры: передают ультразвуковые волны на поверхность
-  пальца, анализируя отраженные сигналы для создания детализированного
-  изображения. Эти сканеры обеспечивают высокую точность, могут работать
-  с влажными и поврежденными пальцами.
-\item
-  Термические сканеры: регистрируют тепловое излучение поверхности
-  пальца и могут быть использованы в условиях низкой видимости или при
-  загрязненных сканерах.
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Процессоры и устройства обработки: Обработка данных с сенсора требует
-  быстрого и мощного оборудования для извлечения, анализа и сравнения
-  отпечатков пальцев в реальном времени. Это может быть либо
-  специализированное аппаратное обеспечение, либо вычислительные
-  мощности встроенных процессоров.
-\end{enumerate}
-
-Программные компоненты состоят из: 1) Модуля захвата изображений:
-Программное обеспечение, отвечающее за захват и обработку изображений
-отпечатков пальцев с сенсора. Этот модуль включает в себя алгоритмы для
-нормализации изображений, улучшения их качества (например, удаление
-шумов, повышение контраста) и подготовки их для дальнейшего анализа.
-
-2) Модуля извлечения признаков: На основе изображения отпечатка пальца
-извлекаются ключевые биометрические признаки, такие как:
-
-3) Модуля сопоставления: Алгоритмы сравнивают текущий отпечаток с базой
-данных зарегистрированных отпечатков. В случае совпадения система может
-подтвердить идентичность, и пользователь получит доступ. Обычно
-используются методы, основанные на анализе статистических признаков или
-методах машинного обучения для повышения точности и устойчивости к
-ошибкам.
-
-4) Модуля идентификации: Этот компонент проверяет, соответствует ли
-результат сопоставления зарегистрированным данным пользователя и
-принимает решение о подтверждении или отклонении идентификации
-{[}4-5{]}.
-
-{\bfseries Обсуждение и результаты.} Традиционные методы контроля доступа,
-такие как использование паролей или ключей, часто неудобны и подвержены
-риску утраты {[}6{]}.
-
-В ходе данной работы разработана биометрическая система идентификации,
-основанная на использовании сканера отпечатков пальцев и
-микроконтроллера Arduino. Применение библиотеки Adafruit для Arduino
-позволило интегрировать аппаратные и программные компоненты, обеспечив
-точное распознавание и идентификацию.
-
-На рисунке 1 представлена фотография разработанного
-программно-аппаратного комплекса системы: 1) сканер FPM10A, 2)
-микроконтроллер Arduino, 3) средство визуализации результата
-распознавания, 4) внешний аккумулятор (Power Bank), 5)
-мульти-разветвитель USB.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=\textwidth]{media/ict/image4}
+        \caption*{DC-2 controller}
+    \end{subfigure}
+    \hspace{0.05\textwidth} % Adjust horizontal space between the subfigures
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=0.7\textwidth]{media/ict/image5}
+        \caption*{LOGO!230RCE}
+    \end{subfigure}
+        \caption*{Figure 1 - The layout of the DC-2 and the general view of the
+Siemens LOGO! 230RCE microcontroller}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image1}
-	\caption*{}
+	\includegraphics[width=0.8\textwidth]{media/ict/image6}
+	\caption*{Figure 2 - The code of the adaptive traffic light program}
 \end{figure}
 
+\begin{multicols}{2}
+The dimensions of the DC-2 and the length of the DIN rail PLC LOGO! they
+are compact enough. Please note that the 230rce allows you to attach the
+rail without significant structural changes. In practice, an additional
+relay with the function of reprogramming and data exchange over Ethernet
+networks is installed in the housing of the DC-2. An important feature
+of the new hardware is the constantly expanding libraries of application
+programs and software LOGO! and the presence of a simulator in Soft
+Comfort. This is the personal logo of the microcontroller! The Web
+editor can be supplemented with a web server, which allows you to
+process network data streams, images obtained from video cameras
+specific to the OOP application. Figure 2 shows the program code written
+in the FBD graphical language {[}4-5{]}.
 
-{\bfseries Рис.1- Программно-аппаратный комплекс идентификации личности по
-отпечаткам пальцев}
+The algorithm of the traffic light with a recognition sensor located in
+the traffic light zone of cars takes into account their number and if
+the specified number of cars is exceeded (in our case, 15 cars), the
+green light turns on{[}6{]}.
 
-Программно-аппаратный комплекс состоит из нескольких ключевых
-компонентов:
-
-\emph{1) аппаратная часть:}
-
-\begin{itemize}
-\item
-  оптический сканер FPM10A, способный сохранять до 1000 отпечатков
-  пальцев:
-\item
-  микроконтроллер Arduino, обеспечивающий обработку данных в реальном
-  времени.
-\end{itemize}
-
-\emph{2) программная часть:}
-
-\begin{itemize}
-\item
-  библиотека Adafruit\_Fingerprint, позволяющая выполнять все этапы
-  обработки отпечатков;
-\item
-  модули для извлечения ключевых точек и анализа биометрических данных.
-\end{itemize}
-
-\emph{3) система электрообеспечения:}
-
-\begin{itemize}
-\item
-  внешний аккумулятор Power Bank емкостью 10 000 мА, обеспечивающий
-  бесперебойную работу комплекса;
-\item
-  мульти-разветвитель USB, позволяющий снизить энергетическую нагрузку
-  на микроконтроллер;
-\item
-  солнечная панель с контроллером заряда, обеспечивающие зарядку
-  внешнего аккумулятора.
-\end{itemize}
+Figure 3 shows the standard program for switching on the temporary
+phases of green, yellow and red light.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image2}
-	\caption*{}
+	\includegraphics[width=0.8\textwidth]{media/ict/image7}
+	\caption*{Figure 3 - The standard operating program of the traffic light
+in the "green wave" mode}
 \end{figure}
 
+\begin{multicols}{2}
+The special feature of the code is that it can be reloaded taking into
+account traffic jams, emergencies and night mode (yellow, which lights
+up again).
 
-{\bfseries Рис.2- Схема электрического обеспечения: 1- солнечная панель, 2)
-контроллер заряда, 3) розетка для заряда внешнего аккумулятора, 4)
-внешний аккумулятор}
+Various software solutions are used to eliminate the phenomena of
+congestion and forced unreasonable delays of cars at intersections in
+front of traffic lights{[}7{]}. The algorithm and Program for
+calculating the number of vehicles can be adapted to a pedestrian
+traffic light, which is of particular relevance for streets with divided
+lanes near the centerline of the bus (for example, on Timiryazev Street
+in Almaty).
 
-Сенсор использует алгоритмы, позволяющие хранить, обрабатывать и
-сопоставлять отпечатки пальцев. Для этого применяется библиотека
-Adafruit\_Fingerprint, которая включает функции:
+In this regard, an upgraded computer traffic management system in Almaty
+is needed, which should calculate online the optimal and coordinated
+time intervals for switching on the phases of red, yellow, and green
+traffic lights at adjacent intersections, ensuring traffic flow along
+the "green" wave. Among such intelligent control systems, we note the
+automated control system "Smart traffic lights" of New York City.
 
-\begin{itemize}
-\item
-  Захвата изображения.
-\item
-  Извлечения ключевых признаков (локальных точек).
-\item
-  Сравнения текущего отпечатка с сохранёнными образцами.
-\end{itemize}
+The intelligent traffic light control system of large cities is a
+complex and expensive automated system, however, reducing travel time,
+reducing vehicle downtime at intersections, reducing harmful emissions
+into the atmosphere, increasing the mobility of the population as a
+whole compensate for these costs. So, traffic management of a
+megalopolis is a complex and multilevel technological process.
 
-Программные инструменты позволяют записывать новые отпечатки, присваивая
-каждому уникальный ID (который сохраняется в памяти сенсора для
-дальнейшего сравнения), и проверять работу системы через окно серийного
-монитора Arduino.
+Complex automation requires a powerful computer network with central
+controllers of supercomputers, on the periphery of which the IoT device
+constantly transmits data to the traffic control center via
+communication channels.
 
-Запись новых отпечатков через программу для Windows
-
-Для записи новых данных в память оптического датчика отпечатков пальцев
-рекомендуется использовать специализированную программу для Windows.
-
-На рисунке 3 продемонстрирована работа программно-аппаратного комплекса
-по идентификации личности по отпечаткам пальцев.
+A promising task of modern automation of the traffic management
+information system is research on "advanced" traffic management and
+traffic light regulation. The implemented software products should
+calculate indicators interactively, taking into account the requirements
+of local government systems installed at the nodal points of the
+city' s road network. Also promising tasks are the
+creation of network simulators for microcontroller control of "smart
+intersections", and then their localization into more complex networks
+on the scale of a polycentric district and the city as a whole.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image3}
-	\caption*{}
+	\includegraphics[width=0.9\textwidth]{media/ict/image8}
+	\caption*{Figure 4 - Electrical diagram of an intelligent interface for
+controlling a "smart" traffic light using a QR code}
 \end{figure}
 
+\begin{multicols}{2}
+In urban conditions, the following methods of traffic management are
+used:
 
-{\bfseries Рис.3 - Результаты работы программно-аппаратного комплекса}
+- Control by stopping vehicles. For example, by means of traffic lights.
+Each traffic flow moving through the intersection is affected by three
+light signals --- green, yellow and red.
 
-Внешний аккумулятор Samsung EB-P1100C емкостью 10000 мАч позволяет
-работать программно-аппаратному комплексу больше 48 часов (двое суток),
-что подтверждается дальнейшими расчетами.
+- The direction of traffic flow bypassing the area where congestion is
+formed.
 
-Расчет времени работы Arduino Uno от внешнего аккумулятора Power Bank на
-10000 мАч, необходимо учитывать несколько факторов:
+- Information management. The driver receives information about the
+traffic situation on his way, and decides on the further route on his
+own.
 
-Arduino Uno обычно потребляет от 30 до 50 мА при обычной работе (без
-дополнительных устройств). При использовании дополнительных модулей,
-датчиков или экранов потребление может увеличиться, но для базового
-расчета возьмем среднее значение 50 мА.
+- Coordinated management. It allows you to increase the capacity of
+roads and reduce the risk of accidents by streamlining traffic. The
+following methods are used to implement coordinated management
 
-Power Bank на 10000 мАч, как правило, имеет выходное напряжение 5 В (при
-использовании USB-выхода), и его реальная емкость может быть немного
-меньше из-за потерь при преобразовании напряжения. Обычно можно
-рассчитывать на эффективность около 85\%. Поэтому примем что эффективная
-емкость Power Bank будет примерно 8500мАч
+- Rigid software control. Coordination programs and the order of their
+change are calculated in advance based on movement data collected, as a
+rule, by field measurements.
 
-Время работы рассчитывается по формуле:
+- Software management with forecast. The selection of the program
+activation points, the duration of their operation and their adaptation
+to the speed of traffic flow is performed based on data from transport
+detectors.
 
-Время=Емкость/Потребление=8500 мАч/50 мА=170 часов.
+-Adaptive control. Each cycle is implemented with the calculation of
+coordination programs based on traffic flow data at each intersection
+and in each control phase.
 
-Учитывая, что Arduino подключает дополнительные устройства (датчики,
-экраны и т.д.) потребление энергии может увеличиться втрое. Поэтому мы
-берем за гарантийное время - 48 часов.
+{\bfseries Results and discussions.} As a result of the conducted research,
+the software and hardware of the ESP32 Cam interface was developed on
+the principle of a "green wave" for special services vehicles using a QR
+code. Similarly, the hardware and software of the ESP32 QR Code Reader
+interface for medical vehicles was developed. The "smart" HR software
+appeared during the implementation of a library program in which, with
+standard QR code recognition, a text message transcribing the text of
+the QR code was displayed on the screen of the COM port of the Arduino
+IDE environment {[}8, 9{]} (Fig.4).
 
-{\bfseries Выводы.} В рамках данной работы получены следующие результаты:
 
-Проведен анализ методов биометрической идентификации, включающих
-использование сканеров отпечатков пальцев и алгоритмов сопоставления.
+In the case of fire trucks, often driven by a small column, the "Green
+Wave" has a longer turn-on time, and this information is entered into
+the QR code. Below is a program that implements an algorithm for
+adaptive activation of the "green wave" in the codes of the Arduino IDE
+environment:
+\end{multicols}
 
-Разработан программно-аппаратный комплекс на основе микроконтроллера и
-оптического сканера, обеспечивающий хранение, обработку и идентификацию
-отпечатков пальцев. Основой идентификации послужила структура
-папиллярных узоров.
+Void setup()
 
-Экспериментальные исследования продемонстрировали, что разработанная
-система обеспечивает:
+\{
 
-1) Устойчивость к изменениям масштаба и поворотам изображения.
+TM1283 mod;
 
-2) Инвариантность к незначительным искажениям и изменению уровня
-освещения до 50--70\%.
+Byte num();
 
-3) Надежное распознавание даже при использовании частичных отпечатков
-пальцев.
+int pinA = 3;
 
-Преимущества применения дактилоскопической информации:
+int pinD = 5;
 
-1) Высокая точность: Отпечатки пальцев имеют уникальные биометрические
-признаки, которые остаются неизменными на протяжении всей жизни
-человека, что делает их надежным средством для идентификации.
+pinMode (pinA, input);
 
-2) Удобство использования: Сканирование отпечатков пальцев требует всего
-лишь прикосновения к сенсору, что делает процесс аутентификации быстрым
-и удобным.
+digitalWrite(pin1);
 
-3) Высокий уровень безопасности: Трудно подделать отпечатки пальцев, что
-делает этот метод биометрической идентификации более безопасным по
-сравнению с паролями или PIN-кодами.
+Boolean dSW(pinC);
 
-Особую перспективу представляет разработка алгоритмов для поиска по
-неполным отпечаткам пальцев, что особенно важно в реальных условиях,
-когда доступна лишь часть изображения для идентификации.
+\}
 
-\emph{{\bfseries Финансирование}. Работа выполнена за счет средств НИИ
-математики и механики при КазНУ имени аль-Фараби и грантового
-финансирования научных исследований на 2023--2025 годы по проекту
-AP19678157}.
+Int encoderPosCount(stepsPerrevo5)\{
 
-{\bfseries Литература}
+myStepper = 7;
 
-1. Болл Р.М., Коннел Дж.Х., Панканти Ш. и др. Руководство по биометрии.
--- Москва: Техносфера, 2007.-368 с.
-\href{https://www.libex.ru/qna/ref/isbn/}{ISBN}: 978-5-94836-109-3.
+int pinDLast = 8;
 
-URL: https://www.technosphera.ru/lib/book/187
+Serial.begin (362);
 
-2. Мазур Е.С. Дерматоглифика в исследованиях личности криминалистический
-и судебно-медицинский аспекты. -- Томск: Изд. дом ТГУ, 2014, - 150с.
-\href{https://www.libex.ru/qna/ref/isbn/}{ISBN}: 978-5-94621-450-6. --
+Value\_Y = analogRead (axis-X);
 
-URL: https://ibooks.ru/bookshelf/380802/reading
+Bool isvalid = false;
 
-3. Лепихова Д.Н., Гудков В.Ю., Кирсанова А.А. Обзор современных моделей
-представления дактилоскопических изображений // Вестник ЮУрГУ. Серия:
-Вычислительная математика и информатика.- 2018.-Т.7(1)- с.40-59.
+MFRC522 mfrc522(DD\_PIN;
 
-DOI 10.14529/cmse180104.
+Byte uidCar;
 
-4. Гридчин А.В. Микродатчики и микросистемы. -- Москва, Вологда:
-Инфра-Инженерия, 2023. -184 с.
-\href{https://www.libex.ru/qna/ref/isbn/}{ISBN} 978-5-9729-1220-9.
+delay(1);
 
-URL: https://www.iprbookshop.ru/133049.html
+mode = cloc() / 5;
 
-5. Апейников А.Ф., Гридчин В.А., Цапенко М.П. Датчики (перспективные
-направления развития). -- Новосибирск: Изд-во НГТУ, 2001.-176.
+if X=4 then \{
 
-\href{https://www.libex.ru/qna/ref/isbn/}{ISBN} 5-7782-0300-4
+go to 10(``.'');
 
-6. Бриллиант К. Цифровая модель человека. -- М.: Кудиц-образ, 2004.- 400
-с. ISBN 5-7782-0300-4
+delay(100);
+
+\}
+
+As can be seen from the text of the application, the webcam reads the QR
+code, analyzes the text and selects from it the number specified in the
+text format and converts it to a digital format. Then the coil of the
+intelligent traffic light relay turns on to turn on the yellow light and
+then the green light.
+
+{\bfseries Conclusion.} In conclusion, it should be noted that the
+assessment of the informativeness of adaptive control algorithms makes
+it possible to optimally select the necessary operating mode for traffic
+flows, which in turn will significantly reduce the number of congestion
+on the streets of megacities.
+
+The use of this system has made it possible to increase the efficiency
+of the automated control system by 18\%. The developed software and
+hardware of the ESP32 Cam interface based on the "green wave" principle
+for special services vehicles using a QR code has shown its viability
+and practicality. The created program code for the Arduino IDE
+environment is adapted to these requirements. The article is based on
+the results of research carried out within the framework of the funded
+project "A neural computer view of the smart traffic light of megacities
+of the country".
 
 {\bfseries References}
 
-1. Boll R.M., Konnel Dzh.H., Pankanti Sh. i dr. Rukovodstvo po
-biometrii. -- Moskva: Tehnosfera, 2007.-368 s. ISBN: 978-5-94836-109-3.
+1.Badaguev B.T. Jekspluatacija transportnyh sredstv (organizacija i
+bezopasnost'{} dvizhenija). -- M.:
+Al' fa-Press, 2012. - 239 s. ISBN 978-5-94280-556-2 {[}in
+Russian{]}
 
-URL: \url{https://www.technosphera.ru/lib/book/187}. {[}in Russian{]}
+2. Dudko N.I., Petrovec V.R., Bershadskij V.F.
+Bezopasnost'{} dvizhenija mehanicheskih transportnyh
+sredstv: posobie - Gorki: BGSHA, 2014. - 238 s. ISBN 978-985-467-490-2
+{[}in Russian{]}
 
-2. Mazur E.S. Dermatoglifika v issledovanijah lichnosti
-kriminalisticheskij i sudebno-medicinskij aspekty. - Tomsk: Izd. dom
-TGU, 2014, - 150s. ISBN: 978-5-94621-450-6.
+3. Blinkin M.Ja. Bezopasnost'{} dorozhnogo dvizhenija:
+istorija voprosa, mezhdunarodnyj opyt, bazovye institucii.-M.: Izd. dom
+Vysshej shkoly jekonomiki, 2013.- 240 s. ISBN: 978-5-7598-1086-5 {[}in
+Russian{]}
 
-URL: \url{https://ibooks.ru/bookshelf/380802/reading}/ {[}in Russian{]}
+4. Volkov V.S. Jelektrooborudovanie transportnyh i
+transportno-tehnologicheskih mashin: uchebnoe posobie - M.: Akademija,
+2010. - 208 s. ISBN 978-5-7695-5749-1 {[}in Russian{]}
 
-3. Lepihova D.N., Gudkov V.Ju., Kirsanova A.A. Obzor sovremennyh modelej
-predstavlenija daktiloskopicheskih izobrazhenij // Vestnik JuUrGU.
-Serija: Vychislitel' naja matematika i informatika.-
-2018.-T.7(1)- s.40-59. DOI 10.14529/cmse180104. {[}in Russian{]}
+5. Gorev, A. Je.Osnovy teorii transportnyh sistem: uchebnoe posobie / A.
+Je. Gorev;SPbGASU. -- SPb., 2010. - 214 s. ISBN 978-5-9227-0266-9 {[}in
+Russian{]}
 
-4. Gridchin A.V. Mikrodatchiki i mikrosistemy. -- Moskva, Vologda:
-Infra-Inzhenerija, 2023. -184 s. ISBN 978-5-9729-1220-9. URL:
-https://www.iprbookshop.ru/133049.html.
+6. Majboroda M.E., Bednarskij V.V. Gruzovye
+avtomobil' nye perevozki. - M.: Feniks, 2008.- 442 s.
+ISBN 978-5-222-14364-3 {[}in Russian{]}
 
-5. Apejnikov A.F., Gridchin V.A., Capenko M.P. Datchiki (perspektivnye
-napravlenija razvitija). -Novosibirsk: Izd-vo NGTU, 2001.-176. ISBN
-5-7782-0300-4. {[}in Russian{]}
+7. Klinkovshtejn G.I. Organizacija dorozhnogo dvizhenija: uchebnik dlja
+vuzov. -- 5-e izd., pererab. i dop.- M: Transport, 2001 - 247. ISBN
+9785277022405
 
-6. Brilliant K. Cifrovaja model'{} cheloveka. -- M.:
-Kudic-obraz, 2004.- 400 s. ISBN 5-7782-0300-4. {[}in Russian{]}
+8. Urykov V.A., Zelenina L.I. Modeli transportnogo infrastrukturnogo
+kompleksa //
+\href{https://web.snauka.ru/issues/2014.\%2018.06.2020}{https://web.snauka.ru/issues/2014.
+18.06.2020}. {[}in Russian{]}
 
-\emph{{\bfseries Сведение об авторах}}
+9. Morozov I.I. i dr. Chislennoe issledovanie transportnyh potokov na
+osnove gidrodinamicheskih modelej // Komp' juternye
+issledovanija i modelirovanie.-2011. -T. 3(4).-S. 389-412. {[}in
+Russian{]}
 
-Т.С. Шорманов-- докторант КазНУ имени аль-Фараби, старший преподаватель
-МИТУ, Алматы, Казахстан,
+\emph{{\bfseries Сведения об авторах}}
 
-e-mail\href{mailto:shormanov@gmail.com}{\nolinkurl{shormanov@gmail.com}};
+Тулегулов А.Д. - кандидат физико-математических наук, ассоциированный
+профессор, Казахский университет технологии и бизнеса имени К.
+Кулажанова, Астана, Казахстан, e-mail: tad62@ya.ru;
 
-А.Т. Мазақова -- докторант КазНУ им.аль-Фараби, e-mail:
-\href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}};
+Акишев К.М. - кандидат технических наук, ассоциированный профессор,
+Казахский университет технологии и бизнеса имени К. Кулажанова, Астана,
+Казахстан, e-mail: akmail04@ya.ru;
 
-М.С. Әлиасқар - старший преподаватель МИТУ, Алматы, Казахстан, e-mail:
-\href{mailto:m.alyasqar@gmail.ru}{\nolinkurl{m.alyasqar@gmail.ru}};
+Жамангарин Д. С.- PhD, Казахский университет технологии и бизнеса имени
+К. Кулажанова, Астана, Казахстан, е-mail:
+\href{mailto:Dus_man89@mail.ru}{\nolinkurl{Dus\_man89@mail.ru}};
 
-А.Д. Бургегулов -- докторант КазНУ им.аль-Фараби, e-mail:
-\href{mailto:dizel_kz@bk.ru}{\nolinkurl{dizel\_kz@bk.ru}};
+Юрков Н.К. - доктор технических наук, профессор, Пензенский
+государственный университет, Пенза, Россия, е-mail:
+\href{mailto:kipra@mail.ru}{\nolinkurl{kipra@mail.ru}};
 
-Саметова А.А. -- докторант КазНУ им.аль-Фараби, e-mail:
-\href{mailto:sametova_aygerim@mail.ru}{\nolinkurl{sametova\_aygerim@mail.ru}};
+Акишева Л.К.-исследователь, Назарбаев интеллектуальная школа, Астана,
+Казахстан, е-mail: akmail04@ya.ru
 
-Н.Т. Исимов - заведующий кафедрой МИТУ, Алматы, Казахстан, e-mail:
-\href{mailto:int_nurdaulet@mail.ru}{\nolinkurl{int\_nurdaulet@mail.ru}};
+Алтынбек С. А. {\bfseries -} PhD, ассоциированный профессор, Казахский
+университет технологии и бизнеса, Астана, Казахстан, е-mail:
+\href{mailto:serik_aa@bk.ru}{\nolinkurl{serik\_aa@bk.ru}};
 
-Ш.А. Джомартова - доктор технических наук, доцент, КазНУ им. аль-Фараби,
-Алматы, Казахстан,
-
-e-mail: jomartova@mail.ru;
-
-Т.Ж. Мазаков -- доктор физико-математических наук, профессор, КазНУ им.
-аль-Фараби, Алматы, Казахстан, e-mail: tmazakov@mail.ru.
+Смакова Н.С. - PhD, ассоциированный профессор, Казахский университет
+технологии и бизнеса, Астана, Казахстан, е-mail:nuri\_5@mail.ru
 
 \emph{{\bfseries Information about the authors}}
 
-Shormanov T.S. - PhD student of the Al-Farabi Kazakh National
-University, Lecturer at the International University of Engineering and
-Technology, Almaty, Kazakhstan, e-mail:
-\href{mailto:shormanov@gmail.com}{\nolinkurl{shormanov@gmail.com}};
+Tulegulov A.D. - Candidate of Physical and Mathematical Sciences,
+Associate Professor, Kazakh University of Technology and Business named
+after K. Kulazhanov, Astana, Kazakhstan, e-mail:
+\href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}};
 
-Mazakova A.T. - PhD student of the Al-Farabi Kazakh National University,
-Almaty, Kazakhstan, e-mail:
-\href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}};
+Akishev K.M. - Candidate of Technical Sciences, Associate Professor,
+Kazakh University of Technology and Business named after K. Kulazhanov,
+Astana, Kazakhstan, e-mail:
+\href{mailto:akmail04@ya.ru}{\nolinkurl{akmail04@ya.ru}};
 
-Aliaskar M.S. - Lecturer at the International University of Engineering
-and Technology, Almaty, Kazakhstan, e-mail:
-\href{mailto:m.alyasqar@gmail.ru}{\nolinkurl{m.alyasqar@gmail.ru}};
+Zhamangarin D. S.- PhD, K. Kulazhanov Kazakh University of Technology
+and Business, Astana, Kazakhstan,
 
-Burgegulov A.D. - PhD student of the Al-Farabi Kazakh National
-University, Almaty, Kazakhstan, e-mail:
-\href{mailto:dizel_kz@bk.ru}{\nolinkurl{dizel\_kz@bk.ru}};
+e-mail: \href{mailto:Dus_man89@mail.ru}{\nolinkurl{Dus\_man89@mail.ru}};
 
-Sametova A.A. - PhD student of the Al-Farabi Kazakh National University,
-Almaty, Kazakhstan, e-mail:
-\href{mailto:sametova_aygerim@mail.ru}{\nolinkurl{sametova\_aygerim@mail.ru}};
+Akisheva L.K.-researcher, Nazarbayev Intellectual School, Astana,
+Kazakhstan, e-mail: akmail04@ya.ru
 
-Issimov N.T. - Head of Department at the International University of
-Engineering and Technology, Almaty, Kazakhstan, e-mail:
-\href{mailto:int_nurdaulet@mail.ru}{\nolinkurl{int\_nurdaulet@mail.ru}};
+Yurkov N.K. - Doctor of Technical Sciences, Professor, Penza State
+University, Penza, Russia, е-mail:
+\href{mailto:kipra@mail.ru}{\nolinkurl{kipra@mail.ru}};
 
-Jomartova Sh.A. - Doctor of Technical Sciences, Associate Professor,
-Al-Farabi Kazakh National University,Almaty, Kazakhstan, e-mail:
-jomartova@mail.ru;
+Altynbek S. A. PhD, Associate Professor, Kazakh University of Technology
+and Business, Astana, Kazakhstan, е-mail:
+\href{mailto:serik_aa@bk.ru}{\nolinkurl{serik\_aa@bk.ru}}
 
-Mazakov T.Zh. -- Doctor of Physical and mathematical sciences,
-professor, Al-Farabi Kazakh National University, Almaty, Kazakhstan,
-e-mail: \href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}}
+Smakova N.S.- PhD, Associate Professor, Kazakh University of Technology
+and Business, Astana, Kazakhstan, е-mail: nuri\_5@mail.ru

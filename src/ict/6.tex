@@ -1,1290 +1,547 @@
-\id{IRSTI 28.23.29}
+\id{ҒТАМР 20.15.13}
 
-{\bfseries THERMAL COMFORT PREDICTION USING SVM AND RANDOM FOREST MODEL}
+{\bfseries МАШИНАЛЫҚ ОҚЫТУ ӘДІСТЕРІН ҚОЛДАНУ АРҚЫЛЫ СҮТ БЕЗДЕРІНІҢ
+АУРУЛАРЫН ТИІМДІ ДИАГНОСТИКАЛАУ}
 
-{\bfseries N.B Assymkhan\textsuperscript{\envelope }, A.Z.Kartbaev}
+{\bfseries А.Р. Оразаева, Д.А. Тусупов\textsuperscript{\envelope }}
 
-Kazakh-British Technical University, Almaty, Kazakhstan
+Л.Н. Гумилев атындағы Еуразия ұлттық университеті, Астана, Қазақстан
 
-{\bfseries \textsuperscript{\envelope }}Correspondent-author anb.asymhan@gmail.com
+{\bfseries \textsuperscript{\envelope }}Корреспондент-автор:
+\href{mailto:oaris.83@gmail.com}{tussupov@mail.ru}
 
-Predicting thermal comfort is crucial for optimizing built environments
-for human habitation, as it impacts health, productivity, and overall
-well-being. To address this imperative, interdisciplinary collaboration
-among architects, engineers, psychologists, and data scientists is
-needed to develop reliable predictive models that anticipate occupants'
-thermal comfort preferences across diverse environmental conditions and
-architectural designs. Traditional methods rely on human comfort models,
-which can be subjective and time-consuming. Machine learning algorithms,
-such as Support Vector Machines (SVM) and Random Forest (RF), have been
-utilized to predict thermal comfort with high accuracy and efficiency.
-The Internet of Things (IoT) is revolutionizing the building management
-systems industry, with adaptive control algorithms and modular
-architectures exploring the IoT paradigm. This paper discusses the use
-of SVM and Random Forest algorithms for predicting thermal comfort in
-buildings, exploring their strengths and weaknesses and comparing their
-performance in different scenarios. The study analyzed a dataset of
-thermal comfort data, filtering by quantity and removing outliers. The
-data was split into 80\% for training and 20\% for testing. The study
-used SVM and Random Forest models to capture complex relationships
-between environmental parameters and thermal comfort responses. The
-results showed that the IQR method provided 3-4\% accuracy, while the
-reducing label values method offered 20-23\% accuracy. The study also
-tested the parameters of the models, resulting in a 2-4\% difference
-between the two models. The study concluded that Random Forest appears
-more stable than SVM and plans to add new features to improve accuracy.
+Бұл мақала заманауи машиналық оқыту технологияларын, атап айтқанда, You
+Only Look Once (YOLOv8) және Faster Region-based Convolutional Neural
+Network (R-CNN) пайдалана отырып, сүт бездерінің патологиясын тиімді
+анықтау әдістерін зерттеуге және дамытуға бағытталған. Мақалада сүт безі
+ауруларын диагностикалаудың қолданыстағы тәсілдеріне талдау жасалып,
+олардың тиімділігі бағаланады. YOLOv8 және Faster R-CNN архитектуралары
+маммографиялық кескіндердегі патологияларды анықтау үлгілерін жасау үшін
+қолданылады. Зерттеу әртүрлі ауырлық дәрежесін және аурудың
+сипаттамаларын ескере отырып, алты түрлі деңгейде анықталған сүт безі
+патологияларын жіктейді және талдайды. Бұл әдіс аурудың дамуын дәлірек
+бағалауға мүмкіндік береді және емдеуді жекелендірілген жоспарлау үшін
+қосымша ақпаратты ұсынады. Осы деңгейлердегі жіктеу нәтижелері
+медициналық шешімдер қабылдау сапасын жақсарта алады және дәрігерлерге
+дәлірек ақпарат береді, дәлірек айтсақ, сүт безі ауруларын
+диагностикалау мен емдеудің жалпы тиімділігін арттырады. Эксперименттік
+нәтижелер сүт бездерінің ықтимал патологияларын жылдам және сенімді
+анықтауға мүмкіндік беретін жоғары дәлдік пен кескінді жылдам өңдеуді
+көрсетеді. Зерттеу нәтижелері медициналық диагностикада машиналық оқыту
+алгоритмдерінің тиімділігін растайды, ерте диагностика мен емдеу
+нәтижелерін жақсарту үшін сүт безі ауруларын анықтаудың
+автоматтандырылған жүйелерін одан әрі дамыту әлеуетін көрсетеді.
 
-{\bfseries Keywords:} Heating, ventilation, and air conditioning,
-temperature, thermal comfort, support vector machine (SVM), random
-forest (RF).
+{\bfseries Түйін сөздер.} Терең оқыту, Faster Region-based Convolutional
+Neural Network (R-CNN), You Only Look Once (YOLOv8), деректер базасы,
+модель.
 
-{\bfseries ПРОГНОЗИРОВАНИЕ ТЕПЛОВОГО КОМФОРТА С ПОМОЩЬЮ МОДЕЛИ SVM И RANDOM
-FOREST}
+{\bfseries ЭФФЕКТИВНАЯ ДИАГНОСТИКА ЗАБОЛЕВАНИЙ МОЛОЧНОЙ ЖЕЛЕЗЫ С
+ПРИМЕНЕНИЕМ МЕТОДОВ МАШИННОГО ОБУЧЕНИЯ}
 
-{\bfseries Н.Б.Асымхан\textsuperscript{\envelope }, А.З.Картбаев}
+{\bfseries А.Р. Оразаева, Д.А. Тусупов \textsuperscript{\envelope }}
 
-Казахстанско-Британский Технический Университет,Алматы, Казахстан,
+Евразийский национальный университет имени Л.Н. Гумилева, Астана,
+Казахстан,
 
-e-mail: anb.asymhan@gmail.com
+e-mail: \href{mailto:oaris.83@gmail.com}{tussupov@mail.ru}
 
-Прогнозирование теплового комфорта имеет решающее значение для
-оптимизации строительных сред для человеческого проживания, так как оно
-влияет на здоровье, производительность и общее благополучие. Для решения
-этой задачи требуется междисциплинарное сотрудничество архитекторов,
-инженеров, психологов и специалистов по обработке данных для разработки
-надежных прогностических моделей, предвидящих предпочтения жильцов к
-тепловому комфорту в различных климатических условиях и архитектурных
-решениях. Традиционные методы основаны на моделях комфорта человека,
-которые могут быть субъективными и затратными по времени. Алгоритмы
-машинного обучения, такие как Support Vector Machine (SVM) и Random
-Forest (RF), использовались для прогнозирования теплового комфорта с
-высокой точностью и эффективностью. Интернет вещей (IoT)
-революционизирует отрасль систем управления зданиями, с адаптивными
-управляющими алгоритмами и модульными архитектурами, исследующими
-парадигму IoT. В данной статье обсуждается использование алгоритмов SVM
-и Random Forest для прогнозирования теплового комфорта в зданиях,
-исследуются их преимущества и недостатки, а также сравнивается их
-производительность в различных сценариях. В рамках исследования был
-проанализирован набор данных по тепловому комфорту, произведена
-фильтрация по количеству и удаление выбросов. Данные были разделены на
-80\% для обучения и 20\% для тестирования. В исследовании использовались
-модели SVM и Random Forest для выявления сложных взаимосвязей между
-параметрами окружающей среды и реакциями на тепловой комфорт. Результаты
-показали, что метод IQR обеспечил точность в 3-4\%, в то время как метод
-уменьшения значений меток предоставил точность в 20-23\%. Также были
-проверены параметры моделей, что привело к различию в 2-4\% между двумя
-моделями. Исследование заключает, что Random Forest оказался более
-устойчивым, чем SVM, и планирует добавить новые функции для повышения
-точности.
+Данная статья сосредоточено на исследовании и разработке методов
+эффективного обнаружения патологий молочной железы с использованием
+современных технологий машинного обучения, в частности You Only Look
+Once (YOLOv8) и Faster Region-based Convolutional Neural Network
+(R-CNN). В статье представлен анализ существующих подходов к диагностике
+заболеваний молочной железы и дана оценка их эффективности. Архитектуры
+YOLOv8 и Faster R-CNN используются для разработки моделей обнаружения
+патологий на маммографических снимках. Исследование классифицирует и
+анализирует выявленные патологии молочной железы на шести различных
+уровнях с учетом различной степени тяжести и характеристик заболеваний.
+Этот метод позволяет более точно оценить прогрессирование заболевания и
+предлагает дополнительные сведения для более персонализированного
+планирования лечения. Результаты классификации на этих уровнях могут
+повысить качество принятия медицинских решений и предоставить врачам
+более точную информацию, в конечном итоге повышая общую эффективность
+диагностики и лечения заболеваний молочной железы. Экспериментальные
+результаты показывают высокую точность и быструю обработку изображений,
+что позволяет быстро и надежно обнаруживать потенциальные патологии
+молочной железы. Результаты исследования подтверждают эффективность
+алгоритмов машинного обучения в медицинской диагностике, подчеркивая
+потенциал дальнейшего развития автоматизированных систем обнаружения
+заболеваний молочной железы для улучшения ранней диагностики и
+результатов лечения.
 
-{\bfseries Ключевые слова:} отопление, вентиляция и кондиционирование
-воздуха, температура, тепловой комфорт, Support Vector Machine (SVM),
-Random Forest (RF).
+{\bfseries Ключевые слова.} Глубокое обучение, Faster Region-based
+Convolutional Neural Network (R-CNN), You Only Look Once (YOLOv8), база
+данных, модель.
 
-{\bfseries SVM ЖӘНЕ RANDOM FOREST МОДЕЛДЕРІН ПАЙДАЛАНУ АРҚЫЛЫ}
+{\bfseries EFFECTIVE DIAGNOSTICS OF BREAST DISEASES USING MACHINE LEARNING
+METHODS}
 
-{\bfseries ЖЫЛУЛЫҚ ЖАЙЛЫЛЫҚТЫ БОЛЖАУ}
+{\bfseries A.R. Orazayeva, J.A. Tussupov\textsuperscript{\envelope }}
 
-{\bfseries Н.Б. Асымхан\textsuperscript{\envelope }, А.З.Картбаев}
+L.N. Gumilyov Eurasian National University, Astana, Kazakhstan,
 
-Қазақстан-Британ Техникалық Университеті, Алматы, Қазақстан,
+e-mail: \href{mailto:oaris.83@gmail.com}{tussupov@mail.ru}
 
-e-mail: anb.asymhan@gmail.com
+This study focuses on researching and developing methods for the
+efficient detection of breast pathologies using modern machine learning
+technologies, specifically You Only Look Once (YOLOv8) and Faster
+Region-based Convolutional Neural Network (R-CNN). The paper provides an
+analysis of existing approaches to diagnosing breast diseases and
+evaluates their effectiveness. The YOLOv8 and Faster R-CNN architectures
+are employed to develop models for detecting pathologies in mammography
+images. The research classifies and analyzes identified breast
+pathologies at six different levels, considering varying degrees of
+severity and characteristics of the diseases. This method enables a more
+accurate assessment of disease progression and offers additional
+insights for more personalized treatment planning. Classification
+results across these levels can enhance medical decision-making quality
+and provide doctors with more precise information, ultimately improving
+the overall efficiency of breast disease diagnosis and treatment.
+Experimental results show high accuracy and rapid image processing,
+enabling fast and reliable detection of potential breast pathologies.
+The findings confirm the effectiveness of machine learning algorithms in
+medical diagnostics, highlighting the potential for further advancements
+in automated breast disease detection systems to enhance early diagnosis
+and treatment outcomes.
 
-Жылулық жайлылықты болжау адам тұруы үшін салынған ортаны оңтайландыру
-үшін өте маңызды, өйткені ол денсаулыққа, өнімділікке және жалпы
-әл-ауқатқа әсер етеді. Бұл мәселені шешу сәулетшілер, инженерлер,
-психологтар және деректер ғалымдары арасындағы әртүрлі климаттық және
-сәулеттік дизайндағы тұрғынның жылулық жайлылық қалауларын болжайтын
-сенімді болжамды модельдерді әзірлеу үшін пәнаралық ынтымақтастықты
-талап етеді. Дәстүрлі әдістер субъективті және уақытты қажет ететін адам
-жайлылық үлгілеріне сүйенеді. Support Vector Machine (SVM) және Random
-Forest (RF) сияқты машиналық оқыту алгоритмдері жоғары дәлдік пен
-тиімділікпен термиялық жайлылықты болжау үшін пайдаланылды. Заттардың
-интернеті (IoT) парадигмасын зерттейтін адаптивті басқару алгоритмдері
-мен модульдік архитектуралары арқылы ғимараттарды басқару жүйелерінің
-индустриясында төңкеріс жасайды. Бұл мақалада ғимараттардағы жылулық
-жайлылықты болжау үшін SVM және Random Forest алгоритмдерін пайдалану
-талқыланады, олардың артықшылықтары мен кемшіліктері зерттеледі және
-әртүрлі сценарийлердегі олардың өнімділігі салыстырылады. Зерттеудің бір
-бөлігі ретінде термиялық жайлылық деректерінің жиынтығы талданды, саны
-бойынша сүзілді және шектен тыс мәндер жойылды. Деректер оқу үшін 80\%
-және тестілеу үшін 20\% бөлінді. Зерттеу қоршаған орта параметрлері мен
-жылулық жайлылық реакциялары арасындағы күрделі қатынастарды анықтау
-үшін SVM және Random Forest үлгілерін пайдаланды. Нәтижелер
-көрсеткендей, IQR әдісі 3-4\% дәлдік береді, ал жапсырманы азайту әдісі
-20-23\% дәлдік береді. Модельдердің параметрлері де тексерілді,
-нәтижесінде екі модель арасында 2-4\% айырмашылық болды. Зерттеу Random
-Forest SVM-ге қарағанда сенімдірек екенін дәлелдеді және дәлдікті
-жақсарту үшін жаңа мүмкіндіктерді қосуды жоспарлап отырмыз.
+{\bfseries Keywords.} Deep learning, Faster Region-based Convolutional
+Neural Network (R-CNN), You Only Look Once (YOLOv8), database, model.
 
-{\bfseries Tүйін сөздер:} жылыту, желдету және ауаны баптау, температура,
-термиялық жайлылық, Support Vector Machine (SVM), Random Forest (RF).
+{\bfseries Кіріспе.} Қазіргі заманғы медициналық диагностикалық
+технологиялар {[}1-4{]} машиналық оқыту мүмкіндіктері мен қағидаларын
+ауруларды анықтаудың дәлдігі мен тиімділігін арттыру мақсатында қарқынды
+түрде даму үстінде {[}5, 6{]}. Әйелдер денсаулығын қорғаудағы маңызды
+мәселелердің бірі -- сүт безі ауруларын {[}7-10{]}, соның ішінде қатерлі
+ісіктің әртүрлі түрлерін {[}11-12{]} және басқа да бұзылыстарды анықтау
+болып табылады. Бұл мақалада сүт безі патологиясын анықтаудың тиімді
+әдістері қарастырылып, оның өзектілігі ерекше атап өтіледі. Машиналық
+оқыту, атап айтқанда, You Only Look Once (YOLOv8) {[}13-16{]} және
+Faster Region-based Convolutional Neural Network (R-CNN) {[}17-18{]}
+алгоритмдері талдау процесін автоматтандыруда келешегі зор құралдар
+ретінде ұсынылады. Аталған әдістер маммографиялық суреттерден ықтимал
+патологияларды анықтап қана қоймай, оларды әртүрлі ауырлық деңгейлеріне
+классификациялауға мүмкіндік береді. Бұл тәсіл сүт безі ауруларын ерте
+анықтау және жеке емдеу әдістерін қолдануға жаңа мүмкіндіктер ашады
+{[}19-20{]}.
 
-{\bfseries Introduction.} In the pursuit of optimizing built environments
-for human habitation, predicting thermal comfort emerges as a pivotal
-challenge. With climate change intensifying, the frequency and severity
-of extreme weather events are increasing, amplifying the significance of
-understanding and managing indoor thermal conditions. The need to
-predict thermal comfort stems from its profound impact on human health,
-productivity, and overall well-being. Inadequate thermal conditions,
-whether excessive heat or cold, can lead to discomfort, fatigue, and
-even health complications, thereby compromising individuals' quality of
-life and impeding productivity in various settings, including
-workplaces, educational institutions, and residential spaces.
+Бұл зерттеуде біз YOLOv8 және Faster R-CNN алгоритмдерін пайдалана
+отырып, сүт безі патологияларын анықтаудың тиімді әдістерін әзірлеуге
+және тестілеуге назар аударамыз. Аталған әдістерді талдау, салыстыру
+және олардың медициналық тәжірибедегі қолданылуы сүт безі ауруларын
+диагностикалау мен емдеу саласын елеулі түрде жетілдіріп, диагностикалық
+процедуралардың дәлдігі мен тиімділігін арттыруға мүмкіндік береді. Сүт
+безі патологияларын диагностикалаудың заманауи әрі тиімді әдістеріне
+қолжетімділікті қамтамасыз ету денсаулық сақтау стратегиясының маңызды
+бөлігін құрайды. Сүт безінің аурулары, соның ішінде сүт безі қатерлі
+ісігі, әйелдер денсаулығына ең жиі кездесетін әрі қауіпті аурулардың
+бірі болып табылады. Осыған орай, машиналық оқытудың алдыңғы қатарлы
+технологияларын қолдану скрининг пен диагностика сапасын жақсартып,
+ауруды анықтау мен емдеуді бастау арасындағы уақытты қысқартудың тиімді
+құралы бола алады. Алайда, осындай артықшылықтарына қарамастан,
+медициналық практикаға машиналық оқыту алгоритмдерін енгізу олардың
+дәлдігі мен сенімділігін, сондай-ақ денсаулық сақтау саласындағы
+деректер қауіпсіздігі стандарттарына сәйкестігін мұқият зерттеуді қажет
+етеді. Бұл мақалада машиналық оқыту технологияларын медициналық
+тәжірибеге қалай тиімді интеграциялауға болатынын және оларды қауіпсіз
+әрі тиімді пайдалану үшін қандай шаралар қабылдау керектігін
+қарастырамыз.
 
-Furthermore, the economic implications of disregarding thermal comfort
-cannot be overlooked. Suboptimal indoor climates contribute to increased
-energy consumption as occupants resort to heating or cooling systems to
-mitigate discomfort, resulting in inflated utility bills and
-environmental repercussions. Hence, there is a pressing need to develop
-reliable predictive models that anticipate occupants' thermal comfort
-preferences across diverse environmental conditions and architectural
-designs. These models should consider factors such as ambient
-temperature, humidity levels, clothing insulation, metabolic rates, and
-individual preferences to furnish accurate assessments of thermal
-comfort levels. Addressing this imperative requires interdisciplinary
-collaboration among architects, engineers, psychologists, and data
-scientists to integrate knowledge from environmental science, human
-physiology, and behavioral psychology. By leveraging advancements in
-sensor technology, data analytics, and machine learning algorithms,
-predictive models can be refined to offer real-time insights into
-thermal comfort dynamics, empowering building managers and occupants to
-optimize indoor environments for enhanced well-being and sustainable
-resource utilization. Let's look at how this all affects in more detail
-and with an example. Many people know that temperature is a very
-important factor for a person, when you start to get sick, the
-temperature of your blood rises and this gives you a signal that you
-have been poisoned or caught a cold. In a word, it signals that
-something has gone wrong in your body. Now how does the room temperature
-affect and why do we need a comfortable temperature? For example,
-consider a summer day when you start preparing for lessons or studying
-something, you close the door of your room so that the noise does not
-interfere with your studies and close the window because it is hot
-outside. But, here the opposite effect occurs, since you closed the
-door, you reduced the area of the room and the speed of airflow into
-your room. Further, carbon dioxide will be released, which will fill the
-room, thereby reducing the oxygen in the room and increasing the
-temperature of the room. Thus, you become a little distracted and
-lethargic. You can correct the situation by opening the door of the
-room. Also, when you are late for a lesson or a meeting or an exam, you
-will release a stress hormone that will increase your body temperature
-and your heart rate, given that not only you are sitting in the exam,
-but about 40 people and everyone has an increased level of stress and
-this affects the fact that oxygen is quickly absorbed and replaced by
-carbon dioxide. This will heat up the temperature of the classrooms and
-reduce the efficiency level of the students inside. And therefore,
-usually at the beginning of the exam, some questions are not clear, then
-as the stress level decreases, then clarity of mind opens up. Usually,
-the door is opened for this because it has become hot, but there are
-HVAC or NV systems for this, which sometimes turn off or they do not
-work correctly. Thus, if the comfortable temperature recognition system
-works correctly, then by choosing the temperature, you can reduce the
-level of stress that will be at the beginning of the exam, thereby
-increasing efficiency. If it's cold in the classrooms, usually people
-fall asleep, you can notice it when you arrive early at 8 in the morning
-for the first lessons, this is because the human body feels cold and
-goes into an energy-saving mode like bears in hibernation. That's why
-thermal comfort prediction is a crucial aspect of building design and
-management as it determines the satisfaction level of occupants in a
-given space. Predicting thermal comfort involves analyzing various
-factors such as temperature, humidity, air velocity, and clothing
-insulation. Traditional methods of predicting thermal comfort rely on
-human comfort models, which can be subjective and time-consuming. In
-recent years, machine learning algorithms, such as Support Vector
-Machines (SVM) and Random Forest (RF), have been utilized to predict
-thermal comfort with high accuracy and efficiency. SVM and RF are both
-supervised learning algorithms that can be trained on a dataset of
-thermal comfort parameters and their corresponding human feedback to
-accurately predict thermal comfort in new environments.
+Бұл зерттеу нәтижесінде біз сүт безі патологияларын анықтаудың жаңа,
+тиімді әдістерін енгізуді ғана көздеп қоймай, сондай-ақ олардың
+медициналық тәжірибеде қолдану мүмкіндігін көрсетіп, сүт безі ауруларын
+диагностикалау мен емдеуді жетілдіруге елеулі үлес қосуды мақсат етеміз.
+Технологияның үздіксіз дамуы және денсаулық сақтау саласындағы өсіп келе
+жатқан қажеттіліктер аясында сүт безі патологияларын анықтау {[}21{]},
+{[}22{]} әлемдік денсаулық сақтаудағы маңызды мәселеге айналып отыр. Сүт
+безі қатерлі ісігі -- әйелдер арасында ең жиі кездесетін әрі өлімге
+әкелетін онкологиялық аурулардың бірі болып қала береді. Заридзе Д.Г.
+және т.б. {[}23{]} мақаласында қатерлі ісіктерден болатын өлім-жітімді
+азайтуға алғашқы профилактиканы, скринингтік тексеруді және емдеуді қоса
+алғанда, ғылыми негізделген кешенді мақсатты бағдарламаны іске асыру
+нәтижесінде ғана қол жеткізуге болатынын зерттеген. Давыдов М. И. және
+т.б. {[}24{]} өз мақаласында симптомсыз ісіктерді ерте анықтау және оны
+емдеу, сонымен қатар скрининг өлімді азайтуға әкелетіндігі туралы
+жазған. {[}25{]} мақала сүт безі қатерлі ісігінің аурушаңдық, өлім және
+өмір сүрудегі негізгі факторларын және олардың рөлін анықтаған. Бұл
+жұмыстардың жалпы бағыты қатерлі ісікті алдын алу.
 
-{\bfseries Literature review.}The Internet of Things (IoT) is
-revolutionizing the building management systems industry, with the
-number of connected devices expected to reach 125 billion by 2030.
-However, the current BMS solutions are limited in flexibility,
-particularly in feedback control options. To fully harness the IoT
-paradigm, adaptive control algorithms and modular architectures have
-been explored.
+{[}26{]} мақалада конволюционды нейрондық желілерге (CNN) негізделген
+кескіндерді классификациялау алгоритмдеріне шолу жасалған. Авторлар
+қашықтықтан зондтау мақсатында CNN қолданудың негізгі архитектуралары
+мен әдістерін, сондай-ақ қол жеткізілген нәтижелерді талқылайды, әсіресе
+кескінді классификациялаудың дәлдігі мен тиімділігін арттыру мәселесіне
+ерекше назар аударады. Ал {[}27{]} мақалада Пап-тест кескіндерін
+классификациялау үшін цитопатологтарға арналған ансамбльдік терең оқыту
+әдісі сипатталады. Авторлар диагностикалық дәлдікті арттыру мақсатында
+бірнеше терең оқыту модельлерін біріктіретін жүйе әзірлеген. Бұл әдіс
+медициналық бейнелерді талдау процесін автоматтандыруға көмектесіп,
+мамандардың жұмыс жүктемесін азайтуға ықпал етеді. {[}26{]} және
+{[}27{]} еңбектерді талдау нәтижесінде, терең оқыту әдістері, әсіресе
+конволюционды нейрондық желілер мен ансамбльдік оқыту, кескін
+классификациясын әртүрлі салаларда жақсартуда маңызды рөл атқаратыны
+анықталды. Бұл технологиялар талдау дәлдігі мен тиімділігін арттырып
+қана қоймай, сонымен қатар процестерді автоматтандыруға, мамандардың
+жұмысын жеңілдетуге және диагностика мен деректерді өңдеудің сапасын
+жақсартуға ықпал етеді. Жасанды интеллект қолдану арқылы маммографиядан
+алынған кескіндер, клиникалық, генетикалық және патологиялық деректерді
+біріктіру тәуекел модельлерін жетілдіруге мүмкіндік береді. Жаңа
+бейнелеу әдістері, генетикалық тестілеу және молекулярлық профильдеу
+қауіп модельлерінің дәлдігін арттыруға ықпал етеді. Аурудың күрделілігі,
+деректердің шектеулі болуы және модельлерді енгізу параметрлері де
+зерттеуде талқыланады. Ерте анықтау және емдеу нәтижелерін жақсарту үшін
+пәнаралық тәсілдің маңыздылығы ерекше атап өтіледі. Медициналық
+диагностикадағы прогресті ескере отырып, сүт безі ауруларын тиімді әрі
+уақытылы анықтау қажеттілігі артып келеді, бұл машиналық оқыту әдістері
+сияқты инновациялық технологияларды енгізуді талап етеді. YOLOv8 және
+Faster R-CNN секілді машиналық оқыту алгоритмдерін қолдану арқылы
+автоматтандырылған медициналық кескін талдауында жаңа мүмкіндіктер
+ашылып, диагностика сапасы айтарлықтай жақсарады, бұл өз кезегінде сәтті
+емдеу ықтималдығын арттырады. Бұл зерттеу осы әдістердің медицинадағы
+маңыздылығын және сүт безі патологияларын емдеуде олардың әлеуетін
+көрсетуге бағытталған.
 
-The authors propose the ''Semantically-Enhanced IoT-enabled Intelligent
-Control System'' (SEMIoTICS) architecture, which exploits redundancy in
-control system capabilities and automatically implements alternative
-configurations based on quality-of-service criteria {[}1{]}. A study
-introduces a novel model that excludes gender and age factors in thermal
-comfort assessment. The model considers six thermal factors: air
-temperature, mean radiant temperature, relative humidity, air speed,
-clothing insulation, and metabolic rate. The model is designed using
-Supervised Machine Learning in a commercial building {[}2{]}. A study in
-Bilbao, Spain, analyzes human thermal perception in response to external
-temperatures using KUBIK, an energy efficiency research facility, to
-improve indoor comfort and reduce energy consumption {[}3{]}. This study
-evaluates indoor thermal comfort using Fanger method and ASHRAE Standard
-55, focusing on real-world conditions to maintain well-being,
-productivity, and energy conservation in buildings {[}4{]}. This study
-introduces a multiple preferencesbased model for predicting group
-thermal comfort in shared spaces, integrating individual preferences and
-environmental parameters. It segments occupants based on BMI, predicts
-individual comfort zones, and adjusts for group satisfaction {[}5{]}.
-Thermal comfort optimization in buildings is crucial for occupant
-well-being, productivity, and energy efficiency. Assessment involves
-models considering air temperature, humidity, radiant temperature, and
-speed. ASHRAE 55 standards define acceptable conditions. Alternative
-models like Artificial Neural Networks, hybrid ANN-fuzzy models, SVM,
-decision trees, fuzzy logic, and Bayes networks offer flexibility and
-accuracy {[}6{]}. Thermal comfort is a crucial aspect of indoor
-environmental quality, categorized into static, adaptive, and
-data-driven models. Static models like PMV, which integrate
-environmental and personal factors, have limitations. Adaptive models
-consider psychological and behavioral factors, while data-driven models
-use sensor technology for realtime assessments {[}7{]}. The authors
-develop a building thermal model using low-resolution data from smart
-thermostats, enhancing accuracy and applicability across seasons. They
-adapt traditional empirical models into a data-driven approach, using
-surrogate features to approximate heat gains. The model can be
-implemented on edge devices or cloud infrastructure, offering advantages
-in data collection, model learning, and deployment {[}8{]}. Research on
-indoor thermal comfort has focused on innovative cooling systems like
-Thermoelectric Air Duct. Neural network models have shown accuracy in
-predicting comfort parameters, especially in dynamic environments. The
-relationship between climatic variables, occupant comfort, and system
-performance is crucial {[}9{]}. Thermal comfort prediction and energy
-optimization in buildings are crucial for occupant satisfaction and
-energy efficiency. Factors influencing comfort include metabolic rate,
-clothing insulation, and air temperature. Deep feedforward neural
-networks and reinforcement learning models help predict comfort levels.
-Monitoring and optimizing HVAC energy consumption is essential for
-building operation {[}10{]}. The authors present a novel methodology
-using machine learning, data mining, and statistics to develop
-predictive models for Combined Heat, Cooling, and Power (CHCP) systems.
-The methodology includes four stages: data preparation, data
-engineering, model building, and model evaluation. Data preparation
-involves retrieving failure events, labeling instances, and creating a
-comprehensive dataset. Data engineering enhances data representation
-through feature extraction and feature selection. The model building
-uses machine learning algorithms for classification and regression
-tasks. Model evaluation considers time to failure (TTF) and performance
-metrics for suitable selection {[}11{]}. The study explores thermal
-comfort in indoor environments using a novel approach called Relative
-Thermal Sensation (RTS). The RTS considers thermal sensation as a
-continuous function of time, providing a more nuanced understanding of
-human thermal sensation. The authors propose a 3-point RTSS to gather
-real-time data on relative thermal sensation, capturing subtle changes
-in thermal perception that traditional discrete scales may not capture.
-The study also integrates RTS data with Absolute Thermal Sensation data
-from modified versions of the ASHRAE 7-point thermal sensation scale to
-develop a more comprehensive understanding of thermal comfort {[}12{]}.
-Interpretable thermal comfort systems are being explored to improve
-energy efficiency and occupant satisfaction in smart building
-environments. Traditional models like the Predicted Mean Vote (PMV) are
-often uninterpretable, making it difficult for building operators to
-understand the underlying mechanisms driving thermal comfort.
-Researchers have proposed interpretable thermal comfort systems using
-machine learning techniques like Partial Dependence Plots (PDP) and SHAP
-values. These techniques help operators understand the impact of
-environmental conditions on human comfort and the importance of
-different features under varying conditions. Additionally, interpretable
-ML algorithms can be used to develop surrogate models of existing
-comfort models {[}13{]}.
+{\bfseries Материалдар мен әдістер.} Бұл зерттеу сүт бездерінің
+маммографиялық кескіндеріндегі патологияларды анықтауға арналған екі
+жетілдірілген компьютерлік көру алгоритмін оқытуды талдайды: You Only
+Look Once (YOLOv8) және Faster Region-based Convolutional Neural Network
+(Faster R-CNN). Алайда, олардың тиімділігі мен сенімділігін толығымен
+растау үшін контрастты күшейту және тін құрылымының маңызды бөлшектерін
+айқындау мақсатында кескінді өңдеу әдістері, мысалы, пиксель мәндерін
+қалыпқа келтіру және гистограмманы теңестіру, қолданылып, әртүрлі әрі
+көлемді деректер базасында қосымша сынақтар қажет. Деректерді алдын ала
+өңдеудің бірегей әдістерінің бірі -- аномальды аймақтарды маска ретінде
+белгілеу болды, бұл аномалиялардың шектеу ұяшықтарын (Bounding Boxes)
+тиімді бөлектеуге мүмкіндік берді. Бұл маскалар патологияның түрі мен
+деңгейі туралы ақпарат беретін модельдерге аннотация ретінде қолданылды.
+Модельдерді оқыту мен тексерудің сапасын қамтамасыз ету үшін деректер
+оқыту және валидация жиындарына бөлінді. Оқыту процесі YOLOv8 және
+Faster R-CNN модельдері бойынша 1-суретте көрсетілгендей екі модель
+бойынша өтті. Алдын ала дайындалған салмақтар қолданылып, модельдер
+бірнеше оқу дәуірлері бойы жаттығудан өтті. Валидация кезінде
+модельлердің валидациялық деректер базасындағы өнімділігі бағаланды.
+Нәтижелер жоғалтудың, дәлдіктің және F1 өлшемінің оқу дәуірлеріне
+тәуелділігін көрсететін графиктер арқылы талданды. Медициналық
+бейнелерден аномалияларды анықтау үшін компьютерлік модельдерді оқыту
+күрделі әрі көпқырлы процесс болып табылады. Осы зерттеу нәтижелеріне
+сүйене отырып, YOLOv8 және Faster R-CNN модельдерінің медициналық
+диагностикада, әсіресе маммографиялық суреттердегі сүт безі
+патологияларын анықтауда перспективалары бар деген қорытынды жасауға
+болады. Дегенмен, олардың тиімділігін және сенімділігін дәлелдеу үшін
+қосымша сынақтар қажет, сонымен қатар ықтимал қателіктерді талдау және
+түзету үшін модельлерді одан әрі зерттеу маңызды.
 
-In this paper, we will discuss the use of SVM and Random Forest
-algorithms for predicting thermal comfort in buildings. We will explore
-their strengths and weaknesses and compare their performance in
-different scenarios. The aim of this study is to provide a comprehensive
-understanding of the potential of these machine learning algorithms in
-predicting thermal comfort, which can help to build designers and
-facility managers optimize the indoor environment and improve the
-comfort of building occupants.
-
-{\bfseries Materials and Methods.} The primary objective of this study is
-to offer a comprehensive understanding of the potential of machine
-learning algorithms in predicting thermal comfort. This knowledge can be
-instrumental in assisting designers and facility managers in optimizing
-the indoor environment, ultimately enhancing the comfort of building
-occupants.
-
-\emph{Hypotheses:}
-
-Before commencing our experiments, we have formulated the following
-hypotheses:
-
-1) Data Preprocessing:
-
-- It is essential to remove NaN values and set boundaries on the number
-of values in each column to ensure the selection of appropriate
-features.
-
-- Utilizing the IQR (Interquartile Range) method for label value
-reduction to handle outliers effectively.
-
-2) Encoder Selection:
-
-- The choice of encoder, whether it be OneHotEncoder, LabelEncoder, or
-Word2Vec, will be critical in transforming categorical variables into a
-format suitable for machine learning algorithms.
-
-3) Feature Selection with SelectKBest:
-
-- Utilizing the SelectKBest model will assist us in identifying a list
-of features that are most relevant to the thermal comfort prediction.
-
-4) Feature Filtering:
-
-- After initial filtering, we will choose variants of the features that
-closely correlate with temperature predictions.
+Модельдің дәлдігі мен жалпылау қабілеті арасында оңтайлы тепе-теңдікке
+қол жеткізу үшін гиперпараметрлерді, соның ішінде регуляризация
+параметрлері мен оқу жылдамдығын мұқият баптау маңызды қадам болып
+табылады. Сонымен қатар, Faster R-CNN моделінің жалпы өнімділігі мен
+тұрақтылығын бағалау мақсатында валидация және сынақ модельлерінде
+тестілеу жүргізіледі. Зерттеу Faster R-CNN-ның оқыту және тестілеу
+нәтижелерін дәлдік, еске түсіру және F1-өлшем сияқты көрсеткіштерді
+пайдаланып салыстырмалы талдаудан басталады. Бұл көрсеткіштер модельдің
+сүт безі патологияларын дәл анықтау және локализациялау қабілетін
+бағалауға мүмкіндік береді. Кейіннен Faster R-CNN моделінің жоғары
+дәлдікпен патологияны анықтау артықшылықтарын көрсету үшін, 2-суретте
+көрсетілгендей, YOLOv8 сияқты баламалы әдіспен салыстыру жүргізіледі.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image17}
+	\includegraphics[width=0.8\textwidth]{media/ict/image23}
 	\caption*{}
 \end{figure}
 
 
-{\bfseries Figure 1 -- Steps}
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\item
-  \emph{Dataset}
-\end{enumerate}
-
-The data was taken from the Kaggle dataset which was taken from the
-ASHRAE dataset {[}14{]}. The data has 70 columns and 107583 rows.
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{1}
-\item
-  \emph{Filtering data}
-\end{enumerate}
-
-In the beginning, after looking at the description of the data, we do
-filtering, when viewing it, it turned out that some columns have little
-data. Because of this, filtering by quantity went on, and 60.000 lines
-were taken by the border. Below this boundary, all data was deleted,
-then it was necessary to remove the Nan value, some rows could remain
-empty because we had 107583 rows from the beginning. One more hypothesis
-to test, the idea is to use \emph{IQR} (Inter Quartile Range) method to
-remove outliers if it is exist.
+{\bfseries 1-сурет. Екі модель үшін классификатор жоғалтуының графикалық
+салыстырылуы}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image18}
+	\includegraphics[width=0.8\textwidth]{media/ict/image24}
 	\caption*{}
 \end{figure}
 
 
-{\bfseries Figure 2 - Filtering scheme}
+{\bfseries 2-сурет. Екі модель арасындағы рамканың регрессия жоғалтуын
+салыстыру}
 
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{2}
-\item
-  \emph{Encoding}
-\end{enumerate}
+Әдістеме Faster R-CNN-ның соңғы нәтижелеріне оқу моделінің мөлшері мен
+түрлі оқу параметрлерінің әсерін талдауға бағытталған. Бұл сүт
+бездерінің патологияларын анықтау кезінде максималды дәлдікке қол
+жеткізу үшін оңтайлы параметрлер мен жағдайларды анықтауға мүмкіндік
+береді. Соңғы нәтижелер мен қорытындылар медициналық тәжірибеде сүт безі
+патологиясын жоғары дәлдікпен анықтаудың тиімді құралы ретінде Faster
+R-CNN әдісін таңдаудың негізін құрайды. Әдістеме сонымен қатар, Faster
+R-CNN арқылы анықталған патологияларды автоматтандырылған және қолмен
+талдау механизмдерімен сапаны бақылау жүйесін құруды көздейді. Бұл кезең
+нақты клиникалық тәжірибеде модель нәтижелерінің сенімділігі мен
+дәлдігін тексеруге бағытталған. Анықталған өзгерістерді медициналық
+мамандардың қолмен тексеруі патологияларды дәл анықтауға қосымша
+сенімділік деңгейін қамтамасыз етеді, әсіресе жоғары дәлдік аса маңызды
+болған жағдайда. Бұдан бөлек, әдістеме Faster R-CNN моделін нақты
+уақытта немесе шын уақыт режимінде қолдану үшін қажетті есептеу
+ресурстарын талдауды қамтиды. Бұл әзірленген әдісті диагностикалық
+тиімділігі жоғары медициналық мекемелерге интеграциялау мүмкіндігін
+қарастырған кезде маңызды аспект болып табылады. Faster R-CNN
+нәтижелерін басқа машиналық оқыту әдістерімен және маммографиядағы
+дәстүрлі тәсілдермен салыстыру сүт безі патологиясын анықтаудағы осы
+әдістің артықшылықтарын айқындайды. Ұсынылған тәсіл диагностика сапасын
+айтарлықтай жақсартуға және сүт безі ауруларын ерте анықтау арқылы
+тиімділігін арттыруға мүмкіндік береді.
+
+{\bfseries Нәтижелер және талқылау.} Бұл жұмыста біз сүт безі аномалияларын
+анықтау үшін маммография деректер базасында оқытылған екі негізгі
+модельді: Faster R-CNN және YOLOv8-ді қарастырамыз. Осы модельлердің
+жаттығу нәтижелері жаттығу және валидацияның жоғалуы, дәлдік және
+F1-өлшемі сияқты көрсеткіштер түрінде тіркелді. Faster R-CNN-ның оқыту
+және валидация жоғалтуының графигі оқыту дәуірі барысында деректер
+базасындағы жоғалтудың қалай төмендейтінін көрсетеді. Бұл модельдің
+қателерді азайта отырып, жалпылау қабілетін сәтті жақсарып жатқанын
+білдіреді. Қисықтардың конвергенциясы, сондай-ақ, оқу және валидация
+деректер базасында жоғары дәлдік пен F1 көрсеткішінің байқалатындығы
+артық сәйкестіктің жоқтығын көрсетеді. Faster R-CNN үшін оқыту және
+тестілеу дәлдіктері әр дәуір сайын тұрақты түрде өсіп, жаттығудың
+соңында шамамен 0,99 мәніне жетеді. Бұл модель деректердегі модельлерді
+сәтті танып, болжамдарының барған сайын дәлірек болып келе жатқанын
+көрсетеді. Осыған ұқсас жетістіктер 3-суретте көрсетілген F1 ұпайында
+байқалады, ол дәлдік пен еске түсіру арасындағы тепе-теңдікті көрсетіп,
+0,97-ге жақындайды.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image19}
+	\includegraphics[width=0.8\textwidth]{media/ict/image25}
 	\caption*{}
 \end{figure}
 
 
-{\bfseries Figure 3 - Encoding scheme}
+{\bfseries 3-сурет. Faster R-CNN моделін оқыту нәтижелері}
 
-When converting text to a number, there were two choices LabelEncoder or
-OneHotEncoder, the choice stopped at One- HotEncoder as it showed good
-results.
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{3}
-\item
-  \emph{Feature selection}
-\end{enumerate}
-
-When choosing a feature, there were two ways to select using the
-SelectBest library or a correlation with some kind of restriction and
-with the hypothesis. The choice settled on correlations using a boundary
-above 50\% of correlations. For features, was used (Age, Clo, Sex, Met,
-Thermal preference, Year, Season, Koppen climate classification, Cooling
-strat- egy building level, City, PPD, Air temperature (C), Outdoor
-monthly air temperature (C), Relative humidity (\%), Air velocity (m/s))
-columns. This showed features are the final result, before that we
-tested a lot of feature combinations. All combinations and variations
-will be presented in the Experi- ment section. As you can see, new
-features were added that helped improve the accuracy. The dataset was
-split into 80\% for training and 20\% for testing. Thermal comfort
-columns usually contained
-
-values from 1 to 6. The next hypothesis, convert label values to
-integers. We will have unique 6 values, from 6 unique digits, we reduce
-thermal comfort values to 3 digits, which significantly improves
-accuracy.
+Faster R-CNN сияқты, YOLOv8 де оқу процесінің табысты көрсеткіштерін
+көрсетеді. Жаттығу және валидация деректеріндегі жоғалту графигі
+бастапқы кезеңдерде жоғалтудың жылдам төмендеуін көрсетіп, модельдің
+жоғары конвергенция жылдамдығын білдіреді. Жаттығу және валидация
+деректер базасының дәлдігі мен F1-өлшемі, 4-суретте көрсетілгендей,
+сәйкесінше шамамен 0,97 және 0,96 мәндеріне жетіп, дәйекті түрде
+жақсарады. Екі модельні салыстыра отырып, олардың екеуі де жоғары
+өнімділікті көрсететінін атап өту маңызды. Алайда, Faster R-CNN
+YOLOv8-мен салыстырғанда, әсіресе оқудың соңғы кезеңдерінде дәлдік пен
+F1-өлшеу мәндерінің аздап жоғары екенін айту керек. 5-суретте
+көрсетілген модель патологияның әртүрлі деңгейлері бар 1318 кескінді
+пайдалана отырып, сүт безі қатерлі ісігін жіктеуге арналған. Кескінді
+өңдеу процесі патологиялық өзгерістерді анықтау үшін қалыпқа келтіру,
+туралау және бүркемелеу қадамдарын қамтиды. YOLOv8 және Faster R-CNN
+әдістерінің тиімділігін бағалау үшін патологияның әртүрлі формаларын
+қамтитын 1318 кескіннен тұратын ауқымды деректер жинағы қолданылды.
+Деректер жинағы қатерлі және қатерсіз кескіндер арасында теңгерілген
+және сүт безі қатерлі ісігінің бес деңгейлі жіктелуін ұсынды. Бұл тәсіл
+сүт безінің медициналық кескіндеріндегі патологияларды анықтау үшін екі
+модельдің тиімділігін неғұрлым толық және объективті бағалауға мүмкіндік
+береді.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image20}
+	\includegraphics[width=0.8\textwidth]{media/ict/image26}
 	\caption*{}
 \end{figure}
 
 
-{\bfseries Figure 4 - Feature selection}
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{4}
-\item
-  \emph{Inter Quartile Range (IQR)}
-\end{enumerate}
-
-The Interquartile Range (\emph{IQR}) is a statistical measure that
-represents the spread or dispersion of a dataset. The Interquartile
-Range (\emph{IQR}) is a measure of statistical dispersion that is
-calculated as the difference between the third quartile (\emph{Q}3) and
-the first quartile (\emph{Q}1) of a dataset. Mathematically, it is
-defined as:
-
-\emph{IQR} = \emph{Q}3 \emph{− Q}1
-
-where \emph{Q}1 is the median of the lower half of the dataset and
-\emph{Q}3 is the median of the upper half of the dataset.
-
-The Interquartile Range (\emph{IQR}) is a statistical measure used to
-assess the spread or dispersion of a dataset. It is particularly useful
-in identifying and dealing with outliers, which are data points that
-significantly differ from the rest of the dataset.
-
-Here's how the \emph{IQR} is calculated and how it can be used to remove
-outliers:
-
-\emph{Calculation of IQR}:
-
-\begin{itemize}
-\item
-  Firstly, you need to arrange your dataset in ascend- ing order.
-\item
-  Then, find the median of the dataset, which is the middle value when
-  the data is sorted. If the dataset has an odd number of observations,
-  the median is the middle value. If it has an even number of
-  observations, the median is the average of the two middle values.
-\item
-  Divide the dataset into two halves at the median. The lower half
-  contains all the values less than or equal to the median, and the
-  upper half contains all the values greater than or equal to the
-  median.
-\item
-  Find the median of each half. This gives you the first quartile
-  (\emph{Q}1) and the third quartile (\emph{Q}3) of the dataset,
-  respectively.
-\item
-  The Interquartile Range (\emph{IQR}) is then calculated as the
-  difference between \emph{Q}3 and \emph{Q}1: \emph{IQR} = \emph{Q}3
-  \emph{- Q}1.
-\end{itemize}
-
-\emph{−}
-
-\emph{Identifying outliers using IQR}:
-
-\begin{itemize}
-\item
-  Outliers can be detected using the \emph{IQR} method by considering
-  values that lie below \emph{Q}1 \emph{−} 1\emph{.}5 \emph{×}
-  \emph{IQR} or above \emph{Q}3 + 1\emph{.}5 \emph{× IQR}. These values
-  are considered to be significantly different from the rest of the
-  dataset.
-\item
-  Values below \emph{Q}1 \emph{−} 1\emph{.}5 \emph{× IQR} or above
-  \emph{Q}3 + 1\emph{.}5 \emph{×} \emph{IQR} are commonly referred to as
-  lower and upper bounds, respectively.
-\item
-  Any data points falling outside these bounds can be considered
-  outliers.
-\end{itemize}
-
-\emph{Removing outliers using IQR}:
-
-\begin{itemize}
-\item
-  Once outliers are identified using the \emph{IQR} method, you can
-  choose to remove them from the dataset to improve the robustness of
-  your analysis or model.
-\item
-  Outliers can be removed by filtering the dataset to exclude any
-  observations that fall outside the lower and upper bounds defined by
-  \emph{Q}1 \emph{−} 1\emph{.}5 \emph{× IQR} and
-\end{itemize}
-
-\emph{Q}3 + 1\emph{.}5 \emph{× IQR}, respectively.
-
-\begin{itemize}
-\item
-  After removing outliers, the dataset may be more representative of the
-  underlying distribution and less influenced by extreme values.
-\end{itemize}
-
-\emph{Considerations}:
-
-\begin{itemize}
-\item
-  While the \emph{IQR} method is effective in identifying and removing
-  outliers, it's important to exercise caution and consider the context
-  of the data.
-\item
-  Outliers may sometimes carry valuable informa- tion or be indicative
-  of rare but important events. Therefore, the decision to remove
-  outliers should be made judiciously based on the specific goals of the
-  analysis or model.
-\item
-  Additionally, the choice of the multiplier (1.5 in the conventional
-  method) used to define the bounds can be adjusted depending on the
-  desired level of sensitivity to outliers.
-\end{itemize}
-
-In summary, the Interquartile Range (\emph{IQR}) is a useful statistical
-measure for assessing the spread of a dataset and identifying outliers.
-By calculating the \emph{IQR} and defining bounds based on it, outliers
-can be effectively detected and removed, leading to a more robust
-analysis or model.
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{5}
-\item
-  \emph{Support Vector Machine (SVM)}
-\end{enumerate}
-
-Support Vector Machine is a powerful supervised machine learning
-algorithm used for classification and regression tasks. SVM works by
-finding the optimal hyperplane that separates different classes or, in
-the case of regression, predicts continuous outcomes. The key concept
-behind SVM is to maximize the margin between different classes or, in
-regression, to minimize the error between predicted and actual values
-while controlling for overfitting.
+{\bfseries 4-сурет. YOLOv8 модельсі бойынша оқыту нәтижелері}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image21}
+	\includegraphics[width=0.8\textwidth]{media/ict/image27}
 	\caption*{}
 \end{figure}
 
 
-{\bfseries Figure 5 - Support Vector Machine}
-
-In the context of thermal comfort prediction, SVM can be utilized to
-analyze complex relationships between various environmental factors such
-as temperature, humidity, and air velocity, and the corresponding human
-thermal comfort responses. By training the SVM model on labeled datasets
-containing information about environmental conditions and associated
-thermal comfort ratings, the algorithm can learn to predict the level of
-thermal comfort for a given set of environmental parameters.
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{6}
-\item
-  \emph{Random Forest (RF)}
-\end{enumerate}
-
-Random Forest is a popular machine-learning algorithm that can be used
-for both classification and regression tasks. It is an ensemble learning
-method that combines multiple decision trees to create a more accurate
-and stable model.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image22}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 6 - Random Forest}
-
-Data preparation involves cleaning the data, dealing with missing
-values, and transforming it to ensure it is suitable for the algorithm.
-Random sampling is used to randomly select a subset of the data to use
-for training each decision tree. Decision tree creation is created using
-recursive partitioning and feature selection. Voting is used to combine
-the predictions of all the trees to make the final prediction.
-Evaluation is done using a validation set. Overall, the Random Forest
-algorithm is a powerful machine-learning method that can be used for a
-wide range of tasks. It is easy to use and can produce accurate and
-stable predictions even with noisy or incomplete data. When applied to
-thermal comfort prediction, Random Forest models excel in capturing
-nonlinear relationships and inter- actions among various environmental
-factors. By aggregating predictions from multiple decision trees, Random
-Forest can provide accurate estimates of thermal comfort levels across
-different environmental conditions.
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{7}
-\item
-  \emph{Integration with IoT}
-\end{enumerate}
-
-The IoT component of the system involves deploying a network of sensors
-within the building. These sensors collect real-time data on various
-environmental conditions, such as temperature, humidity, CO2 levels, and
-occupancy. Data from IoT sensors are transmitted to a central server for
-storage and analysis. Wireless communication protocols like Wi-Fi,
-Bluetooth, or LoRaWAN can be used for efficient data transfer. The AI
-models receive real-time data from the IoT sensors, enabling them to
-continuously update predictions and make immediate adjustments to the
-HVAC system for optimal ther- mal comfort. An important aspect of the
-system is its ability to create a feedback loop that maintains thermal
-comfort. The AI algorithms analyze the real-time data from IoT sensors
-and make recommendations or control the HVAC system to ensure that
-thermal comfort is maintained. For instance, if the system detects a
-deviation from the desired comfort level, it can adjust the temperature,
-humidity, or airflow accordingly.
-
-\begin{enumerate}
-\def\labelenumi{\Alph{enumi}.}
-\setcounter{enumi}{8}
-\item
-  \emph{Alternative prediction value}
-\end{enumerate}
-
-So, an alternative way for predicting value we use the Thermal
-preference column instead Thermal comfort. If we do not switch from 6
-digits to 3 as before.
-
-{\bfseries Results and Discussion.} After filtering, we have 21 columns out
-of 70. And we make feature selections using correlation. Moreover, we
-avoid choosing Fanger's features. After one more filtering by cor-
-relation and with model SelectKbest which will help us to get the list
-of features. We get more than 3 variations, but we stopped in those
-variants:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\item
-  First set of 17 features: (Age, Sex, Met, Thermal pref- erence,
-  Thermal sensation, Clo, Subjects height (cm), Subjects weight (kg),
-  Year, Season, Koppen climate clas- sification, Building type, Cooling
-  strategy building level, Air temperature (C), Outdoor monthly air
-  temperature (C), Relative humidity (\%), Air velocity (m/s)).
-\item
-  Second set of 9 features: (Age, Sex, Met, Clo, Year, Season, Air
-  temperature (C), Relative humidity (\%), Air velocity (m/s)).
-\item
-  Third set of 15 features: (Age, Clo, Sex, Met, Thermal preference,
-  Year, Season, Koppen climate classification, Cooling strategy building
-  level, City, PPD, Air tempera- ture (C), Outdoor monthly air
-  temperature (C), Relative humidity (\%), Air velocity (m/s))
-\end{enumerate}
-
-In the end, we have 17 columns and 6765 rows. Starting work, we first
-take 17 out of 17 columns, we get not good results. Second iteration we
-take 9 out of 17 columns they also give results around the first
-iteration. In the last iteration, we take 15 out of 17 columns results
-are not good either. For that situation, we tested our hypothesis and
-IQR method gives approximately 3-4\% accuracy, and the reducing label
-values method gives 20-23\% accuracy. By changing the parameters of the
-models we define good parameters for our case then for the SVM model,
-the parameters were taken as \emph{kernel} = ''rbf'', \emph{gamma} =
-0.001, and \emph{c} = 3. And for the Random Forest, the parameters were
-taken as \emph{estimators} = 300, \emph{max depth} = 15. These
-parameters gave the maximum accuracy values. The results of comparing
-the use of LabelEncoder and OneHotEncoder in the dataset give a 2-4\%
-percent difference between them. Regardless of the features, and what
-parameters have been entered. This influenced the fact to take
-OneHotEncoder. If you do data standardization, the accuracy results will
-not change much and remain practically the same. For standardization, we
-used StandardScaler and MinMaxScaler models.
-
-Below are presented 1, 2, and 3 tables the beginning results of our
-prediction:
-
-{\bfseries Table 1 - Iteration of 17 features}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1708}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.509 & 0.451 & 0.509 & 0.436 \\
-% RF & 0.543 & 0.505 & 0.543 & 0.5 \\
-% \end{longtable}
-
-{\bfseries Table 2 - Iteration of 9 features}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2114}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.507 & 0.461 & 0.507 & 0.438 \\
-% RF & 0.526 & 0.513 & 0.526 & 0.49 \\
-% \end{longtable}
-
-{\bfseries Table 3 - Iteration of 15 features}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2242}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2202}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1707}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.533 & 0.448 & 0.533 & 0.433 \\
-% RF & 0.54 & 0.475 & 0.539 & 0.482 \\
-% \end{longtable}
-
-According above results, we tried to improve accuracy using our
-hypothesis. Below presented 4, 5, and 6 tables show the results of
-\emph{IQR} method:
-
-{\bfseries Table 4 - Iteration of 17 features with \emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1707}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.522 & 0.44 & 0.522 & 0.441 \\
-% RF & 0.548 & 0.517 & 0.548 & 0.504 \\
-% \end{longtable}
-
-{\bfseries Table 5 - Iteration of 9 features with \emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2204}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1706}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.507 & 0.44 & 0.383 & 0.424 \\
-% RF & 0.52 & 0.501 & 0.52 & 0.479 \\
-% \end{longtable}
-
-{\bfseries Table 6 - Iteration of 15 features with \emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1730}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2245}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2204}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2111}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.563 & 0.539 & 0.563 & 0.425 \\
-% RF & 0.57 & 0.494 & 0.57 & 0.5 \\
-% \end{longtable}
-
-From previous results, \emph{IQR} method upgrades accuracy approximately
-to 2-5\%. Next, we work with the reduction of label values to increase
-the accuracy:
-
-{\bfseries Table 7 - Iteration of 17 features with reducing labels}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.715 & 0.644 & 0.715 & 0.614 \\
-% RF & 0.744 & 0.708 & 0.744 & 0.704 \\
-% \end{longtable}
-
-{\bfseries Table 8 - Iteration of 9 features with reducing labels}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2243}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2114}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.688 & 0.598 & 0.688 & 0.569 \\
-% RF & 0.699 & 0.657 & 0.699 & 0.645 \\
-% \end{longtable}
-
-{\bfseries Table 9 - Iteration of 15 features with reducing labels}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.78 & 0.608 & 0.78 & 0.683 \\
-% RF & 0.78 & 0.719 & 0.78 & 0.727 \\
-% \end{longtable}
-
-Adding \emph{IQR} method to the reduced features and get such results:
-
-{\bfseries Table 10 - Iteration of 17 features with reducing labels and
-\emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1731}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2242}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.726 & 0.598 & 0.726 & 0.621 \\
-% RF & 0.733 & 0.678 & 0.733 & 0.688 \\
-% \end{longtable}
-
-{\bfseries Table 11 - Iteration of 9 features with reducing labels and
-\emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1727}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2248}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2206}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1704}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.706 & 0.498 & 0.706 & 0.584 \\
-% RF & 0.717 & 0.668 & 0.717 & 0.653 \\
-% \end{longtable}
-
-{\bfseries Table 12 - Iteration of 15 features with reducing labels and
-\emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1732}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2242}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.835 & 0.697 & 0.835 & 0.76 \\
-% RF & 0.821 & 0.738 & 0.821 & 0.766 \\
-% \end{longtable}
-
-There was also work on the alternative method. Here Thermal comfort and
-Thermal preference will change places. And now we will predict Thermal
-preference.
-
-{\bfseries Table 13 - Alternative iteration of 15 features}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.68 & 0.714 & 0.68 & 0.605 \\
-% RF & 0.714 & 0.712 & 0.714 & 0.685 \\
-% \end{longtable}
-
-{\bfseries Table 14 - Alternative iteration of 15 features with reducing
-labels}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1731}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2117}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.67 & 0.698 & 0.67 & 0.584 \\
-% RF & 0.705 & 0.702 & 0.705 & 0.673 \\
-% \end{longtable}
-
-{\bfseries Table 15 - Alternative iteration of 15 features with reducing
-labels and \emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1731}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2244}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2202}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.694 & 0.55 & 0.694 & 0.577 \\
-% RF & 0.709 & 0.676 & 0.709 & 0.651 \\
-% \end{longtable}
-
-{\bfseries Conclusion.} As a result, we pass a verdict that added
-\emph{IQR} method, we worked with new 8 features and 7 features were
-already in other articles, considering the option with guessing Thermal
-comfort and Thermal preference, the difference between the two
-algorithms is 1-3\%. Basically Random Forest looks more stable than SVM.
-I would also like to note that the alternative version was in the lead
-in 9 and 15 features, Table 3 and Table 13. But, when we started
-converting from 6 to 3 Thermal comfort values and added \emph{IQR}
-method, our main option immediately won. In the future, I will add new
-features to improve accuracy. For example, one of them is Heart Rate
-Variability (HRV) {[}11{]}. On top of that, I want to test neural
-networks and deep learning as I have seen good results with these
-algorithms. I also considered these {[}15, 16{]} papers for the basis of
-a new work. Some commonly used algorithms for this purpose include
-Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs),
-Long Short-Term Memory (LSTM) Networks, Autoencoders, and Deep Belief
-Networks (DBNs).
-
-{\bfseries References}
-
-1. Christos G. Polycarpou, Marios M. Milis, George M. Panayiotou.
-Iot-enabled automatic synthesis of distributed feedback control schemes
-in smart buildings.// IEEE Internet of Things
-Journa\href{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907}{l}.-
-2021.-Vol.8, Iss.4.- P.2615-2626.
-\href{https://doi.org/10.1109/JIOT.2020.3019662}{DOI
-10.1109/JIOT.2020.3019662}
-
-2. Mulyana Binti Bin Omar, Ridha Mohamed Salleh and Faridah Hani
-Saripuddin. Predicting thermal comfort of hvac building using 6 thermal
-factors.//
-\href{https://ieeexplore.ieee.org/xpl/conhome/9243083/proceeding}{8th
-International Conference on Information Technology and Multimedia
-(ICIMU)}.-2020.
-\href{https://doi.org/10.1109/ICIMU49871.2020.9243466}{DOI
-10.1109/ICIMU49871.2020.9243466}
-
-3. Sara Sorcinelli, Matteo Arnesano, Marco Uriarte, Amaia
-Torrens-Galdiz, J. Ignacio Revel, Gian Marco Morresi and Nicole
-Casaccia. Sensing physiological and environmental quantities to measure
-human thermal comfort through machine learning
-techniques//\href{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361}{IEEE
-Sensors Journal}. -2021.-Vol.21. - Iss.10.-P. 12322-12337.
-\href{https://doi.org/10.1109/JSEN.2021.3064707}{DOI
-10.1109/JSEN.2021.3064707}
-
-4. Juliana Caesarendra, Wahyu Shona Laila, Dina Candra Kurnia, Jundika
-Widiastuti and Ratih Zaini.Prediction on the indoor thermal comfort of
-occupied room based on iot climate measurement open datasets //
-International Conference on Informatics, Multimedia, Cyber and
-Information System (ICIMCIS).- 2020.
-\href{https://doi.org/10.1109/ICIMCIS51567.2020.9354277}{DOI
-10.1109/ICIMCIS51567.2020.9354277}
-
-5. Yadong Xu, Zhanbo Wu, Jiang Liu, Yaping Guo, Yuntao Guan, Xiaohong Su
-and Ying Zhou. Group comfort models: Predicting indoor group thermal
-comfort by learning preferences of multiple occupants.//
-\href{\%20IEEE\%2016th\%20International\%20Conference\%20on\%20Automation\%20Science\%20and\%20Engineering\%20(CASE)}{IEEE
-16th International Conference on Automation Science and Engineering
-(CASE)}.- 2020. DOI
-\href{https://doi.org/10.1109/CASE48305.2020.9216834}{10.1109/CASE48305.2020.9216834}
-
-6. M. Hani Mohamed Salleh and Faridah Binti Saripuddin. Monitoring
-thermal comfort level of commercial buildings' occupants in a hot-humid
-climate country using k-nearest neighbors model.//
-\href{https://ieeexplore.ieee.org/xpl/conhome/9233041/proceeding}{5th
-International Conference on Power and Renewable Energy (ICPRE)}.- 2020.
-DOI 10.1109/ICPRE51194.2020.9233145
-
-7. Moez Merghem-Boulahia, Leila Khalil and Maysaa Esseghir. An iot
-environment for estimating occupants' thermal comfort//
-\href{https://ieeexplore.ieee.org/xpl/conhome/9210501/proceeding}{IEEE
-31st Annual International Symposium on Personal, Indoor and Mobile Radio
-Communications}.- 2020. https://doi.org/10.1109/PIMRC48278.2020.9217157
-
-8. Manisa Chen, Tao Rahman, Saifur Zhang and Xiangyu Pipattanasomporn.
-An iot-based thermal model learning framework for smart buildings.//
-\href{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907}{IEEE
-Internet of Things Journal}.-~Vol.
-7,~\href{https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=8955685&punumber=6488907}{Iss.
-1}.-2020.-P. 518-52.
-\href{https://doi.org/10.1109/JIOT.2019.2951106}{DOI
-10.1109/JIOT.2019.2951106}
-
-9. Asif Irshad Irfan, Sayed Ameenuddin Alam, Md Mottahir Almalawi,
-Abdulmohsen Zahir, Md Hasan Irshad and Kashif Khan. Utilizing artificial
-neural network for prediction of occupants thermal comfort: A case study
-of a test room fitted with a thermoelectric air-conditioning system.//
-\href{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639}{IEEE
-Access}.-Vol. 8-2020.-P. 99709~-- 99728. DOI 10.1109/ACCESS.2020.2985036
-
-10. Jie Wen, Yonggang Gao and Guanyu Li.Deepcomfort: Energy-efficient
-thermal comfort control in buildings via reinforcement learning.// IEEE
-Internet of Things Journal. -- 2020. - Vol. 7(9). --P. 8472-8484 DOI
-10.1109/JIOT.2020.2992117
-
-11. Burak Shi, Zixiao Shen, Weiming Yang and Chunsheng Gunay. Machine
-learning-based prognostics for central heating and cooling plant
-equipment health monitoring.// IEEE Transactions on Automation Science
-and Engineering/. -- 2021.- Vol.18(1).- P.~346--355. DOI
-10.1109/TASE.2020.2998586
-
-12. Hiroshi Matsuhashi, Ryuji Wang and Ziyang Onodera,. Proposal of
-relative thermal sensation: Another dimension of thermal comfort and its
-investigation.// IEEE Access. -- 2021.- P.(99):1-1 DOI
-10.1109/ACCESS.2021.3062393
-
-13. Yonggang Tseng, King Jet Jin, Guangyu Zhang and Wei Wen.
-Demystifying thermal comfort in smart buildings: An interpretable
-machine learning approach.//
-\href{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907}{IEEE
-Internet of Things Journal}.-2021.-Vol.8,Iss.10.-P.8021-8031.
-\href{https://doi.org/10.1109/JIOT.2020.3042783}{DOI
-10.1109/JIOT.2020.3042783}
-
-14.SHRAE dataset, ``ASHRAE Global Thermal Comfort Database II'\,',
-2020,\url{https://www.kaggle.com/datasets/claytonmiller/ashrae-global-thermal-comfort-database-ii}
-
-15. Nivethitha Somu, Anirudh Sriram, Anupama Kowli, Krithi Ramamritham.
-A hybrid deep transfer learning strategy for thermal comfort prediction
-in
-buildings//\href{https://www.sciencedirect.com/journal/building-and-environment}{Building
-and Environment}.-2021.- Vol.204: 108133.
-\href{https://doi.org/10.1016/j.buildenv.2021.108133}{DOI
-10.1016/j.buildenv.2021.108133}
-
-16. Hansaem Park, Dong Yoon Park Prediction of individual thermal
-comfort based on ensemble transfer learning method using wearable and
-environmental sensors//
-\href{https://www.sciencedirect.com/journal/building-and-environment}{Building
-and Environment}.-2022.- Vol.207: 108492. DOI
-10.1016/j.buildenv.2021.108492
-
-\emph{{\bfseries Information about the authors}}
-
-Assymkhan N.B. -- master of Kazakh-British Technical University, e-mail:
-\href{mailto:anb.asymhan@gmail.com}{\nolinkurl{anb.asymhan@gmail.com}};
-
-Kartbaev A.Z. -- PhD of Kazakh-British Technical University, e-mail:
-a.kartbaev@kbtu.kz;
-
-\emph{{\bfseries Сведения об авторах}}
-
-Асымхан Н.Б. -- магистрант Казахстанско-Британский Технического
-Университета, e-mail:
-\href{mailto:anb.asymhan@gmail.com}{\nolinkurl{anb.asymhan@gmail.com}};
-
-Картбаев А.З. -- PhD? Казахстанско-Британский Технического Университета,
-e-mail:
-\href{mailto:a.kartbaev@kbtu.kz}{\nolinkurl{a.kartbaev@kbtu.kz}};
-
-{\bfseries 
+{\bfseries 5-сурет. Сүт безі қатерлі ісігі патологиясын анықтау моделі}
+
+Сүт безінің кескінін өңдеуге және жіктеуге арналған бұл әдіс тіндердің
+денсаулығын жүйелі және жан-жақты бағалауды қамтамасыз етеді, бұл
+медициналық қолданбалар үшін ерекше маңызды. Қалыпқа келтіру және
+туралау әдістерін қолдану, сондай-ақ YOLOv8 және Faster R-CNN
+алгоритмдерінің пайдаланылуы модельдің әртүрлі патологияларды анықтауда
+жоғары сезімталдық пен дәлдікті көрсетуіне мүмкіндік береді. Әртүрлі
+сыныптардан тұратын теңгерілген деректер базасы сүт безі патологиясының
+әртүрлі формалары мен деңгейлерін ескере отырып, модельдің өнімділігін
+неғұрлым өкілді бағалауға көмектеседі. Бұл тәсіл жіктеу нәтижелерінің
+сенімділігін арттырады және сүт безі қатерлі ісігінің диагностикасын
+айтарлықтай жақсартуға ықпал етеді.
+
+{\bfseries Қорытынды.} Ұсынылған зерттеу маммографиялық кескіндердегі сүт
+бездерінің патологиясын анықтау үшін YOLOv8 және Faster R-CNN терең
+оқыту модельдерін тиімді пайдалану мүмкіндігін көрсетеді. Екі модель де
+дәлдік, F1 ұпайы және өңдеу жылдамдығы бойынша жоғары нәтижелер
+көрсетті, бұл олардың медициналық салада практикалық қолдану әлеуетін
+айқындайды. Faster R-CNN моделі, әсіресе, жаттығудың соңғы кезеңдерінде
+YOLOv8-ден дәлдік пен F1 ұпайы бойынша тұрақты түрде жоғары болды,
+шамамен 0,99 дәлдік және 0,97 F1 ұпайына қол жеткізіп, сүт безі
+ауытқуларын анықтаудағы сенімділігін көрсетті. YOLOv8, сәл төменірек
+дәлдікке ие болғанымен, жоғары өңдеу жылдамдығын көрсетті, бұл оны
+жылдам талдау талап етілетін қолданбалар үшін қолайлы етеді, ал оның
+дәлдігі шамамен 0,97, F1 ұпайы 0,96 болды, бұл оның сүт безі
+патологиясын анықтаудағы тиімділігін растайды. Деректерді алдын ала
+өңдеу, оның ішінде қалыпқа келтіру, гистограмманы теңестіру және
+аномалия аймақтарын маскалау, оқу процесінің тұрақтылығына және сүт
+бездерінің патологияларын анықтауда модельлердің сенімділігіне елеулі
+әсер етті. Екі модель де патологияның әртүрлі деңгейлерін қамтитын 1318
+маммографиялық кескіннің теңгерілген деректер базасында оқытылды және
+тексерілді, бұл олардың сүт безі ауруларының қатерсіз және қатерлі
+формаларымен күресу қабілетін нығайтады. Бұл модельлерді клиникалық
+тәжірибеге енгізу сүт безі ауруларын ерте анықтау мен диагностикалауды
+жақсартуға, сондай-ақ пациенттердің нәтижелерін жақсартуға мүмкіндік
+береді. Оқыту параметрлері мен модель архитектурасын оңтайландыруға,
+деректер базасын кеңейтуге және модельдерді одан әрі жетілдіруге,
+олардың шынайы клиникалық параметрлерде сенімділігі мен дәлдігін
+қамтамасыз ету үшін қосымша зерттеулер жүргізу ұсынылады.
+
+{\bfseries Әдебиеттер}
+
+1. A. Orazayeva et al. Biomedical image segmentation method based on
+contour preparation // in Photonics Applications in Astronomy,
+Communications, Industry, and High Energy Physics Experiments. -- 2022.
+DOI: 10.1117/12.2657929
+
+2. Z. He, P. Wang, and X. Ye, Novel endoscopic optical diagnostic
+technologies in medical trial research: recent advancements and future
+prospects // BioMedical Engineering OnLine. -2021. -Vol. 20(1). DOI:
+10.1186/s12938-020-00845-5
+
+3. O. Yu. Bogaevskaya, A. V Yumashev, A. L. Zolkin, O. A. Smirnova, and
+M. S. Chistyakov, Application of progressive information technologies in
+medicine: computer diagnostics and 3D technologies // Journal of
+Physics: Conference Series. -2021. - Vol. 1889(5). DOI:
+10.1088/1742-6596/1889/5/052001
+
+4. R. Boina et al. Enhancing intelligence diagnostic accuracy based on
+machine learning disease classification // International Journal of
+Intelligent Systems and Applications in Engineering. -2023. -Vol. 11.
+-P. 765--774, 2023.
+
+5. C.-H. Hsu et al. Effective multiple cancer disease diagnosis
+frameworks for improved healthcare using machine learning //
+Measurement. -2021. -Vol. 175. DOI: 10.1016/j.measurement.2021.109145
+
+6. P. Singh, N. Singh, K. K. Singh, and A. Singh Diagnosing of disease
+using machine learning // in Machine Learning and the Internet of
+Medical Things in Healthcare. - Elsevier, 2021. - P. 89--111.
+
+7. A. Orazayeva et al. Imaging fuzzy expert system for assessing dynamic
+changes in biomedical tumor images in breast cancer // in Photonics
+Applications in Astronomy, Communications, Industry, and High Energy
+Physics Experiments 2022. -Dec. 2022. DOI: 10.1117/12.2657923.
+
+8. A. Orynbayeva, N. Shyndaliyev, and A. Aripbayeva Improving
+statistical methods of data processing in medical universities using
+machine learning //World Transactions on Engineering and Technology
+Education. -2023. -Vol. 21(1). -P. 58--63.
+
+9. Y. Liu, D. Han, A. V Parwani, and Z. Li Applications of artificial
+intelligence in breast pathology // Archives of Pathology \& Laboratory
+Medicine. -2023. -Vol. 147(9). -P. 1003--1013. DOI:
+10.5858/arpa.2022-0457-ra
+
+10. Y. Li, Y. Zhang, Q. Yu, C. He, and X. Yuan Intelligent scoring
+system based on dynamic optical breast imaging for early detection of
+breast cancer // Biomedical Optics Express. -2024. -Vol. 15(3). -P.
+1515--1527. DOI: 10.1364/BOE.515135
+
+11. E. A. Rakha, G. M. Tse, and C. M. Quinn An update on the
+pathological classification of breast cancer // Histopathology. -2022.
+-Vol. 82(1). -P. 5--16. DOI: 10.1111/his.14786
+
+12. C. Quinn, A. Maguire, and E. Rakha Pitfalls in breast pathology //
+Histopathology. -Vol. 82(1). -P. 140--161. DOI: 10.1111/his.14799
+
+13. M. Ensenyat-Mendez et al. Current triple-negative breast cancer
+subtypes: dissecting the most aggressive form of breast cancer //
+Frontiers in Oncology. -2021. -Vol. 11. DOI: 10.3389/fonc.2021.681476
+
+14. S. Iranmakani et al. A review of various modalities in breast
+imaging: technical aspects and clinical outcomes // Egyptian Journal of
+Radiology and Nuclear Medicine. -2020. -Vol. 51(1). DOI:
+10.1186/s43055-020-00175-5
+
+15. S. M. H. Hashemi, L. Safari, and A. D. Taromi Realism in action:
+anomaly-aware diagnosis of brain tumors from medical images using YOLOv8
+and DeiT. -2024. DOI: 10.48550/arXiv.2401.03302
+
+16. R.-Y. Ju and W. Cai Fracture detection in pediatric wrist trauma
+X-ray images using YOLOv8 algorithm // Scientific Reports. -2023.-Vol.
+13(1). DOI: 10.1038/s41598-023-47460-7
+
+17. S. Pandey, K.-F. Chen, and E. B. Dam Comprehensive multimodal
+segmentation in medical imaging: combining YOLOv8 with SAM and HQ-SAM
+models // 2023 IEEE/CVF International Conference on Computer Vision
+Workshops (ICCVW). - Paris, France, 2023. -P. 2584-2590. DOI:
+10.1109/iccvw60793.2023.00273
+
+18. B. W. Choi, S. Kang, H. W. Kim, O. D. Kwon, H. D. Vu, and S. W. Youn
+Faster region-based convolutional neural network in the classification
+of different parkinsonism patterns of the striatum on maximum intensity
+projection images of {[}18F{]} FP-CIT positron emission tomography //
+Diagnostics. -2021. -Vol. 11(9). DOI: 10.3390/diagnostics11091557
+
+19. Z. Jiao et al. Deep learning for automatic detection of
+cephalometric landmarks on lateral cephalometric radiographs using the
+Mask Region-based Convolutional Neural Network: a pilot study // Oral
+Surgery, Oral Medicine, Oral Pathology and Oral Radiology. -2024. -Vol.
+137(5). -P. 554--562. DOI: 10.1016/j.oooo.2024.02.003
+
+20. A. Orazayeva, J. Tussupov, W. Wójcik, S. Pavlov, G. Abdikerimova,
+and L. Savytska Methods for detecting and selecting areas on texture
+biomedical images of breast cancer // Informatyka, Automatyka, Pomiary w
+Gospodarce i Ochronie Srodowiska. -2022. -Vol. 12(2). -P. 69--72. DOI:
+10.35784/iapgos.2951
+
+21. G. Abdikerimova et al. Detection of lung pathology using the fractal
+method // International Journal of Electrical and Computer Engineering.
+-2023. -Vol. 13(6). -P. 6778--6786. DOI:
+10.11591/ijece.v13i6.pp6778-6786
+
+22. G. Abdikerimova et al. Detection of chest pathologies using
+autocorrelation functions // International Journal of Electrical and
+Computer Engineering. -2023. -Vol. 13(4). -P. 4526--4534. DOI:
+10.11591/ijece.v13i4.pp4526-4534
+
+23. Zaridze D.G., Maksimovich D.M. Prevention of malignant neoplasms. //
+V-Petersburg International Oncology Forum. Collection. - 2017. - No. 4
+(2). DOI: 10.17650/2313805X-2017-4-2-8-25
+
+24. Davydov M.I., Zaridze D.G. Skrining zlokachestvennyh opuholej //
+Vestnik FGBNU «RONC im N.N. Blohina». -2014. --T. 25. -№3-4. --S. 5-16.
+URL:https://cyberleninka.ru/article/n/skrining-zlokachestvennyh-opuholey/viewer
+{[}in Russian{]}
+
+25. Nurmanova A., Sultanova Z.I., Y.A. Annaorazov Y.A. Faktory i ih
+rol'{} v zabolevaemosti, smertnosti, vyzhivaemosti pri
+rake molochnoj zhelezy // Vestnik KazNMU. -2018. -№ 1. URL:
+\url{https://cyberleninka.ru/article/n/faktory-i-ih-rol-v-zabolevaemosti-smertnosti-vyzhivaemosti-pri-rake-molochnoy-zhelezy/viewer}
+{[}in Russian{]}
+
+26. Chen L. et al. Review of image classification algorithms based on
+convolutional neural networks //Remote Sensing. -- 2021. --Vol.13(22).
+DOI:10.3390/rs13224712
+
+27. N. Diniz D. et al. A deep learning ensemble method to assist
+cytopathologists in pap test image classification //Journal of Imaging.
+-2021. -Vol. 7(7). DOI:10.3390/jimaging7070111
+
+{\bfseries Авторлар туралы мәліметтер}
+
+Тусупов Д.А. -- физика-математика ғылымдарының докторы, профессор, Л.Н.
+Гумилев атындағы Еуразия ұлттық университеті, Астана, Қазақстан, e-mail:
+\href{mailto:oaris.83@gmail.com}{tussupov@mail.ru};
+
+Оразаева А.Р. - Л.Н. Гумилев атындағы Еуразия ұлттық университетінің
+докторанты, Ақпараттық жүйелер мамандығы, Астана, Қазақстан, e-mail:
+oar\_is@mail.ru.
+
+{\bfseries Information about the authors}
+
+Tussupov J.A. - doctor of physical and mathematical sciences, professor,
+L.N. Gumilev Eurasian National University, Astana, Kazakhstan, e-mail:
+tussupov@mail.ru;
+
+Orazayeva A.R. - L.N. Ph.D. student of Gumilev Eurasian National
+University, Information Systems specialty, Astana, Kazakhstan, e-mail:
+oar\_is@mail.ru.

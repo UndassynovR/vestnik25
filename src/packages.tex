@@ -100,10 +100,10 @@
 \usepackage{enumitem}
 
 % Decrease padding in itemize
-\setlist[itemize]{itemsep=0.3em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.5em}
+\setlist[itemize]{itemsep=0.0em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.1em}
 
 % Decrease padding in enumerate
-\setlist[enumerate]{itemsep=0.3em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.5em}
+\setlist[enumerate]{itemsep=0.0em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.1em}
 
 \usepackage{mdframed}
 
@@ -143,6 +143,7 @@
 
 \newcommand{\sectionwithauthors}[2]{%
   \section*{#2}%
+  \vspace{-1em}%
   \addcontentsline{toc}{section}{%
     #1 \\ % Authors
     \normalfont\normalsize\itshape #2 % Section Title
@@ -181,7 +182,7 @@
 
 \titleformat{\section}[block]{\normalfont\centering\fontsize{11}{13}\selectfont\bfseries}{}{0pt}{}
 
-\titlespacing{\section}{0pt}{1em}{1em}
+\titlespacing{\section}{0pt}{1em}{0.8em}
 
 \usepackage{listings}
 \lstset{
@@ -220,16 +221,21 @@
     \fontsize{10}{10}\selectfont % Smaller font size
     \setlength{\parskip}{0pt} % Remove space between paragraphs
     \centering
-    \vspace{-1.3em} % Reduce space between header and affiliation
+    \vspace{-0.8em} % Reduce space between header and affiliation
 }{%
     \par%
 }
 
-\newenvironment{noparindent}{%
+\newenvironment{references}{%
+  \setlength{\parindent}{0pt}%
+}{%
+  \par%
+}
+
+\newenvironment{authorinfo}{%
   \fontsize{10}{12}\selectfont%
   \setlength{\parindent}{0pt}%
 }{%
-  \setlength{\parindent}{2pt}%
   \par%
 }
 

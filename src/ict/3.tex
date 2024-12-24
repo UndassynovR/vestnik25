@@ -1,497 +1,783 @@
-\id{IRSTI 50.43.15}
+\id{МРНТИ 20.53.19}
 
-{\bfseries EVALUATION OF THE USE OF AUTOMATED CONTROL SYSTEMS FOR SOLVING
-TRAFFIC CONTROL PROBLEMS}
+{\bfseries ИДЕНТИФИКАЦИИ МАТЕМАТИЧЕСКИХ МОДЕЛЕЙ МЕТОДОМ КВАЗИЛИНЕАРИЗАЦИИ}
 
-{\bfseries \textsuperscript{1}A.Tulegulov\textsuperscript{\envelope },
-\textsuperscript{1}K. Akishev, \textsuperscript{1}D.Zhamangarin,
-\textsuperscript{2}N.Yurkov, \textsuperscript{3}L. Akisheva,}
+{\bfseries \textsuperscript{1,2}Т.Ж. Мазаков\textsuperscript{\envelope },
+\textsuperscript{1}Ш.А. Джомартова, \textsuperscript{1}А.Т. Мазакова,
+\textsuperscript{3}Г.Ч. Тойкенов,}
 
-{\bfseries \textsuperscript{1}S.A. Altynbek, \textsuperscript{1}N.S.
-Smakova}
+{\bfseries \textsuperscript{1,2}М.С. Алиаскар, \textsuperscript{3}У.Г.
+Тойкенова}
 
-\textsuperscript{1}K. Kulazhanov Kazakh University of Technology and
-Business, Astana, Kazakhstan,
+\textsuperscript{1}Казахский национальный университет имени аль-Фараби,
+Алматы, Казахстан,
 
-\textsuperscript{2}Penza State University, Penza, Russia,
+\textsuperscript{2}Международный инженерно-технологический университет,
+Алматы, Казахстан,
 
-\textsuperscript{3}Nazarbayev Intellectual School, Astana, Kazakhstan,
+\textsuperscript{3}Казахский национальный женский педагогический
+университет, Алматы, Казахстан
 
 {\bfseries \textsuperscript{\envelope }}Correspondent-author:
-\href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}}
-
-One of the most pressing problems of megacities is traffic jams. With
-the growth of the urban population, there are more and more of them.
-Given the fact that there is no metro in Astana, the number of vehicles
-is growing quite quickly and urban public transport is also replenished
-with new buses every year. Attempts to introduce bus lanes partially
-eliminate the problem for public transport, but at the same time creates
-problems for private individual transport.
-
-Theoretically, there are various solutions to the problem of congestion
-on urban highways, but in practice we face a number of additional
-problems. Attempts to create intelligent systems for regulating urban
-transport do not yield tangible results due to a chaotic approach to the
-main problem.
-
-Transport system management is a set of various measures aimed at the
-effective functioning of this system through coordination, organization,
-and ordering of the elements of this system, both among themselves and
-with the external environment. The Intelligent Transport System (ITS) is
-a management system that implements innovative developments for managing
-traffic flows. As a result of using such systems, we get the so-called
-"smart roads". The article examines one of the components of ITS -- the
-smart traffic light system.
-
-{\bfseries Keywords:} algorithms, information systems, traffic jams,
-integrated systems, information modeling, program code.
-
-{\bfseries ЖОЛ ҚОЗҒАЛЫСЫН БАҚЫЛАУ МІНДЕТТЕРІН ШЕШУ ҮШІН АВТОМАТТАНДЫРЫЛҒАН
-БАСҚАРУ ЖҮЙЕЛЕРІН ПАЙДАЛАНУДЫ БАҒАЛАУ}
-
-{\bfseries \textsuperscript{1}А.Д.
-Тулегулов\textsuperscript{\envelope },\textsuperscript{1}К.М. Акишев,
-\textsuperscript{1}Д.С. Жамангарин, \textsuperscript{2}Н.К. Юрков,
-\textsuperscript{3}Л.К. Акишева,}
-
-{\bfseries \textsuperscript{1}С. А.Алтынбек, \textsuperscript{1}Н.С.
-Смакова}
-
-\textsuperscript{1}Қ. Құлажанов атындағы Қазақ технология және бизнес
-университеті, Астана, Қазақстан,
-
-\textsuperscript{2}Пенза мемлекеттік университеті, Пена, Ресей,
-
-\textsuperscript{3}Назарбаев Зияткерлік мектебі, Астана, Қазақстан,
-
-e-mail: \href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}}
-
-Мегаполистердің ең ауыр проблемаларының бірі-көлік кептелісі. Қала
-халқының өсуімен олардың саны артып келеді. Астанада метро жоқ екенін
-ескерсек, автокөлік саны тез өсуде және қалалық қоғамдық көлік жыл сайын
-жаңа автобустармен толықтырылып отырады. Автобус жолақтарын енгізу
-әрекеттері қоғамдық көлік мәселесін ішінара жеңілдетеді, бірақ сонымен
-бірге жеке жеке көлікке қиындық тудырады.
-
-Теориялық тұрғыдан қалалық магистральдардың кептелісі мәселесін шешудің
-әртүрлі нұсқалары бар, бірақ іс жүзінде біз бірқатар қосымша мәселелерге
-тап боламыз. Қалалық көлікті реттеудің интеллектуалды жүйелерін құру
-әрекеттері негізгі проблемаларға хаотикалық көзқарасқа байланысты
-айтарлықтай нәтиже бермейді.
-
-One of the problems is that congestion and situations are created at the
-main intersections of roads when flows of cars from one direction do not
-have time to complete the maneuver when turning and do not allow cars to
-move from the other direction accordingly. Attempts to create prohibited
-"islands" have not yielded any special results, since they do not allow
-automating the operation of traffic lights in terms of setting the glow
-time of the warning yellow color. There have even been illegal attempts
-to impose fines for driving through yellow traffic lights. The purpose
-of this article is to evaluate the use of automated control systems to
-solve traffic control problems.
-
-{\bfseries Түйін сөздер:} алгоритмдер, ақпараттық жүйелер, көлік кептелісі,
-интеграцияланған жүйелер, ақпараттық модельдеу, бағдарлама коды.
-
-{\bfseries ОЦЕНКА ИСПОЛЬЗОВАНИЯ АВТОМАТИЗИРОВАННЫХ СИСТЕМ УПРАВЛЕНИЯ ДЛЯ
-РЕШЕНИЯ ЗАДАЧ КОНТРОЛЯ ДОРОЖНОГО ДВИЖЕНИЯ}
-
-{\bfseries \textsuperscript{1}А.Д. Тулегулов\textsuperscript{\envelope } ,
-\textsuperscript{1}К.М. Акишев, \textsuperscript{1}Д.С. Жамангарин,
-\textsuperscript{2}Н.К. Юрков, \textsuperscript{3}Л.К. Акишева,
-\textsuperscript{1}С.А.Алтынбек, \textsuperscript{1}Н.С.Смакова}
-
-\textsuperscript{1}Казахский университет технологии и бизнеса имени К.
-Кулажанова, Астана, Казахстан
-
-\textsuperscript{2}Пензенский государственный университет, Пенза, Россия
-
-\textsuperscript{3}Назарбаев интеллектуальная школа, Астана, Казахстан,
-
-e-mail: \href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}}
-
-Одной из наиболее наболевших проблем мегаполисов являются автомобильные
-пробки. С ростом городского населения их становится все больше и больше.
-Учитывая тот факт, что в Астане отсутствует метро количество
-автотранспорта растет довольно быстро и городской общественный транспорт
-также ежегодно пополняется новыми автобусами. Попытки введения
-автобусных полос частично снимают проблему для общественного транспорта,
-но в то же время создает проблем для частного индивидуального
-транспорта.
-
-Теоретически существуют различные варианты решения проблемы
-загруженности городских магистралей, но на практике мы сталкиваемся с
-рядом дополнительных проблем. Попытки создать интеллектуальные системы
-регулирования городского транспорта не дают ощутимых результатов по
-причине хаотичного подхода к основной проблем.
-
-Одной из проблем является то, что на основных перекрестках дорог
-создаются заторы и ситуации, когда потоки автомашин с одного из
-направлений при повороте не успевают завершить маневр и не позволяют
-соответственно двигаться автомашинам с другого направления. Попытки
-создавать запрещенные «островки» не дали особых результатов, так как не
-позволяют автоматизировать работу светофоров с точки зрения установки
-времени свечения предупреждающего желтого цвета. Даже были незаконные
-попытки введения штрафов за проезд на желтый свет светофора. В данной
-статье поставлена цель сделать оценку использования автоматизированных
-систем управления для решения задач контроля дорожного движения.
-
-Ключевые слова: автоматизированные системы управления, алгоритмы,
-информационные системы, транспортные пробки, интегрированные системы,
-информационное моделирование, код программы.
-
-{\bfseries Introduction.} Traffic in conditions of congestion of roads with
-traffic and pedestrian flows requires innovative ways of regulation.
-Automated traffic management systems, which are a complex of technical
-means implementing certain technological algorithms for traffic flow
-management, have recently become increasingly relevant. The algorithm
-assumes the implementation of the principle of decomposition of
-decision-making, which can be considered generally accepted for network
-adaptive management methods. The decomposition of management is based on
-the division of the area into mutually overlapping zones. The center of
-each zone is an adjustable intersection, and the zone itself covers all
-intersections adjacent to the central one. The main purpose of the
-introduction of automated traffic management systems is to reduce the
-total delays of vehicles on a certain section of the road network, in
-the area of operation of this system -- at an intersection, in an area
-or city{[}1-2{]}.
-
-Microcontroller intellectualization of traffic lights is a modern and
-promising direction for improving traffic light facilities. The presence
-of a digital reprogrammable microcontroller, such as the Siemens LOGO!
-230rce, and small microcontrollers with built-in ESP32 Cam video cameras
-open up wide opportunities for the use of modern software and hardware
-that allow interactively intellectualize the process of optimizing
-traffic flows without significant material costs.
-
-{\bfseries Materials and methods.} The Siemens LOGO! 230RCE microcontroller
-in combination with the updated DC-2 linear controller allows you to
-optimize the algorithm of the entire information intelligent system. The
-technology of improvement of the DC-2 linear controller does not present
-great electrical complexity. Figure 1 shows the internal arrangement of
-the elements of the DC-2 controller. The device of the 230RCE
-programmable logic controller (PLC) is also presented here{[}3{]}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image4}
-	\caption*{}
-\end{figure}
-
-
-а б
-
-a -- DC-2 controller; b -- LOGO!230RCE
-
-{\bfseries Figure 1 - The layout of the DC-2 and the general view of the
-Siemens LOGO! 230RCE microcontroller}
-
-The dimensions of the DC-2 and the length of the DIN rail PLC LOGO! they
-are compact enough. Please note that the 230rce allows you to attach the
-rail without significant structural changes. In practice, an additional
-relay with the function of reprogramming and data exchange over Ethernet
-networks is installed in the housing of the DC-2. An important feature
-of the new hardware is the constantly expanding libraries of application
-programs and software LOGO! and the presence of a simulator in Soft
-Comfort. This is the personal logo of the microcontroller! The Web
-editor can be supplemented with a web server, which allows you to
-process network data streams, images obtained from video cameras
-specific to the OOP application. Figure 2 shows the program code written
-in the FBD graphical language {[}4-5{]}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image6}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 2 - The code of the adaptive traffic light program}
-
-The algorithm of the traffic light with a recognition sensor located in
-the traffic light zone of cars takes into account their number and if
-the specified number of cars is exceeded (in our case, 15 cars), the
-green light turns on{[}6{]}.
-
-Figure 3 shows the standard program for switching on the temporary
-phases of green, yellow and red light.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image7}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 3 - The standard operating program of the traffic light
-in the "green wave" mode}
-
-The special feature of the code is that it can be reloaded taking into
-account traffic jams, emergencies and night mode (yellow, which lights
-up again).
-
-Various software solutions are used to eliminate the phenomena of
-congestion and forced unreasonable delays of cars at intersections in
-front of traffic lights{[}7{]}. The algorithm and Program for
-calculating the number of vehicles can be adapted to a pedestrian
-traffic light, which is of particular relevance for streets with divided
-lanes near the centerline of the bus (for example, on Timiryazev Street
-in Almaty).
-
-In this regard, an upgraded computer traffic management system in Almaty
-is needed, which should calculate online the optimal and coordinated
-time intervals for switching on the phases of red, yellow, and green
-traffic lights at adjacent intersections, ensuring traffic flow along
-the "green" wave. Among such intelligent control systems, we note the
-automated control system "Smart traffic lights" of New York City.
-
-The intelligent traffic light control system of large cities is a
-complex and expensive automated system, however, reducing travel time,
-reducing vehicle downtime at intersections, reducing harmful emissions
-into the atmosphere, increasing the mobility of the population as a
-whole compensate for these costs. So, traffic management of a
-megalopolis is a complex and multilevel technological process.
-
-Complex automation requires a powerful computer network with central
-controllers of supercomputers, on the periphery of which the IoT device
-constantly transmits data to the traffic control center via
-communication channels.
-
-A promising task of modern automation of the traffic management
-information system is research on "advanced" traffic management and
-traffic light regulation. The implemented software products should
-calculate indicators interactively, taking into account the requirements
-of local government systems installed at the nodal points of the
-city' s road network. Also promising tasks are the
-creation of network simulators for microcontroller control of "smart
-intersections", and then their localization into more complex networks
-on the scale of a polycentric district and the city as a whole.
-
-In urban conditions, the following methods of traffic management are
-used:
-
-- Control by stopping vehicles. For example, by means of traffic lights.
-Each traffic flow moving through the intersection is affected by three
-light signals --- green, yellow and red.
-
-- The direction of traffic flow bypassing the area where congestion is
-formed.
-
-- Information management. The driver receives information about the
-traffic situation on his way, and decides on the further route on his
-own.
-
-- Coordinated management. It allows you to increase the capacity of
-roads and reduce the risk of accidents by streamlining traffic. The
-following methods are used to implement coordinated management
-
-- Rigid software control. Coordination programs and the order of their
-change are calculated in advance based on movement data collected, as a
-rule, by field measurements.
-
-- Software management with forecast. The selection of the program
-activation points, the duration of their operation and their adaptation
-to the speed of traffic flow is performed based on data from transport
-detectors.
-
--Adaptive control. Each cycle is implemented with the calculation of
-coordination programs based on traffic flow data at each intersection
-and in each control phase.
-
-{\bfseries Results and discussions.} As a result of the conducted research,
-the software and hardware of the ESP32 Cam interface was developed on
-the principle of a "green wave" for special services vehicles using a QR
-code. Similarly, the hardware and software of the ESP32 QR Code Reader
-interface for medical vehicles was developed. The "smart" HR software
-appeared during the implementation of a library program in which, with
-standard QR code recognition, a text message transcribing the text of
-the QR code was displayed on the screen of the COM port of the Arduino
-IDE environment {[}8, 9{]} (Fig.4).
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image8}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 4 - Electrical diagram of an intelligent interface for
-controlling a "smart" traffic light using a QR code}
-
-In the case of fire trucks, often driven by a small column, the "Green
-Wave" has a longer turn-on time, and this information is entered into
-the QR code. Below is a program that implements an algorithm for
-adaptive activation of the "green wave" in the codes of the Arduino IDE
-environment:
-
-Void setup()
-
-\{
-
-TM1283 mod;
-
-Byte num();
-
-int pinA = 3;
-
-int pinD = 5;
-
-pinMode (pinA, input);
-
-digitalWrite(pin1);
-
-Boolean dSW(pinC);
-
-\}
-
-Int encoderPosCount(stepsPerrevo5)\{
-
-myStepper = 7;
-
-int pinDLast = 8;
-
-Serial.begin (362);
-
-Value\_Y = analogRead (axis-X);
-
-Bool isvalid = false;
-
-MFRC522 mfrc522(DD\_PIN;
-
-Byte uidCar;
-
-delay(1);
-
-mode = cloc() / 5;
-
-if X=4 then \{
-
-go to 10(``.'');
-
-delay(100);
-
-\}
-
-As can be seen from the text of the application, the webcam reads the QR
-code, analyzes the text and selects from it the number specified in the
-text format and converts it to a digital format. Then the coil of the
-intelligent traffic light relay turns on to turn on the yellow light and
-then the green light.
-
-{\bfseries Conclusion.} In conclusion, it should be noted that the
-assessment of the informativeness of adaptive control algorithms makes
-it possible to optimally select the necessary operating mode for traffic
-flows, which in turn will significantly reduce the number of congestion
-on the streets of megacities.
-
-The use of this system has made it possible to increase the efficiency
-of the automated control system by 18\%. The developed software and
-hardware of the ESP32 Cam interface based on the "green wave" principle
-for special services vehicles using a QR code has shown its viability
-and practicality. The created program code for the Arduino IDE
-environment is adapted to these requirements. The article is based on
-the results of research carried out within the framework of the funded
-project "A neural computer view of the smart traffic light of megacities
-of the country".
+\href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}}
+
+Целью данной работы является определение параметров математической
+модели, описывающей прорывы селевых потоков через гидротехнические
+объекты, такие как дамбы и плотины. Достижение этой цели позволит
+соотнести разработанную модель с реальными наблюдениями и данными.
+Важность исследования обусловлена увеличением частоты и интенсивности
+катастрофических наводнений, вызванных разрушением таких сооружений, что
+подчеркивает необходимость разработки эффективных методов для
+прогнозирования и предотвращения подобных инцидентов. Методы и подходы,
+предложенные в данной работе, обладают высоким практическим значением
+для оценки вероятных рисков, организации эвакуационных мероприятий и
+снижения ущерба от аварий, связанных с разрушением дамб и плотин.
+
+{\bfseries Ключевые слова:} гидротехнические сооружения (ГТС), параметры,
+идентификация, прорыв дамбы, селевой поток, математическое
+моделирование.
+
+{\bfseries МАТЕМАТИКАЛЫҚ МОДЕЛЬДЕРДІ КВАЗИЛИНЕАРИЗАЦИЯ ӘДІСІМЕН
+СӘЙКЕСТЕНДІРУ}
+
+{\bfseries \textsuperscript{1,2}Т.Ж. Мазаков\textsuperscript{\envelope },
+\textsuperscript{1}Ш.А. Джомартова, \textsuperscript{1}А.Т. Мазақова,
+\textsuperscript{3}Г.Ч Тойкенов,}
+
+{\bfseries \textsuperscript{1,2}М.С. Әлиасқар, \textsuperscript{3}Тойкенова
+У.Г.}
+
+¹Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы, Қазақстан,\\
+²Халықаралық инженерлік-технологиялық университет, Алматы, Қазақстан,\\
+³Қазақ ұлттық қыздар педагогикалық университеті, Алматы, Қазақстан,\\
+e-mail: \href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}}
+
+Бұл зерттеудің мақсаты --- гидротехникалық құрылыстар, соның ішінде
+бөгеттер мен дамбалар арқылы болатын сел ағындарының жарылуын
+сипаттайтын математикалық модельдің параметрлерін анықтау. Бұл мақсатқа
+қол жеткізу әзірленген модельді нақты бақылаулармен және деректермен
+салыстыруға мүмкіндік береді. Зерттеудің өзектілігі осындай
+құрылыстардың бұзылуы салдарынан болатын апатты су тасқындарының жиілігі
+мен қарқындылығының артуымен ерекшеленеді, бұл осындай оқиғаларды болжау
+және алдын алу үшін тиімді әдістерді әзірлеу қажеттігін көрсетеді. Осы
+жұмыста ұсынылған әдістер мен тәсілдер ықтимал тәуекелдерді бағалауға,
+эвакуация шараларын ұйымдастыруға және дамбалар мен бөгеттердің
+бұзылуымен байланысты апаттардан келетін шығындарды азайтуға үлкен
+практикалық мәнге ие.
+
+{\bfseries Түйін сөздер}: гидротехникалық құрылыстар (ГТҚ), параметрлер,
+сәйкестендіру, дамбаның жарылуы, сел ағыны, математикалық модельдеу.
+
+{\bfseries IDENTIFICATION OF MATHEMATICAL MODELS USING THE
+QUASILINEARIZATION METHOD}
+
+{\bfseries \textsuperscript{1,2} T.Zh. Mazakov\textsuperscript{\envelope }, ¹S
+\textsuperscript{1}h.A. Jomartova, \textsuperscript{1}A.T. Mazakova,
+\textsuperscript{3}G.Ch. Toykenov,\\
+\textsuperscript{1,2}M.S. Aliaskar, \textsuperscript{3}U.G. Toykenova\\
+}
+
+¹Al-Farabi Kazakh National University, Almaty, Kazakhstan,\\
+²International Engineering and Technology University, Almaty,
+Kazakhstan,\\
+³Kazakh National Women' s Teacher Training University,
+Almaty, Kazakhstan,\\
+e-mail: \href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}}
+
+The aim of this study is to determine the parameters of a mathematical
+model that describes debris flow breaches through hydraulic structures,
+such as dams and embankments. Achieving this goal will allow the
+developed model to be correlated with real observations and data. The
+importance of the research is underscored by the increasing frequency
+and intensity of catastrophic floods caused by the failure of such
+structures, emphasizing the need to develop effective methods for
+predicting and preventing such incidents. The methods and approaches
+proposed in this work hold significant practical value for assessing
+potential risks, organizing evacuation measures, and reducing the damage
+from accidents related to dam and embankment failures.
+
+{\bfseries Keywords}: hydraulic structures (HS), parameters,
+identification, dam breach, debris flow, mathematical modeling.
+
+{\bfseries Введение}. За последнее столетие зарегистрировано более тысячи
+разрушений гидротехнических сооружений по всему миру, где основными
+причинами выступают как природные, так и антропогенные факторы. Среди
+основных факторов аварий на ГТС {[}1{]} выделяются:
+
+\begin{itemize}
+\item
+  прохождение экстремальных объемов воды, что может вызвать переполнение
+  водохранилища и нарушить нормальную работу сбросных сооружений,
+  приводя к переливу через гребень плотины и формированию прорыва;
+\item
+  износ основных компонентов плотин и гидромеханического оборудования
+  вследствие длительной эксплуатации, что создает риск возникновения
+  прорывов;
+\item
+  ошибки персонала, недостаток мониторинга опасных ситуаций и
+  недостаточные прогнозные данные по паводкам;
+\item
+  террористические акты, направленные на разрушение плотин.
+\end{itemize}
+
+Примеры значимых происшествий:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  В Италии, в 1963 году, прорыв дамбы Вайонт был вызван оползнем объёмом
+  около 260 млн куб. метров, который обрушился в водохранилище, вызвав
+  перелив и уничтожение нескольких деревень, погибло около 2000 человек.
+\item
+  В Китае, прорыв дамбы Банкиао в 1975 году, спровоцированный
+  чрезмерными осадками, привёл к гибели более 170 000 человек, а
+  миллионы остались без жилья.
+\item
+  Аварии в Бразилии на хвостохранилищах горнодобывающих предприятий,
+  включая прорыв дамбы в 2019 году в Брумадинью, вызвали масштабные
+  экологические катастрофы и многочисленные жертвы.
+\end{enumerate}
+
+Кроме того, техногенная катастрофа на Саяно-Шушенской ГЭС в России,
+произошедшая 17 августа 2009 года, привела к гибели 75 человек и
+нанесению серьезного ущерба объекту. Прорыв дамбы в селе Кызылагаш
+Алматинской области в 2010 году также привел к человеческим жертвам и
+разрушениям.
+
+{\bfseries Математические модели селевых потоков} служат важным
+инструментом для анализа и прогнозирования этих сложных и разрушительных
+природных явлений. Селевые потоки представляют собой массу воды, грунта
+и камней, которая перемещается под действием гравитации по склонам и
+руслам рек, требуя тщательного анализа и моделирования.
+
+Основные подходы к моделированию селевых потоков:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Эмпирические модели, опирающиеся на статистические данные прошлых
+  событий.
+\item
+  Физические модели, воссоздаваемые в лабораторных условиях для изучения
+  поведения селевых потоков.
+\item
+  Численные модели, использующие уравнения гидродинамики и механики
+  грунтов.
+\end{enumerate}
+
+Применение математического моделирования позволяет:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Оценивать риски и уязвимость:
+
+  \begin{itemize}
+  \item
+    Определение зон потенциального воздействия селевых потоков.
+  \item
+    Использование при планировании территорий и разработке мер по
+    снижению рисков.
+  \end{itemize}
+\item
+  Проектировать инженерные сооружения:
+
+  \begin{itemize}
+  \item
+    Поддержка при проектировании дамб, каналов и барьеров.
+  \item
+    Оценка эффективности защитных сооружений.
+  \end{itemize}
+\item
+  Создавать системы раннего предупреждения:
+
+  \begin{itemize}
+  \item
+    Интеграция моделей с метеорологическими данными для прогнозирования
+    селевых потоков.
+  \end{itemize}
+
+  \begin{itemize}
+  \item
+    Обеспечение своевременного оповещения населения и служб
+    реагирования.
+  \end{itemize}
+\end{enumerate}
+
+Примеры математических моделей для анализа селевых потоков и оползней
+{[}2-3{]}:
+
+\emph{{\bfseries 1) Модель DEBRIS-2D}}
+
+DEBRIS-2D --- это специализированная двумерная численная модель,
+предназначенная для симуляции движения селевых потоков и грязекаменных
+лавин по сложному рельефу местности. Она позволяет анализировать
+динамику селевых масс с учётом их реологических характеристик и
+взаимодействия с топографией. Модель учитывает различные реологические
+подходы, такие как модели Бингема, Гершеля-Балкли и турбулентного
+потока, что помогает описывать неньютоновские свойства селевых потоков,
+включая зависимость вязкости от напряжения сдвига.\\
+DEBRIS-2D использует высокоточные цифровые модели рельефа (DEM), что
+обеспечивает детальное представление поверхности и точное
+прогнозирование путей движения потоков. Модель решает двухмерные
+уравнения глубинно-усредненного потока с использованием методов конечных
+объемов или конечных разностей, что позволяет эффективно моделировать
+нестационарные процессы. Она применяется для определения вероятных
+маршрутов распространения селевых потоков и зон повышенного риска, а
+также при планировании мер по снижению рисков, эвакуации и размещению
+защитных сооружений.
+
+\emph{{\bfseries 2) Модель FLO-2D}}
+
+FLO-2D --- двумерная гидродинамическая модель, предназначенная для
+моделирования поверхностного течения жидкости на обширных территориях.
+Изначально разработанная для прогнозирования паводков, модель FLO-2D
+была адаптирована для симуляции селевых потоков, лахаров и других
+гидрологических явлений с учётом неньютоновских свойств. Модель решает
+полные уравнения мелкой воды без упрощений, что позволяет учитывать
+сложные потоки с переменными скоростями и направлениями. Она использует
+квадратную расчётную сетку, что упрощает моделирование и повышает его
+эффективность при обработке больших объемов данных.\\
+FLO-2D поддерживает различные реологические модели для вязкопластичных
+материалов, таких как селевые потоки, и учитывает влияние концентрации
+частиц и вязкости на движение потока. Модель совместима с ГИС, что
+облегчает подготовку данных и анализ результатов. FLO-2D широко
+используется для прогнозирования распространения паводковых вод, оценки
+риска затопления и моделирования высококонцентрированных смесей воды и
+твёрдых частиц, характерных для селевых потоков. Она также применяется
+при проектировании гидротехнических сооружений, таких как дамбы и
+каналы.
+
+\emph{{\bfseries 3) Модель DAN (Динамический анализ оползней)}}
+
+DAN (Dynamic Analysis of Landslides) --- одномерная численная модель,
+разработанная для анализа быстродвижущихся оползней, селевых потоков и
+обвалов. Эта модель ориентирована на анализ глубинно-усредненного
+движения массы вдоль заданной траектории с учётом изменения
+реологических характеристик материала в процессе движения.\\
+DAN поддерживает несколько реологических моделей, таких как:
+
+\begin{itemize}
+\item
+  {\bfseries Модель сухого трения} --- используется для материалов, у
+  которых сопротивление движению пропорционально нормальному напряжению;
+\item
+  {\bfseries Модель Бингема} --- учитывает начальное напряжение сдвига и
+  постоянную вязкость;
+\item
+  {\bfseries Модель Гершеля-Балкли} --- обобщает модель Бингема, вводя
+  показатель степени для напряжения сдвига;
+\item
+  {\bfseries Модель Воеллми} --- сочетает сухое трение и турбулентное
+  сопротивление, часто применяемая для снежных лавин и обвалов.
+\end{itemize}
+
+Модель DAN позволяет изменять реологические параметры по траектории
+движения, учитывая процессы разжижения или уплотнения материала. Она
+помогает прогнозировать дальность, скорость и время прибытия оползневых
+масс, а также оценивает потенциальный ущерб зданиям, дорогам и другим
+объектам. Модель активно используется в планировании защитных инженерных
+мер и разработке систем раннего предупреждения.
+
+{\bfseries Материалы и методы.} Хотя все упомянутые модели описываются
+уравнениями в частных производных, в работе {[}4{]} был предложен
+алгоритм, позволяющий свести их к системе обыкновенных дифференциальных
+уравнений. После того как структура математической модели определена
+(т.е. задан вид уравнений с неуточнёнными параметрами), встает задача
+параметрической идентификации --- нахождения численных значений
+параметров на основе известных входных и выходных данных.
+
+Ввиду сложности моделируемого объекта применимы лишь пассивные методы
+идентификации, предполагающие использование данных, полученных в
+процессе нормального функционирования объекта.
+
+Рассмотрим следующую математическую модель, описываемую системой
+обыкновенных дифференциальных уравнений:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \(\dot{y} = f(y,p,t)\),
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (1)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% & \\
+% \(y\left( t_{0} \right) = y_{0}\). & (2) \\
+% \end{longtable}
+
+Здесь \(y\) -- ny-мерный вектор состояния модели, p -- np-мерный вектор
+параметров.
+
+В качестве меры близости системы и модели выберем функционал:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \(S = \sum_{m = 1}^{ny}{\sum_{j = 1}^{l}{\sum_{i = 0}^{n}{({\widehat{y}}_{m}^{\left\langle j \right\rangle}\left( t_{i} \right) - y_{m}^{\left\langle j \right\rangle}\left( t_{i} \right))}^{2}}}\),
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (3)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+где \(y_{m}^{\left\langle j \right\rangle}(t_{i})\) -- значение
+выходного сигнала \(y_{m}\) в момент времени \(t_{i}\) в год j,
+полученное с использованием математической модели.
+
+Таким образом, задача параметрической идентификации сводится к задаче
+минимизации функционала \emph{S} по параметрам \emph{p}:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \[\min_{p \in P}S\]
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (4)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+где \emph{P} -- пространство допустимых значений параметров \emph{p}.
+
+Метод квазилинеаризации, предложенный Беллманом и Калабой {[}5{]} для
+решения краевых задач нелинейных дифференциальных уравнений, может быть
+также использован для задачи параметрической идентификации при условии,
+что параметры постоянны. Этот метод характеризуется высокой степенью
+сходимости.
+
+{\bfseries Результаты и обсуждение.} Дополним систему обыкновенных
+дифференциальных уравнений (1)-(2) приобретает следующий вид с
+добавлением уравнения:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \(\dot{p} = O\),
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (5)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+где \(p\) -- параметры модели, подлежащие идентификации.
+
+Введем обозначения: \(z = (y,\ p)\),
+\(\varphi(z,t) = \left( f(z,t),\ O \right)\), где \(z\) - вектор
+размерности -- \(nz = (ny + \ np\)\emph{).} Тогда систему
+дифференциальных уравнений (1) и (5) можно записать как:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \[\dot{z} = \varphi\ (z,t)\]
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (6)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+Предположим, что \emph{k}-я оценка вектора состояния
+\(z^{\left\langle k \right\rangle}(t)\),
+\(t \in \lbrack t_{0},t_{1}\rbrack\) известна. Разлагая правую часть (6)
+в окрестности траектории \(z^{\left\langle k \right\rangle}(t)\), в ряд
+Тейлора и ограничиваясь линейной частью, получаем систему
+дифференциальных уравнений для \((k + 1)\)-го приближения вектора:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \[{\dot{z}}^{\left\langle k + 1 \right\rangle} = A^{\left\langle k \right\rangle}(t)z^{\left\langle k + 1 \right\rangle} + q^{\left\langle k \right\rangle}(t)\]
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (7)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+где
+
+\(A^{\left\langle k \right\rangle}(t) = \frac{\partial\varphi(z^{\left\langle k \right\rangle},t)}{\partial z}\),
+
+\(q^{\left\langle k \right\rangle}(t) = \varphi\left( z^{\left\langle k \right\rangle},t \right) - A^{\left\langle k \right\rangle}(t)z^{\left\langle k \right\rangle}\).
+
+Решение уравнения (7) имеет вид:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \(z^{\left\langle k + 1 \right\rangle}(t) = Ф^{\left\langle k + 1 \right\rangle}(t)z^{\left\langle k + 1 \right\rangle}\left( t_{0} \right) + g^{\left\langle k \right\rangle}(t)\),
+% 
+% \(t \in \left\lbrack t_{0},t_{1} \right\rbrack\),
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (8)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+где \(Ф^{\left\langle k + 1 \right\rangle}(t)\) - является решением
+следующей матричной системы дифференциальных уравнений:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \({\dot{Ф}}^{\left\langle k + 1 \right\rangle} = A^{\left\langle k \right\rangle}(t)Ф^{\left\langle k + 1 \right\rangle},\ \ \ \ \ \ \ \ Ф^{\left\langle k + 1 \right\rangle}\left( t_{0} \right) = E\),
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (9)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+а \(g^{\left\langle k \right\rangle}(t)\) -- решением неоднородного
+дифференциального уравнения:
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \({\dot{g}}^{\left\langle k + 1 \right\rangle} = A^{\left\langle k \right\rangle}(t)g^{\left\langle k + 1 \right\rangle} + q^{\left\langle k \right\rangle},\ \ \ \ \ \ \ {g(t}_{0}) = O\).
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (10)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+Здесь E -- единичная матрица.
+
+Разобьем матрицу \(Ф^{\left\langle k + 1 \right\rangle}\) на блочные
+матрицы:
+
+\[Ф^{\left\langle k + 1 \right\rangle} = \begin{pmatrix}
+Ф_{1}^{\left\langle k + 1 \right\rangle} & Ф_{2}^{\left\langle k + 1 \right\rangle} \\
+Ф_{3}^{\left\langle k + 1 \right\rangle} & Ф_{4}^{\left\langle k + 1 \right\rangle}
+\end{pmatrix}.\]
+
+Подставим решение (8) в функционал (3):
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \(S^{\left\langle k + 1 \right\rangle} = \ \sum_{m = 1}^{ny}{\sum_{j = 1}^{l}{\sum_{i = 0}^{n}\left( {\widehat{y}}_{m}^{\left\langle j \right\rangle}\left( t_{i} \right) - z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}(t_{i}) \right)}}\),
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (11)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+где
+\(z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}(t_{i})\)
+-- значение \((k + 1)\)-го приближения выходного сигнала \(z_{m}\) в
+момент времени \(t_{i}\), для года j. С учётом обозначений:
+
+\(z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}\left( t_{0} \right) = {\widehat{y}}_{m}^{\left\langle j \right\rangle}(t_{0})\),
+для m=\(\overline{1,ny}\) и ∀ k, j,
+
+\(z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}\left( t_{0} \right) = p^{\left\langle k + 1 \right\rangle}\),
+для m=\(\overline{ny + 1,nz}\) и ∀ k, j,
+
+получим следующий функционал, зависящий от неизвестных
+\(p^{\left\langle k + 1 \right\rangle}\):
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \(S^{\left\langle k + 1 \right\rangle} = \sum_{j = 1}^{l}{\sum_{i = 0}^{n}{\left( {\widehat{y}}^{\left\langle j \right\rangle}\left( t_{i} \right) - Ф_{1}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right){\widehat{y}}^{\left\langle j \right\rangle}\left( t_{0} \right) - Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right)p^{\left\langle k + 1 \right\rangle} - g^{\left\langle k \right\rangle}(t_{i}) \right)\left( {\widehat{y}}^{\left\langle j \right\rangle}\left( t_{i} \right) - Ф_{1}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right){\widehat{y}}^{\left\langle j \right\rangle}\left( t_{0} \right) - Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right)p^{\left\langle k + 1 \right\rangle} - g^{\left\langle k \right\rangle}(t_{i}) \right)}}\).
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (12)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+Приравняем к нулю частные производные от
+\(S^{\left\langle k + 1 \right\rangle}\) по
+\(p^{\left\langle k + 1 \right\rangle}\):
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \[\sum_{j = 1}^{l}{\sum_{i = 0}^{n}{\left( Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right)Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right) \right)p^{\left\langle k + 1 \right\rangle}}} = \sum_{j = 1}^{l}{\sum_{i = 0}^{n}{Ф_{2}^{\left\langle k + 1 \right\rangle}(t_{i})}}\left( {\widehat{y}}^{\left\langle j \right\rangle}\left( t_{i} \right) - Ф_{1}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right){\widehat{y}}^{\left\langle j \right\rangle}\left( t_{0} \right) - g^{\left\langle k \right\rangle}(t_{i}) \right)\]
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% (13)
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% \end{longtable}
+
+которую решим методом Гаусса для определения
+\(p^{\left\langle k + 1 \right\rangle}\). Это позволит найти траекторию
+\(z^{\left\langle k + 1 \right\rangle}(t)\), на интервале
+\(t \in \lbrack t_{0},t_{1}\rbrack\), тем самым определяя \((k + 1)\)- ю
+оценку вектора состояния \(z\). Процесс продолжается, пока очередные
+оценки \(p^{\left\langle k \right\rangle}\) и
+\(p^{\left\langle k + 1 \right\rangle}\) не станут близки по заданному
+критерию.
+
+Таким образом, алгоритм идентификации на основе квазилинеаризации можно
+представить следующим образом:
+
+Шаг 1. Задаем начальные значения \(p^{\left\langle 0 \right\rangle}\),
+инициализируем \(k = 0\).
+
+Шаг 2. Для определения \(k\)-го приближения
+\(z^{\left\langle k \right\rangle}(t)\) интегрируем систему:
+
+\[{\dot{z}}^{\left\langle k \right\rangle} = \varphi(z^{\left\langle k \right\rangle},u,t)\]
+
+при начальных условиях
+
+\(z_{m}^{\left\langle k \right\rangle}\left( t_{0} \right) = \frac{1}{l}\sum_{j = 1}^{l}{{\widehat{y}}_{m}^{\left\langle j \right\rangle}(t_{0})}\),
+для m=\(\overline{1,ny}\),
+
+\(z_{m}^{\left\langle k \right\rangle}\left( t_{0} \right) = p^{\left\langle k \right\rangle}\),
+для m=\(\overline{ny + 1,nz}\).
+
+Шаг 3. Решаем задачи Коши (9) и (10).
+
+Шаг 4. Для получения \((k + 1)\)-й оценки параметров \emph{p} решаем
+систему линейных алгебраических уравнений (13).
+
+Шаг 5. Если
+\(\left| p^{\left\langle k + 1 \right\rangle} - p^{\left\langle k \right\rangle} \right| < \varepsilon_{0}\),
+процесс идентификации завершается; иначе --- возврат к шагу 2 (где
+\(\varepsilon_{0}\) -- требуемая точность).
+
+Таким образом, математические модели для анализа угроз прорыва дамб
+обеспечивают безопасность гидротехнических объектов и позволяют:
+прогнозировать последствия возможных аварий, разрабатывать меры для
+снижения рисков и повышать осведомлённость населения к ЧС. Развитие
+вычислительных технологий и интеграция с геоинформационными системами
+делают модели более точными, хотя их результативность зависит от
+качества исходных данных и опыта специалистов.
+
+Предложенный алгоритм реализован программно и проходит экспериментальные
+расчёты.
+
+{\bfseries Выводы.} Модели DEBRIS-2D, FLO-2D и DAN представляют собой
+ключевые инструменты в геотехническом и гидрологическом моделировании
+опасных природных процессов. Их использование позволяет: а) углубленно
+изучить механизмы движения селевых потоков и оползней; б) точно
+прогнозировать зоны потенциального воздействия и пути распространения
+опасных потоков; в) разрабатывать эффективные стратегии управления
+рисками и планирования территорий. Выбор конкретной модели определяется
+спецификой задачи, доступными данными и уровнем детализации, необходимым
+для анализа. Интеграция результатов моделирования с практическими мерами
+по снижению рисков способствует повышению уровня безопасности населения
+и устойчивости инфраструктуры перед воздействием опасных геологических
+процессов.
+
+В данной работе разработана схема идентификации параметров моделей,
+позволяющая адаптировать их к конкретным водоемам. Этот алгоритм
+предоставляет возможность более точного моделирования процессов
+разрушения плотин и распространения селевых волн, что является важным
+аспектом для предотвращения катастрофических наводнений. Результаты
+численных расчетов показывают, что предложенная схема эффективно
+применяется для идентификации параметров выбранных математических
+моделей. Программное обеспечение, реализующее данный алгоритм,
+демонстрирует высокую точность и надежность расчетов, что подтверждается
+сравнением с существующими моделями и экспериментальными данными.
+
+Перспективы дальнейших исследований связаны с интеграцией разработанной
+схемы идентификации параметров моделей с современными системами
+мониторинга и предупреждения о чрезвычайных ситуациях. Это позволит
+повысить эффективность мер по защите населения и инфраструктуры от
+последствий селевых прорывов и других гидрологических угроз.
+
+\emph{{\bfseries Финансирование.} Работа выполнена при финансовой поддержке
+Комитета науки Министерства науки и высшего образования Республики
+Казахстан в рамках гранта AP19678157 «Разработка программно-аппаратного
+комплекса мониторинга состояния уровня заполняемости
+водоёма»~(2023-2025)}
+
+{\bfseries Литература}
+
+1.Стихийные бедствия и техногенные катастрофы: Превентивные меры/ The
+World Bank and The United Nations; пер. с англ.-М.: Альпина
+Паблишер.-2011.-312 с.
+
+ISBN 978-5-9614-1527-8
+
+2.
+\href{https://www.researchgate.net/profile/Francesca-Aureli?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Francesca
+Aureli},
+\href{https://www.researchgate.net/profile/Paolo-Mignosa?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Paolo
+Mignosa},
+\href{https://www.researchgate.net/profile/Massimo-Tomirotti?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Massimo
+Tomirotti}. Numerical simulation and experimental verification of
+Dam-Break flows with
+shocks//\href{https://www.researchgate.net/journal/Journal-of-Hydraulic-Research-1814-2079?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Journal
+of Hydraulic Research}.-2010.-Vol.2000(3).-P.197-206. DOI
+\href{http://dx.doi.org/10.1080/00221680009498337}{10.1080/00221680009498337}
+
+3.
+\href{https://www.researchgate.net/profile/Tomaz-Podobnikar?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Tomaž
+Podobnikar} Methods for visual quality assessment of a digital terrain
+model// S.A.P.I.EN.S
+\href{https://www.researchgate.net/journal/Surveys-and-Perspectives-Integrating-Environment-and-Society-1993-3819?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Surveys
+and Perspectives Integrating Environment and Society}, Special issue
+/-2009.-Vol.2(2).-P.1-10. URL
+http://journals.openedition.org/sapiens/738
+
+4. Mazakova A.T., Jomartova Sh.A., Mazakov T.Zh., Ziyatbekova G.Z.,
+Begaliyeva K.B.
+
+Digital Determination of the Thermal Conductivity of a Square Bar by
+Reduction to a System of Integral Equations//Ecological Footprint of the
+Modern Economy and the ways to Reduce it Advances in Science,
+Technology\&amp;Innovation.-2024.-P.167-171.
+
+DOI:10.1007/978-3-031-49711-7\_29
+
+5. Гроп Д. Методы идентификации систем.// Перевод с англ. В.А.
+Васильева, В.И. Лопатина. - Под ред. Е.И. Кринецкого М.: Мир, 1979. --
+302 с.
 
 {\bfseries References}
 
-1.Badaguev B.T. Jekspluatacija transportnyh sredstv (organizacija i
-bezopasnost'{} dvizhenija). -- M.:
-Al' fa-Press, 2012. - 239 s. ISBN 978-5-94280-556-2 {[}in
-Russian{]}
+1.Stihijnye bedstvija i tehnogennye katastrofy: Preventivnye mery/ The
+World Bank and The United Nations; per. s angl.-M.:
+Al' pina Pablisher.-2011.-312 s.
 
-2. Dudko N.I., Petrovec V.R., Bershadskij V.F.
-Bezopasnost'{} dvizhenija mehanicheskih transportnyh
-sredstv: posobie - Gorki: BGSHA, 2014. - 238 s. ISBN 978-985-467-490-2
-{[}in Russian{]}
+ISBN 978-5-9614-1527-8. {[}in Russian{]}
 
-3. Blinkin M.Ja. Bezopasnost'{} dorozhnogo dvizhenija:
-istorija voprosa, mezhdunarodnyj opyt, bazovye institucii.-M.: Izd. dom
-Vysshej shkoly jekonomiki, 2013.- 240 s. ISBN: 978-5-7598-1086-5 {[}in
-Russian{]}
+2.
+\href{https://www.researchgate.net/profile/Francesca-Aureli?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Francesca
+Aureli},
+\href{https://www.researchgate.net/profile/Paolo-Mignosa?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Paolo
+Mignosa},
+\href{https://www.researchgate.net/profile/Massimo-Tomirotti?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Massimo
+Tomirotti}. Numerical simulation and experimental verification of
+Dam-Break flows with
+shocks//\href{https://www.researchgate.net/journal/Journal-of-Hydraulic-Research-1814-2079?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Journal
+of Hydraulic Research}.-2010.-Vol.2000(3).-P.197-206. DOI
+\href{http://dx.doi.org/10.1080/00221680009498337}{10.1080/00221680009498337}
 
-4. Volkov V.S. Jelektrooborudovanie transportnyh i
-transportno-tehnologicheskih mashin: uchebnoe posobie - M.: Akademija,
-2010. - 208 s. ISBN 978-5-7695-5749-1 {[}in Russian{]}
+3.
+\href{https://www.researchgate.net/profile/Tomaz-Podobnikar?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Tomaž
+Podobnikar} Methods for visual quality assessment of a digital terrain
+model// S.A.P.I.EN.S
+\href{https://www.researchgate.net/journal/Surveys-and-Perspectives-Integrating-Environment-and-Society-1993-3819?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Surveys
+and Perspectives Integrating Environment and Society}, Special issue
+/-2009.-Vol.2(2).-P.1-10. URL
+http://journals.openedition.org/sapiens/738
 
-5. Gorev, A. Je.Osnovy teorii transportnyh sistem: uchebnoe posobie / A.
-Je. Gorev;SPbGASU. -- SPb., 2010. - 214 s. ISBN 978-5-9227-0266-9 {[}in
-Russian{]}
+4. Mazakova A.T., Jomartova Sh.A., Mazakov T.Zh., Ziyatbekova G.Z.,
+Begaliyeva K.B.
 
-6. Majboroda M.E., Bednarskij V.V. Gruzovye
-avtomobil' nye perevozki. - M.: Feniks, 2008.- 442 s.
-ISBN 978-5-222-14364-3 {[}in Russian{]}
+Digital Determination of the Thermal Conductivity of a Square Bar by
+Reduction to a System of Integral Equations//Ecological Footprint of the
+Modern Economy and the ways to Reduce it Advances in Science,
+Technology\&amp;Innovation.-2024.-P.167-171.
 
-7. Klinkovshtejn G.I. Organizacija dorozhnogo dvizhenija: uchebnik dlja
-vuzov. -- 5-e izd., pererab. i dop.- M: Transport, 2001 - 247. ISBN
-9785277022405
+DOI:10.1007/978-3-031-49711-7\_29
 
-8. Urykov V.A., Zelenina L.I. Modeli transportnogo infrastrukturnogo
-kompleksa //
-\href{https://web.snauka.ru/issues/2014.\%2018.06.2020}{https://web.snauka.ru/issues/2014.
-18.06.2020}. {[}in Russian{]}
+5. Grop D. Metody identifikacii sistem.// Perevod s angl. V.A.
+Vasil' eva, V.I. Lopatina. - Pod red. E.I. Krineckogo M.:
+Mir, 1979.- 302 s. {[}in Russian{]}
 
-9. Morozov I.I. i dr. Chislennoe issledovanie transportnyh potokov na
-osnove gidrodinamicheskih modelej // Komp' juternye
-issledovanija i modelirovanie.-2011. -T. 3(4).-S. 389-412. {[}in
-Russian{]}
+\emph{{\bfseries Сведение об авторах}}
 
-\emph{{\bfseries Сведения об авторах}}
+Мазаков Т.Ж.-доктор физико-математических наук, профессор, Казахский
+национальный университетим. аль-Фараби, Алматы, Казахстан, e-mail:
+tmazakov@mail.ru;
 
-Тулегулов А.Д. - кандидат физико-математических наук, ассоциированный
-профессор, Казахский университет технологии и бизнеса имени К.
-Кулажанова, Астана, Казахстан, e-mail: tad62@ya.ru;
+Джомартова Ш.А. - доктор технических наук, доцент, Казахский
+национальный университет им. аль-Фараби, Алматы, Казахстан, e-mail:
+jomartova@mail.ru;
 
-Акишев К.М. - кандидат технических наук, ассоциированный профессор,
-Казахский университет технологии и бизнеса имени К. Кулажанова, Астана,
-Казахстан, e-mail: akmail04@ya.ru;
+Мазакова А.Т. -- докторант Казахского национального университета
+им.аль-Фараби, e-mail:
+\href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}};
 
-Жамангарин Д. С.- PhD, Казахский университет технологии и бизнеса имени
-К. Кулажанова, Астана, Казахстан, е-mail:
-\href{mailto:Dus_man89@mail.ru}{\nolinkurl{Dus\_man89@mail.ru}};
+Тойкенов Г.Ч. - кандидат физико-математических наук, доцент, Казахский
+национальный женский педагогический университет, Алматы, Казахстан,
+e-mail: gumyrbektoike@mail.ru;
 
-Юрков Н.К. - доктор технических наук, профессор, Пензенский
-государственный университет, Пенза, Россия, е-mail:
-\href{mailto:kipra@mail.ru}{\nolinkurl{kipra@mail.ru}};
+Алиаскар М.С. - докторант Казахского национального университета
+им.аль-Фараби, Алматы, Казахстан, e-mail: m.alyasqar@gmail.ru;
 
-Акишева Л.К.-исследователь, Назарбаев интеллектуальная школа, Астана,
-Казахстан, е-mail: akmail04@ya.ru
-
-Алтынбек С. А. {\bfseries -} PhD, ассоциированный профессор, Казахский
-университет технологии и бизнеса, Астана, Казахстан, е-mail:
-\href{mailto:serik_aa@bk.ru}{\nolinkurl{serik\_aa@bk.ru}};
-
-Смакова Н.С. - PhD, ассоциированный профессор, Казахский университет
-технологии и бизнеса, Астана, Казахстан, е-mail:nuri\_5@mail.ru
+Тойкенова У.Г.- докторант Казахского национального женского
+педагогического университета, Алматы, Казахстан, e-mail:
+ulpantoikenova@gmail.com
 
 \emph{{\bfseries Information about the authors}}
 
-Tulegulov A.D. - Candidate of Physical and Mathematical Sciences,
-Associate Professor, Kazakh University of Technology and Business named
-after K. Kulazhanov, Astana, Kazakhstan, e-mail:
-\href{mailto:tad62@ya.ru}{\nolinkurl{tad62@ya.ru}};
+Mazakov T.Zh. -- Doctor of Physical and mathematical sciences,
+professor, Al-Farabi Kazakh National University, Almaty, Kazakhstan,
+e-mail: tmazakov@mail.ru;
 
-Akishev K.M. - Candidate of Technical Sciences, Associate Professor,
-Kazakh University of Technology and Business named after K. Kulazhanov,
-Astana, Kazakhstan, e-mail:
-\href{mailto:akmail04@ya.ru}{\nolinkurl{akmail04@ya.ru}};
+Jomartova Sh.A. - Doctor of Technical Sciences, Associate Professor,
+Al-Farabi Kazakh National University,Almaty, Kazakhstan, e-mail:
+jomartova@mail.ru;
 
-Zhamangarin D. S.- PhD, K. Kulazhanov Kazakh University of Technology
-and Business, Astana, Kazakhstan,
+Mazakova A.T. - PhD student of the Al-Farabi Kazakh National University,
+Almaty, Kazakhstan, e-mail:
+\href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}};
 
-e-mail: \href{mailto:Dus_man89@mail.ru}{\nolinkurl{Dus\_man89@mail.ru}};
+Tokenov G.Ch. - Candidate of Physical and Mathematical Sciences,
+Associate Professor, Kazakh National Women' s Pedagogical
+University, Almaty, Kazakhstan, e-mail: gumyrbektoike@mail.ru;
 
-Akisheva L.K.-researcher, Nazarbayev Intellectual School, Astana,
-Kazakhstan, e-mail: akmail04@ya.ru
+M.S. Aliaskar - PhD student of the Al-Farabi Kazakh National University,
+Almaty, Kazakhstan, e-mail:
+\href{mailto:m.alyasqar@gmail.ru}{\nolinkurl{m.alyasqar@gmail.ru}};
 
-Yurkov N.K. - Doctor of Technical Sciences, Professor, Penza State
-University, Penza, Russia, е-mail:
-\href{mailto:kipra@mail.ru}{\nolinkurl{kipra@mail.ru}};
-
-Altynbek S. A. PhD, Associate Professor, Kazakh University of Technology
-and Business, Astana, Kazakhstan, е-mail:
-\href{mailto:serik_aa@bk.ru}{\nolinkurl{serik\_aa@bk.ru}}
-
-Smakova N.S.- PhD, Associate Professor, Kazakh University of Technology
-and Business, Astana, Kazakhstan, е-mail: nuri\_5@mail.ru
+Toikenova U.G. - PhD student of the Kazakh National
+Women' s Pedagogical University, Almaty, Kazakhstan,
+e-mail: ulpantoikenova@gmail.com

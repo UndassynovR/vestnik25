@@ -1,0 +1,753 @@
+(undo-tree-save-format-version . 1)
+"a065444b7674bf8e23144347e46994150d4d8439"
+[nil nil nil nil (26473 30975 856483 374000) 0 nil]
+([nil nil ((5 . 20871) (#("МРНТИ 81.93.29}
+
+{\\bfseries ПРОГРАММНО-АППАРАТНЫЙ КОМПЛЕКС ДАКТИЛОСКОПИЧЕСКОЙ ИДЕНТИФИКАЦИИ
+ЧЕЛОВЕКА}
+
+{\\bfseries \\textsuperscript{1,2} Т.С. Шорманов, \\textsuperscript{2}А.Т.
+Мазакова, \\textsuperscript{1} М.С. Алиаскар, \\textsuperscript{2}А.Д.
+Бургегулов, \\textsuperscript{2}А.А. Саметова,}
+
+{\\bfseries \\textsuperscript{1}Н.Т. Исимов, \\textsuperscript{2}Ш.А.
+Джомартова, \\textsuperscript{1,2}Т.Ж. Мазаков\\textsuperscript{\\envelope }}
+
+\\textsuperscript{1} Международный инженерно-технологический университет,
+Алматы, Казахстан,
+
+\\textsuperscript{2} Казахский национальный университет имени аль-Фараби,
+Алматы, Казахстан
+
+{\\bfseries \\textsuperscript{\\envelope }}Корреспондент-автор: tmazakov@mail.ru
+
+Дактилоскопическая идентификация основывается на уникальности кожных
+рисунков на пальцах рук, которые формируются в процессе эмбрионального
+развития и не меняются на протяжении жизни человека. Каждый отпечаток
+пальца имеет свои особенности, включая линии, завитки, поры, выступы и
+другие микроскопические характеристики.
+
+Современные программно-аппаратные комплексы дактилоскопической
+идентификации человека обеспечивают высокую точность и скорость
+обработки отпечатков пальцев, что делает их востребованными в различных
+сферах, таких как правоохранительные органы, система безопасности, а
+также в биометрических системах доступа.
+
+В работе рассматривается разработка системы дактилоскопической
+идентификации, объединяющей программное обеспечение и аппаратные
+компоненты. Предложенная система, основанная на использовании
+микроконтроллера Arduino и сканера отпечатков пальцев FPM10A,
+предназначена для выполнения операций по хранению, обработке,
+идентификации и визуализации данных отпечатков пальцев. Для
+идентификации личности были выбраны особенности структуры папиллярных
+линий на пальцах рук.
+
+Экспериментальные исследования подтвердили устойчивость разработанной
+системы к изменениям масштаба, поворотам изображений и небольшим
+искажениям.
+
+{\\bfseries Ключевые слова:} биометрические технологии, дактилоскопическая
+идентификация, программно-аппаратные системы, микроконтроллер.
+
+{\\bfseries АДАМДЫ САУАҚ ІЗІМЕН АНЫҚТАУ ҮШІН БАҒДАРЛАМАЛЫҚ-АППАРАТТЫҚ КЕШЕН}
+
+{\\bfseries \\textsuperscript{1,2} Т.С. Шорманов, \\textsuperscript{2}Ә.Т.
+Мазақова, \\textsuperscript{1} М.С. Әлиасқар, \\textsuperscript{2}А.Д.
+Бургегулов, \\textsuperscript{2}А.А. Саметова,}
+
+{\\bfseries \\textsuperscript{1} Н.Т. Исимов, \\textsuperscript{2}Ш.А.
+Джомартова, \\textsuperscript{1,2}Т.Ж. Мазақов\\textsuperscript{\\envelope }}
+
+\\textsuperscript{1}Халықаралық инженерлік және технология университеті,
+
+\\textsuperscript{2}Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы,
+Қазақстан,
+
+e-mail:tmazakov@mail.ru
+
+Саусақ ізін анықтау эмбриональды даму кезінде қалыптасатын және адамның
+өмір бойы өзгермейтін саусақтардағы тері үлгілерінің бірегейлігіне
+негізделген. Әрбір саусақ ізінің өзіндік сипаттамалары бар, соның ішінде
+сызықтар, бұйралар, тесіктер, жоталар және басқа микроскопиялық
+сипаттамалар.
+
+Адамның саусақ ізін сәйкестендіруге арналған заманауи
+бағдарламалық-аппараттық жүйелер саусақ іздерін өңдеудің жоғары дәлдігі
+мен жылдамдығын қамтамасыз етеді, бұл оларды құқық қорғау органдары,
+қауіпсіздік жүйелері сияқты әртүрлі салаларда, сондай-ақ биометриялық
+қол жеткізу жүйелерінде сұранысқа ие етеді.
+
+Жұмыста бағдарламалық және аппараттық құрамдас бөліктерді біріктіретін
+саусақ ізін сәйкестендіру жүйесінің дамуы талқыланады. Arduino
+микроконтроллерін және FPM10A саусақ ізі сканерін пайдалануға
+негізделген ұсынылған жүйе саусақ ізі деректерін сақтау, өңдеу, анықтау
+және визуализациялау операцияларын орындауға арналған. Жеке тұлғаны
+анықтау үшін саусақтардағы папиллярлық сызықтардың құрылымының
+ерекшеліктері таңдалды. Эксперименттік зерттеулер әзірленген жүйенің
+масштабтағы өзгерістерге, кескіннің айналуына және шамалы бұрмалануына
+тұрақтылығын растады.
+
+{\\bfseries Түйін сөздер:} биометриялық технологиялар, саусақ іздерін
+сәйкестендіру, бағдарламалық-аппараттық жүйелер, микроконтроллер.
+
+{\\bfseries HARDWARE AND SOFTWARE COMPLEX FOR HUMAN DACTYLOSCOPIC
+IDENTIFICATION}
+
+{\\bfseries \\textsuperscript{1,2} T.S. Shormanov, \\textsuperscript{2}A.T.
+Mazakova, \\textsuperscript{1}M.S. Aliaskar, ²A.D.Burgegulov,
+\\textsuperscript{2}A.A. Sametova,}
+
+{\\bfseries \\textsuperscript{1}N.T. Isimov, \\textsuperscript{2}Sh.A.
+Jomartova, \\textsuperscript{1,2}T.Zh. Mazakov\\textsuperscript{\\envelope }}
+
+\\textsuperscript{1} International Engineering and Technology University,
+Almaty, Kazakhstan,
+
+\\textsuperscript{2} Kazakh National University named after Al-Farabi,
+Almaty, Kazakhstan,
+
+e-mail:tmazakov@mail.ru
+
+Fingerprint identification is based on the uniqueness of skin patterns
+on the fingers, which are formed during embryonic development and do not
+change throughout a person' s life. Each fingerprint has
+its own characteristics, including lines, curls, pores, protrusions and
+other microscopic characteristics.
+
+Modern software and hardware systems for fingerprint identification of a
+person provide high accuracy and speed of fingerprint processing, which
+makes them in demand in various areas, such as law enforcement agencies,
+security systems, as well as in biometric access systems.
+
+The paper considers the development of a fingerprint identification
+system that combines software and hardware components. The proposed
+system, based on the Arduino microcontroller and the FPM10A fingerprint
+scanner, is designed to perform operations on storing, processing,
+identifying and visualizing fingerprint data. The features of the
+structure of the papillary lines on the fingers were selected for
+personal identification. Experimental studies confirmed the stability of
+the developed system to changes in scale, image rotation and minor
+distortions.
+
+{\\bfseries Keywords:} biometric technologies, fingerprint identification,
+hardware and software systems, microcontroller.
+
+{\\bfseries Введение.} Современные методы защиты информации и объектов
+требуют высокой степени надежности, которая зависит от специфики и
+уровня безопасности, необходимого в конкретной ситуации. Одним из
+наиболее эффективных решений являются биометрические системы, в
+частности технологии идентификации личности по отпечаткам пальцев. Эти
+системы получили широкое распространение благодаря своей адаптивности,
+высокой точности и удобству использования. Применение биометрических
+технологий, таких как сканирование отпечатков пальцев, не только
+усиливает уровень защиты, но и устраняет необходимость в традиционных
+средствах доступа, таких как ключи или карты, заменяя их уникальным,
+неизменным биометрическим признаком {[}1{]}.
+
+Дактилоскопические системы функционируют на основе сравнения полученных
+отпечатков с хранимыми в базе данных. Методика сопоставления
+определяется областью применения технологии. Уникальность отпечатков
+пальцев обусловлена анатомическими особенностями строения кожного
+рисунка, который формируется под влиянием генетических и экологических
+факторов {[}2{]}.
+
+Идентификационные признаки папиллярных узоров делятся на глобальные и
+локальные. Глобальные признаки (например, тип узора, направление линий)
+видимы невооруженным глазом, в то время как локальные признаки, или
+минуции (раздвоения, разрывы и окончания линий), требуют специального
+анализа. Методы, основанные на локальных признаках, обладают большей
+надежностью и детализированностью, что делает их предпочтительными для
+биометрической идентификации. Однако, такие факторы, как давление при
+сканировании, влажность кожи и возрастные изменения, могут влиять на
+качество изображения отпечатков, что требует использования устойчивых к
+искажениям алгоритмов {[}3{]}.
+
+{\\bfseries Материалы и методы.} Программно-аппаратные комплексы для
+идентификации по отпечаткам пальцев состоят из нескольких ключевых
+элементов, которые взаимодействуют друг с другом для реализации
+технологии.
+
+\\emph{Аппаратные компоненты включают:}
+
+1) Сканеры отпечатков пальцев:
+
+\\begin{itemize}
+\\item
+  Оптические сканеры: используют светодиоды (LED) для подсветки пальца и
+  камеры для захвата изображения. Это один из наиболее популярных типов,
+  однако он может быть подвержен загрязнениям и повреждениям.
+\\item
+  Полимерные (сенсорные) сканеры: используют электрическое поле для
+  захвата изображения. Они обеспечивают более высокую точность и
+  защищенность от грязи, а также могут быть более компактными.
+\\item
+  Ультразвуковые сканеры: передают ультразвуковые волны на поверхность
+  пальца, анализируя отраженные сигналы для создания детализированного
+  изображения. Эти сканеры обеспечивают высокую точность, могут работать
+  с влажными и поврежденными пальцами.
+\\item
+  Термические сканеры: регистрируют тепловое излучение поверхности
+  пальца и могут быть использованы в условиях низкой видимости или при
+  загрязненных сканерах.
+\\end{itemize}
+
+\\begin{enumerate}
+\\def\\labelenumi{\\arabic{enumi}.}
+\\item
+  Процессоры и устройства обработки: Обработка данных с сенсора требует
+  быстрого и мощного оборудования для извлечения, анализа и сравнения
+  отпечатков пальцев в реальном времени. Это может быть либо
+  специализированное аппаратное обеспечение, либо вычислительные
+  мощности встроенных процессоров.
+\\end{enumerate}
+
+Программные компоненты состоят из: 1) Модуля захвата изображений:
+Программное обеспечение, отвечающее за захват и обработку изображений
+отпечатков пальцев с сенсора. Этот модуль включает в себя алгоритмы для
+нормализации изображений, улучшения их качества (например, удаление
+шумов, повышение контраста) и подготовки их для дальнейшего анализа.
+
+2) Модуля извлечения признаков: На основе изображения отпечатка пальца
+извлекаются ключевые биометрические признаки, такие как:
+
+3) Модуля сопоставления: Алгоритмы сравнивают текущий отпечаток с базой
+данных зарегистрированных отпечатков. В случае совпадения система может
+подтвердить идентичность, и пользователь получит доступ. Обычно
+используются методы, основанные на анализе статистических признаков или
+методах машинного обучения для повышения точности и устойчивости к
+ошибкам.
+
+4) Модуля идентификации: Этот компонент проверяет, соответствует ли
+результат сопоставления зарегистрированным данным пользователя и
+принимает решение о подтверждении или отклонении идентификации
+{[}4-5{]}.
+
+{\\bfseries Обсуждение и результаты.} Традиционные методы контроля доступа,
+такие как использование паролей или ключей, часто неудобны и подвержены
+риску утраты {[}6{]}.
+
+В ходе данной работы разработана биометрическая система идентификации,
+основанная на использовании сканера отпечатков пальцев и
+микроконтроллера Arduino. Применение библиотеки Adafruit для Arduino
+позволило интегрировать аппаратные и программные компоненты, обеспечив
+точное распознавание и идентификацию.
+
+На рисунке 1 представлена фотография разработанного
+программно-аппаратного комплекса системы: 1) сканер FPM10A, 2)
+микроконтроллер Arduino, 3) средство визуализации результата
+распознавания, 4) внешний аккумулятор (Power Bank), 5)
+мульти-разветвитель USB.
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image1}
+	\\caption*{}
+\\end{figure}
+
+
+{\\bfseries Рис.1- Программно-аппаратный комплекс идентификации личности по
+отпечаткам пальцев}
+
+Программно-аппаратный комплекс состоит из нескольких ключевых
+компонентов:
+
+\\emph{1) аппаратная часть:}
+
+\\begin{itemize}
+\\item
+  оптический сканер FPM10A, способный сохранять до 1000 отпечатков
+  пальцев:
+\\item
+  микроконтроллер Arduino, обеспечивающий обработку данных в реальном
+  времени.
+\\end{itemize}
+
+\\emph{2) программная часть:}
+
+\\begin{itemize}
+\\item
+  библиотека Adafruit\\_Fingerprint, позволяющая выполнять все этапы
+  обработки отпечатков;
+\\item
+  модули для извлечения ключевых точек и анализа биометрических данных.
+\\end{itemize}
+
+\\emph{3) система электрообеспечения:}
+
+\\begin{itemize}
+\\item
+  внешний аккумулятор Power Bank емкостью 10 000 мА, обеспечивающий
+  бесперебойную работу комплекса;
+\\item
+  мульти-разветвитель USB, позволяющий снизить энергетическую нагрузку
+  на микроконтроллер;
+\\item
+  солнечная панель с контроллером заряда, обеспечивающие зарядку
+  внешнего аккумулятора.
+\\end{itemize}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image2}
+	\\caption*{}
+\\end{figure}
+
+
+{\\bfseries Рис.2- Схема электрического обеспечения: 1- солнечная панель, 2)
+контроллер заряда, 3) розетка для заряда внешнего аккумулятора, 4)
+внешний аккумулятор}
+
+Сенсор использует алгоритмы, позволяющие хранить, обрабатывать и
+сопоставлять отпечатки пальцев. Для этого применяется библиотека
+Adafruit\\_Fingerprint, которая включает функции:
+
+\\begin{itemize}
+\\item
+  Захвата изображения.
+\\item
+  Извлечения ключевых признаков (локальных точек).
+\\item
+  Сравнения текущего отпечатка с сохранёнными образцами.
+\\end{itemize}
+
+Программные инструменты позволяют записывать новые отпечатки, присваивая
+каждому уникальный ID (который сохраняется в памяти сенсора для
+дальнейшего сравнения), и проверять работу системы через окно серийного
+монитора Arduino.
+
+Запись новых отпечатков через программу для Windows
+
+Для записи новых данных в память оптического датчика отпечатков пальцев
+рекомендуется использовать специализированную программу для Windows.
+
+На рисунке 3 продемонстрирована работа программно-аппаратного комплекса
+по идентификации личности по отпечаткам пальцев.
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image3}
+	\\caption*{}
+\\end{figure}
+
+
+{\\bfseries Рис.3 - Результаты работы программно-аппаратного комплекса}
+
+Внешний аккумулятор Samsung EB-P1100C емкостью 10000 мАч позволяет
+работать программно-аппаратному комплексу больше 48 часов (двое суток),
+что подтверждается дальнейшими расчетами.
+
+Расчет времени работы Arduino Uno от внешнего аккумулятора Power Bank на
+10000 мАч, необходимо учитывать несколько факторов:
+
+Arduino Uno обычно потребляет от 30 до 50 мА при обычной работе (без
+дополнительных устройств). При использовании дополнительных модулей,
+датчиков или экранов потребление может увеличиться, но для базового
+расчета возьмем среднее значение 50 мА.
+
+Power Bank на 10000 мАч, как правило, имеет выходное напряжение 5 В (при
+использовании USB-выхода), и его реальная емкость может быть немного
+меньше из-за потерь при преобразовании напряжения. Обычно можно
+рассчитывать на эффективность около 85\\%. Поэтому примем что эффективная
+емкость Power Bank будет примерно 8500мАч
+
+Время работы рассчитывается по формуле:
+
+Время=Емкость/Потребление=8500 мАч/50 мА=170 часов.
+
+Учитывая, что Arduino подключает дополнительные устройства (датчики,
+экраны и т.д.) потребление энергии может увеличиться втрое. Поэтому мы
+берем за гарантийное время - 48 часов.
+
+{\\bfseries Выводы.} В рамках данной работы получены следующие результаты:
+
+Проведен анализ методов биометрической идентификации, включающих
+использование сканеров отпечатков пальцев и алгоритмов сопоставления.
+
+Разработан программно-аппаратный комплекс на основе микроконтроллера и
+оптического сканера, обеспечивающий хранение, обработку и идентификацию
+отпечатков пальцев. Основой идентификации послужила структура
+папиллярных узоров.
+
+Экспериментальные исследования продемонстрировали, что разработанная
+система обеспечивает:
+
+1) Устойчивость к изменениям масштаба и поворотам изображения.
+
+2) Инвариантность к незначительным искажениям и изменению уровня
+освещения до 50--70\\%.
+
+3) Надежное распознавание даже при использовании частичных отпечатков
+пальцев.
+
+Преимущества применения дактилоскопической информации:
+
+1) Высокая точность: Отпечатки пальцев имеют уникальные биометрические
+признаки, которые остаются неизменными на протяжении всей жизни
+человека, что делает их надежным средством для идентификации.
+
+2) Удобство использования: Сканирование отпечатков пальцев требует всего
+лишь прикосновения к сенсору, что делает процесс аутентификации быстрым
+и удобным.
+
+3) Высокий уровень безопасности: Трудно подделать отпечатки пальцев, что
+делает этот метод биометрической идентификации более безопасным по
+сравнению с паролями или PIN-кодами.
+
+Особую перспективу представляет разработка алгоритмов для поиска по
+неполным отпечаткам пальцев, что особенно важно в реальных условиях,
+когда доступна лишь часть изображения для идентификации.
+
+\\emph{{\\bfseries Финансирование}. Работа выполнена за счет средств НИИ
+математики и механики при КазНУ имени аль-Фараби и грантового
+финансирования научных исследований на 2023--2025 годы по проекту
+AP19678157}.
+
+{\\bfseries Литература}
+
+1. Болл Р.М., Коннел Дж.Х., Панканти Ш. и др. Руководство по биометрии.
+-- Москва: Техносфера, 2007.-368 с.
+\\href{https://www.libex.ru/qna/ref/isbn/}{ISBN}: 978-5-94836-109-3.
+
+URL: https://www.technosphera.ru/lib/book/187
+
+2. Мазур Е.С. Дерматоглифика в исследованиях личности криминалистический
+и судебно-медицинский аспекты. -- Томск: Изд. дом ТГУ, 2014, - 150с.
+\\href{https://www.libex.ru/qna/ref/isbn/}{ISBN}: 978-5-94621-450-6. --
+
+URL: https://ibooks.ru/bookshelf/380802/reading
+
+3. Лепихова Д.Н., Гудков В.Ю., Кирсанова А.А. Обзор современных моделей
+представления дактилоскопических изображений // Вестник ЮУрГУ. Серия:
+Вычислительная математика и информатика.- 2018.-Т.7(1)- с.40-59.
+
+DOI 10.14529/cmse180104.
+
+4. Гридчин А.В. Микродатчики и микросистемы. -- Москва, Вологда:
+Инфра-Инженерия, 2023. -184 с.
+\\href{https://www.libex.ru/qna/ref/isbn/}{ISBN} 978-5-9729-1220-9.
+
+URL: https://www.iprbookshop.ru/133049.html
+
+5. Апейников А.Ф., Гридчин В.А., Цапенко М.П. Датчики (перспективные
+направления развития). -- Новосибирск: Изд-во НГТУ, 2001.-176.
+
+\\href{https://www.libex.ru/qna/ref/isbn/}{ISBN} 5-7782-0300-4
+
+6. Бриллиант К. Цифровая модель человека. -- М.: Кудиц-образ, 2004.- 400
+с. ISBN 5-7782-0300-4
+
+{\\bfseries References}
+
+1. Boll R.M., Konnel Dzh.H., Pankanti Sh. i dr. Rukovodstvo po
+biometrii. -- Moskva: Tehnosfera, 2007.-368 s. ISBN: 978-5-94836-109-3.
+
+URL: \\url{https://www.technosphera.ru/lib/book/187}. {[}in Russian{]}
+
+2. Mazur E.S. Dermatoglifika v issledovanijah lichnosti
+kriminalisticheskij i sudebno-medicinskij aspekty. - Tomsk: Izd. dom
+TGU, 2014, - 150s. ISBN: 978-5-94621-450-6.
+
+URL: \\url{https://ibooks.ru/bookshelf/380802/reading}/ {[}in Russian{]}
+
+3. Lepihova D.N., Gudkov V.Ju., Kirsanova A.A. Obzor sovremennyh modelej
+predstavlenija daktiloskopicheskih izobrazhenij // Vestnik JuUrGU.
+Serija: Vychislitel' naja matematika i informatika.-
+2018.-T.7(1)- s.40-59. DOI 10.14529/cmse180104. {[}in Russian{]}
+
+4. Gridchin A.V. Mikrodatchiki i mikrosistemy. -- Moskva, Vologda:
+Infra-Inzhenerija, 2023. -184 s. ISBN 978-5-9729-1220-9. URL:
+https://www.iprbookshop.ru/133049.html.
+
+5. Apejnikov A.F., Gridchin V.A., Capenko M.P. Datchiki (perspektivnye
+napravlenija razvitija). -Novosibirsk: Izd-vo NGTU, 2001.-176. ISBN
+5-7782-0300-4. {[}in Russian{]}
+
+6. Brilliant K. Cifrovaja model'{} cheloveka. -- M.:
+Kudic-obraz, 2004.- 400 s. ISBN 5-7782-0300-4. {[}in Russian{]}
+
+\\emph{{\\bfseries Сведение об авторах}}
+
+Т.С. Шорманов-- докторант КазНУ имени аль-Фараби, старший преподаватель
+МИТУ, Алматы, Казахстан,
+
+e-mail\\href{mailto:shormanov@gmail.com}{\\nolinkurl{shormanov@gmail.com}};
+
+А.Т. Мазақова -- докторант КазНУ им.аль-Фараби, e-mail:
+\\href{mailto:aigerym97@mail.ru}{\\nolinkurl{aigerym97@mail.ru}};
+
+М.С. Әлиасқар - старший преподаватель МИТУ, Алматы, Казахстан, e-mail:
+\\href{mailto:m.alyasqar@gmail.ru}{\\nolinkurl{m.alyasqar@gmail.ru}};
+
+А.Д. Бургегулов -- докторант КазНУ им.аль-Фараби, e-mail:
+\\href{mailto:dizel_kz@bk.ru}{\\nolinkurl{dizel\\_kz@bk.ru}};
+
+Саметова А.А. -- докторант КазНУ им.аль-Фараби, e-mail:
+\\href{mailto:sametova_aygerim@mail.ru}{\\nolinkurl{sametova\\_aygerim@mail.ru}};
+
+Н.Т. Исимов - заведующий кафедрой МИТУ, Алматы, Казахстан, e-mail:
+\\href{mailto:int_nurdaulet@mail.ru}{\\nolinkurl{int\\_nurdaulet@mail.ru}};
+
+Ш.А. Джомартова - доктор технических наук, доцент, КазНУ им. аль-Фараби,
+Алматы, Казахстан,
+
+e-mail: jomartova@mail.ru;
+
+Т.Ж. Мазаков -- доктор физико-математических наук, профессор, КазНУ им.
+аль-Фараби, Алматы, Казахстан, e-mail: tmazakov@mail.ru.
+
+\\emph{{\\bfseries Information about the authors}}
+
+Shormanov T.S. - PhD student of the Al-Farabi Kazakh National
+University, Lecturer at the International University of Engineering and
+Technology, Almaty, Kazakhstan, e-mail:
+\\href{mailto:shormanov@gmail.com}{\\nolinkurl{shormanov@gmail.com}};
+
+Mazakova A.T. - PhD student of the Al-Farabi Kazakh National University,
+Almaty, Kazakhstan, e-mail:
+\\href{mailto:aigerym97@mail.ru}{\\nolinkurl{aigerym97@mail.ru}};
+
+Aliaskar M.S. - Lecturer at the International University of Engineering
+and Technology, Almaty, Kazakhstan, e-mail:
+\\href{mailto:m.alyasqar@gmail.ru}{\\nolinkurl{m.alyasqar@gmail.ru}};
+
+Burgegulov A.D. - PhD student of the Al-Farabi Kazakh National
+University, Almaty, Kazakhstan, e-mail:
+\\href{mailto:dizel_kz@bk.ru}{\\nolinkurl{dizel\\_kz@bk.ru}};
+
+Sametova A.A. - PhD student of the Al-Farabi Kazakh National University,
+Almaty, Kazakhstan, e-mail:
+\\href{mailto:sametova_aygerim@mail.ru}{\\nolinkurl{sametova\\_aygerim@mail.ru}};
+
+Issimov N.T. - Head of Department at the International University of
+Engineering and Technology, Almaty, Kazakhstan, e-mail:
+\\href{mailto:int_nurdaulet@mail.ru}{\\nolinkurl{int\\_nurdaulet@mail.ru}};
+
+Jomartova Sh.A. - Doctor of Technical Sciences, Associate Professor,
+Al-Farabi Kazakh National University,Almaty, Kazakhstan, e-mail:
+jomartova@mail.ru;
+
+Mazakov T.Zh. -- Doctor of Physical and mathematical sciences,
+professor, Al-Farabi Kazakh National University, Almaty, Kazakhstan,
+e-mail: \\href{mailto:tmazakov@mail.ru}{\\nolinkurl{tmazakov@mail.ru}}" 0 18 (fontified t) 18 27 (face font-lock-keyword-face fontified t) 27 100 (face (bold) fontified t) 100 104 (fontified t) 104 113 (face font-lock-keyword-face fontified t) 113 114 (face (bold) fontified t) 114 130 (face (font-lock-keyword-face bold) fontified t) 130 151 (face (bold) fontified t) 151 167 (face (font-lock-keyword-face bold) fontified t) 167 185 (face (bold) fontified t) 185 201 (face (font-lock-keyword-face bold) fontified t) 201 220 (face (bold) fontified t) 220 236 (face (font-lock-keyword-face bold) fontified t) 236 256 (face (bold) fontified t) 256 272 (face (font-lock-keyword-face bold) fontified t) 272 289 (face (bold) fontified t) 289 293 (fontified t) 293 302 (face font-lock-keyword-face fontified t) 302 303 (face (bold) fontified t) 303 319 (face (font-lock-keyword-face bold) fontified t) 319 335 (face (bold) fontified t) 335 351 (face (font-lock-keyword-face bold) fontified t) 351 371 (face (bold) fontified t) 371 387 (face (font-lock-keyword-face bold) fontified t) 387 404 (face (bold) fontified t) 404 420 (face (font-lock-keyword-face bold) fontified t) 420 421 (face (bold) fontified t) 421 430 (face (font-lock-keyword-face bold) fontified t) 430 432 (face (bold) fontified t) 432 435 (fontified t) 435 451 (face font-lock-keyword-face fontified t) 451 528 (fontified t) 528 544 (face font-lock-keyword-face fontified t) 544 621 (fontified t) 621 630 (face font-lock-keyword-face fontified t) 630 631 (face (bold) fontified t) 631 647 (face (font-lock-keyword-face bold) fontified t) 647 648 (face (bold) fontified t) 648 657 (face (font-lock-keyword-face bold) fontified t) 657 659 (face (bold) fontified t) 659 1496 (fontified t) 1496 1521 (fontified t) 1521 1947 (fontified t) 1947 1956 (face font-lock-keyword-face fontified t) 1956 1972 (face (bold) fontified t) 1972 2085 (fontified t) 2085 2094 (face font-lock-keyword-face fontified t) 2094 2158 (face (bold) fontified t) 2158 2162 (fontified t) 2162 2171 (face font-lock-keyword-face fontified t) 2171 2172 (face (bold) fontified t) 2172 2188 (face (font-lock-keyword-face bold) fontified t) 2188 2209 (face (bold) fontified t) 2209 2225 (face (font-lock-keyword-face bold) fontified t) 2225 2243 (face (bold) fontified t) 2243 2259 (face (font-lock-keyword-face bold) fontified t) 2259 2278 (face (bold) fontified t) 2278 2294 (face (font-lock-keyword-face bold) fontified t) 2294 2314 (face (bold) fontified t) 2314 2330 (face (font-lock-keyword-face bold) fontified t) 2330 2347 (face (bold) fontified t) 2347 2351 (fontified t) 2351 2360 (face font-lock-keyword-face fontified t) 2360 2361 (face (bold) fontified t) 2361 2377 (face (font-lock-keyword-face bold) fontified t) 2377 2394 (face (bold) fontified t) 2394 2410 (face (font-lock-keyword-face bold) fontified t) 2410 2430 (face (bold) fontified t) 2430 2446 (face (font-lock-keyword-face bold) fontified t) 2446 2463 (face (bold) fontified t) 2463 2479 (face (font-lock-keyword-face bold) fontified t) 2479 2480 (face (bold) fontified t) 2480 2489 (face (font-lock-keyword-face bold) fontified t) 2489 2491 (face (bold) fontified t) 2491 2494 (fontified t) 2494 2510 (face font-lock-keyword-face fontified t) 2510 2567 (fontified t) 2567 2583 (face font-lock-keyword-face fontified t) 2583 3021 (fontified t) 3021 3022 (fontified t) 3022 3841 (fontified t) 3841 3850 (face font-lock-keyword-face fontified t) 3850 3864 (face (bold) fontified t) 3864 3977 (fontified t) 3977 3986 (face font-lock-keyword-face fontified t) 3986 4055 (face (bold) fontified t) 4055 4059 (fontified t) 4059 4068 (face font-lock-keyword-face fontified t) 4068 4069 (face (bold) fontified t) 4069 4085 (face (font-lock-keyword-face bold) fontified t) 4085 4107 (face (bold) fontified t) 4107 4123 (face (font-lock-keyword-face bold) fontified t) 4123 4141 (face (bold) fontified t) 4141 4157 (face (font-lock-keyword-face bold) fontified t) 4157 4192 (face (bold) fontified t) 4192 4208 (face (font-lock-keyword-face bold) fontified t) 4208 4225 (face (bold) fontified t) 4225 4229 (fontified t) 4229 4238 (face font-lock-keyword-face fontified t) 4238 4239 (face (bold) fontified t) 4239 4255 (face (font-lock-keyword-face bold) fontified t) 4255 4271 (face (bold) fontified t) 4271 4287 (face (font-lock-keyword-face bold) fontified t) 4287 4307 (face (bold) fontified t) 4307 4323 (face (font-lock-keyword-face bold) fontified t) 4323 4341 (face (bold) fontified t) 4341 4357 (face (font-lock-keyword-face bold) fontified t) 4357 4358 (face (bold) fontified t) 4358 4367 (face (font-lock-keyword-face bold) fontified t) 4367 4369 (face (bold) fontified t) 4369 4372 (fontified t) 4372 4388 (face font-lock-keyword-face fontified t) 4388 4466 (fontified t) 4466 4482 (face font-lock-keyword-face fontified t) 4482 4522 (fontified t) 4522 4536 (fontified t) 4536 5730 (fontified t) 5730 5739 (face font-lock-keyword-face fontified t) 5739 5749 (face (bold) fontified t) 5749 5853 (fontified t) 5853 5862 (face font-lock-keyword-face fontified t) 5862 5872 (face (bold) fontified t) 5872 6036 (fontified t) 6036 6055 (fontified t) 6055 7555 (fontified t) 7555 7569 (fontified t) 7569 7602 (fontified t) 7602 7611 (face font-lock-keyword-face fontified t) 7611 7631 (face (bold) fontified t) 7631 7813 (fontified t) 7813 7818 (face font-lock-keyword-face fontified t) 7818 7819 (fontified t) 7819 7850 (face (italic) fontified t) 7850 7885 (fontified t) 7885 7891 (face font-lock-keyword-face fontified t) 7891 7892 (latex-env-pair t fontified t) 7892 7899 (face font-lock-function-name-face latex-env-pair t fontified t) 7899 7900 (latex-env-pair t fontified t) 7900 7901 (fontified t) 7901 7906 (face font-lock-keyword-face fontified t) 7906 8115 (fontified t) 8115 8120 (face font-lock-keyword-face fontified t) 8120 8317 (fontified t) 8317 8322 (face font-lock-keyword-face fontified t) 8322 8577 (fontified t) 8577 8582 (face font-lock-keyword-face fontified t) 8582 8746 (fontified t) 8746 8750 (face font-lock-keyword-face fontified t) 8750 8751 (latex-env-pair t fontified t) 8751 8758 (face font-lock-function-name-face latex-env-pair t fontified t) 8758 8759 (latex-env-pair t fontified t) 8759 8761 (fontified t) 8761 8767 (face font-lock-keyword-face fontified t) 8767 8768 (latex-env-pair t fontified t) 8768 8777 (face font-lock-function-name-face latex-env-pair t fontified t) 8777 8778 (latex-env-pair t fontified t) 8778 8779 (fontified t) 8779 8783 (face font-lock-keyword-face fontified t) 8783 8784 (fontified t) 8784 8794 (face font-lock-function-name-face fontified t) 8794 8795 (fontified t) 8795 8802 (face font-lock-keyword-face fontified t) 8802 8812 (fontified t) 8812 8817 (face font-lock-keyword-face fontified t) 8817 9069 (fontified t) 9069 9086 (fontified t) 9086 9121 (fontified t) 9121 9125 (face font-lock-keyword-face fontified t) 9125 9126 (latex-env-pair t fontified t) 9126 9135 (face font-lock-function-name-face latex-env-pair t fontified t) 9135 9136 (latex-env-pair t fontified t) 9136 10179 (fontified t) 10179 10188 (face font-lock-keyword-face fontified t) 10188 10213 (face (bold) fontified t) 10213 10586 (fontified t) 10586 10616 (fontified t) 10616 10912 (fontified t) 10912 10918 (face font-lock-keyword-face fontified t) 10918 10919 (latex-env-pair t fontified t) 10919 10922 (face font-lock-function-name-face latex-env-pair t fontified t) 10922 10925 (face font-lock-function-name-face latex-env-pair t fontified t) 10925 10926 (latex-env-pair t fontified t) 10926 10931 (fontified t) 10931 10941 (face font-lock-keyword-face fontified t) 10941 10943 (fontified t) 10943 10959 (face font-lock-keyword-face fontified t) 10959 10969 (fontified t) 10969 10979 (face font-lock-keyword-face fontified t) 10979 10981 (fontified t) 10981 10997 (face font-lock-builtin-face fontified t) 10997 11000 (fontified t) 11000 11009 (face font-lock-keyword-face fontified t) 11009 11012 (fontified t) 11012 11016 (face font-lock-keyword-face fontified t) 11016 11017 (latex-env-pair t fontified t) 11017 11023 (face font-lock-function-name-face latex-env-pair t fontified t) 11023 11024 (latex-env-pair t fontified t) 11024 11028 (fontified t) 11028 11037 (face font-lock-keyword-face fontified t) 11037 11120 (face (bold) fontified t) 11120 11199 (fontified t) 11199 11204 (face font-lock-keyword-face fontified t) 11204 11205 (fontified t) 11205 11225 (face (italic) fontified t) 11225 11228 (fontified t) 11228 11234 (face font-lock-keyword-face fontified t) 11234 11235 (latex-env-pair t fontified t) 11235 11242 (face font-lock-function-name-face latex-env-pair t fontified t) 11242 11243 (latex-env-pair t fontified t) 11243 11244 (fontified t) 11244 11249 (face font-lock-keyword-face fontified t) 11249 11328 (fontified t) 11328 11333 (face font-lock-keyword-face fontified t) 11333 11415 (fontified t) 11415 11419 (face font-lock-keyword-face fontified t) 11419 11420 (latex-env-pair t fontified t) 11420 11427 (face font-lock-function-name-face latex-env-pair t fontified t) 11427 11428 (latex-env-pair t fontified t) 11428 11430 (fontified t) 11430 11435 (face font-lock-keyword-face fontified t) 11435 11436 (fontified t) 11436 11457 (face (italic) fontified t) 11457 11460 (fontified t) 11460 11466 (face font-lock-keyword-face fontified t) 11466 11467 (latex-env-pair t fontified t) 11467 11474 (face font-lock-function-name-face latex-env-pair t fontified t) 11474 11475 (latex-env-pair t fontified t) 11475 11476 (fontified t) 11476 11481 (face font-lock-keyword-face fontified t) 11481 11503 (fontified t) 11503 11505 (face font-lock-keyword-face fontified t) 11505 11574 (fontified t) 11574 11579 (face font-lock-keyword-face fontified t) 11579 11652 (fontified t) 11652 11656 (face font-lock-keyword-face fontified t) 11656 11657 (latex-env-pair t fontified t) 11657 11664 (face font-lock-function-name-face latex-env-pair t fontified t) 11664 11665 (latex-env-pair t fontified t) 11665 11667 (fontified t) 11667 11672 (face font-lock-keyword-face fontified t) 11672 11673 (fontified t) 11673 11703 (face (italic) fontified t) 11703 11706 (fontified t) 11706 11712 (face font-lock-keyword-face fontified t) 11712 11713 (latex-env-pair t fontified t) 11713 11720 (face font-lock-function-name-face latex-env-pair t fontified t) 11720 11721 (latex-env-pair t fontified t) 11721 11722 (fontified t) 11722 11727 (face font-lock-keyword-face fontified t) 11727 11830 (fontified t) 11830 11835 (face font-lock-keyword-face fontified t) 11835 11929 (fontified t) 11929 11934 (face font-lock-keyword-face fontified t) 11934 12025 (fontified t) 12025 12029 (face font-lock-keyword-face fontified t) 12029 12030 (latex-env-pair t fontified t) 12030 12037 (face font-lock-function-name-face latex-env-pair t fontified t) 12037 12038 (latex-env-pair t fontified t) 12038 12040 (fontified t) 12040 12046 (face font-lock-keyword-face fontified t) 12046 12047 (latex-env-pair t fontified t) 12047 12053 (face font-lock-function-name-face latex-env-pair t fontified t) 12053 12054 (latex-env-pair t fontified t) 12054 12059 (fontified t) 12059 12069 (face font-lock-keyword-face fontified t) 12069 12071 (fontified t) 12071 12087 (face font-lock-keyword-face fontified t) 12087 12097 (fontified t) 12097 12107 (face font-lock-keyword-face fontified t) 12107 12109 (fontified t) 12109 12125 (face font-lock-builtin-face fontified t) 12125 12128 (fontified t) 12128 12137 (face font-lock-keyword-face fontified t) 12137 12140 (fontified t) 12140 12144 (face font-lock-keyword-face fontified t) 12144 12145 (latex-env-pair t fontified t) 12145 12151 (face font-lock-function-name-face latex-env-pair t fontified t) 12151 12152 (latex-env-pair t fontified t) 12152 12156 (fontified t) 12156 12165 (face font-lock-keyword-face fontified t) 12165 12317 (face (bold) fontified t) 12317 12422 (fontified t) 12422 12450 (fontified t) 12450 21422 (fontified nil)) . 5) (undo-tree-id6 . -8746) (undo-tree-id7 . -9620) (undo-tree-id8 . -1020) (undo-tree-id9 . -1020) (t 26473 18010 371144 800000)) nil (26473 30975 856482 442000) 0 nil])
+([nil nil ((22 . 44) (400 . 420) (t 26473 18795 425830 590000)) nil (26473 30975 856480 278000) 0 nil])
+([nil nil ((342 . 343) (#("
+" 0 1 (fontified t)) . -342) (#("
+" 0 1 (fontified t)) . -342) 281) nil (26473 30975 856479 828000) 0 nil])
+([nil nil ((#("}" 0 1 (fontified t)) . 341)) nil (26473 30975 856479 357000) 0 nil])
+([nil nil ((#("{\\bfseries " 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 11 (face (bold) fontified t)) . 342) (undo-tree-id4 . -10) (undo-tree-id5 . -11)) nil (26473 30975 856550 820000) 0 nil])
+([nil nil ((399 . 400) (#("
+" 0 1 (fontified t)) . -399) (undo-tree-id10 . -1) (undo-tree-id11 . -1) 342) nil (26473 30996 895514 709000) 0 nil] [nil nil ((399 . 400) (#("
+" 0 1 (fontified t)) . -399) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) 342) ((399 . 400) (#(" " 0 1 (fontified t)) . 399)) (26473 30975 856475 259000) 0 nil])
+([nil nil ((430 . 450) (774 . 792)) nil (26473 30996 895506 664000) 0 nil])
+nil
+([nil nil ((2236 . 2258) (2636 . 2656)) nil (26473 30996 895505 892000) 0 nil])
+([nil nil ((2679 . 2699) (2976 . 2994)) nil (26473 30996 895505 361000) 0 nil])
+([nil nil ((4541 . 4563) (4930 . 4950)) nil (26473 30996 895504 700000) 0 nil])
+([nil nil ((4973 . 4993) (5281 . 5299)) nil (26473 30996 895504 99000) 0 nil])
+([nil nil ((21098 . 21099) 5249) nil (26473 30996 895500 743000) 0 nil])
+([nil nil ((44 . 46) (#("." 0 1 (fontified t)) . -44) (undo-tree-id31 . -1) 45 (44 . 45) (t 26473 30996 899531 460000)) nil (26473 31035 367337 135000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 276 . 277) (nil fontified nil 45 . 277) (45 . 277)) nil (26473 31035 367334 670000) 0 nil])
+([nil nil ((351 . 352) (#("
+" 0 1 (face (bold) fontified t)) . -351) (150 . 151) (#("
+" 0 1 (fontified t)) . -150) (85 . 86) (#("
+" 0 1 (fontified t)) . -85) 84) nil (26473 31035 367417 174000) 0 nil])
+([nil nil ((#("\\textsuperscript{\\envelope }" 0 16 (face font-lock-keyword-face fontified t) 16 17 (fontified t) 17 26 (face font-lock-keyword-face fontified t) 26 28 (fontified t)) . 56) (undo-tree-id99 . -27)) nil (26473 31046 669790 415000) 0 nil] [nil nil ((#("\\textsuperscript{\\envelope }, \\textsuperscript{1}K. Akishev, \\textsuperscript{1}D.Zhamangarin, \\textsuperscript{2}N.Yurkov, \\textsuperscript{3}L. Akisheva, \\textsuperscript{1}S.A. Altynbek, \\textsuperscript{1}N.S. Smakova}{\\bfseries EVALUATION OF THE USE OF AUTOMATED CONTROL SYSTEMS FOR SOLVING TRAFFIC CONTROL PROBLEMS}" 0 16 (face font-lock-keyword-face fontified t) 16 17 (fontified t) 17 26 (face font-lock-keyword-face fontified t) 26 29 (fontified t) 29 30 (fontified t) 30 46 (face font-lock-keyword-face fontified t) 46 61 (fontified t) 61 77 (face font-lock-keyword-face fontified t) 77 94 (fontified t) 94 95 (fontified t) 95 111 (face font-lock-keyword-face fontified t) 111 124 (fontified t) 124 140 (face font-lock-keyword-face fontified t) 140 156 (fontified t) 156 172 (face font-lock-keyword-face fontified t) 172 190 (fontified t) 190 206 (face font-lock-keyword-face fontified t) 206 220 (fontified t) 220 221 (rear-nonsticky t fontified t) 221 222 (fontified t) 222 223 (fontified t) 223 232 (face font-lock-keyword-face fontified t) 232 295 (face (bold) fontified t) 295 296 (face (bold) fontified t) 296 320 (face (bold) fontified t) 320 321 (fontified t)) . 56) (undo-tree-id12 . -320) (undo-tree-id13 . 99) (undo-tree-id14 . -220) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . -1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -321)) ((56 . 377)) (26473 31035 367329 480000) 0 nil])
+([nil nil ((#("\\textsuperscript{1}" 0 16 (face font-lock-keyword-face fontified t) 16 19 (fontified t)) . 58) (undo-tree-id85 . -18) (undo-tree-id86 . -2) (undo-tree-id87 . -2) (undo-tree-id88 . -1) (undo-tree-id89 . -1) (undo-tree-id90 . -1) (undo-tree-id91 . -1) (undo-tree-id92 . -1) (undo-tree-id93 . -1) (undo-tree-id94 . -1) (undo-tree-id95 . -1) (undo-tree-id96 . -1) (undo-tree-id97 . -1) (undo-tree-id98 . -19)) nil (26473 31046 669789 473000) 0 nil])
+nil
+([nil nil ((#("\\textsuperscript{1}" 0 16 (face font-lock-keyword-face fontified t) 16 19 (fontified t)) . 70) (undo-tree-id84 . -18)) nil (26473 31046 669783 642000) 0 nil])
+([nil nil ((#("\\textsuperscript{2}" 0 16 (face font-lock-keyword-face fontified t) 16 19 (fontified t)) . 85) (undo-tree-id52 . -18) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1) (undo-tree-id58 . -2) (undo-tree-id59 . -2) (undo-tree-id60 . -2) (undo-tree-id61 . -2) (undo-tree-id62 . -2) (undo-tree-id63 . -2) (undo-tree-id64 . -2) (undo-tree-id65 . -2) (undo-tree-id66 . -2) (undo-tree-id67 . -2) (undo-tree-id68 . -2) (undo-tree-id69 . -2) (undo-tree-id70 . -2) (undo-tree-id71 . -2) (undo-tree-id72 . -2) (undo-tree-id73 . -1) (undo-tree-id74 . -1) (undo-tree-id75 . -1) (undo-tree-id76 . -1) (undo-tree-id77 . -1) (undo-tree-id78 . -1) (undo-tree-id79 . -1) (undo-tree-id80 . -1) (undo-tree-id81 . -1) (undo-tree-id82 . -1) (undo-tree-id83 . -19)) nil (26473 31046 669782 360000) 0 nil])
+([nil nil ((#("\\textsuperscript{3}" 0 16 (face font-lock-keyword-face fontified t) 16 19 (fontified t)) . 95) (undo-tree-id51 . -18)) nil (26473 31046 669771 249000) 0 nil])
+([nil nil ((#("\\textsuperscript{1}" 0 16 (face font-lock-keyword-face fontified t) 16 19 (fontified t)) . 108) (undo-tree-id34 . -18) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -19)) nil (26473 31048 149445 975000) 0 nil])
+([nil nil ((#("\\textsuperscript{1}" 0 16 (face font-lock-keyword-face fontified t) 16 19 (fontified t)) . 123) (undo-tree-id146 . -18)) nil (26473 31079 644897 182000) 0 nil] [nil nil ((#("\\textsuperscript{1}" 0 16 (face font-lock-keyword-face fontified t) 16 19 (fontified t)) . 123) (undo-tree-id100 . -18) (undo-tree-id101 . -19)) ((123 . 142)) (26473 31048 149378 940000) 0 nil] [nil nil ((#(" \\textsuperscript{1}" 0 1 (fontified t) 1 17 (face font-lock-keyword-face fontified t) 17 20 (fontified t)) . 122) (undo-tree-id32 . -19) (undo-tree-id33 . -20)) ((122 . 142)) (26473 31046 669763 174000) 0 nil])
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 137) (undo-tree-id114 . -9) (undo-tree-id115 . -1) (undo-tree-id116 . -1) (undo-tree-id117 . -1) (undo-tree-id118 . -1) (undo-tree-id119 . -1) (undo-tree-id120 . -2) (undo-tree-id121 . -2) (undo-tree-id122 . -2) (undo-tree-id123 . -2) (undo-tree-id124 . -2) (undo-tree-id125 . -2) (undo-tree-id126 . -2) (undo-tree-id127 . -2) (undo-tree-id128 . -2) (undo-tree-id129 . -2) (undo-tree-id130 . -2) (undo-tree-id131 . -2) (undo-tree-id132 . -2) (undo-tree-id133 . -2) (undo-tree-id134 . -2) (undo-tree-id135 . -1) (undo-tree-id136 . -1) (undo-tree-id137 . -1) (undo-tree-id138 . -1) (undo-tree-id139 . -1) (undo-tree-id140 . -1) (undo-tree-id141 . -1) (undo-tree-id142 . -1) (undo-tree-id143 . -1) (undo-tree-id144 . -1) (undo-tree-id145 . -10)) nil (26473 31079 644895 880000) 0 nil])
+nil
+nil
+([nil nil ((53 . 63) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -53) (undo-tree-id102 . -1) (undo-tree-id103 . -1) (undo-tree-id104 . -1) (undo-tree-id105 . -1) (undo-tree-id106 . -1) (undo-tree-id107 . -1) (49 . 54) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -49) (undo-tree-id108 . -1) (undo-tree-id109 . -1) (undo-tree-id110 . -1) (undo-tree-id111 . -1) (undo-tree-id112 . -1) (undo-tree-id113 . -1) (44 . 50)) nil (26473 31079 644881 994000) 0 nil])
+([nil nil ((843 . 844) (#("
+" 0 1 (fontified t)) . -843) (undo-tree-id153 . -1) 782 (t 26473 31079 648741 595000)) nil (26473 31100 169010 416000) 0 nil])
+([nil nil ((790 . 795) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -790) (undo-tree-id147 . -1) (undo-tree-id148 . -1) (undo-tree-id149 . -1) (undo-tree-id150 . -1) (undo-tree-id151 . -1) (undo-tree-id152 . -1) (782 . 791)) nil (26473 31100 169006 208000) 0 nil])
+([nil nil ((7108 . 7129) (9081 . 9097) (t 26473 31100 176545 389000)) nil (26473 31113 418046 109000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 9118 . 9119) (#("
+" 0 1 (fontified nil)) . -9834) (9118 . 9835) (t 26473 31113 426418 701000)) nil (26473 31189 397903 461000) 0 nil])
+([nil nil ((9288 . 9289) (#("1" 0 1 (face font-lock-builtin-face fontified t)) . 9288)) nil (26473 31189 397902 670000) 0 nil])
+([nil nil ((9627 . 9628) (#("2" 0 1 (face font-lock-builtin-face fontified t)) . 9627) (undo-tree-id154 . -1)) nil (26473 31189 397899 373000) 0 nil])
+([nil nil ((#("Рис.2 - Схема электрического обеспечения: 1- солнечная панель, 2) контроллер заряда, 3) розетка для заряда внешнего аккумулятора, 4) внешний аккумулятор" 0 152 (fontified t)) . 9648) (undo-tree-id293 . -151) (undo-tree-id294 . -40) 9688 (t 26473 31189 404691 295000)) nil (26473 31202 32566 922000) 0 nil])
+([nil nil ((#("Рис.1 - Программно-аппаратный комплекс идентификации личности по отпечаткам пальцев" 0 83 (fontified t)) . 9309) (undo-tree-id291 . -82) (undo-tree-id292 . -83)) nil (26473 31202 32565 870000) 0 nil])
+([nil nil ((#("\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image4}
+	\\caption*{}
+\\end{figure}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 10 (face font-lock-function-name-face fontified t latex-env-pair t) 10 13 (face font-lock-function-name-face fontified t latex-env-pair t) 13 14 (fontified t latex-env-pair t) 14 19 (fontified t) 19 29 (face font-lock-keyword-face fontified t) 29 31 (fontified t) 31 47 (face font-lock-keyword-face fontified t) 47 57 (fontified t) 57 67 (face font-lock-keyword-face fontified t) 67 69 (fontified t) 69 85 (face font-lock-builtin-face fontified t) 85 88 (fontified t) 88 97 (face font-lock-keyword-face fontified t) 97 100 (fontified t) 100 104 (face font-lock-keyword-face fontified t) 104 105 (fontified t latex-env-pair t) 105 111 (face font-lock-function-name-face fontified t latex-env-pair t) 111 112 (fontified t latex-env-pair t) 112 113 (fontified t)) . 9600) (undo-tree-id161 . -28) (undo-tree-id162 . -112) (undo-tree-id163 . -16) (undo-tree-id164 . -112) (undo-tree-id165 . -112) (undo-tree-id166 . -29) (undo-tree-id167 . -29) (undo-tree-id168 . -16) (undo-tree-id169 . -16) (undo-tree-id170 . -16) (undo-tree-id171 . -16) (undo-tree-id172 . -16) (undo-tree-id173 . -28) (undo-tree-id174 . -28) (undo-tree-id175 . -28) (undo-tree-id176 . -28) (undo-tree-id177 . -28) (undo-tree-id178 . -28) (undo-tree-id179 . -28) (undo-tree-id180 . -28) (undo-tree-id181 . -28) (undo-tree-id182 . -28) (undo-tree-id183 . -28) (undo-tree-id184 . -28) (undo-tree-id185 . -28) (undo-tree-id186 . -28) (undo-tree-id187 . -28) (undo-tree-id188 . -16) (undo-tree-id189 . -16) (undo-tree-id190 . -16) (undo-tree-id191 . -16) (undo-tree-id192 . -16) (undo-tree-id193 . -16) (undo-tree-id194 . -16) (undo-tree-id195 . -16) (undo-tree-id196 . -16) (undo-tree-id197 . -16) (undo-tree-id198 . -16) (undo-tree-id199 . -16) (undo-tree-id200 . -16) (undo-tree-id201 . -16) (undo-tree-id202 . -16) (undo-tree-id203 . -16) (undo-tree-id204 . -16) (undo-tree-id205 . -16) (undo-tree-id206 . -16) (undo-tree-id207 . -16) (undo-tree-id208 . -16) (undo-tree-id209 . -16) (undo-tree-id210 . -16) (undo-tree-id211 . -16) (undo-tree-id212 . -16) (undo-tree-id213 . -16) (undo-tree-id214 . -16) (undo-tree-id215 . -16) (undo-tree-id216 . -16) (undo-tree-id217 . -16) (undo-tree-id218 . -16) (undo-tree-id219 . -16) (undo-tree-id220 . -16) (undo-tree-id221 . -16) (undo-tree-id222 . -16) (undo-tree-id223 . -16) (undo-tree-id224 . -16) (undo-tree-id225 . -29) (undo-tree-id226 . -29) (undo-tree-id227 . -29) (undo-tree-id228 . -29) (undo-tree-id229 . -29) (undo-tree-id230 . -29) (undo-tree-id231 . -29) (undo-tree-id232 . -29) (undo-tree-id233 . -29) (undo-tree-id234 . -29) (undo-tree-id235 . -29) (undo-tree-id236 . -29) (undo-tree-id237 . -29) (undo-tree-id238 . -29) (undo-tree-id239 . -29) (undo-tree-id240 . -29) (undo-tree-id241 . -29) (undo-tree-id242 . -43) (undo-tree-id243 . -43) (undo-tree-id244 . -43) (undo-tree-id245 . -43) (undo-tree-id246 . -43) (undo-tree-id247 . -99) (undo-tree-id248 . -99) (undo-tree-id249 . -99) (undo-tree-id250 . -99) (undo-tree-id251 . -99) (undo-tree-id252 . -99) (undo-tree-id253 . -99) (undo-tree-id254 . -99) (undo-tree-id255 . -99) (undo-tree-id256 . -99) (undo-tree-id257 . -99) (undo-tree-id258 . -99) (undo-tree-id259 . -99) (undo-tree-id260 . -99) (undo-tree-id261 . -99) (undo-tree-id262 . -99) (undo-tree-id263 . -99) (undo-tree-id264 . -99) (undo-tree-id265 . -99) (undo-tree-id266 . -99) (undo-tree-id267 . -100) (undo-tree-id268 . -112) (undo-tree-id269 . -112) (undo-tree-id270 . -112) (undo-tree-id271 . -112) (undo-tree-id272 . -112) (undo-tree-id273 . -112) (undo-tree-id274 . -112) (undo-tree-id275 . -112) (undo-tree-id276 . -112) (undo-tree-id277 . -112) (undo-tree-id278 . -112) (undo-tree-id279 . -112) (undo-tree-id280 . -112) (undo-tree-id281 . -112) (undo-tree-id282 . -112) (undo-tree-id283 . -112) (undo-tree-id284 . -112) (undo-tree-id285 . -112) (undo-tree-id286 . -112) (undo-tree-id287 . -112) (undo-tree-id288 . -112) (undo-tree-id289 . -112) (undo-tree-id290 . -113) 9712) nil (26473 31202 32633 46000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 9601)) nil (26473 31232 269201 890000) 0 nil] [nil nil ((#("
+
+а б
+
+a -- DC-2 controller; b -- LOGO!230RCE
+" 0 1 (fontified t) 1 46 (fontified t)) . 9600) (undo-tree-id155 . -7) (undo-tree-id156 . -7) (undo-tree-id157 . -45) (undo-tree-id158 . -7) (undo-tree-id159 . -7) (undo-tree-id160 . -46) 9607) ((9600 . 9646)) (26473 31202 32438 963000) 0 nil])
+([nil nil ((#("DC-2 controller" 0 15 (fontified t)) . 9611) (undo-tree-id324 . -14) (undo-tree-id325 . -14) (undo-tree-id326 . -14) (undo-tree-id327 . -14) 9625) nil (26473 31232 269201 299000) 0 nil])
+nil
+([nil nil ((nil rear-nonsticky nil 9323 . 9324) (nil fontified nil 9309 . 9324) (9309 . 9324)) nil (26473 31232 269199 626000) 0 nil])
+([nil nil ((#("LOGO!230RCE" 0 11 (fontified t)) . 9633) (undo-tree-id321 . -10) (undo-tree-id322 . -10) (undo-tree-id323 . -10)) nil (26473 31232 269199 45000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 9590 . 9591) (nil fontified nil 9580 . 9591) (9580 . 9591)) nil (26473 31232 269197 662000) 0 nil])
+([nil nil ((#("а б
+
+a -- ; b -- 
+" 0 3 (fontified t) 3 4 (fontified t) 4 5 (fontified t) 5 18 (fontified t)) . 9627) (undo-tree-id297 . -7) (undo-tree-id298 . -2) (undo-tree-id299 . -7) (undo-tree-id300 . -17) (undo-tree-id301 . -10) (undo-tree-id302 . -17) (undo-tree-id303 . -17) (undo-tree-id304 . -17) (undo-tree-id305 . -5) (undo-tree-id306 . -7) (undo-tree-id307 . -7) (undo-tree-id308 . -7) (undo-tree-id309 . -7) (undo-tree-id310 . -7) (undo-tree-id311 . -7) (undo-tree-id312 . -7) (undo-tree-id313 . -7) (undo-tree-id314 . -7) (undo-tree-id315 . -7) (undo-tree-id316 . -7) (undo-tree-id317 . -7) (undo-tree-id318 . -7) (undo-tree-id319 . -7) (undo-tree-id320 . -18) 9634) nil (26473 31232 269196 299000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 9627) (undo-tree-id295 . 1) (undo-tree-id296 . -1)) nil (26473 31232 269179 47000) 0 nil])
+([nil nil ((9532 . 9533) (t 26473 31232 273280 264000)) nil (26473 31428 318386 587000) 0 nil])
+([nil nil ((#("." 0 1 (fontified t)) . -9532) (undo-tree-id328 . -1) (undo-tree-id329 . -1) (undo-tree-id330 . -1) (undo-tree-id331 . -1) (undo-tree-id332 . -1) (undo-tree-id333 . -1) (undo-tree-id334 . -1) (undo-tree-id335 . -1) (undo-tree-id336 . -1) (undo-tree-id337 . -1) (undo-tree-id338 . -1) (undo-tree-id339 . -1) (undo-tree-id340 . -1) (undo-tree-id341 . -1) (undo-tree-id342 . -1) (undo-tree-id343 . -1) (undo-tree-id344 . -1) (undo-tree-id345 . -1) (undo-tree-id346 . -1) (undo-tree-id347 . -1) (undo-tree-id348 . -1) (undo-tree-id349 . -1) (undo-tree-id350 . -1) 9533) nil (26473 31428 318385 645000) 0 nil])
+([nil nil ((9532 . 9535)) nil (26473 31428 318324 741000) 0 nil])
+([nil nil ((#("5" 0 1 (fontified t)) . -9534) (undo-tree-id351 . -1) (undo-tree-id352 . -1) (undo-tree-id353 . -1) (undo-tree-id354 . -1) (undo-tree-id355 . -1) (undo-tree-id356 . -1) (undo-tree-id357 . -1) (undo-tree-id358 . -1) (undo-tree-id359 . -1) (undo-tree-id360 . -1) (undo-tree-id361 . -1) (undo-tree-id362 . -1) (undo-tree-id363 . -1) (undo-tree-id364 . -1) (undo-tree-id365 . -1) (undo-tree-id366 . -1) (undo-tree-id367 . -1) (undo-tree-id368 . -1) (undo-tree-id369 . -1) (undo-tree-id370 . -1) (undo-tree-id371 . -1) (undo-tree-id372 . -1) (undo-tree-id373 . -1) (undo-tree-id374 . -1) (undo-tree-id375 . -1) (undo-tree-id376 . -1) (undo-tree-id377 . -1) (undo-tree-id378 . -1) (undo-tree-id379 . -1) (undo-tree-id380 . -1) (undo-tree-id381 . -1) (undo-tree-id382 . -1) (undo-tree-id383 . -1) (undo-tree-id384 . -1) (undo-tree-id385 . -1) (undo-tree-id386 . -1) (undo-tree-id387 . -1) (undo-tree-id388 . -1) (undo-tree-id389 . -1) (undo-tree-id390 . -1) (undo-tree-id391 . -1) (undo-tree-id392 . -1) (undo-tree-id393 . -1) (undo-tree-id394 . -1) (undo-tree-id395 . -1) (undo-tree-id396 . -1) (undo-tree-id397 . -1) (undo-tree-id398 . -1) (undo-tree-id399 . -1) (undo-tree-id400 . -1) (undo-tree-id401 . -1) (undo-tree-id402 . -1) (undo-tree-id403 . -1) (undo-tree-id404 . -1) (undo-tree-id405 . -1) (undo-tree-id406 . -1) (undo-tree-id407 . -1) (undo-tree-id408 . -1) (undo-tree-id409 . -1) (undo-tree-id410 . -1) (undo-tree-id411 . -1) (undo-tree-id412 . -1) (undo-tree-id413 . -1) (undo-tree-id414 . -1) (undo-tree-id415 . -1) (undo-tree-id416 . -1) (undo-tree-id417 . -1) (undo-tree-id418 . -1) (undo-tree-id419 . -1) (undo-tree-id420 . -1) (undo-tree-id421 . -1) (undo-tree-id422 . -1) (undo-tree-id423 . -1) (undo-tree-id424 . -1) (undo-tree-id425 . -1) (undo-tree-id426 . -1) (undo-tree-id427 . -1) (undo-tree-id428 . -1) (undo-tree-id429 . -1) (undo-tree-id430 . -1) 9535 (t 26473 31428 324394 649000)) nil (26473 31433 440284 764000) 0 nil])
+([nil nil ((9534 . 9535)) nil (26473 31433 440216 477000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -9534) (undo-tree-id431 . -1) (undo-tree-id432 . -1) (undo-tree-id433 . -1) (undo-tree-id434 . -1) (undo-tree-id435 . -1) (undo-tree-id436 . -1) (undo-tree-id437 . -1) (undo-tree-id438 . -1) (undo-tree-id439 . -1) (undo-tree-id440 . -1) (undo-tree-id441 . -1) (undo-tree-id442 . -1) (undo-tree-id443 . -1) (undo-tree-id444 . -1) (undo-tree-id445 . -1) (undo-tree-id446 . -1) (undo-tree-id447 . -1) (undo-tree-id448 . -1) (undo-tree-id449 . -1) (undo-tree-id450 . -1) (undo-tree-id451 . -1) (undo-tree-id452 . -1) (undo-tree-id453 . -1) (undo-tree-id454 . -1) (undo-tree-id455 . -1) (undo-tree-id456 . -1) (undo-tree-id457 . -1) (undo-tree-id458 . -1) (undo-tree-id459 . -1) (undo-tree-id460 . -1) (undo-tree-id461 . -1) (undo-tree-id462 . -1) (undo-tree-id463 . -1) (undo-tree-id464 . -1) (undo-tree-id465 . -1) (undo-tree-id466 . -1) (undo-tree-id467 . -1) (undo-tree-id468 . -1) (undo-tree-id469 . -1) (undo-tree-id470 . -1) (undo-tree-id471 . -1) (undo-tree-id472 . -1) (undo-tree-id473 . -1) (undo-tree-id474 . -1) (undo-tree-id475 . -1) (undo-tree-id476 . -1) (undo-tree-id477 . -1) (undo-tree-id478 . -1) (undo-tree-id479 . -1) (undo-tree-id480 . -1) (undo-tree-id481 . -1) (undo-tree-id482 . -1) (undo-tree-id483 . -1) (undo-tree-id484 . -1) (undo-tree-id485 . -1) (undo-tree-id486 . -1) (undo-tree-id487 . -1) (undo-tree-id488 . -1) (undo-tree-id489 . -1) (undo-tree-id490 . -1) (undo-tree-id491 . -1) (undo-tree-id492 . -1) (undo-tree-id493 . -1) (undo-tree-id494 . -1) (undo-tree-id495 . -1) (undo-tree-id496 . -1) (undo-tree-id497 . -1) (undo-tree-id498 . -1) (undo-tree-id499 . -1) (undo-tree-id500 . -1) (undo-tree-id501 . -1) (undo-tree-id502 . -1) (undo-tree-id503 . -1) (undo-tree-id504 . -1) (undo-tree-id505 . -1) (undo-tree-id506 . -1) (undo-tree-id507 . -1) (undo-tree-id508 . -1) (undo-tree-id509 . -1) (undo-tree-id510 . -1) (undo-tree-id511 . -1) (undo-tree-id512 . -1) (undo-tree-id513 . -1) (undo-tree-id514 . -1) (undo-tree-id515 . -1) (undo-tree-id516 . -1) (undo-tree-id517 . -1) (undo-tree-id518 . -1) (undo-tree-id519 . -1) (undo-tree-id520 . -1) (undo-tree-id521 . -1) (undo-tree-id522 . -1) (undo-tree-id523 . -1) (undo-tree-id524 . -1) (undo-tree-id525 . -1) 9535 (t 26473 31433 446345 264000)) nil (26473 31440 119346 492000) 0 nil])
+([nil nil ((9534 . 9535)) nil (26473 31440 119274 226000) 0 nil])
+([nil nil ((#("5" 0 1 (fontified t)) . -9534) (undo-tree-id526 . -1) (undo-tree-id527 . -1) (undo-tree-id528 . -1) (undo-tree-id529 . -1) (undo-tree-id530 . -1) (undo-tree-id531 . -1) (undo-tree-id532 . -1) (undo-tree-id533 . -1) (undo-tree-id534 . -1) (undo-tree-id535 . -1) (undo-tree-id536 . -1) (undo-tree-id537 . -1) (undo-tree-id538 . -1) (undo-tree-id539 . -1) (undo-tree-id540 . -1) (undo-tree-id541 . -1) (undo-tree-id542 . -1) (undo-tree-id543 . -1) (undo-tree-id544 . -1) (undo-tree-id545 . -1) (undo-tree-id546 . -1) (undo-tree-id547 . -1) (undo-tree-id548 . -1) (undo-tree-id549 . -1) (undo-tree-id550 . -1) (undo-tree-id551 . -1) (undo-tree-id552 . -1) (undo-tree-id553 . -1) (undo-tree-id554 . -1) (undo-tree-id555 . -1) (undo-tree-id556 . -1) (undo-tree-id557 . -1) (undo-tree-id558 . -1) (undo-tree-id559 . -1) 9535 (t 26473 31440 123280 883000)) nil (26473 31441 710012 308000) 0 nil])
+([nil nil ((9534 . 9535)) nil (26473 31446 905288 936000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 9623 . 9624) (#("
+" 0 1 (fontified nil)) . -9646) (9615 . 9647) 9614 (t 26473 31441 713265 548000)) nil (26473 31456 148696 907000) 0 nil] [nil nil ((nil rear-nonsticky nil 9615 . 9616) (nil fontified nil 9595 . 9616) (9595 . 9616) 9594 (t 26473 31441 713265 548000)) ((#("}
+    \\end{subfigure}" 0 2 (fontified nil) 2 6 (fontified nil) 6 10 (face font-lock-keyword-face fontified nil) 10 11 (latex-env-pair t fontified nil) 11 20 (face font-lock-function-name-face latex-env-pair t fontified nil) 20 21 (latex-env-pair t rear-nonsticky nil fontified nil)) . 9595) (undo-tree-id560 . -20) (undo-tree-id561 . -20) (undo-tree-id562 . -2) (undo-tree-id563 . -20) (undo-tree-id564 . -20) (undo-tree-id565 . -20) (nil fontified t 9595 . 9597) (nil rear-nonsticky t 9615 . 9616)) (26473 31446 904830 38000) 0 nil])
+([nil nil ((#("LOGO!230RCE" 0 10 (fontified t) 10 11 (fontified t rear-nonsticky t)) . 9634) (undo-tree-id569 . -10) (undo-tree-id570 . -5) 9639) nil (26473 31456 148695 925000) 0 nil])
+nil
+([nil nil ((#("{\\bfseries Figure 1 - The layout of the DC-2 and the general view of the
+Siemens LOGO! 230RCE microcontroller}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 72 (face (bold) fontified t) 72 73 (face (bold) fontified t) 73 109 (face (bold) fontified t) 109 110 (fontified t)) . -9650) (undo-tree-id566 . 110) (undo-tree-id567 . -18) (undo-tree-id568 . -18) 9668) nil (26473 31456 148694 62000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 9731 . 9732) (nil fontified nil 9634 . 9732) (9634 . 9732)) nil (26473 31456 148681 398000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 9747) (undo-tree-id573 . -1) (undo-tree-id574 . -1) (undo-tree-id575 . -1) (undo-tree-id576 . -1) (undo-tree-id577 . -1) (undo-tree-id578 . -1) (undo-tree-id579 . -1) (t 26473 31456 161126 177000)) nil (26473 31458 447811 834000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 9747) (undo-tree-id571 . 1) (undo-tree-id572 . -1)) nil (26473 31458 447804 841000) 0 nil])
+([nil nil ((#("{\\bfseries Figure 2 - The code of the adaptive traffic light program}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 68 (face (bold) fontified t) 68 69 (fontified t)) . -10679) (undo-tree-id632 . -15) (undo-tree-id633 . -15) 10694 (t 26473 31458 452104 74000)) nil (26473 31503 36223 543000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 10718 . 10719) (nil fontified nil 10662 . 10719) (10662 . 10719)) nil (26473 31503 36433 625000) 0 nil])
+([nil nil ((#("{\\bfseries Figure 3 - The standard operating program of the traffic light
+in the \"green wave\" mode}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 19 (face (bold) fontified t) 19 33 (face (bold) fontified t) 33 35 (face (bold) fontified t) 35 74 (face (bold) fontified t) 74 98 (face (bold) fontified t) 98 99 (fontified t)) . 11201) (undo-tree-id634 . -70) (undo-tree-id635 . -70) (undo-tree-id636 . -70) (undo-tree-id637 . -70) (undo-tree-id638 . -70) (undo-tree-id639 . -70) (undo-tree-id640 . -70) (undo-tree-id641 . -70) (undo-tree-id642 . -70) (undo-tree-id643 . -70) (undo-tree-id644 . -70) (undo-tree-id645 . -70) (undo-tree-id646 . -70) (undo-tree-id647 . -70) (undo-tree-id648 . -70) (undo-tree-id649 . -70) (undo-tree-id650 . -70) (undo-tree-id651 . -70) (undo-tree-id652 . -70) (undo-tree-id653 . -70) (undo-tree-id654 . -70) (undo-tree-id655 . -70) (undo-tree-id656 . -70) (undo-tree-id657 . -70) (undo-tree-id658 . -70) (undo-tree-id659 . -70) (undo-tree-id660 . -70) (undo-tree-id661 . -70) (undo-tree-id662 . -70) (undo-tree-id663 . -70) (undo-tree-id664 . -70) (undo-tree-id665 . -70) (undo-tree-id666 . -70) (undo-tree-id667 . -70) (undo-tree-id668 . -70) (undo-tree-id669 . -70) (undo-tree-id670 . -70) (undo-tree-id671 . -70) (undo-tree-id672 . -70) (undo-tree-id673 . -70) (undo-tree-id674 . -70) (undo-tree-id675 . -70) (undo-tree-id676 . -70) (undo-tree-id677 . -70) (undo-tree-id678 . -70) (undo-tree-id679 . -70) (undo-tree-id680 . -70) (undo-tree-id681 . -70) (undo-tree-id682 . -70) (undo-tree-id683 . -70) (undo-tree-id684 . -70) (undo-tree-id685 . -70) (undo-tree-id686 . -70) (undo-tree-id687 . -70) (undo-tree-id688 . -70) (undo-tree-id689 . -70) (undo-tree-id690 . -70) (undo-tree-id691 . -70) (undo-tree-id692 . -70) (undo-tree-id693 . -70) (undo-tree-id694 . -70) (undo-tree-id695 . -70) (undo-tree-id696 . -70) (undo-tree-id697 . -70) (undo-tree-id698 . -70) (undo-tree-id699 . -70) (undo-tree-id700 . -70) (undo-tree-id701 . -70) (undo-tree-id702 . -70) (undo-tree-id703 . -70) (undo-tree-id704 . -70) (undo-tree-id705 . -70) (undo-tree-id706 . -70)) ((11201 . 11300)) (26473 31503 724966 81000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 11270 . 11271) (nil fontified nil 11184 . 11271) (11184 . 11271)) nil (26473 31509 928754 445000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 11287) (undo-tree-id820 . -1) (undo-tree-id821 . -1) (undo-tree-id822 . -1) (undo-tree-id823 . -1) (undo-tree-id824 . -1) (undo-tree-id825 . -1) (undo-tree-id826 . -1) (undo-tree-id827 . -1) (undo-tree-id828 . -1) (undo-tree-id829 . -1) (undo-tree-id830 . -1) (undo-tree-id831 . -1) (undo-tree-id832 . -1) (undo-tree-id833 . -1) (undo-tree-id834 . -1) (undo-tree-id835 . -1) (undo-tree-id836 . -1) (undo-tree-id837 . -1) (undo-tree-id838 . -1) (undo-tree-id839 . -1) (undo-tree-id840 . -1) (undo-tree-id841 . -1) (undo-tree-id842 . -1) (undo-tree-id843 . -1) (undo-tree-id844 . -1) (undo-tree-id845 . -1) (undo-tree-id846 . -1) (undo-tree-id847 . -1) (undo-tree-id848 . -1) (undo-tree-id849 . -1) (undo-tree-id850 . -1) (undo-tree-id851 . -1) (undo-tree-id852 . -1) (undo-tree-id853 . -1) (undo-tree-id854 . -1) (undo-tree-id855 . -1) (undo-tree-id856 . -1) (undo-tree-id857 . -1) (undo-tree-id858 . -1) (undo-tree-id859 . -1) (undo-tree-id860 . -1) (undo-tree-id861 . -1) (undo-tree-id862 . -1) (undo-tree-id863 . -1) (undo-tree-id864 . -1) (undo-tree-id865 . -1) (undo-tree-id866 . -1) (undo-tree-id867 . -1) (undo-tree-id868 . -1) (undo-tree-id869 . -1) (undo-tree-id870 . -1) (undo-tree-id871 . -1) (undo-tree-id872 . -1) (undo-tree-id873 . -1) (undo-tree-id874 . -1) (undo-tree-id875 . -1) (undo-tree-id876 . -1) (undo-tree-id877 . -1) (undo-tree-id878 . -1) (undo-tree-id879 . -1) (undo-tree-id880 . -1) (undo-tree-id881 . -1) (undo-tree-id882 . -1) (undo-tree-id883 . -1) (undo-tree-id884 . -1) (undo-tree-id885 . -1) (undo-tree-id886 . -1) (undo-tree-id887 . -1) (undo-tree-id888 . -1) (undo-tree-id889 . -1) (undo-tree-id890 . -1) (undo-tree-id891 . -1) (undo-tree-id892 . -1) (undo-tree-id893 . -1) (undo-tree-id894 . -1) (undo-tree-id895 . -1) (undo-tree-id896 . -1) (undo-tree-id897 . -1) (undo-tree-id898 . -1) (undo-tree-id899 . -1) (undo-tree-id900 . -1) (undo-tree-id901 . -1) (undo-tree-id902 . -1) (undo-tree-id903 . -1) (undo-tree-id904 . -1) (undo-tree-id905 . -1) (undo-tree-id906 . -1) (undo-tree-id907 . -1) (undo-tree-id908 . -1) (undo-tree-id909 . -1) (undo-tree-id910 . -1) (undo-tree-id911 . -1) (undo-tree-id912 . -1) (undo-tree-id913 . -1) (undo-tree-id914 . -1)) nil (26473 31509 928751 851000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 11287) (undo-tree-id819 . -1)) nil (26473 31509 928676 450000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 11286) (undo-tree-id725 . -1) (undo-tree-id726 . -1) (undo-tree-id727 . -1) (undo-tree-id728 . -1) (undo-tree-id729 . -1) (undo-tree-id730 . -1) (undo-tree-id731 . -1) (undo-tree-id732 . -1) (undo-tree-id733 . -1) (undo-tree-id734 . -1) (undo-tree-id735 . -1) (undo-tree-id736 . -1) (undo-tree-id737 . -1) (undo-tree-id738 . -1) (undo-tree-id739 . -1) (undo-tree-id740 . -1) (undo-tree-id741 . -1) (undo-tree-id742 . -1) (undo-tree-id743 . -1) (undo-tree-id744 . -1) (undo-tree-id745 . -1) (undo-tree-id746 . -1) (undo-tree-id747 . -1) (undo-tree-id748 . -1) (undo-tree-id749 . -1) (undo-tree-id750 . -1) (undo-tree-id751 . -1) (undo-tree-id752 . -1) (undo-tree-id753 . -1) (undo-tree-id754 . -1) (undo-tree-id755 . -1) (undo-tree-id756 . -1) (undo-tree-id757 . -1) (undo-tree-id758 . -1) (undo-tree-id759 . -1) (undo-tree-id760 . -1) (undo-tree-id761 . -1) (undo-tree-id762 . -1) (undo-tree-id763 . -1) (undo-tree-id764 . -1) (undo-tree-id765 . -1) (undo-tree-id766 . -1) (undo-tree-id767 . -1) (undo-tree-id768 . -1) (undo-tree-id769 . -1) (undo-tree-id770 . -1) (undo-tree-id771 . -1) (undo-tree-id772 . -1) (undo-tree-id773 . -1) (undo-tree-id774 . -1) (undo-tree-id775 . -1) (undo-tree-id776 . -1) (undo-tree-id777 . -1) (undo-tree-id778 . -1) (undo-tree-id779 . -1) (undo-tree-id780 . -1) (undo-tree-id781 . -1) (undo-tree-id782 . -1) (undo-tree-id783 . -1) (undo-tree-id784 . -1) (undo-tree-id785 . -1) (undo-tree-id786 . -1) (undo-tree-id787 . -1) (undo-tree-id788 . -1) (undo-tree-id789 . -1) (undo-tree-id790 . -1) (undo-tree-id791 . -1) (undo-tree-id792 . -1) (undo-tree-id793 . -1) (undo-tree-id794 . -1) (undo-tree-id795 . -1) (undo-tree-id796 . -1) (undo-tree-id797 . -1) (undo-tree-id798 . -1) (undo-tree-id799 . -1) (undo-tree-id800 . -1) (undo-tree-id801 . -1) (undo-tree-id802 . -1) (undo-tree-id803 . -1) (undo-tree-id804 . -1) (undo-tree-id805 . -1) (undo-tree-id806 . -1) (undo-tree-id807 . -1) (undo-tree-id808 . -1) (undo-tree-id809 . -1) (undo-tree-id810 . -1) (undo-tree-id811 . -1) (undo-tree-id812 . -1) (undo-tree-id813 . -1) (undo-tree-id814 . -1) (undo-tree-id815 . -1) (undo-tree-id816 . -1) (undo-tree-id817 . -1) (undo-tree-id818 . -1)) nil (26473 31509 928674 296000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 10734) (undo-tree-id719 . -1) (undo-tree-id720 . -1) (undo-tree-id721 . -1) (undo-tree-id722 . -1) (undo-tree-id723 . -1) (undo-tree-id724 . -1)) nil (26473 31509 928639 721000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 10734) (undo-tree-id713 . -1) (undo-tree-id714 . -1) (undo-tree-id715 . -1) (undo-tree-id716 . -1) (undo-tree-id717 . -1) (undo-tree-id718 . -1)) nil (26473 31509 928636 986000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 10734) (undo-tree-id707 . -1) (undo-tree-id708 . -1) (undo-tree-id709 . -1) (undo-tree-id710 . -1) (undo-tree-id711 . -1) (undo-tree-id712 . -1)) nil (26473 31509 928630 975000) 0 nil])
+([nil nil ((#("
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image6}
+	\\caption*{Figure 2 - The code of the adaptive traffic light program}
+\\end{figure}
+" 0 1 (fontified t) 1 7 (face font-lock-keyword-face fontified t) 7 8 (fontified t latex-env-pair t) 8 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 20 (fontified t) 20 30 (face font-lock-keyword-face fontified t) 30 32 (fontified t) 32 48 (face font-lock-keyword-face fontified t) 48 49 (fontified t) 49 58 (fontified t) 58 68 (face font-lock-keyword-face fontified t) 68 70 (fontified t) 70 86 (face font-lock-builtin-face fontified t) 86 88 (fontified t) 88 89 (fontified t) 89 98 (face font-lock-keyword-face fontified t) 98 99 (fontified t) 99 155 (fontified t) 155 156 (rear-nonsticky t fontified t) 156 158 (fontified t) 158 162 (face font-lock-keyword-face fontified t) 162 163 (fontified t latex-env-pair t) 163 169 (face font-lock-function-name-face fontified t latex-env-pair t) 169 170 (fontified t latex-env-pair t) 170 171 (fontified t)) . 10563) (undo-tree-id915 . -158) (undo-tree-id916 . -158) (undo-tree-id917 . -170) (undo-tree-id918 . -99) (undo-tree-id919 . -171) (undo-tree-id920 . -171) (undo-tree-id921 . -171) (undo-tree-id922 . -171) (undo-tree-id923 . -171) (undo-tree-id924 . -171) (undo-tree-id925 . -171) (undo-tree-id926 . -171) (undo-tree-id927 . -171) (undo-tree-id928 . -171) (undo-tree-id929 . -171) (undo-tree-id930 . -158) 10721 (t 26473 31509 937607 5000)) nil (26473 31570 419567 94000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 9746 . 9747) (#("
+" 0 1 (fontified nil)) . -9917) (9746 . 9918) 9734) nil (26473 31570 419554 580000) 0 nil])
+([nil nil ((9919 . 9940) (11082 . 11098)) nil (26473 31570 419550 252000) 0 nil])
+([nil nil ((11321 . 11342) (15391 . 15407) (t 26473 31570 427022 232000)) nil (26473 31643 16553 903000) 0 nil])
+([nil nil ((#("{\\bfseries Figure 4 - Electrical diagram of an intelligent interface for
+controlling a \"smart\" traffic light using a QR code}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 124 (face (bold) fontified t) 124 125 (fontified t)) . -15544) (undo-tree-id970 . -73) (undo-tree-id971 . -73) (undo-tree-id972 . -73) (undo-tree-id973 . -73) (undo-tree-id974 . -73) (undo-tree-id975 . -73) (undo-tree-id976 . -73) (undo-tree-id977 . -73) (undo-tree-id978 . -73) (undo-tree-id979 . -73) (undo-tree-id980 . -73) (undo-tree-id981 . -73) 15617 (t 26473 31643 24319 296000)) nil (26473 31649 327311 99000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 15639 . 15640) (nil fontified nil 15527 . 15640) (15527 . 15640)) nil (26473 31649 327306 410000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15656) (undo-tree-id932 . -1) (undo-tree-id933 . -1) (undo-tree-id934 . -1) (undo-tree-id935 . -1) (undo-tree-id936 . -1) (undo-tree-id937 . -1) (undo-tree-id938 . -1) (undo-tree-id939 . -1) (undo-tree-id940 . -1) (undo-tree-id941 . -1) (undo-tree-id942 . -1) (undo-tree-id943 . -1) (undo-tree-id944 . -1) (undo-tree-id945 . -1) (undo-tree-id946 . -1) (undo-tree-id947 . -1) (undo-tree-id948 . -1) (undo-tree-id949 . -1) (undo-tree-id950 . -1) (undo-tree-id951 . -1) (undo-tree-id952 . -1) (undo-tree-id953 . -1) (undo-tree-id954 . -1) (undo-tree-id955 . -1) (undo-tree-id956 . -1) (undo-tree-id957 . -1) (undo-tree-id958 . -1) (undo-tree-id959 . -1) (undo-tree-id960 . -1) (undo-tree-id961 . -1) (undo-tree-id962 . -1) (undo-tree-id963 . -1) (undo-tree-id964 . -1) (undo-tree-id965 . -1) (undo-tree-id966 . -1) (undo-tree-id967 . -1) (undo-tree-id968 . -1) (undo-tree-id969 . -1)) nil (26473 31649 327305 308000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15656)) nil (26473 31678 209868 754000) 0 nil])
+([nil nil ((#("\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image8}
+	\\caption*{Figure 4 - Electrical diagram of an intelligent interface for
+controlling a \"smart\" traffic light using a QR code}
+\\end{figure}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t) 16 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 24 (fontified t latex-env-pair t) 24 30 (face font-lock-function-name-face fontified t latex-env-pair t) 30 31 (fontified t latex-env-pair t) 31 36 (fontified t) 36 46 (face font-lock-keyword-face fontified t) 46 48 (fontified t) 48 64 (face font-lock-keyword-face fontified t) 64 74 (fontified t) 74 84 (face font-lock-keyword-face fontified t) 84 86 (fontified t) 86 102 (face font-lock-builtin-face fontified t) 102 104 (fontified t) 104 105 (fontified t) 105 114 (face font-lock-keyword-face fontified t) 114 115 (fontified t) 115 227 (fontified t) 227 228 (fontified t rear-nonsticky t) 228 230 (fontified t) 230 234 (face font-lock-keyword-face fontified t) 234 235 (fontified t latex-env-pair t) 235 241 (face font-lock-function-name-face fontified t latex-env-pair t) 241 242 (fontified t latex-env-pair t) 242 243 (fontified t)) . 15412) (undo-tree-id989 . -230) (undo-tree-id990 . -230) (undo-tree-id991 . -242) (undo-tree-id992 . -177) (undo-tree-id993 . -230) 15642 (t 26473 31700 826758 799000)) nil (26473 31746 965598 222000) 0 nil] [nil nil ((#("
+{\\bfseries Results and discussions.} As a result of the conducted research,
+the software and hardware of the ESP32 Cam interface was developed on
+the principle of a \"green wave\" for special services vehicles using a QR
+code. Similarly, the hardware and software of the ESP32 QR Code Reader
+interface for medical vehicles was developed. The \"smart\" HR software
+appeared during the implementation of a library program in which, with
+standard QR code recognition, a text message transcribing the text of
+the QR code was displayed on the screen of the COM port of the Arduino
+IDE environment {[}8, 9{]} (Fig.4).
+" 0 2 (fontified t) 2 11 (face font-lock-keyword-face fontified t) 11 36 (face (bold) fontified t) 36 474 (fontified t) 474 502 (fontified t) 502 609 (fontified t)) . 14803) (undo-tree-id982 . -573) (undo-tree-id983 . -573) (undo-tree-id984 . -608) (undo-tree-id985 . -573) (undo-tree-id986 . -573) (undo-tree-id987 . -573) (undo-tree-id988 . -609) 15376) ((14803 . 15412) (t 26473 31668 297074 327000)) (26473 31668 289358 6000) 0 nil] [nil nil ((#("
+" 0 1 (fontified t)) . 15656)) ((15656 . 15657) (t 26473 31649 331258 174000)) (26473 31649 327286 72000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 14241 . 14242) (#("
+" 0 1 (fontified nil)) . -14484) (14241 . 14485) 14179) nil (26473 31749 872542 130000) 0 nil] [nil nil ((nil rear-nonsticky nil 13555 . 13556) (#("
+" 0 1 (fontified nil)) . -13798) (13555 . 13799) 13492) ((#("
+\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image8}
+	\\caption*{Figure 4 - Electrical diagram of an intelligent interface for
+controlling a \"smart\" traffic light using a QR code}
+\\end{figure}
+" 0 1 (rear-nonsticky nil fontified nil) 1 5 (face font-lock-keyword-face fontified nil) 5 6 (fontified nil latex-env-pair t) 6 15 (face font-lock-function-name-face fontified nil latex-env-pair t) 15 16 (fontified nil latex-env-pair t) 16 17 (fontified nil) 17 18 (fontified t) 18 24 (face font-lock-keyword-face fontified t) 24 25 (fontified t latex-env-pair t) 25 31 (face font-lock-function-name-face fontified t latex-env-pair t) 31 32 (fontified t latex-env-pair t) 32 37 (fontified t) 37 47 (face font-lock-keyword-face fontified t) 47 49 (fontified t) 49 65 (face font-lock-keyword-face fontified t) 65 75 (fontified t) 75 85 (face font-lock-keyword-face fontified t) 85 87 (fontified t) 87 103 (face font-lock-builtin-face fontified t) 103 105 (fontified t) 105 106 (fontified t) 106 115 (face font-lock-keyword-face fontified t) 115 116 (fontified t) 116 228 (fontified t) 228 229 (fontified t rear-nonsticky t) 229 231 (fontified t) 231 235 (face font-lock-keyword-face fontified nil) 235 236 (fontified nil latex-env-pair t) 236 242 (face font-lock-function-name-face fontified nil latex-env-pair t) 242 243 (fontified nil latex-env-pair t) 243 244 (fontified nil)) . 13555) (undo-tree-id994 . -1) (undo-tree-id995 . -1) (undo-tree-id996 . -243) (undo-tree-id997 . -1) (undo-tree-id998 . -1) (undo-tree-id999 . -1) (undo-tree-id1000 . -1) (undo-tree-id1001 . -1) (undo-tree-id1002 . -1) (undo-tree-id1003 . -1) (undo-tree-id1004 . -1) (undo-tree-id1005 . -1) (undo-tree-id1006 . -1) (undo-tree-id1007 . -1) (undo-tree-id1008 . -1) (undo-tree-id1009 . -1) (undo-tree-id1010 . -1) (undo-tree-id1011 . -1) (undo-tree-id1012 . -1) (undo-tree-id1013 . -1) (undo-tree-id1014 . -1) (undo-tree-id1015 . -1) (undo-tree-id1016 . -1) (undo-tree-id1017 . -1) (undo-tree-id1018 . -1) (undo-tree-id1019 . -1) (undo-tree-id1020 . -1) (undo-tree-id1021 . -1) (undo-tree-id1022 . -1) (undo-tree-id1023 . -1) (undo-tree-id1024 . -1) (undo-tree-id1025 . -1) (undo-tree-id1026 . -1) (undo-tree-id1027 . -1) (undo-tree-id1028 . -1) (undo-tree-id1029 . -1) (undo-tree-id1030 . -1) (undo-tree-id1031 . -1) (undo-tree-id1032 . -1) (undo-tree-id1033 . -1) (undo-tree-id1034 . -1) (undo-tree-id1035 . -1) (undo-tree-id1036 . -1) (undo-tree-id1037 . -1) (undo-tree-id1038 . -1) (undo-tree-id1039 . -1) (undo-tree-id1040 . -1) (undo-tree-id1041 . -1) (undo-tree-id1042 . -1) (undo-tree-id1043 . -1) (undo-tree-id1044 . -1) (undo-tree-id1045 . -1) (undo-tree-id1046 . -1) (undo-tree-id1047 . -1) (undo-tree-id1048 . -1) (undo-tree-id1049 . -1) (undo-tree-id1050 . -1) (undo-tree-id1051 . -1) (undo-tree-id1052 . -1) (undo-tree-id1053 . -1) (undo-tree-id1054 . -1) (undo-tree-id1055 . -1) (undo-tree-id1056 . -1) (undo-tree-id1057 . -1) (undo-tree-id1058 . -1) (undo-tree-id1059 . -1) (undo-tree-id1060 . -1) (undo-tree-id1061 . -1) (undo-tree-id1062 . -1) (undo-tree-id1063 . -1) (undo-tree-id1064 . -1) (undo-tree-id1065 . -1) (undo-tree-id1066 . -1) (undo-tree-id1067 . -1) (undo-tree-id1068 . -1) (undo-tree-id1069 . -1) (undo-tree-id1070 . -1) (undo-tree-id1071 . -1) (undo-tree-id1072 . -1) (undo-tree-id1073 . -1) (undo-tree-id1074 . -1) (undo-tree-id1075 . -1) (undo-tree-id1076 . -1) (undo-tree-id1077 . -1) (undo-tree-id1078 . -1) (undo-tree-id1079 . -1) (undo-tree-id1080 . -1) (undo-tree-id1081 . -1) (undo-tree-id1082 . -1) (undo-tree-id1083 . -1) (undo-tree-id1084 . -1) (undo-tree-id1085 . -1) (undo-tree-id1086 . -1) (undo-tree-id1087 . -1) (undo-tree-id1088 . -1) (undo-tree-id1089 . -1) (undo-tree-id1090 . -1) (undo-tree-id1091 . -1) (undo-tree-id1092 . -1) (undo-tree-id1093 . -1) (undo-tree-id1094 . -1) (undo-tree-id1095 . -1) (undo-tree-id1096 . -1) (undo-tree-id1097 . -1) (undo-tree-id1098 . -1) (undo-tree-id1099 . -1) (undo-tree-id1100 . -1) (undo-tree-id1101 . -1) (undo-tree-id1102 . -1) (undo-tree-id1103 . -1) (undo-tree-id1104 . -1) (undo-tree-id1105 . -1) (undo-tree-id1106 . -1) (undo-tree-id1107 . -1) (undo-tree-id1108 . -1) (undo-tree-id1109 . -1) (undo-tree-id1110 . -1) (undo-tree-id1111 . -1) (undo-tree-id1112 . -1) (undo-tree-id1113 . -1) (undo-tree-id1114 . -1) (undo-tree-id1115 . -1) (undo-tree-id1116 . -1) (undo-tree-id1117 . -1) (undo-tree-id1118 . -1) (undo-tree-id1119 . -1) (undo-tree-id1120 . -1) (undo-tree-id1121 . -1) (undo-tree-id1122 . -1) (undo-tree-id1123 . -1) (undo-tree-id1124 . -1) (undo-tree-id1125 . -1) (undo-tree-id1126 . -1) (undo-tree-id1127 . -1) (undo-tree-id1128 . -1) (undo-tree-id1129 . -1) (undo-tree-id1130 . -1) (undo-tree-id1131 . -1) (undo-tree-id1132 . -1) (undo-tree-id1133 . -1) (undo-tree-id1134 . -1) (undo-tree-id1135 . -1) (undo-tree-id1136 . -1) (undo-tree-id1137 . -1) (13798 . 13799) (nil rear-nonsticky t 13555 . 13556) (t 26473 31730 400471 721000)) (26473 31730 393494 539000) 0 nil])
+nil
+nil
+([nil nil ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 14242) (undo-tree-id1138 . -15) (t 26473 31749 876282 552000)) nil (26473 31764 913187 204000) 0 nil])
+nil
+([nil nil ((nil rear-nonsticky nil 15638 . 15639) (#("
+" 0 1 (fontified nil)) . -15654) (15638 . 15655) 15603) nil (26473 31764 913175 51000) 0 nil])
+([nil nil ((#("
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image8}
+	\\caption*{Figure 4 - Electrical diagram of an intelligent interface for
+controlling a \"smart\" traffic light using a QR code}
+\\end{figure}
+" 0 1 (fontified t) 1 7 (face font-lock-keyword-face fontified t) 7 8 (fontified t latex-env-pair t) 8 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 20 (fontified t) 20 30 (face font-lock-keyword-face fontified t) 30 32 (fontified t) 32 48 (face font-lock-keyword-face fontified t) 48 58 (fontified t) 58 68 (face font-lock-keyword-face fontified t) 68 70 (fontified t) 70 86 (face font-lock-builtin-face fontified t) 86 88 (fontified t) 88 89 (fontified t) 89 98 (face font-lock-keyword-face fontified t) 98 99 (fontified t) 99 211 (fontified t) 211 212 (fontified t rear-nonsticky t) 212 214 (fontified t) 214 218 (face font-lock-keyword-face fontified t) 218 219 (fontified t latex-env-pair t) 219 225 (face font-lock-function-name-face fontified t latex-env-pair t) 225 226 (fontified t latex-env-pair t) 226 227 (fontified t)) . 14242) (undo-tree-id1139 . -214) (undo-tree-id1140 . -214) (undo-tree-id1141 . -226) (undo-tree-id1142 . -227) (undo-tree-id1143 . -214) 14456 (t 26473 31764 917136 436000)) nil (26473 31782 235393 517000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 15427 . 15428) (#("
+" 0 1 (fontified nil)) . -15654) (15427 . 15655) 15412) nil (26473 32054 876022 598000) 0 nil])
+([nil nil ((#("\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image8}
+	\\caption*{Figure 4 - Electrical diagram of an intelligent interface for
+controlling a \"smart\" traffic light using a QR code}
+\\end{figure}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (rear-nonsticky t fontified t) 16 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 24 (fontified t latex-env-pair t) 24 30 (face font-lock-function-name-face fontified t latex-env-pair t) 30 31 (fontified t latex-env-pair t) 31 36 (fontified t) 36 46 (face font-lock-keyword-face fontified t) 46 48 (fontified t) 48 64 (face font-lock-keyword-face fontified t) 64 74 (fontified t) 74 84 (face font-lock-keyword-face fontified t) 84 86 (fontified t) 86 102 (face font-lock-builtin-face fontified t) 102 104 (fontified t) 104 105 (fontified t) 105 114 (face font-lock-keyword-face fontified t) 114 115 (fontified t) 115 227 (fontified t) 227 228 (fontified t rear-nonsticky t) 228 230 (fontified t) 230 234 (face font-lock-keyword-face fontified t) 234 235 (fontified t latex-env-pair t) 235 241 (face font-lock-function-name-face fontified t latex-env-pair t) 241 242 (fontified t latex-env-pair t) 242 243 (fontified t)) . 15412) (undo-tree-id1227 . -230) (undo-tree-id1228 . -230) (undo-tree-id1229 . -242) (undo-tree-id1230 . -243) (undo-tree-id1231 . -230) 15642) nil (26473 32063 15255 515000) 0 nil] [nil nil ((#("
+- Rigid software control. Coordination programs and the order of their
+change are calculated in advance based on movement data collected, as a
+rule, by field measurements.
+
+- Software management with forecast. The selection of the program
+activation points, the duration of their operation and their adaptation
+to the speed of traffic flow is performed based on data from transport
+detectors.
+
+-Adaptive control. Each cycle is implemented with the calculation of
+coordination programs based on traffic flow data at each intersection
+and in each control phase.
+
+{\\bfseries Results and discussions.} As a result of the conducted research,
+the software and hardware of the ESP32 Cam interface was developed on
+the principle of a \"green wave\" for special services vehicles using a QR
+code. Similarly, the hardware and software of the ESP32 QR Code Reader
+interface for medical vehicles was developed. The \"smart\" HR software
+appeared during the implementation of a library program in which, with
+standard QR code recognition, a text message transcribing the text of
+the QR code was displayed on the screen of the COM port of the Arduino
+IDE environment {[}8, 9{]} (Fig.4).
+" 0 1 (fontified t) 1 286 (fontified t) 286 312 (fontified t) 312 561 (fontified t) 561 563 (fontified t) 563 572 (face font-lock-keyword-face fontified t) 572 597 (face (bold) fontified t) 597 814 (fontified t) 814 852 (fontified t) 852 1035 (fontified t) 1035 1063 (fontified t) 1063 1134 (fontified t) 1134 1169 (fontified t) 1169 1170 (fontified t rear-nonsticky t)) . 14242) (undo-tree-id1148 . -1134) (undo-tree-id1149 . -1134) (undo-tree-id1150 . -1169) (undo-tree-id1151 . -173) (undo-tree-id1152 . -394) (undo-tree-id1153 . -561) (undo-tree-id1154 . -561) (undo-tree-id1156 . -561) (undo-tree-id1157 . -561) (undo-tree-id1158 . -561) (undo-tree-id1159 . -561) (undo-tree-id1161 . -638) (undo-tree-id1163 . -638) (undo-tree-id1165 . -534) (undo-tree-id1167 . -534) (undo-tree-id1169 . -534) (undo-tree-id1171 . -464) (undo-tree-id1173 . -464) (undo-tree-id1175 . -395) (undo-tree-id1177 . -395) (undo-tree-id1179 . -395) (undo-tree-id1181 . -394) (undo-tree-id1183 . -394) (undo-tree-id1185 . -383) (undo-tree-id1187 . -383) (undo-tree-id1189 . -383) (undo-tree-id1191 . -312) (undo-tree-id1193 . -312) (undo-tree-id1195 . -240) (undo-tree-id1197 . -240) (undo-tree-id1199 . -240) (undo-tree-id1201 . -174) (undo-tree-id1203 . -174) (undo-tree-id1205 . -173) (undo-tree-id1207 . -173) (undo-tree-id1209 . -173) (undo-tree-id1211 . -144) (undo-tree-id1213 . -144) (undo-tree-id1215 . -72) (undo-tree-id1217 . -72) (undo-tree-id1219 . -72) (undo-tree-id1221 . -1) (undo-tree-id1223 . -1) (undo-tree-id1225 . -561)) ((14242 . 15412) (t 26473 32036 169492 716000)) (26473 32036 165189 394000) 0 nil] [nil nil ((#("
+{\\bfseries Results and discussions.} As a result of the conducted research,
+the software and hardware of the ESP32 Cam interface was developed on
+the principle of a \"green wave\" for special services vehicles using a QR
+code. Similarly, the hardware and software of the ESP32 QR Code Reader
+interface for medical vehicles was developed. The \"smart\" HR software
+appeared during the implementation of a library program in which, with
+standard QR code recognition, a text message transcribing the text of
+the QR code was displayed on the screen of the COM port of the Arduino
+IDE environment {[}8, 9{]} (Fig.4).
+" 0 2 (fontified t) 2 11 (face font-lock-keyword-face fontified t) 11 36 (face (bold) fontified t) 36 253 (fontified t) 253 291 (fontified t) 291 474 (fontified t) 474 502 (fontified t) 502 573 (fontified t) 573 608 (fontified t) 608 609 (fontified t rear-nonsticky t)) . 14803) (undo-tree-id1144 . -573) (undo-tree-id1145 . -573) (undo-tree-id1146 . -608) (undo-tree-id1147 . -609) (t 26473 31782 239968 84000)) ((14803 . 15412) (t 26473 32026 235589 811000)) (26473 32026 228766 950000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 13555 . 13556) (#("
+" 0 1 (fontified nil)) . -13798) (13555 . 13799) 13492) nil (26473 32063 15240 878000) 0 nil])
+nil
+nil
+([nil nil ((#("8" 0 1 (fontified t)) . -13629) (t 26473 32063 20230 167000) (13630 . 13631) 13629 (t 26473 32063 20230 167000)) nil (26473 32077 452522 747000) 0 nil])
+([nil current ((13800 . 13821) (15948 . 15964)) nil (26473 32077 452518 649000) 0 nil])
+nil

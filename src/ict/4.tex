@@ -1,783 +1,787 @@
-\id{МРНТИ 20.53.19}
+\id{IRSTI 28.23.25}
 
-{\bfseries ИДЕНТИФИКАЦИИ МАТЕМАТИЧЕСКИХ МОДЕЛЕЙ МЕТОДОМ КВАЗИЛИНЕАРИЗАЦИИ}
+{\bfseries Identifying effective machine learning algorithms for
+sentimental analysis of comments in the Kazakh language}
 
-{\bfseries \textsuperscript{1,2}Т.Ж. Мазаков\textsuperscript{\envelope },
-\textsuperscript{1}Ш.А. Джомартова, \textsuperscript{1}А.Т. Мазакова,
-\textsuperscript{3}Г.Ч. Тойкенов,}
+{\bfseries \textsuperscript{1}N.K. Mukazhanov\textsuperscript{\envelope },
+\textsuperscript{2}L.Sh.} {\bfseries Cherikbayeva, \textsuperscript{1}A.M.
+Kassenkhan, \textsuperscript{1}Zh.M. Alibieva,}
 
-{\bfseries \textsuperscript{1,2}М.С. Алиаскар, \textsuperscript{3}У.Г.
-Тойкенова}
+{\bfseries \textsuperscript{1,3}M. Turdalyuly}
 
-\textsuperscript{1}Казахский национальный университет имени аль-Фараби,
+\textsuperscript{1}Satbayev University, Almaty, Kazakhstan,
+
+\textsuperscript{2}Al-Farabi Kazakh National University, Almaty,
+Kazakhstan,
+
+\textsuperscript{3}International Engineering and Technological
+University
+
+{\bfseries \textsuperscript{\envelope }}Corresponding author:
+\href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}}
+
+This article presents the results of an analysis of machine learning
+algorithms for sentimental data analysis in the Kazakh language, and as
+a result of the analysis, effective algorithms are determined. With the
+increasing volume of Kazakh-language content on social networks, news
+and online stores, the need for tools and methods for processing data in
+the Kazakh language has also increased in order to obtain valuable
+information about people' s opinions and views.
+Therefore, the dataset used in the study was collected from real online
+stores and news sites. The volume of the collected data set is 1500
+records, 80\% of which were used for training the algorithms, and 20\%
+for testing. For sentimental data analysis, machine learning algorithms
+such as logistic regression, multinomial naive Bayes, support vector
+machine (SVM), XGBoost and long short-term memory (LSTM) deep learning
+are considered. The study tested algorithms by increasing the dataset
+from 500 records to 1500 records, and various algorithm methods such as
+individual, ensemble, and augmented were implemented and tested. The
+results obtained during testing were presented in terms of algorithm
+accuracy.
+
+{\bfseries Keywords:} sentiment analysis, machine learning, deep learning,
+NLP, comments, dataset
+
+{\bfseries Қазақ тіліндегі пікірлерді сентименталды талдау үшін машиналық
+оқытудың тиімді алгоритмдерін анықтау}
+
+{\bfseries \textsuperscript{1}Н.К. Мукажанов\textsuperscript{\envelope },
+\textsuperscript{2}Л.Ш.Черикбаева, \textsuperscript{1}А.М.Касенхан,
+\textsuperscript{1}Ж.М.Алибиева,\\
+\textsuperscript{1,3}М. Тұрдалыұлы}
+
+\textsuperscript{1}Satbayev University, Алматы, Қазақстан,
+
+\textsuperscript{2}Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы,
+Қазақстан,
+
+\textsuperscript{3}Халықаралық инженерлік-технологиялық университет,
+
+e-mail:
+\href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}}
+
+Ұсынылып отырған мақалада қазақ тілді деректерді сентименталды талдау
+үшін машиналық оқыту алгоритмдеріне талдау жасалынды, талдау нәтижесінде
+тиімді алгоритмдерді анықтау қарастырылды. Әлеуметтік желілерде,
+жаңалықтар жəне интернет дүкендердегі қолданушылардың пікірлері сияқты
+қазақ тіліндегі контенттің көлемі артуына байланысты, қазақ тілді
+деректерді өңдеу, адамдардың пікірі мен көзқарастары туралы құнды
+ақпаратты алу құралдары мен əдістеріне де қажеттілік артқан. Сондықтан,
+зерттеуде қолданылған деректер жинағы нақты интернет дүкендер мен
+жаңалықтар сайтынан жинақталды. Жинақталған деректердің көлемі 1500
+жазба, оның 80\% алгоритмдері жаттықтыру үшін, ал 20\% тестілеу үшін
+пайдаланылды. Жинақталған деректерді сентименталды талдау үшін машиналық
+оқытудың Логистикалық регрессия, Multinomial Naive Bayes, Liner SVM,
+XGBoost және тереңдете оқытудың Long short-term memory (LSTM)
+қарастырылды. Зерттеу барысында деректер жинағы 500 жазбадан 1500
+жазбаға дейін арттыру арқылы сынақ жасалынды, ал алгоритмдердің жеке,
+ансамбльдік және LSTM алгоритмінің толтырылған тізбектер әдісі сияқты
+түрлі әдістері жүзеге асырылып тестіленді. Тестілеу барысында алынған
+нәтижелер алгоритмдердің дәлдік көрсеткіштері бойынша ұсынылды.
+
+{\bfseries Түйін сөздер:} сентименталды талдау, машиналық оқыту, тереңдете
+оқыту, NLP, пікірлер, деректер жинағы.
+
+{\bfseries ОПРЕДЕЛЕНИЕ ЭФФЕКТИВНЫХ АЛГОРИТМОВ МАШИННОГО ОБУЧЕНИЯ ДЛЯ
+СЕНТИМЕНТАЛЬНОГО АНАЛИЗА КОММЕНТАРИЕВ НА КАЗАХСКОМ ЯЗЫКЕ}
+
+{\bfseries \textsuperscript{1}Н.К. Мукажанов\textsuperscript{\envelope },
+\textsuperscript{2}Л.Ш. Черикбаева, \textsuperscript{1}А.М. Касенхан,
+\textsuperscript{1}Ж.М. Алибиева,}
+
+{\bfseries \textsuperscript{1,3}М. Тұрдалыұлы}
+
+\textsuperscript{1}Satbayev University, Алматы, Казахстан,
+
+\textsuperscript{2}Казахский национальный университет имени Аль-Фараби,
 Алматы, Казахстан,
 
-\textsuperscript{2}Международный инженерно-технологический университет,
-Алматы, Казахстан,
+\textsuperscript{3}Международный инженерно-технологический университет,
 
-\textsuperscript{3}Казахский национальный женский педагогический
-университет, Алматы, Казахстан
+e-mail:
+\href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}}
 
-{\bfseries \textsuperscript{\envelope }}Correspondent-author:
-\href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}}
+В данной статье представлены результаты анализа алгоритмов машинного
+обучения для сентиментального анализа данных на казахском языке, и в
+результате анализа определены эффективные алгоритмы. В связи с
+увеличением объема казахскоязычного контента в социальных сетях,
+новостях и интернет-магазинах также возросла потребность в инструментах
+и методах обработки данных на казахском языке для получения ценной
+информации о мнениях и взглядах людей. Поэтому набор данных,
+использованный в исследовании, был собран из реальных интернет-магазинов
+и новостных сайтов. Объем собранного набора данных составляет 1500
+записей, 80\% из которых использовались для обучения алгоритмов, а 20\%
+--- для тестирования. Для сентиментального анализа данных рассмотрены
+алгоритмы машинного обучения, такие как логистическая регрессия,
+мультиномиальный наивный байесовский метод, метод опорных векторов
+(SVM), XGBoost и длинная краткосрочная память (LSTM) глубокого обучения.
+В ходе исследования тестировались алгоритмы с увеличением набора данных
+с 500 до 1500 записей, а также были реализованы и протестированы
+различные методы, такие как индивидуальный, ансамблевый и расширенный.
+Результаты, полученные в ходе тестирования, были представлены по
+показателям точности алгоритмов.
 
-Целью данной работы является определение параметров математической
-модели, описывающей прорывы селевых потоков через гидротехнические
-объекты, такие как дамбы и плотины. Достижение этой цели позволит
-соотнести разработанную модель с реальными наблюдениями и данными.
-Важность исследования обусловлена увеличением частоты и интенсивности
-катастрофических наводнений, вызванных разрушением таких сооружений, что
-подчеркивает необходимость разработки эффективных методов для
-прогнозирования и предотвращения подобных инцидентов. Методы и подходы,
-предложенные в данной работе, обладают высоким практическим значением
-для оценки вероятных рисков, организации эвакуационных мероприятий и
-снижения ущерба от аварий, связанных с разрушением дамб и плотин.
+{\bfseries Ключевые слова\emph{:}} сентиментальный анализ, машинное
+обучение, глубокое обучение, NLP, комментарий, набор данных.
 
-{\bfseries Ключевые слова:} гидротехнические сооружения (ГТС), параметры,
-идентификация, прорыв дамбы, селевой поток, математическое
-моделирование.
+{\bfseries Introduction.} Sentimental analysis is a subfield of Natural
+Language Processing (NLP) that aims to identify and analyze the moods
+(feelings) expressed in a given text. It is a powerful tool that we can
+use to understand people' s opinions, attitudes, and
+emotions about a particular topic, brand, product, or service.
+Sentimental analysis can be applied to many different areas, such as
+market research, social media monitoring, customer service, and public
+opinion analysis {[}1{]}. Sentiment analysis is a powerful tool for
+companies to gain insight into customer sentiment and opinions, track
+their brand reputation, conduct market research, conduct competitive
+analysis, manage risk, make data-driven decisions, and improve their
+products, services, and customer interactions.
 
-{\bfseries МАТЕМАТИКАЛЫҚ МОДЕЛЬДЕРДІ КВАЗИЛИНЕАРИЗАЦИЯ ӘДІСІМЕН
-СӘЙКЕСТЕНДІРУ}
+The study of the model and methods of analyzing sentimental data in the
+Kazakh language is very important for a number of reasons:
 
-{\bfseries \textsuperscript{1,2}Т.Ж. Мазаков\textsuperscript{\envelope },
-\textsuperscript{1}Ш.А. Джомартова, \textsuperscript{1}А.Т. Мазақова,
-\textsuperscript{3}Г.Ч Тойкенов,}
+- due to the increase in the amount of data available on the Internet,
+many business organizations can gain valuable information from large
+volumes of data, such as understanding customer preferences, market
+trends, and developing effective marketing strategies {[}2{]};
 
-{\bfseries \textsuperscript{1,2}М.С. Әлиасқар, \textsuperscript{3}Тойкенова
-У.Г.}
+- sentimental analysis can be used for research purposes in areas such
+as sociology, psychology, and political science. By analyzing the data
+mentioned in social media posts, news, articles or other textual data,
+researchers can obtain information about the views, emotions and beliefs
+of various groups or individuals in Kazakh society;
 
-¹Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы, Қазақстан,\\
-²Халықаралық инженерлік-технологиялық университет, Алматы, Қазақстан,\\
-³Қазақ ұлттық қыздар педагогикалық университеті, Алматы, Қазақстан,\\
-e-mail: \href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}}
+- sentimental data analysis can also be applied in a variety of fields,
+including health, finance, and education. For example, it can be used to
+analyze patient feedback and improve health care services, detect
+fraudulent financial transactions, and evaluate the effectiveness of
+educational programs.
 
-Бұл зерттеудің мақсаты --- гидротехникалық құрылыстар, соның ішінде
-бөгеттер мен дамбалар арқылы болатын сел ағындарының жарылуын
-сипаттайтын математикалық модельдің параметрлерін анықтау. Бұл мақсатқа
-қол жеткізу әзірленген модельді нақты бақылаулармен және деректермен
-салыстыруға мүмкіндік береді. Зерттеудің өзектілігі осындай
-құрылыстардың бұзылуы салдарынан болатын апатты су тасқындарының жиілігі
-мен қарқындылығының артуымен ерекшеленеді, бұл осындай оқиғаларды болжау
-және алдын алу үшін тиімді әдістерді әзірлеу қажеттігін көрсетеді. Осы
-жұмыста ұсынылған әдістер мен тәсілдер ықтимал тәуекелдерді бағалауға,
-эвакуация шараларын ұйымдастыруға және дамбалар мен бөгеттердің
-бұзылуымен байланысты апаттардан келетін шығындарды азайтуға үлкен
-практикалық мәнге ие.
+With the increasing use of digital content in the Kazakh language, such
+as social media posts, news and customer reviews, there is a growing
+need for automated sentiment analysis techniques which can process large
+amounts of data and provide valuable information about
+people' s opinions and attitudes. This work is an
+experimental contribution to the analysis of Kazakh language texts and
+sentimental research. Different methods and their accuracies are
+compared using texts based on opinion data.
 
-{\bfseries Түйін сөздер}: гидротехникалық құрылыстар (ГТҚ), параметрлер,
-сәйкестендіру, дамбаның жарылуы, сел ағыны, математикалық модельдеу.
+The purpose of the presented article is to compare machine learning and
+deep learning methods in the study of sentiment analysis and to provide
+specific models and methods {\bfseries that} yield good results in the
+sentiment analysis of opinions in the Kazakh language.
 
-{\bfseries IDENTIFICATION OF MATHEMATICAL MODELS USING THE
-QUASILINEARIZATION METHOD}
+In general, we believe that the study of models and methods of
+sentimental data analysis in the Kazakh language is relevant from both a
+theoretical and a practical point of view. It is necessary to better
+understand and use the huge amount of data available in Kazakhstan.
 
-{\bfseries \textsuperscript{1,2} T.Zh. Mazakov\textsuperscript{\envelope }, ¹S
-\textsuperscript{1}h.A. Jomartova, \textsuperscript{1}A.T. Mazakova,
-\textsuperscript{3}G.Ch. Toykenov,\\
-\textsuperscript{1,2}M.S. Aliaskar, \textsuperscript{3}U.G. Toykenova\\
-}
+{\bfseries Materials and methods.} Extensive research has been conducted on
+sentiment analysis of data. This is evidenced by our search on the topic
+of sentimental analysis in the sciencedirect
+(\url{https://www.sciencedirect.com/}) database of scientific works,
+which revealed a total of 77,525 scientific works, including 7171
+scientific articles and textbooks published in 2022 and 8194 in 2023.
 
-¹Al-Farabi Kazakh National University, Almaty, Kazakhstan,\\
-²International Engineering and Technology University, Almaty,
-Kazakhstan,\\
-³Kazakh National Women' s Teacher Training University,
-Almaty, Kazakhstan,\\
-e-mail: \href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}}
+The vast majority of research on sentiment data analysis is devoted to
+the English language {[}3, 4{]}, also there are also many studies on the
+widely used Arabic {[}5{]}, Chinese {[}6{]}, and Russian {[}7{]}
+languages. These languages differ from the Kazakh language in terms of
+word formation, language syntax, and morphology. In addition, each
+natural language needs its own dataset in machine learning and deep
+learning methods. Therefore, in order to analyze the Kazakh language
+data, first of all, a data set should be collected and the analysis
+methods should be tested with the collected data. Several numbers of
+works {[}8, 9, 10{]} have been published on the sentiment analysis of
+Kazakh texts. In {[}8{]} considered two ways of implementing transfer
+learning at work: null learning and fine-tuning. Experiments were
+designed to compare these two methods and report the results obtained.
+In the work, the Bidirectional Encoder Representations (BERT) model
+obtained from transformers suggested better results can be achieved in
+the Kazakh language with less resurgence. {[}9{]} this work is devoted
+to the development and application of an information system called the
+OMS system for the analysis of user comments on news portals, blogs and
+social networks in Kazakhstan. The system used sentimental dictionaries
+of the Russian and Kazakh languages and machine learning algorithms to
+determine the mood of texts in social networks. The article focused more
+on building a system than on studying methods of sentimental data
+analysis. The authors of the article {[}10{]} provided for an immediate
+analysis of Kazakh and Russian-speaking opinions. The work describes
+modern approaches to solving the problem of analyzing the opinions of
+news articles in Kazakh and Russian languages using neural networks.
+Thus, studies have shown that it is possible to achieve good results
+without knowing the linguistic characteristics of a particular language.
+The accuracy of the methods proposed in this work is 73\%.
 
-The aim of this study is to determine the parameters of a mathematical
-model that describes debris flow breaches through hydraulic structures,
-such as dams and embankments. Achieving this goal will allow the
-developed model to be correlated with real observations and data. The
-importance of the research is underscored by the increasing frequency
-and intensity of catastrophic floods caused by the failure of such
-structures, emphasizing the need to develop effective methods for
-predicting and preventing such incidents. The methods and approaches
-proposed in this work hold significant practical value for assessing
-potential risks, organizing evacuation measures, and reducing the damage
-from accidents related to dam and embankment failures.
+\emph{Methods of sentimental data analysis} can be divided into several
+groups: Lexicon-based techniques, machine learning methods, deep
+learning methods, and hybrid methods. The main methods we consider are
+machine learning and deep learning.
 
-{\bfseries Keywords}: hydraulic structures (HS), parameters,
-identification, dam breach, debris flow, mathematical modeling.
+\emph{Lexicon-based techniques.} Lexicon-based methods use pre-built
+dictionaries or lexicons containing words and their corresponding
+sentiment scores {[}11{]}. For example, the word "good" has a positive
+meaning, and the word "hate" has a negative meaning. The sentiment score
+of the text is then calculated based on the sum or average of the scores
+of its component words. Lexical-based methods are relatively simple and
+fast, but may not be suitable for capturing the specific features and
+complexities of natural language. Dictionary-based methods are a popular
+approach to sentiment analysis, and one of the most commonly used
+lexicons is AFINN (Affective Norms for English Words). AFINN is a list
+of pre-computed sentiment scores for English words ranging from -5
+(negative) to +5 (positive) {[}12{]}.
 
-{\bfseries Введение}. За последнее столетие зарегистрировано более тысячи
-разрушений гидротехнических сооружений по всему миру, где основными
-причинами выступают как природные, так и антропогенные факторы. Среди
-основных факторов аварий на ГТС {[}1{]} выделяются:
+\emph{Methods based on machine learning.} Machine learning-based methods
+rely on algorithms that learn to identify sentiment patterns from large
+datasets of annotated texts. Algorithms are trained on labeled datasets,
+where each text is annotated with a corresponding sentiment label
+(positive, negative, or neutral). Machine learning-based methods are
+more flexible and accurate than dictionary-based methods, but they
+require more labeled data and may not generalize well to unseen data.
+Logistic regression, Naive Bayes, Decision Tree {[}10{]}, and support
+vector machine (SVM) methods are often used in sentiment analysis of
+data {[}13, 14{]}.
+
+\emph{Methods based on deep learning.} Deep learning techniques are one
+of the best performing methods in sentiment analysis. They can analyze
+the complex structures of texts and describe nuances of mood and
+sensitive parts of context. Deep learning-based methods require more
+data than machine learning-based methods, but they can achieve superior
+results in sentiment analysis tasks {[}15{]}. Among deep learning
+approaches, circuit models and recurrent neural networks are best suited
+for analyzing textual data. Sequence modeling plays a key role in
+sentiment analysis, as it allows for sentiment analysis in text, word
+order, and context. Sentiment analysis aims to identify the underlying
+sentiment or emotion expressed in a piece of text, such as a sentence,
+review, or social media post. Using sequense modeling techniques,
+sentiment analysis can capture the complex relationships between words
+and accurately explain the sentiment conveyed by text.
+
+Recurrent Neural Network (RNN) is a type of neural network architecture
+specially developed for systematic data processing. This is useful for
+sequence processing tasks such as time series analysis, natural language
+processing, speech recognition, and handwriting recognition. Unlike
+feedforward neural networks, which process data in a single pass from
+input to output, RNNs have a feedback mechanism which allows them to
+store information about previous inputs and use it to influence the
+processing of future inputs. This feedback mechanism allows RNNs to
+capture temporal dependencies and patterns present in serial data
+{[}16{]}.
+
+Results and discussion. Sentimental analysis is carried out by
+processing the data in several stages. These are: collecting current
+opinions, pre-processing and preparing data sets, analyzing (reviewing)
+processed data sets, extracting labels from processed data, analyzing
+and obtaining results using machine and deep learning methods, and
+evaluating results.
+
+\emph{Gathering relevant data.} Creating a data set consisting of
+different opinions is the main and initial step in the research of
+sentiment analysis model and methods. One way to build an opinion
+database is to collect opinions from various online sources, such as
+e-commerce websites, social media platforms, and other websites. To
+ensure the quality of the data set, the text must be accurate and
+consistent. Reviews used in this work were collected from e-commerce
+websites, including Kaspi magazin, nur.kz and 2GIS. All non-Kazakh
+comments were removed from the dataset to ensure comments were in the
+Kazakh language. Once the comments are collected, they should be
+classified into positive and negative sentiment (sentiment) based on the
+general opinion expressed in the text. In our case, a total of 1500
+comments in the dataset were manually marked as positive, negative or
+neutral. The final data set was divided into two parts: the training set
+and the test set. The training set consists of 1200 comments, and the
+test set consists of 300 comments. The training set was used to train
+the sentiment analysis model, and the test set was used to evaluate the
+accuracy of the model.
+
+\emph{Data set preprocessing and preparation.} Text preprocessing and
+preparation involves cleaning, transforming, and organizing textual data
+to facilitate analysis. The main purpose of text preprocessing is to
+convert raw text into a format suitable for analysis by removing
+unnecessary information, converting text to common case, and reducing
+data sizes. Libraries such as NLTK (Natural Language Toolkit), spaCy and
+Scikit-learn are proposed for processing the collected data. In our
+work, using the NLTK library, tokenization, erasure of stop words,
+transformations were carried out.
+
+After removing duplicate data, correcting misspelled words, and
+performing the transformation mentioned above, we can have a visual
+overview of the dataset. Different types of visualization were used to
+review the sentiment data beforehand. By visualizing sentiment data,
+quantitative and visual analyses were conducted to clearly see the
+positive and negative words that are often used. Figures 1, 2, 3 show
+overviews of the preprocessed data. Figure 1 shows a cloud of positive
+comments, while Figure 2 shows a cloud of negative comments.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image9}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries Figure 1 - Word cloud of positive comments}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image10}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries Figure 2 - Word cloud of negative comments}
+
+Figure 3 shows the bigram analysis of the comments. From this analysis,
+we can see exactly which phrases generate positive and negative
+feedback. In our case, "excellent", "best", "bought", "liked" and so on.
+bigrams were most often used in positive comments, while bigrams such as
+"do not recommend", "doesn' t work", "worst" were most
+often used in describing negative comments.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image11}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries Figure 3 - Bigram analysis for negative and positive reviews}
+
+\emph{Feature extraction from the processed data.} Feature extraction is
+an important step involving the conversion of text data into vectors
+that can be understood by machine learning algorithms. The following
+methods are used to extract symbols from text data: one-hot encoding,
+bag of words, term frequency - inverse document frequency (TF-IDF) and
+word embeddings. In the work , term frequency - inverse document
+frequency (TF-IDF) vectorizer was used to extract features. The TF-IDF
+vectorizer is the most commonly used method for converting texts to
+digital values. TF-IDF is a numerical statistic which indicates the
+importance of a word for a document in a collection or corpus. It is
+calculated as a product of two components: Term Frequency (TF) and
+Inverse Document Frequency (IDF) {[}17{]}.
+
+A matrix of numeric vectors was created by applying the TF-IDF formula
+on the corpus of documents. Each row of the matrix represents a
+document, and each column represents a unique word in the corpus. The
+resulting matrix was fed as input to various machine learning algorithms
+for sentiment analysis. The TF-IDF vectorizer is a powerful tool for
+feature extraction from textual data in sentiment analysis because it
+shows both the importance of words in a document and their rarity in the
+corpus. This helps improve the accuracy and efficiency of machine
+learning models for sentiment analysis.
+
+\emph{Implementation of sentimental data analysis with machine learning
+algorithms.} Conducting sentimental analysis of reviews consists of
+several steps. The sequence of steps is shown in Figure 4. The first
+analyzed data is pre-processed. Then, the textual data in the training
+and test sets were transformed into numerical feature vectors based on
+the TF-IDF representation. This transformation allows machine learning
+algorithms to work efficiently with textual data, as they typically
+require numerical input.
+
+Text, reviews
+
+Feature extraction
+
+TF-IDF
+
+ML models
+
+Logistic regression
+
+SVM
+
+XGBoost
+
+Multi.Naive Bayes
+
+LSTM
+
+Preprocessing
+
+token
+
+Stop words
+
+pos.
+
+neg.
+
+Sentiments
+
+{\bfseries Figure 4 - Steps of processing text data using machine learning}
+
+The data set was divided into training and test sets using the
+train\_test\_split function of the scikit-learn library. The Test\_size
+parameter was set to 0.2, that is, 20\% of this data was used for
+testing, and 80\% was used for training. Using the converted TF-IDF
+data, a version of the LogisticRegression class was developed, which was
+displayed by the logistic regression algorithm. As the logistic
+regression algorithm and target labels are trained through the training
+data, the identification method adjusts the sample parameters to find
+the best fit for the given data. The accuracy, classification
+calculation, and confusion matrix for estimating sample performance are
+as follows (Figure 5):
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image12}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries Figure 5 - Accuracy of logistic regression algorithm}
+
+And to use the Multinomial Naive Bayes model, the sklearn.naive\_bayes
+function was used. A Multinomial Naive Bayes classifier was instantiated
+and trained on the training data represented by the TF-IDF vectorized
+feature matrix and the corresponding feature matrix. The features of the
+test data were predicted using the trained MNB classifier. The accuracy
+score was calculated by comparing the predicted signs with the real
+signs (accuracy indicators are shown in Figure 6).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image13}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries Figure 6-Accuracy of Multinomial Naive Bayes model}
+
+In addition, Linear SVM and XGboost models of machine learning are also
+tested. Their results are lower than logistic regression (Linear
+SVM-79.25\%, Xgboost-80.1\%).
+
+\emph{Implementation of sentimental data analysis with deep learning
+algorithms.} In order to use the Recurrent Neural Network (RNN) method,
+it is necessary to build a vocabulary. This is an efficient lookup table
+where each unique word in the data set has a corresponding index
+(integer). Based on the reviews, the following dictionary was compiled:
+
+\emph{{[}«Керемет телефон екен», «Маған ұнады әдемі», «Қуаты өте ұзаққа
+шыдайды»{]} → vocabulary \{«\textless unk\textgreater»:0, «әдемі»:1,
+«екен»:2, «керемет»:3, «маған»:4, «телефон»:5, «қуат»: 6, «ұзаққа»:7,
+«ұнады»:8, «өте»:9, «шыдайды»:10, «pad»:11\}}
+
+Then, using a dictionary, we assigned indexes to the text data in the
+test set, replacing each word in the data with the corresponding index
+in the dictionary. In this step, the textual data is converted into
+numerical representations that can be used as input to the RNN. The
+following conversion is obtained:
+
+\emph{{[}«Керемет телефон екен», «Маған ұнады әдемі», «Қуаты өте ұзаққа
+шыдайды»{]} → vocabulary \{«\textless unk\textgreater»:0, «әдемі»:1,
+«екен»:2, «керемет»:3, «маған»:4, «телефон»:5, «қуат»: 6, «ұзаққа»:7,
+«ұнады»:8, «өте»:9, «шыдайды»:10, «pad»:11\} → \{\{«Керемет телефон
+екен»: {[}3 5 2 11{]}\}, \{«Маған ұнады әдімі»: {[}4 8 1 11{]}\},
+\{«Қуат өте ұзаққа шыдайды»: {[}6 9 7 10{]}\}\}}
+
+Each index is used to create a vector for each word. One-hot vector is a
+vector whose size is the total number of unique words in the dictionary,
+where only one element is 1, and all other elements are 0 (Figure 7).
+Tourch libbrary was used for this task.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image14}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries Figure 7-One-hot vector}
+
+An embedding layer was used to transform a one-hot vector into a dense
+embedding vector. The model constructor consists of the size of the
+input dictionary, the number of unique tokens in the textual data
+(input\_dim), the dimensionality of the embedding vectors representing
+the input tokens (embedding\_dim), the number of units in the hidden
+state of the LSTM (hidden\_dim), the dimensionality of the output
+representing the sentiment prediction (output\_dim). The implementation
+of the model is presented in Figure 8.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image15}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries Figure 8 - RNN model creation}
+
+In addition, the torch.nn.Embedding module was created, which is
+responsible for learning and matching input tokens with dense embedding
+vectors. And the torch.nn.LSTM module was built to implement the long
+LSTM layer. This module takes embedded input as input and processes the
+serial information to generate hidden states. Next, a torch.nn.Linear
+module was created which maps the last hidden state to the output
+dimension responsible for sentiment prediction.
+
+The Forward method is responsible for the forward movement of the model.
+It accepts text as input text data. An embedded tensor is obtained by
+passing the input text through an embedding layer, performing a search
+to transform the input tokens into dense vector representations. The
+embedded tensor is then passed through the RNN layer and returns the
+(hidden, cell) values containing the output features of the LSTM for
+each time step and the final hidden state of the LSTM. The latent tensor
+is filtered along the first dimension to remove the extra dimension
+added by the LSTM.
+
+Next, the created model was trained. This process consisted of 10
+stages. Logs the training progress, updating model parameters based on
+calculated gradients. It also evaluates the performance of the model on
+the training and validation sets after each phase. Finally, 60\%
+accuracy was obtained from model training. 60\% is not considered a good
+result, so ways to improve its accuracy rate were considered.
+
+To increase the accuracy of the model, various modifications were made
+to the LSTM algorithm, including the embedded use of the packed padded
+sequences method, which gave good results. Important aspects of packed
+padded sequences are defined (example implementation code is shown in
+Figure 9):
 
 \begin{itemize}
 \item
-  прохождение экстремальных объемов воды, что может вызвать переполнение
-  водохранилища и нарушить нормальную работу сбросных сооружений,
-  приводя к переливу через гребень плотины и формированию прорыва;
+  Efficient computation: Stacked filled sequences allow for more
+  efficient computation during training and inference. In RNNs, input
+  sequences are usually processed in parallel in a small batch. Filled
+  circuits avoid unnecessary computations on filled elements, resulting
+  in faster training and reduced inference time.
 \item
-  износ основных компонентов плотин и гидромеханического оборудования
-  вследствие длительной эксплуатации, что создает риск возникновения
-  прорывов;
+  Memory efficiency: padded circuits increase memory requirements
+  because they introduce a significant number of padded elements. By
+  wrapping strings, filled elements are effectively masked, reducing the
+  memory footprint and optimizing memory usage.
 \item
-  ошибки персонала, недостаток мониторинга опасных ситуаций и
-  недостаточные прогнозные данные по паводкам;
-\item
-  террористические акты, направленные на разрушение плотин.
+  Improved model performance: Overloaded circuits can negatively impact
+  model performance by introducing noise and unnecessary calculations.
 \end{itemize}
 
-Примеры значимых происшествий:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image16}
+	\caption*{}
+\end{figure}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  В Италии, в 1963 году, прорыв дамбы Вайонт был вызван оползнем объёмом
-  около 260 млн куб. метров, который обрушился в водохранилище, вызвав
-  перелив и уничтожение нескольких деревень, погибло около 2000 человек.
-\item
-  В Китае, прорыв дамбы Банкиао в 1975 году, спровоцированный
-  чрезмерными осадками, привёл к гибели более 170 000 человек, а
-  миллионы остались без жилья.
-\item
-  Аварии в Бразилии на хвостохранилищах горнодобывающих предприятий,
-  включая прорыв дамбы в 2019 году в Брумадинью, вызвали масштабные
-  экологические катастрофы и многочисленные жертвы.
-\end{enumerate}
 
-Кроме того, техногенная катастрофа на Саяно-Шушенской ГЭС в России,
-произошедшая 17 августа 2009 года, привела к гибели 75 человек и
-нанесению серьезного ущерба объекту. Прорыв дамбы в селе Кызылагаш
-Алматинской области в 2010 году также привел к человеческим жертвам и
-разрушениям.
+{\bfseries Figure 9 - Improved LSTM algorithm code}
 
-{\bfseries Математические модели селевых потоков} служат важным
-инструментом для анализа и прогнозирования этих сложных и разрушительных
-природных явлений. Селевые потоки представляют собой массу воды, грунта
-и камней, которая перемещается под действием гравитации по склонам и
-руслам рек, требуя тщательного анализа и моделирования.
+This function creates a boxed sequence object which represents sequences
+without padding tokens. Using this method, 84\% accuracy was achieved.
 
-Основные подходы к моделированию селевых потоков:
+\emph{Discussion of results.} Let' s look at which method
+gives better results by comparing the results of sentimental analysis
+made using Logistic Regression, Multinomial Naive Bayes, Liner SVM,
+XGBoost, Long short-term memory (LSTM), LSTM-pack sequence learning
+methods to improve LSTM on collected Kazakh comments. Table 1 shows the
+results of the above-mentioned models and algorithms evaluation
+experiment
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Эмпирические модели, опирающиеся на статистические данные прошлых
-  событий.
-\item
-  Физические модели, воссоздаваемые в лабораторных условиях для изучения
-  поведения селевых потоков.
-\item
-  Численные модели, использующие уравнения гидродинамики и механики
-  грунтов.
-\end{enumerate}
-
-Применение математического моделирования позволяет:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Оценивать риски и уязвимость:
-
-  \begin{itemize}
-  \item
-    Определение зон потенциального воздействия селевых потоков.
-  \item
-    Использование при планировании территорий и разработке мер по
-    снижению рисков.
-  \end{itemize}
-\item
-  Проектировать инженерные сооружения:
-
-  \begin{itemize}
-  \item
-    Поддержка при проектировании дамб, каналов и барьеров.
-  \item
-    Оценка эффективности защитных сооружений.
-  \end{itemize}
-\item
-  Создавать системы раннего предупреждения:
-
-  \begin{itemize}
-  \item
-    Интеграция моделей с метеорологическими данными для прогнозирования
-    селевых потоков.
-  \end{itemize}
-
-  \begin{itemize}
-  \item
-    Обеспечение своевременного оповещения населения и служб
-    реагирования.
-  \end{itemize}
-\end{enumerate}
-
-Примеры математических моделей для анализа селевых потоков и оползней
-{[}2-3{]}:
-
-\emph{{\bfseries 1) Модель DEBRIS-2D}}
-
-DEBRIS-2D --- это специализированная двумерная численная модель,
-предназначенная для симуляции движения селевых потоков и грязекаменных
-лавин по сложному рельефу местности. Она позволяет анализировать
-динамику селевых масс с учётом их реологических характеристик и
-взаимодействия с топографией. Модель учитывает различные реологические
-подходы, такие как модели Бингема, Гершеля-Балкли и турбулентного
-потока, что помогает описывать неньютоновские свойства селевых потоков,
-включая зависимость вязкости от напряжения сдвига.\\
-DEBRIS-2D использует высокоточные цифровые модели рельефа (DEM), что
-обеспечивает детальное представление поверхности и точное
-прогнозирование путей движения потоков. Модель решает двухмерные
-уравнения глубинно-усредненного потока с использованием методов конечных
-объемов или конечных разностей, что позволяет эффективно моделировать
-нестационарные процессы. Она применяется для определения вероятных
-маршрутов распространения селевых потоков и зон повышенного риска, а
-также при планировании мер по снижению рисков, эвакуации и размещению
-защитных сооружений.
-
-\emph{{\bfseries 2) Модель FLO-2D}}
-
-FLO-2D --- двумерная гидродинамическая модель, предназначенная для
-моделирования поверхностного течения жидкости на обширных территориях.
-Изначально разработанная для прогнозирования паводков, модель FLO-2D
-была адаптирована для симуляции селевых потоков, лахаров и других
-гидрологических явлений с учётом неньютоновских свойств. Модель решает
-полные уравнения мелкой воды без упрощений, что позволяет учитывать
-сложные потоки с переменными скоростями и направлениями. Она использует
-квадратную расчётную сетку, что упрощает моделирование и повышает его
-эффективность при обработке больших объемов данных.\\
-FLO-2D поддерживает различные реологические модели для вязкопластичных
-материалов, таких как селевые потоки, и учитывает влияние концентрации
-частиц и вязкости на движение потока. Модель совместима с ГИС, что
-облегчает подготовку данных и анализ результатов. FLO-2D широко
-используется для прогнозирования распространения паводковых вод, оценки
-риска затопления и моделирования высококонцентрированных смесей воды и
-твёрдых частиц, характерных для селевых потоков. Она также применяется
-при проектировании гидротехнических сооружений, таких как дамбы и
-каналы.
-
-\emph{{\bfseries 3) Модель DAN (Динамический анализ оползней)}}
-
-DAN (Dynamic Analysis of Landslides) --- одномерная численная модель,
-разработанная для анализа быстродвижущихся оползней, селевых потоков и
-обвалов. Эта модель ориентирована на анализ глубинно-усредненного
-движения массы вдоль заданной траектории с учётом изменения
-реологических характеристик материала в процессе движения.\\
-DAN поддерживает несколько реологических моделей, таких как:
-
-\begin{itemize}
-\item
-  {\bfseries Модель сухого трения} --- используется для материалов, у
-  которых сопротивление движению пропорционально нормальному напряжению;
-\item
-  {\bfseries Модель Бингема} --- учитывает начальное напряжение сдвига и
-  постоянную вязкость;
-\item
-  {\bfseries Модель Гершеля-Балкли} --- обобщает модель Бингема, вводя
-  показатель степени для напряжения сдвига;
-\item
-  {\bfseries Модель Воеллми} --- сочетает сухое трение и турбулентное
-  сопротивление, часто применяемая для снежных лавин и обвалов.
-\end{itemize}
-
-Модель DAN позволяет изменять реологические параметры по траектории
-движения, учитывая процессы разжижения или уплотнения материала. Она
-помогает прогнозировать дальность, скорость и время прибытия оползневых
-масс, а также оценивает потенциальный ущерб зданиям, дорогам и другим
-объектам. Модель активно используется в планировании защитных инженерных
-мер и разработке систем раннего предупреждения.
-
-{\bfseries Материалы и методы.} Хотя все упомянутые модели описываются
-уравнениями в частных производных, в работе {[}4{]} был предложен
-алгоритм, позволяющий свести их к системе обыкновенных дифференциальных
-уравнений. После того как структура математической модели определена
-(т.е. задан вид уравнений с неуточнёнными параметрами), встает задача
-параметрической идентификации --- нахождения численных значений
-параметров на основе известных входных и выходных данных.
-
-Ввиду сложности моделируемого объекта применимы лишь пассивные методы
-идентификации, предполагающие использование данных, полученных в
-процессе нормального функционирования объекта.
-
-Рассмотрим следующую математическую модель, описываемую системой
-обыкновенных дифференциальных уравнений:
+{\bfseries Table 1 - Results of algorithm}
 
 % \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0942}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4907}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4151}}@{}}
 % \toprule\noalign{}
 % \begin{minipage}[b]{\linewidth}\raggedright
-% \(\dot{y} = f(y,p,t)\),
+% №
 % \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (1)
+% Algorithm name
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Accuracy
 % \end{minipage} \\
 % \midrule\noalign{}
 % \endhead
 % \bottomrule\noalign{}
 % \endlastfoot
-% & \\
-% \(y\left( t_{0} \right) = y_{0}\). & (2) \\
+% 1 & Logistic regression & 83.96\% \\
+% 2 & Multinomial Naive Bayes & 83.49\% \\
+% 3 & Linear SVM & 79,25\% \\
+% 4 & XGboost & 80,1\% \\
+% 5 & LSTM & 60.00\% \\
+% 6 & Improved LSTM & 84.12\% \\
 % \end{longtable}
 
-Здесь \(y\) -- ny-мерный вектор состояния модели, p -- np-мерный вектор
-параметров.
+Due to the lack of a large collection of data, machine learning methods
+have shown that they do not give more accurate results. A logistic
+regression algorithm can be effective if there is low-dimensional data
+and their capability is linearly distributed, but a large data set is
+required to achieve good results. Although the LSTM model showed only 60
+percent accuracy, it increased its accuracy using the packed packed
+sequences method and achieved better results than everyone else. The
+LSTM model has shown poor performance on very little data. When we
+increased the number of reviews from 500 to 1500, we noticed a
+improvement in the result.
 
-В качестве меры близости системы и модели выберем функционал:
+{\bfseries Conclusion.} This paper is devoted to the study of ways of
+sentimental analysis of Kazakh language reviews. The introduction of the
+article explains sentimental analysis and gives citations for its
+importance. The paper considered lexicon (rule) based methods, machine
+learning based methods and deep learning methods as methods of
+sentimental data analysis. Among them, we differentiated the
+possibilities of determining the mood in Kazakh-language opinions using
+methods based on machine learning and deep learning methods, which are
+currently being extensively researched and are well used in practical
+developments.
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \(S = \sum_{m = 1}^{ny}{\sum_{j = 1}^{l}{\sum_{i = 0}^{n}{({\widehat{y}}_{m}^{\left\langle j \right\rangle}\left( t_{i} \right) - y_{m}^{\left\langle j \right\rangle}\left( t_{i} \right))}^{2}}}\),
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (3)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-где \(y_{m}^{\left\langle j \right\rangle}(t_{i})\) -- значение
-выходного сигнала \(y_{m}\) в момент времени \(t_{i}\) в год j,
-полученное с использованием математической модели.
-
-Таким образом, задача параметрической идентификации сводится к задаче
-минимизации функционала \emph{S} по параметрам \emph{p}:
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[\min_{p \in P}S\]
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (4)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-где \emph{P} -- пространство допустимых значений параметров \emph{p}.
-
-Метод квазилинеаризации, предложенный Беллманом и Калабой {[}5{]} для
-решения краевых задач нелинейных дифференциальных уравнений, может быть
-также использован для задачи параметрической идентификации при условии,
-что параметры постоянны. Этот метод характеризуется высокой степенью
-сходимости.
-
-{\bfseries Результаты и обсуждение.} Дополним систему обыкновенных
-дифференциальных уравнений (1)-(2) приобретает следующий вид с
-добавлением уравнения:
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \(\dot{p} = O\),
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (5)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-где \(p\) -- параметры модели, подлежащие идентификации.
-
-Введем обозначения: \(z = (y,\ p)\),
-\(\varphi(z,t) = \left( f(z,t),\ O \right)\), где \(z\) - вектор
-размерности -- \(nz = (ny + \ np\)\emph{).} Тогда систему
-дифференциальных уравнений (1) и (5) можно записать как:
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[\dot{z} = \varphi\ (z,t)\]
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (6)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-Предположим, что \emph{k}-я оценка вектора состояния
-\(z^{\left\langle k \right\rangle}(t)\),
-\(t \in \lbrack t_{0},t_{1}\rbrack\) известна. Разлагая правую часть (6)
-в окрестности траектории \(z^{\left\langle k \right\rangle}(t)\), в ряд
-Тейлора и ограничиваясь линейной частью, получаем систему
-дифференциальных уравнений для \((k + 1)\)-го приближения вектора:
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[{\dot{z}}^{\left\langle k + 1 \right\rangle} = A^{\left\langle k \right\rangle}(t)z^{\left\langle k + 1 \right\rangle} + q^{\left\langle k \right\rangle}(t)\]
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (7)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-где
-
-\(A^{\left\langle k \right\rangle}(t) = \frac{\partial\varphi(z^{\left\langle k \right\rangle},t)}{\partial z}\),
-
-\(q^{\left\langle k \right\rangle}(t) = \varphi\left( z^{\left\langle k \right\rangle},t \right) - A^{\left\langle k \right\rangle}(t)z^{\left\langle k \right\rangle}\).
-
-Решение уравнения (7) имеет вид:
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \(z^{\left\langle k + 1 \right\rangle}(t) = Ф^{\left\langle k + 1 \right\rangle}(t)z^{\left\langle k + 1 \right\rangle}\left( t_{0} \right) + g^{\left\langle k \right\rangle}(t)\),
-% 
-% \(t \in \left\lbrack t_{0},t_{1} \right\rbrack\),
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (8)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-где \(Ф^{\left\langle k + 1 \right\rangle}(t)\) - является решением
-следующей матричной системы дифференциальных уравнений:
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0530}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \({\dot{Ф}}^{\left\langle k + 1 \right\rangle} = A^{\left\langle k \right\rangle}(t)Ф^{\left\langle k + 1 \right\rangle},\ \ \ \ \ \ \ \ Ф^{\left\langle k + 1 \right\rangle}\left( t_{0} \right) = E\),
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (9)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-а \(g^{\left\langle k \right\rangle}(t)\) -- решением неоднородного
-дифференциального уравнения:
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \({\dot{g}}^{\left\langle k + 1 \right\rangle} = A^{\left\langle k \right\rangle}(t)g^{\left\langle k + 1 \right\rangle} + q^{\left\langle k \right\rangle},\ \ \ \ \ \ \ {g(t}_{0}) = O\).
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (10)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-Здесь E -- единичная матрица.
-
-Разобьем матрицу \(Ф^{\left\langle k + 1 \right\rangle}\) на блочные
-матрицы:
-
-\[Ф^{\left\langle k + 1 \right\rangle} = \begin{pmatrix}
-Ф_{1}^{\left\langle k + 1 \right\rangle} & Ф_{2}^{\left\langle k + 1 \right\rangle} \\
-Ф_{3}^{\left\langle k + 1 \right\rangle} & Ф_{4}^{\left\langle k + 1 \right\rangle}
-\end{pmatrix}.\]
-
-Подставим решение (8) в функционал (3):
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \(S^{\left\langle k + 1 \right\rangle} = \ \sum_{m = 1}^{ny}{\sum_{j = 1}^{l}{\sum_{i = 0}^{n}\left( {\widehat{y}}_{m}^{\left\langle j \right\rangle}\left( t_{i} \right) - z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}(t_{i}) \right)}}\),
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (11)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-где
-\(z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}(t_{i})\)
--- значение \((k + 1)\)-го приближения выходного сигнала \(z_{m}\) в
-момент времени \(t_{i}\), для года j. С учётом обозначений:
-
-\(z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}\left( t_{0} \right) = {\widehat{y}}_{m}^{\left\langle j \right\rangle}(t_{0})\),
-для m=\(\overline{1,ny}\) и ∀ k, j,
-
-\(z_{m}^{\left\langle k + 1 \right\rangle\left\langle j \right\rangle}\left( t_{0} \right) = p^{\left\langle k + 1 \right\rangle}\),
-для m=\(\overline{ny + 1,nz}\) и ∀ k, j,
-
-получим следующий функционал, зависящий от неизвестных
-\(p^{\left\langle k + 1 \right\rangle}\):
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \(S^{\left\langle k + 1 \right\rangle} = \sum_{j = 1}^{l}{\sum_{i = 0}^{n}{\left( {\widehat{y}}^{\left\langle j \right\rangle}\left( t_{i} \right) - Ф_{1}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right){\widehat{y}}^{\left\langle j \right\rangle}\left( t_{0} \right) - Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right)p^{\left\langle k + 1 \right\rangle} - g^{\left\langle k \right\rangle}(t_{i}) \right)\left( {\widehat{y}}^{\left\langle j \right\rangle}\left( t_{i} \right) - Ф_{1}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right){\widehat{y}}^{\left\langle j \right\rangle}\left( t_{0} \right) - Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right)p^{\left\langle k + 1 \right\rangle} - g^{\left\langle k \right\rangle}(t_{i}) \right)}}\).
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (12)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-Приравняем к нулю частные производные от
-\(S^{\left\langle k + 1 \right\rangle}\) по
-\(p^{\left\langle k + 1 \right\rangle}\):
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9341}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0659}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[\sum_{j = 1}^{l}{\sum_{i = 0}^{n}{\left( Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right)Ф_{2}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right) \right)p^{\left\langle k + 1 \right\rangle}}} = \sum_{j = 1}^{l}{\sum_{i = 0}^{n}{Ф_{2}^{\left\langle k + 1 \right\rangle}(t_{i})}}\left( {\widehat{y}}^{\left\langle j \right\rangle}\left( t_{i} \right) - Ф_{1}^{\left\langle k + 1 \right\rangle}\left( t_{i} \right){\widehat{y}}^{\left\langle j \right\rangle}\left( t_{0} \right) - g^{\left\langle k \right\rangle}(t_{i}) \right)\]
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (13)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
-
-которую решим методом Гаусса для определения
-\(p^{\left\langle k + 1 \right\rangle}\). Это позволит найти траекторию
-\(z^{\left\langle k + 1 \right\rangle}(t)\), на интервале
-\(t \in \lbrack t_{0},t_{1}\rbrack\), тем самым определяя \((k + 1)\)- ю
-оценку вектора состояния \(z\). Процесс продолжается, пока очередные
-оценки \(p^{\left\langle k \right\rangle}\) и
-\(p^{\left\langle k + 1 \right\rangle}\) не станут близки по заданному
-критерию.
-
-Таким образом, алгоритм идентификации на основе квазилинеаризации можно
-представить следующим образом:
-
-Шаг 1. Задаем начальные значения \(p^{\left\langle 0 \right\rangle}\),
-инициализируем \(k = 0\).
-
-Шаг 2. Для определения \(k\)-го приближения
-\(z^{\left\langle k \right\rangle}(t)\) интегрируем систему:
-
-\[{\dot{z}}^{\left\langle k \right\rangle} = \varphi(z^{\left\langle k \right\rangle},u,t)\]
-
-при начальных условиях
-
-\(z_{m}^{\left\langle k \right\rangle}\left( t_{0} \right) = \frac{1}{l}\sum_{j = 1}^{l}{{\widehat{y}}_{m}^{\left\langle j \right\rangle}(t_{0})}\),
-для m=\(\overline{1,ny}\),
-
-\(z_{m}^{\left\langle k \right\rangle}\left( t_{0} \right) = p^{\left\langle k \right\rangle}\),
-для m=\(\overline{ny + 1,nz}\).
-
-Шаг 3. Решаем задачи Коши (9) и (10).
-
-Шаг 4. Для получения \((k + 1)\)-й оценки параметров \emph{p} решаем
-систему линейных алгебраических уравнений (13).
-
-Шаг 5. Если
-\(\left| p^{\left\langle k + 1 \right\rangle} - p^{\left\langle k \right\rangle} \right| < \varepsilon_{0}\),
-процесс идентификации завершается; иначе --- возврат к шагу 2 (где
-\(\varepsilon_{0}\) -- требуемая точность).
-
-Таким образом, математические модели для анализа угроз прорыва дамб
-обеспечивают безопасность гидротехнических объектов и позволяют:
-прогнозировать последствия возможных аварий, разрабатывать меры для
-снижения рисков и повышать осведомлённость населения к ЧС. Развитие
-вычислительных технологий и интеграция с геоинформационными системами
-делают модели более точными, хотя их результативность зависит от
-качества исходных данных и опыта специалистов.
-
-Предложенный алгоритм реализован программно и проходит экспериментальные
-расчёты.
-
-{\bfseries Выводы.} Модели DEBRIS-2D, FLO-2D и DAN представляют собой
-ключевые инструменты в геотехническом и гидрологическом моделировании
-опасных природных процессов. Их использование позволяет: а) углубленно
-изучить механизмы движения селевых потоков и оползней; б) точно
-прогнозировать зоны потенциального воздействия и пути распространения
-опасных потоков; в) разрабатывать эффективные стратегии управления
-рисками и планирования территорий. Выбор конкретной модели определяется
-спецификой задачи, доступными данными и уровнем детализации, необходимым
-для анализа. Интеграция результатов моделирования с практическими мерами
-по снижению рисков способствует повышению уровня безопасности населения
-и устойчивости инфраструктуры перед воздействием опасных геологических
-процессов.
-
-В данной работе разработана схема идентификации параметров моделей,
-позволяющая адаптировать их к конкретным водоемам. Этот алгоритм
-предоставляет возможность более точного моделирования процессов
-разрушения плотин и распространения селевых волн, что является важным
-аспектом для предотвращения катастрофических наводнений. Результаты
-численных расчетов показывают, что предложенная схема эффективно
-применяется для идентификации параметров выбранных математических
-моделей. Программное обеспечение, реализующее данный алгоритм,
-демонстрирует высокую точность и надежность расчетов, что подтверждается
-сравнением с существующими моделями и экспериментальными данными.
-
-Перспективы дальнейших исследований связаны с интеграцией разработанной
-схемы идентификации параметров моделей с современными системами
-мониторинга и предупреждения о чрезвычайных ситуациях. Это позволит
-повысить эффективность мер по защите населения и инфраструктуры от
-последствий селевых прорывов и других гидрологических угроз.
-
-\emph{{\bfseries Финансирование.} Работа выполнена при финансовой поддержке
-Комитета науки Министерства науки и высшего образования Республики
-Казахстан в рамках гранта AP19678157 «Разработка программно-аппаратного
-комплекса мониторинга состояния уровня заполняемости
-водоёма»~(2023-2025)}
-
-{\bfseries Литература}
-
-1.Стихийные бедствия и техногенные катастрофы: Превентивные меры/ The
-World Bank and The United Nations; пер. с англ.-М.: Альпина
-Паблишер.-2011.-312 с.
-
-ISBN 978-5-9614-1527-8
-
-2.
-\href{https://www.researchgate.net/profile/Francesca-Aureli?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Francesca
-Aureli},
-\href{https://www.researchgate.net/profile/Paolo-Mignosa?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Paolo
-Mignosa},
-\href{https://www.researchgate.net/profile/Massimo-Tomirotti?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Massimo
-Tomirotti}. Numerical simulation and experimental verification of
-Dam-Break flows with
-shocks//\href{https://www.researchgate.net/journal/Journal-of-Hydraulic-Research-1814-2079?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Journal
-of Hydraulic Research}.-2010.-Vol.2000(3).-P.197-206. DOI
-\href{http://dx.doi.org/10.1080/00221680009498337}{10.1080/00221680009498337}
-
-3.
-\href{https://www.researchgate.net/profile/Tomaz-Podobnikar?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Tomaž
-Podobnikar} Methods for visual quality assessment of a digital terrain
-model// S.A.P.I.EN.S
-\href{https://www.researchgate.net/journal/Surveys-and-Perspectives-Integrating-Environment-and-Society-1993-3819?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Surveys
-and Perspectives Integrating Environment and Society}, Special issue
-/-2009.-Vol.2(2).-P.1-10. URL
-http://journals.openedition.org/sapiens/738
-
-4. Mazakova A.T., Jomartova Sh.A., Mazakov T.Zh., Ziyatbekova G.Z.,
-Begaliyeva K.B.
-
-Digital Determination of the Thermal Conductivity of a Square Bar by
-Reduction to a System of Integral Equations//Ecological Footprint of the
-Modern Economy and the ways to Reduce it Advances in Science,
-Technology\&amp;Innovation.-2024.-P.167-171.
-
-DOI:10.1007/978-3-031-49711-7\_29
-
-5. Гроп Д. Методы идентификации систем.// Перевод с англ. В.А.
-Васильева, В.И. Лопатина. - Под ред. Е.И. Кринецкого М.: Мир, 1979. --
-302 с.
+Kazakh-language reviews used in sentimental analysis were collected from
+Kaspi online-market, nur.kz and 2GIS. Collected opinions were subjected
+to initial processing such as preliminary processing and preparation of
+the data set, analysis (review) of the processed data set, extraction of
+features from the processed data. Further, the prepared data were
+sentimentally analyzed using Logistic regression, Multinomial Naive
+Bayes, Linear SVM, Xgboost and deep learning LSTM models of machine
+learning and the accuracy indicators of the obtained results were
+determined. After all samples were analyzed, a comparative analysis of
+their accuracy indicators was performed. Comparative analysis showed
+that the best result was the deep learning improved LSTM model
+(accuracy-84.12\%), followed by the machine learning Logistic regression
+model (accuracy-83.96\%).
 
 {\bfseries References}
 
-1.Stihijnye bedstvija i tehnogennye katastrofy: Preventivnye mery/ The
-World Bank and The United Nations; per. s angl.-M.:
-Al' pina Pablisher.-2011.-312 s.
+1. Bolshakova E.I., Voroncov K.V., Efremova N.E., Klyshinskij E.S.,
+Lukashevich N.V., Sapin A.S. Avtomaticheskaya obrabotka tekstov na
+estestvennom yazyke i analiz dannyh. - M.: Izd-vo NIU VShE, 2017. - 269
+s. {[}in Russian{]}
 
-ISBN 978-5-9614-1527-8. {[}in Russian{]}
+2.~Pasolini, Roberto. Learning Methods and Algorithms for Semantic Text
+Classification across Multiple Domains, {[}Dissertation thesis{]}. Alma
+Mater Studiorum Università di Bologna. Dottorato di ricerca in
+Ingegneria elettronica, informatica delle telecomunicazioni, 27 Ciclo.
+DOI 10.6092/unibo/amsdottorato/7058.
 
-2.
-\href{https://www.researchgate.net/profile/Francesca-Aureli?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Francesca
-Aureli},
-\href{https://www.researchgate.net/profile/Paolo-Mignosa?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Paolo
-Mignosa},
-\href{https://www.researchgate.net/profile/Massimo-Tomirotti?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Massimo
-Tomirotti}. Numerical simulation and experimental verification of
-Dam-Break flows with
-shocks//\href{https://www.researchgate.net/journal/Journal-of-Hydraulic-Research-1814-2079?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Journal
-of Hydraulic Research}.-2010.-Vol.2000(3).-P.197-206. DOI
-\href{http://dx.doi.org/10.1080/00221680009498337}{10.1080/00221680009498337}
+3. Jingli Shi, Weihua Li, Quan Bai, Yi Yang, Jianhua Jiang.
+Syntax-Enhanced Aspect-Based Sentiment Analysis with Multi-Layer
+Attention // Neurocomputing. -2023.
 
-3.
-\href{https://www.researchgate.net/profile/Tomaz-Podobnikar?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Tomaž
-Podobnikar} Methods for visual quality assessment of a digital terrain
-model// S.A.P.I.EN.S
-\href{https://www.researchgate.net/journal/Surveys-and-Perspectives-Integrating-Environment-and-Society-1993-3819?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19}{Surveys
-and Perspectives Integrating Environment and Society}, Special issue
-/-2009.-Vol.2(2).-P.1-10. URL
-http://journals.openedition.org/sapiens/738
+DOI
+\href{https://doi.org/10.1016/j.neucom.2023.126730}{10.1016/j.neucom.2023.126730}
 
-4. Mazakova A.T., Jomartova Sh.A., Mazakov T.Zh., Ziyatbekova G.Z.,
-Begaliyeva K.B.
+4. Malliga Subramanian, Veerappampalayam Easwaramoorthy Sathiskumar, G.
+Deepalakshmi, Jaehyuk Cho, G. Manikandan. A survey on hate speech
+detection and sentiment analysis using machine learning and deep
+learning models // Alexandria Engineering Journal. -- 2023. --Vol.
+80(2). - P. 110-121.
+DOI\href{http://dx.doi.org/10.1016/j.aej.2023.08.038}{10.1016/j.aej.2023.08.038}
 
-Digital Determination of the Thermal Conductivity of a Square Bar by
-Reduction to a System of Integral Equations//Ecological Footprint of the
-Modern Economy and the ways to Reduce it Advances in Science,
-Technology\&amp;Innovation.-2024.-P.167-171.
+5. Arwa A. Al Shamsi, Sherief Abdallah. Ensemble Stacking Model for
+Sentiment Analysis of Emirati and Arabic Dialects // Journal of King
+Saud University. -2023. -Vol. 35(8).
 
-DOI:10.1007/978-3-031-49711-7\_29
+\href{https://doi.org/10.1016/j.jksuci.2023.101691}{DOI
+10.1016/j.jksuci.2023.101691}
 
-5. Grop D. Metody identifikacii sistem.// Perevod s angl. V.A.
-Vasil' eva, V.I. Lopatina. - Pod red. E.I. Krineckogo M.:
-Mir, 1979.- 302 s. {[}in Russian{]}
+6. Meng Li, Yucheng Shi. Sentiment analysis and prediction model based
+on Chinese government affairs microblogs // Heliyon. - 2023. DOI
+\href{https://doi.org/10.1016/j.heliyon.2023.e19091}{10.1016/j.heliyon.2023.e19091}
 
-\emph{{\bfseries Сведение об авторах}}
+7. Chetviorkin, I.; Loukachevitch, N. Evaluating Sentiment Analysis
+Systems in Russian // In Proceedings of the 4th Biennial International
+Workshop on Balto-Slavic Natural Language Processing, Sofia, Bulgaria,
+8--9 August 2013; Association for Computational Linguistics . - Sofia,
+Bulgaria, 2013. -P. 12--17.
 
-Мазаков Т.Ж.-доктор физико-математических наук, профессор, Казахский
-национальный университетим. аль-Фараби, Алматы, Казахстан, e-mail:
-tmazakov@mail.ru;
+8. Nugumanova A., Baiburin Ye., Alimzhanov Ye.. Sentiment Analysis of
+Reviews in Kazakh With Transfer Learning Techniques // SIST 2022 - 2022
+International Conference on Smart Information Systems and Technologies,
+Proceedings, ISBN 978-166546790. - 2022.
 
-Джомартова Ш.А. - доктор технических наук, доцент, Казахский
-национальный университет им. аль-Фараби, Алматы, Казахстан, e-mail:
-jomartova@mail.ru;
+DOI 10.1109/SIST54437.2022.9945811
 
-Мазакова А.Т. -- докторант Казахского национального университета
-им.аль-Фараби, e-mail:
-\href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}};
+9.~Karyukin Vladislav, Mutanov Galimkair, Mamykova Zhanl, Nassimova
+Gulnar, Torekul Saule, Sundetova Zhanerke, Negri Matteo. On the
+development of an information system for monitoring user opinion and its
+role for the public // Journal of Big Data. -2022. - Vol. 9.
 
-Тойкенов Г.Ч. - кандидат физико-математических наук, доцент, Казахский
-национальный женский педагогический университет, Алматы, Казахстан,
-e-mail: gumyrbektoike@mail.ru;
+DOI 10.1186/s40537-022-00660-w
 
-Алиаскар М.С. - докторант Казахского национального университета
-им.аль-Фараби, Алматы, Казахстан, e-mail: m.alyasqar@gmail.ru;
+10. Narynov S.S., Zharmagambetov A.S.: On One Approach of Solving
+Sentiment Analyis Task for Kazakh and Russian Languages Using Deep
+Learning // International Conference on Computational Collective
+Intelligence. - Springer, 2016. - Vol. 9876.
 
-Тойкенова У.Г.- докторант Казахского национального женского
-педагогического университета, Алматы, Казахстан, e-mail:
-ulpantoikenova@gmail.com
+DOI 10.1007/978-3-319-45246-3\_51
+
+11. Saraswathi N., Sasirooba T., Chakaravarthi S. Improving the accuracy
+of sentiment analysis using a linguistic rule-based feature selection
+method in tourism reviews // Measurement: Sensors. - 2023. - Vol. 29. -
+DOI
+\href{https://doi.org/10.1016/j.measen.2023.100888}{10.1016/j.measen.2023.100888}
+
+12. Gulmira Bekmanova, Gaziza Yelibayeva, Saltanat Aubakirova, Nurgul
+Dyussupova, Altynbek Sharipbay, Rozamgul Nyazova. Methods for analyzing
+polarity of the Kazakh texts related to the terrorist threats //
+Computational Science and Its Applications - ICCSA 2019. - P. 717-730.
+
+DOI 10.1007/978-3-030-24289-3\_53
+
+13. Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani. An
+Introduction to Statistical Learning with Applications in R // Springer
+Science and Business Media. - New York, 2013.
+
+DOI 10.1007/978-1-4614-7138-7
+
+14. Dinara Gimadi, Richard Evans, Kiril Simov. Web-sentiment Analysis Of
+Public Comments (Public Reviews) For Languages With Limited Resources
+Such As The Kazakh Language. - 2021. DOI
+10.26615/issn.2603-2821.2021\_010
+
+15. Huseyn Hasanli , Burak Ordin , Samir Rustamov. Sentiment analysis on
+twitter data for azerbaijani language // Journal of Modern Technology
+and Engineering.-2019. - Vol.4. - No.2.\\
+- P.109-121. 2019.
+
+16.~Sebastian Raschka, Vahid Mirjalili. Python Machine Learning: Machine
+Learning and Deep Learning with Python, scikit-learn, and TensorFlow 2.
+- 2019. P. 770.
+
+17. Ugo Erra, Sabrina Senatore, Fernando Minnella, Giuseppe Caggianese.
+Approximate TF--IDF based on topic extraction from massive message
+stream using the GPU // Information Sciences, January. - 2015. --Vol.
+292. -P. 143-161. DOI10.1016/j.ins.2014.08.062
 
 \emph{{\bfseries Information about the authors}}
 
-Mazakov T.Zh. -- Doctor of Physical and mathematical sciences,
-professor, Al-Farabi Kazakh National University, Almaty, Kazakhstan,
-e-mail: tmazakov@mail.ru;
+Mukazhanov N. K. - doctor Ph.D., associate professor, Satbayev
+University, Almaty, Kazakhstan, е-mail:
+\href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}};
 
-Jomartova Sh.A. - Doctor of Technical Sciences, Associate Professor,
-Al-Farabi Kazakh National University,Almaty, Kazakhstan, e-mail:
-jomartova@mail.ru;
+Cherikbayeva L.Sh. - doctor Ph.D., Al-Farabi Kazakh National University,
+Almaty, Kazakhstan, е-mail:
+\href{mailto:cherikbayeva.lyailya@gmail.com}{\nolinkurl{cherikbayeva.lyailya@gmail.com}};
 
-Mazakova A.T. - PhD student of the Al-Farabi Kazakh National University,
-Almaty, Kazakhstan, e-mail:
-\href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}};
+Kasenkhan A.M. -- doctor Ph.D., Satbayev University, Almaty, Kazakhstan,
+e-mail:
+\href{mailto:a.kassenkhan@satbayev.university}{\nolinkurl{a.kassenkhan@satbayev.university}};
 
-Tokenov G.Ch. - Candidate of Physical and Mathematical Sciences,
-Associate Professor, Kazakh National Women' s Pedagogical
-University, Almaty, Kazakhstan, e-mail: gumyrbektoike@mail.ru;
+Alibieva Zh.M. - doctor Ph.D., associate professor, Satbayev University,
+Almaty, Kazakhstan, е-mail:
+\href{mailto:zh.alibiyeva@satbayev.university}{\nolinkurl{zh.alibiyeva@satbayev.university}};
 
-M.S. Aliaskar - PhD student of the Al-Farabi Kazakh National University,
-Almaty, Kazakhstan, e-mail:
-\href{mailto:m.alyasqar@gmail.ru}{\nolinkurl{m.alyasqar@gmail.ru}};
+Turdalyuly M. - doctor Ph.D., associate professor, International
+Engineering and Technological University, Almaty, Kazakhstan, е-mail:
+m.turdalyuly@gmail.com
 
-Toikenova U.G. - PhD student of the Kazakh National
-Women' s Pedagogical University, Almaty, Kazakhstan,
-e-mail: ulpantoikenova@gmail.com
+\emph{{\bfseries Сведения об авторах}}
+
+Мукажанов Н.К. - доктор Ph.D, ассоциированный профессор, Satbayev
+University, Алматы, Казахстан, е-mail:
+\href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}};
+
+Черикбаева Л.Ш. - доктор Ph.D, Казахский национальный университет им.
+Аль-Фараби, Алматы, Казахстан, е-mail:
+\href{mailto:cherikbayeva.lyailya@gmail.com}{\nolinkurl{cherikbayeva.lyailya@gmail.com}};
+
+Қасенхан А.М - доктор Ph.D, Satbayev University, Алматы, Казахстан,
+e-mail:
+\href{mailto:a.kassenkhan@satbayev.university}{\nolinkurl{a.kassenkhan@satbayev.university}};
+
+Алибиева Ж.М. - доктор Ph.D, ассоциированный профессор, Satbayev
+University, Алматы, Казахстан, е-mail:
+\href{mailto:zh.alibiyeva@satbayev.university}{\nolinkurl{zh.alibiyeva@satbayev.university}};
+
+Тұрдалыұлы М. - доктор Ph.D, ассоциированный профессор, Международный
+инженерно-технологический университет, Алматы, Казахстан, е-mail:
+m.turdalyuly@gmail.com

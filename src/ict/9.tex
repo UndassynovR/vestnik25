@@ -1,1408 +1,971 @@
-\id{IRSTI 81.93.29}
+\id{ҒТАМР 20.23.25}
 
-{\bfseries THE STUDY OF MACHINE AND DEEP LEARNING MODELS FOR MALWARE
-CLASSIFICATION}
+{\bfseries КАТАЛИТКАЛЫҚ КРЕКИНГ ҚОНДЫРҒЫСЫНАН ӨНІМНІҢ ШЫҒУЫН PYTHON
+БАҒДАРЛАМАЛЫҚ ОРТАСЫН ҚОЛДАНУ АРҚЫЛЫ АНЫҚТАУ}
 
-{\bfseries \textsuperscript{1,2}A.Zhumabekova\textsuperscript{\envelope },
-\textsuperscript{1,3}O.Ussatova, \textsuperscript{1}M.Kalimoldayev,
-\textsuperscript{1,2}V.Karyukin,
-\textsuperscript{1}}\textsuperscript{,{\bfseries 3}}{\bfseries Y Begimbayeva}
+{\bfseries \textsuperscript{1}Н.Боранбаева,
+\textsuperscript{1}Б.Оразбаев\textsuperscript{\envelope },
+\textsuperscript{2}Л.Рзаева, \textsuperscript{3}Ж.Карабаев,
+\textsuperscript{4}Б.Серимбетов}
 
-\textsuperscript{1}Institute of Information and Computational
-Technologies, Almaty, Kazakhstan,
+\textsuperscript{1}Л.Н.Гумилев атындағы Еуразия Ұлттық Университеті,
+Астана, Қазақстан,
 
-\textsuperscript{2}Al-Farabi Kazakh National University, Almaty,
+\textsuperscript{2}Astana IT University, Астана қ., Қазақстан,
+
+\textsuperscript{3}Auezov University, Шымкент қ., Қазақстан,
+
+\textsuperscript{4} Қ.Құлажанов атындағы Қазақ технология және бизнес
+университеті, Астана, Қазақстан
+
+{\bfseries \textsuperscript{\envelope }}Корреспондент-автор:
+\href{mailto:batyr_o@mail.ru}{\nolinkurl{batyr\_o@mail.ru}}
+
+Мақалада Python бағдарламалық ортасында регрессия әдістерін қолдану
+арқылы каталитикалық крекинг қондырғысынан өнімнің шығуын анықтау
+тапсырмасы қарастырылады. Каталитикалық крекинг мұнай өндірудің негізгі
+процесі болғандықтан, өнімнің шығуын нақты болжау технологиялық
+параметрлерді оңтайландыру және өнімнің тиімділігін арттыру үшін өте
+маңызды. Сараптама үшін Шымкент мұнай өндіру зауытының статистикалық
+мәліметтері қолданылды, бұл ұсынылған әдісті нақты өндіріс шарттарында
+қолдану мүмкіндігін көрсетеді. Мақалада реактордағы және регенератордағы
+температура, қысым, шикізат тығыздығы және катализатор шығыны сияқты әр
+түрлі технологиялық параметрлердің әсер етуін талдау нәтижесінде
+модельдерді жасап шығару әдістемесі қарастырылған. Pandas, Scikit-learn
+және Matplotlib сияқты Python мәліметтерді талдау инструменттері мен
+кітапханаларын қолдану толық талдау жасап, нәтижелерін визуализациялауға
+мүмкіндік береді. Модельдің сапасын бағалау детерминациялау коэфициенті
+(R\textsuperscript{2}) және қалдық қателерді талдау арқылы жүргізіледі.
+Алынған нәтижелер моделдің жоғарғы дәлдігі мен ұсынылған тәсілдің
+өндірістегі мұнай өндіру процестерін болжау және оңтайландыру
+мүмкіндігін дәлелдейді. Сондай-ақ, ұсынылған тәсілді мұнай өңдеу
+процестерін оңтайландыру, технологиялық шешімдерді жақсарту және
+мұнай-химия саласындағы өндірістердің жалпы экономикалық тиімділігін
+арттыру үшін сәтті қолдануға болатындығы атап өтілді.
+
+{\bfseries Түйін сөздер}: модельдеу, каталитикалық крекинг, python,
+детерминациялау коэффициенті, айқын емес логика, компьютерлік модельдеу,
+оңтайландыру, каталитикалық крекинг қондырғысы.
+
+{\bfseries ОПРЕДЕЛЕНИЕ ВЫХОДА ПРОДУКТА ИЗ УСТАНОВКИ КАТАЛИТИЧЕСКОГО
+КРЕКИНГА ИСПОЛЬЗОВАНИЕМ ПРОГРАМНОЙ СРЕДЫ PYTHON}
+
+{\bfseries \textsuperscript{1}Н.Боранбаева,
+\textsuperscript{1}Б.Оразбаев\textsuperscript{\envelope },
+\textsuperscript{2}Л.Рзаева, \textsuperscript{3}Ж.Карабаев,
+\textsuperscript{4}Б.Серимбетов}
+
+\textsuperscript{1}Евразийский Национальный Университет им.
+Л.Н.Гумилева, г.Астана, Казахстан,
+
+\textsuperscript{2}Astana IT University, г. Астана, Казахстан,
+
+\textsuperscript{3}Auezov University, г. Шымкент, Казахстан,
+
+\textsuperscript{4}Казахский университет технологии и бизнеса
+им.К.Кулажанова,
+
+е-mail: \href{mailto:batyr_o@mail.ru}{\nolinkurl{batyr\_o@mail.ru}}
+
+В данной статье рассматривается задача определение выхода продукта из
+установки каталитического крекинга с использованием методов регрессии в
+программной среде Python. Каталитический крекинг является одним из
+ключевых процессов в нефтепереработке, и точное прогнозирование выхода
+продукта имеет важное значение для оптимизации технологических
+параметров и повышения эффективности производства. Для анализа
+использованы статистические данные Шымкентского нефтеперерабатывающего
+завода, что позволяет применить предложенные методы к реальным
+производственным условиям. В работе представлены методология разработки
+модели на основе анализа влияния различных технологических параметров,
+таких как температура, давление, плотность сырья и расход катализатора.
+Применение инструментов анализа данных и библиотек Python, таких как
+Pandas, Scikit-learn и Matplotlib, позволяет провести детальный анализ и
+визуализацию результатов. Оценка качества модели производится с помощью
+коэффициента детерминации (R\textsuperscript{2}) и анализа остаточных
+ошибок. Полученные результаты демонстрируют высокую точность модели и
+подтверждают возможность использования предложенного подхода для
+прогнозирования и оптимизации процессов нефтепереработки в промышленной
+практике\emph{.} Также подчеркивается, что предложенный подход может
+быть успешно применен для оптимизации процессов нефтепереработки,
+улучшения технологических решений и повышения общей экономической
+эффективности производств в нефтехимической отрасли.
+
+{\bfseries Ключевые слова:} моделирование, каталитический крекинг, python,
+коэффициент детерминации, нечеткая логика, компьютерное моделирование,
+оптимизация, установка каталитического крекинга.
+
+{\bfseries DETERMINATION OF PRODUCT YIELD FROM A CATALYTIC CRACKING UNIT
+USING THE PYTHON PROGRAMMING ENVIRONMENT}
+
+{\bfseries \textsuperscript{1}N.Boranbayeva,
+\textsuperscript{1}B.Orazbayev\textsuperscript{\envelope },
+\textsuperscript{2}L.Rzayeva, \textsuperscript{3}Zh.Karabayev,
+\textsuperscript{4}B.Serimbetov}
+
+\textsuperscript{1} L. N. Gumilyov Eurasian National University, Astana,
 Kazakhstan,
 
-\textsuperscript{3}G.Daukeev Almaty University of Energy and
-Communications, Almaty, Kazakhstan
-
-{\bfseries \textsuperscript{\envelope }}Correspondent-author:
-\href{mailto:zhumabekova2702@gmail.com}{\nolinkurl{zhumabekova2702@gmail.com}}
-
-The rapid growth of cyber threats and attacks has highlighted the need
-for robust information security, confidentiality, and integrity
-measures. Malware, a significant category of cyber threats, is designed
-to disrupt operations, damage information environments, and gain
-unauthorized access to systems, networks, and data. Various types of
-malware, including viruses, worms, trojans, spyware, and rootkits, pose
-pervasive and evolving dangers, often spread through the Internet or
-removable devices. While effective against known threats, traditional
-signature-based detection methods struggle to identify new malware.
-Modern machine learning-based approaches offer a more flexible solution
-by learning from large datasets without relying on predefined
-signatures. This research presents a machine learning-based malware
-detection system using a dataset of diverse network threats. The study
-explores both classical machine learning algorithms and advanced deep
-learning models, including dense neural networks (DNN), Long Short-Term
-Memory (LSTM) networks, and Gated Recurrent Units (GRU), to enhance
-malware detection accuracy. Moreover, a newly developed hybrid LSTM-GRU
-deep learning model was utilized for classifying the malware dataset.
-This model combines the strong specifications of both LSTM and GRU
-neural networks. The used machine learning and deep learning models
-demonstrated good classification results. The Decision Tree, Random
-Forest, and XGBoost machine learning models were superior to neural
-networks by around 0.02. The experiments showed that machine learning
-algorithms are still strong in the classification tasks of the
-cybersecurity field. Among neural networks, the simple DNN model was a
-little worse than LSTM and GRU by around 0.01. The recurrent LSTM and
-GRU models showed mostly identical scores. The proposed LSTM-GRU model
-outperformed other deep learning models by 0.01 and was comparable with
-the Random Forest model that reached the metrics score of 0.99.
-
-{\bfseries Keywords}: malware, information security, threat detection,
-machine learning, deep learning, Chi-square, class balancing
-
-{\bfseries ЗИЯНДЫ БАҒДАРЛАМАЛАРДЫ КЛАССИФИКАЦИЯЛАУ ҮШІН МАШИНАЛЫҚ ЖӘНЕ
-ТЕРЕҢ ОҚУ МОДЕЛЬДЕРІН ЗЕРТТЕУ}
-
-{\bfseries \textsuperscript{1,2}А.Жұмабекова\textsuperscript{\envelope },
-\textsuperscript{1,3}О.Усатова, \textsuperscript{1}М.Қалимолдаев,
-\textsuperscript{1,2}В.Карюкин, \textsuperscript{1,3}Е.Бегимбаева}
-
-\textsuperscript{1}Ақпараттық және есептеуіш технологиялар институты,
-Алматы, Қазақстан,
-
-\textsuperscript{2}әл-Фараби атындағы Қазақ Ұлттық Университеті, Алматы,
-Қазақстан,
-
-\textsuperscript{3}Ғ. Дәукеев атындағы Алматы энергетика және байланыс
-университеті, Алматы, Қазақстан,
-
-e-mail: zhumabekova2702@gmail.com
-
-Киберқауіптер мен шабуылдардың жылдам өсуі сенімді ақпараттық
-қауіпсіздік, құпиялылық және тұтастық шараларының қажеттілігін көрсетті.
-Зиянды бағдарламалар, киберқауіптердің маңызды санаты ақпараттық
-орталарды бұзуға, зақымдауға және жүйелерге, желілерге және деректерге
-рұқсатсыз кіруге арналған. Вирустар, құрттар, трояндар, шпиондық
-бағдарламалар мен руткиттерді қоса алғанда, зиянды бағдарламалардың
-әртүрлі түрлері Интернет немесе алынбалы құрылғылар арқылы жиі таралатын
-кең таралған және дамып келе жатқан қауіп болып табылады. Қолтаңбаға
-негізделген анықтаудың дәстүрлі әдістері белгілі қауіптерге қарсы тиімді
-болғанымен, олар жаңа зиянды бағдарламаны анықтауда қиындықтарға тап
-болады. Заманауи машиналық оқыту модельдері алдын ала анықталған
-қолтаңбаларға сүйенбестен үлкен деректер жиынынан үйрену арқылы икемді
-шешім ұсынады. Бұл зерттеу әртүрлі онлайн қауіптердің деректер жинағын
-пайдалана отырып, машиналық оқытуға негізделген зиянды бағдарламаларды
-анықтау жүйесін ұсынады. Жұмыс зиянды бағдарламаны анықтау дәлдігін
-жақсарту үшін классикалық машиналық оқыту алгоритмдерін де, тереңдетіп
-оқытудың кеңейтілген үлгілерін де, соның ішінде толық қосылған нейрондық
-желілерді (DNN), ұзақ қысқа мерзімді жад желілерін (LSTM) және қақпалы
-қайталанатын блоктарды (GRU) қарастырады. Сонымен қатар, зиянды
-бағдарлама деректер жинағын жіктеу үшін жақында жасалған гибридті терең
-оқыту үлгісі LSTM-GRU пайдаланылды. Бұл модель LSTM және GRU нейрондық
-желілерінің күшті сипаттамаларын біріктіреді. Қолданылған машиналық
-оқыту және терең оқыту үлгілері классификацияның жақсы нәтижелерін
-көрсетті. Decision Tree, Random Forest және XGBoost машиналық оқыту
-үлгілері нейрондық желілерден шамамен 0,02-ге асып түсті. Эксперименттер
-машиналық оқыту алгоритмдері киберқауіпсіздік саласындағы жіктеу
-тапсырмаларында әлі де күшті екенін көрсетті. Нейрондық желілер арасында
-қарапайым DNN моделі LSTM және GRU-дан шамамен 0,01-ге нашар болды.
-Қайталанатын LSTM және GRU үлгілері іс жүзінде бірдей бағалауларды
-көрсетті. Ұсынылған LSTM-GRU моделі тереңдетіп оқытудың басқа
-үлгілерінен 0,01-ге асып түсті және 0,99 метрикалық ұпайға қол жеткізген
-Random Forest үлгісімен салыстыруға болатын. Эксперименттер машиналық
-оқыту алгоритмдері киберқауіпсіздік саласындағы жіктеу тапсырмаларында
-әлі де күшті екенін көрсетті. Нейрондық желілер арасында қарапайым DNN
-моделі LSTM және GRU-дан шамамен 0,01-ге нашар болды. Қайталанатын LSTM
-және GRU үлгілері іс жүзінде бірдей бағалауларды көрсетті. Ұсынылған
-LSTM-GRU үлгісі басқа тереңдетіп оқыту үлгілерінен 0,01-ге асып түсті
-және 0,99 метрикалық ұпайға қол жеткізген Random Forest үлгісімен
-салыстыруға болатын.
-
-{\bfseries Түйін сөздер:} Зиянды бағдарламалар, ақпараттық қауіпсіздік,
-қауіпті анықтау, машиналық оқыту, терең оқыту, Chi-square, классты
-теңдестіру
-
-{\bfseries ИССЛЕДОВАНИЕ МОДЕЛЕЙ МАШИННОГО И ГЛУБОКОГО ОБУЧЕНИЯ ДЛЯ
-КЛАССИФИКАЦИИ ВРЕДОНОСНОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ}
-
-{\bfseries \textsuperscript{1,2}А.Жұмабекова\textsuperscript{\envelope },
-\textsuperscript{1,3}О.Усатова, \textsuperscript{1}М.Қалимолдаев,
-\textsuperscript{1,2}В.Карюкин, \textsuperscript{1,3}Е.Бегимбаева}
-
-¹Институт информационных и вычислительных технологий, Алматы,
-Казахстан,\\
-²Казахский национальный университет имени аль-Фараби, Алматы,
-Казахстан,\\
-³Алматинский университет энергетики и связи имени Г.Даукеева, Алматы,
-Казахстан,\\
-e-mail:
-\href{mailto:zhumabekova2702@gmail.com}{\nolinkurl{zhumabekova2702@gmail.com}}
-
-Быстрый рост киберугроз и атак выявил необходимость в надежных мерах
-информационной безопасности, конфиденциальности и целостности.
-Вредоносное ПО, являясь значительной категорией киберугроз,
-предназначено для нарушения работы, повреждения информационных сред и
-получения несанкционированного доступа к системам, сетям и данным.
-Различные виды вредоносного ПО, такие как вирусы, черви, трояны,
-шпионские программы и руткиты, представляют собой все проникающие и
-развивающиеся угрозы, часто распространяемые через интернет или съемные
-устройства. Традиционные методы обнаружения, основанные на сигнатурах,
-эффективны против известных угроз, но сталкиваются с трудностями в
-идентификации нового вредоносного ПО. Современные методы машинного
-обучения предлагают более гибкое решение, обучаясь на больших наборах
-данных без необходимости использования заранее определенных сигнатур.
-Данное исследование представляет систему обнаружения вредоносного ПО на
-основе машинного обучения с использованием набора данных о различных
-сетевых угрозах. В работе изучены как классические алгоритмы машинного
-обучения, так и продвинутые модели глубокого обучения, включая
-полносвязные нейронные сети (DNN), сети с длинной краткосрочной памятью
-(LSTM) и рекуррентные блоки с управляемыми воротами (GRU), с целью
-повышения точности обнаружения Вредоносного ПО. Более того, для
-классификации датасета Вредоносного ПО использовалась недавно
-разработанная гибридная модель глубокого обучения LSTM-GRU. Эта модель
-сочетает в себе сильные характеристики нейронных сетей LSTM и GRU.
-Используемые модели машинного обучения и глубокого обучения
-продемонстрировали хорошие результаты классификации. Модели машинного
-обучения Decision Tree, Random Forest и XGBoost превосходили нейронные
-сети примерно на 0,02. Эксперименты показали, что алгоритмы машинного
-обучения по-прежнему сильны в задачах классификации в области
-кибербезопасности. Среди нейронных сетей простая модель DNN была немного
-хуже LSTM и GRU примерно на 0,01. Рекуррентные модели LSTM и GRU
-показали в основном идентичные оценки. Предложенная модель LSTM-GRU
-превзошла другие модели глубокого обучения на 0,01 и была сопоставима с
-моделью Random Forest, которая достигла оценки метрик 0,99. Эксперименты
-показали, что алгоритмы машинного обучения по-прежнему сильны в задачах
-классификации в области кибербезопасности. Среди нейронных сетей простая
-модель DNN была немного хуже LSTM и GRU примерно на 0,01. Рекуррентные
-модели LSTM и GRU показали в основном идентичные оценки. Предложенная
-модель LSTM-GRU превзошла другие модели глубокого обучения на 0,01 и
-была сопоставима с моделью Random Forest, которая достигла значений
-метрик в 0,99.
-
-{\bfseries Ключевые слова}: вредоносное ПО, информационная безопасность,
-обнаружение угроз, машинное обучение, глубокое обучение, Chi-square,
-балансировка классов.
-
-{\bfseries Introduction.} Nowadays, the significant growth of different
-types of cyber threats and attacks makes people seriously consider
-possessing information security {[}1{]}, confidentiality {[}2{]}, and
-integrity {[}3{]}. The specific characteristics of cyber threats belong
-to malware. Malware is software designed to damage the information
-environment, disrupt operations, and gain unauthorized system access,
-network, and data. Malware {[}4{]} represents pervasive and dangerous
-threats that evolve continuously to exploit vulnerabilities in
-individual systems and large-scale networks. There is a great variety of
-malware, including viruses (a type of malware that attaches itself to
-legitimate files or programs), worms (self-replicating malware that can
-spread across networks without needing to attach themselves to a host
-file or program), trojans (this malware pretends to be legitimate
-software and deceives users into downloading and executing them),
-spyware (it monitors and collects information about users, such as
-logins, passwords, credit card numbers, and other sensitive data),
-rootkits (this malware is designed to give attackers the privilege to
-access the system while hiding its presence), and different types of
-threats.
-
-Malware {[}5{]} is usually distributed via the Internet and removable
-devices like flash drives. They affect systems by significantly reducing
-the computer's performance, significantly reducing the free space of its
-HDD and SSD drives, and displaying various advertisements on the screen.
-This is one of the most obvious signs that the user's computer system is
-infected with malware. Dangerous malware steals files containing
-confidential data, hides them inside the computer, and continues to
-perform malicious actions. In order to protect against malware, various
-approaches are utilized. The signature-based approach is a traditional
-method used by antivirus and anti-malware programs. It identifies unique
-patterns, or signatures, associated with the known malware. During the
-process of file scanning, the software compares its code to the
-signature stored in the database. Although this approach can detect many
-different types of malware, it also encounters problems with recognizing
-new and previously unseen malware. A modern machine learning-based
-method proposes a completely new way of detecting malware. It learns
-from large datasets and does not rely on predefined signatures, which
-makes it more flexible and capable of identifying previously unseen
-malware.
-
-The detection of malware with the use of machine and deep learning
-approaches was explored in many scientific works. The paper {[}6{]}
-focused on classifying malware with DNN and Bi-LSTM. The performance of
-these two models was strong. DNN reached an accuracy score of 98\%,
-while Bi-LSTM got 99\%. In the cybersecurity field, the work {[}7{]}
-demonstrated a new machine-learning framework for detecting different
-types of malware, including Ransomware, Spyware, and Trojan Horses. The
-main algorithm of this framework was the Ensemble-based classifier that
-proved effective in handling threats and reached an accuracy score of
-98\%. The research paper {[}8{]} analyzes spyware detection using a
-decision tree machine learning algorithm. It gave an opportunity to get
-an accuracy score of 99\%. This classifier gave an accuracy score of
-97\%, precision -- 88.9\%, recall -- 88.6\%, and F1-score -- 88.6\%. A
-very effective Gated Recurrent Unit (GRU) model was implemented in
-{[}9{]}, which proved to be especially effective in detecting malicious
-attacks on the Internet of Things. Its use allowed to achieve a
-precision score of 99.5\%. The work {[}10{]} is devoted to analyzing
-flexible and scalable methods for malware detection in Android mobile
-devices. The proposed machine learning approach on the DataMD dataset
-gave the classification accuracy of 98\% and 99\%.
-
-In this paper, the malware dataset consists of various types of network
-threats. The machine learning approach is chosen to detect malware.
-Moreover, it is not restricted to only classical machine learning
-algorithms but also explores the classification results obtained by such
-deep learning models as dense neural network (DNN), Long short-term
-memory (LSTM) neural network, Gated recurrent unit (GRU) neural network,
-and proposed LSTM-GRU model.
-
-Materials and methods. Software development for malware classification
-includes many significant steps crucial to this task. A suitable dataset
-with malicious and legitimate elements is gathered. The dataset is
-characterized by its appropriate specifications for analysis and
-classification. This repository includes the most relevant malware. When
-the dataset is gathered, it is necessary to do the subsequent steps
-where data cleaning, data normalizing, feature selection, class
-balancing, and classification using the machine and deep learning models
-are implemented. Data cleaning is significant because~noisy or
-irrelevant data could interfere with the analysis or model performance.
-Data normalization refers to adjusting the values in the dataset to a
-common scale without distorting differences in the ranges of values.
-This is crucial for machine learning algorithms sensitive to input
-features' scale. Feature selection leaves only the most relevant
-features for classification because too many irrelevant or redundant
-features can lead to overfitting and longer training times. Class
-balancing allows all classes to be~equal, which is important because
-underrepresented classes can lead to biased models.
-
-{\bfseries Materials and methods.} The Malware dataset comprises the most
-relevant malware, comprising 216352 elements and 58 features. It is
-available by the following link
-(\url{https://github.com/saurabh48782/Malware_Classification/blob/master/MalwareData.csv}).The
-analysis of this dataset showed that three columns (`ID', `md5',
-`Unnamed: 57') are not valuable and do not carry any meaningful things.
-Therefore, they were removed. The other features describe more
-significant characteristics of the dataset. Their detailed
-specifications are described in the following way:
-
-- Machine: Information about the architecture type, such as x86, x64,
-etc.
-
-- SizeOfOptionalHeader: The size of the optional header in the PE
-(Portable Executable)
-
-format that provides important information about the file, including
-entry point, stack size, etc.
-
-- Characteristics: The bit field that indicates attributes of the file,
-such as if it is an executable
-
-or a DLL.
-
-- MajorLinkerVersion: The major version number of the linker, indicating
-the primary
-
-version of the tool used for linking code.
-
-- MinorLinkerVersion: The minor version number of the linker.
-
-- SizeOfCode: The code section's size that indicates the amount of space
-allocated for
-
-executable code.
-
-- SizeOfInitializedData: The size of the initialized data section that
-includes data already
-
-initialized in the file.
-
-- SizeOfUninitializedData: The size of the uninitialized data section
-that represents
-
-the~memory that will be allocated at runtime.
-
-- AddressOfEntryPoint: The entry point address, marking where execution
-begins when the
-
-file is loaded.
-
-- BaseOfCode: The base address of the code section, showing where the
-executable code
-
-starts in memory.
-
-- BaseOfData: The base address of the data section, marking where
-initialized and uninitialized data sections start.
-
-- ImageBase: The preferred base address of the file when loaded in
-memory.
-
-- SectionAlignment: Aligning sections in memory, ensuring that sections
-are placed at
-
-consistent memory boundaries.
-
-- FileAlignment: Aligning sections in the file, ensuring consistency in
-the physical file
-
-layout.
-
-- MajorOperatingSystemVersion: The major version of the operating
-system~required to run
-
-the file.
-
-- MinorOperatingSystemVersion: The minor version of the operating system
-required to run
-
-the file.
-
-- MajorImageVersion: The major version of the image or file version.
-
-- MinorImageVersion: The minor version of the image or file version.
-
-- MajorSubsystemVersion: The major version of the subsystem needed to
-run the executable,
-
-such as the Windows GUI or console.
-
-- MinorSubsystemVersion: The minor version of the subsystem needed to
-run the
-
-executable, such as the Windows GUI or console.
-
-- SizeOfImage: The total size of the image in memory, including headers,
-code, and data
-
-sections.
-
-- SizeOfHeaders: The size of all headers combined, providing metadata
-about the PE file layout.
-
-- CheckSum: The checksum value used to verify file integrity.
-
-- Subsystem: The specifications of the required subsystem, such as
-Windows GUI, console,
-
-or device drivers.
-
-- DllCharacteristics: The characteristics of a DLL file, including
-settings for security and memory handling.
-
-- SizeOfStackReserve: The amount of memory reserved for the stack, which
-handles
-
-function calls and local variables.
-
-- SizeOfStackCommit: The amount of memory committed to the stack, ready
-for immediate
-
-use.
-
-- SizeOfHeapReserve: The amount of memory reserved for the heap, where
-dynamic
-
-allocations are made.
-
-- SizeOfHeapCommit: The amount of memory committed to the heap,
-allocated and ready
-
-for use.
-
-- LoaderFlags: The flags for the PE loader~that are~usually set to zero
-but can indicate
-
-specific loading requirements.
-
-- NumberOfRvaAndSizes: The number of data directory entries in the PE
-header.
-
-- SectionsNb: The number of sections in the file representing a logical
-part of the file, such
-
-as code or data.
-
-- SectionsMeanEntropy: The mean entropy of all sections used to detect
-obfuscation or
-
-encryption in malware.
-
-- SectionsMinEntropy: The minimum entropy among the sections that can
-help to identify
-
-highly ordered or structured data.
-
-- SectionsMaxEntropy: The maximum entropy among the sections useful for
-identifying
-
-highly randomized data.
-
-- SectionsMeanRawsize: The average raw size of sections in the file.
-
-- SectionsMinRawsize: The minimum raw size of any section in the file.
-
-- SectionMaxRawsize: The maximum raw size of any section in the file.
-
-- SectionsMeanVirtualsize: The average virtual size of sections when
-loaded in memory.
-
-- SectionsMinVirtualsize: The minimum virtual size of sections when
-loaded.
-
-- SectionMaxVirtualsize: The maximum virtual size of sections when
-loaded.
-
-- ImportsNbDLL: The number of DLLs imported by the executable.
-
-- ImportsNb: The total number of imports across all DLLs.
-
-- ImportsNbOrdinal: The number of ordinal imports, which use numbers
-instead of names
-
-to locate functions.
-
-- ExportNb: The number of exports in the file, representing functions
-the file makes available
-
-to other modules.
-
-- ResourcesNb: The number of resources~embedded in the file, such as
-icons or strings.
-
-- ResourcesMeanEntropy: The average entropy of resources, useful for
-detecting
-
-compressed or encrypted resources.
-
-- ResourcesMinEntropy: The minimum entropy among resources.
-
-- ResourcesMaxEntropy: The maximum entropy among resources.
-
-- ResourcesMeanSize: The average size of resources in the file.
-
-- ResourcesMinSize: The minimum size of resources in the file.
-
-- ResourcesMaxSize: The maximum size of resources in the file.
-
-- LoadConfigurationSize: The size of the load configuration table, which
-can specify security
-
-and debugging settings.
-
-- VersionInformationSize: The size of the version information, providing
-metadata like
-
-version numbers and copyright.
-
-{\bfseries Data normalization.} The dataset is cleaned and normalized. In
-the data-cleaning phase, the elements with many missing values are
-removed. The duplicate records are also identified and eliminated. When
-the dataset elements are cleared, a more important normalization step
-occurs. Normalization {[}11{]} usually presents the scaling numerical
-data of a specific range, commonly from 0 to 1. Normalization guarantees
-that features with larger ranges do not dominate those with smaller
-ranges, making the model more stable and preventing bias in the learning
-process. One of the most convenient ways to normalize the values of the
-dataset is to utilize the Min-Max scaling technique. It is a widespread
-approach that efficiently normalizes the values of features. It is
-computed by the following formula (1):
+\textsuperscript{2}Astana IT University, г. Астана, Kazakhstan,
+
+\textsuperscript{3}Auezov University, Shymkent, Kazakhstan,
+
+\textsuperscript{4}K. Kulazhanov Kazakh University of Technology and
+Business, Astana, Kazakhstan,
+
+е-mail: \href{mailto:batyr_o@mail.ru}{\nolinkurl{batyr\_o@mail.ru}}
+
+This article addresses the task of forecasting product yield from a
+catalytic cracking unit using regression methods within the Python
+programming environment. Catalytic cracking is one of the key processes
+in oil refining, and accurate product yield forecasting is crucial for
+optimizing technological parameters and improving production efficiency.
+Statistical data from the Shymkent Oil Refinery were used for the
+analysis, which allows us to apply the proposed methods to real
+production conditions. The paper presents a model development
+methodology that analyzes various technological parameters, such as
+temperature, pressure, feedstock density, and catalyst consumption.
+Using data analysis tools and Python libraries, such as Pandas,
+Scikit-learn, and Matplotlib, enables detailed analysis and
+visualization of results. The model' s quality is
+assessed using the coefficient of determination (R\textsuperscript{2})
+and residual error analysis. The results obtained demonstrate the high
+accuracy of the model and confirm the feasibility of using the proposed
+approach for forecasting and optimizing oil refining processes in
+industrial practice. Against the background of the growing relevance of
+issues related to the diagnosis of brain stroke, modern research in the
+field of medical diagnostics is trying to use advanced deep learning
+methods to improve the detection of this serious disease. It is also
+emphasized that the proposed approach can be successfully applied to
+optimize refining processes, improve technological solutions and
+increase the overall economic efficiency of production in the
+petrochemical industry.
+
+{\bfseries Keywords:} modeling, catalytic cracking, Python, coefficient of
+determination, fuzzy logic, computer modeling, optimization, unit of
+catalytic cracking.
+
+{\bfseries Кіріспе.} Каталитикалық крекинг жоғары октанды бензиндер мен
+басқа да жеңіл мұнай өнімдерін өндіруде шешуші рөл атқаратын мұнай
+өңдеудегі маңызды процестердің бірі болып табылады. Бұл процестің
+тиімділігі температура, қысым, шикізаттың тығыздығы және катализатордың
+шығыны сияқты көптеген технологиялық параметрлерге тікелей байланысты.
+Каталитикалық крекинг қондырғыларының жұмысын оңтайландыру және олардың
+өнімділігін арттыру үшін технологиялық параметрлер туралы мәліметтер
+негізінде өнімнің шығуын дәл болжау қажет. Деректерді талдау мен
+машиналық оқытудың заманауи әдістері өндіріс процестерін едәуір жақсарта
+алатын болжамды модельдерді құрудың қуатты құралдарын ұсынады. Атап
+айтқанда, регрессиялық талдау машиналық оқытудың негізгі әдістерінің
+бірі ретінде айнымалылар арасындағы байланысты талдау және әртүрлі
+көрсеткіштерді болжау үшін кеңінен қолданылады.
+
+Бұл мақалада Python бағдарламалық жасақтамасында жүзеге асырылған
+регрессия әдістерін қолдана отырып, каталитикалық крекинг қондырғысынан
+өнімнің шығуын болжау тәсілі ұсынылады. Python Pandas, Scikit-learn және
+Matplotlib сияқты қуатты деректерді талдау және визуализация
+кітапханаларының арқасында мұндай модельдерді өнеркәсіптік тәжірибеге
+енгізу және жасақтау үшін таңдаулы құралға айналуда.
+
+Бұл жұмыстың мақсаты болжау моделін әзірлеу және бағалау болып табылады,
+ол өнімнің шығуын жоғары дәлдікпен болжап қана қоймай, сонымен қатар
+нақты жағдайларда технологиялық процестерді одан әрі оңтайландыру үшін
+осы болжамдарды қолдануға мүмкіндік береді. Мақалада параметрлерді
+таңдаудан бастап болжау сапасын бағалауға дейінгі модельді әзірлеудің
+барлық кезеңдері қарастырылады, сонымен қатар ұсынылған тәсілдің
+тиімділігін растайтын нәтижелер талқыланады. Өнімнің каталитикалық
+крекинг қондырғысынан шығуын болжау күрделі міндет болып табылады, ол
+шикізаттың құрамы, процесс шарттары және катализатордың сипаттамалары
+сияқты көптеген факторларды ескеруді талап етеді. Соңғы жылдары
+мұнай-химия саласындағы зерттеушілер мен тәжірибешілер болжау дәлдігін
+жақсарту және процесті оңтайландыру үшін деректерді талдау және
+машиналық оқыту әдістеріне көбірек бет бұруда.
+
+Регрессия-химиялық процестерді болжауда ең көп қолданылатын әдістердің
+бірі. {[}1{]} жұмыста регрессиялық модельдер айнымалылар арасындағы
+тәуелділікті талдаудың негізгі мүмкіндіктерін ұсынады. Зерттеулер
+көрсеткендей, регрессиялық модельдер қарапайымдылығына қарамастан,
+әсіресе деректерді алдын ала талдау және негізгі трендтерді анықтау
+жағдайында күрделі тәсілдер үшін жақсы бастама бола алады, {[}2{]}.
+Python бағдарламалық ортасының Pandas, NumPy және scikit-learn сияқты
+қуатты кітапханалары мен құрылымдарының арқасында деректерді талдаудың
+танымал құралына айналды. Бірқатар жұмыстар {[}3{]} бұл құралдар
+регрессиялық модельдерді құру және бағалау процесін едәуір
+жеңілдететінін атап өтті. Python сонымен қатар деректерді
+визуализациялау және модельдеу үшін ыңғайлы құралдарды ұсынады, бұл оны
+мұнай-химия практиктері үшін ерекше құнды етеді. Каталитикалық крекинг
+саласындағы заманауи зерттеулер көбінесе нейрондық желілер сияқты
+күрделі машиналық оқыту әдістерін қолдануды қамтиды {[}4{]}. Бұл әдістер
+үлкен көлемдегі деректермен және күрделі тәуелділіктермен жұмыс
+істегенде жоғары тиімділікті көрсетеді. Алайда, {[}5{]} атап өткендей,
+мұндай әдістерді өнеркәсіптік тәжірибеге біріктіру айтарлықтай есептеу
+ресурстарын және процестерді терең түсінуді қажет етеді. Қосымша
+зерттеуді қажет ететін маңызды аспектілер - болжамдардың дәлдігі және
+нәтижелерді түсіндіру. {[}6{]} ғылыми жұмыста атап өткендей,
+қолданыстағы модельдер өзгеретін процестер жағдайында қайта оқыту және
+дәлдіктің жеткіліксіздігімен жиі ұшырасады. Перспективалық бағыттарға
+сызықтық регрессия элементтері мен машиналық оқытудың күрделі
+алгоритмдерін біріктіретін гибридті модельдерді дамыту, сондай-ақ
+деректерді жинау және алдын ала өңдеу әдістерін жақсарту кіреді {[}7{]}.
+
+Әртүрлі дереккөздерді талдау нәтижелері каталитикалық крекинг қондырғысы
+сияқты күрделі айқын емес сипатталған химиялық-технологиялық жүйелерді
+басқару, модельдеу мәселелерінің жеткіліксіз зерттелгендігін көрсетеді.
+Осыған байланысты модельдерді әзірлеу, оңтайландыру мәселелерін зерттеу,
+күрделі айқын емес химиялық-технологиялық жүйелерді басқару үшін шешім
+қабылдау тапсырмасын қалыптастыру заманауи ғылымның өзекті міндеті болып
+қала береді. Математикалық модельдерді әзірлеу принциптері мен әдістерін
+талдау, шешім қабылдау және өнеркәсіптік объектілерді оңтайландыру
+нәтижесінде ғылыми жұмыстарда лингвистикалық модельдерді әзірлеу және
+олардың жұмыс режимдерін оңтайландыру мәселелері аз қамтылғандығы
+анықталды. Жұмыстарда {[}8, 9{]} математикалық модельдерді әзірлеу және
+бастапқы ақпараттың айқынсыздығымен сипатталатын технологиялық
+объектілердің параметрлерін оңтайландыру тәсілдері зерттеліп, ұсынылды.
+2000 жылдан бастап Р.А. Алиева, н. Р. Юсупбекова, Azeem M. F., Taskin
+H., Osofisan P. B. сияқты авторлардың каталитикалық крекингті басқару
+алгоритмдерінде айқын емес логика әдістерін қолдану арқылы жүзеге
+асырылған бірқатар еңбектері жарық көрді. Бірақ күрделі объектілерді
+модельдеу және оңтайландыру бойынша осы және басқа талданған жұмыстарда
+объектінің кіріс және шығыс параметрлері айқын емес модельдерді әзірлеу
+мәселелері толық зерттелмеген. Сонымен қатар, оңтайландыру мәселелерін
+шешудің белгілі әдістерінде есептің қойылуы кезеңінде айқын емес есеп
+мәселе нақты есептер жиынтығына айналады және одан әрі қолданыстағы
+әдістермен шешіледі. Бұл тәсілде көбінесе бастапқы жиналған айқын емес
+ақпараттың едәуір бөлігі жоғалады (білім, сарапшылардың тәжірибесі),
+нәтижесінде алынған шешімдердің шындыққа сәйкестігі төмендейді {[}10{]}.
+
+Әдебиеттерге шолу өнімнің каталитикалық крекинг қондырғысынан өнімнің
+шығуын анықтауда Python және регрессия әдісін қолдану процестерді
+талдауға және оңтайландыруға арналған қуатты құралдарды қамтамасыз
+ететінін көрсетеді. Дегенмен, дәлірек және сенімді нәтижелерге қол
+жеткізу үшін деректерді талдаудың дәстүрлі әдістерімен бірге заманауи
+әдістерді де ескеру қажет.
+
+{\bfseries Материалдар мен әдістер.} Бұл жұмыстың зерттеу нысаны Шымкент
+мұнай өңдеу зауытының титулы 1000 RFCC ауыр қалдықтардың каталитикалық
+крекинг қондырғысының реактор-регенератор блогы болып табылады.
+Каталитикалық крекинг қондырғысы тікелей мазуттан каталитикалық крекинг
+процесі арқылы автомобиль бензиндері мен сұйытылған көмірсутек
+газдарының жоғары октанды компонентін алуға арналған. Каталитикалық
+крекинг процесінің жүруіне әсер ететін негізгі факторлар шикізаттың
+физика-химиялық сипаттамалары, катализатордың қасиеттері, реактордағы
+қысым, реактордағы шикізат температурасы, реактордың температурасы,
+катализатордың шығыны болып табылады. Каталитикалық крекинг
+қондырғысынан бензиннің шығуы мен сапасы шикізаттың құрамына,
+реактордағы температура мен қысымға, шикізаттың берілу жылдамдығына,
+регенератордағы температураға, регенератор-реактор блогының жұмыс
+режиміне, крекинг катализаторларының түріне және басқа параметрлерге
+байланысты. Технологиялық режимдер алынатын өнімінің түріне байланысты
+майлы газ, бензин немесе дизель фракциясы ретінде ерекшеленеді. Басқару
+объектісінің техникалық регламенті негізінде процестің негізгі
+технологиялық параметрлері анықталды: реактордың жоғарғы бөлігіндегі
+қысым, реактордан шығатын реакция газдарының температурасы,
+регенератордан шығатын газдардың температурасы. Әрі қарай, процеске әсер
+ететін басқару объектісінің кіріс, шығыс, ауытқушы айнымалылары
+анықталады. Реактор блогындағы технологиялық параметрлер процесс
+режимінің оңтайлы қаттылығына қол жеткізу мақсатында реттеледі. Терең
+оқыту технологияларының дамуы диагностиканың дәлдігі мен жеделдігін
+жақсартудың жаңа перспективаларын ұсына отырып, осы процеске белсенді
+әсер етеді.
+
+Анықтамалық векторлық әдіс (SVM) және кездейсоқ ормандар сияқты
+Машиналық оқыту әдістерінің пайда болуы диагностиканы жақсартудағы
+маңызды қадам болды. Бұл тәсілдер медициналық кескіндерді талдау
+процесін автоматтандыруға мүмкіндік береді, бірақ көбінесе күрделі үш
+өлшемді деректер мен үлкен көлемдегі ақпаратты өңдеуде шектеулерге тап
+болады.
+
+Нейрондық желілердің архитектуралары, соның ішінде конволюциялық
+нейрондық желілер (CNN) және қайталанатын нейрондық желілер (RNN)
+деректердегі кеңістіктік және уақыттық тәуелділіктерді ескере отырып,
+жоғары дәлдікті қамтамасыз етеді {[}11{]}.
+
+Каталитикалық крекинг-мұнай өңдеуді тереңдетуге бағытталған негізгі
+процесс. Процесс келесі технологиялық агрегаттарды қамтитын
+каталитикалық крекинг қондырғысында жүреді: бу конденсациясы жүйесі,
+реактор-регенератор блогы, түтін газын дымқыл тазарту блогы, шикізатты
+дайындау және ректификациялау блогы, сіңіру және газ фракциялау блогы.
+Реактор мен регенератор арасындағы сұйық катализатордың үздіксіз айналуы
+каталитикалық крекинг процестерін үздіксіз режимде жүргізуге мүмкіндік
+береді {[}12{]}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image28}
+	\includegraphics[width=0.8\textwidth]{media/ict/image86}
 	\caption*{}
 \end{figure}
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image29}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image30}
-	\caption*{}
-\end{figure}
-
-is a minimum value;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image31}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image32}
-	\caption*{}
-\end{figure}
-
-scaled value.
-
-{\bfseries Feature selection.} The feature selection process is realized
-with the use of the Chi-square metric. This metric is a statistical
-measure used to estimate the relationship between features and the
-target value, providing the degree of their independence. Before
-calculating the statistical value of every feature, all of them are
-converted to the numerical form. The contingency table is created for
-all the features with the following formula (2):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image33}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image34}
-	\caption*{}
-\end{figure}
-
-observed frequency, and
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image35}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image36}
-	\caption*{}
-\end{figure}
-
-computed as (3):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image37}
-	\caption*{}
-\end{figure}
-
-
-The features are ordered in a descending way by the calculated
-Chi-square values.
-
-{\bfseries Class balancing.} The vectorized data is checked for balancing.
-If the dataset is imbalanced, the special balancing technique called
-Random oversampling is applied to the dataset to make classes equal.
-This method randomly selects elements from the minority class and
-duplicates them to balance the dataset. The duplicated elements are
-added to the training set until the number of elements in the minority
-class equals the number in the majority class. The class balancing with
-the use of Random oversampling is shown in Figure 1.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image38}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 1-Class balancing with Random oversampling}
-
-{\bfseries Classification with machine learning and deep learning models.}
-When the classes are balanced, the dataset is classified with machine
-and deep learning models. There are several such models, among which the
-most popular are Decision Tree, Random Forest, XgBoost, Dense neural
-network (DNN), Gated recurrent unit (GRU) neural network, and Long
-short-term memory (LSTM) neural network.
-
-A Decision Tree {[}12{]} is a supervised machine-learning model for the
-classification task. This model is structured like a tree, with internal
-nodes representing decisions based on feature values, branches that
-demonstrate the outcomes of those decisions, and leaf nodes of the final
-prediction and output. The topmost node of the tree presents the entire
-dataset, which is the starting point for decision-making and is split
-based on the feature that provides the best separation of the data. At
-the internal nodes, the dataset is split into two or more subgroups
-based on the chosen feature's value. The final nodes do not further
-split and correspond to a class label. The structure of the Decision
-Tree is shown in Figure 2.
-
-A Random Forest {[}13{]} is a machine-learning algorithm that is based
-on the concept of ensemble learning. It builds multiple decision trees
-and combines their results to improve the Accuracy of a single decision
-tree. The Random Forest algorithm uses bagging to create multiple
-training datasets by randomly sampling from the original dataset with
-replacement. Each decision tree is trained on a different bootstrapped
-dataset, ensuring the trees are diverse and uncorrelated. Generally, the
-Random Forest algorithm has the following specifications:
-
-- It trains pretty quickly.
-
-- It effectively processes datasets with a large number of features.
-
-- It predicts data with very high Accuracy.
-
-- It shows good efficiency even with a large number of missing data.
-
-- It has high scalability.
-
-The structure of Random Forest is shown in Figure 3.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image39}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 2-Decision Tree}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image40}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 3 - Random Forest}
-
-XGBoost {[}14{]} is a very strong machine-learning algorithm widely used
-in the classification task. It lies in a series of boosting algorithms
-that combine the predictions of multiple learners. XGBoost is known for
-its efficiency and high performance. Employing an ensemble approach
-corrects the errors made in previous iterations through the next model.
-During each step, the deviations of the ensemble's predictions are
-assessed on the training data, and the model is optimized by introducing
-new tree forecasts to reduce the overall deviation. This process
-continues until the desired error threshold is met or an early stopping
-condition is triggered.
-
-A Dense neural network (DNN) {[}15{]} is a fundamental type of neural
-network in which each neuron in one layer is connected to every neuron
-in the subsequent layer. It is the simplest architecture in neural
-networks, typically used as the basic one in deep learning. In this
-architecture, the input layer receives the input data
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image41}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image42}
-	\caption*{}
-\end{figure}
-
-of each level, and
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image43}
-	\caption*{}
-\end{figure}
-
-of the input layer. The hidden layers consist of neurons that apply
-weights to the input features, followed by an activation function that
-produces non-linearity. There are usually many hidden layers in a neural
-network. The output layer shows the final prediction that usually
-corresponds to the number of classes: binary (two -- 0 or 1) and
-multiclass (three or more). The scheme of DNN is presented in Figure 4.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image44}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 4 - Dense neural network}
-
-A Long short-term memory (LSTM) {[}16{]} is a type of Recurrent neural
-network designed to effectively capture long-term dependencies in the
-sequential data and avoid problems related to the vanishing gradient. An
-LSTM cell contains three types of gates: input, forget, and output,
-which regulate the stream of information through the whole network. The
-forget gate decides which information to discard from the cell state,
-while the input gate selects new information to store. The output gate
-defines the information that is required to be extracted from the
-current cell state.
-
-The forget gate is calculated as (4):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image45}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image46}
-	\caption*{}
-\end{figure}
-
-forget gate output;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image47}
-	\caption*{}
-\end{figure}
-
-activation function;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image48}
-	\caption*{}
-\end{figure}
-
-the forget gate;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image49}
-	\caption*{}
-\end{figure}
-
-state from the previous time step;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image50}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image51}
-	\caption*{}
-\end{figure}
-
-for the forget gate.
-
-The input gate is computed as (5):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image52}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image53}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image54}
-	\caption*{}
-\end{figure}
-
-weights for the input gate;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image55}
-	\caption*{}
-\end{figure}
-
-input gate.
-
-The cell state is calculated as (6):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image56}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image57}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image58}
-	\caption*{}
-\end{figure}
-
-weights for the cell state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image59}
-	\caption*{}
-\end{figure}
-
-cell state.
-
-The output gate is computed as (7):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image60}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image61}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image62}
-	\caption*{}
-\end{figure}
-
-bias for the output gate.
-
-The scheme of the LSTM model is shown in Figure 5.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image63}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 5 - Long short-term memory neural network}
-
-A GRU {[}17{]} is another type of Recurrent neural network designed to
-capture dependencies in sequential data like LSTM but with a simpler
-structure. GRU combines the hidden and cell states into one entity,
-making them computationally more efficient than LSTM {[}18{]}. GRU
-includes update, reset gates, candidate hidden state, and final hidden
-state.
-
-The update gate is calculated as (8):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image64}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image65}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image47}
-	\caption*{}
-\end{figure}
-
-a sigmoid activation function;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image66}
-	\caption*{}
-\end{figure}
-
-matrix for the update gate.
-
-The reset gate is computed as (9):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image67}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image68}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image69}
-	\caption*{}
-\end{figure}
-
-a weight matrix for the reset gate;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image70}
-	\caption*{}
-\end{figure}
-
-reset gate.
-
-The hidden state is calculated as (10):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image71}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image72}
-	\caption*{}
-\end{figure}
-
-candidate hidden state, which incorporates the current input and the
-reset hidden state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image73}
-	\caption*{}
-\end{figure}
-
-matrix for the candidate hidden state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image74}
-	\caption*{}
-\end{figure}
-
-for the candidate hidden state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image75}
-	\caption*{}
-\end{figure}
-
-element-wise multiplication.
-
-The final hidden state is computed as (11):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image76}
-	\caption*{}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image77}
-	\caption*{}
-\end{figure}
-
-final hidden state for the current time step;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image78}
-	\caption*{}
-\end{figure}
-
-gate controlling how much of the previous hidden state to keep and how
-much of the candidate state to add.
-
-The scheme of the GRU neural network is shown in Figure 6.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image79}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 6 - Gated recurrent unit neural network}
-
-The machine learning and neural network algorithms presented above have
-been widely used and distributed in many works due to their success in
-data classification tasks. In this study, they also successfully coped
-with the task of malware detection. However, to improve the efficiency
-of threat detection, a new hybrid neural network model, which includes
-LSTM and GRU layers, was developed. This model combines the advantages
-of both architectures for more efficient data processing. The first
-recurrent LSTM layer helps model long-term dependencies in data,
-revealing patterns~useful for identifying threats. Since LSTM has
-memory, it retains information about previous steps, which is especially
-important in sequence analysis. The GRU layer follows LSTM and helps
-simplify the model training by reducing the number of parameters
-compared to LSTM, making it more efficient. The hybrid LSTM-GRU model
-uses the advantages of both architectures. The LSTM layer is used as the
-first layer to process the data, and the GRU can be used in the next
-stage to speed up the training and processing of the output data. This
-reduces the training time on large datasets. Overall, the hybrid
-LSTM-GRU model offers enough functionality to handle complex models
-without overloading the computational resources of the machines. The
-scheme of the hybrid LSTM-GRU neural network model is shown in Fig. 7.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image80}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 7 - LSTM-GRU neural network}
-
-{\bfseries Results and discussion.} Malware classification experiments
-{[}19{]} were tested on the corresponding dataset. First of all, the
-dataset was cleaned and preprocessed. Three unmeaning features were
-eliminated, while the remaining 55 features were normalized with the
-Min-Max scaling technique {[}20{]}. The feature selection algorithm was
-applied to the normalized dataset, retrieving the 20 most significant
-ones. In total, 3 machine learning (Decision Tree, Random Forest,
-XgBoost), 3 deep learning (DNN, LSTM, and GRU), and 1 proposed hybrid
-LSTM-GRU deep learning model were used to classify the dataset.
-
-The results were evaluated with the use of 4 measures: Accuracy,
-Precision, Recall, and F1-score. Accuracy measures the portion of
-correctly classified elements out of the whole number of elements. The
-formula for calculating Accuracy is shown in (12):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image81}
-	\caption*{}
-\end{figure}
-
-
-Precision is the portion of correctly predicted positive elements to the
-total elements that were predicted as positive. Precision is computed as
-(13):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image82}
-	\caption*{}
-\end{figure}
-
-
-Recall is the portion of correctly predicted positive elements to the
-total actual positive elements. Recall is computed as (14):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image83}
-	\caption*{}
-\end{figure}
-
-
-F1-score is the metric characterizing the balance between Precision and
-Recall. F1-score is computed as (15):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image84}
-	\caption*{}
-\end{figure}
-
-
-The results of classifying the Malware dataset with machine learning and
-deep learning models were evaluated with the described metrics, the
-histograms, and the Area Under the ROC curve. The AUC-ROC value is in
-the range of 0 to 1.0. A value of 1.0 means an ideal classifier; a value
-of 0.5 describes random guessing, and a value less than 0.5 identifies a
-problematic case.
-
-The results of the experiments that were conducted are shown in Table 1
-and Figure 7.
-
-{\bfseries Table 1. The values of Malware classification}
+{\bfseries 1- сурет. RFCC каталитикалық крекинг қондырғысының реактор және
+регенератор блогының технологиялық сызбасы}
+
+1-суретте RFCC 1000 титулды каталитикалық крекинг қондырғысының реактор
+және регенератор блогының технологиялық схемасы көрсетілген {[}13{]}.
+Қондырғының шикізаты - шикізатты араластыру контейнеріне берілетін
+тікелей айдау мазуты немесе мазут қоспасы және тікелей айдау вакуумды
+газойль фракциясының қоспасы. Араластыру контейнеріне шикізат сорғымен
+реакторға беріледі, алдымен текше өнім ағындарының, жеңіл газойль
+фракциясының (қажет болған жағдайда) және текше циркуляциялық суарудың
+жылуы есебінен шикізат жылу алмастырғыштар блогында қызады. Реакторға
+кіретін шикізаттың температурасы соңғы жылу алмастырғыштың айналма
+жолындағы клапанмен реттеледі.
+
+RFCC каталитикалық крекинг қондырғысында жұмыс жасайтын өндіріс
+қызметкерлерінің, сарапшылардың сауалнамасынан алынған ақпарат реактор
+блогының технологиялық жұмыс режимінің параметрлерінің өзгеру себептері
+реакторға кіретін температураның өзгеруі, катализаторға жиналатын кокс
+мөлшерінің өзгеруіне, сондай-ақ қоршаған ауа температурасының өзгеруіне
+әкелетінін көрсетеді. Бұл өзгерістер регенератордың шығысындағы
+катализаторының температурасына және реактордың кірісіндегі
+катализатордың температурасына әсер етеді. Бұл каталитикалық крекинг
+процесінің параметрлерінің өзгеруіне әкеледі {[}14{]}. Қазіргі уақытта
+RFCC каталитикалық крекинг қондырғысында реактор мен регенератор
+блогының жұмысын басқаруды өндіріс операторы параметрлерді (автоматты)
+тұрақтандыру жүйелерінің параметрлерін, реактордағы, шикізат пен бу
+шығынын, регенератордағы ауа мен бу шығынын, диспенсердегі бу мен ауа
+шығынын, катализатордың қалыпты айналымын қамтамасыз ету мақсатында
+өзгерту арқылы қолмен жүзеге асырады. Осы себепті қажетті октан саны бар
+сапалы бензин алу үшін каталитикалық крекинг процесін басқару үшін шешім
+қабылдауды автоматтандыру өзекті мәселе болып табылады {[}15{]}.
+
+Реактор-регенератор блогының жұмысын сипаттайтын негізгі көрсеткіштер
+реактордағы температура мен қысым болып табылады, бұл регенератордағы
+температураның өзгеруіне әсер етеді, нәтижесінде қондырғының тұрақты
+жұмысына, конверсия дәрежесіне, өнімнің тығыздығы мен фракциялық
+құрамына әсер етеді. Көптеген басқа технологиялық процестер сияқты RFCC
+каталитикалық крекинг қондырғысында жүретін зерттелетін процесс алынған
+бензиннің сапасы туралы айқын емес бастапқы ақпаратпен сипатталады, ол
+модельдерді әзірлеу және каталитикалық крекинг процесін оңтайландыру
+үшін қажет. Бұл жағдайда сараптамалық білімді ұсынудың айқын емес
+модельдерін қолдана отырып, каталитикалық крекинг қондырғысының
+реактор-регенератор блогындағы технологиялық процесті басқарудың
+интеллектуалды жүйесінің алгоритмдерін жасау қажет. Сарапшылардың
+тәжірибесіне, біліміне және түйсігіне сүйене отырып, толық емес ақпарат
+жағдайында лингвистикалық айнымалылардың мәндері үшін тиістілік
+функциялары автоматты түрде қалыптасады {[}16{]}. Реактор-регенератор
+блогының кіріс және шығыс параметрлері айқын емес лингвистикалық
+модельдерді синтездеу әдісі сараптамалық бағалау әдістеріне және айқын
+емес шартты қорытынды ережесіне негізделген.
+
+Каталитикалық крекинг қондырғысынан өнімнің шығуын болжау үшін Шымкент
+мұнай өңдеу зауытында жиналған деректер пайдаланылды. Деректер
+жиынтығына келесі параметрлер кірді: шикізат көлемі, шикізат тығыздығы,
+шикізат температурасы, реактор температурасы, реактор қысымы,
+катализатор шығыны, бензин шығысы. Деректер үш жылдық кезеңді қамтыды.
+Процеске әсер ететін негізгі параметрлер 1-кестеде көрсетілген.
+
+{\bfseries 1-кесте. Процестің негізгі кіріс, шығыс параметрлері}
 
 % \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1212}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1212}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1212}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1212}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1061}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1212}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1212}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1666}}@{}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1007}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2024}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3486}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3484}}@{}}
 % \toprule\noalign{}
 % \begin{minipage}[b]{\linewidth}\raggedright
-% Metrics
+% №
 % \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Decision Tree
+% Белгіленуі
 % \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Random Forest
+% Параметр атауы
 % \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% XGBoost
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% DNN
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% LSTM
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% GRU
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Proposed LSTM-GRU model
+% Өлшем бірлігі
 % \end{minipage} \\
 % \midrule\noalign{}
 % \endhead
 % \bottomrule\noalign{}
 % \endlastfoot
-% Ассurасy & 0.988 & 0.992 & 0.989 & 0.959 & 0.972 & 0.971 & 0.986 \\
-% Рrесisiоn & 0.985 & 0.991 & 0.987 & 0.962 & 0.972 & 0.966 & 0.981 \\
-% Rесаll & 0.991 & 0.993 & 0.991 & 0.957 & 0.972 & 0.976 & 0.989 \\
-% F1-sсоrе & 0.988 & 0.992 & 0.989 & 0.960 & 0.972 & 0.971 & 0.985 \\
+% 1 & (\emph{x\textsubscript{1}}) & Шикізат шығыны & т/тәулік \\
+% 2 & (\emph{x\textsubscript{2}}) & Шикізат тығыздығы & т/м3 \\
+% 3 & (\emph{x\textsubscript{3}}) & Шикізат температурасы & С \\
+% 4 & (\emph{x\textsubscript{4}}) & Реактор температурасы & С \\
+% 5 & (\emph{x\textsubscript{5}}) & Реактор қысымы & кгс/см2 \\
+% 6 & (\emph{x\textsubscript{6}}) & Катализатор шығыны & т/тәулік \\
+% 7 & \emph{Y} & Бензин көлемі & \% \\
 % \end{longtable}
+
+{\bfseries 2- кесте. Каталитикалық крекинг процесінің параметрлерінің
+статистикалық көрсеткіштеріне сәйкес болжау}
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0600}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0808}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0808}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0808}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0909}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0707}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.1111}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.1128}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0265}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.1334}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.1259}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 22\tabcolsep) * \real{0.0265}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% ~№
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{x\textsubscript{1}}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{x\textsubscript{2}}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{x\textsubscript{3}}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{x\textsubscript{4}}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{x\textsubscript{5}}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{x\textsubscript{6}}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{y}-тің өндірістегі мәні
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \emph{y}-тің анықталған мәні
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Ауытқу
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% 1 & 241.8 & 0.899 & 206.3 & 517.8 & 2.26 & 1679.46 & 48.7 & & 49.028339
+% & -0.328339 & \\
+% 2 & 241.6 & 0.898 & 208.8 & 518.0 & 2.3 & 1692.4 & 48.6 & & 48.719417 &
+% -0.119417 & \\
+% 3 & 242.5 & 0.898 & 209.1 & 517.6 & 2.3 & 1695.8 & 49.2 & & 48.755016 &
+% 0.444984 & \\
+% 4 & 241.4 & 0.898 & 208.8 & 517.7 & 2.3 & 1684.0 & 49.1 & & 48.665739 &
+% 0.434261 & \\
+% 5 & 240.9 & 0.901 & 210.4 & 517.8 & 2.2 & 1725.0 & 48.8 & & 48.503400 &
+% 0.296600 & \\
+% 6 & 241.6 & 0.901 & 213.4 & 517.9 & 2.3 & 1763.0 & 48.7 & & 47.988852 &
+% 0.711148 & \\
+% 7 & 241.9 & 0.899 & 212.4 & 517.9 & 2.3 & 1771.5 & 48.5 & & 48.136549 &
+% 0.363451 & \\
+% 8 & 241.4 & 0.900 & 212.3 & 517.6 & 2.3 & 1752.8 & 48.8 & & 48.053057 &
+% 0.746943 & \\
+% 9 & 240.2 & 0.900 & 214.3 & 518.3 & 2.2 & 1767.4 & 48.4 & & 48.057432 &
+% 0.342568 & \\
+% 10 & 240.8 & 0.901 & 214.1 & 518.1 & 2.3 & 1780.7 & 47.9 & & 47.774196 &
+% 0.125804 & \\
+% 11 & 155.6 & 0.901 & 196.6 & 515.4 & 2.2 & 1099.6 & 37.1 & & 37.843743 &
+% -0.743743 & \\
+% 12 & 237.6 & 0.901 & 211.7 & 517.6 & 2.2 & 1745.1 & 47.3 & & 47.758377 &
+% -0.458377 & \\
+% 13 & 239.2 & 0.900 & 213.0 & 518.1 & 2.2 & 1781.6 & 48.8 & & 47.896658 &
+% 0.903342 & \\
+% 14 & 239.6 & 0.901 & 217.1 & 518.0 & 2.2 & 1766.9 & 48.4 & & 47.672751 &
+% 0.727249 & \\
+% 15 & 239.6 & 0.901 & 216.5 & 518.3 & 2.2 & 1774.4 & 48.1 & & 47.741578 &
+% 0.358422 & \\
+% 16 & 239.4 & 0.901 & 215.6 & 518.3 & 2.2 & 1754.3 & 47.9 & & 47.856243 &
+% 0.043757 & \\
+% 17 & 239.8 & 0.902 & 213.8 & 518.5 & 2.2 & 1742.1 & 47.9 & & 48.107864 &
+% -0.207864 & \\
+% 18 & 239.8 & 0.901 & 213.4 & 518.7 & 2.3 & 1748.7 & 48.0 & & 47.904229 &
+% 0.095771 & \\
+% 19 & 239.8 & 0.901 & 214.5 & 519.0 & 2.2 & 1743.1 & 48.0 & & 48.175504 &
+% -0.175504 & \\
+% 20 & 239.8 & 0.901 & 211.9 & 519.0 & 2.2 & 1743.0 & 47.5 & & 48.365504 &
+% -0.865504 & \\
+% 21 & 239.1 & 0.901 & 212.9 & 519.1 & 2.3 & 1735.5 & 47.1 & & 47.955085 &
+% -0.855085 & \\
+% 22 & 223.8 & 0.900 & 214.7 & 518.9 & 2.2 & 1762.5 & 46.3 & & 45.514946 &
+% 0.785054 & \\
+% 23 & 216.4 & 0.901 & 209.5 & 519.5 & 2.2 & 1560.2 & 47.5 & & 45.599599 &
+% 1.900401 & \\
+% 24 & 231.0 & 0.901 & 211.8 & 519.2 & 2.2 & 1689.0 & 50.5 & & 47.209394 &
+% 3.290606 & \\
+% 25 & 238.0 & 0.900 & 214.9 & 519.0 & 2.2 & 1761.9 & 46.5 & & 47.810517 &
+% -1.310517 & \\
+% 26 & 237.7 & 0.901 & 214.2 & 519.0 & 2.2 & 1773.7 & 46.7 & & 47.735090 &
+% -1.035090 & \\
+% 27 & 237.6 & 0.901 & 214.4 & 518.9 & 2.3 & 1754.7 & 46.7 & & 47.489306 &
+% -0.789306 & \\
+% 28 & 237.5 & 0.901 & 214.1 & 518.9 & 2.3 & 1766.6 & 46.9 & & 47.446940 &
+% -0.546940 & \\
+% 29 & 237.8 & 0.901 & 213.1 & 518.9 & 2.2 & 1752.4 & 47.0 & & 47.899089 &
+% -0.899089 & \\
+% 30 & 238.0 & 0.900 & 212.2 & 518.8 & 2.2 & 1739.9 & 47.2 & & 48.059431 &
+% 0.859431 & \\
+% 31 & 237.7 & 0.900 & 212.9 & 519.0 & 2.2 & 1740.7 & 47.0 & & 47.993722 &
+% -0.993722 & \\
+% 32 & 237.7 & 0.900 & 212.6 & 518.9 & 2.2 & 1765.0 & 47.1 & & 47.898868 &
+% -0.798868 & \\
+% 33 & 237.6 & 0.899 & 212.2 & 519.0 & 2.3 & 1757.4 & 47.3 & & 47.718064 &
+% -0.418064 & \\
+% 34 & 238.6 & 0.899 & 212.5 & 518.9 & 2.2 & 1744.3 & 47.2 & & 48.165351 &
+% -0.965351 & \\
+% 35 & 240.2 & 0.898 & 212.1 & 518.9 & 2.3 & 1763.5 & 47.3 & & 48.131774 &
+% -0.831774 & \\
+% 36 & 240.8 & 0.898 & 212.7 & 518.9 & 2.2 & 1775.6 & 48.2 & & 48.409264 &
+% -0.209264 & \\
+% 37 & 241.4 & 0.899 & 212.9 & 518.9 & 2.2 & 1767.8 & 48.5 & & 48.492558 &
+% 0.007442 & \\
+% 38 & 241.0 & 0.899 & 212.3 & 518.8 & 2.2 & 1793.4 & 49.0 & & 48.349838 &
+% 0.650162 & \\
+% 39 & 240.2 & 0.898 & 210.4 & 519.1 & 2.3 & 1770.4 & 49.1 & & 48.264773 &
+% 0.835227 & \\
+% 40 & 240.9 & 0.899 & 208.4 & 518.9 & 2.2 & 1789.6 & 49.0 & & 48.651943 &
+% 0.348057 & \\
+% \end{longtable}
+
+Анықтауға арналған негізгі құрал ретінде регрессиялық модель таңдалды.
+Бұл әдіс оны талдауға ыңғайлы болуы мен қарапайымдылығы байланысты
+таңдалды. Регрессия моделі Python-дағы scikit-learn кітапханасының
+көмегімен жүзеге асырылды. Регрессия функциясы тәуелсіз айнымалылар
+(шикізат көлемі, шикізат тығыздығы, шикізат температурасы, реактор
+температурасы, реактор қысымы, катализатор шығыны) мен тәуелді айнымалы
+(бензин шығымы) арасындағы байланыс болды (2-кесте). Модельдің дәлдігін
+бағалау үшін келесі көрсеткіштер қолданылды:
+
+- Орташа квадраттық қате (MSE): болжау қателіктерінің орташа квадратын
+өлшеу;
+
+- Детерминация коэффициенті (R2): тәуелді айнымалы модель арқылы
+түсіндірілетін дисперсияның үлесін көрсететін көрсеткіш.
+
+Талдау мен модельдеуді орындау үшін келесі бағдарламалық құралдар
+қолданылды:
+
+- Python 3.9-деректерді өңдеуге және модель құруға арналған
+бағдарламалау тілі;
+
+- Pandas-деректерді тазарту және талдау құралдарын қамтитын деректер
+кітапханасы;
+
+- Сандық есептеулерді орындауға арналған NumPy-кітапхана;
+
+- scikit-learn-Машиналық оқыту модельдерін құруға және бағалауға
+арналған кітапхана.
+
+- Matplotlib және Seaborn-деректер мен модельдеу нәтижелерін
+визуализациялауға арналған кітапханалар.
+
+Болжау нәтижелерін визуализациялау үшін болжамды мәндердің нақты
+мәндерге тәуелділік графиктері, сондай-ақ болжау қателерінің графиктері
+қолданылды. Бұл модельдің дәлдігін нақты көрсетуге және ықтимал
+кемшіліктерді анықтауға мүмкіндік берді.
+
+Нәтижелер мен талқылау. Әдебиеттерді талдау және жүргізілген зерттеулер
+негізінде реактор мен регенератордың математикалық модельдерінің
+құрылымын таңдау жүргізілді {[}17,18,19{]}. Реактор мен Регенератор
+блогын басқару алгоритмінде каталитикалық крекинг қондырғысының RFCC
+қондырғысымен жұмыс жасайтын персоналдың тәжірибесін қолданған жөн.
+Сараптамалық білімді ресімдеу мақсатында сарапшыларға сауалнама
+жүргізілді, ол каталитикалық крекинг процесіне әсер ететін негізгі
+параметрлерді анықтауға мүмкіндік берді. Блоктардағы қалыпты режимді
+бұзатын негізгі ауытқытушы параметрлер шикізаттың
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image87}
+	\caption*{}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image85}
+	\includegraphics[width=0.8\textwidth]{media/ict/image88}
+	\caption*{}
+\end{figure}
+
+температурасы
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image89}
+	\caption*{}
+\end{figure}
+
+Процеске әсер ететін негізгі факторлар - реактордағы температура
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image90}
+	\caption*{}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image91}
+	\caption*{}
+\end{figure}
+
+келтірілген катализатордың шығыны
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image92}
+	\caption*{}
+\end{figure}
+
+кіріс параметрлерінің тиімділігін
+
+сипаттайтын шығыс параметрінің математикалық тәуелділігін алу үшін
+Шымкент мұнай өңдеу зауытының статистикалық деректері негізінде
+эксперимент жүргізілді. Реактордағы температура мен қысым мәндері
+бергіштің көрсеткіштеріне сәйкес келеді. Шикізат пен сұйық газды тұтыну
+мәндері шығын өлшегіштердің көмегімен анықталады. Алайда, реактордан
+шыққан кезде бензинді өлшейтін шығын өлшегіштің болмауына байланысты
+үлкен қиындықтар болды. y параметрінің мәні субъективті түрде, әр
+бақылау кезінде қондырғы операторының технологына сауалнама жүргізу
+арқылы алынды. Бұл y параметрінің мәндеріндегі айқын емес ретінде
+түсіндірілетін белгісіздікке әкелді.
+
+Процесті сипаттайтын регрессия теңдеуі мына түрде таңдалды:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image93}
 	\caption*{}
 \end{figure}
 
 
-{\bfseries Figure 7-Histograms and an AUC-ROC curve}
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\item
+  бағалау коэффиценттерін анықтау үшін Python тілінде бағдарламалық код
+  жазылды:
+\item
+  \emph{import numpy as np}
+\item
+  \emph{from sklearn.linear\_model import LinearRegression}
+\item
+  \emph{from sklearn.preprocessing import PolynomialFeatures}
+\item
+  \emph{import matplotlib.pyplot as plt}
+\item
+  \emph{import pandas as pd}
+\item
+  \emph{from sklearn.datasets import make\_regression}
+\item
+  \emph{df =
+  pd.read\_excel(' StableGasoline.xlsx')}
+\item
+  \emph{x = df{[}{[}' x1'{]}{]} \# ,
+  ' x2',
+  ' x3',
+  ' x4',
+  ' x5',
+  ' x6'{]}{]}}
+\item
+  \emph{y = df{[}' y'{]}}
+\item
+  \emph{model = LinearRegression()}
+\item
+  \emph{model.fit(x, y)}
+\item
+  \emph{LinearRegression()}
+\item
+  \emph{predictions = model.predict(x)}
+\item
+  \emph{y\_pred = model.predict(x)}
+\item
+  \emph{intercept = model.intercept\_}
+\item
+  \emph{coefficients = model.coef\_}
+\item
+  \emph{from sklearn.metrics import r2\_score}
+\item
+  \emph{r2 = r2\_score(y, predictions)}
+\item
+  \emph{n = len(y)}
+\item
+  \emph{p = x.shape{[}1{]}}
+\item
+  \emph{adjusted\_r2 = 1 - (1 - r2) * (n - 1) / (n - p - 1)}
+\item
+  \emph{sse = np.sum((y - predictions) ** 2)}
+\item
+  \emph{ssr = np.sum((y\_pred - np.mean(y)) ** 2)}
+\item
+  \emph{residuals = y -- predictions}
+\item
+  \emph{plt.xlabel("Шикізат")}
+\item
+  \emph{plt.ylabel("Бензин шығымы")}
+\item
+  \emph{plt.scatter(x, y)}
+\item
+  \emph{plt.plot(x, y\_pred);}
+\end{enumerate}
 
-All seven models showed good classification results. The Decision Tree,
-Random Forest, and XGBoost machine learning models gave high accuracy
-scores. It proves that machine learning algorithms are still strong in
-the classification tasks of the cybersecurity field. The Random Forest
-model reached scores of 0.99, being the best among other machine
-learning models. This proves that Random Forest has always had the
-greatest potential in classification tasks. Among neural networks, the
-simple DNN model was a little worse than LSTM and GRU by around 0.01.
-The recurrent LSTM and GRU models showed mostly identical scores. The
-proposed LSTM-GRU model outperformed other deep learning models by 0.01
-and demonstrated good tendencies in getting even higher scores in case
-of having larger datasets.
+Регрессия моделі шикізат құрамы, процесс шарттары және катализатордың
+сипаттамалары туралы мәліметтер негізінде сәтті құрылды. Талдау
+нәтижесінде каталитикалық крекинг қондырғысынан бензиннің шығуына
+факторлардың әрқайсысының әсерін көрсететін регрессия коэффициенттері
+алынды
 
-{\bfseries Conclusion.} The fast development of computer technologies has
-led to the appearance of a large number of cyber threats that advance in
-breaches of security and confidentiality of information systems. The
-practical side of this research presents the creation and testing of
-malware detection models that can improve the security and resilience of
-information systems to modern cyber threats. Malware is one of the most
-dangerous threats because many of its forms exist, including viruses,
-worms, trojans, spyware, etc. They can rapidly spread in the information
-environment. Therefore, effective measures of their detection and
-prevention have become especially relevant in the last decade. The
-traditional ways of protecting against such cyber threats have become
-less significant in recent years. It is necessary to utilize other
-advanced methods. This research is based on machine learning algorithms
-and deep learning models, which allow the analysis of malware based on
-known signatures and identify new, previously unknown threats. The
-practical experiments of this research work covered the detection of
-malware threats with the use of seven machine learning and deep learning
-models, including Decision Tree, Random Forest, XGBoost, DNN, LSTM, GRU,
-and the proposed hybrid LSTM-GRU, giving accuracy scores above 0.95. The
-LSTM-GRU and Random Forest models reached scores of 0.98 and 0.99, being
-very close to the ideal result. It is also planned to extend this
-research, adding more experiments to classify various other types of
-threats in future works. Therefore, the study demonstrates that using
-machine learning and deep learning to analyze malware can improve the
-accuracy and reliability of classification and increase the flexibility
-of security systems, making them less vulnerable to new, unpredictable
-threats.
+Статистикаға сәйкес (1) теңдеу коэффициенттерін есептеу нәтижелері
+келесідей:
 
-\emph{{\bfseries Financing.} This work was carried out under project
-AP19675957, titled ``The research and development of the system for
-ensuring the protection of medical data using blockchain technology and
-artificial intelligence methods,'' implemented at the Institute of
-Information and Computational Technologies.}
+c0=-30,242; c1=0,161; c2=-30,391; c3=-0,730; c4=0,185; c5=-2,734;
+c6=-0,004.
 
-{\bfseries References}
+Осылайша, бензин шығысының параметрлерге айқын емес тәуелділігін
+сипаттайтын теңдеу келесідей болады:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image94}
+	\caption*{}
+\end{figure}
+
+
+Тұрғызылған модельге сәйкес шикізат шығыны, катализатор, реактор мен
+регенератордың температурасы, реактордағы қысым сияқты кіріс
+параметрлеріне өнімнің шығысының (тұрақты бензин) графиктері алынды
+(2-5-суреттер).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image95}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries 2-сурет. Бензин шығымының шикізат тығыздығынан тәуелділігі}
+
+2-суретте бензин шығымының шикізат тығыздығына тәуелділік графигі
+тұрғызылған. График бензин тығыздығының бензин шығымына кері
+тәуелділігін көрсетеді.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image96}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries 3-сурет. Бензин шығымының шикізат температурасынан тәуелділігі}
+
+3-суретте бензин шығымының шикізат температурасынан тәуелділігінің
+өндірістік және есептелген мәндерінің сәйкестігін көруге болады. Шикізат
+температурасын суретте көрсетілген мәнге дейін арттыру арқылы бензин
+шығымын айтарлықтай көбейтуге болады. Сондай-ақ тұрғызылған графиктен
+модель арқылы есептелген мәннің өндірістік мәндерге жақын болуы
+модельдің адекваттылығын көрсетеді.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image97}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries 4 - сурет. Бензин шығымының реактор температурасынан
+тәуелділігі}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image98}
+	\caption*{}
+\end{figure}
+
+
+{\bfseries 5-сурет. Бензин шығымының реактордағы қысымнан тәуелділігі}
+
+4,5-суреттерде бензин шығымының сәйкесінше реактор температурасы мен
+қысымынан тәуелділік графигін көруге болады. Каталитикалық крекинг
+бойынша негізгі процестер реактор бөлігінде жүргізілетіндіктен
+реактордың параметрлерін есепке алу маңызды. Алынған графиктен
+өндірістік және есептелген мәннің шамаларының жақындығын байқауға
+болады.
+
+Сынауға арналған деректер жиынтығындағы модельдің дәлдігін бағалау
+орташа қалдық қате (MSE) 0.754-ке тең екенін көрсетті. Бұл мән болжанған
+мәндердің нақты мәндерден ауытқуының рұқсат етілген деңгейін көрсетеді.
+Детерминация коэффициенті (R2) 0.792-ге тең. R2 мәні модель тәуелді
+айнымалының 79\% вариациясын көрсетеді, бұл көптеген әсер ететін
+факторлары бар өнеркәсіптік процесс үшін жақсы нәтиже. Регрессия
+коэффициенттері өнімнің шығуына әсер ететін ең маңызды факторлар мыналар
+екенін көрсетті:
+
+- реактордың температурасы: температураның жоғарылауы бензин сияқты
+жеңіл өнімдердің шығуына оң әсер етеді;
+
+- катализатордың сипаттамалары: катализатордың белсенділігі күткенге
+сәйкес келетін бензин шығымымен тікелей корреляцияны көрсетті.
+
+Регрессия моделі өзін өнімнің шығуын болжаудың сенімді құралы ретінде
+көрсетті. Алайда, сызықтық емес тәуелділіктер немесе ескерілмеген
+айнымалылар арасындағы өзара әрекеттесулер болған кезде оның дәлдігі
+төмендеуі мүмкін. Болашақта болжамдардың дәлдігін жақсарту үшін гибридті
+модельдерді қолдануды қарастырған жөн.
+
+{\bfseries Қорытынды.} Бұл жұмыста Python бағдарламалық ортасында сызықтық
+регрессия әдістерін қолдана отырып, каталитикалық крекинг қондырғысынан
+өнімнің шығуын анықтау әдісі жасалды және бағаланды. Зерттеу нәтижелері
+ұсынылған модельдің жоғары дәлдігін көрсетті, бұл оның өнеркәсіптік
+тәжірибеде қолдану тиімділігін растайды. Регрессия моделін қолдану
+өнімнің шығымына әсер ететін негізгі технологиялық параметрлерді
+анықтауға және каталитикалық крекинг процесін оңтайландыруға мүмкіндік
+берді. Детерминация коэффициентін (R2) және қалдық қателерді талдауды
+қолдана отырып, модельдің сапасын бағалау болжамды мәндердің нақты
+деректерге сәйкестігінің жоғары дәрежесін көрсетті. Осылайша, ұсынылған
+тәсілді мұнай өңдеудегі технологиялық процестерді одан әрі оңтайландыру
+үшін қолдануға болады, бұл каталитикалық крекинг қондырғыларының
+өнімділігі мен тиімділігін арттырады. Болашақта болжамдардың дәлдігін
+жақсарту үшін машиналық оқытудың күрделі әдістерін біріктіруге болады.
+
+{\bfseries Әдебиеттер}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Khando, K., Gao, S., Islam, S. M., \& Salman, A. Enhancing employees
-  information security awareness in private and public organisations: A
-  systematic literature review // Computers \& security. -2021.- Vol.
-  106. DOI
-  \href{https://doi.org/10.1016/j.cose.2021.102267}{10.1016/j.cose.2021.102267}.
+  Han I.-S., Chung C.-B. Dynamic modeling and simulation of a fluidized
+  catalytic cracking process. Part II: Property estimation and
+  simulation // Chem. Eng. Sci. -2022. -Vol. 56. -P. 1973-1990.
+  \href{https://doi.org/10.1016/S0009-2509(00)00494-2}{DOI
+  10.1016/S0009-2509(00)00494-2}
 \item
-  Nissenbaum, H. Protecting privacy in an information age: The problem
-  of privacy in public //In The ethics of information technologies.
-  Routledge. -2020.- P. 141-178. DOI
-  \href{https://doi.org/10.2307/3505189}{10.2307/3505189}.
+  Emberru R.E., Patel R., Mujtaba I.M., John Y.M. A Review of Catalyst
+  Modification and Process Factors in the Production of Light Olefins
+  from Direct Crude Oil Catalytic Cracking // Chemical Engineering,
+  Faculty of Engineering \& Digital Technologies. -2024. --Vol. 6(11).
+  DOI 10.3390/sci6010011
 \item
-  Shelke, M.V., Deshmukh, J.Y., Ajalkar, D.A., \& Dhumal, R.B. A Robust
-  Ensemble Learning Approach for Malware Detection and Classification //
-  Journal of Advanced Research in Applied Sciences and Engineering
-  Technology.-2024.-Vol. 48(1).- P. 152-167.
+  Palos R., Rodríguez, E., Gutiérrez A., Bilbao J., \& Arandes, J. M.
+  Kinetic modeling for the catalytic cracking of tires pyrolysis oil //
+  Fuel. -2022. -Vol. 309.
+  \href{https://doi.org/10.1016/j.fuel.2021.122055}{DOI
+  10.1016/j.fuel.2021.122055}
+\item
+  Orazbayev B.B., Shangitova Z.Y., Orazbayeva K.N., Serimbetov B.A.,
+  Shagayeva A.B. Studying the Dependence of the Performance Efficiency
+  of a Claus Reactor on Technological Factors with the Quality
+  Evaluation of Sulfur on the Basis of Fuzzy Information //Theor. Found.
+  Chem. Eng., -2020.-Vol. 54. - P. 1235--1241. DOI
+  10.1134/S0040579520060093
+\item
+  Taşkin H., Kubat C., Uygun Ö., Arslankaya S. FUZZYFCC: Fuzzy logic
+  control of a fluid catalytic cracking unit (FCCU) to improve dynamic
+  performance // Computers \& chemical engineering. -2006. - Vol. 30(5).
+  - P. 850-863.
+  \href{https://doi.org/10.1016/j.compchemeng.2005.12.016}{DOI
+  10.1016/j.compchemeng.2005.12.016}
+\item
+  Precup R.E., Nguyen A.T., Blažič S. A survey on fuzzy control for
+  mechatronics applications //International Journal of Systems Science.-
+  2024.- Vol.55(4).-P. 771-813.
 \end{enumerate}
 
 DOI
-\href{https://doi.org/10.37934/araset.48.1.152167}{10.37934/araset.48.1.152167}.
+\href{https://doi.org/10.1080/00207721.2023.2293486}{10.1080/00207721.2023.2293486}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{6}
 \item
-  Zhao, Q., Chen, S., Liu, Z., Baker, T., \& Zhang, Y. Blockchain-based
-  privacy-preserving remote data integrity checking scheme for IoT
-  information systems // Information Processing \& Management. -2020. -
-  Vol. 57(6). \href{https://doi.org/10.1016/j.ipm.2020.102355}{DOI
-  10.1016/j.ipm.2020.102355}.
+  Hе G., Zhou C., Luo T., Zhou L., Dai Y., Dang, Y., Ji, X. Online
+  optimization of Fluid Catalytic Cracking process via a Hybrid model
+  based on Simplified structure-Oriented Lumping and case-based
+  reasoning // Industrial \& Engineering Chemistry Research. -2020.-Vol.
+  60(1). - P. 412-424. DOI
+  \href{http://dx.doi.org/10.1021/acs.iecr.0c04109}{10.1021/acs.iecr.0c04109}
 \item
-  Tun Li, Ya Luo, Xin Wan, Qian Li, Qilie Liu, Rong Wang, Chaolong Jia,
-  Yunpeng Xiao. A malware detection model based on imbalanced
-  heterogeneous graph embeddings // Expert Systems with
-  Applications.-2024.-Vol. 246. 123109. DOI
-  \href{https://doi.org/10.1016/j.eswa.2023.123109}{10.1016/j.eswa.2023.123109}.
-\item
-  Caixia Gao, Yao Du, Fan Ma, Qiuyan Lan, Jianying Chen, Jingjing Wu. A
-  new adversarial malware detection method based on enhanced lightweight
-  neural network // Computers \& Security. -2024. -Vol. 147. DOI
-  \href{https://doi.org/10.1016/j.cose.2024.104078}{10.1016/j.cose.2024.104078}.
-\item
-  Wira Zanoramy, Mohd Faizal Abdollah, Othman Abdollah, \& S.M. Warusia
-  Mohamed S.M.M. Ransomware Early Detection using Machine Learning
-  Approach and Pre-Encryption Boundary Identification // Journal of
-  Advanced Research in Applied Sciences and Engineering Technology.
-  -2024. -Vol. 47(2).- P. 121 - 137. DOI
-  \href{https://doi.org/10.37934/araset.47.2.121137}{10.37934/araset.47.2.121137}.
-\item
-  Hossain, M.A., Islam, M.S. Enhanced detection of obfuscated malware in
-  memory dumps: a machine learning approach for advanced cybersecurity
-  // Cybersecurity. -2024. -Vol. 7(16).
+  Beatriz Flamia Azevedo, Ana Maria A.C. Rocha, Ana I. Pereira Hybrid
+  approaches to~optimization and~machine learning methods: a~systematic
+  literature review. Machine Learning. -2024. -Vol 113. - P. 4055 -
+  4097. DOI
+  \href{http://dx.doi.org/10.1007/s10994-023-06467-x}{10.1007/s10994-023-06467-x}
 \end{enumerate}
+
+9.Orazbayev B.B., Kenzhebayeva S.T., Orazbayeva K. N. Development of
+Mathematical Models and Modelling of Chemical Technological Systems
+using Fuzzy-Output Systems//Applied Mathematics \& Information Sciences
+-2019. -Vol. 13(4).-P.653-664.DOI 10.18576/amis/130417
+
+10.Yang F., Xu M., Lei W., Lv J. Artificial intelligence methods applied
+to catalytic cracking processes//Big Data Mining and
+Analytics.-2023.-Vol. 6(3).-P. 361-380.
 
 DOI
-\href{https://doi.org/10.1186/s42400-024-00205-z}{10.1186/s42400-024-00205-z}.
+\href{http://dx.doi.org/10.26599/BDMA.2023.9020002}{10.26599/BDMA.2023.9020002}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\item
-  Mosleh M. Abualhaj, Ahmad Sami Al-Shamayleh, Alhamza Munther, Sumaya
-  Nabil Alkhatib, Mohammad O. Hiari, Mohammed Anbar\emph{.} Enhancing
-  spyware detection by utilizing decision trees with hyperparameter
-  optimization // Bulletin of Electrical Engineering and Informatics.
-  -2022. -Vol. 13(5). - P. 3653-3662. DOI
-  \href{https://doi.org/10.11591/eei.v13i5.7939}{10.11591/eei.v13i5.7939}.
-\item
-  Ahmad Heryanto, Deris Stiawan, Adi Hermansyah, Rici Firnando, Hanna
-  Pertiwi, Mohd Yazid Bin Idris, Rahmat Budiarto The incorporation of
-  stacked long short-term memory into intrusion detection systems for
-  botnet attack classification // IAES International Journal of
-  Artificial Intelligence. -2024. -Vol. 13(3).- P. 3657-3670. DOI
-  \href{https://doi.org/10.11591/ijai.v13.i3.pp3657-3670}{10.11591/ijai.v13.i3.pp3657-3670}.
-\item
-  Aso Mafakheri, Sadegh Sulaimany. Android malware detection through
-  centrality analysis of applications network//Applied Soft Computing.
-  -2024.-Vol. 165.
-\end{enumerate}
+11.Santander V. Kuppuraj, C.A. Harrison, M. Baldea An open source FCC
+model to support developing and benchmarking process control and
+operations strategies // Computers \& Chemical Engineering. -2022. -Vol.
+164. DOI
+\href{https://doi.org/10.1016/j.compchemeng.2022.107900}{10.1016/j.compchemeng.2022.107900}
 
-DOI
-\href{https://doi.org/10.1016/j.asoc.2024.112058}{10.1016/j.asoc.2024.112058}.
+12.Josiah P.N., Otaraku I.J., Evbuomwan B.O. Servo and Regulatory
+Response of an Industrial Fluid Catalytic Cracking (FCC) Unit under
+Fuzzy Logic Supervisory Control // Eng. Technol. J. -2023. -Vol.41. -P.
+1139-1151. DOI 10.30684/etj.2023.139485.1432
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\item
-  Singh, D., \& Singh, B. Investigating the impact of data normalization
-  on classification performance // Applied Soft Computing. -2020. -Vol.
-  97. DOI
-  \href{https://doi.org/10.1016/j.asoc.2019.105524}{10.1016/j.asoc.2019.105524}.
-\item
-  Andelic, N., \& Baressi Šegota, S. Development of symbolic expressions
-  ensemble for breast cancer type classification using genetic
-  programming symbolic classifier and decision tree classifier //
-  Cancers. -2023. - Vol. 15(13). DOI
-  \href{https://doi.org/10.3390/cancers15133411}{10.3390/cancers15133411}.
-\item
-  Manzali, Y., \& Elfar, M. Random forest pruning techniques: a recent
-  review // In Operations research forum. -2023. -Vol. 4(43). DOI
-  \href{https://doi.org/10.1007/s43069-023-00223-6}{10.1007/s43069-023-00223-6}.
-\item
-  Hariharan, B., Siva, R., Sadagopan, S., Mishra, V., \& Raghav, Y.
-  Malware Detection Using XGBoost based Machine Learning Models-Review
-  // In 2023 2nd International Conference on Edge Computing and
-  Applications (ICECAA). -2023. -P. 964-970.
-\end{enumerate}
+13.Orazbayev B., Boranbayeva N., Makhatova V., Rzayeva L., OspanovY.,
+Kurmashev I., Kurmangaziyeva L. Development and Synthesis of Linguistic
+Models for Catalytic Cracking Unit in a Fuzzy Environment. Processes.
+-2024. -Vol. 12(8). DOI
+\href{https://doi.org/10.3390/pr12081543}{10.3390/pr12081543}
+
+14. Oloruntoba A., Zhang Y., Hsu C.S. State-of-the-Art Review of Fluid
+Catalytic Cracking (FCC) Catalyst Regeneration Intensification
+Technologies//Energies.-2022.-Vol.15.
+
+DOI 10.3390/en15062061
+
+15.Letzsch W. Fluid Catalytic Cracking (FCC) in Petroleum Refining. In:
+Treese, S., Pujadó, P., Jones, D. (eds) Handbook of Petroleum Processing
+// Springer, Cham. -2015. DOI10.1007/978-3-319-14529-7\_2
+
+16.Amblard, B., Singh R., Gbordzoe E., Raynal L.CFD modeling of the coke
+combustion in an industrial FCC regenerator // Chemical Engineering
+Science.- 2016. - P. 731- 742.
 
 DOI
-\href{https://doi.org/10.1109/ICECAA58104.2023.10212327}{10.1109/ICECAA58104.2023.10212327}.
+\href{http://dx.doi.org/10.1016/j.ces.2016.12.055}{10.1016/j.ces.2016.12.055}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
-\item
-  Gupta, K., Jiwani, N., Sharif, M. H. U., Datta, R., \& Afreen, N. A
-  Neural Network Approach For Malware Classification // In 2022
-  International Conference on Computing, Communication, and Intelligent
-  Systems (ICCCIS). -2022. -P. 681-684.
-\end{enumerate}
+17. Idris M., Burn A. CFD Modelling Gas-Solid Flows in CFB // FCC Riser
+Reactors: Simulation Using Kinetic Theory of Granular Flow (KTGF) in a
+Fully Developed Flow Situation. -American institute of chemical
+engineers, 2008. 1-19
 
-DOI
-\href{https://doi.org/10.1109/ICCCIS56430.2022.10037653}{10.1109/ICCCIS56430.2022.10037653}.
+18. Barbosa et.al., A. C., Three-Dimensional Simulation of Catalytic
+Cracking Reactions in an Industrial Scale Riser Using a 11-lump Kinetic
+Model. Chem. Eng. Trans. -2013.- 32. -P. 637-642 DOI
+\href{http://dx.doi.org/10.3303/ACOS1311004}{10.3303/ACOS1311004}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{16}
-\item
-  Catak, F. O., Ahmed, J., Sahinbas, K., \& Khand, Z. H. Data
-  augmentation based malware detection using convolutional neural
-  networks // Peerj computer science. - 2021.
-\end{enumerate}
+19. Sabzi H.Z. Developing an intelligent expert system for streamflow
+prediction, integrated in a dynamic decision support system for managing
+multiple reservoirs: a case study // Expert systems with applications.
+-2017. -Vol. 82. -№3. -C.145--163. DOI 10.1016/j.eswa.2017.04.039
 
-DOI \href{https://doi.org/10.7717/peerj-cs.346}{10.7717/peerj-cs.346}.
+\emph{{\bfseries Авторлар туралы мәліметтер}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{17}
-\item
-  Thakur, P., Kansal, V., \& Rishiwal, V. Hybrid deep learning approach
-  based on lstm and cnn for malware detection // Wireless Personal
-  Communications. -2024. -Vol. 136(3). - P.1879-1901. DOI
-  \href{https://doi.org/10.1007/s11277-024-11366-y}{10.1007/s11277-024-11366-y}.
-\item
-  Kolli, S., Balakesavareddy, P., \& Saravanan, D. Neural Network based
-  Obfuscated Malware detection // In 2021 International Conference on
-  System, Computation, Automation and Networking (ICSCAN). -2021. DOI
-  \href{https://doi.org/10.1109/ICSCAN53069.2021.9526496}{10.1109/ICSCAN53069.2021.9526496}.
-\item
-  Ussatova, O., Zhumabekova, A., Begimbayeva, Y., Matson, E. T., \&
-  Ussatov, N. Comprehensive DDoS Attack Classification Using Machine
-  Learning Algorithms // Computers, Materials \& Continua. -2022. -Vol.
-  73(1). - P. 577-594. DOI
-  \href{https://doi.org/10.32604/cmc.2022.026552}{10.32604/cmc.2022.026552}.
-\item
-  Ussatova, O., Zhumabekova, A., Karyukin, V., Matson, E. T., Ussatov,
-  N. The development of a model for the threat detection system with the
-  use of machine learning and neural network methods //International
-  Journal of Innovative Research and Scientific Studies. -2024.-Vol.
-  7(3). -P. 863- 877. DOI
-  \href{https://doi.org/10.53894/ijirss.v7i3.2957}{10.53894/ijirss.v7i3.2957}.
-\end{enumerate}
+Боранбаева Н.Б. -- докторант, Л.Н.Гумилев атындағы Еуразия Ұлттық
+университеті, сеньор лектор, Astana IT University, Астана, Қазақстан,
+e-mail: ades\_98@mail.ru;
+
+Оразбаев Б.Б.- профессор, т.ғ.д., Л.Н.Гумилев атындағы Еуразия Ұлттық
+университеті, Астана, Қазақстан, e-mail: batyr\_o@mail.ru;
+
+Рзаева Л.Г.- қауымдастырылған профессор, Astana IT University, Астана,
+Қазақстан, e-mail:
+\href{mailto:l.rzayeva@astanait.edu.kz}{\nolinkurl{l.rzayeva@astanait.edu.kz}};
+
+Карабаев Ж.А. -PhD, аға оқытушы, М.Әуезов атындағы Оңтүстік Қазақстан
+университеті, Шымкент, Қазақстан, e-mail:jalal45@mail.ru
+
+Серимбетов Б.А.- техникалық ғылымдар кандидаты, қауымдастырылған
+профессор, Қ.Құлажанов атындағы Қазақ технология және бизнес
+университеті ,Астана, Қазастан, e-mail:
+\href{mailto:sba_rnmc@mail.ru}{\nolinkurl{sba\_rnmc@mail.ru}}.
 
 \emph{{\bfseries Information about the authors}}
 
-Zhumabekova A.- мaster, Institute of Information and Computational
-Technologies, Al-Farabi Kazakh National University, Almaty, Kazakhstan,
-e-mail:
-\href{mailto:zhumabekova2702@gmail.com}{\nolinkurl{zhumabekova2702@gmail.com}};
+Boranbayeva N.- doctoral student at L. N. Gumilyov Eurasian National
+University, senior lecturer, Astana IT University, Astana, Kazakhstan,
+e-mail: ades\_98@mail.ru;
 
-Ussatova O.- PhD, associate professor, Institute of Information and
-Computational Technologies, G.Daukeev Almaty University of Energy and
-Communications, Almaty, Kazakhstan\emph{,} e-mail:
-\href{mailto:uoa_olga@mail.ru}{\nolinkurl{uoa\_olga@mail.ru}};
+Orazbayev B.- Doctor of Technical Sciences, Professor, L.N.Gumilyov
+Eurasian National University, Astana, Kazakhstan, e-mail:
+batyr\_o@mail.ru;
 
-Kalimoldayev M. -- doctor of Physical and Mathematical Sciences,
-professor, Academician of the National Academy of Sciences of the
-Republic of Kazakhstan, Institute of Information and Computational
-Technologies, Almaty, Kazakhstan, e-mail:
-\href{mailto:mnk@ipic.kz}{\nolinkurl{mnk@ipic.kz}};
+Rzayeva L.- Associate Professor, Astana IT University, Astana,
+Kazakhsta, e-mail:
+\href{mailto:l.rzayeva@astanait.edu.kz}{\nolinkurl{l.rzayeva@astanait.edu.kz}};
 
-Karyukin V.-PhD, Institute of Information and Computational
-Technologies, Al-Farabi Kazakh National University, Almaty, Kazakhstan,
-e-mail:
-\href{mailto:vladislav.karyukin@gmail.com}{\nolinkurl{vladislav.karyukin@gmail.com}};
+Karabayev Zh.- PhD, senior lecturer, Mukhtar Ayezov South Kazakhstan
+University, Shymkent, Kazakhstan, e-mail:
+\href{mailto:jalal45@mail.ru}{\nolinkurl{jalal45@mail.ru}}.
 
-Begimbayeva Y.-PhD, Associate professor, Institute of Information and
-Computational Technologies, G.Daukeev Almaty University of Energy and
-Communications, Almaty, Kazakhstan\emph{,} Almaty, Kazakhstan, e-mail:
-\href{mailto:Enlik_89@mail.ru}{\nolinkurl{Enlik\_89@mail.ru}}
-
-\emph{{\bfseries Сведения об авторах}}
-
-Жұмабекова А.Т.-магистр, Институт информационных и вычислительных
-технологий, КазНУ им. аль-Фараби, Алматы, Казахстан, e-mail:
-\href{mailto:zhumabekova2702@gmail.com}{\nolinkurl{zhumabekova2702@gmail.com}};
-
-Усатова О.А. - PhD, ассоциированный профессор (доцент), Институт
-информационных и вычислительных технологий, Алматинский Университет
-Энергетики и Связи им. Г.Даукеева,Алматы, Казахстан, e-mail:
-\href{mailto:uoa_olga@mail.ru}{\nolinkurl{uoa\_olga@mail.ru}};
-
-Калимолдаев М.Н.- доктор физико-математических наук, профессор, Академик
-НАН РК, Институт информационных и вычислительных технологий, Алматы,
-Казахстан, e-mail: \href{mailto:mnk@ipic.kz}{\nolinkurl{mnk@ipic.kz}};
-
-Карюкин В.И.- PhD, Институт информационных и вычислительных технологий,
-КазНУ им. аль-Фараби, Алматы, Казахстан, e-mail:
-\href{mailto:vladislav.karyukin@gmail.com}{\nolinkurl{vladislav.karyukin@gmail.com}};
-
-Бегимбаева Е.Е. - PhD, ассоциированный профессор (доцент), Институт
-информационных и вычислительных технологий, Алматинский Университет
-Энергетики и Связи им. Г.Даукеева, Алматы, Казахстан, e- mail:
-\href{mailto:Enlik_89@mail.ru}{\nolinkurl{Enlik\_89@mail.ru}}
+Serimbetov B.- Candidate of Technical Sciences, associate
+Professor,K.Kulazhanov Kazakh University of Technology and Business,
+Astana, Kazakhstan, e-mail:
+\href{mailto:sba_rnmc@mail.ru}{\nolinkurl{sba\_rnmc@mail.ru}}.
