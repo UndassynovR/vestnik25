@@ -225,11 +225,16 @@
     \par%
 }
 
-\newenvironment{noparindent}{%
+\newenvironment{references}{%
+  \setlength{\parindent}{0pt}%
+}{%
+  \par%
+}
+
+\newenvironment{authorinfo}{%
   \fontsize{10}{12}\selectfont%
   \setlength{\parindent}{0pt}%
 }{%
-  \setlength{\parindent}{2pt}%
   \par%
 }
 
