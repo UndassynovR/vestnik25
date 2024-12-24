@@ -1,14 +1,16 @@
 \id{IRSTI 28.23.25}
 
-{\bfseries Identifying effective machine learning algorithms for
-sentimental analysis of comments in the Kazakh language}
+\begin{articleheader}
+\sectionwithauthors{N.K. Mukazhanov, L.Sh. Cherikbayeva, A.M. Kassenkhan, Zh.M. Alibieva, M. Turdalyuly}{IDENTIFYING EFFECTIVE MACHINE LEARNING ALGORITHMS FOR SENTIMENTAL ANALYSIS OF COMMENTS IN THE KAZAKH LANGUAGE}
 
 {\bfseries \textsuperscript{1}N.K. Mukazhanov\textsuperscript{\envelope },
 \textsuperscript{2}L.Sh.} {\bfseries Cherikbayeva, \textsuperscript{1}A.M.
 Kassenkhan, \textsuperscript{1}Zh.M. Alibieva,}
 
 {\bfseries \textsuperscript{1,3}M. Turdalyuly}
+\end{articleheader}
 
+\begin{affiliation}
 \textsuperscript{1}Satbayev University, Almaty, Kazakhstan,
 
 \textsuperscript{2}Al-Farabi Kazakh National University, Almaty,
@@ -18,6 +20,7 @@ Kazakhstan,
 University
 
 \raggedright {\bfseries \textsuperscript{\envelope }}Corresponding author: \href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}}
+\end{affiliation}
 
 This article presents the results of an analysis of machine learning
 algorithms for sentimental data analysis in the Kazakh language, and as
@@ -41,14 +44,17 @@ accuracy.
 {\bfseries Keywords:} sentiment analysis, machine learning, deep learning,
 NLP, comments, dataset
 
-{\bfseries Қазақ тіліндегі пікірлерді сентименталды талдау үшін машиналық
-оқытудың тиімді алгоритмдерін анықтау}
+\begin{articleheader}
+{\bfseries ҚАЗАҚ ТІЛІНДЕГІ ПІКІРЛЕРДІ СЕНТИМЕНТАЛДЫ ТАЛДАУ ҮШІН МАШИНАЛЫҚ
+ОҚЫТУДЫҢ ТИІМДІ АЛГОРИТМДЕРІН АНЫҚТАУ}
 
 {\bfseries \textsuperscript{1}Н.К. Мукажанов\textsuperscript{\envelope },
 \textsuperscript{2}Л.Ш.Черикбаева, \textsuperscript{1}А.М.Касенхан,
 \textsuperscript{1}Ж.М.Алибиева,\\
 \textsuperscript{1,3}М. Тұрдалыұлы}
+\end{articleheader}
 
+\begin{affiliation}
 \textsuperscript{1}Satbayev University, Алматы, Қазақстан,
 
 \textsuperscript{2}Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы,
@@ -58,6 +64,7 @@ NLP, comments, dataset
 
 e-mail:
 \href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}}
+\end{affiliation}
 
 Ұсынылып отырған мақалада қазақ тілді деректерді сентименталды талдау
 үшін машиналық оқыту алгоритмдеріне талдау жасалынды, талдау нәтижесінде
@@ -81,6 +88,7 @@ XGBoost және тереңдете оқытудың Long short-term memory (LST
 {\bfseries Түйін сөздер:} сентименталды талдау, машиналық оқыту, тереңдете
 оқыту, NLP, пікірлер, деректер жинағы.
 
+\begin{articleheader}
 {\bfseries ОПРЕДЕЛЕНИЕ ЭФФЕКТИВНЫХ АЛГОРИТМОВ МАШИННОГО ОБУЧЕНИЯ ДЛЯ
 СЕНТИМЕНТАЛЬНОГО АНАЛИЗА КОММЕНТАРИЕВ НА КАЗАХСКОМ ЯЗЫКЕ}
 
@@ -89,7 +97,9 @@ XGBoost және тереңдете оқытудың Long short-term memory (LST
 \textsuperscript{1}Ж.М. Алибиева,}
 
 {\bfseries \textsuperscript{1,3}М. Тұрдалыұлы}
+\end{articleheader}
 
+\begin{affiliation}
 \textsuperscript{1}Satbayev University, Алматы, Казахстан,
 
 \textsuperscript{2}Казахский национальный университет имени Аль-Фараби,
@@ -99,6 +109,7 @@ XGBoost және тереңдете оқытудың Long short-term memory (LST
 
 e-mail:
 \href{mailto:n.mukazhanov@satbayev.university}{\nolinkurl{n.mukazhanov@satbayev.university}}
+\end{affiliation}
 
 В данной статье представлены результаты анализа алгоритмов машинного
 обучения для сентиментального анализа данных на казахском языке, и в
@@ -123,6 +134,7 @@ e-mail:
 {\bfseries Ключевые слова\emph{:}} сентиментальный анализ, машинное
 обучение, глубокое обучение, NLP, комментарий, набор данных.
 
+\begin{multicols}{2}
 {\bfseries Introduction.} Sentimental analysis is a subfield of Natural
 Language Processing (NLP) that aims to identify and analyze the moods
 (feelings) expressed in a given text. It is a powerful tool that we can
@@ -311,40 +323,27 @@ quantitative and visual analyses were conducted to clearly see the
 positive and negative words that are often used. Figures 1, 2, 3 show
 overviews of the preprocessed data. Figure 1 shows a cloud of positive
 comments, while Figure 2 shows a cloud of negative comments.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image9}
-	\caption*{}
+	\caption*{Figure 1 - Word cloud of positive comments}
 \end{figure}
-
-
-{\bfseries Figure 1 - Word cloud of positive comments}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image10}
-	\caption*{}
+	\caption*{Figure 2 - Word cloud of negative comments}
 \end{figure}
 
-
-{\bfseries Figure 2 - Word cloud of negative comments}
-
+\begin{multicols}{2}
 Figure 3 shows the bigram analysis of the comments. From this analysis,
 we can see exactly which phrases generate positive and negative
 feedback. In our case, "excellent", "best", "bought", "liked" and so on.
 bigrams were most often used in positive comments, while bigrams such as
 "do not recommend", "doesn' t work", "worst" were most
 often used in describing negative comments.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image11}
-	\caption*{}
-\end{figure}
-
-
-{\bfseries Figure 3 - Bigram analysis for negative and positive reviews}
 
 \emph{Feature extraction from the processed data.} Feature extraction is
 an important step involving the conversion of text data into vectors
@@ -358,7 +357,15 @@ digital values. TF-IDF is a numerical statistic which indicates the
 importance of a word for a document in a collection or corpus. It is
 calculated as a product of two components: Term Frequency (TF) and
 Inverse Document Frequency (IDF) {[}17{]}.
+\end{multicols}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{media/ict/image11}
+	\caption*{Figure 3 - Bigram analysis for negative and positive reviews}
+\end{figure}
+
+\begin{multicols}{2}
 A matrix of numeric vectors was created by applying the TF-IDF formula
 on the corpus of documents. Each row of the matrix represents a
 document, and each column represents a unique word in the corpus. The
@@ -377,6 +384,7 @@ and test sets were transformed into numerical feature vectors based on
 the TF-IDF representation. This transformation allows machine learning
 algorithms to work efficiently with textual data, as they typically
 require numerical input.
+\end{multicols}
 
 Text, reviews
 
@@ -425,11 +433,8 @@ as follows (Figure 5):
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image12}
-	\caption*{}
+	\caption*{Figure 5 - Accuracy of logistic regression algorithm}
 \end{figure}
-
-
-{\bfseries Figure 5 - Accuracy of logistic regression algorithm}
 
 And to use the Multinomial Naive Bayes model, the sklearn.naive\_bayes
 function was used. A Multinomial Naive Bayes classifier was instantiated
@@ -442,11 +447,8 @@ signs (accuracy indicators are shown in Figure 6).
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image13}
-	\caption*{}
+	\caption*{Figure 6-Accuracy of Multinomial Naive Bayes model}
 \end{figure}
-
-
-{\bfseries Figure 6-Accuracy of Multinomial Naive Bayes model}
 
 In addition, Linear SVM and XGboost models of machine learning are also
 tested. Their results are lower than logistic regression (Linear
@@ -484,11 +486,8 @@ Tourch libbrary was used for this task.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image14}
-	\caption*{}
+	\caption*{Figure 7-One-hot vector}
 \end{figure}
-
-
-{\bfseries Figure 7-One-hot vector}
 
 An embedding layer was used to transform a one-hot vector into a dense
 embedding vector. The model constructor consists of the size of the
@@ -502,11 +501,8 @@ of the model is presented in Figure 8.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image15}
-	\caption*{}
+	\caption*{Figure 8 - RNN model creation}
 \end{figure}
-
-
-{\bfseries Figure 8 - RNN model creation}
 
 In addition, the torch.nn.Embedding module was created, which is
 responsible for learning and matching input tokens with dense embedding
@@ -559,11 +555,8 @@ Figure 9):
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image16}
-	\caption*{}
+	\caption*{Figure 9 - Improved LSTM algorithm code}
 \end{figure}
-
-
-{\bfseries Figure 9 - Improved LSTM algorithm code}
 
 This function creates a boxed sequence object which represents sequences
 without padding tokens. Using this method, 84\% accuracy was achieved.
@@ -576,32 +569,22 @@ methods to improve LSTM on collected Kazakh comments. Table 1 shows the
 results of the above-mentioned models and algorithms evaluation
 experiment
 
-{\bfseries Table 1 - Results of algorithm}
+\begin{table}[H]
+\caption*{Table 1 - Results of algorithm}
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+№ & Algorithm name              & Accuracy \\ \hline
+1 & Logistic regression         & 83.96\%  \\ \hline
+2 & Multinomial Naive Bayes     & 83.49\%  \\ \hline
+3 & Linear SVM                  & 79,25\%  \\ \hline
+4 & XGboost                     & 80,1\%   \\ \hline
+5 & LSTM                        & 60.00\%  \\ \hline
+6 & Improved LSTM               & 84.12\%  \\ \hline
+\end{tabular}
+\end{table}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0942}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4907}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4151}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% №
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Algorithm name
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% 1 & Logistic regression & 83.96\% \\
-% 2 & Multinomial Naive Bayes & 83.49\% \\
-% 3 & Linear SVM & 79,25\% \\
-% 4 & XGboost & 80,1\% \\
-% 5 & LSTM & 60.00\% \\
-% 6 & Improved LSTM & 84.12\% \\
-% \end{longtable}
-
+\begin{multicols}{2}
 Due to the lack of a large collection of data, machine learning methods
 have shown that they do not give more accurate results. A logistic
 regression algorithm can be effective if there is low-dimensional data
@@ -637,8 +620,11 @@ their accuracy indicators was performed. Comparative analysis showed
 that the best result was the deep learning improved LSTM model
 (accuracy-84.12\%), followed by the machine learning Logistic regression
 model (accuracy-83.96\%).
+\end{multicols}
 
+\begin{center}
 {\bfseries References}
+\end{center}
 
 1. Bolshakova E.I., Voroncov K.V., Efremova N.E., Klyshinskij E.S.,
 Lukashevich N.V., Sapin A.S. Avtomaticheskaya obrabotka tekstov na
