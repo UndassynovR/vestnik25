@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"a065444b7674bf8e23144347e46994150d4d8439"
+"19c51d6144770b3876ddb15cdfa743d5aa7b74ff"
 [nil nil nil nil (26473 30975 856483 374000) 0 nil]
 ([nil nil ((5 . 20871) (#("МРНТИ 81.93.29}
 
@@ -749,5 +749,60 @@ IDE environment {[}8, 9{]} (Fig.4).
 nil
 nil
 ([nil nil ((#("8" 0 1 (fontified t)) . -13629) (t 26473 32063 20230 167000) (13630 . 13631) 13629 (t 26473 32063 20230 167000)) nil (26473 32077 452522 747000) 0 nil])
-([nil current ((13800 . 13821) (15948 . 15964)) nil (26473 32077 452518 649000) 0 nil])
+([nil nil ((13800 . 13821) (15948 . 15964)) nil (26473 32077 452518 649000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 16408 . 16409) (nil fontified nil 15986 . 16409) (15986 . 16409) (#("Void setup()
+
+\\{
+
+TM1283 mod;
+
+Byte num();
+
+int pinA = 3;
+
+int pinD = 5;
+
+pinMode (pinA, input);
+
+digitalWrite(pin1);
+
+Boolean dSW(pinC);
+
+\\}
+
+Int encoderPosCount(stepsPerrevo5)\\{
+
+myStepper = 7;
+
+int pinDLast = 8;
+
+Serial.begin (362);
+
+Value\\_Y = analogRead (axis-X);
+
+Bool isvalid = false;
+
+MFRC522 mfrc522(DD\\_PIN;
+
+Byte uidCar;
+
+delay(1);
+
+mode = cloc() / 5;
+
+if X=4 then \\{
+
+go to 10(``.'');
+
+delay(100);
+
+\\}" 0 2 (fontified t) 2 14 (fontified t) 14 16 (face font-lock-keyword-face fontified t) 16 139 (fontified t) 139 141 (face font-lock-keyword-face fontified t) 141 177 (fontified t) 177 179 (face font-lock-keyword-face fontified t) 179 242 (fontified t) 242 244 (face font-lock-keyword-face fontified t) 244 311 (fontified t) 311 313 (face font-lock-keyword-face fontified t) 313 376 (fontified t) 376 378 (face font-lock-keyword-face fontified t) 378 389 (fontified t) 389 391 (face font-lock-keyword-face fontified t) 391 392 (face font-lock-string-face fontified t) 392 394 (face font-lock-keyword-face fontified t) 394 411 (fontified t) 411 413 (face font-lock-keyword-face fontified t)) . 15986) (undo-tree-id5 . -73) (undo-tree-id6 . -411) (undo-tree-id7 . -411) (undo-tree-id8 . -412) 16400 (t 26474 22916 23024 797000)) nil (26474 23496 208916 962000) 0 nil])
+([nil nil ((15999 . 16002) (#("i" 0 1 (face font-lock-function-name-face fontified nil)) . -15999) (undo-tree-id3 . -1) (15990 . 16000) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -15990) (undo-tree-id4 . -1) (15986 . 15991) (15985 . 15986) 15985) nil (26474 23496 208912 425000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 16426 . 16427) (#("
+" 0 1 (fontified nil syntax-table (8388619) face tex-verbatim)) . -16443) (16426 . 16444) 16425) nil (26474 23496 208909 845000) 0 nil])
+([nil nil ((16428 . 16431) (#("begin" 0 5 (face tex-verbatim fontified t)) . 16428) (undo-tree-id0 . -4) (undo-tree-id1 . -5) (undo-tree-id2 . -5)) nil (26474 23496 208906 486000) 0 nil])
+([nil nil ((#(" " 0 1 (face tex-verbatim fontified t)) . 16080) (t 26474 23496 251272 53000)) nil (26474 23528 84125 762000) 0 nil])
+([nil nil ((#(" " 0 1 (face tex-verbatim fontified t)) . 16409) (undo-tree-id9 . -1) (undo-tree-id10 . -1)) nil (26474 23528 84122 285000) 0 nil])
+([nil nil ((16441 . 16462) (17641 . 17657) (t 26474 23528 124360 242000)) nil (26474 23554 267514 991000) 0 nil])
+([nil current ((17679 . 17694) (17702 . 17715)) nil (26474 23554 267511 108000) 0 nil])
 nil

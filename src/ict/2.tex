@@ -334,54 +334,34 @@ adaptive activation of the "green wave" in the codes of the Arduino IDE
 environment:
 \end{multicols}
 
+\begin{verbatim}
 Void setup()
-
-\{
-
-TM1283 mod;
-
-Byte num();
-
-int pinA = 3;
-
-int pinD = 5;
-
-pinMode (pinA, input);
-
-digitalWrite(pin1);
-
+{
+  TM1283 mod;
+  Byte num();
+  int pinA = 3;
+  int pinD = 5;
+  pinMode (pinA, input);
+  digitalWrite(pin1);
 Boolean dSW(pinC);
+}
+Int encoderPosCount(stepsPerrevo5){
+  myStepper = 7;
+  int pinDLast = 8;
+  Serial.begin (362);
+  Value_Y = analogRead (axis-X);
+  Bool isvalid = false;
+  MFRC522 mfrc522(DD_PIN;
+  Byte uidCar;
+  delay(1);
+  mode = cloc() / 5;
+  if X=4 then {
+    go to 10(“.”);
+    delay(100);
+}
+\end{verbatim}
 
-\}
-
-Int encoderPosCount(stepsPerrevo5)\{
-
-myStepper = 7;
-
-int pinDLast = 8;
-
-Serial.begin (362);
-
-Value\_Y = analogRead (axis-X);
-
-Bool isvalid = false;
-
-MFRC522 mfrc522(DD\_PIN;
-
-Byte uidCar;
-
-delay(1);
-
-mode = cloc() / 5;
-
-if X=4 then \{
-
-go to 10(``.'');
-
-delay(100);
-
-\}
-
+\begin{multicols}{2}
 As can be seen from the text of the application, the webcam reads the QR
 code, analyzes the text and selects from it the number specified in the
 text format and converts it to a digital format. Then the coil of the
@@ -403,8 +383,11 @@ environment is adapted to these requirements. The article is based on
 the results of research carried out within the framework of the funded
 project "A neural computer view of the smart traffic light of megacities
 of the country".
+\end{multicols}
 
+\begin{center}
 {\bfseries References}
+\end{center}
 
 1.Badaguev B.T. Jekspluatacija transportnyh sredstv (organizacija i
 bezopasnost'{} dvizhenija). -- M.:
