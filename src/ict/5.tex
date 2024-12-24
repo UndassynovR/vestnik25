@@ -1,12 +1,16 @@
 \id{IRSTI 28.23.29}
 
-{\bfseries THERMAL COMFORT PREDICTION USING SVM AND RANDOM FOREST MODEL}
+\begin{articleheader}
+\sectionwithauthors{N.B Assymkhan, A.Z.Kartbaev}{THERMAL COMFORT PREDICTION USING SVM AND RANDOM FOREST MODEL}
 
 {\bfseries N.B Assymkhan\textsuperscript{\envelope }, A.Z.Kartbaev}
+\end{articleheader}
 
+\begin{affiliation}
 Kazakh-British Technical University, Almaty, Kazakhstan
 
 \raggedright {\bfseries \textsuperscript{\envelope }}Correspondent-author anb.asymhan@gmail.com
+\end{affiliation}
 
 Predicting thermal comfort is crucial for optimizing built environments
 for human habitation, as it impacts health, productivity, and overall
@@ -38,14 +42,18 @@ more stable than SVM and plans to add new features to improve accuracy.
 temperature, thermal comfort, support vector machine (SVM), random
 forest (RF).
 
+\begin{articleheader}
 {\bfseries ПРОГНОЗИРОВАНИЕ ТЕПЛОВОГО КОМФОРТА С ПОМОЩЬЮ МОДЕЛИ SVM И RANDOM
 FOREST}
+\end{articleheader}
 
+\begin{affiliation}
 {\bfseries Н.Б.Асымхан\textsuperscript{\envelope }, А.З.Картбаев}
 
 Казахстанско-Британский Технический Университет,Алматы, Казахстан,
 
 e-mail: anb.asymhan@gmail.com
+\end{affiliation}
 
 Прогнозирование теплового комфорта имеет решающее значение для
 оптимизации строительных сред для человеческого проживания, так как оно
@@ -81,15 +89,17 @@ Forest (RF), использовались для прогнозирования 
 воздуха, температура, тепловой комфорт, Support Vector Machine (SVM),
 Random Forest (RF).
 
-{\bfseries SVM ЖӘНЕ RANDOM FOREST МОДЕЛДЕРІН ПАЙДАЛАНУ АРҚЫЛЫ}
-
-{\bfseries ЖЫЛУЛЫҚ ЖАЙЛЫЛЫҚТЫ БОЛЖАУ}
+\begin{articleheader}
+{\bfseries SVM ЖӘНЕ RANDOM FOREST МОДЕЛДЕРІН ПАЙДАЛАНУ АРҚЫЛЫ ЖЫЛУЛЫҚ ЖАЙЛЫЛЫҚТЫ БОЛЖАУ}
 
 {\bfseries Н.Б. Асымхан\textsuperscript{\envelope }, А.З.Картбаев}
+\end{articleheader}
 
+\begin{affiliation}
 Қазақстан-Британ Техникалық Университеті, Алматы, Қазақстан,
 
 e-mail: anb.asymhan@gmail.com
+\end{affiliation}
 
 Жылулық жайлылықты болжау адам тұруы үшін салынған ортаны оңтайландыру
 үшін өте маңызды, өйткені ол денсаулыққа, өнімділікке және жалпы
@@ -121,6 +131,7 @@ Forest SVM-ге қарағанда сенімдірек екенін дәлел�
 {\bfseries Tүйін сөздер:} жылыту, желдету және ауаны баптау, температура,
 термиялық жайлылық, Support Vector Machine (SVM), Random Forest (RF).
 
+\begin{multicols}{2}
 {\bfseries Introduction.} In the pursuit of optimizing built environments
 for human habitation, predicting thermal comfort emerges as a pivotal
 challenge. With climate change intensifying, the frequency and severity
@@ -331,15 +342,13 @@ of features that are most relevant to the thermal comfort prediction.
 
 - After initial filtering, we will choose variants of the features that
 closely correlate with temperature predictions.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image17}
-	\caption*{}
+	\includegraphics[width=0.6\textwidth]{media/ict/image17}
+	\caption*{Figure 1 -- Steps}
 \end{figure}
-
-
-{\bfseries Figure 1 -- Steps}
 
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi}.}
@@ -369,11 +378,8 @@ remove outliers if it is exist.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image18}
-	\caption*{}
+	\caption*{Figure 2 - Filtering scheme}
 \end{figure}
-
-
-{\bfseries Figure 2 - Filtering scheme}
 
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi}.}
@@ -385,11 +391,8 @@ remove outliers if it is exist.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image19}
-	\caption*{}
+	\caption*{Figure 3 - Encoding scheme}
 \end{figure}
-
-
-{\bfseries Figure 3 - Encoding scheme}
 
 When converting text to a number, there were two choices LabelEncoder or
 OneHotEncoder, the choice stopped at One- HotEncoder as it showed good
@@ -424,11 +427,8 @@ accuracy.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{media/ict/image20}
-	\caption*{}
+	\caption*{Figure 4 - Feature selection}
 \end{figure}
-
-
-{\bfseries Figure 4 - Feature selection}
 
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi}.}
@@ -697,89 +697,40 @@ used StandardScaler and MinMaxScaler models.
 Below are presented 1, 2, and 3 tables the beginning results of our
 prediction:
 
-{\bfseries Table 1 - Iteration of 17 features}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1708}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.509 & 0.451 & 0.509 & 0.436 \\
-% RF & 0.543 & 0.505 & 0.543 & 0.5 \\
-% \end{longtable}
 
-{\bfseries Table 2 - Iteration of 9 features}
+\begin{table}[H]
+\caption*{Table 1 - Iteration of 17 features}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 				score \\ \hline
+SVM   & 0.509    & 0.451     & 0.509  & 0.436        \\ \hline
+RF    & 0.543    & 0.505     & 0.543  & 0.5          \\ \hline
+\end{tabular}
+\end{table}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2114}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.507 & 0.461 & 0.507 & 0.438 \\
-% RF & 0.526 & 0.513 & 0.526 & 0.49 \\
-% \end{longtable}
+\begin{table}[H]
+\caption*{Table 2 - Iteration of 9 features}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 				score \\ \hline
+SVM   & 0.507    & 0.461     & 0.507  & 0.438        \\ \hline
+RF    & 0.526    & 0.513     & 0.526  & 0.49         \\ \hline
+\end{tabular}
+\end{table}
 
-{\bfseries Table 3 - Iteration of 15 features}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2242}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2202}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1707}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.533 & 0.448 & 0.533 & 0.433 \\
-% RF & 0.54 & 0.475 & 0.539 & 0.482 \\
-% \end{longtable}
+\begin{table}[H]
+\caption*{Table 3 - Iteration of 15 features}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 				score \\ \hline
+SVM   & 0.533    & 0.448     & 0.533  & 0.433        \\ \hline
+RF    & 0.54     & 0.475     & 0.539  & 0.482        \\ \hline
+\end{tabular}
+\end{table}
 
 According above results, we tried to improve accuracy using our
 hypothesis. Below presented 4, 5, and 6 tables show the results of
@@ -787,87 +738,11 @@ hypothesis. Below presented 4, 5, and 6 tables show the results of
 
 {\bfseries Table 4 - Iteration of 17 features with \emph{IQR}}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1707}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.522 & 0.44 & 0.522 & 0.441 \\
-% RF & 0.548 & 0.517 & 0.548 & 0.504 \\
-% \end{longtable}
 
 {\bfseries Table 5 - Iteration of 9 features with \emph{IQR}}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2204}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1706}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.507 & 0.44 & 0.383 & 0.424 \\
-% RF & 0.52 & 0.501 & 0.52 & 0.479 \\
-% \end{longtable}
 
 {\bfseries Table 6 - Iteration of 15 features with \emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1730}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2245}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2204}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2111}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.563 & 0.539 & 0.563 & 0.425 \\
-% RF & 0.57 & 0.494 & 0.57 & 0.5 \\
-% \end{longtable}
 
 From previous results, \emph{IQR} method upgrades accuracy approximately
 to 2-5\%. Next, we work with the reduction of label values to increase
@@ -875,176 +750,20 @@ the accuracy:
 
 {\bfseries Table 7 - Iteration of 17 features with reducing labels}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.715 & 0.644 & 0.715 & 0.614 \\
-% RF & 0.744 & 0.708 & 0.744 & 0.704 \\
-% \end{longtable}
-
 {\bfseries Table 8 - Iteration of 9 features with reducing labels}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1733}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2243}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2114}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.688 & 0.598 & 0.688 & 0.569 \\
-% RF & 0.699 & 0.657 & 0.699 & 0.645 \\
-% \end{longtable}
-
 {\bfseries Table 9 - Iteration of 15 features with reducing labels}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.78 & 0.608 & 0.78 & 0.683 \\
-% RF & 0.78 & 0.719 & 0.78 & 0.727 \\
-% \end{longtable}
 
 Adding \emph{IQR} method to the reduced features and get such results:
 
 {\bfseries Table 10 - Iteration of 17 features with reducing labels and
 \emph{IQR}}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1731}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2242}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.726 & 0.598 & 0.726 & 0.621 \\
-% RF & 0.733 & 0.678 & 0.733 & 0.688 \\
-% \end{longtable}
-
 {\bfseries Table 11 - Iteration of 9 features with reducing labels and
 \emph{IQR}}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1727}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2248}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2206}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1704}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.706 & 0.498 & 0.706 & 0.584 \\
-% RF & 0.717 & 0.668 & 0.717 & 0.653 \\
-% \end{longtable}
-
 {\bfseries Table 12 - Iteration of 15 features with reducing labels and
 \emph{IQR}}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1732}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2242}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2203}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.835 & 0.697 & 0.835 & 0.76 \\
-% RF & 0.821 & 0.738 & 0.821 & 0.766 \\
-% \end{longtable}
 
 There was also work on the alternative method. Here Thermal comfort and
 Thermal preference will change places. And now we will predict Thermal
@@ -1052,90 +771,13 @@ preference.
 
 {\bfseries Table 13 - Alternative iteration of 15 features}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1734}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2115}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.68 & 0.714 & 0.68 & 0.605 \\
-% RF & 0.714 & 0.712 & 0.714 & 0.685 \\
-% \end{longtable}
-
 {\bfseries Table 14 - Alternative iteration of 15 features with reducing
 labels}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1731}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2241}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2201}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1709}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2117}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.67 & 0.698 & 0.67 & 0.584 \\
-% RF & 0.705 & 0.702 & 0.705 & 0.673 \\
-% \end{longtable}
 
 {\bfseries Table 15 - Alternative iteration of 15 features with reducing
 labels and \emph{IQR}}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1731}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2244}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2202}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1710}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2113}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1 score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% SVM & 0.694 & 0.55 & 0.694 & 0.577 \\
-% RF & 0.709 & 0.676 & 0.709 & 0.651 \\
-% \end{longtable}
-
+\begin{multicols}{2}
 {\bfseries Conclusion.} As a result, we pass a verdict that added
 \emph{IQR} method, we worked with new 8 features and 7 features were
 already in other articles, considering the option with guessing Thermal
@@ -1153,8 +795,11 @@ a new work. Some commonly used algorithms for this purpose include
 Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs),
 Long Short-Term Memory (LSTM) Networks, Autoencoders, and Deep Belief
 Networks (DBNs).
+\end{multicols}
 
+\begin{center}
 {\bfseries References}
+\end{center}
 
 1. Christos G. Polycarpou, Marios M. Milis, George M. Panayiotou.
 Iot-enabled automatic synthesis of distributed feedback control schemes
@@ -1286,5 +931,3 @@ a.kartbaev@kbtu.kz;
 Картбаев А.З. -- PhD? Казахстанско-Британский Технического Университета,
 e-mail:
 \href{mailto:a.kartbaev@kbtu.kz}{\nolinkurl{a.kartbaev@kbtu.kz}};
-
-{\bfseries 
