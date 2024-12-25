@@ -1,14 +1,16 @@
 \id{МРНТИ 81.93.29}
 
-{\bfseries ПРИМЕНЕНИЕ НЕЙРОННЫХ СЕТЕЙ ДЛЯ ИДЕНТИФИКАЦИИ ГОЛОСА С УЧЕТОМ
-КАЗАХСКОГО АКЦЕНТА}
+\begin{articleheader}
+\sectionwithauthors{Т.С. Шорманов, А.Т. Мазакова,  М.С. Алиаскар, Ш.А. Джомартова, Т.Ж. Мазаков}{ПРИМЕНЕНИЕ НЕЙРОННЫХ СЕТЕЙ ДЛЯ ИДЕНТИФИКАЦИИ ГОЛОСА С УЧЕТОМ КАЗАХСКОГО АКЦЕНТА}
 
 {\bfseries \textsuperscript{1,2} Т.С. Шорманов, \textsuperscript{2}А.Т.
 Мазакова, \textsuperscript{1} М.С. Алиаскар, \textsuperscript{2}Ш.А.
 Джомартова,}
 
 {\bfseries \textsuperscript{1,2}Т.Ж. Мазаков\textsuperscript{\envelope }}
+\end{articleheader}
 
+\begin{affiliation}
 \textsuperscript{1}Международный инженерно-технологический университет,
 Алматы, Казахстан,
 
@@ -16,6 +18,7 @@
 Алматы, Казахстан
 
 \raggedright {\bfseries \textsuperscript{\envelope }}Корреспондент-автор: tmazakov@mail.ru
+\end{affiliation}
 
 Статья посвящена использованию нейронных сетей для идентификации
 человека по голосу.
@@ -51,13 +54,16 @@
 {\bfseries Ключевые слова}: биометрия, нейронная сеть, мел-частотные
 кепстральные коэффициенты, идентификация голоса, казахский акцент.
 
+\begin{articleheader}
 {\bfseries ҚАЗАҚ ТІЛІНІҢ АКЦЕНТІН ЕСКЕРТПЕ ДАУЫСТЫ АНЫҚТАУ ҮШІН НЕЙРЛІК
 ЖЕЛІЛЕРДІ ҚОЛДАНУ}
 
 {\bfseries \textsuperscript{1,2} Т.С. Шорманов, \textsuperscript{2}Ә.Т.
 Мазақова, \textsuperscript{1} М.С. Әлиасқар, \textsuperscript{2}Ш.А.
 Джомартова,}
+\end{articleheader}
 
+\begin{affiliation}
 {\bfseries \textsuperscript{1,2}Т.Ж. Мазақов\textsuperscript{\envelope }}
 
 \textsuperscript{1}Халықаралық инженерлік және технология университеті,
@@ -66,6 +72,7 @@
 университеті, Алматы, Қазақстан,
 
 e-mail: tmazakov@mail.ru
+\end{affiliation}
 
 Мақала адамды дауыс арқылы анықтау үшін нейрондық желілерді пайдалануға
 арналған.
@@ -98,6 +105,7 @@ e-mail: tmazakov@mail.ru
 {\bfseries Түйін сөздер:} биометрия, нейрондық желі, мел-жиілік цестральды
 коэффициенттер, дауысты анықтау, қазақша акцент.
 
+\begin{articleheader}
 {\bfseries APPLICATION OF NEURAL NETWORKS FOR VOICE IDENTIFICATION TAKING
 INTO ACCOUNT THE KAZAKH ACCENT}
 
@@ -105,7 +113,9 @@ INTO ACCOUNT THE KAZAKH ACCENT}
 Mazakova, \textsuperscript{1}M.S. Aliaskar, ²Sh.A. Jomartova,}
 
 {\bfseries \textsuperscript{1,2}T.Zh. Mazakov\textsuperscript{\envelope }}
+\end{articleheader}
 
+\begin{affiliation}
 \textsuperscript{1}International Engineering and Technology University,
 Almaty, Kazakhstan,
 
@@ -113,6 +123,7 @@ Almaty, Kazakhstan,
 Almaty, Kazakhstan,
 
 tmazakov@mail.ru
+\end{affiliation}
 
 The article is devoted to the use of neural networks for human voice
 identification.
@@ -146,6 +157,7 @@ research objectives are given..
 {\bfseries Keywords:} biometrics, neural network, mel-frequency cepstral
 coefficients, voice identification, Kazakh accent.
 
+\begin{multicols}{2}
 {\bfseries Введение}. Информационная безопасность является одной из важных
 задач в мировом сообществе, и это связано с резко возросшим влиянием
 глобальных информационных технологий на большинство сфер деятельности
@@ -434,35 +446,20 @@ BERTmultilingual и kazakhBERTmulti {[}14{]} для целей распозна�
 выраженным был акцент в аудиозаписи. Результаты, полученные с
 многоязычной моделью BERT и моделью kazakhBERTmulti, приведены в таблице
 1.
+\end{multicols}
 
-{\bfseries Таблица 1- Сравнение результатов}
+\begin{table}[H]
+\caption*{Таблица 1- Сравнение результатов}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model            & Accuracy & Recall & Precision & F1-score \\ \hline
+BERTmultilingual & 0.92     & 0.77   & 0.85      & 0.64     \\ \hline
+kazakhBERTmulti  & 0.92     & 0.84   & 0.92      & 0.68     \\ \hline
+\end{tabular}
+\end{table}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3285}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1691}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1671}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1690}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1663}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Model
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Accuracy
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Recall
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Precision
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% F1-score
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% BERTmultilingual & 0.92 & 0.77 & 0.85 & 0.64 \\
-% kazakhBERTmulti & 0.92 & 0.84 & 0.92 & 0.68 \\
-% \end{longtable}
-
+\begin{multicols}{2}
 Для multilingual BERT Russian F1 Score равен 0.64, для kazakhBERTmulti
 F1 Score равен 0.68 что показывает, что языковая модель работает
 достаточно хорошо на тестовой выборке.
@@ -495,12 +492,15 @@ F1 Score равен 0.68 что показывает, что языковая м
 математики и механики при КазНУ имени аль-Фараби и грантового
 финансирования научных исследований на 2023--2025 годы по проекту
 AP19678157.}
+\end{multicols}
 
+\begin{center}
 {\bfseries Литература}
+\end{center}
 
 1.HSBC' s Voice ID prevents £249 million of attempted
 fraud. {[}Электронный ресурс{]} URL:
-\url{https://www.finextra.com/newsarticle/37989/hsbcs-voice-id-prevents-249-million-of-attempted-fraud}
+\href{https://www.finextra.com/newsarticle/37989/hsbcs-voice-id-prevents-249-million-of-attempted-fraud}{https://www.finextra.com}
 
 2. Samant S.S., Bhanu Murthy N.L., Malapati A. Improving term weighting
 schemes for short text classification in vector space model.//IEEE
@@ -553,7 +553,7 @@ Professiy -- expert. Vvedenie v uridicheskuu spechialnoct.
 10. Основные черты казахского акцента в русской речи в области вокализма
 и суперсегментной фонетики. Электронный ресурс{]} URL:
 
-\url{https://rcdo.kz/publ/9555-osnovnye-cherty-kazahskogo-akcenta-v-russkoy-rechi-v-oblasti-vokalizma-i-supersegmentnoy-fonetiki.html}.
+\href{https://rcdo.kz/publ/9555-osnovnye-cherty-kazahskogo-akcenta-v-russkoy-rechi-v-oblasti-vokalizma-i-supersegmentnoy-fonetiki.html}{https://rcdo.kz}.
 {[}in Russian{]}
 
 11. Davis S., Mermelstein P. Comparison of Parametric Representations
