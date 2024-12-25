@@ -736,46 +736,151 @@ According above results, we tried to improve accuracy using our
 hypothesis. Below presented 4, 5, and 6 tables show the results of
 \emph{IQR} method:
 
-{\bfseries Table 4 - Iteration of 17 features with \emph{IQR}}
+\begin{table}[H]
+\caption*{Table 4 - Iteration of 17 features with \emph{IQR}}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.522    & 0.44      & 0.522  & 0.441    \\ \hline
+RF    & 0.548    & 0.517     & 0.548  & 0.504    \\ \hline
+\end{tabular}
+\end{table}
 
+\begin{table}[H]
+\caption*{Table 5 - Iteration of 9 features with \emph{IQR}}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.507    & 0.44      & 0.383  & 0.424    \\ \hline
+RF    & 0.52     & 0.501     & 0.52   & 0.479    \\ \hline
+\end{tabular}
+\end{table}
 
-{\bfseries Table 5 - Iteration of 9 features with \emph{IQR}}
-
-
-{\bfseries Table 6 - Iteration of 15 features with \emph{IQR}}
+\begin{table}[H]
+\caption*{Table 6 - Iteration of 15 features with \emph{IQR}}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.563    & 0.539     & 0.563  & 0.425    \\ \hline
+RF    & 0.57     & 0.494     & 0.57   & 0.5      \\ \hline
+\end{tabular}
+\end{table}
 
 From previous results, \emph{IQR} method upgrades accuracy approximately
 to 2-5\%. Next, we work with the reduction of label values to increase
 the accuracy:
 
-{\bfseries Table 7 - Iteration of 17 features with reducing labels}
+\begin{table}[H]
+\caption*{Table 7 - Iteration of 17 features with reducing labels}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.715    & 0.644     & 0.715  & 0.614    \\ \hline
+RF    & 0.744    & 0.708     & 0.744  & 0.704    \\ \hline
+\end{tabular}
+\end{table}
 
-{\bfseries Table 8 - Iteration of 9 features with reducing labels}
+\begin{table}[H]
+\caption*{Table 8 - Iteration of 9 features with reducing labels}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.688    & 0.598     & 0.688  & 0.569    \\ \hline
+RF    & 0.699    & 0.657     & 0.699  & 0.645    \\ \hline
+\end{tabular}
+\end{table}
 
-{\bfseries Table 9 - Iteration of 15 features with reducing labels}
+\begin{table}[H]
+\caption*{Table 9 - Iteration of 15 features with reducing labels}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.78     & 0.608     & 0.78   & 0.683    \\ \hline
+RF    & 0.78     & 0.719     & 0.78   & 0.727    \\ \hline
+\end{tabular}
+\end{table}
 
 Adding \emph{IQR} method to the reduced features and get such results:
 
-{\bfseries Table 10 - Iteration of 17 features with reducing labels and
-\emph{IQR}}
 
-{\bfseries Table 11 - Iteration of 9 features with reducing labels and
-\emph{IQR}}
+\begin{table}[H]
+\caption*{Table 10 - Iteration of 17 features with reducing labels and \emph{IQR}}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.726    & 0.598     & 0.726  & 0.621    \\ \hline
+RF    & 0.733    & 0.678     & 0.733  & 0.688    \\ \hline
+\end{tabular}
+\end{table}
 
-{\bfseries Table 12 - Iteration of 15 features with reducing labels and
+
+\begin{table}[H]
+\caption*{Table 11 - Iteration of 9 features with reducing labels and \emph{IQR}}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.706    & 0.498     & 0.706  & 0.584    \\ \hline
+RF    & 0.717    & 0.668     & 0.717  & 0.653    \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\caption*{Table 12 - Iteration of 15 features with reducing labels and
 \emph{IQR}}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.835    & 0.697     & 0.835  & 0.76     \\ \hline
+RF    & 0.821    & 0.738     & 0.821  & 0.766    \\ \hline
+\end{tabular}
+\end{table}
 
 There was also work on the alternative method. Here Thermal comfort and
 Thermal preference will change places. And now we will predict Thermal
 preference.
 
-{\bfseries Table 13 - Alternative iteration of 15 features}
+\begin{table}[H]
+\caption*{Table 13 - Alternative iteration of 15 features}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.68     & 0.714     & 0.68   & 0.605    \\ \hline
+RF    & 0.714    & 0.712     & 0.714  & 0.685    \\ \hline
+\end{tabular}
+\end{table}
 
-{\bfseries Table 14 - Alternative iteration of 15 features with reducing
-labels}
+\begin{table}[H]
+\caption*{Table 14 - Alternative iteration of 15 features with reducing labels}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.67     & 0.698     & 0.67   & 0.584    \\ \hline
+RF    & 0.705    & 0.702     & 0.705  & 0.673    \\ \hline
+\end{tabular}
+\end{table}
 
-{\bfseries Table 15 - Alternative iteration of 15 features with reducing
-labels and \emph{IQR}}
+\begin{table}[H]
+\caption*{Table 15 - Alternative iteration of 15 features with reducing labels and \emph{IQR}}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Model & Accuracy & Precision & Recall & F1 score \\ \hline
+SVM   & 0.694    & 0.55      & 0.694  & 0.577    \\ \hline
+RF    & 0.709    & 0.676     & 0.709  & 0.651    \\ \hline
+\end{tabular}
+\end{table}
 
 \begin{multicols}{2}
 {\bfseries Conclusion.} As a result, we pass a verdict that added

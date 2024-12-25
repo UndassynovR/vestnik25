@@ -1,8 +1,134 @@
 (undo-tree-save-format-version . 1)
-"df423b39a4c2977382263614b34c8ee7566c0a28"
+"109ebc76cdfca80cd4ffefea18fe822c471d0151"
 [nil nil nil nil (26474 23258 885363 445000) 0 nil]
 ([nil nil ((nil rear-nonsticky nil 274 . 275) (nil fontified nil 262 . 275) (262 . 275) (t 26474 22916 23024 797000)) nil (26474 23258 885362 520000) 0 nil])
 ([nil nil ((335 . 336) (#("
 " 0 1 (fontified t)) . -335) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) 274) nil (26474 23258 885361 279000) 0 nil])
-([nil current ((29190 . 29191) 335) nil (26474 23258 885333 99000) 0 nil])
+([nil nil ((29190 . 29191) 335) nil (26474 23258 885333 99000) 0 nil])
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 23) (undo-tree-id11 . -9) (t 26474 23258 907098 187000)) nil (26475 35801 29769 65000) 0 nil])
+([nil nil (23) nil (26475 35801 29767 667000) 0 nil])
+([nil nil ((42 . 43) (31 . 42) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -31) (undo-tree-id8 . -1) (27 . 32) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -27) (undo-tree-id9 . -1) (23 . 28) (#("e" 0 1 (face font-lock-keyword-face fontified t)) . -23) (undo-tree-id10 . -1) 24 (22 . 24)) nil (26475 35801 29766 584000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 106 . 107) (nil fontified nil 42 . 107) (42 . 107) 41) nil (26475 35801 29763 675000) 0 nil])
+([nil nil ((#("\\textsuperscript{\\envelope }" 0 16 (face (font-lock-keyword-face bold) fontified t) 16 17 (face (bold) fontified t) 17 26 (face (font-lock-keyword-face bold) fontified t) 26 27 (face (bold) fontified t) 27 28 (face (bold) rear-nonsticky t fontified t)) . 79) (undo-tree-id7 . -27)) nil (26475 35801 29762 632000) 0 nil])
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 42) (undo-tree-id0 . -9) (undo-tree-id1 . -2) (undo-tree-id2 . -2) (undo-tree-id3 . -2) (undo-tree-id4 . -2) (undo-tree-id5 . -2) (undo-tree-id6 . -10)) nil (26475 35801 29758 900000) 0 nil])
+([nil nil ((32 . 43) (#("i" 0 1 (face font-lock-function-name-face fontified nil)) . -32) (undo-tree-id17 . -1) (30 . 33) (#("a" 0 1 (face font-lock-function-name-face fontified t)) . -30) (undo-tree-id18 . -1) 31 (26 . 31) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -26) (undo-tree-id19 . -1) (23 . 27) (#("a" 0 1 (face font-lock-keyword-face fontified t)) . -23) (undo-tree-id20 . -1) 24 (22 . 24) (21 . 22) (t 26475 35801 80093 701000) 21) nil (26475 35821 411405 459000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 250 . 251) (#("
+" 0 1 (fontified nil)) . -272) (250 . 273) 203) nil (26475 35821 411400 220000) 0 nil])
+([nil nil ((252 . 255) (#("begin" 0 5 (face font-lock-keyword-face fontified t)) . 252) (undo-tree-id16 . -4)) nil (26475 35821 411399 380000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 271 . 272) (#("
+" 0 1 (fontified nil)) . -293) (271 . 294)) nil (26475 35821 411398 259000) 0 nil])
+([nil nil ((287 . 290) (#("i" 0 1 (face font-lock-function-name-face fontified nil latex-env-pair t)) . -287) (undo-tree-id13 . -1) (284 . 288) (#("i" 0 1 (face font-lock-function-name-face fontified nil latex-env-pair t)) . -284) (undo-tree-id14 . -1) (282 . 285) (#("i" 0 1 (face font-lock-function-name-face fontified nil latex-env-pair t)) . -282) (279 . 283) (#("articleheader" 0 13 (face font-lock-function-name-face fontified t latex-env-pair t)) . 279) (undo-tree-id15 . -12)) nil (26475 35821 411397 14000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 486 . 487) (#("
+" 0 1 (fontified nil)) . -506) (486 . 507) 379) nil (26475 35821 411393 578000) 0 nil])
+([nil nil ((488 . 491) (#("begin" 0 5 (face font-lock-keyword-face fontified t)) . 488) (undo-tree-id12 . -4)) nil (26475 35821 411390 739000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 2089 . 2090) (#("
+" 0 1 (fontified nil)) . -2111) (2089 . 2112) (t 26475 35821 446498 440000)) nil (26475 35911 266518 67000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 2286 . 2287) (#("
+" 0 1 (fontified nil)) . -2327) (2286 . 2328) 2218) nil (26475 35911 266517 401000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 2328)) nil (26475 35911 266516 806000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 2464 . 2465) (#("
+" 0 1 (fontified nil)) . -2482) (2464 . 2483) 2406) nil (26475 35911 266516 284000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 4176 . 4177) (#("
+" 0 1 (fontified nil)) . -4198) (4176 . 4199)) nil (26475 35911 266515 320000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 4354) (undo-tree-id21 . -1)) nil (26475 35911 266514 674000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 4353 . 4354) (#("
+" 0 1 (fontified nil)) . -4394) (4353 . 4395) 4284) nil (26475 35911 266506 657000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 4518 . 4519) (#("
+" 0 1 (fontified nil)) . -4536) (4518 . 4537) 4460) nil (26475 35911 266502 598000) 0 nil])
+([nil nil ((6094 . 6115) (14887 . 14903) (t 26475 35911 305872 40000)) nil (26475 35919 251768 994000) 0 nil])
+([nil nil ((#("{\\bfseries 1-сурет. Екі модель үшін классификатор жоғалтуының графикалық
+салыстырылуы}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 85 (face (bold) fontified t) 85 86 (fontified t)) . -15041) (undo-tree-id140 . -14) (undo-tree-id141 . -14) (undo-tree-id142 . -14) 15055 (t 26475 35919 280638 947000)) nil (26475 35952 600579 801000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 15097 . 15098) (nil fontified nil 15024 . 15098) (15024 . 15098)) nil (26475 35952 600577 629000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15113) (undo-tree-id126 . -1) (undo-tree-id127 . -1) (undo-tree-id128 . -1) (undo-tree-id129 . -1) (undo-tree-id130 . -1) (undo-tree-id131 . -1) (undo-tree-id132 . -1) (undo-tree-id133 . -1) (undo-tree-id134 . -1) (undo-tree-id135 . -1) (undo-tree-id136 . -1) (undo-tree-id137 . -1) (undo-tree-id138 . -1) (undo-tree-id139 . -1)) nil (26475 35952 600570 411000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15113) (undo-tree-id100 . -1) (undo-tree-id101 . -1) (undo-tree-id102 . -1) (undo-tree-id103 . -1) (undo-tree-id104 . -1) (undo-tree-id105 . -1) (undo-tree-id106 . -1) (undo-tree-id107 . -1) (undo-tree-id108 . -1) (undo-tree-id109 . -1) (undo-tree-id110 . -1) (undo-tree-id111 . -1) (undo-tree-id112 . -1) (undo-tree-id113 . -1) (undo-tree-id114 . -1) (undo-tree-id115 . -1) (undo-tree-id116 . -1) (undo-tree-id117 . -1) (undo-tree-id118 . -1) (undo-tree-id119 . -1) (undo-tree-id120 . -1) (undo-tree-id121 . -1) (undo-tree-id122 . -1) (undo-tree-id123 . -1) (undo-tree-id124 . -1) (undo-tree-id125 . -1)) nil (26475 35952 600562 99000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15113) (undo-tree-id98 . -1) (undo-tree-id99 . -1)) nil (26475 35952 600524 748000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15113)) nil (26475 35952 600522 965000) 0 nil])
+([nil nil ((#("{\\bfseries 2-сурет. Екі модель арасындағы рамканың регрессия жоғалтуын
+салыстыру}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 80 (face (bold) fontified t) 80 81 (fontified t)) . -15229) (undo-tree-id60 . -71) (undo-tree-id61 . -71) (undo-tree-id62 . -71) (undo-tree-id63 . -71) (undo-tree-id64 . -71) (undo-tree-id65 . -71) (undo-tree-id66 . -71) (undo-tree-id67 . -71) (undo-tree-id68 . -71) (undo-tree-id69 . -71) (undo-tree-id70 . -71) (undo-tree-id71 . -71) (undo-tree-id72 . -71) (undo-tree-id73 . -71) (undo-tree-id74 . -71) (undo-tree-id75 . -71) (undo-tree-id76 . -71) (undo-tree-id77 . -71) (undo-tree-id78 . -71) (undo-tree-id79 . -71) (undo-tree-id80 . -71) (undo-tree-id81 . -71) (undo-tree-id82 . -71) (undo-tree-id83 . -71) (undo-tree-id84 . -71) (undo-tree-id85 . -71) (undo-tree-id86 . -71) (undo-tree-id87 . -71) (undo-tree-id88 . -71) (undo-tree-id89 . -71) (undo-tree-id90 . -71) (undo-tree-id91 . -71) (undo-tree-id92 . -71) (undo-tree-id93 . -71) (undo-tree-id94 . -71) (undo-tree-id95 . -71) (undo-tree-id96 . -71) (undo-tree-id97 . -71) 15300) nil (26475 35952 600521 781000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 15280 . 15281) (nil fontified nil 15212 . 15281) (15212 . 15281)) nil (26475 35952 600499 442000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15296) (undo-tree-id58 . -1) (undo-tree-id59 . -1)) nil (26475 35952 600498 686000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15296) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . -1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1)) nil (26475 35952 600495 520000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15296) (undo-tree-id22 . -1)) nil (26475 35952 600469 748000) 0 nil])
+([nil nil ((15297 . 15318) (17961 . 17977) (t 26475 35952 637663 977000)) nil (26475 35984 736165 322000) 0 nil])
+([nil nil ((#("{\\bfseries 3-сурет. Faster R-CNN моделін оқыту нәтижелері}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 57 (face (bold) fontified t) 57 58 (fontified t)) . -18115) (undo-tree-id203 . -18) (undo-tree-id204 . -18) 18133) nil (26475 35984 736164 826000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 18143 . 18144) (nil fontified nil 18098 . 18144) (18098 . 18144)) nil (26475 35984 736163 590000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 18160) (undo-tree-id201 . -1) (undo-tree-id202 . -1)) nil (26475 35984 736163 47000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 18160) (undo-tree-id200 . -1)) nil (26475 35984 736161 658000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 18160)) nil (26475 35984 736160 788000) 0 nil])
+([nil nil ((#("{\\bfseries 4-сурет. YOLOv8 модельсі бойынша оқыту нәтижелері}" 0 1 (fontified t) 1 7 (face font-lock-keyword-face fontified t) 7 10 (face font-lock-keyword-face fontified t) 10 60 (face (bold) fontified t) 60 61 (fontified t)) . -19651) (undo-tree-id189 . -18) (undo-tree-id190 . -18) (undo-tree-id191 . -18) (undo-tree-id192 . -18) (undo-tree-id193 . -18) (undo-tree-id194 . -18) (undo-tree-id195 . -18) (undo-tree-id196 . -18) (undo-tree-id197 . -18) (undo-tree-id198 . -18) (undo-tree-id199 . -18) 19669) nil (26475 35984 736160 160000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 19682 . 19683) (nil fontified nil 19634 . 19683) (19634 . 19683)) nil (26475 35984 736154 734000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 19698) (undo-tree-id175 . -1) (undo-tree-id176 . -1) (undo-tree-id177 . -1) (undo-tree-id178 . -1) (undo-tree-id179 . -1) (undo-tree-id180 . -1) (undo-tree-id181 . -1) (undo-tree-id182 . -1) (undo-tree-id183 . -1) (undo-tree-id184 . -1) (undo-tree-id185 . -1) (undo-tree-id186 . -1) (undo-tree-id187 . -1) (undo-tree-id188 . -1)) nil (26475 35984 736153 724000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 19698) (undo-tree-id148 . -1) (undo-tree-id149 . -1) (undo-tree-id150 . -1) (undo-tree-id151 . -1) (undo-tree-id152 . -1) (undo-tree-id153 . -1) (undo-tree-id154 . -1) (undo-tree-id155 . -1) (undo-tree-id156 . -1) (undo-tree-id157 . -1) (undo-tree-id158 . -1) (undo-tree-id159 . -1) (undo-tree-id160 . -1) (undo-tree-id161 . -1) (undo-tree-id162 . -1) (undo-tree-id163 . -1) (undo-tree-id164 . -1) (undo-tree-id165 . -1) (undo-tree-id166 . -1) (undo-tree-id167 . -1) (undo-tree-id168 . -1) (undo-tree-id169 . -1) (undo-tree-id170 . -1) (undo-tree-id171 . -1) (undo-tree-id172 . -1) (undo-tree-id173 . -1) (undo-tree-id174 . -1)) nil (26475 35984 736135 339000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 19698) (undo-tree-id147 . -1)) nil (26475 35984 736120 107000) 0 nil])
+([nil nil ((#("{\\bfseries 5-сурет. Сүт безі қатерлі ісігі патологиясын анықтау моделі}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 33 (face (bold) fontified t) 33 70 (face (bold) fontified t) 70 71 (fontified t)) . -19815) (undo-tree-id145 . -12) (undo-tree-id146 . -12) 19827) nil (26475 35984 736118 749000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 19856 . 19857) (nil fontified nil 19798 . 19857) (19798 . 19857)) nil (26475 35984 736116 511000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 19872) (undo-tree-id144 . -1)) nil (26475 35984 736115 977000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 19872) (undo-tree-id143 . -1)) nil (26475 35984 736114 657000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 19872)) nil (26475 35984 736106 451000) 0 nil])
+([nil nil ((19873 . 19894) (22361 . 22377)) nil (26475 35984 736105 892000) 0 nil])
+([nil nil ((22399 . 22414) (22422 . 22435)) nil (26475 35984 736102 188000) 0 nil])
+([nil nil ((#("Әдістеме Faster R-CNN-ның соңғы нәтижелеріне оқу моделінің мөлшері мен
+түрлі оқу параметрлерінің әсерін талдауға бағытталған. Бұл сүт
+бездерінің патологияларын анықтау кезінде максималды дәлдікке қол
+жеткізу үшін оңтайлы параметрлер мен жағдайларды анықтауға мүмкіндік
+береді. Соңғы нәтижелер мен қорытындылар медициналық тәжірибеде сүт безі
+патологиясын жоғары дәлдікпен анықтаудың тиімді құралы ретінде Faster
+R-CNN әдісін таңдаудың негізін құрайды. Әдістеме сонымен қатар, Faster
+R-CNN арқылы анықталған патологияларды автоматтандырылған және қолмен
+талдау механизмдерімен сапаны бақылау жүйесін құруды көздейді. Бұл кезең
+нақты клиникалық тәжірибеде модель нәтижелерінің сенімділігі мен
+дәлдігін тексеруге бағытталған. Анықталған өзгерістерді медициналық
+мамандардың қолмен тексеруі патологияларды дәл анықтауға қосымша
+сенімділік деңгейін қамтамасыз етеді, әсіресе жоғары дәлдік аса маңызды
+болған жағдайда. Бұдан бөлек, әдістеме Faster R-CNN моделін нақты
+уақытта немесе шын уақыт режимінде қолдану үшін қажетті есептеу
+ресурстарын талдауды қамтиды. Бұл әзірленген әдісті диагностикалық
+тиімділігі жоғары медициналық мекемелерге интеграциялау мүмкіндігін
+қарастырған кезде маңызды аспект болып табылады. Faster R-CNN
+нәтижелерін басқа машиналық оқыту әдістерімен және маммографиядағы
+дәстүрлі тәсілдермен салыстыру сүт безі патологиясын анықтаудағы осы
+әдістің артықшылықтарын айқындайды. Ұсынылған тәсіл диагностика сапасын
+айтарлықтай жақсартуға және сүт безі ауруларын ерте анықтау арқылы
+тиімділігін арттыруға мүмкіндік береді.
+
+" 0 71 (fontified t) 71 277 (fontified t) 277 342 (fontified t) 342 691 (fontified t) 691 940 (fontified t) 940 962 (fontified t) 962 1080 (fontified t) 1080 1093 (fontified t) 1093 1223 (fontified t) 1223 1299 (fontified t) 1299 1359 (fontified t) 1359 1498 (fontified t) 1498 1499 (fontified t) 1499 1538 (fontified t) 1538 1539 (fontified t)) . 15318) (undo-tree-id208 . -1538) (undo-tree-id209 . -1538) (undo-tree-id210 . -7) (undo-tree-id211 . -1538) (undo-tree-id212 . -1538) (undo-tree-id213 . -1538) 16856 (t 26475 35984 759725 95000)) nil (26475 36052 22752 797000) 0 nil])
+([nil nil ((14907 . 14908) 14838) nil (26475 36052 22746 774000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 14908 . 14909) (#("
+" 0 1 (fontified nil)) . -16447) (14908 . 16448)) nil (26475 36052 22745 682000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16447) (undo-tree-id205 . 1) (undo-tree-id206 . -1) (undo-tree-id207 . -1)) nil (26475 36052 22742 272000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -16520) (t 26475 36052 56758 78000) (16521 . 16522) 16520 (t 26475 36052 56758 78000)) nil (26475 36153 578825 480000) 0 nil])
+([nil nil ((nil fontified t 16520 . 16521) (#("9" 0 1 (fontified t)) . -16520) (16521 . 16522) 16520) nil (26475 36153 578824 59000) 0 nil])
+([nil nil ((nil fontified t 16520 . 16521) (#("8" 0 1 (fontified t)) . -16520) (16521 . 16522) 16520) nil (26475 36153 578822 880000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -16708) (16709 . 16710) 16708) nil (26475 36153 578815 375000) 0 nil])
+([nil nil ((#("\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image26}
+	\\caption*{4-сурет. YOLOv8 модельсі бойынша оқыту нәтижелері}
+\\end{figure}
+
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 13 (face font-lock-function-name-face fontified t latex-env-pair t) 13 14 (fontified t latex-env-pair t) 14 19 (fontified t) 19 29 (face font-lock-keyword-face fontified t) 29 31 (fontified t) 31 47 (face font-lock-keyword-face fontified t) 47 52 (fontified t) 52 57 (fontified t) 57 67 (fontified t face font-lock-keyword-face) 67 69 (fontified t) 69 86 (fontified t face font-lock-builtin-face) 86 88 (fontified t) 88 89 (fontified t) 89 98 (face font-lock-keyword-face fontified t) 98 99 (fontified t) 99 147 (fontified t) 147 148 (fontified t rear-nonsticky t) 148 150 (fontified t) 150 154 (face font-lock-keyword-face fontified t) 154 155 (fontified t latex-env-pair t) 155 161 (face font-lock-function-name-face fontified t latex-env-pair t) 161 162 (fontified t latex-env-pair t) 162 163 (fontified t) 163 164 (fontified t)) . 19535) (undo-tree-id214 . -163) (undo-tree-id215 . -163) (undo-tree-id216 . -16) (undo-tree-id217 . -163) (undo-tree-id218 . -150) (undo-tree-id219 . -163) (undo-tree-id220 . -163) (undo-tree-id221 . -99) (undo-tree-id222 . -16) (undo-tree-id223 . -16) (undo-tree-id224 . -163) 19698 (t 26475 36153 633789 49000)) nil (26475 36164 311343 259000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 18159 . 18160) (#("
+" 0 1 (fontified nil)) . -18323) (18159 . 18324)) nil (26475 36164 311324 358000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -18055) (t 26475 36164 350475 799000) (18056 . 18057) 18055 (t 26475 36164 350475 799000)) nil (26475 36189 691454 626000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -18216) (18217 . 18218) 18216) nil (26475 36189 691450 143000) 0 nil])
+([nil current ((18324 . 18345) (19698 . 19714) (t 26475 36189 730733 934000)) nil (26475 36207 726592 348000) 0 nil])
 nil
