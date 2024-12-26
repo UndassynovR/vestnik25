@@ -1,0 +1,62 @@
+(undo-tree-save-format-version . 1)
+"b00a77447ef363e06650ad2e16e125453fdee8fa"
+[nil nil nil nil (26477 11945 65745 674000) 0 nil]
+([nil nil ((nil rear-nonsticky nil 791 . 792) (nil fontified nil 779 . 792) (779 . 792) (t 26474 22916 9025 203000)) nil (26477 11945 65744 417000) 0 nil])
+([nil nil ((88947 . 88948) 791) nil (26477 11945 65740 317000) 0 nil])
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 23) (undo-tree-id62 . -9) (undo-tree-id63 . -10) (t 26477 11945 99664 902000)) nil (26477 12299 103014 446000) 0 nil])
+([nil nil ((31 . 43) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -31) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (27 . 32) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -27) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (23 . 28) (#("e" 0 1 (face font-lock-keyword-face fontified t)) . -23) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . -1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (#("c" 0 1 (face font-lock-keyword-face fontified t)) . -24) (undo-tree-id45 . -1) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1) (undo-tree-id58 . -1) (undo-tree-id59 . -1) (undo-tree-id60 . -1) (undo-tree-id61 . -1) 25 (22 . 25)) nil (26477 12299 103011 119000) 0 nil])
+([nil nil ((101 . 102) (#("
+" 0 1 (fontified t)) . -101) (undo-tree-id0 . -1) 42) nil (26477 12299 102969 144000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 168 . 169) (nil fontified nil 42 . 169) (42 . 169) 41 (t 26477 12299 153448 684000)) nil (26477 12388 282530 973000) 0 nil])
+([nil nil ((22 . 44) (595 . 615)) nil (26477 12388 282530 333000) 0 nil])
+([nil nil ((638 . 658) (1042 . 1060)) nil (26477 12388 282529 811000) 0 nil])
+([nil nil ((3738 . 3760) (4165 . 4185)) nil (26477 12388 282529 17000) 0 nil])
+([nil nil ((4208 . 4228) (4554 . 4572)) nil (26477 12388 282528 427000) 0 nil])
+([nil nil ((7409 . 7431) (7822 . 7842)) nil (26477 12388 282527 698000) 0 nil])
+([nil nil ((7865 . 7885) (8216 . 8234)) nil (26477 12388 282527 293000) 0 nil])
+([nil nil ((10945 . 10966) (21433 . 21449)) nil (26477 12388 282526 862000) 0 nil])
+([nil nil ((23122 . 23143) (25705 . 25721)) nil (26477 12388 282526 450000) 0 nil])
+([nil nil ((#("{\\bfseries Рис. 1 -- Визуализированная схема системы прямого осмоса}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 67 (face (bold) fontified t) 67 68 (fontified t)) . -25860) (undo-tree-id90 . -63) (undo-tree-id91 . -63) 25923) nil (26477 12388 282525 861000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 25898 . 25899) (nil fontified nil 25843 . 25899) (25843 . 25899)) nil (26477 12388 282523 780000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 25914) (undo-tree-id88 . -1) (undo-tree-id89 . -1)) nil (26477 12388 282523 36000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 25914) (undo-tree-id87 . -1)) nil (26477 12388 282521 171000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 25914) (undo-tree-id86 . -1)) nil (26477 12388 282520 72000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 25901 . 25902) (#("
+" 0 1 (fontified nil)) . -25969) (25900 . 25970) 25832) nil (26477 12388 282518 993000) 0 nil])
+([nil nil ((#("Рис. 1 -- Визуализированная схема системы прямого осмоса" 0 55 (fontified t) 55 56 (fontified t rear-nonsticky t)) . 25912) (undo-tree-id84 . -55) (undo-tree-id85 . -4) 25916) nil (26477 12388 282518 193000) 0 nil])
+([nil nil ((25997 . 25998) (#("
+" 0 1 (face (italic) fontified t)) . -25997) 25928) nil (26477 12388 282516 502000) 0 nil])
+([nil nil ((#("\\emph{Опреснение морской воды методом прямого осмоса с использованием растворов хлорида натрия (NaCl)}" 0 5 (face font-lock-keyword-face fontified t) 5 6 (fontified t) 6 69 (face (italic) fontified t) 69 70 (face (italic) fontified t) 70 101 (face (italic) fontified t) 101 102 (fontified t)) . 25928) (undo-tree-id83 . -101)) nil (26477 12388 282515 813000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 26013 . 26014) (nil fontified nil 25912 . 26014) (25912 . 26014)) nil (26477 12388 282514 649000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 26029) (undo-tree-id82 . -1)) nil (26477 12388 282514 5000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 26029)) nil (26477 12388 282512 701000) 0 nil])
+([nil nil ((#("{\\bfseries Рис. 3 - Влияние концентрации вытяжного раствора на поток воды в
+зависимости от времени в процессе прямого осмоса}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 124 (face (bold) fontified t) 124 125 (fontified t)) . -45117) (undo-tree-id80 . -76) (undo-tree-id81 . -76) 45193) nil (26477 12388 282512 17000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 45212 . 45213) (nil fontified nil 45100 . 45213) (45100 . 45213)) nil (26477 12388 282510 424000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 45229) (undo-tree-id69 . -1) (undo-tree-id70 . -1) (undo-tree-id71 . -1) (undo-tree-id72 . -1) (undo-tree-id73 . -1) (undo-tree-id74 . -1) (undo-tree-id75 . -1) (undo-tree-id76 . -1) (undo-tree-id77 . -1) (undo-tree-id78 . -1) (undo-tree-id79 . -1)) nil (26477 12388 282509 581000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 45229) (undo-tree-id66 . -1) (undo-tree-id67 . -1) (undo-tree-id68 . -1)) nil (26477 12388 282500 951000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 45229)) nil (26477 12388 282497 959000) 0 nil])
+([nil nil ((#("{\\bfseries Рис. 4 -- Влияние концентрации вытяжного раствора на поток воды
+в зависимости от времени в процессе прямого осмоса}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 125 (face (bold) fontified t) 125 126 (fontified t)) . -64975) (undo-tree-id64 . -75) (undo-tree-id65 . -75) 65050) nil (26477 12388 282497 5000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 65071 . 65072) (nil fontified nil 64958 . 65072) (64958 . 65072)) nil (26477 12388 282484 393000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 65088) (undo-tree-id94 . -1) (t 26477 12388 348883 315000)) nil (26477 12389 580401 472000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 65088) (undo-tree-id93 . -1)) nil (26477 12389 580399 11000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 65088) (undo-tree-id92 . -1)) nil (26477 12389 580394 525000) 0 nil])
+([nil nil ((74041 . 74062) (79661 . 79677) 74041 (t 26477 12389 622846 696000)) nil (26477 12421 115075 503000) 0 nil])
+([nil nil ((79699 . 79714) (79722 . 79735)) nil (26477 12421 115074 498000) 0 nil])
+([nil nil ((79751 . 79770) (86283 . 86300)) nil (26477 12421 115073 889000) 0 nil])
+([nil nil ((86320 . 86339) (89467 . 89484)) nil (26477 12421 115072 902000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 88002 . 88003) (nil fontified nil 87991 . 88003) (87991 . 88003)) nil (26477 12421 115071 834000) 0 nil])
+([nil current ((nil rear-nonsticky nil 86350 . 86351) (nil fontified nil 86339 . 86351) (86339 . 86351)) nil (26477 12421 115067 552000) 0 nil])
+nil

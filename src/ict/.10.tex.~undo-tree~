@@ -1,8 +1,1139 @@
 (undo-tree-save-format-version . 1)
-"e69ceccb8397d7d3fd0c3d3f839e25eb2b8a9593"
+"0ce63f2746cc97970e7c7f1eb4d676ad801bee1b"
 [nil nil nil nil (26474 23284 682867 269000) 0 nil]
 ([nil nil ((nil rear-nonsticky nil 409 . 410) (nil fontified nil 397 . 410) (397 . 410) (t 26474 22916 22024 826000)) nil (26474 23284 682866 303000) 0 nil])
 ([nil nil ((78416 . 78417) 409) nil (26474 23284 682862 764000) 0 nil])
-([nil current ((470 . 471) (#("
+([nil nil ((470 . 471) (#("
 " 0 1 (fontified t)) . -470) (undo-tree-id0 . -1) 409 (t 26474 23284 731350 386000)) nil (26474 23286 671531 636000) 0 nil])
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 23) (undo-tree-id2 . -9) (t 26474 23286 706293 196000)) nil (26477 5293 764230 952000) 0 nil])
+([nil nil (23) nil (26477 5293 764229 433000) 0 nil])
+([nil nil ((31 . 43) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -31) (undo-tree-id0 . -1) (27 . 32) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -27) (undo-tree-id1 . -1) (22 . 28)) nil (26477 5300 123148 502000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 86 . 87) (nil fontified nil 42 . 87) (42 . 87)) nil (26477 5314 641704 894000) 0 nil] [nil nil ((nil rear-nonsticky nil 85 . 86) (nil fontified nil 41 . 86) (41 . 86) 42) ((#("Д.К.Даркенбаев, Г.Ж.Жакшиликова, Н.О.Мекебаев" 0 44 (fontified nil) 44 45 (rear-nonsticky nil fontified nil)) . 41) (undo-tree-id7 . -44) (undo-tree-id8 . -45) (undo-tree-id9 . -44) (undo-tree-id10 . -44) (nil rear-nonsticky t 85 . 86)) (26477 5300 123064 306000) 0 nil] [nil nil ((nil rear-nonsticky nil 42 . 43) (nil fontified nil 42 . 43) (42 . 43)) ((#("}" 0 1 (rear-nonsticky nil fontified nil)) . 42) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (nil rear-nonsticky t 42 . 43)) (26477 5293 764205 254000) 0 nil])
+([nil nil ((22 . 555) (#("\\sectionwithauthors{Д.К.Даркенбаев, Г.Ж.Жакшиликова, Н.О.Мекебаев}{БІЛІМ БЕРУГЕ АРНАЛҒАН АҚПАРАТТЫҚ ЖҮЙЕ ӘЗІРЛЕУ}
+
+{\\bfseries \\textsuperscript{1}Д.К.Даркенбаев\\textsuperscript{\\envelope },
+\\textsuperscript{2}Г.Ж. Жакшиликова, \\textsuperscript{2}Н.О.Мекебаев}
+
+\\textsuperscript{1}әл-Фараби атындағы Қазақ ұлттық университеті, Алматы,
+Қазақстан,
+
+\\textsuperscript{2}Қазақ ұлттық қыздар педагогикалық университеті,
+Алматы, Қазақстан
+
+\\raggedright {\\bfseries \\textsuperscript{\\envelope }}Корреспондент-автор: dauren.kadyrovich@gmail.com
+" 0 19 (face font-lock-keyword-face fontified t) 19 20 (fontified t) 20 64 (fontified t) 64 65 (rear-nonsticky t fontified t) 65 66 (fontified t) 66 67 (fontified t) 67 112 (fontified t) 112 114 (fontified t) 114 116 (fontified t) 116 125 (face font-lock-keyword-face fontified t) 125 126 (face (bold) fontified t) 126 142 (face (font-lock-keyword-face bold) fontified t) 142 159 (face (bold) fontified t) 159 175 (face (font-lock-keyword-face bold) fontified t) 175 176 (face (bold) fontified t) 176 185 (face (font-lock-keyword-face bold) fontified t) 185 189 (face (bold) fontified t) 189 205 (face (font-lock-keyword-face bold) fontified t) 205 226 (face (bold) fontified t) 226 242 (face (font-lock-keyword-face bold) fontified t) 242 257 (face (bold) fontified t) 257 260 (fontified t) 260 276 (face font-lock-keyword-face fontified t) 276 345 (fontified t) 345 361 (face font-lock-keyword-face fontified t) 361 431 (fontified t) 431 443 (face font-lock-keyword-face fontified t) 443 445 (fontified t) 445 454 (face font-lock-keyword-face fontified t) 454 455 (face (bold) fontified t) 455 471 (face (font-lock-keyword-face bold) fontified t) 471 472 (face (bold) fontified t) 472 481 (face (font-lock-keyword-face bold) fontified t) 481 483 (face (bold) fontified t) 483 533 (fontified t)) . 22) (t 26477 5302 709985 124000)) nil (26477 5357 958346 523000) 0 nil] [nil nil ((22 . 42) (555 . 573) (t 26477 5302 709985 124000)) ((#("\\end{affiliation}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 18 (fontified t)) . 555) (undo-tree-id11 . 18) (#("\\begin{affiliation}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (latex-env-pair t fontified t) 7 18 (face font-lock-function-name-face latex-env-pair t fontified t) 18 19 (latex-env-pair t fontified t) 19 20 (fontified t)) . 22) (undo-tree-id12 . -20)) (26477 5314 641417 94000) 0 nil])
+nil
+nil
+([nil nil ((42 . 47) (#("д.к.д" 0 5 (fontified t)) . 42) 46) nil (26477 5357 958345 701000) 0 nil])
+nil
+([nil nil ((58 . 63) (#("г.ж.ж" 0 5 (fontified t)) . 58) 62) nil (26477 5357 958344 769000) 0 nil])
+([nil nil ((75 . 80) (#("н.о.м" 0 5 (fontified t)) . 75) 79) nil (26477 5357 958344 83000) 0 nil])
+([nil nil ((167 . 172) (#("д.к.д" 0 5 (face (bold) fontified t)) . 167) 171) nil (26477 5357 958343 152000) 0 nil])
+([nil nil ((230 . 235) (#("г.ж. " 0 5 (face (bold) fontified t)) . 230) 234) nil (26477 5357 958342 318000) 0 nil])
+([nil nil ((#(" " 0 1 (fontified t)) . 234) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1)) nil (26477 5361 656043 972000) 0 nil])
+([nil nil ((234 . 235) (#("ж" 0 1 (fontified t)) . 234)) nil (26477 5369 403821 294000) 0 nil] [nil nil ((211 . 280) (#("\\textsuperscript{2}Г.Ж.жакшиликова, \\textsuperscript{2}н.о.мекебаев}
+" 0 16 (face font-lock-keyword-face fontified t) 16 23 (fontified t) 23 24 (fontified t) 24 36 (fontified t) 36 52 (face font-lock-keyword-face fontified t) 52 67 (fontified t) 67 69 (fontified t)) . 211) 234) ((211 . 280) (#("\\TEXTSUPERSCRIPT{2}Г.Ж.ЖАКШИЛИКОВА, \\TEXTSUPERSCRIPT{2}Н.О.МЕКЕБАЕВ}
+" 0 16 (face font-lock-keyword-face fontified t) 16 23 (fontified t) 23 24 (fontified t) 24 36 (fontified t) 36 52 (face font-lock-keyword-face fontified t) 52 67 (fontified t) 67 69 (fontified t)) . 211) (undo-tree-id23 . -68) (undo-tree-id24 . -19) (undo-tree-id25 . 46) (undo-tree-id26 . -19) (undo-tree-id27 . -23) (undo-tree-id28 . -19) (undo-tree-id29 . -23) (undo-tree-id30 . -23) (undo-tree-id31 . -23) (undo-tree-id32 . -23)) (26477 5361 655932 380000) 0 nil] [nil nil ((#("ж" 0 1 (fontified t)) . 234) (undo-tree-id13 . 1) (undo-tree-id14 . -1) (undo-tree-id15 . -1)) ((234 . 235)) (26477 5357 958332 688000) 0 nil])
+([nil nil ((266 . 267) (#("н" 0 1 (fontified t)) . 266)) nil (26477 5369 403820 172000) 0 nil])
+nil
+nil
+([nil nil ((268 . 269) (#("о" 0 1 (fontified t)) . 268)) nil (26477 5369 403819 297000) 0 nil])
+([nil nil ((270 . 271) (#("м" 0 1 (fontified t)) . 270)) nil (26477 5374 662022 653000) 0 nil])
+([nil nil ((22 . 44) (554 . 574) 22 (t 26477 5369 455246 165000)) nil (26477 5391 464887 341000) 0 nil] [nil nil ((22 . 42) (554 . 572) (t 26477 5369 455246 165000)) ((#("\\end{affiliation}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 18 (fontified t)) . 554) (undo-tree-id33 . 18) (#("\\begin{affiliation}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (latex-env-pair t fontified t) 7 18 (face font-lock-function-name-face latex-env-pair t fontified t) 18 19 (latex-env-pair t fontified t) 19 20 (fontified t)) . 22) (undo-tree-id34 . -20)) (26477 5374 661750 316000) 0 nil])
+([nil nil ((#("\\end{articleheader}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 18 (face font-lock-function-name-face fontified t latex-env-pair t) 18 19 (fontified t latex-env-pair t) 19 20 (fontified t)) . 576) (undo-tree-id35 . -19) (undo-tree-id36 . 20)) nil (26477 5391 464886 7000) 0 nil])
+nil
+([nil nil ((nil rear-nonsticky nil 301 . 302) (#("
+" 0 1 (fontified nil)) . -321) (301 . 322) 233) nil (26477 5391 464875 688000) 0 nil])
+([nil nil ((323 . 343) (596 . 614)) nil (26477 5391 464977 224000) 0 nil])
+([nil nil ((2293 . 2315) (2500 . 2520) 2293) nil (26477 5405 681374 859000) 0 nil] [nil nil ((2293 . 2313) (2500 . 2518)) ((#("\\end{affiliation}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (latex-env-pair t fontified t) 5 16 (face font-lock-function-name-face latex-env-pair t fontified t) 16 17 (latex-env-pair t fontified t) 17 18 (fontified t)) . 2500) (undo-tree-id37 . -18) (undo-tree-id38 . 18) (undo-tree-id39 . -18) (undo-tree-id40 . -18) (undo-tree-id41 . -18) (#("\\begin{affiliation}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (latex-env-pair t fontified t) 7 18 (face font-lock-function-name-face latex-env-pair t fontified t) 18 19 (latex-env-pair t fontified t) 19 20 (fontified t)) . 2293) (undo-tree-id42 . -20)) (26477 5391 464870 688000) 0 nil])
+([nil nil ((2543 . 2563) (2823 . 2841)) nil (26477 5405 681373 894000) 0 nil])
+nil
+([nil nil ((4525 . 4547) (4763 . 4783)) nil (26477 5405 681372 517000) 0 nil])
+([nil nil ((4806 . 4826) (5009 . 5027)) nil (26477 5418 132986 668000) 0 nil])
+([nil nil ((111 . 156) (#("білім беруге арналған ақпараттық жүйе әзірлеу" 0 45 (fontified t)) . 111) (t 26477 5405 728200 788000)) nil (26477 5422 225032 134000) 0 nil] [nil nil ((149 . 150) (t 26477 5405 728200 788000)) ((#("{" 0 1 (fontified t)) . 149)) (26477 5418 132683 915000) 0 nil])
+([nil nil ((567 . 568) (#("к" 0 1 (fontified t)) . 567) (t 26477 5422 268723 527000)) nil (26477 5448 166410 445000) 0 nil])
+nil
+([nil nil ((447 . 448) (#("қ" 0 1 (fontified t)) . 447)) nil (26477 5448 166494 614000) 0 nil])
+([nil nil ((365 . 366) (#("ф" 0 1 (fontified t)) . 365)) nil (26477 5451 335001 915000) 0 nil] [nil nil ((362 . 363) (#("ә" 0 1 (fontified t)) . 362)) ((362 . 363) (#("Ә" 0 1 (fontified t)) . 362)) (26477 5448 166404 946000) 0 nil])
+([nil nil ((408 . 409) (#("а" 0 1 (fontified t)) . 408) (t 26477 5451 392889 564000)) nil (26477 5466 232165 61000) 0 nil])
+nil
+([nil nil ((416 . 417) (#("қ" 0 1 (fontified t)) . 416)) nil (26477 5466 232163 824000) 0 nil])
+([nil nil ((495 . 496) (#("а" 0 1 (fontified t)) . 495)) nil (26477 5466 232162 785000) 0 nil])
+([nil nil ((503 . 504) (#("қ" 0 1 (fontified t)) . 503)) nil (26477 5466 232158 321000) 0 nil])
+([nil nil ((362 . 363) (#("ә" 0 1 (fontified t)) . 362) (t 26477 5466 274466 338000)) nil (26477 5480 757918 633000) 0 nil])
+([nil nil ((6699 . 6720) (11203 . 11219) (t 26477 5480 799055 24000)) nil (26477 5501 602774 91000) 0 nil])
+([nil nil ((#("{\\bfseries 1-сурет. Білім беру процесінің жалпы моделі.}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 46 (face (bold) fontified t) 46 55 (fontified t face (bold)) 55 56 (fontified t)) . -11357) (undo-tree-id106 . -13) (undo-tree-id107 . -13) (undo-tree-id108 . -13) (undo-tree-id109 . -13) (undo-tree-id110 . -13) (undo-tree-id111 . -14) (undo-tree-id112 . -14) (undo-tree-id113 . -14) (undo-tree-id114 . -14) (undo-tree-id115 . -14) (undo-tree-id116 . -14) (undo-tree-id117 . -14) (undo-tree-id118 . -14) (undo-tree-id119 . -14) (undo-tree-id120 . -14) (undo-tree-id121 . -14) (undo-tree-id122 . -14) (undo-tree-id123 . -14) (undo-tree-id124 . -14) (undo-tree-id125 . -14) (undo-tree-id126 . -14) (undo-tree-id127 . -14) (undo-tree-id128 . -14) (undo-tree-id129 . -14) (undo-tree-id130 . -14) (undo-tree-id131 . -14) (undo-tree-id132 . -14) (undo-tree-id133 . -14) (undo-tree-id134 . -14) (undo-tree-id135 . -14) (undo-tree-id136 . -14) (undo-tree-id137 . -14) (undo-tree-id138 . -14) (undo-tree-id139 . -14) (undo-tree-id140 . -14) (undo-tree-id141 . -14) (undo-tree-id142 . -14) (undo-tree-id143 . -14) (undo-tree-id144 . -14) (undo-tree-id145 . -14) (undo-tree-id146 . -14) (undo-tree-id147 . -14) (undo-tree-id148 . -14) (undo-tree-id149 . -14) (undo-tree-id150 . -14) (undo-tree-id151 . -14) 11371) nil (26477 5501 602771 968000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 11383 . 11384) (nil fontified nil 11340 . 11384) (11340 . 11384)) nil (26477 5501 602678 589000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 11399) (undo-tree-id89 . -1) (undo-tree-id90 . -1) (undo-tree-id91 . -1) (undo-tree-id92 . -1) (undo-tree-id93 . -1) (undo-tree-id94 . -1) (undo-tree-id95 . -1) (undo-tree-id96 . -1) (undo-tree-id97 . -1) (undo-tree-id98 . -1) (undo-tree-id99 . -1) (undo-tree-id100 . -1) (undo-tree-id101 . -1) (undo-tree-id102 . -1) (undo-tree-id103 . -1) (undo-tree-id104 . -1) (undo-tree-id105 . -1)) nil (26477 5501 602677 567000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 11399) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1) (undo-tree-id58 . -1) (undo-tree-id59 . -1) (undo-tree-id60 . -1) (undo-tree-id61 . -1) (undo-tree-id62 . -1) (undo-tree-id63 . -1) (undo-tree-id64 . -1) (undo-tree-id65 . -1) (undo-tree-id66 . -1) (undo-tree-id67 . -1) (undo-tree-id68 . -1) (undo-tree-id69 . -1) (undo-tree-id70 . -1) (undo-tree-id71 . -1) (undo-tree-id72 . -1) (undo-tree-id73 . -1) (undo-tree-id74 . -1) (undo-tree-id75 . -1) (undo-tree-id76 . -1) (undo-tree-id77 . -1) (undo-tree-id78 . -1) (undo-tree-id79 . -1) (undo-tree-id80 . -1) (undo-tree-id81 . -1) (undo-tree-id82 . -1) (undo-tree-id83 . -1) (undo-tree-id84 . -1) (undo-tree-id85 . -1) (undo-tree-id86 . -1) (undo-tree-id87 . -1) (undo-tree-id88 . -1)) nil (26477 5501 602664 291000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 11399) (undo-tree-id43 . -1)) nil (26477 5501 602628 383000) 0 nil])
+([nil nil ((11400 . 11421) (13096 . 13112)) nil (26477 5501 602613 422000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 17522 . 17523) (nil fontified nil 13194 . 17523) (13194 . 17523) (t 26477 5501 639467 690000)) nil (26477 9524 639823 313000) 0 nil])
+([nil nil ((17523 . 17524) (t 26477 9524 715815 723000) 17522) nil (26477 9553 629546 222000) 0 nil])
+([nil nil ((apply 298 17525 23287 undo--wrap-and-run-primitive-undo 17525 23287 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -23271) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -23244) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -23243) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -23185) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -23184) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -23140) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -23025) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22997) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22996) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22976) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22903) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22791) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22782) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22736) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22735) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22701) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22700) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22656) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22541) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22492) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22491) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22470) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22469) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22449) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22448) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22393) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22281) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22260) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22219) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22100) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22063) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22062) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22023) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -22022) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21983) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21982) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21973) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21905) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21904) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21870) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21869) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21846) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21845) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21804) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21692) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21673) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21558) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21515) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21514) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21490) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21489) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21467) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21395) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21394) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21377) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21306) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21194) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21174) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21059) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -21029) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20910) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20871) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20870) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20840) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20839) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20816) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20701) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20636) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20635) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20591) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20590) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20550) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20549) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20507) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20392) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20333) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20332) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20285) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20284) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20261) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20146) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20135) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20065) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20064) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -20049) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19979) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19978) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19962) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19890) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19775) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19746) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19627) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19612) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19611) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19572) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19571) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19550) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19435) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19400) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19399) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19372) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19371) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19349) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19348) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19317) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19202) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19176) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19175) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19152) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19151) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19120) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19119) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19078) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19077) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -19049) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18934) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18908) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18907) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18891) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18890) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18865) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18864) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18837) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18836) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18815) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18814) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18789) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18674) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18660) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18545) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18522) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18407) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18394) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18372) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18363) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18344) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18325) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18302) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18258) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18139) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18120) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -18035) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -17954) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -17873) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -17792) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -17711) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -17630) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -17549) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -17525) 23585))) nil (26477 9553 629541 430000) 0 nil])
+([nil nil ((#("% Please add the following required packages to your document preamble:
+% \\usepackage[table,xcdraw]{xcolor}
+% Beamer presentation requires \\usepackage{colortbl} instead of \\usepackage[table,xcdraw]{xcolor}
+% \\usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\\begin{longtable}[c]{|llllll|}
+\\hline
+\\multicolumn{6}{|l|}{Оқытуды басқару жүйесі} \\\\ \\hline
+\\endfirsthead
+%
+\\endhead
+%
+\\multicolumn{3}{|l|}{Атауы} &
+  \\multicolumn{1}{l|}{Артықшылығы} &
+  \\multicolumn{2}{l|}{Кемшілігі} \\\\ \\hline
+\\multicolumn{3}{|l|}{Moodlе} &
+  \\multicolumn{1}{l|}{\\begin{tabular}[c]{@{}l@{}}Жаңа курс құру\\\\  Оқу процесін басқару\\\\  Мультимедиялық материалдар\\\\  Форумдар мен талқылаулар\\\\  Онлайн тестілеу\\\\  Оқушы үлгерімін бағалау\\end{tabular}} &
+  \\multicolumn{2}{l|}{\\begin{tabular}[c]{@{}l@{}}Платформаны орнату қиындығы\\\\  Платформаны жаңарту кезіндегі қиындықтар\\\\  Пайдаланушы интерфейсі күрделі\\\\  Шектеулі интеграциялар\\\\  Техникалық қиындықтар\\end{tabular}} \\\\ \\hline
+\\multicolumn{3}{|l|}{Canvas} &
+  \\multicolumn{1}{l|}{\\begin{tabular}[c]{@{}l@{}}Интуитивті интерфейс\\\\  Курстардың икемділігі\\\\  Бағалау және кері байланыс\\\\  Басқа платформалармен интеграция\\end{tabular}} &
+  \\multicolumn{2}{l|}{\\begin{tabular}[c]{@{}l@{}}Орнатудың қиындылығы\\\\  Тегін нұсқаның шектеулі мүмкіндік-тері\\\\  Оқу уақыты\\end{tabular}} \\\\ \\hline
+\\multicolumn{6}{|l|}{Онлайн оқыту платформасы} \\\\ \\hline
+\\multicolumn{3}{|l|}{Coursera} &
+  \\multicolumn{1}{l|}{\\begin{tabular}[c]{@{}l@{}}Технологияның әртүрлі бағыттары бағыттары бойынша көпетеген курстар ұсынады\\\\  Белгілі университеттер мен компаниялардан сертификаттар мен дипломдар алу мүмкіндігі\\\\  Белсенді оқытуға ықпал ететін бейне жазбалар мен тесттер, тәжірибелік сабақтар\\end{tabular}} &
+  \\multicolumn{2}{l|}{\\begin{tabular}[c]{@{}l@{}}Көптеген курстар ақылы\\\\  Сапалы және сапасыз курстардың санының көптігі\\\\  Оқытушылармен тарапынан жеткілікті қолдаудың болмағаны\\end{tabular}} \\\\ \\hline
+\\multicolumn{3}{|l|}{edX} &
+  \\multicolumn{1}{l|}{\\begin{tabular}[c]{@{}l@{}}Беделді университеттердің курстары\\\\  Көптеген курстарды тегін оқу мүмкіндігі\\\\  MicroMasters және Professional Certificates\\\\  Іс жүзінде қолдануға мүмкіндік беретін тәжірибелік тапсырмалар\\end{tabular}} &
+  \\multicolumn{2}{l|}{\\begin{tabular}[c]{@{}l@{}}Курстардың күрделілігі\\\\  Шектеулі интерактивті курстар\\\\  Платформадағы техникалық мәселелер\\end{tabular}} \\\\ \\hline
+\\multicolumn{6}{|l|}{Бірлескен жұмыс құралдары} \\\\ \\hline
+\\multicolumn{2}{|l|}{Google workspace} &
+  \\multicolumn{3}{l|}{\\begin{tabular}[c]{@{}l@{}}Gmail, Google Docs, Sheets, Slides, Drive жүйелермен бір уақытта жұмыс жасау мүмкіндігі\\\\  Бірнеше пайдаланушыға құжаттарды бір уақытта өңдеуге мүмкіндік беруі\\end{tabular}} &
+  \\begin{tabular}[c]{@{}l@{}}Интернетке тәуелділік\\\\  Деректердің құпиялылығы\\\\  Ақылы функцияларда мүмкіндіктер көптігі\\end{tabular} \\\\ \\hline
+\\multicolumn{2}{|l|}{Microsoft Teams} &
+  \\multicolumn{3}{l|}{\\begin{tabular}[c]{@{}l@{}}Басқа Microsoft құралдарымен интегра­ция\\\\  Бірлескен мүмкіндіктер\\\\  Командалар мен сыныптарды басқару\\\\  Бейне конференциялармен сыныптарды басқару\\end{tabular}} &
+  \\begin{tabular}[c]{@{}l@{}}Платформаны орнатудың қиындығы\\\\  Тегін нұсқаның шектеулі мүмкіндік­тері\\\\  Пайдаланушы интерфейсінің күрделі­лігі\\\\  Деректерді қорғау және құпиялылық\\end{tabular} \\\\ \\hline
+\\multicolumn{6}{|l|}{Виртуальды және толықтырылған шындық} \\\\ \\hline
+\\multicolumn{1}{|l|}{{\\color[HTML]{002033} Google Expeditions}} &
+  \\multicolumn{4}{l|}{\\begin{tabular}[c]{@{}l@{}}Көптеген виртуальды турлармен экскурсияларға мүмкіндік\\\\  Интуитивтіинтерфейс\\\\  Мазмұнныңәртүрлілігі\\\\  виртуалдынысандарменөзараәрекеттесу мүміндігі\\end{tabular}} &
+  \\begin{tabular}[c]{@{}l@{}}Жақсы интернет жүйесінің болуын қажет етеді\\\\  Виртуальды мүмкіндіктердің аздығы\\\\  Техникалық ақаулардың орын алу мүмкіндігі\\end{tabular} \\\\ \\hline
+\\multicolumn{1}{|l|}{zSpace} &
+  \\multicolumn{4}{l|}{\\begin{tabular}[c]{@{}l@{}}Тақырыптарды кеңінен түсінуге ықпал ететін виртуальды және толықтырылған шығдық тапсырмалары\\\\  Тақырыптардың кең ауқымы\\end{tabular}} &
+  \\begin{tabular}[c]{@{}l@{}}Платформаның оқу орындары үшйн қымбаттылығы  \\\\  Аппараттық және бағдарламалық жасақтаманы орнату қиындығы\\\\  Шектеулі қолжетімділік\\end{tabular} \\\\ \\hline
+\\end{longtable}
+" 0 2 (face font-lock-comment-delimiter-face fontified t) 2 72 (face font-lock-comment-face fontified t) 72 74 (face font-lock-comment-delimiter-face fontified t) 74 108 (face font-lock-comment-face fontified t) 108 110 (face font-lock-comment-delimiter-face fontified t) 110 206 (face font-lock-comment-face fontified t) 206 208 (face font-lock-comment-delimiter-face fontified t) 208 231 (face font-lock-comment-face fontified t) 231 233 (face font-lock-comment-delimiter-face fontified t) 233 343 (face font-lock-comment-face fontified t) 343 349 (face font-lock-keyword-face fontified t) 349 350 (latex-env-pair t fontified t) 350 359 (face font-lock-function-name-face latex-env-pair t fontified t) 359 360 (latex-env-pair t fontified t) 360 374 (fontified t) 374 380 (face font-lock-keyword-face fontified t) 380 381 (fontified t) 381 393 (face font-lock-keyword-face fontified t) 393 426 (fontified t) 426 428 (face font-lock-warning-face fontified t) 428 429 (fontified t) 429 435 (face font-lock-keyword-face fontified t) 435 436 (fontified t) 436 449 (face font-lock-keyword-face fontified t) 449 450 (fontified t) 450 451 (face font-lock-comment-delimiter-face fontified t) 451 452 (face font-lock-comment-face fontified t) 452 460 (face font-lock-keyword-face fontified t) 460 461 (fontified t) 461 462 (face font-lock-comment-delimiter-face fontified t) 462 463 (face font-lock-comment-face fontified t) 463 475 (face font-lock-keyword-face fontified t) 475 495 (fontified t) 495 507 (face font-lock-keyword-face fontified t) 507 532 (fontified t) 532 544 (face font-lock-keyword-face fontified t) 544 563 (fontified t) 563 565 (face font-lock-warning-face fontified t) 565 566 (fontified t) 566 572 (face font-lock-keyword-face fontified t) 572 573 (fontified t) 573 585 (face font-lock-keyword-face fontified t) 585 606 (fontified t) 606 618 (face font-lock-keyword-face fontified t) 618 626 (fontified t) 626 632 (face font-lock-keyword-face fontified t) 632 633 (latex-env-pair t fontified t) 633 640 (face font-lock-function-name-face latex-env-pair t fontified t) 640 641 (latex-env-pair t fontified t) 641 667 (fontified t) 667 669 (face font-lock-warning-face fontified t) 669 691 (fontified t) 691 693 (face font-lock-warning-face fontified t) 693 721 (fontified t) 721 723 (face font-lock-warning-face fontified t) 723 749 (fontified t) 749 751 (face font-lock-warning-face fontified t) 751 768 (fontified t) 768 770 (face font-lock-warning-face fontified t) 770 795 (fontified t) 795 799 (face font-lock-keyword-face fontified t) 799 800 (latex-env-pair t fontified t) 800 807 (face font-lock-function-name-face latex-env-pair t fontified t) 807 808 (latex-env-pair t fontified t) 808 814 (fontified t) 814 826 (face font-lock-keyword-face fontified t) 826 834 (fontified t) 834 840 (face font-lock-keyword-face fontified t) 840 841 (latex-env-pair t fontified t) 841 848 (face font-lock-function-name-face latex-env-pair t fontified t) 848 849 (latex-env-pair t fontified t) 849 888 (fontified t) 888 890 (face font-lock-warning-face fontified t) 890 932 (fontified t) 932 934 (face font-lock-warning-face fontified t) 934 966 (fontified t) 966 968 (face font-lock-warning-face fontified t) 968 992 (fontified t) 992 994 (face font-lock-warning-face fontified t) 994 1017 (fontified t) 1017 1021 (face font-lock-keyword-face fontified t) 1021 1022 (latex-env-pair t fontified t) 1022 1029 (face font-lock-function-name-face latex-env-pair t fontified t) 1029 1030 (latex-env-pair t fontified t) 1030 1032 (fontified t) 1032 1034 (face font-lock-warning-face fontified t) 1034 1035 (fontified t) 1035 1041 (face font-lock-keyword-face fontified t) 1041 1042 (fontified t) 1042 1054 (face font-lock-keyword-face fontified t) 1054 1075 (fontified t) 1075 1087 (face font-lock-keyword-face fontified t) 1087 1095 (fontified t) 1095 1101 (face font-lock-keyword-face fontified t) 1101 1102 (latex-env-pair t fontified t) 1102 1109 (face font-lock-function-name-face latex-env-pair t fontified t) 1109 1110 (latex-env-pair t fontified t) 1110 1142 (fontified t) 1142 1144 (face font-lock-warning-face fontified t) 1144 1167 (fontified t) 1167 1169 (face font-lock-warning-face fontified t) 1169 1197 (fontified t) 1197 1199 (face font-lock-warning-face fontified t) 1199 1233 (fontified t) 1233 1237 (face font-lock-keyword-face fontified t) 1237 1238 (latex-env-pair t fontified t) 1238 1245 (face font-lock-function-name-face latex-env-pair t fontified t) 1245 1246 (latex-env-pair t fontified t) 1246 1252 (fontified t) 1252 1264 (face font-lock-keyword-face fontified t) 1264 1272 (fontified t) 1272 1278 (face font-lock-keyword-face fontified t) 1278 1279 (latex-env-pair t fontified t) 1279 1286 (face font-lock-function-name-face latex-env-pair t fontified t) 1286 1287 (latex-env-pair t fontified t) 1287 1319 (fontified t) 1319 1321 (face font-lock-warning-face fontified t) 1321 1361 (fontified t) 1361 1363 (face font-lock-warning-face fontified t) 1363 1375 (fontified t) 1375 1379 (face font-lock-keyword-face fontified t) 1379 1380 (latex-env-pair t fontified t) 1380 1387 (face font-lock-function-name-face latex-env-pair t fontified t) 1387 1388 (latex-env-pair t fontified t) 1388 1390 (fontified t) 1390 1392 (face font-lock-warning-face fontified t) 1392 1393 (fontified t) 1393 1399 (face font-lock-keyword-face fontified t) 1399 1400 (fontified t) 1400 1412 (face font-lock-keyword-face fontified t) 1412 1447 (fontified t) 1447 1449 (face font-lock-warning-face fontified t) 1449 1450 (fontified t) 1450 1456 (face font-lock-keyword-face fontified t) 1456 1457 (fontified t) 1457 1469 (face font-lock-keyword-face fontified t) 1469 1492 (fontified t) 1492 1500 (face font-lock-keyword-face fontified t) 1500 1504 (face font-lock-keyword-face fontified t) 1504 1512 (fontified t) 1512 1518 (face font-lock-keyword-face fontified t) 1518 1519 (latex-env-pair t fontified t) 1519 1526 (face font-lock-function-name-face latex-env-pair t fontified t) 1526 1527 (latex-env-pair t fontified t) 1527 1614 (fontified t) 1614 1616 (face font-lock-warning-face fontified t) 1616 1702 (fontified t) 1702 1704 (face font-lock-warning-face fontified t) 1704 1784 (fontified t) 1784 1788 (face font-lock-keyword-face fontified t) 1788 1789 (latex-env-pair t fontified t) 1789 1796 (face font-lock-function-name-face latex-env-pair t fontified t) 1796 1797 (latex-env-pair t fontified t) 1797 1801 (fontified t) 1801 1803 (fontified t) 1803 1815 (face font-lock-keyword-face fontified t) 1815 1823 (fontified t) 1823 1829 (face font-lock-keyword-face fontified t) 1829 1830 (latex-env-pair t fontified t) 1830 1837 (face font-lock-function-name-face latex-env-pair t fontified t) 1837 1838 (latex-env-pair t fontified t) 1838 1872 (fontified t) 1872 1874 (face font-lock-warning-face fontified t) 1874 1922 (fontified t) 1922 1924 (face font-lock-warning-face fontified t) 1924 1980 (fontified t) 1980 1984 (face font-lock-keyword-face fontified t) 1984 1985 (latex-env-pair t fontified t) 1985 1992 (face font-lock-function-name-face latex-env-pair t fontified t) 1992 1993 (latex-env-pair t fontified t) 1993 1995 (fontified t) 1995 1997 (face font-lock-warning-face fontified t) 1997 1998 (fontified t) 1998 2004 (face font-lock-keyword-face fontified t) 2004 2005 (fontified t) 2005 2017 (face font-lock-keyword-face fontified t) 2017 2035 (fontified t) 2035 2047 (face font-lock-keyword-face fontified t) 2047 2055 (fontified t) 2055 2061 (face font-lock-keyword-face fontified t) 2061 2062 (latex-env-pair t fontified t) 2062 2069 (face font-lock-function-name-face latex-env-pair t fontified t) 2069 2070 (latex-env-pair t fontified t) 2070 2116 (fontified t) 2116 2118 (face font-lock-warning-face fontified t) 2118 2159 (fontified t) 2159 2161 (face font-lock-warning-face fontified t) 2161 2206 (fontified t) 2206 2208 (face font-lock-warning-face fontified t) 2208 2272 (fontified t) 2272 2276 (face font-lock-keyword-face fontified t) 2276 2277 (latex-env-pair t fontified t) 2277 2284 (face font-lock-function-name-face latex-env-pair t fontified t) 2284 2285 (latex-env-pair t fontified t) 2285 2291 (fontified t) 2291 2303 (face font-lock-keyword-face fontified t) 2303 2311 (fontified t) 2311 2317 (face font-lock-keyword-face fontified t) 2317 2318 (latex-env-pair t fontified t) 2318 2325 (face font-lock-function-name-face latex-env-pair t fontified t) 2325 2326 (latex-env-pair t fontified t) 2326 2360 (fontified t) 2360 2362 (face font-lock-warning-face fontified t) 2362 2393 (fontified t) 2393 2395 (face font-lock-warning-face fontified t) 2395 2431 (fontified t) 2431 2435 (face font-lock-keyword-face fontified t) 2435 2436 (latex-env-pair t fontified t) 2436 2443 (face font-lock-function-name-face latex-env-pair t fontified t) 2443 2444 (latex-env-pair t fontified t) 2444 2446 (fontified t) 2446 2448 (face font-lock-warning-face fontified t) 2448 2449 (fontified t) 2449 2455 (face font-lock-keyword-face fontified t) 2455 2456 (fontified t) 2456 2468 (face font-lock-keyword-face fontified t) 2468 2504 (fontified t) 2504 2506 (face font-lock-warning-face fontified t) 2506 2507 (fontified t) 2507 2513 (face font-lock-keyword-face fontified t) 2513 2514 (fontified t) 2514 2526 (face font-lock-keyword-face fontified t) 2526 2557 (fontified t) 2557 2569 (face font-lock-keyword-face fontified t) 2569 2577 (fontified t) 2577 2583 (face font-lock-keyword-face fontified t) 2583 2584 (latex-env-pair t fontified t) 2584 2591 (face font-lock-function-name-face latex-env-pair t fontified t) 2591 2592 (latex-env-pair t fontified t) 2592 2691 (fontified t) 2691 2693 (face font-lock-warning-face fontified t) 2693 2763 (fontified t) 2763 2767 (face font-lock-keyword-face fontified t) 2767 2768 (latex-env-pair t fontified t) 2768 2775 (face font-lock-function-name-face latex-env-pair t fontified t) 2775 2776 (latex-env-pair t fontified t) 2776 2782 (fontified t) 2782 2788 (face font-lock-keyword-face fontified t) 2788 2789 (latex-env-pair t fontified t) 2789 2796 (face font-lock-function-name-face latex-env-pair t fontified t) 2796 2797 (latex-env-pair t fontified t) 2797 2830 (fontified t) 2830 2832 (face font-lock-warning-face fontified t) 2832 2857 (fontified t) 2857 2859 (face font-lock-warning-face fontified t) 2859 2900 (fontified t) 2900 2904 (face font-lock-keyword-face fontified t) 2904 2905 (latex-env-pair t fontified t) 2905 2912 (face font-lock-function-name-face latex-env-pair t fontified t) 2912 2913 (latex-env-pair t fontified t) 2913 2914 (fontified t) 2914 2916 (face font-lock-warning-face fontified t) 2916 2917 (fontified t) 2917 2923 (face font-lock-keyword-face fontified t) 2923 2924 (fontified t) 2924 2936 (face font-lock-keyword-face fontified t) 2936 2966 (fontified t) 2966 2978 (face font-lock-keyword-face fontified t) 2978 2986 (fontified t) 2986 2992 (face font-lock-keyword-face fontified t) 2992 2993 (latex-env-pair t fontified t) 2993 3000 (face font-lock-function-name-face latex-env-pair t fontified t) 3000 3001 (latex-env-pair t fontified t) 3001 3053 (fontified t) 3053 3055 (face font-lock-warning-face fontified t) 3055 3079 (fontified t) 3079 3081 (face font-lock-warning-face fontified t) 3081 3116 (fontified t) 3116 3118 (face font-lock-warning-face fontified t) 3118 3162 (fontified t) 3162 3166 (face font-lock-keyword-face fontified t) 3166 3167 (latex-env-pair t fontified t) 3167 3174 (face font-lock-function-name-face latex-env-pair t fontified t) 3174 3175 (latex-env-pair t fontified t) 3175 3181 (fontified t) 3181 3187 (face font-lock-keyword-face fontified t) 3187 3188 (latex-env-pair t fontified t) 3188 3195 (face font-lock-function-name-face latex-env-pair t fontified t) 3195 3196 (latex-env-pair t fontified t) 3196 3238 (fontified t) 3238 3240 (face font-lock-warning-face fontified t) 3240 3280 (fontified t) 3280 3282 (face font-lock-warning-face fontified t) 3282 3301 (fontified t) 3301 3322 (fontified t) 3322 3324 (face font-lock-warning-face fontified t) 3324 3359 (fontified t) 3359 3363 (face font-lock-keyword-face fontified t) 3363 3364 (latex-env-pair t fontified t) 3364 3371 (face font-lock-function-name-face latex-env-pair t fontified t) 3371 3372 (latex-env-pair t fontified t) 3372 3373 (fontified t) 3373 3375 (face font-lock-warning-face fontified t) 3375 3376 (fontified t) 3376 3382 (face font-lock-keyword-face fontified t) 3382 3383 (fontified t) 3383 3395 (face font-lock-keyword-face fontified t) 3395 3442 (fontified t) 3442 3444 (face font-lock-warning-face fontified t) 3444 3445 (fontified t) 3445 3451 (face font-lock-keyword-face fontified t) 3451 3452 (fontified t) 3452 3464 (face font-lock-keyword-face fontified t) 3464 3474 (fontified t) 3474 3480 (face font-lock-keyword-face fontified t) 3480 3520 (fontified t) 3520 3532 (face font-lock-keyword-face fontified t) 3532 3540 (fontified t) 3540 3546 (face font-lock-keyword-face fontified t) 3546 3547 (latex-env-pair t fontified t) 3547 3554 (face font-lock-function-name-face latex-env-pair t fontified t) 3554 3555 (latex-env-pair t fontified t) 3555 3621 (fontified t) 3621 3623 (face font-lock-warning-face fontified t) 3623 3644 (fontified t) 3644 3646 (face font-lock-warning-face fontified t) 3646 3668 (fontified t) 3668 3670 (face font-lock-warning-face fontified t) 3670 3717 (fontified t) 3717 3721 (face font-lock-keyword-face fontified t) 3721 3722 (latex-env-pair t fontified t) 3722 3729 (face font-lock-function-name-face latex-env-pair t fontified t) 3729 3730 (latex-env-pair t fontified t) 3730 3736 (fontified t) 3736 3742 (face font-lock-keyword-face fontified t) 3742 3743 (latex-env-pair t fontified t) 3743 3750 (face font-lock-function-name-face latex-env-pair t fontified t) 3750 3751 (latex-env-pair t fontified t) 3751 3806 (fontified t) 3806 3808 (face font-lock-warning-face fontified t) 3808 3843 (fontified t) 3843 3845 (face font-lock-warning-face fontified t) 3845 3888 (fontified t) 3888 3892 (face font-lock-keyword-face fontified t) 3892 3893 (latex-env-pair t fontified t) 3893 3900 (face font-lock-function-name-face latex-env-pair t fontified t) 3900 3901 (latex-env-pair t fontified t) 3901 3902 (fontified t) 3902 3904 (face font-lock-warning-face fontified t) 3904 3905 (fontified t) 3905 3911 (face font-lock-keyword-face fontified t) 3911 3912 (fontified t) 3912 3924 (face font-lock-keyword-face fontified t) 3924 3945 (fontified t) 3945 3957 (face font-lock-keyword-face fontified t) 3957 3965 (fontified t) 3965 3971 (face font-lock-keyword-face fontified t) 3971 3972 (latex-env-pair t fontified t) 3972 3979 (face font-lock-function-name-face latex-env-pair t fontified t) 3979 3980 (latex-env-pair t fontified t) 3980 4084 (fontified t) 4084 4086 (face font-lock-warning-face fontified t) 4086 4112 (fontified t) 4112 4116 (face font-lock-keyword-face fontified t) 4116 4117 (latex-env-pair t fontified t) 4117 4124 (face font-lock-function-name-face latex-env-pair t fontified t) 4124 4125 (latex-env-pair t fontified t) 4125 4131 (fontified t) 4131 4137 (face font-lock-keyword-face fontified t) 4137 4138 (latex-env-pair t fontified t) 4138 4145 (face font-lock-function-name-face latex-env-pair t fontified t) 4145 4146 (latex-env-pair t fontified t) 4146 4203 (fontified t) 4203 4205 (face font-lock-warning-face fontified t) 4205 4264 (fontified t) 4264 4266 (face font-lock-warning-face fontified t) 4266 4290 (fontified t) 4290 4294 (face font-lock-keyword-face fontified t) 4294 4295 (latex-env-pair t fontified t) 4295 4302 (face font-lock-function-name-face latex-env-pair t fontified t) 4302 4303 (latex-env-pair t fontified t) 4303 4304 (fontified t) 4304 4306 (face font-lock-warning-face fontified t) 4306 4307 (fontified t) 4307 4313 (face font-lock-keyword-face fontified t) 4313 4314 (fontified t) 4314 4318 (face font-lock-keyword-face fontified t) 4318 4319 (latex-env-pair t fontified t) 4319 4328 (face font-lock-function-name-face latex-env-pair t fontified t) 4328 4329 (latex-env-pair t rear-nonsticky t fontified t) 4329 4330 (fontified t)) . 13194) (undo-tree-id152 . -2456) (undo-tree-id153 . -4329) (undo-tree-id154 . -4328) (undo-tree-id155 . -14) (undo-tree-id156 . -4328) (undo-tree-id157 . -4328) 17522 (t 26477 9553 668972 312000)) nil (26477 9591 25969 326000) 0 nil])
+([nil nil ((13221 . 13222)) nil (26477 9591 26036 347000) 0 nil])
+([nil nil ((13300 . 13301)) nil (26477 9598 860943 335000) 0 nil] [nil nil ((13299 . 13300)) ((#("|" 0 1 (fontified t)) . 13299)) (26477 9591 25944 400000) 0 nil])
+([nil nil ((13382 . 13383)) nil (26477 9598 860942 699000) 0 nil])
+nil
+([nil nil ((13464 . 13465)) nil (26477 9598 860942 177000) 0 nil])
+([nil nil ((13546 . 13547)) nil (26477 9598 860941 438000) 0 nil])
+([nil nil ((13628 . 13629)) nil (26477 9598 860940 884000) 0 nil])
+([nil nil ((13710 . 13711)) nil (26477 9598 861034 215000) 0 nil])
+([nil nil ((76676 . 76695) (78480 . 78497) 76676 (t 26477 9600 129621 759000)) nil (26477 9653 283315 86000) 0 nil] [nil nil ((13796 . 13797)) ((#("|" 0 1 (fontified t)) . 13796)) (26477 9598 860935 592000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 76706 . 76707) (nil fontified nil 76695 . 76707) (76695 . 76707)) nil (26477 9653 283313 761000) 0 nil])
+nil
+([nil nil ((nil rear-nonsticky nil 77666 . 77667) (nil fontified nil 77655 . 77667) (77655 . 77667)) nil (26477 9653 283308 603000) 0 nil])
+([nil nil ((71517 . 71536) (76675 . 76692) 71517 (t 26477 9653 338079 16000)) nil (26477 9667 330799 789000) 0 nil])
+([nil nil ((71493 . 71508) (71516 . 71529)) nil (26477 9667 330795 246000) 0 nil])
+([nil nil ((68075 . 68096) (71492 . 71508) 68075 (t 26477 9667 369672 832000)) nil (26477 9672 652145 190000) 0 nil])
+([nil nil ((63737 . 63758) (66754 . 66770) (t 26477 9672 686518 990000)) nil (26477 9682 499710 802000) 0 nil])
+([nil nil ((#("{\\bfseries Fig. 2 - Distribution of skill clusters using average linkage
+with cosine similarity at a distance}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 73 (face (bold) fontified t) 73 110 (fontified t)) . -57760) (undo-tree-id160 . -83) (undo-tree-id161 . -83) 57843 (t 26477 9682 527234 346000)) nil (26477 9702 508293 657000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 57840 . 57841) (nil fontified nil 57743 . 57841) (57743 . 57841)) nil (26477 9702 508291 733000) 0 nil])
+([nil nil ((#("{\\bfseries threshold of 0.29}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 28 (face (bold) fontified t) 28 29 (fontified t)) . -57860) (undo-tree-id158 . -27) (undo-tree-id159 . -27) 57887) nil (26477 9702 508290 433000) 0 nil])
+([nil nil ((57841 . 57842)) nil (26477 9702 508281 33000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 57858 . 57859) (nil fontified nil 57842 . 57859) (57842 . 57859) 57841) nil (26477 9717 185982 240000) 0 nil])
+([nil nil ((#("{\\bfseries Fig. 1. - Example of a subgraph of vacancies and skills. The
+node representing the vacancy is marked in purple, skill nodes are
+marked in red, requirement nodes are marked in blue, and responsibility
+nodes are marked in yellow}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 72 (face (bold) fontified t) 72 139 (fontified t) 139 211 (fontified t) 211 237 (fontified t) 237 238 (fontified t)) . -45437) (undo-tree-id267 . -40) (undo-tree-id268 . -72) (undo-tree-id269 . -112) (undo-tree-id270 . -112) (undo-tree-id271 . -40) (undo-tree-id272 . -139) (undo-tree-id273 . -139) 45576 (t 26477 9702 559655 288000)) nil (26477 9737 383043 472000) 0 nil] [nil nil ((45509 . 45530) (50982 . 50998) 45509 (t 26477 9702 559655 288000)) (("\\end{multicols}
+" . 50982) (undo-tree-id216 . 16) (#("\\begin{multicols}{2}
+" 0 6 (face (font-lock-keyword-face bold) fontified t) 6 7 (face (bold) latex-env-pair t fontified t) 7 16 (face (font-lock-function-name-face bold) latex-env-pair t fontified t) 16 17 (face (bold) latex-env-pair t fontified t) 17 21 (face (bold) fontified t)) . 45509) (undo-tree-id217 . -21)) (26477 9716 526438 962000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 45645 . 45646) (nil fontified nil 45420 . 45646) (45420 . 45646)) nil (26477 9737 383039 97000) 0 nil])
+([nil nil ((#("{\\bfseries Fig. 1. - Example of a subgraph of vacancies and skills. The
+\\begin{multicols}{2}
+node representing the vacancy is marked in purple, skill nodes are
+marked in red, requirement nodes are marked in blue, and responsibility
+nodes are marked in yellow}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 72 (face (bold) fontified t) 72 78 (face font-lock-keyword-face fontified t) 78 79 (latex-env-pair t fontified t) 79 88 (face font-lock-function-name-face latex-env-pair t fontified t) 88 89 (latex-env-pair t fontified t) 89 93 (fontified t) 93 160 (fontified t) 160 232 (fontified t) 232 259 (fontified t)) . -45437) (undo-tree-id162 . -93) (undo-tree-id163 . -133) (undo-tree-id164 . -133) (undo-tree-id165 . -40) (undo-tree-id166 . -40) (undo-tree-id167 . -40) (undo-tree-id168 . -40) (undo-tree-id169 . -40) (undo-tree-id170 . -40) (undo-tree-id171 . -40) (undo-tree-id172 . -40) (undo-tree-id173 . -40) (undo-tree-id174 . -40) (undo-tree-id175 . -40) (undo-tree-id176 . -40) (undo-tree-id177 . -40) (undo-tree-id178 . -40) (undo-tree-id179 . -40) (undo-tree-id180 . -40) (undo-tree-id181 . -40) (undo-tree-id182 . -40) (undo-tree-id183 . -40) (undo-tree-id184 . -40) (undo-tree-id185 . -40) (undo-tree-id186 . -40) (undo-tree-id187 . -40) (undo-tree-id188 . -40) (undo-tree-id189 . -40) (undo-tree-id190 . -40) (undo-tree-id191 . -40) (undo-tree-id192 . -40) (undo-tree-id193 . -40) (undo-tree-id194 . -40) (undo-tree-id195 . -40) (undo-tree-id196 . -40) (undo-tree-id197 . -40) (undo-tree-id198 . -40) (undo-tree-id199 . -40) (undo-tree-id200 . -40) (undo-tree-id201 . -40) (undo-tree-id202 . -40) (undo-tree-id203 . -40) (undo-tree-id204 . -40) (undo-tree-id205 . -40) (undo-tree-id206 . -40) (undo-tree-id207 . -40) (undo-tree-id208 . -40) (undo-tree-id209 . -40) (undo-tree-id210 . -40) (undo-tree-id211 . -40) (undo-tree-id212 . -40) (undo-tree-id213 . -40) (undo-tree-id214 . -40) (undo-tree-id215 . -40) 45477) ((45437 . 45696)) (26477 9716 526216 107000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 45662) (undo-tree-id239 . -1) (undo-tree-id240 . -1) (undo-tree-id241 . -1) (undo-tree-id242 . -1) (undo-tree-id243 . -1) (undo-tree-id244 . -1) (undo-tree-id245 . -1) (undo-tree-id246 . -1) (undo-tree-id247 . -1) (undo-tree-id248 . -1) (undo-tree-id249 . -1) (undo-tree-id250 . -1) (undo-tree-id251 . -1) (undo-tree-id252 . -1) (undo-tree-id253 . -1) (undo-tree-id254 . -1) (undo-tree-id255 . -1) (undo-tree-id256 . -1) (undo-tree-id257 . -1) (undo-tree-id258 . -1) (undo-tree-id259 . -1) (undo-tree-id260 . -1) (undo-tree-id261 . -1) (undo-tree-id262 . -1) (undo-tree-id263 . -1) (undo-tree-id264 . -1) (undo-tree-id265 . -1) (undo-tree-id266 . -1)) nil (26477 9737 383037 956000) 0 nil])
+nil
+([nil nil ((#("
+" 0 1 (fontified t)) . 45662) (undo-tree-id218 . -1) (undo-tree-id219 . -1) (undo-tree-id220 . -1) (undo-tree-id221 . -1) (undo-tree-id222 . -1) (undo-tree-id223 . -1) (undo-tree-id224 . -1) (undo-tree-id225 . -1) (undo-tree-id226 . -1) (undo-tree-id227 . -1) (undo-tree-id228 . -1) (undo-tree-id229 . -1) (undo-tree-id230 . -1) (undo-tree-id231 . -1) (undo-tree-id232 . -1) (undo-tree-id233 . -1) (undo-tree-id234 . -1) (undo-tree-id235 . -1) (undo-tree-id236 . -1) (undo-tree-id237 . -1) (undo-tree-id238 . -1)) nil (26477 9737 383011 519000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 45662)) nil (26477 9737 382969 182000) 0 nil])
+([nil nil ((36288 . 36309) (45319 . 45335) 36288) nil (26477 9737 382968 295000) 0 nil])
+([nil nil ((45699 . 45720) (51004 . 51020)) nil (26477 9737 382947 698000) 0 nil])
+([nil nil ((#("ГРНТИ 28.23.39
+
+{\\bfseries APPLICATION OF AGGLOMERATIVE CLUSTERING FOR FORMING SKILL
+COMMUNITIES OF JOB VACANCIES}
+
+{\\bfseries V. Ramazanova, M.Sambetbayeva, A}.{\\bfseries Tokhmetov, Zh.
+Lamasheva, S.Serikbayeva\\textsuperscript{\\envelope },}
+
+\\textsuperscript{1}L. N. Gumilyov Eurasian National University, Astana,
+Kazakhstan,
+
+{\\bfseries \\textsuperscript{\\envelope }}Correspondent-author:
+\\href{mailto:inf_8585@mail.ru}{\\nolinkurl{inf\\_8585@mail.ru}}
+
+One of the traditional methods for community detection in knowledge
+graphs is agglomerative clustering. Agglomerative hierarchical
+clustering is a widely used type of hierarchical clustering for grouping
+objects based on their similarity. This method follows a bottom-up
+approach, beginning with each individual data point considered as an
+independent cluster, which are then continuously merged based on a
+similarity threshold between clusters. This paper focuses on the use of
+agglomerative clustering for analyzing skills extracted from job
+postings on an online recruitment platform. It describes the approach to
+data collection, processing, and subsequent clustering, providing an
+overview of linkage methods between clusters and examples of the
+application of various coefficients for quantitative assessment of
+cluster quality. An analysis of bilingual clusters in Russian and
+English is conducted, al-lowing for an evaluation of the versatility and
+adaptability of the proposed approach to analyzing the multilingual
+labor market in Kazakhstan. It was found that agglomerative clustering
+methods hold significant potential for identi-fying structured groups of
+skills, which can enhance the understanding of labor market trends and
+needs. The analysis of clusters formed in different languages confirmed
+the universality and adaptability of the proposed ap-proach to
+multilingual data.
+
+{\\bfseries Keywords:} Sentence transformers, skills clustering,
+agglomerative clustering, silhouette coefficient, skills communities.
+
+{\\bfseries ПРИМЕНЕНИЕ АГЛОМЕРАТИВНОЙ КЛАСТЕРИЗАЦИИ ДЛЯ ФОРМИРОВАНИЯ
+СООБЩЕСТВ НАВЫКОВ ВАКАНСИЙ}
+
+{\\bfseries В.С.Рамазанова, М.А.Самбетбаева, А.Т. Тохметов, Ж.Б. Ламашева,
+С.К.Серикбаева\\textsuperscript{\\envelope },}
+
+\\textsuperscript{1}Евразийский национальный университет им. Л. Н.
+Гумилева, Астана, Казахстан,
+
+e-mail:inf\\_8585@mail.ru
+
+Одним из традиционных методов обнаружения сообществ в графах знаний
+является агломеративная кластеризация. Агломеративная иерархическая
+кластеризация -- это широко используемый тип иерархической кластеризации
+для группировки объектов на основе их сходства. Этот метод следует
+подходу «снизу-вверх», начиная с того, что каждая отдельная точка данных
+рассматривается как независимый кластер, которые затем непрерывно
+объединяются на основе порога сходства между кластерами. В данной статье
+основное внимание уделяется использованию агломеративной кластеризации
+для анализа навыков, извлеченных из объявлений о вакансиях на
+онлайн-платформе по подбору персонала. В ней описывается подход к сбору,
+обработке и последующей кластеризации данных, дается обзор методов связи
+между кластерами и примеры применения различных коэффициентов для
+количественной оценки качества кластера. Проводится анализ двуязычных
+кластеров на русском и английском языках, что позволяет оценить
+универсальность и адаптивность предлагаемого подхода к анализу
+многоязычного рынка труда в Казахстане. Было обнаружено, что методы
+агломеративной кластеризации обладают значительным потенциалом для
+выявления структурированных групп навыков, которые могут улучшить
+понимание тенденций и потребностей рынка труда. Анализ кластеров,
+сформированных на разных языках, подтвердил универсальность и
+адаптивность предлагаемого подхода к многоязычным данным.
+
+{\\bfseries Ключевые слова:} Трансформеры предложений, кластеризация
+навыков, агломеративная кластеризация, коэффициент силуэта, сообщества
+навыков.
+
+{\\bfseries ЖҰМЫС ДАҒДЫЛАРЫ ҚАУЫМДАСТЫҒЫН ҚАЛЫПТАСТЫРУ ҮШІН АГЛОМЕРАТИВТІ
+КЛАСТЕРЛЕУДІ ҚОЛДАНУ}
+
+{\\bfseries В.С.Рамазанова, М.А.Самбетбаева, А.Т.Тохметов, Ж.Б. Ламашева,
+С.К.Серикбаева\\textsuperscript{\\envelope },}
+
+\\textsuperscript{1}Л.Н.Гумилев атындағы Еуразия ұлттық университеті,
+Астана, Қазақстан,
+
+e-mail: inf\\_8585@mail.ru
+
+Білім графтарында қауымдастықты анықтаудың дәстүрлі әдістерінің бірі
+агломеративті кластерлеу болып табылады. Агломеративті иерархиялық
+кластерлеу объектілерді ұқсастығына қарай топтастыру үшін иерархиялық
+кластерлеудің кеңінен қолданылатын түрі болып табылады. Бұл әдіс әрбір
+жеке деректер нүктесін тәуелсіз кластер ретінде өңдеуден бастап,
+төменнен жоғарыға қарай әрекет етеді, содан кейін олар кластерлер
+арасындағы ұқсастық шегіне негізделген үздіксіз біріктіріледі. Бұл жұмыс
+онлайн жалдау платформасында жұмыс туралы хабарландырулардан алынған
+дағдыларды талдау үшін агломеративті кластерлеуді пайдалануға
+бағытталған. Ол деректерді жинау, өңдеу және кейіннен кластерлеу тәсілін
+сипаттайды, кластерлер арасындағы байланыс әдістеріне шолу жасайды және
+кластердің сапасын сандық бағалау үшін әртүрлі коэффициенттерді қолдану
+мысалдарын береді. Орыс және ағылшын тілдеріндегі қостілді кластерлерге
+талдау жүргізілді, бұл Қазақстанның көптілді еңбек нарығын талдауға
+ұсынылып отырған тәсілдің әмбебаптығы мен бейімділігін бағалауға
+мүмкіндік береді. Агломеративті кластерлеу әдістері еңбек нарығының
+тенденциялары мен қажеттіліктерін түсінуді жақсартатын құрылымдық
+дағдылар топтарын анықтау үшін маңызды әлеуетке ие екендігі анықталды.
+Әртүрлі тілдерде қалыптасқан кластерлерді талдау көптілді деректерге
+ұсынылған тәсілдің әмбебаптығы мен бейімделгіштігін растады.
+
+{\\bfseries Түйін сөздер:} Сөйлем трансформерлері, дағдыларды кластерлеу,
+агломеративті кластерлеу, силуэт коэффициенті, дағдылар қауымдастықтары.
+
+\\begin{multicols}{2}
+{\\bfseries Introduction.} The rapid growth in the volume of data on skills
+and qualifications available through online employment platforms
+represents a rich source of information on current and future labor
+market trends. However, due to their volume and diversity, clustering
+methods play a crucial role in structuring this information. In the
+context of graphs, communities, also known as clusters or modules, are
+groups of vertices that typically share common characteristics and/or
+perform similar functions within the graph {[}1{]}.
+
+One of the methods for community detection in graphs is hierarchical
+clustering. Applying agglomerative clustering methods to skills can
+reveal not only existing groups of similar skills but also uncover
+communities within knowledge graphs. Understanding and analyzing the
+structures of skill communities can significantly enhance career
+development strategies by fostering closer integration between
+educational and professional training and market needs.
+
+The goal of this work is to create clusters that group semantically
+similar skills, which, though they may be phrased differently, retain
+the same overall meaning. The results of such clustering are intended to
+form communities of nodes in knowledge graphs, allowing for a deeper
+exploration of skill structures in the market.
+
+This paper focuses on the use of agglomerative clustering for analyzing
+skills extracted from job postings on the online recruitment platform
+HeadHunter in Kazakhstan. It describes the approach to data collection,
+processing, and subsequent clustering, providing an overview of
+methodologies and examples of applying various metrics to assess cluster
+quality. An analysis and comparison of clusters obtained with different
+agglomerative clustering parameters for sets of phrases in Russian and
+English were conducted, allowing for an evaluation of the versatility
+and adaptability of the proposed approach to analyzing the modern labor
+market.
+
+{\\bfseries Literature review.} Hierarchical clustering is highlighted as
+one of the traditional methods for community detection in graph
+structures in article {[}1{]}. Hierarchical clustering is widely used in
+various fields such as social networks and biology. This method begins
+with defining a measure of similarity between all pairs of vertices.
+Agglomerative algorithms, which merge clusters based on similarity, do
+not require a pre-specified number of clusters, which is an advantage.
+However, the main drawback of agglomerative hierarchical clustering is
+poor scalability.
+
+Articles {[}2{]} and {[}3{]} provide a detailed overview of various
+agglomerative hierarchical clustering methods, such as single linkage,
+complete linkage, average linkage, and Ward' s method.
+These methods are used to group objects based on their similarity, which
+is applicable to the analysis of skills from job postings. As noted in
+{[}3{]}, the choice of metric and linkage method significantly impacts
+clustering results, necessitating a careful approach to parameter
+tuning. This is particularly important for text data analysis, where
+selecting an appropriate metric can substantially affect the quality of
+clusters and, consequently, skill analysis. The algorithm proposed in
+article {[}4{]} presents a distributed approach to agglomerative
+clustering that can be efficiently scaled to handle billions of objects.
+Article {[}5{]} introduces the concept of using the Ordered Weighted
+Averaging (OWA) operator to modify traditional linkages in agglomerative
+hierarchical clustering. This method is of interest for research aimed
+at enhancing the flexibility and robustness of clustering algorithms.
+
+The use of the silhouette coefficient to evaluate cluster quality, as
+demonstrated in {[}6{]}, allows for assessing the degree of separation
+of clusters and determining the optimal number of clusters. On the other
+hand, studies {[}7{]} highlight the limitations of the silhouette
+coefficient and the Calinski-Harabasz index, which can lead to
+misinterpretation of clustering results. In such cases, an additional
+expert review of the data may be helpful to improve understanding of the
+internal structure of the clusters.
+
+Article {[}8{]} describes in detail how proper text preprocessing, such
+as sentence segmentation, tokenization, stop-word removal, and
+lemmatization, can significantly improve the quality and accuracy of
+machine learning algorithms. The study {[}9{]} examines sentence vector
+representations based on Transformer models in combination with various
+clustering methods. Article {[}10{]} discusses the semantic accuracy of
+models. The authors compare four freely available pre-trained sentence
+transformer models (all-MiniLM-L6-v2, all-MiniLM-L12-v2,
+all-mpnet-base-v2, and all-distilroberta-v1) on a sample of 6,110
+articles and select the most efficient model, all-mpnet-base-v2.
+
+Article {[}11{]} addresses the complex task of clustering categorical
+data in data analysis. The author proposes an algorithm for clustering
+job vacancies based on required skills using hierarchical clustering and
+the Girvan-Newman method to identify job clusters. Article {[}12{]}
+explores the use of two popular data clustering methods: K-Means and
+agglomerative clustering, on data related to seafarer certification
+skills. The authors analyze the advantages of each approach, including
+K-Means ability to quickly process large volumes of data and provide
+clearly delineated clusters, while agglomerative clustering offers a
+detailed, hierarchical view of the data, useful for understanding
+complex structures of certification requirements. The study {[}13{]}
+analyzes the performance of text data clustering using the TF-IDF
+method, fuzzy K-means, and hierarchical agglomerative clustering on
+datasets such as News 20, Reuters, and email collections. The results
+show that hierarchical agglomerative clustering provides better
+performance compared to fuzzy K-means, including lower entropy and
+higher F-measure values, indicating clearer separation and consistency
+of clusters.
+
+Article {[}14{]} describes the use of the Hierarchical Dirichlet Process
+(HDP) for clustering documents that define skills in an industrial
+environment for large IT companies. The article {[}15{]} studies
+thematic clustering using TF-IDF and K-Means methods in the field of
+information technology. The articles {[}16-17{]} consider clustering of
+vacancies based on skills.
+
+Thus, the literature review emphasizes the importance of selecting the
+appropriate clustering methods and metrics in data analysis. Studies
+show that hierarchical agglomerative clustering offers its advantages
+depending on data characteristics and analysis goals. Clustering
+efficiency increases with the use of adapted metrics and methods, which
+is crucial for achieving accuracy and validity of results. The
+implementation of innovative approaches enhances the flexibility and
+scalability of methods, which is critically important when working with
+large volumes of data. Assessing cluster quality through silhouette
+coefficients and other indices helps determine the optimal number of
+clusters, ensuring clearer data separation and consistency.
+
+{\\bfseries Materials and methods.} \\emph{Collection, processing and
+preparation of data embeddings.}
+
+The dataset on skills was downloaded from the online recruitment site
+hh.kz in Russian and English using the provided API
+(https://api.hh.ru/vacancies) and the Python programming language.
+Skills from job vacancies were collected over two months, from February
+1, 2024, to March 31, 2024, from 177 localities in Kazakhstan, covering
+25 professions in the information technology sector: analyst, art
+director, creative director, game designer, designer, artist, chief
+information officer (CIO), product manager, programmer, developer,
+development team lead, project manager, network engineer, system
+administrator, system engineer, information security specialist,
+technical support specialist, tester, chief technology officer (CTO),
+technical writer, system analyst, business analyst, methodologist, BI
+analyst, data analyst, head of analytics department, DevOps engineer,
+product analyst, and data scientist. The number of vacancies amounted to
+5248. The number of unique skills totaled 3047.Skill phrases were
+treated as sentences.
+
+Next, from the data set of vacancies and skills, a knowledge graph was
+built in the neo4j graph DBMS. Let' s consider the
+ontological model of the graph of skills and vacancies. The graph
+includes a set of entity classes: E\\textsubscript{Recruitment} =
+\\{Vacancy, Skill, Requirement, Responsibility\\} and a set of
+relationships: R\\textsubscript{Recruitment} = \\{REQUIRE,
+HAS\\_REQUIREMENT, HAS\\_RESPONSIBILITY\\}.
+
+Figure 1 presents a subgraph centered on the node representing the
+vacancy \"Senior IT Project Specialist (Aksai)\" and other related skills
+and vacancies. This node is connected to other nodes representing
+skills, requirements, and responsibilities that describe various aspects
+of its role and qualifications.
+\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image104}
+	\\caption*{Fig. 1. - Example of a subgraph of vacancies and skills. The
+node representing the vacancy is marked in purple, skill nodes are
+marked in red, requirement nodes are marked in blue, and responsibility
+nodes are marked in yellow}
+\\end{figure}
+
+\\begin{multicols}{2}
+A notable feature of this graph is the presence of many paraphrased
+skills that share the same meaning. Subsequently, it is necessary to
+construct communities of semantically similar paraphrased skills for the
+job vacancy skills graph.
+
+Duplicates were removed from the set of skill phrases, all skills were
+converted to lower case, and phrase embeddings were generated using the
+paraphrase-multilingual-mpnet-base-v2 model.
+Paraphrase-multilingual-mpnet-base-v2 is a pre-trained transformer model
+designed to generate text embeddings, mapping sentences and paragraphs
+into a 768-dimensional dense vector space. The model is trained on over
+fifty languages and optimized to create vectors that effectively
+represent the semantic content of text, making the embeddings
+particularly useful for tasks related to paraphrase identification,
+semantic search, and text clustering. The embeddings generated by this
+model capture the semantic and contextual features of the text, making
+them suitable for grouping texts by meaning.
+
+\\emph{Selection of clustering method, visualization and evaluation}.
+Agglomerative clustering is a type of hierarchical clustering used to
+group objects into clusters based on their similarity. It is considered
+a \"bottom-up\" method because it starts with each object initially
+considered as a separate cluster, and then, step by step, clusters are
+merged until a specified number of clusters or a distance threshold is
+reached (Fortunato, 2010).
+
+The configuration for agglomerative clustering involves several
+parameters: n\\_clusters - the number of clusters to find, should be None
+if distance\\_threshold is specified; distance\\_threshold - this
+parameter sets the distance threshold to stop clustering; metric - a
+``cosine'' or ``Euclidean'' metric was used to measure the distance
+between clusters, if the relationship is ``ward'', only the \"Euclidean\"
+metric is accepted; linkage - the link criterion determines what
+distance to use between sets of observations. The algorithm will combine
+pairs of clusters that minimize this criterion: ``ward'' minimizes the
+variance of the clusters being merged, ``average'' uses the average of
+the distances of each observation of two sets, ``full'' or ``maximum''
+link uses the maximum distances between all observations of two sets,
+``single'' uses the minimum distance between all observations of two
+sets.
+
+The visualization of the results was performed using the scikit-learn
+and matplotlib libraries and the t-SNE (t-distributed Stochastic
+Neighbor Embedding) dimensionality reduction technique (Scikit-learn
+user guide, n.d.). The main advantage of t-SNE is its ability to
+preserve local data structures, which makes it possible to identify
+clusters and groups that may be hidden in high-dimensional data.
+
+If the true cluster labels are unknown, clustering evaluation must be
+performed using the model itself. The silhouette coefficient is an
+example of such a score, where a higher silhouette coefficient score
+refers to a model with more clearly defined clusters. Silhouette
+coefficient is a metric that measures how well each data point fits into
+its assigned cluster. It combines information about both the
+connectivity (how close data point \\emph{a} is to other points in its
+own cluster) and separation (how far data point b is from points in
+other clusters) of the data point technique (Scikit-learn user guide,
+n.d.).
+
+The Calinski-Harabasz index, also known as the Variance Ratio Criterion,
+can also be used to evaluate the model, where a higher Calinski-Harabasz
+score corresponds to a model with well-defined clusters. The score is
+higher when clusters are dense and well-separated, which aligns with the
+standard concept of a cluster technique (Scikit-learn user guide, n.d.).
+
+Our approach to determining the optimal silhouette coefficient is based
+on an iterative experimental programmatic process in which the distance
+threshold between clusters was cyclically set for different proximity
+metrics and linkage types to determine the maximum value of the
+silhouette coefficient. Ranges of the «Distance\\_threshold» parameter
+were tested to determine the point at which a balance among the average
+silhouette coefficient (should be maximum), the percentage of clusters
+with negative silhouette coefficient (should be closer to zero), and
+visual inspection of the clusters was observed. The program for the
+cyclic process was implemented in Python using the Scikit-learn library.
+
+{\\bfseries Results and discussions.} As a result of the experiments, 3047
+skill phrases were processed. Table 1 presents data on various metrics
+(cosine, euclidean), linkage types (average, complete, single, ward),
+distance threshold values, the number of clusters, the average
+silhouette coefficient of all clusters, the percentage of clusters with
+a silhouette coefficient above 0.03 (the most successful clusters), the
+percentage of clusters with a negative silhouette coefficient, and the
+average Calinski-Harabasz index.
+
+The data for Table 1, starting from the fourth column, were obtained as
+a result of cyclic operation of the agglomerative clustering algorithm
+for three initial parameters (the first three columns), with
+programmatically evaluation of cluster quality by silhouette and
+Calinski-Harabasz coefficient algorithms.
+\\end{multicols}
+
+{\\bfseries Table 1 - Parameters and results of experiments}
+
+% \\begin{longtable}[]{@{}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1062}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1074}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1198}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1198}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1358}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1470}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1322}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.1317}}@{}}
+% \\toprule\\noalign{}
+% \\multicolumn{3}{@{}>{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{0.3334} + 4\\tabcolsep}}{%
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Clustering parameters}
+% \\end{minipage}} &
+% \\multirow{2}{=}{\\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Number of clusters}
+% \\end{minipage}} &
+% \\multirow{2}{=}{\\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Average silhouette coefficient of all clusters}
+% \\end{minipage}} &
+% \\multirow{2}{=}{\\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Percentage of clusters with silhouette coefficient greater than
+% 0.03}
+% \\end{minipage}} &
+% \\multirow{2}{=}{\\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Percentage of clusters with negative silhouette coefficient}
+% \\end{minipage}} &
+% \\multirow{2}{=}{\\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Average Calinski-Harabasz index}
+% \\end{minipage}} \\\\
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Metric}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Linkage}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Distance\\_}
+% 
+% {\\bfseries threshold}
+% \\end{minipage} \\\\
+% \\midrule\\noalign{}
+% \\endhead
+% \\bottomrule\\noalign{}
+% \\endlastfoot
+% \\multirow{23}{=}{cosine} & \\multirow{12}{=}{average} & 0.2 & 1669 &
+% 0.25506 & 33.97\\% & 0\\% & 9.60789 \\\\
+% & & 0.24 & 1403 & 0.26764 & 40.77\\% & 0.07\\% & 9.03752 \\\\
+% & & 0.25 & 1335 & 0.27106 & 42.77\\% & 0.07\\% & 9.03694 \\\\
+% & & 0.26 & 1280 & 0.26711 & 43.44\\% & 0.07\\% & 8.88383 \\\\
+% & & 0.27 & 1221 & 0.26728 & 44.31\\% & 0\\% & 8.83944 \\\\
+% & & 0.28 & 1166 & 0.27018 & 46.14\\% & 0\\% & 8.77975 \\\\
+% & & 0.29 & 1121 & 0.27126 & 47.55\\% & 0\\% & 8.76839 \\\\
+% & & 0.3 & 1077 & 0.27041 & 48.75\\% & 0.09\\% & 8.76821 \\\\
+% & & 0.31 & 1023 & 0.26873 & 49.76\\% & 0.09\\% & 8.74085 \\\\
+% & & 0.32 & 978 & 0.26798 & 51.43\\% & 0.1\\% & 8.77425 \\\\
+% & & 0.4 & 636 & 0.23460 & 61.16\\% & 0.31\\% & 8.96599 \\\\
+% & & 0.5 & 357 & 0.17152 & 72.55\\% & 0.84\\% & 9.38007 \\\\
+% & \\multirow{8}{=}{complete} & 0.29 & 1342 & 0.28119 & 49.93\\% & 2.6\\% &
+% 9.45677 \\\\
+% & & 0.3 & 1295 & 0.28338 & 51.43\\% & 2.78\\% & 9.48204 \\\\
+% & & 0.31 & 1257 & 0.28413 & 52.51\\% & 2.86\\% & 9.43280 \\\\
+% & & 0.32 & 1222 & 0.28468 & 53.68\\% & 2.86\\% & 9.43222 \\\\
+% & & 0.33 & 1175 & 0.28383 & 55.15\\% & 2.89\\% & 9.33287 \\\\
+% & & 0.34 & 1143 & 0.28272 & 55.47\\% & 3.32\\% & 9.31358 \\\\
+% & & 0.35 & 1099 & 0.28272 & 57.23\\% & 3.37\\% & 9.30610 \\\\
+% & & 0.4 & 916 & 0.27294 & 63.54\\% & 3 .93\\% & 9.39409 \\\\
+% & \\multirow{3}{=}{single} & 0.2 & 1045 & -0.18031 & 19.14\\% & 0.27\\% &
+% 2.39889 \\\\
+% & & 0.29 & 406 & -0.28775 & 17.24\\% & 0.49\\% & 1.84882 \\\\
+% & & 0.39 & 106 & -0.19031 & 17.92\\% & 0.94\\% & 1.89379 \\\\
+% \\multirow{3}{=}{euclidean} & \\multirow{3}{=}{ward} & 2 & 1316 & 0.25526
+% & 47.72\\% & 4.79\\% & 10.69402 \\\\
+% & & 2.5 & 894 & 0.26155 & 62.08\\% & 7.49\\% & 10.48007 \\\\
+% & & 2.9 & 666 & 0.24942 & 72.67\\% & 9.46\\% & 10.89370 \\\\
+% \\multicolumn{8}{@{}>{\\raggedright\\arraybackslash}p{(\\columnwidth - 14\\tabcolsep) * \\real{1.0000} + 14\\tabcolsep}@{}}{%
+% {\\bfseries Note
+% -~\\href{https://context.reverso.net/\\%D0\\%BF\\%D0\\%B5\\%D1\\%80\\%D0\\%B5\\%D0\\%B2\\%D0\\%BE\\%D0\\%B4/\\%D0\\%B0\\%D0\\%BD\\%D0\\%B3\\%D0\\%BB\\%D0\\%B8\\%D0\\%B9\\%D1\\%81\\%D0\\%BA\\%D0\\%B8\\%D0\\%B9-\\%D1\\%80\\%D1\\%83\\%D1\\%81\\%D1\\%81\\%D0\\%BA\\%D0\\%B8\\%D0\\%B9/Compiled+by+the+author}{Compiled
+% by the author}}} \\\\
+% \\end{longtable}
+
+When using cosine similarity with average linkage, a significant
+reduction in the number of clusters from 1669 to 357 is observed as the
+distance threshold increases from 0.2 to 0.5. In this parameter
+configuration, the silhouette coefficient is of primary interest, and
+the optimal threshold for balanced clustering is found to be between
+0.28 and 0.3, where good silhouette scores are achieved while
+maintaining a reasonable number of clusters.
+
+For cosine similarity with complete linkage, the silhouette coefficient
+varies from 0.28119 to 0.27294. The complete linkage method exhibits a
+significant increase in the percentage of negative silhouettes (up to
+3.93\\% at a threshold of 0.4), which may be attributed to its tendency
+to form clusters by combining distantly located elements, thereby
+increasing group overlap.
+
+When using cosine similarity with single linkage, poor clustering
+quality is evident, with negative average silhouette values and low
+Calinski-Harabasz index scores, indicating an unsuitable linkage method
+for this type of data. The method exhibits negative average silhouette
+values, indicating extremely weak separation between clusters.
+
+For Euclidean similarity with Ward linkage, a threshold of 2.5 is
+optimal in terms of the silhouette coefficient, providing a good balance
+between the number and quality of clusters. The method shows an increase
+in the percentage of negative silhouettes as the threshold increases,
+reaching 9.46\\% at a threshold of 2.9, indicating that as the threshold
+increases, cluster quality deteriorates, and clusters become more
+diffuse and overlapping.
+
+The average and complete methods with cosine similarity generally yield
+better silhouette coefficient results, particularly at intermediate
+threshold values, allowing for a balance between the number of clusters
+and their quality. The percentage of negative silhouette coefficients
+indicates the degree of overlap or misclassification within groups,
+serving as a crucial indicator of cluster structure quality. Further
+examination of the data leads to the selection of cosine similarity with
+average linkage and a distance threshold of 0.29, as this option
+demonstrates the best silhouette coefficient results.
+
+Figure 2 depicts the distribution of skill clusters using average
+linkage with cosine similarity at a distance threshold of 0.29, where
+each point represents a specific skill, and the color indicates
+membership in one of the clusters.
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image105}
+	\\caption*{Fig. 2 - Distribution of skill clusters using average linkage
+with cosine similarity at a distance threshold of 0.29}
+\\end{figure}
+
+
+
+
+
+
+The points are evenly distributed across the graph, although there is
+some concentration in the center. This may indicate common or frequently
+occurring skills that do not exhibit distinct unique properties, in
+contrast to rarer or more specialized skills found on the periphery.
+
+Grouped points represent niche skills that are divided into several
+clusters. For instance, Table 2 shows several clusters related to
+testing. As described in the Materials and methods section, the
+clustering data was collected in Russian and English. In this case, the
+phrases in the data could be completely in the same language or contain
+elements of both languages at the same time.
+
+{\\bfseries Table 2 - Example of clusters}
+
+% \\begin{longtable}[]{@{}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.1084}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.7571}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.1331}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.0015}}@{}}
+% \\toprule\\noalign{}
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Cluster number}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Skills in the cluster}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Silhouette coefficient}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% \\end{minipage} \\\\
+% \\midrule\\noalign{}
+% \\endhead
+% \\bottomrule\\noalign{}
+% \\endlastfoot
+% 248 & тестирование мобильного приложения, тестирование мобильных
+% приложений, диагностика смартфонов & 0.53794 & \\\\
+% 130 & автоматизированное тестирование, автотестирование, автоматизация
+% тестирования, automation test, auto-testing & 0.5163 & \\\\
+% 214 & тестирование пользовательского интерфейса, тестирование новых
+% девайсов & 0.18981 & \\\\
+% 478 & проведение ux/ui тестирований, unit testing, ui test & 0.1366 & \\\\
+% 116 & test case, проведение тестирований, тестирование api,
+% функциональное тестирование, нагрузочное тестирование, диагностика, a/b
+% testing, ручное тестирование, тестирование, модульное тестирование,
+% регрессионное тестирование, a/b тесты, диагностика пк, a/b тестирование,
+% регресcионное тестирование, functional testing, кроссбраузерное
+% тестирование, тестовая документация, тест-кейсы, testing framework,
+% тест-дизайн, a/b-тестирование & 0.09042 & \\\\
+% 976 & интеграционное тестирование & 0.0 & \\\\
+% 1057 & beta-тестирования & 0.0 & \\\\
+% 818 & тестирование qa & 0.0 & \\\\
+% \\multicolumn{4}{@{}>{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{1.0000} + 6\\tabcolsep}@{}}{%
+% {\\bfseries Note
+% -~\\href{https://context.reverso.net/\\%D0\\%BF\\%D0\\%B5\\%D1\\%80\\%D0\\%B5\\%D0\\%B2\\%D0\\%BE\\%D0\\%B4/\\%D0\\%B0\\%D0\\%BD\\%D0\\%B3\\%D0\\%BB\\%D0\\%B8\\%D0\\%B9\\%D1\\%81\\%D0\\%BA\\%D0\\%B8\\%D0\\%B9-\\%D1\\%80\\%D1\\%83\\%D1\\%81\\%D1\\%81\\%D0\\%BA\\%D0\\%B8\\%D0\\%B9/Compiled+by+the+author}{Compiled
+% by the author}}} \\\\
+% \\end{longtable}
+
+The list of clusters containing both Russian and English terms
+highlights the bilingual nature of the data. Including skills in both
+languages can enhance the understanding of professional competency
+requirements across different regions, thereby increasing the
+universality of research in employment and education.
+
+Some clusters overlap with each other, which may result from fuzzy
+boundaries between skills or the proximity of their content. Cluster 33
+is the last cluster with a silhouette coefficient greater than zero.
+Table 3 shows cluster 33, which includes many unrelated abbreviations
+and monosyllabic terms.
+
+{\\bfseries Table 3 - Cluster 33}
+
+% \\begin{longtable}[]{@{}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.1083}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.7564}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.1329}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{0.0025}}@{}}
+% \\toprule\\noalign{}
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Cluster number}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Skills in the cluster}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Silhouette coefficient}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% \\end{minipage} \\\\
+% \\midrule\\noalign{}
+% \\endhead
+% \\bottomrule\\noalign{}
+% \\endlastfoot
+% 33 & java, верстка, vue, лвс, ui, vuejs, veam, sap fi, osi, скд, с\\#,
+% релиз, jpa, lte, асутп, сапр, asana, kotlin, впр, pestel, ge/m, vlan,
+% java ee, сопровождение по, снип, itil, otrs, presales, nat, онбординг,
+% sono, siem, unix, java se, idef, trello, глонасс, rtos, mbedos, срм,
+% iis, koin di, vue js, pascal, kafka для очередей, fastapi, vuetify,
+% фронтенд, удаленка, абис, uix, jest, nestjs, nodejs, цод, vrrp,
+% айдентика, aiohtpp, парсер, сбор трейсов, zbrush, спецпроекты, ar, lld,
+% асу тп, стпо, ai, impa, ррл, vite, бэм, плк, геттеры, смр, olap, aris,
+% erspan, cacti, xunit, gradle, prd, gke, maven, ремонт п, пайка,
+% переустановка по, trc, bem, сметы, гис, эсф, perco, vr, по, опс,
+% java/kotlin, xamarin, лендинг, vtiger, биот, эдо, эквайринг, предовос,
+% пэк, ппм, ндв, пдс, сзз, palo alto, jvm, суиб, волс, talend, пресейл,
+% presale, pam, estaff, актуарий, uart, serdes, отладка, saml, элеткрик,
+% пк, екв, в2в., wcdma & 0.0063 & \\\\
+% \\multicolumn{4}{@{}>{\\raggedright\\arraybackslash}p{(\\columnwidth - 6\\tabcolsep) * \\real{1.0000} + 6\\tabcolsep}@{}}{%
+% {\\bfseries Note
+% -~\\href{https://context.reverso.net/\\%D0\\%BF\\%D0\\%B5\\%D1\\%80\\%D0\\%B5\\%D0\\%B2\\%D0\\%BE\\%D0\\%B4/\\%D0\\%B0\\%D0\\%BD\\%D0\\%B3\\%D0\\%BB\\%D0\\%B8\\%D0\\%B9\\%D1\\%81\\%D0\\%BA\\%D0\\%B8\\%D0\\%B9-\\%D1\\%80\\%D1\\%83\\%D1\\%81\\%D1\\%81\\%D0\\%BA\\%D0\\%B8\\%D0\\%B9/Compiled+by+the+author}{Compiled
+% by the author}}} \\\\
+% \\end{longtable}
+
+\\begin{multicols}{2}
+An analysis of the table for Cluster 33 reveals a large number of
+diverse skills, ranging from programming (Java, Kotlin, Node.js) to
+specialized technical and engineering areas (soldering, repair, software
+reinstallation). The very low silhouette coefficient (0.0063) indicates
+that this cluster is poorly separated from others, possibly due to its
+excessive heterogeneity.
+
+The remaining skills do not form clusters and have a silhouette
+coefficient of zero. These isolated skills constitute approximately 19\\%
+of the total number of skills.
+
+Analyzing the results, it can be stated that the distribution of
+silhouette coefficients reflects the quality of the clustering.
+Typically, the silhouette coefficient ranges from 1 to -1. In our case,
+clusters with a high silhouette coefficient, ranging from 1 to 0.04,
+exhibit acceptable quality upon inspection and can be used to create
+skill communities within a knowledge graph. Clusters with a silhouette
+coefficient between 0.03 and 0 are not suitable for community creation
+within the graph, as they have very blurred boundaries and include
+overly heterogeneous terms. Clusters with a zero silhouette coefficient
+include unique skills that do not cluster with other skill formulations.
+Clusters with a negative silhouette coefficient are of very poor quality
+and may include highly heterogeneous data. However, in our selected
+configuration, such clusters were not observed as a result of the
+experiments.
+
+When the silhouette coefficient threshold for each cluster is set above
+0.03, these clusters will subsequently be used to identify skill
+communities within job and skill knowledge graphs.
+
+In analyzing clusters formed from skills in both Russian and English, it
+is important to note that this approach allows for the consideration of
+linguistic diversity, making the clustering process more adaptive and
+accurate for multilingual data. This approach enables a better
+understanding of data structure and provides a higher-quality analysis
+of skills or qualifications.
+
+When analyzing potential clustering errors, a key pattern can be
+observed that may affect cluster quality, particularly in relation to
+phrase length. Short phrases or abbreviations often carry less unique
+information and may be erroneously grouped due to similarities in
+spelling or pronunciation. For example, abbreviations such as SCCM and
+SCTP might be clustered with Scrum, despite differences in their
+functions and applications.
+
+For short words and abbreviations, it was necessary to improve embedding
+generation algorithms and conduct additional clustering. The additional
+training of the multilingual Paraphrase-multilingual-mpnet-base-v2 model
+used for generating embeddings based on the paraphrase data set \"short
+abbreviation-full form\" partially solved the problem.
+
+Let' s consider the ratio of individual skills and
+erroneous clusters with a positive silhouette coefficient obtained
+before and after training. The correctness of cluster formation was
+evaluated by an expert.
+\\end{multicols}
+
+{\\bfseries Table 4 - Comparison of erroneous clusters before and after
+training the embedding model}
+
+% \\begin{longtable}[]{@{}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 8\\tabcolsep) * \\real{0.1926}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 8\\tabcolsep) * \\real{0.1463}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 8\\tabcolsep) * \\real{0.2549}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 8\\tabcolsep) * \\real{0.2282}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 8\\tabcolsep) * \\real{0.1781}}@{}}
+% \\toprule\\noalign{}
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Embedding model}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Silhouette coefficient}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Number of clusters (including single terms)}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Percentage of Single Terms from Total Skills (3047)}
+% \\end{minipage} & \\begin{minipage}[b]{\\linewidth}\\raggedright
+% {\\bfseries Percentage of erroneous clusters}
+% \\end{minipage} \\\\
+% \\midrule\\noalign{}
+% \\endhead
+% \\bottomrule\\noalign{}
+% \\endlastfoot
+% Before training & 0,27126 & 1121 & 19,17\\% & 19,74\\% \\\\
+% After training & 0,2851 & 1407 & 24\\% & 13,97\\% \\\\
+% \\end{longtable}
+
+\\begin{multicols}{2}
+Fine-tuning the model led to an increase in the number of clusters,
+which may indicate more detailed segmentation of skills. The increase in
+the average silhouette coefficient and the percentage of successful
+clusters points to improved clustering quality after fine-tuning the
+model. The percentage of erroneous clusters decreased, further
+confirming the model' s improved performance. After
+further training, there was a partial improvement in results, but for
+better results it is necessary to create a separate dictionary of
+abbreviations.
+
+To address the potential for scalability of our approach beyond the IT
+sector, we can expand its applicability to other professional domains,
+such as finance, healthcare, and engineering. The methodology can be
+adapted to these areas by incorporating domain-specific skills.
+Potential adaptations include the use of specialized embedding models
+trained on sector-relevant text corpora, which would enable more
+accurate clustering of context-specific skills. For instance, in the
+healthcare sector, medical terminologies and technical jargon could be
+incorporated into the embedding space to improve the identification of
+skill communities. Similarly, in the finance sector, the inclusion of
+financial industry terms and competencies could enhance the clustering
+process.
+
+{\\bfseries Conclusions.} This study explored the application of
+agglomerative hierarchical clustering for analyzing skills extracted
+from an online recruitment platform. The research encompassed a broad
+range of linkage methods and distance metrics, allowing for the
+assessment and comparison of the effectiveness of each approach in the
+context of clustering semantically diverse data.
+
+It was found that agglomerative clustering methods hold significant
+potential for identifying structured groups of skills, which can enhance
+the understanding of labor market trends and needs. The analysis of
+clusters formed in different languages confirmed the universality and
+adaptability of the proposed approach to multilingual data.
+
+However, certain issues were also identified during the analysis, such
+as overlapping clusters and low silhouette coefficient values in some
+clustering configurations. These observations have indicated the need
+for further refinement of data preprocessing techniques to improve the
+quality of results. After further training of the embedding model on
+paraphrases, a partial improvement in results was observed, however, a
+separate dictionary of abbreviations will be created for the best
+results.
+
+The findings of this study can be utilized to develop more effective
+data analysis tools, including the creation of educational programs and
+skill development strategies tailored to the evolving conditions of the
+labor market. The proposed methods and approaches may also find
+application in other areas where analyzing large volumes of textual
+information is required to identify hidden patterns and relationships.
+
+In conclusion, despite certain challenges, the results achieved confirm
+the value and effectiveness of hierarchical agglomerative clustering as
+a tool for deep data analysis, opening new avenues for further research
+and practical applications in the field of data analytics.
+
+\\emph{{\\bfseries Financing.} This research is funded by the Science
+Committee of the Ministry of Science and Higher Education of the
+Republic of Kazakhstan (Grant No. AP22783030).}
+\\end{multicols}
+
+\\begin{center}
+{\\bfseries References}
+\\end{center}
+
+\\begin{references}
+\\begin{enumerate}
+\\def\\labelenumi{\\arabic{enumi}.}
+\\item
+  Fortunato, S. (2010). Community detection in graphs// Physics
+  Reports.- 2010.-Vol.486(3-5).-P. 75-174.
+  \\href{https://doi.org/10.1016/j.physrep.2009.11.002}{DOI
+  10.1016/j.physrep.2009.11.002}
+\\end{enumerate}
+
+2. Oti, E., \\& Olusola, M. (2024). Overview of agglomerative
+hierarchical clustering methods //British Journal of Computer,
+Networking and Information Technology.-2024.-Vol., 7(2).-P 14-23.
+\\href{https://doi.org/10.52589/BJCNIT-CV9POOGW}{DOI
+10.52589/BJCNIT-CV9POOGW}
+
+3.Tokuda, E. K., Comin, C. H., \\& Costa, L. F. (2022). Revisiting
+agglomerative clustering// Physica A: Statistical Mechanics and Its
+Applications.- Vol.585, Article 126433.
+
+DOI
+\\href{https://doi.org/10.1016/j.physa.2021.126433}{10.1016/j.physa.2021.126433}
+
+\\begin{enumerate}
+\\def\\labelenumi{\\arabic{enumi}.}
+\\setcounter{enumi}{1}
+\\item
+  Sumengen, B. (2021). Scaling hierarchical agglomerative clustering to
+  billion-sized datasets. arXiv, 2021. DOI
+  \\href{https://doi.org/10.48550/arXiv.2105.11653}{10.48550/arXiv.2105.11653}
+\\item
+  Cena, A., \\& Gagolewski, M. (2020). Genie+OWA: Robustifying
+  hierarchical clustering with OWA-based linkages// Information
+  Sciences.-2020.-Vol. 520.-P. 324-336.
+\\end{enumerate}
+
+\\href{https://doi.org/10.1016/j.ins.2020.02.025}{DOI
+10.1016/j.ins.2020.02.025}
+
+\\begin{enumerate}
+\\def\\labelenumi{\\arabic{enumi}.}
+\\setcounter{enumi}{3}
+\\item
+  Gagolewski, M., Bartoszuk, M., \\& Cena, A. Are cluster validity
+  measures (in)valid? //Information Sciences.-2021.-Vol. 581.- P.
+  620-634. \\href{https://doi.org/10.1016/j.ins.2021.10.004}{DOI
+  10.1016/j.ins.2021.10.004}
+\\item
+  Söküt Açar, T., \\& Öz, N. A. The determination of optimal cluster
+  number by silhouette index at clustering of the European Union member
+  countries and candidate Turkey by waste indicators// Politeknik
+  Dergisi.-2020.-Vol. 26(3).
+  \\href{https://doi.org/10.5505/pajes.2019.49932}{DOI
+  10.5505/pajes.2019.49932}
+\\item
+  TabassumA., Patil R. R. A survey on text pre-processing \\& feature
+  extraction techniques in natural language processing.//International
+  Research Journal of Engineering and Technology.-2020ю-Vol.7(6).-
+  P.4864-4867.
+  \\url{https://www.semanticscholar.org/paper/A-Survey-on-Text-Pre-Processing-\\%26-Feature-in-Tabassum-Patil/f308488e996599115fe478c03b74a0b19b9a8f06}
+\\item
+  Pugachev L., BurtsevM. (2021). Short text clustering with
+  transformers, ArXiv:21.02.00541v1
+\\end{enumerate}
+
+DOI
+\\href{http://dx.doi.org/10.28995/2075-7182-2021-20-571-577}{10.28995/2075-7182-2021-20-571-577}
+
+\\begin{enumerate}
+\\def\\labelenumi{\\arabic{enumi}.}
+\\setcounter{enumi}{7}
+\\item
+  GalliC., Donos N.,CalciolariE. Performance of 4 pre-trained sentence
+  transformer models in the semantic query of a systematic review
+  dataset on peri-implantitis//Information.- 2024.- Vol.15(2), Article
+  68. \\href{https://doi.org/10.3390/info15020068}{DOI
+  10.3390/info15020068}
+\\item
+  Ternikov A. A. (2022). Skill-based clustering algorithm for online job
+  advertisements// Izvestiya of Saratov University. Mathematics.
+  Mechanics. Informatics.-2022.- Vol.22(2).-P. 250-265.
+  \\href{https://doi.org/10.18500/1816-9791-2022-22-2-250-265}{DOI
+  10.18500/1816-9791-2022-22-2-250-265}
+\\item
+  Karthikeyan, B. A comparative study on K-means clustering and
+  agglomerative hierarchical clustering// International Journal of
+  Emerging Trends in Engineering Researc.-2020.-Vol. 8(5).-P. 1600-1604.
+  \\href{https://doi.org/10.30534/ijeter/2020/20852020}{DOI
+  10.30534/ijeter/2020/20852020}
+\\item
+  Bafna, P., Pramod, D., \\& Vaidya, A. (2016, March). Document
+  clustering: TF-IDF approach. In 2016 International Conference on
+  Electrical, Electronics, and Optimization Techniques (ICEEOT) (pp.
+  61-66). \\href{https://doi.org/10.1109/ICEEOT.2016.7754750}{DOI
+  10.1109/ICEEOT.2016.7754750}
+\\item
+  Srivastava, R., Hingmire, S., \\& Palshikar, G. K. (2020). Clustering
+  skills for industrial learning. TCS Research, Tata Research Design \\&
+  Development Centre, Hadapsar, Pune.
+  \\url{https://www.cse.msu.edu/~wangzh65/AI4EDU/papers/15.pdf}
+\\item
+  Biloshchytskyi, A., Shamgunova, . M. ., \\& Biloshchytska , S. .
+  (2024). Exploration of the thematic clustering and collaboration
+  opportunities in Kazakhstani research//Scientific Journal of Astana IT
+  University.-2024.-Vol. 17(17).-P.106-121.
+  \\href{https://doi.org/10.37943/17ALVR8114}{DOI 10.37943/17ALVR8114}
+\\item
+  Ternikov, A. A. Skill-based clustering algorithm for online job
+  advertisements// Izvestiya of Saratov University. Mathematics.
+  Mechanics. Informatics,.-2022.- 22(2).-P. 250 - 265.
+\\end{enumerate}
+
+\\href{https://doi.org/10.18500/1816-9791-2022-22-2-250-265}{DOI
+10.18500/1816-9791-2022-22-2-250-265}
+
+15. Dikov M.E., Shirobokova S.N. O variante formalizacii zadachi
+izvlechenija kljuchevyh navykov i klasternogo analiza vakansij pri
+realizacii kompleksnogo instrumentarij cifrovoj proforientacii.//
+Inzhenernyj vestnik Dona.-2024.- № 3.- S.1-10.{[}in Russian{]}
+
+\\url{https://cyberleninka.ru/article/n/o-variante-formalizatsii-zadachi-izvlecheniya-klyuchevyh-navykov-i-klasternogo-analiza-vakansiy-pri-realizatsii-kompleksnogo}
+\\end{references}
+
+\\begin{authorinfo}
+\\hspace{1em}\\emph{{\\bfseries Сведение об авторах}}
+
+Рамазанова В. С.- магистр технических наук, Евразийский национальный
+университет им. Л. Н. Гумилева, Астана, Казахстан, е-mail:
+\\href{mailto:ramazanovavs@gmail.com}{\\nolinkurl{ramazanovavs@gmail.com}};
+
+Самбетбаева М. А.- PhD, Евразийский национальный университет им. Л. Н.
+Гумилева Астана, Казахстан,
+
+е-mail:
+\\href{mailto:madina_jgtu@mail.ru}{\\nolinkurl{madina\\_jgtu@mail.ru}};
+
+Тохметов А. Т. - доцент, Евразийский национальный университет им. Л.Н.
+Гумилева, Астана, Казахстан, E-mail:
+\\href{mailto:attohmetov@mail.ru}{\\nolinkurl{attohmetov@mail.ru}};
+
+Ламашева Ж. Б. - PhD, Евразийский национальный университет им. Л. Н.
+Гумилева, Астана, Казахстан,
+
+е-mail:
+\\href{mailto:lamasheva_zhb@enu.kz}{\\nolinkurl{lamasheva\\_zhb@enu.kz}} ;
+
+Серикбаева С. К. - PhD, Евразийский национальный университет им. Л. Н.
+Гумилева, Астана, Казахстан,
+
+е-mail: \\href{mailto:inf_8585@mail.ru}{\\nolinkurl{inf\\_8585@mail.ru}}
+
+\\hspace{1em}\\emph{{\\bfseries Information about the authors}}
+
+Ramazanova V. - master of technical sciences, L. N. Gumilyov Eurasian
+National University, Astana, Kazakhstan, е-mail: ramazanovavs@gmail.com;
+
+Sambetbayeva M. - PhD, L. N. Gumilyov Eurasian National University,
+Astana, Kazakhstan, е-mail:
+\\href{mailto:madina_jgtu@mail.ru}{\\nolinkurl{madina\\_jgtu@mail.ru}};
+
+Tokhmetov A. - associate professor, L.N. Gumilyov Eurasian National
+University, Astana, Kazakhstan, е-mail:
+\\href{mailto:attohmetov@mail.ru}{\\nolinkurl{attohmetov@mail.ru}};
+
+Lamasheva Zh. - PhD, L.N. Gumilyov Eurasian National University, Astana,
+Kazakhstan, е-mail:
+\\href{mailto:lamasheva_zhb@enu.kz}{\\nolinkurl{lamasheva\\_zhb@enu.kz}};
+
+Serikbayeva S. - PhD, L.N. Gumilyov Eurasian National University,
+Astana, Kazakhstan, е-mail:
+\\href{mailto:inf_8585@mail.ru}{\\nolinkurl{inf\\_8585@mail.ru}}
+\\end{authorinfo}
+" 0 17 (fontified t) 17 26 (face font-lock-keyword-face fontified t) 26 85 (face (bold) fontified t) 85 115 (fontified t) 115 117 (fontified t) 117 126 (face font-lock-keyword-face fontified t) 126 159 (face (bold) fontified t) 159 162 (fontified t) 162 171 (face font-lock-keyword-face fontified t) 171 211 (face (bold) fontified t) 211 227 (face (font-lock-keyword-face bold) fontified t) 227 228 (face (bold) fontified t) 228 237 (face (font-lock-keyword-face bold) fontified t) 237 240 (face (bold) fontified t) 240 243 (fontified t) 243 259 (face font-lock-keyword-face fontified t) 259 315 (fontified t) 315 327 (fontified t) 327 329 (fontified t) 329 338 (face font-lock-keyword-face fontified t) 338 339 (face (bold) fontified t) 339 355 (face (font-lock-keyword-face bold) fontified t) 355 356 (face (bold) fontified t) 356 365 (face (font-lock-keyword-face bold) fontified t) 365 367 (face (bold) fontified t) 367 390 (fontified t) 390 395 (face font-lock-keyword-face fontified t) 395 396 (fontified t) 396 419 (face tex-verbatim fontified t) 419 421 (fontified t) 421 431 (face font-lock-keyword-face fontified t) 431 432 (fontified t) 432 449 (face tex-verbatim fontified t) 449 453 (fontified t) 453 521 (fontified t) 521 724 (fontified t) 724 793 (fontified t) 793 932 (fontified t) 932 997 (fontified t) 997 1070 (fontified t) 1070 1139 (fontified t) 1139 1204 (fontified t) 1204 1271 (fontified t) 1271 1849 (fontified t) 1849 1858 (face font-lock-keyword-face fontified t) 1858 1868 (face (bold) fontified t) 1868 1984 (fontified t) 1984 1993 (face font-lock-keyword-face fontified t) 1993 2077 (face (bold) fontified t) 2077 2081 (fontified t) 2081 2090 (face font-lock-keyword-face fontified t) 2090 2168 (face (bold) fontified t) 2168 2184 (face (font-lock-keyword-face bold) fontified t) 2184 2185 (face (bold) fontified t) 2185 2194 (face (font-lock-keyword-face bold) fontified t) 2194 2197 (face (bold) fontified t) 2197 2200 (fontified t) 2200 2216 (face font-lock-keyword-face fontified t) 2216 2296 (fontified t) 2296 2306 (fontified t) 2306 2308 (face font-lock-keyword-face fontified t) 2308 2321 (fontified t) 2321 2606 (fontified t) 2606 2607 (face font-lock-keyword-face fontified t) 2607 2618 (face font-lock-string-face fontified t) 2618 2619 (face font-lock-keyword-face fontified t) 2619 3681 (fontified t) 3681 3739 (fontified t) 3739 3741 (fontified t) 3741 3750 (face font-lock-keyword-face fontified t) 3750 3766 (face (bold) fontified t) 3766 3890 (fontified t) 3890 3899 (face font-lock-keyword-face fontified t) 3899 3982 (face (bold) fontified t) 3982 3986 (fontified t) 3986 3995 (face font-lock-keyword-face fontified t) 3995 4072 (face (bold) fontified t) 4072 4088 (face (font-lock-keyword-face bold) fontified t) 4088 4089 (face (bold) fontified t) 4089 4098 (face (font-lock-keyword-face bold) fontified t) 4098 4101 (face (bold) fontified t) 4101 4104 (fontified t) 4104 4120 (face font-lock-keyword-face fontified t) 4120 4204 (fontified t) 4204 4206 (face font-lock-keyword-face fontified t) 4206 4497 (fontified t) 4497 4562 (fontified t) 4562 4770 (fontified t) 4770 4977 (fontified t) 4977 5589 (fontified t) 5589 5591 (fontified t) 5591 5600 (face font-lock-keyword-face fontified t) 5600 5614 (face (bold) fontified t) 5614 5737 (fontified t) 5737 5743 (face font-lock-keyword-face fontified t) 5743 5744 (latex-env-pair t fontified t) 5744 5753 (face font-lock-function-name-face latex-env-pair t fontified t) 5753 5754 (latex-env-pair t fontified t) 5754 5758 (fontified t) 5758 5759 (fontified t) 5759 5768 (face font-lock-keyword-face fontified t) 5768 5782 (face (bold) fontified t) 5782 5833 (fontified t) 5833 6036 (fontified t) 6036 6367 (fontified t) 6367 6824 (fontified t) 6824 6894 (fontified t) 6894 7036 (fontified t) 7036 7648 (fontified t) 7648 7730 (fontified t) 7730 7739 (face font-lock-keyword-face fontified t) 7739 7758 (face (bold) fontified t) 7758 7866 (fontified t) 7866 7939 (fontified t) 7939 8310 (fontified t) 8310 8578 (fontified t) 8578 8927 (fontified t) 8927 8997 (fontified t) 8997 9204 (fontified t) 9204 9905 (fontified t) 9905 9941 (fontified t) 9941 9942 (fontified t) 9942 10621 (fontified t) 10621 10836 (fontified t) 10836 10904 (fontified t) 10904 11041 (fontified t) 11041 11519 (fontified t) 11519 11791 (fontified t) 11791 11804 (fontified t) 11804 11805 (fontified t) 11805 12178 (fontified t) 12178 12319 (fontified t) 12319 12929 (fontified t) 12929 12938 (face font-lock-keyword-face fontified t) 12938 12961 (face (bold) fontified t) 12961 12963 (fontified t) 12963 12968 (face font-lock-keyword-face fontified t) 12968 12969 (fontified t) 12969 13027 (face (italic) fontified t) 13027 13029 (fontified t) 13029 13291 (fontified t) 13291 13305 (fontified t) 13305 13363 (fontified t) 13363 13629 (fontified t) 13629 13694 (fontified t) 13694 13764 (fontified t) 13764 13834 (fontified t) 13834 13904 (fontified t) 13904 13977 (fontified t) 13977 14043 (fontified t) 14043 14065 (fontified t) 14065 14066 (fontified t) 14066 14137 (fontified t) 14137 14188 (fontified t) 14188 14254 (fontified t) 14254 14289 (fontified t) 14289 14303 (face font-lock-keyword-face fontified t) 14303 14319 (fontified t) 14319 14321 (face font-lock-keyword-face fontified t) 14321 14364 (fontified t) 14364 14366 (face font-lock-keyword-face fontified t) 14366 14380 (fontified t) 14380 14396 (fontified t) 14396 14410 (face font-lock-keyword-face fontified t) 14410 14426 (fontified t) 14426 14428 (face font-lock-keyword-face fontified t) 14428 14437 (fontified t) 14437 14440 (fontified t) 14440 14442 (face font-lock-keyword-face fontified t) 14442 14458 (fontified t) 14458 14460 (face font-lock-keyword-face fontified t) 14460 14474 (fontified t) 14474 14476 (face font-lock-keyword-face fontified t) 14476 14478 (fontified t) 14478 14479 (fontified t) 14479 14546 (fontified t) 14546 14618 (fontified t) 14618 14684 (fontified t) 14684 14757 (fontified t) 14757 14789 (fontified t) 14789 14793 (face font-lock-keyword-face fontified t) 14793 14794 (fontified t latex-env-pair t) 14794 14803 (face font-lock-function-name-face fontified t latex-env-pair t) 14803 14804 (fontified t latex-env-pair t) 14804 14805 (fontified t) 14805 14806 (fontified t) 14806 14812 (face font-lock-keyword-face fontified t) 14812 14813 (fontified t latex-env-pair t) 14813 14819 (face font-lock-function-name-face fontified t latex-env-pair t) 14819 14820 (fontified t latex-env-pair t) 14820 14824 (fontified t) 14824 14825 (fontified t) 14825 14835 (face font-lock-keyword-face fontified t) 14835 14836 (fontified t) 14836 14837 (fontified t) 14837 14853 (face font-lock-keyword-face fontified t) 14853 14863 (fontified t) 14863 14873 (fontified t face font-lock-keyword-face) 14873 14875 (fontified t) 14875 14893 (fontified t face font-lock-builtin-face) 14893 14895 (fontified t) 14895 14896 (fontified t) 14896 14905 (face font-lock-keyword-face fontified t) 14905 14906 (fontified t) 14906 15131 (fontified t) 15131 15132 (fontified t rear-nonsticky t) 15132 15134 (fontified t) 15134 15138 (face font-lock-keyword-face fontified t) 15138 15139 (fontified t latex-env-pair t) 15139 15145 (face font-lock-function-name-face fontified t latex-env-pair t) 15145 15146 (fontified t latex-env-pair t) 15146 15147 (fontified t) 15147 15148 (fontified t) 15148 15154 (face font-lock-keyword-face fontified t) 15154 15155 (fontified t latex-env-pair t) 15155 15164 (face font-lock-function-name-face fontified t latex-env-pair t) 15164 15165 (fontified t latex-env-pair t) 15165 15169 (fontified t) 15169 15236 (fontified t) 15236 15237 (fontified t) 15237 15306 (fontified t) 15306 15379 (fontified t) 15379 15405 (fontified t) 15405 15406 (fontified t) 15406 15477 (fontified t) 15477 15549 (fontified t) 15549 15594 (fontified t) 15594 15667 (fontified t) 15667 15738 (fontified t) 15738 15810 (fontified t) 15810 15875 (fontified t) 15875 15937 (fontified t) 15937 16005 (fontified t) 16005 16076 (fontified t) 16076 16147 (fontified t) 16147 16192 (fontified t) 16192 16193 (fontified t) 16193 16198 (face font-lock-keyword-face fontified t) 16198 16199 (fontified t) 16199 16259 (face (italic) fontified t) 16259 16262 (fontified t) 16262 16332 (fontified t) 16332 16404 (fontified t) 16404 16416 (fontified t) 16416 16470 (fontified t) 16470 16541 (fontified t) 16541 16568 (fontified t) 16568 16612 (fontified t) 16612 16639 (fontified t) 16639 16640 (fontified t) 16640 16654 (fontified t) 16654 16667 (fontified t) 16667 16668 (fontified t) 16668 16704 (fontified t) 16704 16717 (fontified t) 16717 16719 (face font-lock-keyword-face fontified t) 16719 16736 (fontified t) 16736 16777 (fontified t) 16777 16788 (fontified t) 16788 16790 (face font-lock-keyword-face fontified t) 16790 16822 (fontified t) 16822 16824 (face font-lock-keyword-face fontified t) 16824 16841 (fontified t) 16841 16910 (fontified t) 16910 16912 (face font-lock-keyword-face fontified t) 16912 16918 (face font-lock-string-face fontified t) 16918 16920 (face font-lock-keyword-face fontified t) 16920 16924 (fontified t) 16924 16926 (face font-lock-keyword-face fontified t) 16926 16935 (face font-lock-string-face fontified t) 16935 16937 (face font-lock-keyword-face fontified t) 16937 16978 (fontified t) 16978 17019 (fontified t) 17019 17021 (face font-lock-keyword-face fontified t) 17021 17025 (face font-lock-string-face fontified t) 17025 17027 (face font-lock-keyword-face fontified t) 17027 17050 (fontified t) 17050 17115 (fontified t) 17115 17188 (fontified t) 17188 17236 (fontified t) 17236 17238 (face font-lock-keyword-face fontified t) 17238 17242 (face font-lock-string-face fontified t) 17242 17244 (face font-lock-keyword-face fontified t) 17244 17259 (fontified t) 17259 17298 (fontified t) 17298 17300 (face font-lock-keyword-face fontified t) 17300 17307 (face font-lock-string-face fontified t) 17307 17309 (face font-lock-keyword-face fontified t) 17309 17330 (fontified t) 17330 17377 (fontified t) 17377 17379 (face font-lock-keyword-face fontified t) 17379 17383 (face font-lock-string-face fontified t) 17383 17385 (face font-lock-keyword-face fontified t) 17385 17389 (fontified t) 17389 17391 (face font-lock-keyword-face fontified t) 17391 17398 (face font-lock-string-face fontified t) 17398 17400 (face font-lock-keyword-face fontified t) 17400 17401 (fontified t) 17401 17471 (fontified t) 17471 17473 (face font-lock-keyword-face fontified t) 17473 17479 (face font-lock-string-face fontified t) 17479 17481 (face font-lock-keyword-face fontified t) 17481 17540 (fontified t) 17540 17546 (fontified t) 17546 17547 (fontified t) 17547 17617 (fontified t) 17617 17682 (fontified t) 17682 17751 (fontified t) 17751 17816 (fontified t) 17816 17884 (fontified t) 17884 17949 (fontified t) 17949 17950 (fontified t) 17950 17970 (fontified t) 17970 18020 (fontified t) 18020 18087 (fontified t) 18087 18156 (fontified t) 18156 18221 (fontified t) 18221 18294 (fontified t) 18294 18355 (fontified t) 18355 18390 (fontified t) 18390 18395 (face font-lock-keyword-face fontified t) 18395 18396 (fontified t) 18396 18397 (face (italic) fontified t) 18397 18570 (fontified t) 18570 18571 (fontified t) 18571 18644 (fontified t) 18644 18717 (fontified t) 18717 18787 (fontified t) 18787 18860 (fontified t) 18860 18933 (fontified t) 18933 18934 (fontified t) 18934 19006 (fontified t) 19006 19078 (fontified t) 19078 19148 (fontified t) 19148 19212 (fontified t) 19212 19250 (fontified t) 19250 19251 (face font-lock-keyword-face fontified t) 19251 19270 (face font-lock-string-face fontified t) 19270 19271 (face font-lock-keyword-face fontified t) 19271 19282 (fontified t) 19282 19354 (fontified t) 19354 19425 (fontified t) 19425 19494 (fontified t) 19494 19520 (fontified t) 19520 19562 (fontified t) 19562 19635 (fontified t) 19635 19636 (fontified t) 19636 19637 (fontified t) 19637 19646 (face font-lock-keyword-face fontified t) 19646 19671 (face (bold) fontified t) 19671 19710 (fontified t) 19710 19781 (fontified t) 19781 19851 (fontified t) 19851 19855 (fontified t) 19855 19914 (fontified t) 19914 19986 (fontified t) 19986 20058 (fontified t) 20058 20129 (fontified t) 20129 20235 (fontified t) 20235 20306 (fontified t) 20306 20367 (fontified t) 20367 20432 (fontified t) 20432 20474 (fontified t) 20474 20478 (face font-lock-keyword-face fontified t) 20478 20479 (fontified t latex-env-pair t) 20479 20488 (face font-lock-function-name-face fontified t latex-env-pair t) 20488 20489 (fontified t latex-env-pair t) 20489 20490 (fontified t) 20490 20491 (fontified t) 20491 20492 (fontified t) 20492 20501 (face font-lock-keyword-face fontified t) 20501 20549 (face (bold) fontified t) 20549 20551 (fontified t) 20551 20552 (fontified t) 20552 20554 (face font-lock-comment-delimiter-face fontified t) 20554 20560 (face font-lock-comment-face fontified t) 20560 20571 (face font-lock-comment-face fontified t latex-env-pair t) 20571 20578 (face font-lock-comment-face fontified t) 20578 20582 (face font-lock-comment-delimiter-face fontified t) 20582 20661 (face font-lock-comment-face fontified t) 20661 20665 (face font-lock-comment-delimiter-face fontified t) 20665 20744 (face font-lock-comment-face fontified t) 20744 20748 (face font-lock-comment-delimiter-face fontified t) 20748 20827 (face font-lock-comment-face fontified t) 20827 20831 (face font-lock-comment-delimiter-face fontified t) 20831 20910 (face font-lock-comment-face fontified t) 20910 20914 (face font-lock-comment-delimiter-face fontified t) 20914 20993 (face font-lock-comment-face fontified t) 20993 20997 (face font-lock-comment-delimiter-face fontified t) 20997 21076 (face font-lock-comment-face fontified t) 21076 21078 (face font-lock-comment-delimiter-face fontified t) 21078 21080 (face font-lock-comment-delimiter-face fontified t) 21080 21159 (face font-lock-comment-face fontified t) 21159 21163 (face font-lock-comment-delimiter-face fontified t) 21163 21246 (face font-lock-comment-face fontified t) 21246 21248 (face font-lock-comment-delimiter-face fontified t) 21248 21267 (face font-lock-comment-face fontified t) 21267 21269 (face font-lock-comment-delimiter-face fontified t) 21269 21384 (face font-lock-comment-face fontified t) 21384 21386 (face font-lock-comment-delimiter-face fontified t) 21386 21392 (face font-lock-comment-face fontified t) 21392 21402 (face font-lock-comment-face fontified t latex-env-pair t) 21402 21414 (face font-lock-comment-face fontified t) 21414 21430 (fontified t face font-lock-comment-face) 21430 21432 (face font-lock-comment-delimiter-face) 21432 21466 (face font-lock-comment-face) 21466 21468 (face font-lock-comment-delimiter-face) 21468 21472 (face font-lock-comment-face) 21472 21482 (face font-lock-comment-face latex-env-pair t) 21482 21486 (face font-lock-comment-face) 21486 21488 (face font-lock-comment-delimiter-face) 21488 21510 (face font-lock-comment-face) 21510 21520 (face font-lock-comment-face latex-env-pair t) 21520 21548 (face font-lock-comment-face) 21548 21550 (face font-lock-comment-delimiter-face) 21550 21581 (face font-lock-comment-face) 21581 21583 (face font-lock-comment-delimiter-face) 21583 21587 (face font-lock-comment-face) 21587 21597 (face font-lock-comment-face latex-env-pair t) 21597 21601 (face font-lock-comment-face) 21601 21603 (face font-lock-comment-delimiter-face) 21603 21625 (face font-lock-comment-face) 21625 21635 (face font-lock-comment-face latex-env-pair t) 21635 21663 (face font-lock-comment-face) 21663 21665 (face font-lock-comment-delimiter-face) 21665 21724 (face font-lock-comment-face) 21724 21726 (face font-lock-comment-delimiter-face) 21726 21730 (face font-lock-comment-face) 21730 21740 (face font-lock-comment-face latex-env-pair t) 21740 21744 (face font-lock-comment-face) 21744 21746 (face font-lock-comment-delimiter-face) 21746 21768 (face font-lock-comment-face) 21768 21778 (face font-lock-comment-face latex-env-pair t) 21778 21806 (face font-lock-comment-face) 21806 21808 (face font-lock-comment-delimiter-face) 21808 21883 (face font-lock-comment-face) 21883 21885 (face font-lock-comment-delimiter-face) 21885 21891 (face font-lock-comment-face) 21891 21893 (face font-lock-comment-delimiter-face) 21893 21897 (face font-lock-comment-face) 21897 21907 (face font-lock-comment-face latex-env-pair t) 21907 21911 (face font-lock-comment-face) 21911 21913 (face font-lock-comment-delimiter-face) 21913 21935 (face font-lock-comment-face) 21935 21945 (face font-lock-comment-face latex-env-pair t) 21945 21973 (face font-lock-comment-face) 21973 21975 (face font-lock-comment-delimiter-face) 21975 22047 (face font-lock-comment-face) 22047 22049 (face font-lock-comment-delimiter-face) 22049 22053 (face font-lock-comment-face) 22053 22063 (face font-lock-comment-face latex-env-pair t) 22063 22067 (face font-lock-comment-face) 22067 22069 (face font-lock-comment-delimiter-face) 22069 22091 (face font-lock-comment-face) 22091 22101 (face font-lock-comment-face latex-env-pair t) 22101 22129 (face font-lock-comment-face) 22129 22131 (face font-lock-comment-delimiter-face) 22131 22175 (face font-lock-comment-face) 22175 22177 (face font-lock-comment-delimiter-face) 22177 22181 (face font-lock-comment-face) 22181 22191 (face font-lock-comment-face latex-env-pair t) 22191 22196 (face font-lock-comment-face) 22196 22198 (face font-lock-comment-delimiter-face) 22198 22204 (face font-lock-comment-face) 22204 22214 (face font-lock-comment-face latex-env-pair t) 22214 22242 (face font-lock-comment-face) 22242 22244 (face font-lock-comment-delimiter-face) 22244 22263 (face font-lock-comment-face) 22263 22265 (face font-lock-comment-delimiter-face) 22265 22269 (face font-lock-comment-face) 22269 22279 (face font-lock-comment-face latex-env-pair t) 22279 22288 (face font-lock-comment-face) 22288 22298 (face font-lock-comment-face latex-env-pair t) 22298 22326 (face font-lock-comment-face) 22326 22328 (face font-lock-comment-delimiter-face) 22328 22348 (face font-lock-comment-face) 22348 22350 (face font-lock-comment-delimiter-face) 22350 22354 (face font-lock-comment-face) 22354 22364 (face font-lock-comment-face latex-env-pair t) 22364 22373 (face font-lock-comment-face) 22373 22383 (face font-lock-comment-face latex-env-pair t) 22383 22411 (face font-lock-comment-face) 22411 22413 (face font-lock-comment-delimiter-face) 22413 22436 (face font-lock-comment-face) 22436 22438 (face font-lock-comment-delimiter-face) 22438 22439 (face font-lock-comment-face) 22439 22441 (face font-lock-comment-delimiter-face) 22441 22463 (face font-lock-comment-face) 22463 22465 (face font-lock-comment-delimiter-face) 22465 22469 (face font-lock-comment-face) 22469 22479 (face font-lock-comment-face latex-env-pair t) 22479 22483 (face font-lock-comment-face) 22483 22485 (face font-lock-comment-delimiter-face) 22485 22504 (face font-lock-comment-face) 22504 22506 (face font-lock-comment-delimiter-face) 22506 22515 (face font-lock-comment-face) 22515 22517 (face font-lock-comment-delimiter-face) 22517 22539 (face font-lock-comment-face) 22539 22541 (face font-lock-comment-delimiter-face) 22541 22554 (face font-lock-comment-face) 22554 22556 (face font-lock-comment-delimiter-face) 22556 22624 (face font-lock-comment-face) 22624 22626 (face font-lock-comment-delimiter-face) 22626 22659 (face font-lock-comment-face) 22659 22663 (face font-lock-comment-face) 22663 22665 (face font-lock-comment-delimiter-face) 22665 22723 (face font-lock-comment-face) 22723 22725 (face font-lock-comment-delimiter-face) 22725 22783 (face font-lock-comment-face) 22783 22785 (face font-lock-comment-delimiter-face) 22785 22843 (face font-lock-comment-face) 22843 22845 (face font-lock-comment-delimiter-face) 22845 22900 (face font-lock-comment-face) 22900 22902 (face font-lock-comment-delimiter-face) 22902 22957 (face font-lock-comment-face) 22957 22959 (face font-lock-comment-delimiter-face) 22959 23014 (face font-lock-comment-face) 23014 23016 (face font-lock-comment-delimiter-face) 23016 23073 (face font-lock-comment-face) 23073 23075 (face font-lock-comment-delimiter-face) 23075 23133 (face font-lock-comment-face) 23133 23135 (face font-lock-comment-delimiter-face) 23135 23191 (face font-lock-comment-face) 23191 23193 (face font-lock-comment-delimiter-face) 23193 23249 (face font-lock-comment-face) 23249 23251 (face font-lock-comment-delimiter-face) 23251 23307 (face font-lock-comment-face) 23307 23309 (face font-lock-comment-delimiter-face) 23309 23381 (face font-lock-comment-face) 23381 23383 (face font-lock-comment-delimiter-face) 23383 23394 (face font-lock-comment-face) 23394 23396 (face font-lock-comment-delimiter-face) 23396 23453 (face font-lock-comment-face) 23453 23455 (face font-lock-comment-delimiter-face) 23455 23513 (face font-lock-comment-face) 23513 23515 (face font-lock-comment-delimiter-face) 23515 23573 (face font-lock-comment-face) 23573 23575 (face font-lock-comment-delimiter-face) 23575 23633 (face font-lock-comment-face) 23633 23635 (face font-lock-comment-delimiter-face) 23635 23693 (face font-lock-comment-face) 23693 23695 (face font-lock-comment-delimiter-face) 23695 23753 (face font-lock-comment-face) 23753 23755 (face font-lock-comment-delimiter-face) 23755 23812 (face font-lock-comment-face) 23812 23814 (face font-lock-comment-delimiter-face) 23814 23885 (face font-lock-comment-face) 23885 23887 (face font-lock-comment-delimiter-face) 23887 23898 (face font-lock-comment-face) 23898 23900 (face font-lock-comment-delimiter-face) 23900 23958 (face font-lock-comment-face) 23958 23960 (face font-lock-comment-delimiter-face) 23960 24018 (face font-lock-comment-face) 24018 24020 (face font-lock-comment-delimiter-face) 24020 24092 (face font-lock-comment-face) 24092 24094 (face font-lock-comment-delimiter-face) 24094 24127 (face font-lock-comment-face) 24127 24129 (face font-lock-comment-delimiter-face) 24129 24163 (face font-lock-comment-face) 24163 24186 (face font-lock-comment-face) 24186 24188 (face font-lock-comment-delimiter-face) 24188 24245 (face font-lock-comment-face) 24245 24247 (face font-lock-comment-delimiter-face) 24247 24366 (face font-lock-comment-face) 24366 24368 (face font-lock-comment-delimiter-face) 24368 24384 (face font-lock-comment-face) 24384 24386 (face font-lock-comment-delimiter-face) 24386 24394 (face font-lock-comment-face) 24394 24639 (face tex-verbatim) 24639 24650 (face font-lock-comment-face) 24650 24652 (face font-lock-comment-delimiter-face) 24652 24672 (face font-lock-comment-face) 24672 24674 (face font-lock-comment-delimiter-face) 24674 24678 (face font-lock-comment-face) 24678 24689 (face font-lock-comment-face latex-env-pair t) 24689 24690 (face font-lock-comment-face) 25356 25358 (face font-lock-keyword-face) 26152 26154 (face font-lock-keyword-face) 27151 27157 (face font-lock-keyword-face) 27157 27158 (latex-env-pair t) 27158 27164 (face font-lock-function-name-face latex-env-pair t) 27164 27165 (latex-env-pair t) 27170 27180 (face font-lock-keyword-face) 27182 27198 (face font-lock-keyword-face) 27208 27218 (face font-lock-keyword-face) 27220 27238 (face font-lock-builtin-face) 27241 27250 (face font-lock-keyword-face) 27348 27349 (rear-nonsticky t) 27366 27367 (rear-nonsticky t) 27369 27373 (face font-lock-keyword-face) 27373 27374 (latex-env-pair t) 27374 27380 (face font-lock-function-name-face latex-env-pair t) 27380 27381 (latex-env-pair t) 28058 28067 (face font-lock-keyword-face) 28067 28097 (face (bold)) 28100 28102 (face font-lock-comment-delimiter-face) 28102 28108 (face font-lock-comment-face) 28108 28119 (face font-lock-comment-face latex-env-pair t) 28119 28126 (face font-lock-comment-face) 28126 28130 (face font-lock-comment-delimiter-face) 28130 28208 (face font-lock-comment-face) 28208 28212 (face font-lock-comment-delimiter-face) 28212 28290 (face font-lock-comment-face) 28290 28294 (face font-lock-comment-delimiter-face) 28294 28372 (face font-lock-comment-face) 28372 28376 (face font-lock-comment-delimiter-face) 28376 28458 (face font-lock-comment-face) 28458 28460 (face font-lock-comment-delimiter-face) 28460 28479 (face font-lock-comment-face) 28479 28481 (face font-lock-comment-delimiter-face) 28481 28487 (face font-lock-comment-face) 28487 28497 (face font-lock-comment-face latex-env-pair t) 28497 28525 (face font-lock-comment-face) 28525 28527 (face font-lock-comment-delimiter-face) 28527 28554 (face font-lock-comment-face) 28554 28556 (face font-lock-comment-delimiter-face) 28556 28560 (face font-lock-comment-face) 28560 28570 (face font-lock-comment-face latex-env-pair t) 28570 28579 (face font-lock-comment-face) 28579 28589 (face font-lock-comment-face latex-env-pair t) 28589 28617 (face font-lock-comment-face) 28617 28619 (face font-lock-comment-delimiter-face) 28619 28653 (face font-lock-comment-face) 28653 28655 (face font-lock-comment-delimiter-face) 28655 28659 (face font-lock-comment-face) 28659 28669 (face font-lock-comment-face latex-env-pair t) 28669 28678 (face font-lock-comment-face) 28678 28688 (face font-lock-comment-face latex-env-pair t) 28688 28716 (face font-lock-comment-face) 28716 28718 (face font-lock-comment-delimiter-face) 28718 28753 (face font-lock-comment-face) 28753 28755 (face font-lock-comment-delimiter-face) 28755 28759 (face font-lock-comment-face) 28759 28769 (face font-lock-comment-face latex-env-pair t) 28769 28778 (face font-lock-comment-face) 28778 28788 (face font-lock-comment-face latex-env-pair t) 28788 28816 (face font-lock-comment-face) 28816 28818 (face font-lock-comment-delimiter-face) 28818 28822 (face font-lock-comment-face) 28822 28832 (face font-lock-comment-face latex-env-pair t) 28832 28836 (face font-lock-comment-face) 28836 28838 (face font-lock-comment-delimiter-face) 28838 28857 (face font-lock-comment-face) 28857 28859 (face font-lock-comment-delimiter-face) 28859 28868 (face font-lock-comment-face) 28868 28869 (face font-lock-comment-delimiter-face) 28869 28870 (face font-lock-comment-delimiter-face) 28870 28892 (face font-lock-comment-face) 28892 28894 (face font-lock-comment-delimiter-face) 28894 28907 (face font-lock-comment-face) 28907 28909 (face font-lock-comment-delimiter-face) 28909 28974 (face font-lock-comment-face) 28974 28976 (face font-lock-comment-delimiter-face) 28976 29026 (face font-lock-comment-face) 29026 29028 (face font-lock-comment-delimiter-face) 29028 29099 (face font-lock-comment-face) 29099 29101 (face font-lock-comment-delimiter-face) 29101 29159 (face font-lock-comment-face) 29159 29161 (face font-lock-comment-delimiter-face) 29161 29229 (face font-lock-comment-face) 29229 29231 (face font-lock-comment-delimiter-face) 29231 29255 (face font-lock-comment-face) 29255 29257 (face font-lock-comment-delimiter-face) 29257 29330 (face font-lock-comment-face) 29330 29332 (face font-lock-comment-delimiter-face) 29332 29392 (face font-lock-comment-face) 29392 29394 (face font-lock-comment-delimiter-face) 29394 29466 (face font-lock-comment-face) 29466 29468 (face font-lock-comment-delimiter-face) 29468 29536 (face font-lock-comment-face) 29536 29538 (face font-lock-comment-delimiter-face) 29538 29611 (face font-lock-comment-face) 29611 29613 (face font-lock-comment-delimiter-face) 29613 29677 (face font-lock-comment-face) 29677 29679 (face font-lock-comment-delimiter-face) 29679 29747 (face font-lock-comment-face) 29747 29749 (face font-lock-comment-delimiter-face) 29749 29794 (face font-lock-comment-face) 29794 29796 (face font-lock-comment-delimiter-face) 29796 29841 (face font-lock-comment-face) 29841 29843 (face font-lock-comment-delimiter-face) 29843 29879 (face font-lock-comment-face) 29879 29881 (face font-lock-comment-delimiter-face) 29881 29914 (face font-lock-comment-face) 29914 29916 (face font-lock-comment-delimiter-face) 29916 30033 (face font-lock-comment-face) 30033 30035 (face font-lock-comment-delimiter-face) 30035 30051 (face font-lock-comment-face) 30051 30053 (face font-lock-comment-delimiter-face) 30053 30061 (face font-lock-comment-face) 30061 30306 (face tex-verbatim) 30306 30317 (face font-lock-comment-face) 30317 30319 (face font-lock-comment-delimiter-face) 30319 30339 (face font-lock-comment-face) 30339 30341 (face font-lock-comment-delimiter-face) 30341 30345 (face font-lock-comment-face) 30345 30356 (face font-lock-comment-face latex-env-pair t) 30356 30357 (face font-lock-comment-face) 30979 30988 (face font-lock-keyword-face) 30988 31009 (face (bold)) 31012 31014 (face font-lock-comment-delimiter-face) 31014 31020 (face font-lock-comment-face) 31020 31031 (face font-lock-comment-face latex-env-pair t) 31031 31038 (face font-lock-comment-face) 31038 31042 (face font-lock-comment-delimiter-face) 31042 31120 (face font-lock-comment-face) 31120 31124 (face font-lock-comment-delimiter-face) 31124 31202 (face font-lock-comment-face) 31202 31206 (face font-lock-comment-delimiter-face) 31206 31284 (face font-lock-comment-face) 31284 31288 (face font-lock-comment-delimiter-face) 31288 31370 (face font-lock-comment-face) 31370 31372 (face font-lock-comment-delimiter-face) 31372 31391 (face font-lock-comment-face) 31391 31393 (face font-lock-comment-delimiter-face) 31393 31399 (face font-lock-comment-face) 31399 31409 (face font-lock-comment-face latex-env-pair t) 31409 31437 (face font-lock-comment-face) 31437 31439 (face font-lock-comment-delimiter-face) 31439 31466 (face font-lock-comment-face) 31466 31468 (face font-lock-comment-delimiter-face) 31468 31472 (face font-lock-comment-face) 31472 31482 (face font-lock-comment-face latex-env-pair t) 31482 31491 (face font-lock-comment-face) 31491 31501 (face font-lock-comment-face latex-env-pair t) 31501 31529 (face font-lock-comment-face) 31529 31531 (face font-lock-comment-delimiter-face) 31531 31565 (face font-lock-comment-face) 31565 31567 (face font-lock-comment-delimiter-face) 31567 31571 (face font-lock-comment-face) 31571 31581 (face font-lock-comment-face latex-env-pair t) 31581 31590 (face font-lock-comment-face) 31590 31600 (face font-lock-comment-face latex-env-pair t) 31600 31628 (face font-lock-comment-face) 31628 31630 (face font-lock-comment-delimiter-face) 31630 31665 (face font-lock-comment-face) 31665 31667 (face font-lock-comment-delimiter-face) 31667 31671 (face font-lock-comment-face) 31671 31681 (face font-lock-comment-face latex-env-pair t) 31681 31690 (face font-lock-comment-face) 31690 31700 (face font-lock-comment-face latex-env-pair t) 31700 31728 (face font-lock-comment-face) 31728 31730 (face font-lock-comment-delimiter-face) 31730 31734 (face font-lock-comment-face) 31734 31744 (face font-lock-comment-face latex-env-pair t) 31744 31748 (face font-lock-comment-face) 31748 31750 (face font-lock-comment-delimiter-face) 31750 31769 (face font-lock-comment-face) 31769 31771 (face font-lock-comment-delimiter-face) 31771 31780 (face font-lock-comment-face) 31780 31782 (face font-lock-comment-delimiter-face) 31782 31804 (face font-lock-comment-face) 31804 31806 (face font-lock-comment-delimiter-face) 31806 31819 (face font-lock-comment-face) 31819 31821 (face font-lock-comment-delimiter-face) 31821 31891 (face font-lock-comment-face) 31891 31893 (face font-lock-comment-delimiter-face) 31893 31963 (face font-lock-comment-face) 31963 31965 (face font-lock-comment-delimiter-face) 31965 32036 (face font-lock-comment-face) 32036 32038 (face font-lock-comment-delimiter-face) 32038 32107 (face font-lock-comment-face) 32107 32109 (face font-lock-comment-delimiter-face) 32109 32177 (face font-lock-comment-face) 32177 32179 (face font-lock-comment-delimiter-face) 32179 32243 (face font-lock-comment-face) 32243 32245 (face font-lock-comment-delimiter-face) 32245 32317 (face font-lock-comment-face) 32317 32319 (face font-lock-comment-delimiter-face) 32319 32390 (face font-lock-comment-face) 32390 32392 (face font-lock-comment-delimiter-face) 32392 32456 (face font-lock-comment-face) 32456 32458 (face font-lock-comment-delimiter-face) 32458 32523 (face font-lock-comment-face) 32523 32525 (face font-lock-comment-delimiter-face) 32525 32596 (face font-lock-comment-face) 32596 32598 (face font-lock-comment-delimiter-face) 32598 32668 (face font-lock-comment-face) 32668 32670 (face font-lock-comment-delimiter-face) 32670 32741 (face font-lock-comment-face) 32741 32743 (face font-lock-comment-delimiter-face) 32743 32778 (face font-lock-comment-face) 32778 32780 (face font-lock-comment-delimiter-face) 32780 32897 (face font-lock-comment-face) 32897 32899 (face font-lock-comment-delimiter-face) 32899 32915 (face font-lock-comment-face) 32915 32917 (face font-lock-comment-delimiter-face) 32917 32925 (face font-lock-comment-face) 32925 33170 (face tex-verbatim) 33170 33181 (face font-lock-comment-face) 33181 33183 (face font-lock-comment-delimiter-face) 33183 33203 (face font-lock-comment-face) 33203 33205 (face font-lock-comment-delimiter-face) 33205 33209 (face font-lock-comment-face) 33209 33220 (face font-lock-comment-face latex-env-pair t) 33220 33221 (face font-lock-comment-face) 33222 33228 (face font-lock-keyword-face) 33228 33229 (latex-env-pair t) 33229 33238 (face font-lock-function-name-face latex-env-pair t) 33238 33239 (latex-env-pair t) 33753 33755 (face font-lock-keyword-face) 36260 36264 (face font-lock-keyword-face) 36264 36265 (latex-env-pair t) 36265 36274 (face font-lock-function-name-face latex-env-pair t) 36274 36275 (latex-env-pair t) 36278 36287 (face font-lock-keyword-face) 36287 36348 (face (bold)) 36379 36381 (face font-lock-comment-delimiter-face) 36381 36387 (face font-lock-comment-face) 36387 36398 (face font-lock-comment-face latex-env-pair t) 36398 36405 (face font-lock-comment-face) 36405 36409 (face font-lock-comment-delimiter-face) 36409 36487 (face font-lock-comment-face) 36487 36491 (face font-lock-comment-delimiter-face) 36491 36569 (face font-lock-comment-face) 36569 36573 (face font-lock-comment-delimiter-face) 36573 36651 (face font-lock-comment-face) 36651 36655 (face font-lock-comment-delimiter-face) 36655 36733 (face font-lock-comment-face) 36733 36737 (face font-lock-comment-delimiter-face) 36737 36819 (face font-lock-comment-face) 36819 36821 (face font-lock-comment-delimiter-face) 36821 36840 (face font-lock-comment-face) 36840 36842 (face font-lock-comment-delimiter-face) 36842 36848 (face font-lock-comment-face) 36848 36858 (face font-lock-comment-face latex-env-pair t) 36858 36886 (face font-lock-comment-face) 36886 36888 (face font-lock-comment-delimiter-face) 36888 36916 (face font-lock-comment-face) 36916 36918 (face font-lock-comment-delimiter-face) 36918 36922 (face font-lock-comment-face) 36922 36932 (face font-lock-comment-face latex-env-pair t) 36932 36941 (face font-lock-comment-face) 36941 36951 (face font-lock-comment-face latex-env-pair t) 36951 36979 (face font-lock-comment-face) 36979 36981 (face font-lock-comment-delimiter-face) 36981 37016 (face font-lock-comment-face) 37016 37018 (face font-lock-comment-delimiter-face) 37018 37022 (face font-lock-comment-face) 37022 37032 (face font-lock-comment-face latex-env-pair t) 37032 37041 (face font-lock-comment-face) 37041 37051 (face font-lock-comment-face latex-env-pair t) 37051 37079 (face font-lock-comment-face) 37079 37081 (face font-lock-comment-delimiter-face) 37081 37137 (face font-lock-comment-face) 37137 37139 (face font-lock-comment-delimiter-face) 37139 37143 (face font-lock-comment-face) 37143 37153 (face font-lock-comment-face latex-env-pair t) 37153 37162 (face font-lock-comment-face) 37162 37172 (face font-lock-comment-face latex-env-pair t) 37172 37200 (face font-lock-comment-face) 37200 37202 (face font-lock-comment-delimiter-face) 37202 37266 (face font-lock-comment-face) 37266 37268 (face font-lock-comment-delimiter-face) 37268 37272 (face font-lock-comment-face) 37272 37282 (face font-lock-comment-face latex-env-pair t) 37282 37291 (face font-lock-comment-face) 37291 37301 (face font-lock-comment-face latex-env-pair t) 37301 37329 (face font-lock-comment-face) 37329 37331 (face font-lock-comment-delimiter-face) 37331 37376 (face font-lock-comment-face) 37376 37378 (face font-lock-comment-delimiter-face) 37378 37382 (face font-lock-comment-face) 37382 37392 (face font-lock-comment-face latex-env-pair t) 37392 37396 (face font-lock-comment-face) 37396 37398 (face font-lock-comment-delimiter-face) 37398 37417 (face font-lock-comment-face) 37417 37419 (face font-lock-comment-delimiter-face) 37419 37428 (face font-lock-comment-face) 37428 37430 (face font-lock-comment-delimiter-face) 37430 37452 (face font-lock-comment-face) 37452 37454 (face font-lock-comment-delimiter-face) 37454 37467 (face font-lock-comment-face) 37467 37469 (face font-lock-comment-delimiter-face) 37469 37525 (face font-lock-comment-face) 37525 37527 (face font-lock-comment-delimiter-face) 37527 37578 (face font-lock-comment-face) 37578 37580 (face font-lock-comment-delimiter-face) 37580 37584 (face font-lock-comment-face) 37584 37595 (face font-lock-comment-face latex-env-pair t) 37595 37596 (face font-lock-comment-face) 37597 37603 (face font-lock-keyword-face) 37603 37604 (latex-env-pair t) 37604 37613 (face font-lock-function-name-face latex-env-pair t) 37613 37614 (latex-env-pair t) 38936 38945 (face font-lock-keyword-face) 38945 38958 (face (bold)) 40854 40859 (face font-lock-keyword-face) 40860 40861 (face (italic)) 40861 40870 (face (font-lock-keyword-face italic)) 40870 40881 (face (italic bold)) 40881 40922 (face (italic)) 41039 41050 (latex-env-pair t) 41052 41058 (face font-lock-keyword-face) 41058 41059 (latex-env-pair t) 41059 41065 (face font-lock-function-name-face latex-env-pair t) 41065 41066 (latex-env-pair t) 41068 41077 (face font-lock-keyword-face) 41077 41088 (face (bold)) 41090 41094 (face font-lock-keyword-face) 41094 41095 (latex-env-pair t) 41095 41101 (face font-lock-function-name-face latex-env-pair t) 41101 41102 (latex-env-pair t) 41104 41110 (face font-lock-keyword-face) 41110 41111 (latex-env-pair t) 41111 41121 (face font-lock-function-name-face latex-env-pair t) 41121 41122 (latex-env-pair t) 41123 41129 (face font-lock-keyword-face) 41129 41130 (latex-env-pair t) 41130 41139 (face font-lock-function-name-face latex-env-pair t) 41139 41140 (latex-env-pair t) 41141 41145 (face font-lock-keyword-face) 41146 41156 (face font-lock-function-name-face) 41157 41164 (face font-lock-keyword-face) 41174 41179 (face font-lock-keyword-face) 41289 41294 (face font-lock-keyword-face) 41295 41340 (face tex-verbatim) 41379 41383 (face font-lock-keyword-face) 41383 41384 (latex-env-pair t) 41384 41393 (face font-lock-function-name-face latex-env-pair t) 41393 41394 (latex-env-pair t) 41408 41410 (face font-lock-keyword-face) 41586 41591 (face font-lock-keyword-face) 41592 41632 (face tex-verbatim) 41696 41698 (face font-lock-keyword-face) 41844 41849 (face font-lock-keyword-face) 41850 41893 (face tex-verbatim) 41925 41931 (face font-lock-keyword-face) 41931 41932 (latex-env-pair t) 41932 41941 (face font-lock-function-name-face latex-env-pair t) 41941 41942 (latex-env-pair t) 41943 41947 (face font-lock-keyword-face) 41948 41958 (face font-lock-function-name-face) 41959 41966 (face font-lock-keyword-face) 41976 41987 (face font-lock-keyword-face) 41988 41993 (face font-lock-variable-name-face) 41998 42003 (face font-lock-keyword-face) 42121 42126 (face font-lock-keyword-face) 42127 42168 (face tex-verbatim) 42197 42202 (face font-lock-keyword-face) 42215 42217 (face font-lock-keyword-face) 42369 42373 (face font-lock-keyword-face) 42373 42374 (latex-env-pair t) 42374 42383 (face font-lock-function-name-face latex-env-pair t) 42383 42384 (latex-env-pair t) 42386 42391 (face font-lock-keyword-face) 42392 42433 (face tex-verbatim) 42467 42473 (face font-lock-keyword-face) 42473 42474 (latex-env-pair t) 42474 42483 (face font-lock-function-name-face latex-env-pair t) 42483 42484 (latex-env-pair t) 42485 42489 (face font-lock-keyword-face) 42490 42500 (face font-lock-function-name-face) 42501 42508 (face font-lock-keyword-face) 42518 42529 (face font-lock-keyword-face) 42530 42535 (face font-lock-variable-name-face) 42540 42545 (face font-lock-keyword-face) 42579 42581 (face font-lock-keyword-face) 42689 42694 (face font-lock-keyword-face) 42695 42736 (face tex-verbatim) 42771 42776 (face font-lock-keyword-face) 42795 42797 (face font-lock-keyword-face) 43014 43019 (face font-lock-keyword-face) 43020 43060 (face tex-verbatim) 43094 43099 (face font-lock-keyword-face) 43158 43160 (face font-lock-keyword-face) 43324 43328 (face font-lock-keyword-face) 43329 43470 (face tex-verbatim) 43472 43477 (face font-lock-keyword-face) 43574 43578 (face font-lock-keyword-face) 43578 43579 (latex-env-pair t) 43579 43588 (face font-lock-function-name-face latex-env-pair t) 43588 43589 (latex-env-pair t) 43595 43600 (face font-lock-keyword-face) 43601 43653 (face tex-verbatim) 43692 43698 (face font-lock-keyword-face) 43698 43699 (latex-env-pair t) 43699 43708 (face font-lock-function-name-face latex-env-pair t) 43708 43709 (latex-env-pair t) 43710 43714 (face font-lock-keyword-face) 43715 43725 (face font-lock-function-name-face) 43726 43733 (face font-lock-keyword-face) 43743 43754 (face font-lock-keyword-face) 43755 43760 (face font-lock-variable-name-face) 43765 43770 (face font-lock-keyword-face) 43985 43990 (face font-lock-keyword-face) 43991 44027 (face tex-verbatim) 44057 44062 (face font-lock-keyword-face) 44259 44264 (face font-lock-keyword-face) 44265 44317 (face tex-verbatim) 44363 44368 (face font-lock-keyword-face) 44575 44580 (face font-lock-keyword-face) 44581 44626 (face tex-verbatim) 44665 44670 (face font-lock-keyword-face) 44696 44698 (face font-lock-keyword-face) 44880 44885 (face font-lock-keyword-face) 44886 44929 (face tex-verbatim) 44966 44971 (face font-lock-keyword-face) 45004 45006 (face font-lock-keyword-face) 45112 45114 (face font-lock-keyword-face) 45155 45159 (face font-lock-keyword-face) 45160 45214 (face tex-verbatim) 45216 45221 (face font-lock-keyword-face) 45264 45266 (face font-lock-keyword-face) 45474 45479 (face font-lock-keyword-face) 45480 45515 (face tex-verbatim) 45542 45547 (face font-lock-keyword-face) 45734 45738 (face font-lock-keyword-face) 45738 45739 (latex-env-pair t) 45739 45748 (face font-lock-function-name-face latex-env-pair t) 45748 45749 (latex-env-pair t) 45751 45756 (face font-lock-keyword-face) 45757 45809 (face tex-verbatim) 46116 46120 (face font-lock-keyword-face) 46121 46279 (face tex-verbatim) 46285 46297 (latex-env-pair t) 46299 46305 (face font-lock-keyword-face) 46305 46306 (latex-env-pair t) 46306 46316 (face font-lock-function-name-face latex-env-pair t) 46316 46317 (latex-env-pair t) 46318 46325 (face font-lock-keyword-face) 46329 46330 (rear-nonsticky t) 46330 46335 (face font-lock-keyword-face) 46336 46337 (face (italic)) 46337 46346 (face (font-lock-keyword-face italic)) 46346 46366 (face (italic bold)) 46366 46367 (face (italic)) 46498 46503 (face font-lock-keyword-face) 46504 46533 (face tex-verbatim) 46535 46545 (face font-lock-keyword-face) 46546 46568 (face tex-verbatim) 46673 46681 (fontified t) 46681 46686 (face font-lock-keyword-face fontified t) 46686 46687 (fontified t) 46687 46713 (face tex-verbatim fontified t) 46713 46715 (fontified t) 46715 46725 (face font-lock-keyword-face fontified t) 46725 46726 (fontified t) 46726 46746 (face tex-verbatim fontified t) 46746 46859 (fontified t) 46859 46864 (face font-lock-keyword-face fontified t) 46864 46865 (fontified t) 46865 46890 (face tex-verbatim fontified t) 46890 46892 (fontified t) 46892 46902 (face font-lock-keyword-face fontified t) 46902 46903 (fontified t) 46903 46921 (face tex-verbatim fontified t) 46921 47033 (fontified t) 47033 47038 (face font-lock-keyword-face fontified t) 47038 47039 (fontified t) 47039 47066 (face tex-verbatim fontified t) 47066 47068 (fontified t) 47068 47078 (face font-lock-keyword-face fontified t) 47078 47079 (fontified t) 47079 47100 (face tex-verbatim fontified t) 47100 47215 (fontified t) 47215 47220 (face font-lock-keyword-face fontified t) 47220 47221 (fontified t) 47221 47244 (face tex-verbatim fontified t) 47244 47246 (fontified t) 47246 47256 (face font-lock-keyword-face fontified t) 47256 47257 (fontified t) 47257 47274 (face tex-verbatim fontified t) 47274 47278 (fontified t) 47278 47285 (face font-lock-keyword-face fontified t) 47285 47289 (fontified t) 47289 47290 (fontified t rear-nonsticky t) 47290 47295 (face font-lock-keyword-face fontified t) 47295 47296 (fontified t) 47296 47297 (face (italic) fontified t) 47297 47306 (face (font-lock-keyword-face italic) fontified t) 47306 47336 (face (italic bold) fontified t) 47336 47337 (face (italic) fontified t) 47337 47339 (fontified t) 47339 47580 (fontified t) 47580 47585 (face font-lock-keyword-face fontified t) 47585 47586 (fontified t) 47586 47612 (face tex-verbatim fontified t) 47612 47614 (fontified t) 47614 47624 (face font-lock-keyword-face fontified t) 47624 47625 (fontified t) 47625 47645 (face tex-verbatim fontified t) 47645 47758 (fontified t) 47758 47763 (face font-lock-keyword-face fontified t) 47763 47764 (fontified t) 47764 47789 (face tex-verbatim fontified t) 47789 47791 (fontified t) 47791 47801 (face font-lock-keyword-face fontified t) 47801 47802 (fontified t) 47802 47820 (face tex-verbatim fontified t) 47820 47869 (fontified t) 47869 47881 (fontified t) 47881 47898 (fontified t) 47898 47918 (fontified t) 47918 47923 (face font-lock-keyword-face fontified t) 47923 47924 (fontified t) 47924 47951 (face tex-verbatim fontified t) 47951 47953 (fontified t) 47953 47963 (face font-lock-keyword-face fontified t) 47963 47964 (fontified t) 47964 47985 (face tex-verbatim fontified t) 47985 48084 (fontified t) 48084 48089 (face font-lock-keyword-face fontified t) 48089 48090 (fontified t) 48090 48113 (face tex-verbatim fontified t) 48113 48115 (fontified t) 48115 48125 (face font-lock-keyword-face fontified t) 48125 48126 (fontified t) 48126 48143 (face tex-verbatim fontified t) 48143 48146 (fontified t) 48146 48150 (face font-lock-keyword-face fontified t) 48150 48151 (fontified t latex-env-pair t) 48151 48161 (face font-lock-function-name-face fontified t latex-env-pair t) 48161 48162 (fontified t latex-env-pair t) 48162 48163 (fontified t)) . 30551) (undo-tree-id435 . -48162) (undo-tree-id436 . 20796) (undo-tree-id437 . -48163) (undo-tree-id438 . -48163) (undo-tree-id439 . -1204) (undo-tree-id440 . -3225) (undo-tree-id441 . -46318) (undo-tree-id442 . -46276) (undo-tree-id443 . -45853) (undo-tree-id444 . -45751) (undo-tree-id445 . -45542) (undo-tree-id446 . -45216) (undo-tree-id447 . -44966) (undo-tree-id448 . -44665) (undo-tree-id449 . -44363) (undo-tree-id450 . -44057) (undo-tree-id451 . -43765) (undo-tree-id452 . -43590) (undo-tree-id453 . -43472) (undo-tree-id454 . -43094) (undo-tree-id455 . -42771) (undo-tree-id456 . -42540) (undo-tree-id457 . -42386) (undo-tree-id458 . -42197) (undo-tree-id459 . -42369) (undo-tree-id460 . -42466) (undo-tree-id461 . -42771) (undo-tree-id462 . -43094) (undo-tree-id463 . -43472) (undo-tree-id464 . -43574) (undo-tree-id465 . -43595) (undo-tree-id466 . -44057) (undo-tree-id467 . -40987) (undo-tree-id468 . -40854) (undo-tree-id469 . -40577) (undo-tree-id470 . -40160) (undo-tree-id471 . -39662) (undo-tree-id472 . -39322) (undo-tree-id473 . -33222) (undo-tree-id474 . -33618) (undo-tree-id475 . -33787) (undo-tree-id476 . -15148) (undo-tree-id477 . -15148) (undo-tree-id478 . -15148) (undo-tree-id479 . -15148) (undo-tree-id480 . -15148) (undo-tree-id481 . -15148) (undo-tree-id482 . -15148) (undo-tree-id483 . -15148) (undo-tree-id484 . -15148) (undo-tree-id485 . -15148) (undo-tree-id486 . -15148) (undo-tree-id487 . -15148) (undo-tree-id488 . -15148) (undo-tree-id489 . -15148) (undo-tree-id490 . -15148) (undo-tree-id491 . -15148) (undo-tree-id492 . -15148) (undo-tree-id493 . -15148) (undo-tree-id494 . -15148) (undo-tree-id495 . -15148) (undo-tree-id496 . -15148) (undo-tree-id497 . -15148) (undo-tree-id498 . -15148) (undo-tree-id499 . -15148) (undo-tree-id500 . -15148) (undo-tree-id501 . -15148) (undo-tree-id502 . -15148) (undo-tree-id503 . -15148) (undo-tree-id504 . -15148) (undo-tree-id505 . -15148) (undo-tree-id506 . -15148) (undo-tree-id507 . -15148) (undo-tree-id508 . -15148) (undo-tree-id509 . -15148) (undo-tree-id510 . -15148) (undo-tree-id511 . -15148) (undo-tree-id512 . -15148) (undo-tree-id513 . -15148) (undo-tree-id514 . -15148) (undo-tree-id515 . -15148) (undo-tree-id516 . -15148) (undo-tree-id517 . -15148) (undo-tree-id518 . -15148) (undo-tree-id519 . -15148) (undo-tree-id520 . -15148) (undo-tree-id521 . -14757) (undo-tree-id522 . -14478) (undo-tree-id523 . -14319) (undo-tree-id524 . -14065) (undo-tree-id525 . -13029) (undo-tree-id526 . -12927) (undo-tree-id527 . -12178) (undo-tree-id528 . -11804) (undo-tree-id529 . -10621) (undo-tree-id530 . -9941) (undo-tree-id531 . -9418) (undo-tree-id532 . -8310) (undo-tree-id533 . -7728) (undo-tree-id534 . -7083) (undo-tree-id535 . -6755) (undo-tree-id536 . -6297) (undo-tree-id537 . -5736) (undo-tree-id538 . -14757) (undo-tree-id539 . -5737) (undo-tree-id540 . -5737) (undo-tree-id541 . -6297) (undo-tree-id542 . -6297) (undo-tree-id543 . -6755) (undo-tree-id544 . -6755) (undo-tree-id545 . -7083) (undo-tree-id546 . -7083) (undo-tree-id547 . -7728) (undo-tree-id548 . -7728) (undo-tree-id549 . -8310) (undo-tree-id550 . -8310) (undo-tree-id551 . -9418) (undo-tree-id552 . -9418) (undo-tree-id553 . -9941) (undo-tree-id554 . -9941) (undo-tree-id555 . -10621) (undo-tree-id556 . -10621) (undo-tree-id557 . -11804) (undo-tree-id558 . -11804) (undo-tree-id559 . -12178) (undo-tree-id560 . -12178) (undo-tree-id561 . -12927) (undo-tree-id562 . -12927) (undo-tree-id563 . -13029) (undo-tree-id564 . -13029) (undo-tree-id565 . -14065) (undo-tree-id566 . -14065) (undo-tree-id567 . -14319) (undo-tree-id568 . -14319) (undo-tree-id569 . -14478) (undo-tree-id570 . -15148) (undo-tree-id571 . -15405) (undo-tree-id572 . -16192) (undo-tree-id573 . -16639) (undo-tree-id574 . -17546) (undo-tree-id575 . -17949) (undo-tree-id576 . -18570) (undo-tree-id577 . -18933) (undo-tree-id578 . -19635) (undo-tree-id579 . -20162) (undo-tree-id580 . -20474) (undo-tree-id581 . -20551) (undo-tree-id582 . -25138) (undo-tree-id583 . -24690) (undo-tree-id584 . -20474) (undo-tree-id585 . -20162) (undo-tree-id586 . -19635) (undo-tree-id587 . -18933) (undo-tree-id588 . -18570) (undo-tree-id589 . -17949) (undo-tree-id590 . -17546) (undo-tree-id591 . -17949) (undo-tree-id592 . -18570) (undo-tree-id593 . -18933) (undo-tree-id594 . -46673) (undo-tree-id595 . -3225) (undo-tree-id596 . -48163) 78714 (t 26477 9737 416648 870000)) nil (26477 9793 275370 545000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 30550) (undo-tree-id274 . -1) (undo-tree-id275 . -1) (undo-tree-id276 . -1) (undo-tree-id277 . -1) (undo-tree-id278 . -1) (undo-tree-id279 . -1) (undo-tree-id280 . -1) (undo-tree-id281 . -1) (undo-tree-id282 . -1) (undo-tree-id283 . -1) (undo-tree-id284 . -1) (undo-tree-id285 . -1) (undo-tree-id286 . -1) (undo-tree-id287 . -1) (undo-tree-id288 . -1) (undo-tree-id289 . -1) (undo-tree-id290 . -1) (undo-tree-id291 . -1) (undo-tree-id292 . -1) (undo-tree-id293 . -1) (undo-tree-id294 . -1) (undo-tree-id295 . -1) (undo-tree-id296 . -1) (undo-tree-id297 . -1) (undo-tree-id298 . -1) (undo-tree-id299 . -1) (undo-tree-id300 . -1) (undo-tree-id301 . -1) (undo-tree-id302 . -1) (undo-tree-id303 . -1) (undo-tree-id304 . -1) (undo-tree-id305 . -1) (undo-tree-id306 . -1) (undo-tree-id307 . -1) (undo-tree-id308 . -1) (undo-tree-id309 . -1) (undo-tree-id310 . -1) (undo-tree-id311 . -1) (undo-tree-id312 . -1) (undo-tree-id313 . -1) (undo-tree-id314 . -1) (undo-tree-id315 . -1) (undo-tree-id316 . -1) (undo-tree-id317 . -1) (undo-tree-id318 . -1) (undo-tree-id319 . -1) (undo-tree-id320 . -1) (undo-tree-id321 . -1) (undo-tree-id322 . -1) (undo-tree-id323 . -1) (undo-tree-id324 . -1) (undo-tree-id325 . -1) (undo-tree-id326 . -1) (undo-tree-id327 . -1) (undo-tree-id328 . -1) (undo-tree-id329 . -1) (undo-tree-id330 . -1) (undo-tree-id331 . -1) (undo-tree-id332 . -1) (undo-tree-id333 . -1) (undo-tree-id334 . -1) (undo-tree-id335 . -1) (undo-tree-id336 . -1) (undo-tree-id337 . -1) (undo-tree-id338 . -1) (undo-tree-id339 . -1) (undo-tree-id340 . -1) (undo-tree-id341 . -1) (undo-tree-id342 . -1) (undo-tree-id343 . -1) (undo-tree-id344 . -1) (undo-tree-id345 . -1) (undo-tree-id346 . -1) (undo-tree-id347 . -1) (undo-tree-id348 . -1) (undo-tree-id349 . -1) (undo-tree-id350 . -1) (undo-tree-id351 . -1) (undo-tree-id352 . -1) (undo-tree-id353 . -1) (undo-tree-id354 . -1) (undo-tree-id355 . -1) (undo-tree-id356 . -1) (undo-tree-id357 . -1) (undo-tree-id358 . -1) (undo-tree-id359 . -1) (undo-tree-id360 . -1) (undo-tree-id361 . -1) (undo-tree-id362 . -1) (undo-tree-id363 . -1) (undo-tree-id364 . -1) (undo-tree-id365 . -1) (undo-tree-id366 . -1) (undo-tree-id367 . -1) (undo-tree-id368 . -1) (undo-tree-id369 . -1) (undo-tree-id370 . -1) (undo-tree-id371 . -1) (undo-tree-id372 . -1) (undo-tree-id373 . -1) (undo-tree-id374 . -1) (undo-tree-id375 . -1) (undo-tree-id376 . -1) (undo-tree-id377 . -1) (undo-tree-id378 . -1) (undo-tree-id379 . -1) (undo-tree-id380 . -1) (undo-tree-id381 . -1) (undo-tree-id382 . -1) (undo-tree-id383 . -1) (undo-tree-id384 . -1) (undo-tree-id385 . -1) (undo-tree-id386 . -1) (undo-tree-id387 . -1) (undo-tree-id388 . -1) (undo-tree-id389 . -1) (undo-tree-id390 . -1) (undo-tree-id391 . -1) (undo-tree-id392 . -1) (undo-tree-id393 . -1) (undo-tree-id394 . -1) (undo-tree-id395 . -1) (undo-tree-id396 . -1) (undo-tree-id397 . -1) (undo-tree-id398 . -1) (undo-tree-id399 . -1) (undo-tree-id400 . -1) (undo-tree-id401 . -1) (undo-tree-id402 . -1) (undo-tree-id403 . -1) (undo-tree-id404 . -1) (undo-tree-id405 . -1) (undo-tree-id406 . -1) (undo-tree-id407 . -1) (undo-tree-id408 . -1) (undo-tree-id409 . -1) (undo-tree-id410 . -1) (undo-tree-id411 . -1) (undo-tree-id412 . -1) (undo-tree-id413 . -1) (undo-tree-id414 . -1) (undo-tree-id415 . -1) (undo-tree-id416 . -1) (undo-tree-id417 . -1) (undo-tree-id418 . -1) (undo-tree-id419 . -1) (undo-tree-id420 . -1) (undo-tree-id421 . -1) (undo-tree-id422 . -1) (undo-tree-id423 . -1) (undo-tree-id424 . -1) (undo-tree-id425 . -1) (undo-tree-id426 . -1) (undo-tree-id427 . -1) (undo-tree-id428 . -1) (undo-tree-id429 . -1) (undo-tree-id430 . -1) (undo-tree-id431 . -1) (undo-tree-id432 . -1) (undo-tree-id433 . -1) (undo-tree-id434 . -1)) nil (26477 9793 275278 82000) 0 nil])
+([nil nil ((29456 . 29475) (30550 . 30567) 29456 (t 26477 9793 303038 144000)) nil (26477 9802 922330 346000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 29486 . 29487) (nil fontified nil 29475 . 29487) (29475 . 29487)) nil (26477 9802 922329 141000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 30022 . 30023) (nil fontified nil 30011 . 30023) (30011 . 30023)) nil (26477 9802 922323 986000) 0 nil])
+([nil nil ((26303 . 26322) (29455 . 29472) 26303 (t 26477 9802 953760 330000)) nil (26477 9832 684418 913000) 0 nil])
+([nil nil ((26279 . 26294) (26302 . 26315)) nil (26477 9832 684418 223000) 0 nil])
+([nil nil ((23985 . 24006) (26278 . 26294)) nil (26477 9832 684417 549000) 0 nil])
+([nil nil ((#("{\\bfseries 5-сурет. Ақпараттық жүйенің реттілік диаграммасы}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 59 (face (bold) fontified t) 59 60 (fontified t)) . -23923) (undo-tree-id643 . -58) (undo-tree-id644 . -58) 23981) nil (26477 9832 684416 760000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 23953 . 23954) (nil fontified nil 23906 . 23954) (23906 . 23954)) nil (26477 9832 684414 851000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23970) (undo-tree-id642 . -1)) nil (26477 9832 684413 880000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23970) (undo-tree-id641 . -1)) nil (26477 9832 684412 249000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23970) (undo-tree-id636 . -1) (undo-tree-id637 . -1) (undo-tree-id638 . -1) (undo-tree-id639 . -1) (undo-tree-id640 . -1)) nil (26477 9832 684410 557000) 0 nil])
+([nil nil ((#("{\\bfseries 4-сурет. Use case диаграмма}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 38 (face (bold) fontified t) 38 39 (fontified t)) . -23487) (undo-tree-id625 . -15) (undo-tree-id626 . -15) (undo-tree-id627 . -15) (undo-tree-id628 . -15) (undo-tree-id629 . -15) (undo-tree-id630 . -15) (undo-tree-id631 . -15) (undo-tree-id632 . -15) (undo-tree-id633 . -15) (undo-tree-id634 . -15) (undo-tree-id635 . -15) 23502) nil (26477 9832 684406 544000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 23496 . 23497) (nil fontified nil 23470 . 23497) (23470 . 23497)) nil (26477 9832 684397 567000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23513) (undo-tree-id598 . -1) (undo-tree-id599 . -1) (undo-tree-id600 . -1) (undo-tree-id601 . -1) (undo-tree-id602 . -1) (undo-tree-id603 . -1) (undo-tree-id604 . -1) (undo-tree-id605 . -1) (undo-tree-id606 . -1) (undo-tree-id607 . -1) (undo-tree-id608 . -1) (undo-tree-id609 . -1) (undo-tree-id610 . -1) (undo-tree-id611 . -1) (undo-tree-id612 . -1) (undo-tree-id613 . -1) (undo-tree-id614 . -1) (undo-tree-id615 . -1) (undo-tree-id616 . -1) (undo-tree-id617 . -1) (undo-tree-id618 . -1) (undo-tree-id619 . -1) (undo-tree-id620 . -1) (undo-tree-id621 . -1) (undo-tree-id622 . -1) (undo-tree-id623 . -1) (undo-tree-id624 . -1)) nil (26477 9832 684396 207000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23513) (undo-tree-id597 . -1)) nil (26477 9832 684375 870000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23513)) nil (26477 9832 684364 175000) 0 nil])
+([nil nil ((#("{\\bfseries 3-сурет. Ақпараттық жүйе архитектурасы}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 49 (face (bold) fontified t) 49 50 (fontified t)) . -22341) (undo-tree-id647 . -48) (undo-tree-id648 . -48) 22389 (t 26477 9832 742903 383000)) nil (26477 9854 966181 78000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 22361 . 22362) (nil fontified nil 22324 . 22362) (22324 . 22362)) nil (26477 9854 966178 311000) 0 nil])
+([nil nil ((#("{\\bfseries 2-сурет. Білім беруге арналған ақпараттық жүйенің
+фукнционалдылығы}" 0 1 (fontified t) 1 5 (face font-lock-keyword-face fontified t) 5 10 (fontified t face font-lock-keyword-face) 10 61 (fontified t face (bold)) 61 77 (fontified t) 77 78 (fontified t)) . -19872) (undo-tree-id645 . -51) (undo-tree-id646 . -51) 19923) nil (26477 9854 966176 564000) 0 nil])
+([nil current ((nil rear-nonsticky nil 19920 . 19921) (nil fontified nil 19855 . 19921) (19855 . 19921)) nil (26477 9854 966164 278000) 0 nil])
 nil

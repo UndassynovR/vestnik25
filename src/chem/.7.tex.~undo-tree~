@@ -1,0 +1,91 @@
+(undo-tree-save-format-version . 1)
+"406ff3496961462fb7cd1fff3c523b664e49b511"
+[nil nil nil nil (26477 11931 673741 430000) 0 nil]
+([nil nil ((934 . 935) (#("
+" 0 1 (fontified t)) . -934) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) 913 (t 26474 22916 9025 203000)) nil (26477 11931 673739 909000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 925 . 926) (nil fontified nil 913 . 926) (913 . 926)) nil (26477 11931 673707 541000) 0 nil])
+([nil nil ((25537 . 25538) 925) nil (26477 11931 673703 442000) 0 nil])
+([nil nil ((#("\\" 0 1 (face font-lock-keyword-face fontified t)) . 23) (t 26477 11931 715052 318000)) nil (26477 12020 628979 601000) 0 nil])
+([nil nil (23) nil (26477 12020 628979 176000) 0 nil])
+([nil nil ((22 . 23)) nil (26477 12020 628978 812000) 0 nil])
+([nil nil ((31 . 43) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -31) (undo-tree-id29 . -1) (27 . 32) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -27) (undo-tree-id30 . -1) (23 . 28)) nil (26477 12020 628977 843000) 0 nil])
+([nil nil ((#("bfseries " 0 8 (fontified t) 8 9 (fontified t)) . 44) (undo-tree-id28 . -8)) nil (26477 12020 628975 492000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 190 . 191) (nil fontified nil 42 . 191) (42 . 191)) nil (26477 12020 628974 43000) 0 nil])
+([nil nil ((22 . 44) (708 . 728)) nil (26477 12020 628973 613000) 0 nil])
+([nil nil ((751 . 771) (1229 . 1247)) nil (26477 12020 628973 260000) 0 nil])
+([nil nil ((2361 . 2383) (2871 . 2891)) nil (26477 12020 628972 761000) 0 nil])
+([nil nil ((2914 . 2934) (3368 . 3386)) nil (26477 12020 628972 350000) 0 nil])
+([nil nil ((3308 . 3309) (#("
+" 0 1 (fontified t)) . -3308) 3307) nil (26477 12020 628971 796000) 0 nil])
+([nil nil ((4489 . 4511) (5004 . 5024)) nil (26477 12020 628971 36000) 0 nil])
+([nil nil ((5047 . 5067) (5532 . 5550)) nil (26477 12020 628970 345000) 0 nil])
+([nil nil ((5472 . 5473) (#("
+" 0 1 (fontified t)) . -5472) (undo-tree-id27 . -1) 5471) nil (26477 12020 628967 121000) 0 nil])
+([nil nil ((6749 . 6770) (9432 . 9448) (t 26477 12020 684478 888000)) nil (26477 12028 373616 266000) 0 nil])
+([nil nil ((11656 . 11677) (13252 . 13268) 11656 (t 26477 12028 409255 645000)) nil (26477 12092 816045 733000) 0 nil])
+([nil nil ((#("{\\bfseries Fig. 1 -- Influence of CSF concentration on deformation and
+strength characteristics of LDPE}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 103 (face (bold) fontified t) 103 104 (fontified t)) . -13407) (undo-tree-id152 . -71) (undo-tree-id153 . -71) (undo-tree-id154 . -71) (undo-tree-id155 . -71) (undo-tree-id156 . -71) (undo-tree-id157 . -71) (undo-tree-id158 . -71) (undo-tree-id159 . -71) (undo-tree-id160 . -71) (undo-tree-id161 . -71) 13478) nil (26477 12092 816044 819000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 13481 . 13482) (nil fontified nil 13390 . 13482) (13390 . 13482)) nil (26477 12092 816038 457000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 13497) (undo-tree-id139 . -1) (undo-tree-id140 . -1) (undo-tree-id141 . -1) (undo-tree-id142 . -1) (undo-tree-id143 . -1) (undo-tree-id144 . -1) (undo-tree-id145 . -1) (undo-tree-id146 . -1) (undo-tree-id147 . -1) (undo-tree-id148 . -1) (undo-tree-id149 . -1) (undo-tree-id150 . -1) (undo-tree-id151 . -1)) nil (26477 12092 816037 502000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 13497) (undo-tree-id108 . -1) (undo-tree-id109 . -1) (undo-tree-id110 . -1) (undo-tree-id111 . -1) (undo-tree-id112 . -1) (undo-tree-id113 . -1) (undo-tree-id114 . -1) (undo-tree-id115 . -1) (undo-tree-id116 . -1) (undo-tree-id117 . -1) (undo-tree-id118 . -1) (undo-tree-id119 . -1) (undo-tree-id120 . -1) (undo-tree-id121 . -1) (undo-tree-id122 . -1) (undo-tree-id123 . -1) (undo-tree-id124 . -1) (undo-tree-id125 . -1) (undo-tree-id126 . -1) (undo-tree-id127 . -1) (undo-tree-id128 . -1) (undo-tree-id129 . -1) (undo-tree-id130 . -1) (undo-tree-id131 . -1) (undo-tree-id132 . -1) (undo-tree-id133 . -1) (undo-tree-id134 . -1) (undo-tree-id135 . -1) (undo-tree-id136 . -1) (undo-tree-id137 . -1) (undo-tree-id138 . -1)) nil (26477 12092 816027 441000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 13497)) nil (26477 12092 815991 645000) 0 nil])
+([nil nil ((13498 . 13519) (14702 . 14718)) nil (26477 12092 815991 245000) 0 nil])
+([nil nil ((#("{\\bfseries Fig. 2 -- Change of yield strength (a) and breaking stress (b)
+of composites in the process}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 102 (face (bold) fontified t) 102 103 (fontified t)) . -14857) (undo-tree-id106 . -74) (undo-tree-id107 . -74) 14931) nil (26477 12092 815990 643000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 14930 . 14931) (nil fontified nil 14840 . 14931) (14840 . 14931)) nil (26477 12092 815988 999000) 0 nil])
+([nil nil ((#("{\\bfseries of thermal aging}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 22 (face (bold) fontified t) 22 27 (face (bold) fontified t) 27 28 (fontified t)) . -14950) (undo-tree-id104 . -26) (undo-tree-id105 . -26) 14976) nil (26477 12092 815988 82000) 0 nil])
+([nil nil ((14931 . 14932)) nil (26477 12092 815986 277000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 14947 . 14948) (nil fontified nil 14932 . 14948) (14932 . 14948) 14931) nil (26477 12092 815985 553000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14963) (undo-tree-id103 . -1)) nil (26477 12092 815984 620000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14963) (undo-tree-id102 . -1)) nil (26477 12092 815983 331000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14963) (undo-tree-id95 . -1) (undo-tree-id96 . -1) (undo-tree-id97 . -1) (undo-tree-id98 . -1) (undo-tree-id99 . -1) (undo-tree-id100 . -1) (undo-tree-id101 . -1)) nil (26477 12092 815981 721000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14963) (undo-tree-id94 . -1)) nil (26477 12092 815975 873000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14963)) nil (26477 12092 815974 646000) 0 nil])
+([nil nil ((#("{\\bfseries Fig. 3 -- Rate of yield stress (a) and failure stress (b) of
+composites in the process}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 97 (face (bold) fontified t) 97 98 (fontified t)) . -15081) (undo-tree-id92 . -72) (undo-tree-id93 . -72) 15153) nil (26477 12092 815973 904000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 15149 . 15150) (nil fontified nil 15064 . 15150) (15064 . 15150)) nil (26477 12092 815969 834000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15167) (undo-tree-id91 . -1)) nil (26477 12092 815969 265000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15167)) nil (26477 12092 815968 206000) 0 nil])
+([nil nil ((#("{\\bfseries of thermal aging}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 27 (face (bold) fontified t) 27 28 (fontified t)) . -15167) (undo-tree-id89 . -26) (undo-tree-id90 . -26) 15193) nil (26477 12092 815967 568000) 0 nil])
+([nil nil ((15150 . 15151)) nil (26477 12092 815965 704000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 15166 . 15167) (nil fontified nil 15151 . 15167) (15151 . 15167) 15150) nil (26477 12092 815965 270000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15182) (undo-tree-id87 . -1) (undo-tree-id88 . -1)) nil (26477 12092 815964 504000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15182) (undo-tree-id86 . -1)) nil (26477 12092 815962 841000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15182)) nil (26477 12092 815961 504000) 0 nil])
+([nil nil ((16033 . 16034) (#("
+" 0 1 (fontified t)) . -16033) (#("
+" 0 1 (fontified t)) . -16033) 16004) nil (26477 12092 815960 275000) 0 nil])
+([nil nil ((#("}" 0 1 (fontified t)) . 16032)) nil (26477 12092 815959 370000) 0 nil])
+([nil nil ((#("{\\bfseries " 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 11 (face (bold) fontified t)) . 16033) (undo-tree-id85 . -10)) nil (26477 12092 815958 806000) 0 nil])
+([nil nil ((#("{\\bfseries Fig. 4 -- Change of yield strength (a) and breaking stress (b)
+of composites in the process of thermal aging}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 74 (face (bold) fontified t) 74 102 (fontified t) 102 103 (fontified t) 103 119 (fontified t) 119 120 (fontified t)) . -15930) (undo-tree-id72 . -103) (undo-tree-id73 . -103) (undo-tree-id74 . -29) (undo-tree-id75 . -29) (undo-tree-id76 . -29) (undo-tree-id77 . -29) (undo-tree-id78 . -29) (undo-tree-id79 . -29) (undo-tree-id80 . -29) (undo-tree-id81 . -29) (undo-tree-id82 . -29) (undo-tree-id83 . -29) (undo-tree-id84 . -29) 15959) nil (26477 12092 815957 442000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 16020 . 16021) (nil fontified nil 15913 . 16021) (15913 . 16021)) nil (26477 12092 815943 216000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16036) (undo-tree-id59 . -1) (undo-tree-id60 . -1) (undo-tree-id61 . -1) (undo-tree-id62 . -1) (undo-tree-id63 . -1) (undo-tree-id64 . -1) (undo-tree-id65 . -1) (undo-tree-id66 . -1) (undo-tree-id67 . -1) (undo-tree-id68 . -1) (undo-tree-id69 . -1) (undo-tree-id70 . -1) (undo-tree-id71 . -1)) nil (26477 12092 815942 204000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16036) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1) (undo-tree-id58 . -1)) nil (26477 12092 815931 929000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16036)) nil (26477 12092 815903 424000) 0 nil])
+([nil nil ((16037 . 16058) (17756 . 17772)) nil (26477 12092 815902 916000) 0 nil])
+([nil nil ((17794 . 17809) (17817 . 17830)) nil (26477 12092 815902 374000) 0 nil])
+([nil nil ((17846 . 17865) (21901 . 21918)) nil (26477 12092 815901 979000) 0 nil])
+([nil nil ((21938 . 21957) (26051 . 26068)) nil (26477 12092 815901 401000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 23965 . 23966) (nil fontified nil 23954 . 23966) (23954 . 23966)) nil (26477 12092 816131 968000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 21968 . 21969) (nil fontified nil 21957 . 21969) (21957 . 21969)) nil (26477 12094 47479 436000) 0 nil] [nil nil ((nil rear-nonsticky nil 21979 . 21980) (nil fontified nil 21968 . 21980) (21968 . 21980)) ((#("\\hspace{1em}" 0 7 (face (font-lock-keyword-face italic) fontified nil) 7 11 (face (italic) fontified nil) 11 12 (face (italic) rear-nonsticky nil fontified nil)) . 21968) (undo-tree-id162 . -11) (undo-tree-id163 . -11) (undo-tree-id164 . -11) (undo-tree-id165 . -11) (nil rear-nonsticky t 21979 . 21980)) (26477 12092 815896 640000) 0 nil])
+([nil nil ((#("o" 0 1 (face font-lock-keyword-face fontified t)) . 59) (undo-tree-id166 . -1) (undo-tree-id167 . -1) (undo-tree-id168 . -1) (undo-tree-id169 . -1) (undo-tree-id170 . -1) (undo-tree-id171 . -1) (undo-tree-id172 . -1) (undo-tree-id173 . -1) (undo-tree-id174 . -1) (undo-tree-id175 . -1) (undo-tree-id176 . -1) (undo-tree-id177 . -1) (undo-tree-id178 . -1) (undo-tree-id179 . -1) (undo-tree-id180 . -1) (undo-tree-id181 . -1) (undo-tree-id182 . -1) (t 26477 12094 80358 961000)) nil (26477 12103 855842 867000) 0 nil])
+nil
+([nil current ((nil rear-nonsticky nil 60 . 61) (nil fontified nil 60 . 61) (60 . 61) 59) nil (26477 12103 855819 911000) 0 nil])
+nil

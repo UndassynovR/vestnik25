@@ -1,0 +1,26 @@
+(undo-tree-save-format-version . 1)
+"cc23c8b0ef483810db778a6c9c02c60fe02004ae"
+[nil nil nil nil (26477 11792 652380 91000) 0 nil]
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 23) (undo-tree-id3 . -9) (t 26474 22916 8025 232000)) nil (26477 11792 652378 791000) 0 nil])
+([nil nil (23) nil (26477 11792 652377 17000) 0 nil])
+([nil nil ((31 . 43) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -31) (undo-tree-id1 . -1) (27 . 32) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -27) (undo-tree-id2 . -1) (22 . 28)) nil (26477 11792 652375 752000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 118 . 119) (nil fontified nil 42 . 119) (42 . 119)) nil (26477 11792 652373 220000) 0 nil])
+([nil nil ((22 . 44) (435 . 455)) nil (26477 11792 652372 470000) 0 nil])
+([nil nil ((478 . 498) (900 . 918)) nil (26477 11792 652371 950000) 0 nil])
+([nil nil ((858 . 859) (#("
+" 0 1 (fontified t)) . -858) (undo-tree-id0 . -1) 857) nil (26477 11792 652370 562000) 0 nil])
+([nil nil ((48891 . 48892) 858) nil (26477 11792 652314 967000) 0 nil])
+([nil nil ((2621 . 2643) (2936 . 2956) (t 26477 11792 691082 504000)) nil (26477 11845 986794 152000) 0 nil])
+([nil nil ((2979 . 2999) (3303 . 3321)) nil (26477 11845 986793 688000) 0 nil])
+([nil nil ((4972 . 4994) (5291 . 5311)) nil (26477 11845 986793 211000) 0 nil])
+([nil nil ((5334 . 5354) (5691 . 5709)) nil (26477 11845 986792 693000) 0 nil])
+([nil nil ((7447 . 7468) (20991 . 21007)) nil (26477 11845 986792 207000) 0 nil])
+([nil nil ((46706 . 46725) (49089 . 49106) 46706) nil (26477 11845 986791 477000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 46736 . 46737) (nil fontified nil 46725 . 46737) (46725 . 46737)) nil (26477 11845 986790 650000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 47928 . 47929) (nil fontified nil 47917 . 47929) (47917 . 47929)) nil (26477 11845 986789 926000) 0 nil])
+([nil nil ((39322 . 39341) (46705 . 46722) 39322) nil (26477 11845 986789 42000) 0 nil])
+([nil nil ((39298 . 39313) (39321 . 39334)) nil (26477 11845 986784 402000) 0 nil])
+([nil nil ((36062 . 36083) (39297 . 39313) 36062 (t 26477 11846 38534 645000)) nil (26477 11853 897542 921000) 0 nil])
+([nil nil ((32717 . 32738) (34160 . 34176) (t 26477 11853 929305 844000)) nil (26477 11859 753034 196000) 0 nil])
+([nil current ((nil rear-nonsticky nil 810 . 811) (nil fontified nil 798 . 811) (798 . 811) (t 26477 11859 787136 15000)) nil (26477 11925 588217 671000) 0 nil])
+nil

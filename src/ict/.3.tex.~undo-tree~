@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"94baf0164d432c6050a7b99e73d22d20dfec4ec1"
+"13ae5297a3cafa3f8bf139f1821dcd0661412557"
 [nil nil nil nil (26474 23225 749735 204000) 0 nil]
 ([nil nil ((703 . 704) (#("
 " 0 1 (fontified t)) . -703) 642 (t 26474 22916 23024 797000)) nil (26474 23244 585024 703000) 0 nil] [nil nil ((nil rear-nonsticky nil 665 . 666) (nil fontified nil 642 . 666) (642 . 666) (t 26474 22916 23024 797000)) ((#("put_newpage_and_bfseries" 0 4 (fontified nil) 4 5 (face (subscript) display (raise -0.2) fontified nil) 5 12 (fontified nil) 12 13 (face (subscript) display (raise -0.2) fontified nil) 13 16 (fontified nil) 16 17 (face (subscript) display (raise -0.2) fontified nil) 17 23 (fontified nil) 23 24 (rear-nonsticky nil fontified nil)) . 642) (undo-tree-id0 . -23) (undo-tree-id1 . -23) (undo-tree-id2 . -23) (undo-tree-id3 . -23) (undo-tree-id4 . -23) (nil rear-nonsticky t 665 . 666)) (26474 23225 749463 676000) 0 nil])
@@ -564,6 +564,12 @@ nil
 " 0 1 (fontified nil)) . -16857) (16841 . 16858) 16827) nil (26474 29880 937298 837000) 0 nil])
 ([nil nil ((#("\\begin{multicols}{2}
 " 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 21 (fontified t)) . 18917) (undo-tree-id1827 . -20) (t 26474 29880 991572 854000)) nil (26474 29905 538546 928000) 0 nil])
-([nil current ((nil rear-nonsticky nil 17725 . 17726) (#("
+([nil nil ((nil rear-nonsticky nil 17725 . 17726) (#("
 " 0 1 (fontified nil)) . -17746) (17725 . 17747)) nil (26474 29905 538532 779000) 0 nil])
+([nil nil ((26068 . 26087) (28031 . 28048) 26068 (t 26474 29905 606866 658000)) nil (26477 3398 781389 580000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 26098 . 26099) (nil fontified nil 26087 . 26099) (26087 . 26099)) nil (26477 3403 602580 459000) 0 nil] [nil nil ((nil rear-nonsticky nil 26099 . 26100) (nil fontified nil 26088 . 26100) (26088 . 26100) 26087) ((#("\\hspace{1em}" 0 1 (face font-lock-warning-face fontified nil) 1 11 (fontified nil) 11 12 (rear-nonsticky nil fontified nil)) . 26088) (undo-tree-id0 . -11) (nil rear-nonsticky t 26099 . 26100)) (26477 3398 781300 704000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 27049 . 27050) (nil fontified nil 27038 . 27050) (27038 . 27050)) nil (26477 3403 602574 427000) 0 nil])
+nil
+([nil nil ((23851 . 23870) (26067 . 26084) 23851 (t 26477 3403 670391 519000)) nil (26477 3422 717274 650000) 0 nil])
+([nil current ((21619 . 21638) (23798 . 23815) 21619 (t 26477 3422 751849 160000)) nil (26477 3432 671480 225000) 0 nil])
 nil

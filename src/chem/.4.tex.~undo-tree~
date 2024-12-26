@@ -1,0 +1,50 @@
+(undo-tree-save-format-version . 1)
+"987142ff3722d1400290132b7e6c3aac9c020401"
+[nil nil nil nil (26477 11373 555273 411000) 0 nil]
+([nil nil ((98 . 99) (#("
+" 0 1 (fontified t)) . -98) 31 (t 26474 22916 8025 232000)) nil (26477 11373 555272 151000) 0 nil])
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 32) (undo-tree-id4 . -9)) nil (26477 11373 555271 23000) 0 nil])
+([nil nil ((#("}" 0 1 (fontified t)) . 87)) nil (26477 11373 555269 710000) 0 nil])
+([nil nil ((#("{\\bfseries " 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 11 (face (bold) fontified t)) . 88) (undo-tree-id3 . -10)) nil (26477 11373 555269 11000) 0 nil])
+([nil nil ((40 . 52) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -40) (undo-tree-id1 . -1) (36 . 41) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -36) (undo-tree-id2 . -1) (31 . 37)) nil (26477 11373 555267 207000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 125 . 126) (nil fontified nil 51 . 126) (51 . 126)) nil (26477 11373 555264 543000) 0 nil])
+([nil nil ((31 . 53) (341 . 361)) nil (26477 11373 555263 834000) 0 nil])
+([nil nil ((384 . 404) (577 . 595)) nil (26477 11373 555262 756000) 0 nil])
+([nil nil ((543 . 544) (#("
+" 0 1 (fontified t)) . -543) (undo-tree-id0 . -1) 507) nil (26477 11373 555261 413000) 0 nil])
+([nil nil ((34758 . 34759) 543) nil (26477 11373 555238 207000) 0 nil])
+([nil nil ((2770 . 2792) (2986 . 3006) (t 26477 11373 608313 158000)) nil (26477 11396 272000 532000) 0 nil])
+([nil nil ((3029 . 3049) (3171 . 3189)) nil (26477 11396 271999 846000) 0 nil])
+([nil nil ((5219 . 5241) (5436 . 5456)) nil (26477 11396 271998 975000) 0 nil])
+([nil nil ((5479 . 5499) (5635 . 5653)) nil (26477 11396 272096 669000) 0 nil])
+([nil nil ((#("{\\bfseries Рис. 1- Схема реакции получения диметилэтинилкарбинола}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 65 (face (bold) fontified t) 65 66 (fontified t)) . -14000) (undo-tree-id11 . -63) (undo-tree-id12 . -63) 14063) nil (26477 11407 798080 445000) 0 nil] [nil nil ((7675 . 7696) (13882 . 13898)) ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 13882) (undo-tree-id5 . 16) (#("\\begin{multicols}{2}
+" 6 17 (latex-env-pair t)) . 7675) (undo-tree-id6 . -21)) (26477 11396 271993 536000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 14036 . 14037) (nil fontified nil 13983 . 14037) (13983 . 14037)) nil (26477 11407 798078 729000) 0 nil])
+nil
+([nil nil ((13989 . 13990)) nil (26477 11407 798078 177000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14053) (undo-tree-id10 . -1)) nil (26477 11407 798077 549000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14053) (undo-tree-id8 . -1) (undo-tree-id9 . -1)) nil (26477 11407 798075 703000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 14053) (undo-tree-id7 . -1)) nil (26477 11407 798070 38000) 0 nil])
+([nil nil ((7675 . 7696) (13882 . 13898) (t 26477 11407 839308 698000)) nil (26477 11443 27468 695000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -13976) (t 26477 11443 54276 494000) (13977 . 13978) 13976 (t 26477 11443 54276 494000)) nil (26477 11484 589087 898000) 0 nil])
+([nil nil ((nil fontified t 13976 . 13977) (#("7" 0 1 (fontified t)) . -13976) (13977 . 13978) 13976) nil (26477 11484 589083 241000) 0 nil])
+([nil nil ((32729 . 32748) (34942 . 34959) 32729 (t 26477 11484 617059 647000)) nil (26477 11528 593418 93000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 32759 . 32760) (nil fontified nil 32748 . 32760) (32748 . 32760)) nil (26477 11528 593417 261000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 33780 . 33781) (nil fontified nil 33769 . 33781) (33769 . 33781)) nil (26477 11528 593416 571000) 0 nil])
+([nil nil ((#("
+\\emph{{\\bfseries Финансирование}. Исследование была поддержана грантовым
+финансированием Комитетом науки Министерства науки и высшего образования
+Республики Казахстан. АР14148044/0222.}
+" 0 1 (fontified t) 1 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t) 7 8 (face (italic) fontified t) 8 17 (face (font-lock-keyword-face italic) fontified t) 17 32 (face (italic bold) fontified t) 32 74 (face (italic) fontified t) 74 147 (fontified t) 147 187 (fontified t)) . 32541) (undo-tree-id13 . -186) (undo-tree-id14 . -147) (undo-tree-id15 . -147) (undo-tree-id16 . -147) 32688) nil (26477 11528 593415 164000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 26345 . 26346) (#("
+" 0 1 (fontified nil)) . -26532) (26345 . 26533) 26278) nil (26477 11528 593404 29000) 0 nil])
+([nil nil ((26534 . 26549) (26557 . 26570)) nil (26477 11528 593403 233000) 0 nil])
+([nil nil ((26586 . 26605) (29805 . 29822)) nil (26477 11528 593402 657000) 0 nil])
+([nil nil ((29842 . 29857) (29865 . 29878)) nil (26477 11528 593401 901000) 0 nil])
+([nil nil ((29894 . 29913) (32820 . 32837)) nil (26477 11528 593397 541000) 0 nil])
+([nil current ((nil rear-nonsticky nil 495 . 496) (nil fontified nil 483 . 496) (483 . 496) (t 26477 11528 649772 100000)) nil (26477 11914 314026 48000) 0 nil])
+nil

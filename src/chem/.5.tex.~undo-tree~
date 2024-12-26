@@ -1,0 +1,68 @@
+(undo-tree-save-format-version . 1)
+"94e1f35da0904d1ad4aaa4068a25ba74e3907379"
+[nil nil nil nil (26477 11566 22611 967000) 0 nil]
+([nil nil ((#("\\bfseries " 0 9 (face font-lock-keyword-face fontified t) 9 10 (face (bold) fontified t)) . 24) (undo-tree-id4 . -9) (t 26474 22916 8025 232000)) nil (26477 11566 22610 893000) 0 nil])
+([nil nil ((77 . 78) (#("
+" 0 1 (fontified t)) . -77) (#("
+" 0 1 (fontified t)) . -77) 24) nil (26477 11566 22609 563000) 0 nil])
+([nil nil ((#("}" 0 1 (fontified t)) . 76)) nil (26477 11566 22608 864000) 0 nil])
+([nil nil ((#("{\\bfseries " 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 11 (face (bold) fontified t)) . 77) (undo-tree-id3 . -10)) nil (26477 11566 22608 188000) 0 nil])
+([nil nil ((32 . 44) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -32) (undo-tree-id1 . -1) (28 . 33) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -28) (undo-tree-id2 . -1) (23 . 29)) nil (26477 11566 22606 794000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 86 . 87) (nil fontified nil 43 . 87) (43 . 87)) nil (26477 11566 22603 919000) 0 nil])
+([nil nil ((23 . 45) (268 . 288)) nil (26477 11566 22602 981000) 0 nil])
+([nil nil ((311 . 331) (513 . 531)) nil (26477 11566 22602 408000) 0 nil])
+([nil nil ((459 . 460) (#("
+" 0 1 (fontified t)) . -459) (undo-tree-id0 . -1) 458) nil (26477 11566 22601 274000) 0 nil])
+([nil nil ((38081 . 38082) 459) nil (26477 11566 22579 336000) 0 nil])
+([nil nil ((2326 . 2348) (2507 . 2527) (t 26477 11566 71679 117000)) nil (26477 11589 865650 129000) 0 nil])
+([nil nil ((2550 . 2570) (2702 . 2720)) nil (26477 11589 865649 523000) 0 nil])
+([nil nil ((2648 . 2649) (#("
+" 0 1 (fontified t)) . -2648) 2647) nil (26477 11589 865648 883000) 0 nil])
+([nil nil ((4515 . 4624) (#("IMMOBILIZATION OF SILVER NANOPARTICLES IN BIONANOCOMPOSITES OF
+POLYSACCHARIDE AND MONTMORILLONITE
+" 0 98 (fontified t)) . -4515) (undo-tree-id5 . -7) (undo-tree-id6 . -70) (undo-tree-id7 . -70) 4613) nil (26477 11589 865648 19000) 0 nil])
+([nil nil ((4624 . 4625) 4589) nil (26477 11589 865637 455000) 0 nil])
+([nil nil ((4515 . 4537) (4727 . 4747)) nil (26477 11589 865636 606000) 0 nil])
+([nil nil ((4770 . 4790) (4910 . 4928)) nil (26477 11589 865632 637000) 0 nil])
+([nil nil ((#("}" 0 1 (fontified t)) . 10) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (t 26477 11589 919983 154000)) nil (26477 11614 742377 344000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 20 . 21) (nil fontified nil 20 . 21) (20 . 21) 19) nil (26477 11614 742363 889000) 0 nil])
+([nil nil ((6803 . 6822) (#("Кіріспе" 0 7 (fontified t)) . -6803) (undo-tree-id16 . -6) (undo-tree-id17 . -6) (undo-tree-id18 . -6) 6810 (t 26477 11614 801257 515000)) nil (26477 11649 538547 512000) 0 nil])
+([nil nil ((6803 . 6824) (16685 . 16701)) nil (26477 11649 538542 990000) 0 nil])
+([nil nil ((#("{\\bfseries 1-сурет - Бионанокомпозиттердің судағы ісіну кинетикасы, t=20ºС}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 74 (face (bold) fontified t) 74 75 (fontified t)) . -16840) (undo-tree-id14 . -17) (undo-tree-id15 . -17) 16857) nil (26477 11649 538542 233000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 16885 . 16886) (nil fontified nil 16823 . 16886) (16823 . 16886)) nil (26477 11649 538540 161000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16901) (undo-tree-id13 . -1)) nil (26477 11649 538539 411000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16901) (undo-tree-id11 . -1) (undo-tree-id12 . -1)) nil (26477 11649 538537 447000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16901) (undo-tree-id10 . -1)) nil (26477 11649 538534 740000) 0 nil])
+([nil nil ((16902 . 16923) (19002 . 19018)) nil (26477 11649 538523 376000) 0 nil])
+([nil nil ((19816 . 19837) (22536 . 22552) (t 26477 11649 557244 669000)) nil (26477 11663 437427 775000) 0 nil])
+([nil nil ((#("{\\bfseries 2-сурет- BNC-тен Ag\\textsuperscript{+} иондарының судағы бөліну
+кинетикасы, t=20ºС}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 30 (face (bold) fontified t) 30 46 (face (font-lock-keyword-face bold) fontified t) 46 93 (face (bold) fontified t) 93 94 (fontified t)) . -22691) (undo-tree-id99 . -75) (undo-tree-id100 . -75) 22766) nil (26477 11663 437427 92000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 22755 . 22756) (nil fontified nil 22674 . 22756) (22674 . 22756)) nil (26477 11663 437425 407000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 22771) (undo-tree-id85 . -1) (undo-tree-id86 . -1) (undo-tree-id87 . -1) (undo-tree-id88 . -1) (undo-tree-id89 . -1) (undo-tree-id90 . -1) (undo-tree-id91 . -1) (undo-tree-id92 . -1) (undo-tree-id93 . -1) (undo-tree-id94 . -1) (undo-tree-id95 . -1) (undo-tree-id96 . -1) (undo-tree-id97 . -1) (undo-tree-id98 . -1)) nil (26477 11663 437424 492000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 22771) (undo-tree-id79 . -1) (undo-tree-id80 . -1) (undo-tree-id81 . -1) (undo-tree-id82 . -1) (undo-tree-id83 . -1) (undo-tree-id84 . -1)) nil (26477 11663 437415 629000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 22771)) nil (26477 11663 437410 907000) 0 nil])
+([nil nil ((#("{\\bfseries 3-сурет - Әртүрлі рН мәндеріндегі BNC-ден Ag\\textsuperscript{+}
+иондарының физикалық ерітіндідегі бөліну кинетикасы, t=20ºС}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 55 (face (bold) fontified t) 55 71 (face (font-lock-keyword-face bold) fontified t) 71 134 (face (bold) fontified t) 134 135 (fontified t)) . -22889) (undo-tree-id67 . -75) (undo-tree-id68 . -75) (undo-tree-id69 . -75) (undo-tree-id70 . -75) (undo-tree-id71 . -75) (undo-tree-id72 . -75) (undo-tree-id73 . -75) (undo-tree-id74 . -75) (undo-tree-id75 . -75) (undo-tree-id76 . -75) (undo-tree-id77 . -75) (undo-tree-id78 . -75) 22964) nil (26477 11663 437410 188000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 22994 . 22995) (nil fontified nil 22872 . 22995) (22872 . 22995)) nil (26477 11663 437400 719000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23010) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1) (undo-tree-id58 . -1) (undo-tree-id59 . -1) (undo-tree-id60 . -1) (undo-tree-id61 . -1) (undo-tree-id62 . -1) (undo-tree-id63 . -1) (undo-tree-id64 . -1) (undo-tree-id65 . -1) (undo-tree-id66 . -1)) nil (26477 11663 437399 538000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23010) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . -1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1)) nil (26477 11663 437389 852000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 23010) (undo-tree-id19 . -1)) nil (26477 11663 437364 781000) 0 nil])
+([nil nil ((23011 . 23032) (25369 . 25385) (t 26477 11663 482839 103000)) nil (26477 11684 715435 465000) 0 nil])
+([nil nil ((25407 . 25422) (25430 . 25443)) nil (26477 11684 715434 869000) 0 nil])
+([nil nil ((25459 . 25478) (31359 . 31376)) nil (26477 11684 715434 405000) 0 nil])
+([nil nil ((31396 . 31411) (31419 . 31432)) nil (26477 11684 715434 3000) 0 nil])
+([nil nil ((31448 . 31467) (37265 . 37282)) nil (26477 11684 715433 556000) 0 nil])
+([nil nil ((37302 . 37321) (38497 . 38514)) nil (26477 11684 715432 935000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 37930 . 37931) (nil fontified nil 37919 . 37931) (37919 . 37931)) nil (26477 11684 715431 955000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 37332 . 37333) (nil fontified nil 37321 . 37333) (37321 . 37333)) nil (26477 11684 715427 347000) 0 nil])
+([nil current ((nil rear-nonsticky nil 411 . 412) (nil fontified nil 399 . 412) (399 . 412) (t 26477 11684 780219 113000)) nil (26477 11920 225333 441000) 0 nil])
+nil
