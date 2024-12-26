@@ -128,6 +128,7 @@ full-fledged lithological model and incompatibility with other software.
 
 {\bfseries Keywords:} blast hole drilling, ore fragmentation, Micromine,
 geomechanical model, ShotPlus, lithological block model.
+\begin{multicols}{2}
 
 {\bfseries Введение}. В последние годы повышение эффективности дробления
 руды при скважинной отбойке стало ключевой задачей для горнодобывающих
@@ -175,6 +176,7 @@ geomechanical model, ShotPlus, lithological block model.
 учтены данные по отклонению фактических расположений пробуренных
 скважин, что позволило провести корректировки в проектировании (рисунок
 1,2,3).
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -184,6 +186,7 @@ geomechanical model, ShotPlus, lithological block model.
 	параметров карьера проекта Жолымбет}
 \end{figure}
 
+\begin{multicols}{2}
 
 Одной из важнейших характеристик взрывных работ является расчетный
 удельный расход ВВ, который зависит от свойств горной породы.
@@ -205,169 +208,72 @@ kd - поправочный коэффициент на допустимый р�
 
 ρ - плотность породы, кг/м\textsuperscript{3}.
 
-{\bfseries Таблица 1 - Эталонный расход ВВ при крепости породы}
+\end{multicols}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3593}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1362}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2162}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2884}}@{}}
-% \toprule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \multirow{2}{=}{Эталонный расход граммонита 79/21 для кондиционного
-% куска 0,5 м Категория трещиноватости породы} &
-% \multicolumn{3}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.6407} + 4\tabcolsep}@{}}{%
-% Эталонный расход ВВ при крепости породы f, кг/м\textsuperscript{3}} \\
-% & 2 ÷ 5 & 6 ÷ 10 & 11 ÷ 20 \\
-% I
-% 
-% II
-% 
-% III
-% 
-% IV
-% 
-% V & \textless{} 0,3
-% 
-% 0,4
-% 
-% 0,65
-% 
-% 0,85
-% 
-% 1 & \textless{} 0,35
-% 
-% 0,5
-% 
-% 0,75
-% 
-% 1
-% 
-% 1,2 & \textless{} 0,45
-% 
-% 0,6
-% 
-% 0,9
-% 
-% 1,2
-% 
-% 1,4 \\
-% \end{longtable}
+\begin{longtable}[H]{|@{} 
+    >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.60}}| % Adjusted first column
+    >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.13}}| 
+    >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.14}}| 
+    >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.13}}|@{}}
+	\caption*{Таблица 1 - Эталонный расход ВВ при крепости породы}\\
+\hline
+\multirow{2}{*}{\shortstack[l]{Эталонный расход граммонита 79/21 \\ для кондиционного куска 0,5 м}} & 
+\multicolumn{3}{>{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.40} + 4\tabcolsep}|}{Эталонный расход ВВ при крепости породы $f$, кг/м\textsuperscript{3}} \\ \cline{2-4}
+Категория трещиноватости породы & 2 ÷ 5 & 6 ÷ 10 & 11 ÷ 20 \\ \hline
+I & \textless{} 0,3 & \textless{} 0,35 & \textless{} 0,45 \\ \hline
+II & 0,4 & 0,5 & 0,6 \\ \hline
+III & 0,65 & 0,75 & 0,9 \\ \hline
+IV & 0,85 & 1 & 1,2 \\ \hline
+V & 1 & 1,2 & 1,4 \\ \hline
+\end{longtable}
 
-{\bfseries Таблица 2 - коэффициент работоспособности ВВ}
+\begin{longtable}[]{|@{} 
+    >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.6165}}|
+    >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0644}}|
+    >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2547}}|
+    >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0644}}|@{}}
+\caption*{Таблица 2 - коэффициент работоспособности ВВ} \\ \hline
+Значение поправочного коэффициента е для различных ВВ & е & ВВ & e \\ \hline
+\endfirsthead
+Акватол М-15 & 0,76 & Акватол МГ & 0,93 \\ \hline
+Граммонал А-45 & 0,79 & Акватол АВМ & 0,95 \\ \hline
+Карбатол ГЛ-10В & 0,79 & Гранулит АС-4 (АС-4В) & 0,98 \\ \hline
+Граммонал А-8 & 0,80 & Аммонит № 6ЖВ & 1,00 \\ \hline
+Аммонит скальный N1 & 0,80 & Граммонит 79/21 & 1,00 \\ \hline
+Аммонал скальный N3 & 0,80 & Ифзанит Т-80 & 1,08 \\ \hline
+Детонит М & 0,82 & Граммонал А-50 & 1,10 \\ \hline
+Алюмотол & 0,83 & Ифзанит Т-60 & 1,10 \\ \hline
+Гранулит АС-8 (АС-8В) & 0,89 & Гранулит М & 1,13 \\ \hline
+Аммонал водоустойчивый & 0,90 & Игданит & 1,13 \\ \hline
+ &  & Гранулотол & 1,20 \\ \hline
+\end{longtable}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.6165}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0644}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2547}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0644}}@{}}
-% \toprule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% Значение поправочного коэффициента е для различных ВВ ВВ & е & ВВ & е \\
-% Акватол М-15
-% 
-% Граммонал А-45
-% 
-% Карбатол ГЛ-10В
-% 
-% Граммонал А-8
-% 
-% Аммонит скальный N1
-% 
-% Аммонал скальный N3
-% 
-% Детонит М
-% 
-% Алюмотол
-% 
-% Гранулит АС-8 (АС-8В)
-% 
-% Аммонал водоустойчивый & 0,76
-% 
-% 0,79
-% 
-% 0,79
-% 
-% 0,80
-% 
-% 0,80
-% 
-% 0,80
-% 
-% 0,82
-% 
-% 0,83
-% 
-% 0,89
-% 
-% 0,90 & Акватол МГ
-% 
-% Акватол АВМ
-% 
-% Гранулит АС-4 (АС-4В)
-% 
-% Аммонит № 6ЖВ
-% 
-% Граммонит 79/21
-% 
-% Ифзанит Т-80
-% 
-% Граммонал А-50
-% 
-% Ифзанит Т-60
-% 
-% Гранулит М
-% 
-% Игданит
-% 
-% Гранулотол & 0,93
-% 
-% 0,95
-% 
-% 0,98
-% 
-% 1,0
-% 
-% 1,0
-% 
-% 1,08
-% 
-% 1,10
-% 
-% 1,10
-% 
-% 1,13
-% 
-% 1,13
-% 
-% 1,20 \\
-% \end{longtable}
 
-{\bfseries Таблица 3 - поправочный коэффициент на допустимый размер куска}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2671}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}@{}}
-% \toprule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% Поправочный коэффициент на допустимый размер куска (dmax) Допустимый
-% 
-% размер куска
-% 
-% dmax, м & 0,250 & 0,500 & 0,750 & 1,0 & 1,25 & 1,5 \\
-% kd & 1,3 & 1,0 & 0,85 & 0,75 & 0,7 & 0,65 \\
-% \end{longtable}
+
+
+
+\begin{longtable}[H]{|@{}
+	>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2671}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1221}}|@{}}
+\caption*{Таблица 3 - поправочный коэффициент на допустимый размер куска} \\ 
+\hline
+  \endfirsthead
+  \hline
+  \endhead
+  \hline
+  \endfoot
+  \endlastfoot
+  Поправочный коэффициент на допустимый размер куска (dmax) Допустимый размер куска dmax, м & 0,250 & 0,500 & 0,750 & 1,0 & 1,25 & 1,5 \\ \hline
+  kd & 1,3 & 1,0 & 0,85 & 0,75 & 0,7 & 0,65 \\ \hline
+  \end{longtable}
+  
+  \begin{multicols}{2}
 
 1. Удельный расход при крепости 10-12 и средней трещиноватости массива.
 
@@ -390,11 +296,6 @@ kd - поправочный коэффициент на допустимый р�
   Вместимость 1 м скважины рассчитывается по формуле:
 \end{enumerate}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/gor/image28}
-	\caption*{}
-\end{figure}
 
 
 где Δ - плотность ВВ в скважине, кг/м\textsuperscript{3} .
@@ -456,6 +357,8 @@ b= 3,0 м
 Получив все параметры БВР расчетным методом, далее проектируем в
 Micromine проект на бурение блока (таблица 4). Так же продемонстрировано
 отклонение фактических расположении пробуренных скважин {[}10,11,12{]}
+\end{multicols}
+
 
 \begin{figure}[H]
 	\centering
@@ -471,46 +374,54 @@ Micromine проект на бурение блока (таблица 4). Так
 \end{figure}
 
 
-{\bfseries Таблица 4 -- Сравнительная таблица результатов проведенных
-буровзрывных работ}
+\begin{longtable}[H]{|@{} 
+	>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3398}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0971}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2593}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1889}}|
+	>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1150}}|@{}}
+\caption*{Таблица 4 -- Сравнительная таблица результатов проведенных
+буровзрывных работ} \\ 
+	\hline
+  \begin{minipage}[b]{\linewidth}\raggedright
+  {\bfseries Наименование}
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  {\bfseries Ед. изм.}
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  {\bfseries Проект стандартный, без использование геотехнических данных}
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  {\bfseries Использование геотехнических данных}
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  {\bfseries Разница +/-}
+  \end{minipage} \\ \hline
+  \endhead
+  \endfoot
+  \endlastfoot
+  Общее количество скважин & шт & 116 & 97 & -19 \\ \hline
+  Количество рядов скважин & шт & 19 & 19 & \\ \hline
+  Диаметр скважин & мм & 130 & 130 & \\ \hline
+  Средняя глубина скважин & м & 5,4 & 5,4 & \\ \hline
+  Величина перебура & м & 0,5;0,0 & 0,5;0,0 & \\ \hline
+  Сетка скважин & м х м & 2,7×3,3 &
+  \begin{minipage}[t]{\linewidth}\raggedright
+  4×3; 3,8×3;\\
+  3,6×3; 3,3×2,7\strut
+  \end{minipage} & \\ \hline
+  Объем буровых работ & п.м. & 628,6 & 526,2 & -102,4 \\ \hline
+  Объем горной массы & м\textsuperscript{3} & 4691 & 4691 & \\ \hline
+  Выход горной массы & п.м./скв. & 7,4 & 8,9 & 1,5 \\ \hline
+  Угол наклона скважин & град. & -90 & -90 & \\ \hline
+  \end{longtable}
+  
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3398}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0971}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2593}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1889}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1150}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Наименование}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Ед. изм.}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Проект стандартный, без использование геотехнических данных}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Использование геотехнических данных}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Разница +/-}
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% Общее количество скважин & шт & 116 & 97 & -19 \\
-% Количество рядов скважин & шт & 19 & 19 & \\
-% Диаметр скважин & мм & 130 & 130 & \\
-% Средняя глубина скважин & м & 5,4 & 5,4 & \\
-% Величина перебура & м & 0.5;0,0 & 0.5;0,0 & \\
-% Сетка скважин & м х м & 2,7×3,3 &
-% \begin{minipage}[t]{\linewidth}\raggedright
-% 4×3; 3,8×3;\\
-% 3,6×3; 3,3×2,7\strut
-% \end{minipage} & \\
-% Объем буровых работ & п.м. & 628,6 & 526,2 & -102,4 \\
-% Объем горной массы & м\textsuperscript{3} & 4691 & 4691 & \\
-% Выход горной массы & п.м./скв. & 7,4 & 8,9 & 1,5 \\
-% Угол наклона скважин & град. & -90 & -90 & \\
-% \end{longtable}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/gor/image31}
+	\caption*{Рис. 4 -- Качество взрыва на визуальный осмотр}
+\end{figure}
+\begin{multicols}{2}
+
 
 {\bfseries Результаты и обсуждение.} Результаты исследования показали, что
 использование программы Micromine позволило значительно улучшить
@@ -531,12 +442,6 @@ Micromine проект на бурение блока (таблица 4). Так
 Таким образом, использование программы Micromine способствовало
 улучшению основных параметров буровзрывных работ, несмотря на отсутствие
 полноценной блочной модели (рисунок 4).
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/gor/image31}
-	\caption*{Рис. 4 -- Качество взрыва на визуальный осмотр}
-\end{figure}
 
 
 Четко видно границу литологии, так же отсутствуют некондиционные куски
@@ -559,12 +464,13 @@ Micromine проект на бурение блока (таблица 4). Так
 Программа также учитывала геомеханические и геологические особенности,
 что улучшило стабильность подачи материала и соответствие экологическим
 нормам.
+\end{multicols}
 
 
 \begin{center}
 {\bfseries Литература}
 \end{center}
-\begin{noparindent}
+\begin{references}
 
 1.Malanchuk Z.R., Fedotenko V.S., E. Aben, Orynbaev B.A. Improving
 efficiency of rock breaking using pre-weakening of rock mass//Eurasian
@@ -591,13 +497,10 @@ Academic Editions.
 \href{http://dx.doi.org/10.57713/kallipos-203}{DOI10.57713/kallipos-203}
 
 5.Wellmann, Florian \& Caumon, Guillaume. (2018). Chapter One-3-D
-Structural geological models: Concepts, methods, and
-uncertainties//\href{https://www.sciencedirect.com/bookseries/advances-in-geophysics}{Advances
-in
-Geophysics}.-2018.-\href{https://www.sciencedirect.com/bookseries/advances-in-geophysics/vol/59/suppl/C}{Vol.
-59}.~- P. 1-121.
-\href{http://dx.doi.org/10.1016/bs.agph.2018.09.001}{DOI
-10.1016/bs.agph.2018.09.001} \hl{}
+Structural geological models: Concepts, methods, and uncertainties//\href{https://www.sciencedirect.com/bookseries/advances-in-geophysics}{Advances
+in Geophysics}.-2018.-\href{https://www.sciencedirect.com/bookseries/advances-in-geophysics/vol/59/suppl/C}{Vol.
+59}.~- P. 1-121. \href{http://dx.doi.org/10.1016/bs.agph.2018.09.001}{DOI
+10.1016/bs.agph.2018.09.001} 
 
 6.Лесонен М. В., Сень М. С. Использование блочной модели для
 технико-экономической оценки месторождений ТПИ (на примере открытого
@@ -610,40 +513,33 @@ Geophysics}.-2018.-\href{https://www.sciencedirect.com/bookseries/advances-in-ge
 численности и качественных характеристик подземного выемочного
 оборудования с применением программного обеспечения Micromine //Вестник
 Казахский университет технологии и бизнеса. -Астана, 2024, - №2(23). -С.
-420-428. DOI
-\href{https://doi.org/10.58805/kazutb.v.2.23-319}{10.58805/kazutb.v.2.23-319}
+420-428. DOI \href{https://doi.org/10.58805/kazutb.v.2.23-319}{10.58805/kazutb.v.2.23-319}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Вохмин С.А., Курчин Г.С., Кирсанов А.К., Шкаруба Н.А. Расчёт
+9. Вохмин С.А., Курчин Г.С., Кирсанов А.К., Шкаруба Н.А. Расчёт
   параметров буровзрывных работ при строительстве подземных горных
   выработок. Монография. - Красноярск: Сибирский федеральный
   университет, 2022. -180 с. ISBN: 978-5-7638-4481-8
-\item
-  Разработка методики проектирования буровзрывных работ на открытых
+
+10. Разработка методики проектирования буровзрывных работ на открытых
   горных выработках с применением ГГИС Micromine. URL:
   \url{https://www.micromine.kz/2023-5-release/}
-\item
-  Катанов И.Б., Сысоев А.А. Буровзрывные работы на карьерах. Учебное
-  пособие.
-  Издательство:~\href{https://www.labirint.ru/pubhouse/2357/}{Инфра-Инженерия},
-  2021. -208 с. ISBN: 978-5-9729-0757-1 URL:
-  \url{https://www.labirint.ru/books/807059/}
-\end{enumerate}
+
+11. Катанов И.Б., Сысоев А.А. Буровзрывные работы на карьерах. Учебное
+  пособие.   Издательство:~\href{https://www.labirint.ru/pubhouse/2357/}{Инфра-Инженерия},
+  2021. -208 с. ISBN: 978-5-9729-0757-1 URL:   \url{https://www.labirint.ru/books/807059/}
 
 12. Игбаев Т.М., Ахметканов Д.К. Разрушение крепких пород зарядом
 взрывчатого вещества каркасно-ступенчатого действия // Вестник Казахский
 университет технологии и бизнеса.-2024.-№1(22).- С. 286-292. DOI
 \href{https://doi.org/10.58805/kazutb.v.1.22-286}{10.58805/kazutb.v.1.22-286}
 
-\end{noparindent}
+\end{references}
 
 \begin{center}
 {\bfseries References}
 \end{center}
 
-\begin{noparindent}
+\begin{references}
 
 1.Malanchuk Z.R., Fedotenko V.S., E. Aben, Orynbaev B.A. Improving
 efficiency of rock breaking using pre-weakening of rock mass//Eurasian
@@ -712,8 +608,8 @@ Izdatel' stvo: Infra-Inzhenerija, 2021. -208 s. ISBN:
 vzryvchatogo veshhestva karkasno-stupenchatogo dejstvija // Vestnik
 Kazahskij universitet tehnologii i biznesa.-2024.-№1(22).- S. 286-292.
 DOI 10.58805/kazutb.v.1.22-286. {[}in Russian{]}
-\end{noparindent}
-\begin{noparindent}
+\end{references}
+\begin{authorinfo}
 
 \hspace{1em}\emph{{\bfseries Сведения об авторах}}
 
@@ -750,4 +646,4 @@ Satbayev University, Almaty, Kazakhstan, e-mail:
 Myrzakhmetov S. -- Candidate of Technical Sciences, Associate Professor
 of Satbayev University, Almaty, Kazakhstan, e-mail:
 \href{mailto:s.myrzakhmetov@satbayev.university}{\nolinkurl{s.myrzakhmetov@satbayev.university}}.
-\end{noparindent}
+\end{authorinfo}
