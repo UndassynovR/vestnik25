@@ -505,41 +505,12 @@ process. One of the most convenient ways to normalize the values of the
 dataset is to utilize the Min-Max scaling technique. It is a widespread
 approach that efficiently normalizes the values of features. It is
 computed by the following formula (1):
-\end{multicols}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image28}
-	\caption*{}
-\end{figure}
+\begin{equation}
+Y'_{scaled}=\frac{Y-Y_{min}}{Y_{max}-Y_{min}},
+\end{equation}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image29}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image30}
-	\caption*{}
-\end{figure}
-
-is a minimum value;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image31}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image32}
-	\caption*{}
-\end{figure}
-
-scaled value.
+where $Y$ is an initial value; $Y_{min}$ is a minimum value; $Y_{max}$ is a maximum value; $Y_{scaled}$ is a scaled value.
 
 {\bfseries Feature selection.} The feature selection process is realized
 with the use of the Chi-square metric. This metric is a statistical
@@ -549,40 +520,16 @@ calculating the statistical value of every feature, all of them are
 converted to the numerical form. The contingency table is created for
 all the features with the following formula (2):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image33}
-	\caption*{}
-\end{figure}
+\begin{equation}
+x^2=\sum\frac{V_j-U_j)^2}{U_j}
+\end{equation}
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image34}
-	\caption*{}
-\end{figure}
+where $V_j$ is observed frequency, and $U_j$ is the expected frequency. $U_j$ is computed as (3):
 
-observed frequency, and
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image35}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image36}
-	\caption*{}
-\end{figure}
-
-computed as (3):
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image37}
-	\caption*{}
-\end{figure}
-
+\begin{equation}
+U_j = \frac{\text{row\_total} \times \text{column\_total}}{\text{grand\_total}}
+\end{equation}
 
 The features are ordered in a descending way by the calculated
 Chi-square values.
@@ -595,6 +542,7 @@ duplicates them to balance the dataset. The duplicated elements are
 added to the training set until the number of elements in the minority
 class equals the number in the majority class. The class balancing with
 the use of Random oversampling is shown in Figure 1.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -602,6 +550,7 @@ the use of Random oversampling is shown in Figure 1.
 	\caption*{Figure 1-Class balancing with Random oversampling}
 \end{figure}
 
+\begin{multicols}{2}
 {\bfseries Classification with machine learning and deep learning models.}
 When the classes are balanced, the dataset is classified with machine
 and deep learning models. There are several such models, among which the
@@ -620,7 +569,15 @@ the internal nodes, the dataset is split into two or more subgroups
 based on the chosen feature's value. The final nodes do not further
 split and correspond to a class label. The structure of the Decision
 Tree is shown in Figure 2.
+\end{multicols}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{media/ict/image39}
+	\caption*{Figure 2-Decision Tree}
+\end{figure}
+
+\begin{multicols}{2}
 A Random Forest {[}13{]} is a machine-learning algorithm that is based
 on the concept of ensemble learning. It builds multiple decision trees
 and combines their results to improve the Accuracy of a single decision
@@ -641,16 +598,11 @@ Random Forest algorithm has the following specifications:
 - It has high scalability.
 
 The structure of Random Forest is shown in Figure 3.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{media/ict/image39}
-	\caption*{Figure 2-Decision Tree}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{media/ict/image40}
+	\includegraphics[width=0.7\textwidth]{media/ict/image40}
 	\caption*{Figure 3 - Random Forest}
 \end{figure}
 
@@ -669,38 +621,13 @@ A Dense neural network (DNN) {[}15{]} is a fundamental type of neural
 network in which each neuron in one layer is connected to every neuron
 in the subsequent layer. It is the simplest architecture in neural
 networks, typically used as the basic one in deep learning. In this
-architecture, the input layer receives the input data
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image41}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image42}
-	\caption*{}
-\end{figure}
-
-of each level, and
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image43}
-	\caption*{}
-\end{figure}
-
+architecture, the input layer receives the input data $x=x_1,x_2,\ldots,x_n$, and $w_1,w_2,\ldots,w_n$ present weights of each level, and $b_1,b_2,\ldots,b_n$
 of the input layer. The hidden layers consist of neurons that apply
 weights to the input features, followed by an activation function that
 produces non-linearity. There are usually many hidden layers in a neural
 network. The output layer shows the final prediction that usually
 corresponds to the number of classes: binary (two -- 0 or 1) and
 multiclass (three or more). The scheme of DNN is presented in Figure 4.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image44}
-	\caption*{Figure 4 - Dense neural network}
-\end{figure}
 
 A Long short-term memory (LSTM) {[}16{]} is a type of Recurrent neural
 network designed to effectively capture long-term dependencies in the
@@ -711,6 +638,12 @@ forget gate decides which information to discard from the cell state,
 while the input gate selects new information to store. The output gate
 defines the information that is required to be extracted from the
 current cell state.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image44}
+	\caption*{Figure 4 - Dense neural network}
+\end{figure}
 
 The forget gate is calculated as (4):
 
@@ -988,7 +921,7 @@ The scheme of the GRU neural network is shown in Figure 6.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image79}
+	\includegraphics[width=0.6\textwidth]{media/ict/image79}
 	\caption*{Figure 6 - Gated recurrent unit neural network}
 \end{figure}
 
@@ -1034,43 +967,31 @@ Precision, Recall, and F1-score. Accuracy measures the portion of
 correctly classified elements out of the whole number of elements. The
 formula for calculating Accuracy is shown in (12):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image81}
-	\caption*{}
-\end{figure}
-
+\begin{equation}
+Accuracy=\frac{TP+TN}{Total \text{\_} number}
+\end{equation}
 
 Precision is the portion of correctly predicted positive elements to the
 total elements that were predicted as positive. Precision is computed as
 (13):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image82}
-	\caption*{}
-\end{figure}
-
+\begin{equation}
+Precision=\frac{TP}{TP+FP}
+\end{equation}
 
 Recall is the portion of correctly predicted positive elements to the
 total actual positive elements. Recall is computed as (14):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image83}
-	\caption*{}
-\end{figure}
-
+\begin{equation}
+Recall=\frac{TP}{TP+FN}
+\end{equation}
 
 F1-score is the metric characterizing the balance between Precision and
 Recall. F1-score is computed as (15):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image84}
-	\caption*{}
-\end{figure}
-
+\begin{equation}
+F1- score =2\times\frac{Precision \times Recall}{Precision + Recall}
+\end{equation}
 
 The results of classifying the Malware dataset with machine learning and
 deep learning models were evaluated with the described metrics, the

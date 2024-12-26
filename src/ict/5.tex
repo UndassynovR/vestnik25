@@ -350,6 +350,7 @@ closely correlate with temperature predictions.
 	\caption*{Figure 1 -- Steps}
 \end{figure}
 
+\begin{multicols}{2}
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi}.}
 \item
@@ -374,6 +375,7 @@ then it was necessary to remove the Nan value, some rows could remain
 empty because we had 107583 rows from the beginning. One more hypothesis
 to test, the idea is to use \emph{IQR} (Inter Quartile Range) method to
 remove outliers if it is exist.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -394,6 +396,7 @@ remove outliers if it is exist.
 	\caption*{Figure 3 - Encoding scheme}
 \end{figure}
 
+\begin{multicols}{2}
 When converting text to a number, there were two choices LabelEncoder or
 OneHotEncoder, the choice stopped at One- HotEncoder as it showed good
 results.
@@ -423,6 +426,7 @@ values from 1 to 6. The next hypothesis, convert label values to
 integers. We will have unique 6 values, from 6 unique digits, we reduce
 thermal comfort values to 3 digits, which significantly improves
 accuracy.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -430,6 +434,7 @@ accuracy.
 	\caption*{Figure 4 - Feature selection}
 \end{figure}
 
+\begin{multicols}{2}
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi}.}
 \setcounter{enumi}{4}
@@ -561,16 +566,15 @@ the case of regression, predicts continuous outcomes. The key concept
 behind SVM is to maximize the margin between different classes or, in
 regression, to minimize the error between predicted and actual values
 while controlling for overfitting.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image21}
-	\caption*{}
+	\includegraphics[width=0.6\textwidth]{media/ict/image21}
+	\caption*{Figure 5 - Support Vector Machine}
 \end{figure}
 
-
-{\bfseries Figure 5 - Support Vector Machine}
-
+\begin{multicols}{2}
 In the context of thermal comfort prediction, SVM can be utilized to
 analyze complex relationships between various environmental factors such
 as temperature, humidity, and air velocity, and the corresponding human
@@ -590,16 +594,15 @@ Random Forest is a popular machine-learning algorithm that can be used
 for both classification and regression tasks. It is an ensemble learning
 method that combines multiple decision trees to create a more accurate
 and stable model.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image22}
-	\caption*{}
+	\includegraphics[width=0.5\textwidth]{media/ict/image22}
+	\caption*{Figure 6 - Random Forest}
 \end{figure}
 
-
-{\bfseries Figure 6 - Random Forest}
-
+\begin{multicols}{2}
 Data preparation involves cleaning the data, dealing with missing
 values, and transforming it to ensure it is suitable for the algorithm.
 Random sampling is used to randomly select a subset of the data to use
@@ -696,8 +699,7 @@ used StandardScaler and MinMaxScaler models.
 
 Below are presented 1, 2, and 3 tables the beginning results of our
 prediction:
-
-
+\end{multicols}
 
 \begin{table}[H]
 \caption*{Table 1 - Iteration of 17 features}
@@ -934,7 +936,7 @@ Sensors Journal}. -2021.-Vol.21. - Iss.10.-P. 12322-12337.
 10.1109/JSEN.2021.3064707}
 
 4. Juliana Caesarendra, Wahyu Shona Laila, Dina Candra Kurnia, Jundika
-Widiastuti and Ratih Zaini.Prediction on the indoor thermal comfort of
+Widiastuti and Ratih Zaini. Prediction on the indoor thermal comfort of
 occupied room based on iot climate measurement open datasets //
 International Conference on Informatics, Multimedia, Cyber and
 Information System (ICIMCIS).- 2020.
@@ -947,6 +949,7 @@ comfort by learning preferences of multiple occupants.//
 \href{\%20IEEE\%2016th\%20International\%20Conference\%20on\%20Automation\%20Science\%20and\%20Engineering\%20(CASE)}{IEEE
 16th International Conference on Automation Science and Engineering
 (CASE)}.- 2020. DOI
+
 \href{https://doi.org/10.1109/CASE48305.2020.9216834}{10.1109/CASE48305.2020.9216834}
 
 6. M. Hani Mohamed Salleh and Faridah Binti Saripuddin. Monitoring
@@ -992,6 +995,7 @@ and Engineering/. -- 2021.- Vol.18(1).- P.~346--355. DOI
 12. Hiroshi Matsuhashi, Ryuji Wang and Ziyang Onodera,. Proposal of
 relative thermal sensation: Another dimension of thermal comfort and its
 investigation.// IEEE Access. -- 2021.- P.(99):1-1 DOI
+
 10.1109/ACCESS.2021.3062393
 
 13. Yonggang Tseng, King Jet Jin, Guangyu Zhang and Wei Wen.
@@ -1003,7 +1007,7 @@ Internet of Things Journal}.-2021.-Vol.8,Iss.10.-P.8021-8031.
 10.1109/JIOT.2020.3042783}
 
 14.SHRAE dataset, ``ASHRAE Global Thermal Comfort Database II'\,',
-2020,\url{https://www.kaggle.com/datasets/claytonmiller/ashrae-global-thermal-comfort-database-ii}
+2020, \href{https://www.kaggle.com/datasets/claytonmiller/ashrae-global-thermal-comfort-database-ii}{https://www.kaggle.com}
 
 15. Nivethitha Somu, Anirudh Sriram, Anupama Kowli, Krithi Ramamritham.
 A hybrid deep transfer learning strategy for thermal comfort prediction

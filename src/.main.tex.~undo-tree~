@@ -1,102 +1,12 @@
 (undo-tree-save-format-version . 1)
-"8f31ddbe892629f1864b76aafdf796ca2903c6ce"
-[nil nil nil nil (26475 35129 286836 563000) 0 nil]
-([nil nil ((apply -3 1200 1250 undo--wrap-and-run-primitive-undo 1200 1250 ((1200 . 1203) 1222))) nil (26475 35129 286835 430000) 0 nil])
-([nil nil ((apply -3 1351 1403 undo--wrap-and-run-primitive-undo 1351 1403 ((1351 . 1354) 1374))) nil (26475 35129 286832 122000) 0 nil])
-([nil nil ((apply -3 636 686 undo--wrap-and-run-primitive-undo 636 686 ((636 . 639) 658))) nil (26475 35778 568526 312000) 0 nil])
-([nil nil ((apply 3 661 683 undo--wrap-and-run-primitive-undo 661 683 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -661) 686))) nil (26475 35778 568522 605000) 0 nil])
-([nil nil ((apply -3 661 711 undo--wrap-and-run-primitive-undo 661 711 ((661 . 664) 683))) nil (26475 36229 221754 63000) 0 nil])
-([nil nil ((apply 3 686 708 undo--wrap-and-run-primitive-undo 686 708 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -686) 711))) nil (26475 36229 221750 569000) 0 nil])
-([nil nil ((apply -3 686 736 undo--wrap-and-run-primitive-undo 686 736 ((686 . 689) 708))) nil (26475 36815 638224 313000) 0 nil])
-([nil nil ((apply 3 711 733 undo--wrap-and-run-primitive-undo 711 733 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -711) 736))) nil (26475 36815 638220 713000) 0 nil])
-([nil nil ((apply -3 711 761 undo--wrap-and-run-primitive-undo 711 761 ((711 . 714) 733))) nil (26475 38530 408633 54000) 0 nil])
-([nil nil ((apply 3 686 708 undo--wrap-and-run-primitive-undo 686 708 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -686) 711))) nil (26475 38530 408629 95000) 0 nil])
-([nil nil ((apply -3 686 736 undo--wrap-and-run-primitive-undo 686 736 ((686 . 689) 708))) nil (26475 44012 846549 6000) 0 nil])
-([nil nil ((apply 3 711 733 undo--wrap-and-run-primitive-undo 711 733 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -711) 736))) nil (26475 44012 846545 56000) 0 nil])
-([nil nil ((apply -3 711 761 undo--wrap-and-run-primitive-undo 711 761 ((711 . 714) 733))) nil (26475 44897 763898 862000) 0 nil])
-([nil nil ((apply 3 736 758 undo--wrap-and-run-primitive-undo 736 758 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -736) 761))) nil (26475 44897 763898 147000) 0 nil])
-([nil nil ((apply 3 758 781 undo--wrap-and-run-primitive-undo 758 781 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -758) 784))) nil (26475 44897 763894 334000) 0 nil])
-([nil nil ((apply -3 736 784 undo--wrap-and-run-primitive-undo 736 784 ((736 . 739) 758))) nil (26477 3603 316547 772000) 0 nil])
-([nil nil ((apply -3 761 788 undo--wrap-and-run-primitive-undo 761 788 ((761 . 764) 784))) nil (26477 10165 74141 498000) 0 nil])
-([nil nil ((nil rear-nonsticky nil 786 . 787) (#("
-" 0 1 (fontified nil face font-lock-comment-face)) . -812) (786 . 813) 761) nil (26477 10165 74140 438000) 0 nil])
-([nil nil ((#("10" 0 2 (face font-lock-comment-face fontified t)) . -805) (807 . 809) 806) nil (26477 10165 74136 199000) 0 nil])
-([nil nil ((apply 15 814 929 undo--wrap-and-run-primitive-undo 814 929 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -906) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -883) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -860) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -837) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -814) 944))) nil (26477 10167 989366 254000) 0 nil])
-([nil nil ((#("%% \\input{src/chem/9.tex}
-" 0 3 (face font-lock-comment-delimiter-face fontified t) 3 26 (face font-lock-comment-face fontified t)) . 1007) (undo-tree-id0 . -25) (undo-tree-id1 . -16) (undo-tree-id2 . -26) 1023 (t 26477 10168 20306 745000)) nil (26477 10261 470571 940000) 0 nil])
-([nil nil ((apply -3 814 863 undo--wrap-and-run-primitive-undo 814 863 ((814 . 817) 837))) nil (26477 10261 470542 595000) 0 nil])
-([nil nil ((apply -3 840 889 undo--wrap-and-run-primitive-undo 840 889 ((840 . 843) 863))) nil (26477 11052 251556 641000) 0 nil])
-([nil nil ((apply -6 889 967 undo--wrap-and-run-primitive-undo 889 967 ((915 . 918) (889 . 892) 935))) nil (26477 11052 251551 996000) 0 nil])
-([nil nil ((apply -3 866 918 undo--wrap-and-run-primitive-undo 866 918 ((866 . 869) 889))) nil (26477 11340 781036 477000) 0 nil])
-([nil nil ((apply 3 892 915 undo--wrap-and-run-primitive-undo 892 915 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -892) 918))) nil (26477 11340 781032 597000) 0 nil])
-([nil nil ((apply -3 892 944 undo--wrap-and-run-primitive-undo 892 944 ((892 . 895) 915))) nil (26477 11537 628255 215000) 0 nil])
-([nil nil ((apply 3 918 941 undo--wrap-and-run-primitive-undo 918 941 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -918) 944))) nil (26477 11537 628250 910000) 0 nil])
-([nil nil ((apply -3 918 970 undo--wrap-and-run-primitive-undo 918 970 ((918 . 921) 941))) nil (26477 11761 583546 618000) 0 nil])
-([nil nil ((apply 3 944 967 undo--wrap-and-run-primitive-undo 944 967 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -944) 970))) nil (26477 11761 583542 983000) 0 nil])
-([nil nil ((apply -3 944 996 undo--wrap-and-run-primitive-undo 944 996 ((944 . 947) 967))) nil (26477 11957 46848 424000) 0 nil])
-([nil nil ((apply 3 970 993 undo--wrap-and-run-primitive-undo 970 993 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -970) 996))) nil (26477 11957 46844 383000) 0 nil])
-([nil nil ((nil rear-nonsticky nil 1018 . 1019) (#("
-" 0 1 (fontified nil face font-lock-comment-face)) . -1044) (1018 . 1045) 993 (t 26477 11957 96317 740000)) nil (26477 11962 925013 58000) 0 nil])
-([nil nil ((#("8" 0 1 (face font-lock-comment-face fontified t)) . -1038) (1039 . 1040) 1038) nil (26477 11962 925008 686000) 0 nil])
-([nil nil ((apply -3 970 1022 undo--wrap-and-run-primitive-undo 970 1022 ((970 . 973) 993))) nil (26477 12150 844216 151000) 0 nil])
-([nil nil ((apply 3 996 1019 undo--wrap-and-run-primitive-undo 996 1019 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -996)))) nil (26477 12150 844212 294000) 0 nil])
-([nil nil ((apply -3 996 1048 undo--wrap-and-run-primitive-undo 996 1048 ((996 . 999) 1019))) nil (26477 12303 37750 207000) 0 nil])
-([nil nil ((apply 3 1022 1045 undo--wrap-and-run-primitive-undo 1022 1045 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -1022) 1048))) nil (26477 12303 37746 190000) 0 nil])
-([nil nil ((637 . 1566) (#("% \\input{src/ict/5.tex}
-%% \\input{src/ict/6.tex}
-%% \\input{src/ict/7.tex}
-%% \\input{src/ict/8.tex}
-%% \\input{src/ict/9.tex}
-%% \\input{src/ict/10.tex}
-%% \\input{src/ict/11.tex}
-
-%% \\input{src/chem/1.tex}
-%% \\input{src/chem/2.tex}
-%% \\input{src/chem/3.tex}
-%% \\input{src/chem/4.tex}
-%% \\input{src/chem/5.tex}
-%% \\input{src/chem/6.tex}
-%% \\input{src/chem/7.tex}
-%% \\input{src/chem/8.tex}
-\\input{src/chem/9.tex}
-
-%% \\input{src/pish/1.tex}
-%% \\input{src/pish/2.tex}
-%% \\input{src/pish/3.tex}
-%% \\input{src/pish/4.tex}
-%% \\input{src/pish/5.tex}
-% \\input{src/pish/5.tex}
-
-% \\input{src/gor/1.tex}
-%% \\input{src/gor/2.tex}
-%% \\input{src/gor/3.tex}
-%% \\input{src/gor/4.tex}
-%% \\input{src/gor/5.tex}
-%% \\input{src/gor/6.tex}
-%% \\input{src/gor/7.tex}
-
-%% \\input{src/ekon/1.tex}
-%% \\input{src/ekon/2.tex}
-%% \\input{src/ekon/3.tex}
-%% \\input{src/ekon/4.tex}
-%" 0 2 (face font-lock-comment-delimiter-face fontified t) 2 24 (face font-lock-comment-face fontified t) 24 27 (face font-lock-comment-delimiter-face fontified t) 27 49 (face font-lock-comment-face fontified t) 49 52 (face font-lock-comment-delimiter-face fontified t) 52 74 (face font-lock-comment-face fontified t) 74 77 (face font-lock-comment-delimiter-face fontified t) 77 99 (face font-lock-comment-face fontified t) 99 102 (face font-lock-comment-delimiter-face fontified t) 102 124 (face font-lock-comment-face fontified t) 124 127 (face font-lock-comment-delimiter-face fontified t) 127 133 (face font-lock-comment-face fontified t) 133 134 (face font-lock-comment-face fontified t) 134 148 (face font-lock-comment-face fontified t) 148 149 (face font-lock-comment-face fontified t) 149 150 (face font-lock-comment-face rear-nonsticky t fontified t) 150 153 (face font-lock-comment-delimiter-face fontified t) 153 159 (face font-lock-comment-face fontified t) 159 160 (face font-lock-comment-face fontified t) 160 168 (face font-lock-comment-face fontified t) 168 170 (face font-lock-comment-face fontified t) 170 174 (face font-lock-comment-face fontified t) 174 175 (face font-lock-comment-face fontified t) 175 176 (face font-lock-comment-face fontified t) 176 177 (fontified t) 177 180 (face font-lock-comment-delimiter-face fontified t) 180 186 (face font-lock-comment-face fontified t) 186 187 (face font-lock-comment-face fontified t) 187 201 (face font-lock-comment-face fontified t) 201 202 (face font-lock-comment-face fontified t) 202 203 (face font-lock-comment-face fontified t) 203 206 (face font-lock-comment-delimiter-face fontified t) 206 212 (face font-lock-comment-face fontified t) 212 213 (face font-lock-comment-face fontified t) 213 227 (face font-lock-comment-face fontified t) 227 228 (face font-lock-comment-face fontified t) 228 229 (face font-lock-comment-face fontified t) 229 232 (face font-lock-comment-delimiter-face fontified t) 232 238 (face font-lock-comment-face fontified t) 238 239 (face font-lock-comment-face fontified t) 239 253 (face font-lock-comment-face fontified t) 253 254 (face font-lock-comment-face fontified t) 254 255 (face font-lock-comment-face fontified t) 255 258 (face font-lock-comment-delimiter-face fontified t) 258 264 (face font-lock-comment-face fontified t) 264 265 (face font-lock-comment-face fontified t) 265 279 (face font-lock-comment-face fontified t) 279 280 (face font-lock-comment-face fontified t) 280 281 (face font-lock-comment-face fontified t) 281 284 (face font-lock-comment-delimiter-face fontified t) 284 290 (face font-lock-comment-face fontified t) 290 291 (face font-lock-comment-face fontified t) 291 305 (face font-lock-comment-face fontified t) 305 306 (face font-lock-comment-face fontified t) 306 307 (face font-lock-comment-face fontified t) 307 310 (face font-lock-comment-delimiter-face fontified t) 310 316 (face font-lock-comment-face fontified t) 316 317 (face font-lock-comment-face fontified t) 317 331 (face font-lock-comment-face fontified t) 331 332 (face font-lock-comment-face fontified t) 332 333 (face font-lock-comment-face fontified t) 333 336 (face font-lock-comment-delimiter-face fontified t) 336 342 (face font-lock-comment-face fontified t) 342 343 (face font-lock-comment-face fontified t) 343 357 (face font-lock-comment-face fontified t) 357 358 (face font-lock-comment-face fontified t) 358 359 (face font-lock-comment-face fontified t) 359 362 (face font-lock-comment-delimiter-face fontified t) 362 368 (face font-lock-comment-face fontified t) 368 369 (face font-lock-comment-face fontified t) 369 383 (face font-lock-comment-face fontified t) 383 384 (face font-lock-comment-face fontified t) 384 385 (face font-lock-comment-face rear-nonsticky t fontified t) 385 391 (face font-lock-keyword-face fontified t) 391 392 (fontified t) 392 401 (face font-lock-builtin-face fontified t) 401 402 (face font-lock-builtin-face fontified t) 402 406 (face font-lock-builtin-face fontified t) 406 407 (fontified t) 407 408 (fontified t) 408 409 (fontified t) 409 412 (face font-lock-comment-delimiter-face) 412 435 (face font-lock-comment-face) 435 438 (face font-lock-comment-delimiter-face) 438 461 (face font-lock-comment-face) 461 464 (face font-lock-comment-delimiter-face) 464 487 (face font-lock-comment-face) 487 490 (face font-lock-comment-delimiter-face) 490 513 (face font-lock-comment-face) 513 516 (face font-lock-comment-delimiter-face) 516 539 (face font-lock-comment-face) 539 541 (face font-lock-comment-delimiter-face) 541 564 (face font-lock-comment-face) 565 567 (face font-lock-comment-delimiter-face) 567 589 (face font-lock-comment-face) 589 592 (face font-lock-comment-delimiter-face) 592 614 (face font-lock-comment-face) 614 617 (face font-lock-comment-delimiter-face) 617 639 (face font-lock-comment-face) 639 642 (face font-lock-comment-delimiter-face) 642 664 (face font-lock-comment-face) 664 667 (face font-lock-comment-delimiter-face) 667 689 (face font-lock-comment-face) 689 692 (face font-lock-comment-delimiter-face) 692 714 (face font-lock-comment-face) 714 717 (face font-lock-comment-delimiter-face) 717 739 (face font-lock-comment-face) 740 743 (face font-lock-comment-delimiter-face) 743 766 (face font-lock-comment-face) 766 769 (face font-lock-comment-delimiter-face) 769 792 (face font-lock-comment-face) 792 795 (face font-lock-comment-delimiter-face) 795 818 (face font-lock-comment-face) 818 821 (face font-lock-comment-delimiter-face) 821 844 (face font-lock-comment-face) 844 845 (face font-lock-comment-delimiter-face)) . 637) (undo-tree-id28 . -385) (undo-tree-id29 . -385) (undo-tree-id30 . -385) (undo-tree-id31 . 437) (undo-tree-id32 . -385) (undo-tree-id33 . -385) (undo-tree-id34 . -281) (t 26477 12303 66336 82000)) nil (26477 12529 883889 550000) 0 nil])
-([nil nil ((#("<<<<<<< HEAD
-%% \\input{src/ict/7.tex}
-=======
-" 0 2 (face font-lock-keyword-face fontified t) 2 13 (face smerge-markers fontified t) 13 16 (face (smerge-upper font-lock-comment-delimiter-face) fontified t) 16 38 (face (smerge-upper font-lock-comment-face) fontified t) 38 45 (face smerge-markers fontified t) 45 46 (face nil fontified t)) . 685) (undo-tree-id23 . -44) (undo-tree-id24 . -44) (undo-tree-id25 . -6) (undo-tree-id26 . -45) (undo-tree-id27 . -6) 691 (t 26477 12497 612744 581000)) nil (26477 12529 883884 427000) 0 nil])
-([nil nil ((#(">>>>>>> c215bebd67605ed84c8dd922964db4901b849079
-" 0 2 (fontified t) 2 49 (fontified t)) . 709) (undo-tree-id21 . -48) (undo-tree-id22 . -6) 715) nil (26477 12529 883880 353000) 0 nil])
-([nil nil ((686 . 687)) nil (26477 12529 883856 579000) 0 nil])
-([nil nil ((686 . 687) (#("&" 0 1 (face font-lock-comment-face fontified t)) . 686) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1)) nil (26477 12529 883855 516000) 0 nil])
-([nil nil ((637 . 638) (#(" " 0 1 (face font-lock-comment-delimiter-face fontified t)) . 637)) nil (26477 12529 883821 391000) 0 nil])
-([nil nil ((638 . 639)) nil (26477 12529 883820 477000) 0 nil])
-([nil nil ((apply -3 1022 1049 undo--wrap-and-run-primitive-undo 1022 1049 ((1022 . 1025) 1045))) nil (26477 12529 883819 530000) 0 nil])
-([nil nil ((apply -3 1253 1303 undo--wrap-and-run-primitive-undo 1253 1303 ((1253 . 1256)))) nil (26477 12529 883815 728000) 0 nil])
-([nil nil ((apply 3 536 558 undo--wrap-and-run-primitive-undo 536 558 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -536) 561))) nil (26477 12919 9760 598000) 0 nil])
-([nil nil ((apply -3 536 586 undo--wrap-and-run-primitive-undo 536 586 ((536 . 539) 558))) nil (26477 13029 286317 596000) 0 nil])
-([nil nil ((apply 3 561 583 undo--wrap-and-run-primitive-undo 561 583 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . 561) 586))) ((apply -3 561 586 undo--wrap-and-run-primitive-undo 561 586 ((561 . 564) 204))) (26477 13029 829725 985000) 0 nil])
-([nil nil ((apply -3 561 611 undo--wrap-and-run-primitive-undo 561 611 ((561 . 564) 583))) nil (26477 13119 791146 439000) 0 nil])
-([nil nil ((apply 3 586 608 undo--wrap-and-run-primitive-undo 586 608 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -586)))) nil (26477 13119 791141 958000) 0 nil])
-([nil nil ((apply -3 586 636 undo--wrap-and-run-primitive-undo 586 636 ((586 . 589) 608))) nil (26477 14053 965296 294000) 0 nil])
-([nil current ((apply 3 611 633 undo--wrap-and-run-primitive-undo 611 633 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -611) 636))) nil (26477 14053 965292 663000) 0 nil])
+"93a83e74a83ad7224e41f86acd1eb5befa6945b1"
+[nil nil nil nil (26477 29679 878169 132000) 0 nil]
+([nil nil ((apply 3 635 657 undo--wrap-and-run-primitive-undo 635 657 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -635) 660))) nil (26477 29679 878168 290000) 0 nil])
+([nil nil ((apply -3 1324 1374 undo--wrap-and-run-primitive-undo 1324 1374 ((1324 . 1327) 1346))) nil (26477 29679 878164 693000) 0 nil])
+([nil nil ((apply -3 635 685 undo--wrap-and-run-primitive-undo 635 685 ((635 . 638) 657))) nil (26477 29969 52098 794000) 0 nil])
+([nil nil ((apply 3 660 682 undo--wrap-and-run-primitive-undo 660 682 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -660) 685))) nil (26477 29969 52094 997000) 0 nil])
+([nil nil ((apply -3 660 710 undo--wrap-and-run-primitive-undo 660 710 ((660 . 663) 682))) nil (26477 30154 710132 317000) 0 nil])
+([nil nil ((apply 3 685 707 undo--wrap-and-run-primitive-undo 685 707 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -685) 710))) nil (26477 30154 710128 79000) 0 nil])
+([nil nil ((apply -3 685 735 undo--wrap-and-run-primitive-undo 685 735 ((685 . 688) 707))) nil (26477 30261 282034 423000) 0 nil])
+([nil current ((apply 3 710 732 undo--wrap-and-run-primitive-undo 710 732 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -710) 735))) nil (26477 30261 282030 446000) 0 nil])
 nil
