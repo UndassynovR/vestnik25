@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"b1aee776fc177b6fe69b9cac5f27c7779a20d42c"
+"d3a4aa7580aa58c1e3c8ba49ac64ea881f367f74"
 [nil nil nil nil (26475 35129 286836 563000) 0 nil]
 ([nil nil ((apply -3 1200 1250 undo--wrap-and-run-primitive-undo 1200 1250 ((1200 . 1203) 1222))) nil (26475 35129 286835 430000) 0 nil])
 ([nil nil ((apply -3 1351 1403 undo--wrap-and-run-primitive-undo 1351 1403 ((1351 . 1354) 1374))) nil (26475 35129 286832 122000) 0 nil])
@@ -164,5 +164,7 @@ nil
 ([nil nil ((apply -3 1068 1120 undo--wrap-and-run-primitive-undo 1068 1120 ((1068 . 1071) 1091))) nil (26478 36988 862551 359000) 0 nil])
 ([nil nil ((apply -3 1022 1071 undo--wrap-and-run-primitive-undo 1022 1071 ((1022 . 1025) 1045))) nil (26478 36988 862547 752000) 0 nil])
 ([nil nil ((apply -3 1048 1100 undo--wrap-and-run-primitive-undo 1048 1100 ((1048 . 1051) 1071))) nil (26478 37954 223108 22000) 0 nil])
-([nil current ((apply 3 1074 1097 undo--wrap-and-run-primitive-undo 1074 1097 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -1074) 1100))) nil (26478 37954 223104 325000) 0 nil])
+([nil nil ((apply 3 1074 1097 undo--wrap-and-run-primitive-undo 1074 1097 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -1074) 1100))) nil (26478 37954 223104 325000) 0 nil])
+([nil nil ((apply -3 1074 1126 undo--wrap-and-run-primitive-undo 1074 1126 ((1074 . 1077) 1097))) nil (26478 39842 176145 660000) 0 nil])
+([nil current ((apply 3 710 732 undo--wrap-and-run-primitive-undo 710 732 ((#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -710) 735))) nil (26478 39842 176141 382000) 0 nil])
 nil

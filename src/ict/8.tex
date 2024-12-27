@@ -510,7 +510,7 @@ computed by the following formula (1):
 Y'_{scaled}=\frac{Y-Y_{min}}{Y_{max}-Y_{min}},
 \end{equation}
 
-where $Y$ is an initial value; $Y_{min}$ is a minimum value; $Y_{max}$ is a maximum value; $Y_{scaled}$ is a scaled value.
+where $Y$ is an initial value; $Y_{min}$ is a minimum value; $Y_{max}$ is a maximum value; $Y'_{scaled}$ is a scaled value.
 
 {\bfseries Feature selection.} The feature selection process is realized
 with the use of the Chi-square metric. This metric is a statistical
@@ -521,14 +521,14 @@ converted to the numerical form. The contingency table is created for
 all the features with the following formula (2):
 
 \begin{equation}
-x^2=\sum\frac{V_j-U_j)^2}{U_j}
+x^2=\sum\frac{V_i-U_i)^2}{U_i}
 \end{equation}
 
 
 where $V_j$ is observed frequency, and $U_j$ is the expected frequency. $U_j$ is computed as (3):
 
 \begin{equation}
-U_j = \frac{\text{row\_total} \times \text{column\_total}}{\text{grand\_total}}
+U_i = \frac{row\text{\_}total \times column\text{\_}total}{grand\text{\_}total}
 \end{equation}
 
 The features are ordered in a descending way by the calculated
@@ -602,8 +602,14 @@ The structure of Random Forest is shown in Figure 3.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.85\textwidth]{media/ict/image40}
+	\includegraphics[width=0.9\textwidth]{media/ict/image40}
 	\caption*{Figure 3 - Random Forest}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{media/ict/image44}
+	\caption*{Figure 4 - Dense neural network}
 \end{figure}
 
 \begin{multicols}{2}
@@ -643,151 +649,54 @@ current cell state.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image44}
-	\caption*{Figure 4 - Dense neural network}
+	\includegraphics[width=0.6\textwidth]{media/ict/image63}
+	\caption*{Figure 5 - Long short-term memory neural network}
 \end{figure}
 
+\begin{multicols}{2}
 The forget gate is calculated as (4):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image45}
-	\caption*{}
-\end{figure}
+\begin{equation}
+f_t=\sigma(W_f\cdot[h_{t-1},x_t]+b_f),
+\end{equation}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image46}
-	\caption*{}
-\end{figure}
-
-forget gate output;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image47}
-	\caption*{}
-\end{figure}
-
-activation function;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image48}
-	\caption*{}
-\end{figure}
-
-the forget gate;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image49}
-	\caption*{}
-\end{figure}
-
-state from the previous time step;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image50}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image51}
-	\caption*{}
-\end{figure}
-
+where $f_t$ is a forget gate output;
+$\sigma$ is a sigmoid activation function;
+$W_f$ are weights for the forget gate;
+$h_{t-1}$ state from the previous time step;
+$x_t$ is a current input; $b_f$ is bias
 for the forget gate.
 
 The input gate is computed as (5):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image52}
-	\caption*{}
-\end{figure}
+\begin{equation}
+i_t=\sigma(W_i\cdot[h_{t-1},x_t]+b_i),
+\end{equation}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image53}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image54}
-	\caption*{}
-\end{figure}
-
-weights for the input gate;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image55}
-	\caption*{}
-\end{figure}
-
-input gate.
+where $i_t$ is an input gate;
+$W_i$ are weights for the input gate;
+$b_i$ is bias for the input gate.
 
 The cell state is calculated as (6):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image56}
-	\caption*{}
-\end{figure}
+\begin{equation}
+C_t=tanh(W_c\cdot[h_{t-1},x_t]+b_c),
+\end{equation}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image57}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image58}
-	\caption*{}
-\end{figure}
-
-weights for the cell state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image59}
-	\caption*{}
-\end{figure}
-
-cell state.
+where $C_t$ is a cell state;
+$W_c$ are weights for the cell state;
+$b_c$ is bias for the cell state.
 
 The output gate is computed as (7):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image60}
-	\caption*{}
-\end{figure}
+\begin{equation}
+o_t=\sigma(W_o\cdot[h_{t-1},x_t]+b_o),
+\end{equation}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image61}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image62}
-	\caption*{}
-\end{figure}
-
-bias for the output gate.
+where $o_t$ is the output gate;
+$b_o$ is bias for the output gate.
 
 The scheme of the LSTM model is shown in Figure 5.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image63}
-	\caption*{Figure 5 - Long short-term memory neural network}
-\end{figure}
 
 A GRU {[}17{]} is another type of Recurrent neural network designed to
 capture dependencies in sequential data like LSTM but with a simpler
@@ -798,115 +707,49 @@ state.
 
 The update gate is calculated as (8):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image64}
-	\caption*{}
-\end{figure}
+\begin{equation}
+z_t=\sigma(W_z\cdot[h_{t-1},x_t]+b_z),
+\end{equation}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image65}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image47}
-	\caption*{}
-\end{figure}
-
-a sigmoid activation function;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image66}
-	\caption*{}
-\end{figure}
-
-matrix for the update gate.
+where $z_t$ is an update gate;
+$\sigma$ is a sigmoid activation function;
+$W_z$ is a weight matrix for the update gate.
 
 The reset gate is computed as (9):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image67}
-	\caption*{}
-\end{figure}
+\begin{equation}
+r_t=\sigma(W_r\cdot[h_{t-1},x_t]+b_r),
+\end{equation}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image68}
-	\caption*{}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image69}
-	\caption*{}
-\end{figure}
-
-a weight matrix for the reset gate;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image70}
-	\caption*{}
-\end{figure}
-
-reset gate.
+where $r_t$ is a reset gate;
+$W_r$ is a weight matrix for the reset gate;
+$b_r$ is a bias for the reset gate.
 
 The hidden state is calculated as (10):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image71}
-	\caption*{}
-\end{figure}
+\begin{equation}
+\tilde{h_t}=tanh(W_h\cdot[r_t*h_{t-1},x_t]+b_h),
+\end{equation}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image72}
-	\caption*{}
-\end{figure}
-
+where $\tilde{h_t}$ is a
 candidate hidden state, which incorporates the current input and the
 reset hidden state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image73}
-	\caption*{}
-\end{figure}
-
-matrix for the candidate hidden state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image74}
-	\caption*{}
-\end{figure}
-
-for the candidate hidden state;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image75}
-	\caption*{}
-\end{figure}
-
-element-wise multiplication.
+$W_h$ is the weight matrix for the candidate hidden state;
+$b_h$ is a bias term for the candidate hidden state;
+$*$ is the element-wise multiplication.
 
 The final hidden state is computed as (11):
 
-%% \begin{figure}[H]
-%% 	\centering
-%% 	\includegraphics[width=0.8\textwidth]{media/ict/image76}
-%% 	\caption*{}
-%% \end{figure}
+\begin{equation}
+h_t=z_t*h_{t-1}+(1-z_t)*\tilde{h_t},
+\end{equation}
 
 where $h_t$ is a final hidden state for the current time step; $z_t$ is an update
 gate controlling how much of the previous hidden state to keep and how
 much of the candidate state to add.
 
 The scheme of the GRU neural network is shown in Figure 6.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -914,6 +757,7 @@ The scheme of the GRU neural network is shown in Figure 6.
 	\caption*{Figure 6 - Gated recurrent unit neural network}
 \end{figure}
 
+\begin{multicols}{2}
 The machine learning and neural network algorithms presented above have
 been widely used and distributed in many works due to their success in
 data classification tasks. In this study, they also successfully coped
@@ -934,6 +778,7 @@ reduces the training time on large datasets. Overall, the hybrid
 LSTM-GRU model offers enough functionality to handle complex models
 without overloading the computational resources of the machines. The
 scheme of the hybrid LSTM-GRU neural network model is shown in Fig. 7.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -941,6 +786,7 @@ scheme of the hybrid LSTM-GRU neural network model is shown in Fig. 7.
 	\caption*{Figure 7 - LSTM-GRU neural network}
 \end{figure}
 
+\begin{multicols}{2}
 {\bfseries Results and discussion.} Malware classification experiments
 {[}19{]} were tested on the corresponding dataset. First of all, the
 dataset was cleaned and preprocessed. Three unmeaning features were
@@ -991,6 +837,7 @@ problematic case.
 
 The results of the experiments that were conducted are shown in Table 1
 and Figure 7.
+\end{multicols}
 
 \begin{table}[H]
 \caption*{Table 1. The values of Malware classification}
@@ -1227,7 +1074,7 @@ DOI \href{https://doi.org/10.7717/peerj-cs.346}{10.7717/peerj-cs.346}.
   use of machine learning and neural network methods //International
   Journal of Innovative Research and Scientific Studies. -2024.-Vol.
   7(3). -P. 863- 877. DOI
-  \href{https://doi.org/10.53894/ijirss.v7i3.2957}{10.53894/ijirss.v7i3.2957}.
+  \\\href{https://doi.org/10.53894/ijirss.v7i3.2957}{10.53894/ijirss.v7i3.2957}.
 \end{enumerate}
 \end{references}
 
