@@ -546,7 +546,7 @@ the use of Random oversampling is shown in Figure 1.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{media/ict/image38}
+	\includegraphics[width=0.6\textwidth]{media/ict/image38}
 	\caption*{Figure 1-Class balancing with Random oversampling}
 \end{figure}
 
@@ -573,7 +573,7 @@ Tree is shown in Figure 2.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{media/ict/image39}
+	\includegraphics[width=0.85\textwidth]{media/ict/image39}
 	\caption*{Figure 2-Decision Tree}
 \end{figure}
 
@@ -602,10 +602,11 @@ The structure of Random Forest is shown in Figure 3.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{media/ict/image40}
+	\includegraphics[width=0.85\textwidth]{media/ict/image40}
 	\caption*{Figure 3 - Random Forest}
 \end{figure}
 
+\begin{multicols}{2}
 XGBoost {[}14{]} is a very strong machine-learning algorithm widely used
 in the classification task. It lies in a series of boosting algorithms
 that combine the predictions of multiple learners. XGBoost is known for
@@ -638,6 +639,7 @@ forget gate decides which information to discard from the cell state,
 while the input gate selects new information to store. The output gate
 defines the information that is required to be extracted from the
 current cell state.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -894,26 +896,13 @@ element-wise multiplication.
 
 The final hidden state is computed as (11):
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image76}
-	\caption*{}
-\end{figure}
+%% \begin{figure}[H]
+%% 	\centering
+%% 	\includegraphics[width=0.8\textwidth]{media/ict/image76}
+%% 	\caption*{}
+%% \end{figure}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image77}
-	\caption*{}
-\end{figure}
-
-final hidden state for the current time step;
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image78}
-	\caption*{}
-\end{figure}
-
+where $h_t$ is a final hidden state for the current time step; $z_t$ is an update
 gate controlling how much of the previous hidden state to keep and how
 much of the candidate state to add.
 
