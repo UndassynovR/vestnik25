@@ -1,968 +1,960 @@
-\id{МРНТИ 06.00.01}
-
-
+\id{МРНТИ 06.81.12}
 \begin{articleheader}
-\sectionwithauthors{M. Zhumazhanova, R.Zhappasova, A.Oryntaeva}{FORMATION OF THE BUSINESS ENVIRONMENT IN KAZAKHSTAN: THE ROLE OF GOVERNMENT SUPPORT FOR ENTREPRENEURSHIP}
 
-{\bfseries M. Zhumazhanova\textsuperscript{\envelope }, R. Zhappasova, A. Oryntaeva}
+\sectionwithauthors{А.Ф. Цеховой, Н.А. Некрасова, А.С. Жолтаева, Ж.Ж.Султанбекова, А.Ж. Турегельдинова}{AGILE-ПОДХОД К УПРАВЛЕНИЮ СОБЫТИЯМИ НЕДЕЛИ: ВВЕДЕНИЕ И ПРАКТИКА
+ИСПОЛЬЗОВАНИЯ~МОДЕЛИ~АУСН}
+
+{\bfseries \textsuperscript{1}А.Ф. Цеховой, \textsuperscript{2}Н.А.
+Некрасова, \textsuperscript{1}А.С. Жолтаева, \textsuperscript{1}Ж.Ж.
+Султанбекова\textsuperscript{\envelope }, \textsuperscript{1}А.Ж. Турегельдинова}
 \end{articleheader}
 \begin{affiliation}
 
-Kazakh University of Technology and Business named after K. Kulazhanov,
-Astana, Kazakhstan
+\textsuperscript{1}Сатпаев Университет, Алматы, Казахстан,
 
-\raggedright {\bfseries \textsuperscript{\envelope }}Corresponding author: maral2804@mail.ru
+\textsuperscript{2} ОЮЛ «Союз проектных менеджеров РК», Алматы,
+Казахстан
+
+\raggedright{\bfseries \textsuperscript{\envelope }}Корреспондент-автор:\href{mailto:z.sultanbekova@satbayev.university}{\nolinkurl{z.sultanbekova@satbayev.university}}
 \end{affiliation}
 
-The development of entrepreneurship in Kazakhstan has a noticeable
-impact on the country's economy, bringing significant changes to its
-structure and dynamics. Entrepreneurial activity contributes to GDP
-growth by creating new jobs and reducing unemployment levels. The
-emergence of new businesses and the expansion of existing companies lead
-to increased production volumes and an expanded economic base, which is
-especially important for diversifying an economy traditionally dependent
-on oil and gas.
+В статье представлена модель Agile-управления событиями недели (АУСН),
+основанная на технологии «Практика Agile-управления портфелем развития
+организации» (ПАУПРО). Данная модель реализует продуктивный подход к
+управлению взаимодействием членов команды управления организации,
+интегрируя принципы Agile и методы проектного управления. Основное
+внимание уделяется формированию продуктивных моделей управления,
+основанных на принципах простоты и гибкости.
 
-One of the key aspects is improving the business climate. Government
-programs such as the "Business Roadmap - 2025" are aimed at simplifying
-company registration procedures, enhancing the tax system, and
-supporting startups. These measures create favorable conditions for
-entrepreneurs and attract foreign investors, thereby increasing
-investments in the economy.
+Ключевым аспектом АУСН является акцент на взаимодействии участников
+команды, согласно первой ценности Agile: «Люди и взаимодействие важнее
+процессов и инструментов», с уточнением о значении тех процессов,
+которые обеспечивают это взаимодействие. В рамках модели реализуется
+механизм оперативной самооценки эффективности управленческой
+деятельности, через еженедельные оценки активности, значимости и
+исполнительной дисциплины. Это способствует развитию саморефлексии,
+самообучения и улучшению планирования взаимодействий с заинтересованными
+сторонами.
 
-The development of entrepreneurship also enhances market
-competitiveness, leading to improvements in the quality of goods and
-services, innovations, and lower prices. This, in turn, positively
-affects consumers and stimulates further business development.
-Additionally, entrepreneurial activity contributes to improving social
-infrastructure and integrating local communities, creating new
-opportunities for social initiatives and raising living standards.
+Важно отметить, что система оценок в модели АУСН является инструментом
+для саморазвития и , повышения управленческих компетенций. Цель
+внедрения данной модели заключается в улучшении взаимодействия членов
+управленческой команды, что способствует достижению высоких стандартов
+качества и удовлетворенности клиентов, являясь важной частью стратегии
+развития организации.
 
-However, entrepreneurship in Kazakhstan faces certain challenges such as
-bureaucracy, lack of funding, and issues with law enforcement.
-Addressing these problems is crucial for the sustainable and long-term
-development of entrepreneurial activities in the country. Overall, the
-development of entrepreneurship in Kazakhstan has a multifaceted impact
-on the economy, contributing to its growth, diversification, and
-improvement in the quality of life for its population.
+{\bfseries Ключевые слова:} Agile-управление, события недели, еженедельная
+ретроспектива, продуктивное взаимодействие, управление развитием,
+метрики оценки, активность планирования, дисциплина исполнения, качество
+исполнения
 
-{\bfseries Keywords:} entrepreneurship, business, PPP, lending; support;
-economic growth.
 \begin{articleheader}
 
-{\bfseries ҚАЗАҚСТАНДА БИЗНЕС-ОРТАНЫ ҚАЛЫПТАСТЫРУ: КӘСІПКЕРЛІКТІ
-МЕМЛЕКЕТТІК ҚОЛДАУДЫҢ РӨЛІ}
+{\bfseries АПТА ОҚИҒАЛАРЫН БАСҚАРУДАҒЫ AGILE ТӘСІЛІ: АОАБ МОДЕЛІН ЕНГІЗУ
+ЖӘНЕ ҚОЛДАНУ ТӘЖІРИБЕСІ}
 
-{\bfseries М.Т. Жұмажанова\textsuperscript{\envelope }, Р.Е.Жаппасова,
-А.Е.Орынтаева}
+{\bfseries \textsuperscript{1}А.Ф. Цеховой, \textsuperscript{2}Н.А.
+Некрасова, \textsuperscript{1}А.С. Жолтаева, \textsuperscript{1}Ж.Ж.
+Сұлтанбекова\textsuperscript{\envelope }, \textsuperscript{1}А.Ж. Турегельдинова}
 \end{articleheader}
 \begin{affiliation}
 
-Қ.Құлажанов атындағы Қазақ технология және бизнес университеті, Астана,
-Қазақстан,
+\textsuperscript{1}Сәтбаев Университеті, Алматы, Қазақстан,
 
-e-mail: maral2804@mail.ru
+\textsuperscript{2}«ҚР Жоба Менеджерлері Одағы» ЗТБ, Алматы, Қазақстан,
+
+e-mail:
+\href{mailto:z.sultanbekova@satbayev.university}{\nolinkurl{z.sultanbekova@satbayev.university}}
 \end{affiliation}
 
-Қазақстанда кәсіпкерліктің дамуы оның құрылымы мен динамикасына елеулі
-өзгерістер енгізе отырып, ел экономикасына елеулі әсер етеді.
-Кәсіпкерлік белсенділік жаңа жұмыс орындарын құру және жұмыссыздық
-деңгейін төмендету арқылы жалпы ішкі өнімнің (ЖІӨ) өсуіне ықпал етеді.
+Бұл мақалада «Апта оқиғаларын Agile-басқару моделі» (АОАБ) ұсынылған, ол
+«Ұйымның даму портфелін Agile басқару практикасы» (ҰДМАБТ)
+технологиясына негізделген. Бұл модель Agile принциптері мен жобалық
+басқару әдістерін интеграциялай отырып, ұйымды басқару командасының
+мүшелері арасындағы өзара әрекетті басқаруда өнімді тәсілді жүзеге
+асырады. Негізгі назар өнімді басқару модельдерін қалыптастыруға
+аударылған, олар қарапайымдылық пен икемділік принциптеріне негізделген.
 
-Жаңа бизнестің пайда болуы және қолданыстағы компаниялардың кеңеюі
-өндіріс көлемінің ұлғаюына және экономикалық базаның кеңеюіне әкеледі,
-бұл дәстүрлі түрде мұнай мен газға тәуелді экономиканы әртараптандыру
-үшін өте маңызды.
+АОАБ-дың негізгі аспектісі -- бұл Agile-дің «Адамдар мен өзара әрекет
+процестер мен құралдардан маңызды» деген бірінші құндылығына сәйкес, сол
+өзара әрекетті қамтамасыз ететін процестердің маңызын нақтылай отырып,
+команда мүшелері арасындағы өзара әрекетке акцент қою болып табылады.
+Модель шеңберінде апталық белсенділік, маңыздылық және орындаушылық
+тәртіп бағалаулары арқылы басқарушылық қызметтің тиімділігін жедел
+өзін-өзі бағалау механизмі жүзеге асырылады. Бұл өз-өзіне рефлексия,
+өзін-өзі оқыту және мүдделі тараптармен өзара әрекеттестіктерді
+жоспарлауды жақсартуға ықпал етеді.
 
-Негізгі аспектілердің бірі-бизнес климатын жақсарту. "Бизнестің жол
-картасы-2025" сияқты мемлекеттік бағдарламалар компанияларды тіркеу
-рәсімдерін жеңілдетуге, салық жүйесін жетілдіруге және стартаптарды
-қолдауға бағытталған.
+АОАБ моделіндегі бағалау жүйесі өзін-өзі дамыту және басқарушылық
+құзыреттерді жоғарылату үшін құрал болып табылатынын атап өту маңызды.
+Бұл модельді енгізудің мақсаты басқару командасы мүшелерінің өзара
+әрекеттесуін жақсарту болып табылады, ол жоғары сапа стандарттарына және
+клиенттерді қанағаттандыруға қол жеткізуге ықпал етеді, бұл ұйымның даму
+стратегиясының маңызды бөлігі болып табылады.
 
-Бұл шаралар кәсіпкерлер үшін қолайлы жағдай туғызады және экономикаға
-инвестициялардың ұлғаюына ықпал ете отырып, шетелдік инвесторларды
-тартады.
+{\bfseries Түйін сөздер:} Agile-басқару, апта оқиғалары, апталық
+ретроспектива, өнімді өзара әрекеттесу, дамуды басқару, бағалау
+метрикалары, жоспарлау белсенділігі, орындау тәртібі, орындау сапасы.
 
-Кәсіпкерлікті дамыту сонымен қатар нарықта бәсекеге қабілеттілікті
-арттыруға ықпал етеді, бұл тауарлар мен қызметтердің сапасын жақсартуға,
-инновацияларға және бағаның төмендеуіне әкеледі.
-
-Бұл өз кезегінде тұтынушыларға оң әсер етеді және бизнестің одан әрі
-дамуын ынталандырады. Сонымен қатар, кәсіпкерлік белсенділік әлеуметтік
-бастамалар мен өмір сүру деңгейін жақсарту үшін жаңа мүмкіндіктер жасай
-отырып, әлеуметтік инфрақұрылымды жақсартуға және жергілікті
-қауымдастықтардың интеграциясына ықпал етеді.
-
-Алайда, Қазақстандағы кәсіпкерлік бюрократия, қаржыландырудың
-жетіспеушілігі және құқық қолдану проблемалары сияқты белгілі бір
-қиындықтарға тап болады.
-
-Бұл проблемаларды шешу елдегі кәсіпкерлік қызметтің тұрақты және
-ұзақмерзімді дамуы үшін маңызды шарт болып табылады. Жалпы, Қазақстанда
-кәсіпкерлікті дамыту экономикаға оның өсуіне, әртараптандырылуына және
-халықтың өмір сүру сапасын жақсартуға ықпал ете отырып, көпқырлы әсер
-етеді.
-
-{\bfseries Түйін сөздер:} Кәсіпкерлік, бизнес, МЖС, несиелеу, қолдау,
-экономикалық өсу.
 \begin{articleheader}
+{\bfseries AGILE APPROACH TO WEEKLY EVENT MANAGEMENT: INTRODUCTION AND
+PRACTICE OF USING THE AMWE MODEL}
 
-{\bfseries ФОРМИРОВАНИЕ БИЗНЕС-СРЕДЫ В КАЗАХСТАНЕ: РОЛЬ ГОСУДАРСТВЕННОЙ ПОДДЕРЖКИ ПРЕДПРИНИМАТЕЛЬСТВА}
-
-{\bfseries М.Т.Жумажанова\textsuperscript{\envelope }, Р.Е.Жаппасова, А.Е.Орынтаева}
+{\bfseries \textsuperscript{1}A.Ph. Tsekhovoy, \textsuperscript{2}N.A.
+Nekrassova, \textsuperscript{1}A.S. Zholtayeva,
+\textsuperscript{1}Zh.Zh. Sultanbekova\textsuperscript{\envelope }, \textsuperscript{1}A.Zh. Turegeldinova}
 \end{articleheader}
 \begin{affiliation}
 
-Казахский университет технологии и бизнеса им.К.Кулажанова, Астана,
-Казахстан,
+\textsuperscript{1}Satpayev University, Almaty, Kazakhstan,
 
-e-mail: maral2804@mail.ru
+\textsuperscript{1}Union of Project Managers of the Republic of
+Kazakhstan, Almaty, Kazakhstan,
+
+e-mail:
+\href{mailto:z.sultanbekova@satbayev.university}{\nolinkurl{z.sultanbekova@satbayev.university}}
 \end{affiliation}
 
-Развитие предпринимательства в Казахстане оказывает заметное влияние на
-экономику страны, внося значительные изменения в её структуру и
-динамику. Предпринимательская активность способствует росту валового
-внутреннего продукта (ВВП), создавая новые рабочие места и снижая
-уровень безработицы. Появление новых бизнесов и расширение существующих
-компаний приводит к увеличению объемов производства и расширению
-экономической базы, что особенно важно для диверсификации экономики,
-традиционно зависимой от нефти и газа.
+The article presents the Agile Management Model for Weekly Events
+(AMWE), based on the technology of "Agile Management Practices for
+Organizational Development Portfolio" (AMPOD). This model \\implements a
+productive approach to managing the interaction among members of the
+organization's management team, integrating Agile principles and project
+management methods. The primary focus is on forming productive
+management models based on the principles of simplicity and flexibility.
 
-Одним из ключевых аспектов является улучшение бизнес-климата.
-Государственные программы, такие как «Дорожная карта бизнеса-2025»,
-направлены на упрощение процедур регистрации компаний, совершенствование
-налоговой системы и поддержку стартапов. Эти меры создают благоприятные
-условия для предпринимателей и привлекают иностранных инвесторов,
-способствуя увеличению инвестиций в экономику.
+A key aspect of the AMWE is its emphasis on the interaction among team
+members, in accordance with the first value of Agile: "Individuals and
+interactions over processes and tools," while clarifying the importance
+of the processes that facilitate this interaction. Within the framework
+of the model, a mechanism for operational self-assessment of management
+effectiveness is implemented through weekly evaluations of activity,
+significance, and executive discipline. This promotes the development of
+self-reflection, self-learning, and improved planning of interactions
+with stakeholders.
 
-Развитие предпринимательства также способствует повышению
-конкурентоспособности на рынке, что ведет к улучшению качества товаров и
-услуг, инновациям и снижению цен. Это, в свою очередь, положительно
-сказывается на потребителях и стимулирует дальнейшее развитие бизнеса.
-Кроме того, предпринимательская активность способствует улучшению
-социальной инфраструктуры и интеграции местных сообществ, создавая новые
-возможности для социальных инициатив и повышения уровня жизни.
+It is important to note that the evaluation system in the AMWE model
+serves as a tool for self-development and enhancing managerial
+competencies. The goal of implementing this model is to improve the
+interaction among members of the management team, which contributes to
+achieving high standards of quality and customer satisfaction,
+representing an important part of the organization's development
+strategy.
 
-Однако предпринимательство в Казахстане сталкивается с определенными
-вызовами, такими как бюрократия, нехватка финансирования и проблемы с
-правоприменением. Решение этих проблем является важным условием для
-устойчивого и долгосрочного развития предпринимательской деятельности в
-стране. В целом, развитие предпринимательства в Казахстане оказывает
-многогранное влияние на экономику, способствуя её росту, диверсификации
-и улучшению качества жизни населения.
-
-{\bfseries Ключевые слова:} предпринимательство, бизнес, ГЧП, кредитование,
-поддержка, экономический рост.
+{\bfseries Keywords:} Agile-management, weekly events, weekly
+retrospective, productive interaction, \\development management,
+assessment metrics, planning activity, execution discipline, quality of
+execution
 \begin{multicols}{2}
 
-{\bfseries Introduction.} The development of entrepreneurship in
-Kazakhstan contributes to economic growth, economic development,
-innovation, improved infrastructure, stimulation of competition,
-attraction of investment and global integration, which together
-strengthen the economic and social sustainability of the country.
+{\bfseries Введение.} Современные организации, особенно малый и средний
+бизнес (МСБ), сталкиваются с постоянными изменениями во внешней среде,
+что требует от них гибкости, адаптивности и быстрой реакции на вызовы
+{[}1,2{]}. Традиционные методы управления проектами, ориентированные на
+детальное планирование и жесткое следование процессам, часто оказываются
+недостаточными для удовлетворения этих требований. В условиях динамичных
+изменений возникает необходимость внедрения гибких методов управления,
+позволяющих организациям оперативно адаптироваться к изменяющимся
+условиям {[}3{]}.
 
-{\bfseries Materials and methods.} The methods such as: content analysis,
-quantitative analysis, SWOT analysis, PEST analysis, system analysis
-were used in writing the article.
+Одним из таких методов является Agile-управление, которое успешно
+применяется в разработке программного обеспечения, а в последние годы
+активно внедряется в различных секторах экономики. Принципы
+Agile-методологии позволяют улучшить взаимодействие между членами
+команды, повысить их вовлеченность и оперативно реагировать на
+изменения. Однако использование Agile-технологий в управлении событиями
+и задачами внутри организаций, особенно в контексте МСБ, требует
+дальнейшего изучения и адаптации под конкретные реалии {[}4-6{]}.
 
-The purpose of the study is to identify and analyse the role of the
-state in supporting entrepreneurship.
+В рамках данного исследования предлагается модель
+{\bfseries Agile-управления событиями недели (АУСН)}, которая разработана с
+учетом особенностей работы организаций малого и среднего бизнеса в
+Казахстане. Эта модель направлена на улучшение управляемости организации
+через эффективное планирование и реализацию еженедельных событий, что
+позволяет добиться большей производительности, гибкости и устойчивости в
+условиях постоянно меняющихся бизнес-реалий.
 
-The hypothesis of the study is that effective government programmes
-aimed at supporting business contribute to the improvement of the
-business climate in the country, which in turn can affect the
-development and increase the number of enterprises, increase
-competitiveness.
+Целью данной работы является анализ и внедрение модели АУСН, основанной
+на принципах Agile, для повышения эффективности управления портфелем
+развития организаций МСБ. В статье рассматриваются теоретические и
+практические аспекты использования модели АУСН, а также её влияние на
+производительность и управленческую деятельность руководителей.
 
-The novelty of this topic lies in a comprehensive analysis of the impact
-of government support and policy in the country on the development of
-entrepreneurship. The study reviewed existing forms of state support,
-including tax incentives, educational programmes and entrepreneurship
-credit programmes.
+Исследование проведено в рамках научного проекта, направленного на
+разработку продуктивных моделей управления портфелем развития
+организаций малого и среднего бизнеса Казахстана, что делает данную тему
+актуальной в контексте растущего спроса на гибкие управленческие
+решения.
 
-Entrepreneurship in Kazakhstan is an important component of the
-country' s economy. In recent years, the government of
-Kazakhstan has actively supported the development of entrepreneurship by
-introducing various measures and initiatives to stimulate business and
-attract investment.
+{\bfseries Материалы и методы.~} В данном исследовании для разработки и
+анализа продуктивности модели АУСН применен широкий спектр научных
+методов, обеспечивающих глубокое понимание и интеграцию концепций Agile
+и современных подходов к управлению.
 
-We consider a few key aspects of the entrepreneurial environment in
-Kazakhstan:
+Для комплексного анализа и оценки эффективности модели АУСН использованы
+следующие методы:
+
+\begin{itemize}
+\item
+  \emph{Библиографический анализ}: оценка существующих исследований и
+  публикаций, касающихся Agile-управления и состояния потока, а также их
+  влияния на продуктивность и благополучие руководителей.
+\item
+  \emph{Обобщение, сравнение и синтез}: интеграция различных
+  теоретических и практических подходов для формирования целостной
+  модели управления.
+\item
+  \emph{Классификация и категоризация}: исследование факторов, влияющих
+  на успешное внедрение модели АУСН, а также их воздействие на
+  производительность и удовлетворенность руководителей.
+\item
+  \emph{Экспертная оценка}: сбор качественной информации от специалистов
+  и руководителей, применяющих Agile-методы и концепции потока.
+\item
+  \emph{Методы наблюдения с активным участием}: сбор данных о реализации
+  модели АУСН в реальных условиях, включая наблюдение за процессами и
+  взаимодействиями в командах.
+\end{itemize}
+
+\emph{Принципы и подходы}
+
+При разработке эффективных моделей управления, включая модель АУСН,
+применяется один из ключевых принципов Agile --- «простота --- это
+искусство максимизации объема работы, которую не нужно выполнять». Этот
+принцип помогает сосредоточиться на важнейших аспектах управления и
+избегать ненужных сложностей {[}7{]}.
+
+В исследовании также учитываются идеи Джима Коллинза {[}8{]} и принципы
+Agile. Эффективное развитие организации достигается, когда лидер
+стремится к пятому уровню зрелости, формирует комплементарную команду,
+способную объективно оценивать ситуацию, и внедряет
+проектно-ориентированную систему управления. Кроме того, вносятся
+поправки к ценностям Agile: «Люди и взаимодействия важнее процессов и
+инструментов, если только они не способствуют этому взаимодействию».
+
+Для оценки развития руководителей и эффективности модели АУСН выбраны
+метрики: «работа», «быт», «здоровье», «досуг» и «саморазвитие». Эти
+метрики позволяют всесторонне оценивать влияние модели на различные
+аспекты жизни руководителей {[}9{]}.
+
+\emph{База исследования}
+
+Основной базой для исследования служат Союз проектных менеджеров
+Республики Казахстан (СПМ РК), консалтинговая компания и предприятия
+малого и среднего бизнеса (МСБ) города Алматы. Эти организации
+предоставляют широкий спектр решений в области проектного, операционного
+и стратегического менеджмента, основываясь на многолетнем опыте. Они
+служат примерами успешного применения управленческих методов и создания
+эффективной базы знаний, что позволяет оценить и адаптировать модель
+АУСН в реальных условиях.
+
+Таким образом, использование разнообразных методов и подходов
+обеспечивает всесторонний анализ и разработку модели АУСН, направленной
+на улучшение управления и благополучия руководителей в условиях
+современных вызовов и изменений.
+
+{\bfseries Результаты и обсуждение.}~ Модель АУСН, основанная на технологии
+«Практика Agile-управления портфелем развития организации» (ПАУПРО),
+представляет собой продуктивный подход к управлению развитием
+организации, который интегрирует принципы Agile и методы проектного
+управления как комплексного и универсального инструмента.
+
+Основой ПАУПРО является совмещение трёх фаз развития и пяти доменов
+исполнения, что позволяет эффективно управлять портфелем проектов,
+обеспечивая гибкость и адаптивность.
+
+Диаграмма Исикавы (или диаграмма причинно-следственных связей) может
+быть мощным инструментом для анализа причин успешных или неуспешных
+результатов в рамках модели АУСН. В контексте формирования ключевых
+результативных индикаторов (КРI) через еженедельные ретроспективы, мы
+можем использовать основные факторы для анализа причинно-следственных
+связей:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Legal framework and regulation: Kazakhstan has legislation that
-  regulates various aspects of business activities, including business
-  registration, taxation, intellectual property protection and other
-  aspects.
-
-  The legislative framework is constantly being improved to improve the investment climate.
-
-\item
-  Support for SMEs: The government actively supports the development of
-  SMEs through various financing, consulting, training and other
-  programmes. This includes access to financing through banks and
-  financial institutions, as well as state concessional lending
-  programmes.
-\item
-  Infrastructure and market access: Kazakhstan has a well-developed
-  infrastructure, which facilitates doing business. The country is also
-  a member of various international organisations and economic unions,
-  which provides access to various markets and partners.
-\item
-  Technological innovation and digitalisation: In recent years,
-  Kazakhstan has been actively developing the digital economy and
-  supporting technological innovation, which has helped create new
-  opportunities for entrepreneurs in IT, e-commerce and other high-tech
-  industries.
-\item
-  International co-operation and investment: Kazakhstan actively
-  attracts foreign investment, which contributes to the development of
-  the economy and the creation of new jobs. The country also
-  participates in various international projects and initiatives, which
-  contributes to the expansion of business opportunities.
+  {\bfseries Процессы}:
 \end{enumerate}
 
-The development of entrepreneurial activity plays a key role not only in
-the economic growth of a country, but also in social and innovative
-development. Entrepreneurship contributes to job creation, stimulates
-innovation and technological progress, promotes regional development and
-reduces social inequalities. It also contributes to globalisation,
-international cooperation and sustainable development.
+\begin{itemize}
+\item
+  Включают основные этапы, процессы и процедуры выполнения графика
+  событий недели, такие как планирование, оценка задач, реализация и
+  мониторинг.
+\item
+  Примеры факторов: неполное понимание требований, нечеткое планирование
+  времени, неэффективные внутренние и внешние коммуникации,
+  непродуктивное выполнение задач.
+\end{itemize}
 
-Thus, the development of entrepreneurial activity remains relevant and
-important for the country, contributing to sustainable economic growth,
-innovation and improving the quality of life of the population.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  {\bfseries Люди}:
+\end{enumerate}
 
-The history of entrepreneurship development is associated with risk. The
-French economist Richard Contillon is considered to be the founder of
-this direction. In his opinion: `an entrepreneur must anticipate future
-opportunities and realise his existing opportunities in order to
-generate income.Taking into account the ratio of supply and demand, the
-entrepreneur buys goods at a lower price and sells them at a higher
-price {[}1{]}.
+\begin{itemize}
+\item
+  Здесь рассматриваются участники процесса, их роли, ответственности и
+  навыки, которые могут существенно влиять на результативность.
+\item
+  Примеры факторов: четко не обозначены роли и обязанности, конфликты
+  между членами команды, недостаток необходимых навыков и компетенций.
+\end{itemize}
 
-All prerequisites for the development of entrepreneurial activity are
-being intensively created in the Republic of Kazakhstan, in particular,
-a great deal of work has been done on privatisation of property, thanks
-to which a solid economic basis is being created for the development of
-entrepreneurship, hence society as a whole. The country thrives thanks
-to entrepreneurs, and entrepreneurs - thanks to the support of the
-state.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  {\bfseries Технологии и инструменты}:
+\end{enumerate}
 
-According to the Entrepreneurial Code of the Republic of Kazakhstan,
-entrepreneurship is an independent, initiative activity aimed at
-generating net income through the use of property, production, sale of
-goods, performance of work and provision of services {[}2{]}.
+\begin{itemize}
+\item
+  Охватывает инструменты и технологии, используемые для управления
+  процессами и коммуникациями в рамках АУСН.
+\item
+  Примеры факторов: несовместимость инструментов, недостаточная
+  автоматизация процессов, проблемы с доступом к необходимым ресурсам.
+\end{itemize}
 
-In his message to the people of Kazakhstan, the Head of State K. Tokayev
-noted that effective small and medium-sized business is a solid
-foundation for the development of the city and village, which plays an
-important role in the socio-economic and political life of the country.
-The President pays special attention to the support of small and
-medium-sized businesses, the development of which has been changed since
-2020 {[}3{]}.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  {\bfseries Правила и процедуры}:
+\end{enumerate}
 
-Along with this, the Address of the Head of State of 2 September 2019
-provides for income tax exemption for a period of three years only for
-taxpayers who apply special tax regimes and are recognised as micro or
-small businesses. Income tax is corporate income tax, individual income
-tax, unified land tax for peasants and farmers, as well as social tax
-for taxpayers working under a simplified declaration. All other taxes
-and payments will be paid when obligations arise {[}4{]}.
+\begin{itemize}
+\item
+  Это включает правила, стандарты и процедуры, регулирующие выполнение
+  задач и процессов.
+\item
+  Примеры факторов: нечеткость в процессах управления изменениями,
+  сложность в применении стандартов качества, несоответствие внутренних
+  процедур текущим требованиям.
+\end{itemize}
 
-According to official statistics, in the first nine months of 2020, the
-share of small and medium enterprises (SMEs) in the Gross Domestic
-Product (GDP) was 29.5 per cent, up 0.6 per cent compared to the same
-period in 2019 (28.9 per cent in January-September 2019). In addition,
-the volume of products produced by SMEs totalled K12,662.7 billion in
-January-June 2020, an increase of 10.8 per cent compared to the same
-period in 2019 (K10,638 billion). The number of registered SMEs reached
-1.6 million units on 1 December 2020, up 3.1\% from the same date in
-2019. The number of operating entities increased by 7.8 per cent to 1.3
-million units {[}5{]}.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  {\bfseries Метрики}:
+\end{enumerate}
 
-To solve the above problems, Kazakhstan is actively implementing a state
-programme of business support and development called `Business Roadmap
-2025'. This programme is aimed at implementing the goals of the messages
-of the President of the Republic of Kazakhstan to the people: `Strategy
-``Kazakhstan-2050'': a new political course of the established state'
-dated 14 December 2012 and `Kazakhstan Way-2050: Common Goal, Common
-Interests, Common Future' dated 17 January 2014.
+\begin{itemize}
+\item
+  Оцениваются ключевые метрики, используемые для измерения эффектиность
+  планирования, дисциплина исполнения и качество проведения событий
+  недели.
+\item
+  Примеры факторов: неадекватные метрики для измерения успеха,
+  недостоверность данных метрик, отсутствие системы мониторинга и
+  анализа.
+\end{itemize}
 
-Entrepreneurship in modern Kazakhstan, despite the existing
-difficulties, has already established itself as an important element of
-the economy. It is protected by legislation and will continue todevelop.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\item
+  {\bfseries Окружающая среда}:
+\end{enumerate}
 
-According to the chart below, we can see the annual growth in the number
-of registered, operating medium and large enterprises in Kazakhstan over
-the last 6 years by an average of 5\%. From 433,774 enterprises in 2018,
-the number of legal entities of the state increased to 510,797
-enterprises in 2023. The number of registered enterprises is higher by
-77,023 units or 85\%. The data can be seen in figure 1.
+\begin{itemize}
+\item
+  Учитываются внешние факторы, такие как изменения в бизнес-среде,
+  требования клиентов, конкурентные условия и законодательные нормы.
+\item
+  Примеры факторов: изменения в требованиях клиентов, экономические
+  изменения, изменения в законодательстве (см. рис. 1).
+\end{itemize}
 \end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ekon/image2.1}
-	\caption*{Figure 1 - The dynamics of growth of registered medium and large
-  enterprises in the Republic of Kazakhstan for 2018-2023.}
-	\caption*{Note: Compiled by the author based on data from
-  https://stat.gov.kz/ {[}6{]}.}
+	\includegraphics[width=0.8\textwidth]{media/ekon/image3.1}
+	\caption*{Рис. 1 - Диаграмма Исикавы}
 \end{figure}
 
 \begin{multicols}{2}
 
-According to government statistics, at the end of 2023, there are
-510,797 large legal entities registered in Kazakhstan, of which 410,744
-are active enterprises. The number of individual entrepreneurs
-1,652,564, of which 1,550,617 IE are active and registered 2,097,519
-small and medium-sized enterprises, 1,904,656 are active enterprises.
+Данный подход позволил систематизировать и визуализировать ключевые
+факторы, влияющие на успех проекта, и помог команде Agile более
+эффективно анализировать и улучшать процессы и процедуры на основе
+полученных данных.
 
-If we analyse the dynamics of growth in the number of registered and
-operating entrepreneurs by types of economic activity, it can be noted
-that domestic entrepreneurs willingly choose the sphere of wholesale and
-retail trade, repair of cars and motorbikes 27.9\%, construction 13.4\%,
-provision of other types of services 9.9\%. The number of registered
-entrepreneurs is shown in Table 1.
+Продуктивная модель АУСН предполагает установление взаимодействия между
+членами команды в соответствии с первой ценностью Agile-управления:
+«Люди и взаимодействие важнее процессов и инструментов». Мы вводим
+уточнение: «кроме тех, которые обеспечивают это взаимодействие». Это
+дополнение отражает основную направленность нашей технологии.
+
+В рамках разрабатываемой модели АУСН акцент сделан на создание механизма
+оперативной самооценки управленческой деятельности. Каждая неделя
+начинается со сводной оценки активности, исполнительной дисциплины и
+качества реализованных мероприятий за прошедшую неделю. После этого
+каждый участник команды, включая генерального директора (СЕО) и
+топ-менеджеров, проводит самооценку достигнутых результатов. Это
+способствует развитию саморефлексии, самообучения, более эффективному
+планированию и повышению качества взаимодействий с заинтересованными
+сторонами.
+
+Основное отличие данной модели состоит в том, что она направлена на
+саморазвитие членов команды управления. АУСН представляет собой
+инструмент для личного развития и повышения профессиональных
+компетенций, что выражает принципиальную новизну подхода по отношению к
+оценке эффективности управленческой деятельности.
+
+Цель внедрения модели АУСН заключается в улучшении взаимодействия членов
+команды управления, ориентированной на достижение высоких стандартов
+качества и удовлетворение растущих запросов клиентов. Это является
+неотъемлемой частью стратегии развития организации.
+
+Переход к Agile-методологии требует использования новых показателей и
+метрик для оценки эффективности команды и достижения целей организации.
+Важно выявить такие метрики, которые будут значимы как для команды, так
+и для руководства, и которые будут ориентированы на получение ценности
+организации {[}10{]}. В рамках разработки модели АУСН авторы стремились
+измерить такие аспекты, как инициативность, эффективность планирования,
+качество работы сотрудников, и связать эти измерения с системой
+мотивации.
+
+Цель - создать методологию, позволяющую объективно оценивать и улучшать
+взаимодействие и производительность в организации, ориентированной на
+знания.
+
+Компонентами модели АУСН являются:
+
+\begin{itemize}
+\item
+  Календарь года;
+\item
+  График событий недели (ГСН);
+\item
+  Расписание событий дня (РСД);
+\item
+  Система оценки;
+\item
+  Система мотивации.
+\end{itemize}
+
+Основой модели является формирование календаря года орагнизации, что
+позволяет планировать работу и координировать усилия всех участников
+проектов, программ и мероприятий. Этот календарь встраивается в
+управленческие процессы компании и служит основой для планирования
+результатов (продуктов) и решения приоритетных задач. Такой подход
+обеспечивает структурированность работы и помогает достигать
+поставленных целей в срок.
+
+Обязательным компонентом модели являются график событий недели (ГСН)
+\emph{(см. рис.2)}.
 \end{multicols}
-
-{\bfseries Table 1 - Legal entities registered by type of activity and
-activity as of 31 December 2023}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6708}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3285}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0007}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Type of activity of legal entities
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Numberofenterprises
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-TotalbyKazakhstan & 510 797 & \\
-Wholesale and retail trade; repair of cars and motorbikes & 142 632 & \\
-Construction & 68 470 & \\
-Provision of other services & 50 659 & \\
-Professional, scientific and technical activities & 34121 & \\
-Education & 28 496 & \\
-Manufacturing industry & 25789 & \\
-Administrative and support services activities & 24 456 & \\
-Transactions with immovable property & 23649 & \\
-Transport and storage & 20643 & \\
-Agriculture, forestryandfishery & 20392 & \\
-Information and communication & 16554 & \\
-Health care and social services & 10223 & \\
-Provision of accommodation and catering services & 9781 & \\
-Public administration and defence; compulsory social security & 9582
-& \\
-Financial and insurance activities & 7991 & \\
-Arts, entertainment and recreation & 7599 & \\
-Miningandquarrydevelopment & 5118 & \\
-Water supply; waste collection, treatment and disposal, pollution
-elimination activities & 2763 & \\
-Supply of electricity, gas, steam, hot water and conditioned air & 1878
-& \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
-Note: Compiled by the author based on data from https://stat.gov.kz/
-{[}6{]}.} \\
-\end{longtable}
-\begin{multicols}{2}
-
-Despite the recent pandemic period, the change in the economic situation
-due to military actions in neighbouring countries, domestic
-entrepreneurship continues to grow and develop. The volume of
-entrepreneurship increases from year to year.
-
-Analysis of official statistical data for 2023 in the field of
-entrepreneurship shows that the largest number of registered legal
-entities is concentrated in the cities of Almaty (142,271 or 27.9 per
-cent) and Astana (95,697 or 18.7 per cent), as well as in the Karaganda
-region (28,530 or 5.6 per cent). The smallest number of registered legal
-entities is observed in Ұlytau (2,936 or 0.6 per cent), Abay (8,113 or
-1.6 per cent) and Zhetisu (8,002 or 1.6 per cent) oblasts. The data can
-be seen in table 2.
-\end{multicols}
-
-{\bfseries Table 2 - Registered and operating SMEs by regions of the
-Republic of Kazakhstan}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3337}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3347}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3317}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Regions
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Theregistered
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Current
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-1 & 2 & 3 \\
-Republic of Kazakhstan & 2 097 519 & 1 904 656 \\
-Abay & 56 918 & 52 144 \\
-Akmola region & 61 185 & 56 473 \\
-Aktobe region & 93 028 & 85 694 \\
-Almaty region & 131 785 & 122 867 \\
-Atyrau region & 71 309 & 65 396 \\
-West-Kazakhstan region & 60 644 & 55 488 \\
-Zhambyl region & 111 205 & 98 266 \\
-Jetisu & 61 353 & 55 844 \\
-Karaganda region & 106 880 & 96 316 \\
-Kostanay region & 66 626 & 62 870 \\
-Kyzylorda region & 73 686 & 69 503 \\
-Mangistau region & 84 918 & 78 999 \\
-Pavlodar region & 59 591 & 53 117 \\
-North Kazakhstan region & 36 923 & 33 895 \\
-Turkestan region & 199 393 & 196 031 \\
-Ulytau & 19 432 & 18 224 \\
-East Kazakhstan region & 69 814 & 63 144 \\
-Astana & 239 311 & 212 402 \\
-Almaty & 364 139 & 309 947 \\
-Shymkent & 129 379 & 118 036 \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
-Note: Compiled by the author based on data from https://stat.gov.kz/
-{[}6{]}} \\
-\end{longtable}
-
-\begin{multicols}{2}
-
-In recent years, Kazakhstan has been successfully implementing the
-`National Entrepreneurship Development Project for 2021-2025'. The main
-commitment and direction of the project is the financing of this
-industry. Financial support for entrepreneurship under this project
-includes subsidising, guaranteeing, preferential micro-credit, provision
-of missing infrastructure and government grants.
-
-Subsidisation here means reduction of interest rates on loans issued by
-second-tier banks for business development. Collateral - partial
-guarantee as collateral for bank loans.
-
-This project with all related legislative and normative acts has been
-developed by the Ministry of National Economy with the integration of
-all previously developed state programmes. Among the ministries
-responsible for implementation, along with the developer, are the
-Ministries of Trade and Integration, Labour and Social Protection,
-Culture and Sports, Industry and Infrastructure Development, Interior,
-Finance, Energy and Foreign Affairs.
-
-The purpose of the national project is to ensure qualitative changes in
-the structure of entrepreneurship, development of small business to
-increase employment, reliance on medium-sized businesses as a driving
-force for the diversification of economic sectors, comprehensive
-development of competition with the creation of equal conditions for
-businesses.
-
-The `National project for the development of entrepreneurship for
-2021-2025' approved by Government Decision No. 728 of 12 October 2021
-provides for 8,455,329,919 thousand tenge. Including from the republican
-budget - 1 030 884427 thousand, from local budgets - 124 695 492
-thousand, extrabudgetary - 7 299 750 000 thousand tenge. Information
-concerning the giant resolution by years can be seen in the table below.
-The data can be seen in table 2.
-\end{multicols}
-
-
-{\bfseries Table 3 - Financing of the `National Project on Entrepreneurship
-Development for 2021-2025' thousand tg.}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2110}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2114}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1925}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1925}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1925}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-2021
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-2022
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-2023
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-2024
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-2025
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-1 & 2 & 3 & 4 & 5 \\
-1272207923,3 & 1370367038,7 & 1620056904,0 & 1963862120,0 &
-2228835933,0 \\
-\multicolumn{5}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{1.0000} + 8\tabcolsep}@{}}{%
-Compiled by the author on the basis of data: https://damu.kz/programmi
-{[}7{]}.} \\
-\end{longtable}
-
-\begin{multicols}{2}
-
-As of the end of 2023, 11,913 projects have been subsidised under the
-`National Entrepreneurship Development Project for 2021-2025' for a
-total loan amount of KZT 435.36 billion, with a subsidy amount of KZT
-86.6 billion. The state pledged 11,813 projects for a total loan amount
-of KZT 207.5 billion, with a guarantee amount of KZT 111.1 billion
-
-For young entrepreneurs from the national budget allocated a state grant
-of 307.17 million tenge for 91 projects. To attract the missing
-infrastructure in 2022 spent 22.1 billion tenge, which was enough to
-finance 48 projects, in 2023 25 billion tenge and in 2024 it is planned
-to allocate 30 billion tenge. Figure 2 shows the ways and amount of
-business financing.
-\end{multicols}
-
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ekon/image2.2}
-	\caption*{ Figure 2 - Methods and volume of entrepreneurship financing
-  under the `National Entrepreneurship Development Project for 2021-2025'}
-	\caption*{Note: Compiled by the author based on https://kapital.kz {[}8{]}}
+	\includegraphics[width=0.8\textwidth]{media/ekon/image2}
+	\caption*{Рис.- 2 Шаблон Графика событий недели (ГСН)}
 \end{figure}
-
 
 \begin{multicols}{2}
 
-Economic efficiency of the project for five years aims to bring the
-share of small and medium-sized enterprises in the gross domestic
-product up to 35\%. The growth of tourism in GDP should reach 8.4
-trillion tenge. It is planned to reduce the share of the state in the
-economy to 14\%. According to the results of the national document, the
-state plans to create 995.3 thousand jobs for the population. Of them
-permanent - 335.1 thousand, temporary - 660.2 thousand jobs.
+График событий недели (ГСН) формируется командой управления развитием
+организации исходя из документов: «Календарь года», «Вопросы развития
+организации», «Перечень не состоявшихся и перенесенных событий» и
+«Вопросы развития структурных подразделений». График содержит следующие
+данные:
 
-The expected social effect of the project is as follows: 1.7 million
-people will be employed on a permanent basis, 3.5 million people will be
-covered by active measures to promote employment, and the share of the
-rural population with incomes below the subsistence minimum is expected
-to decrease by 6.5 per cent.
+\begin{itemize}
+\item
+  обозначения структурных подразделений латинскими буквами (литера);
+\item
+  наименования событий;
+\item
+  место проведения;
+\item
+  время проведения;
+\item
+  ФИО ответственного лица за организацию и проведение мероприятия;
+\item
+  ФИО участников;
+\item
+  отметка об исполнении;
+\item
+  балл оценки качества исполнения;
+\item
+  тип события;
+\item
+  РАПИ-код.
+\end{itemize}
 
-The project also integrates the state programme for business support and
-development `Business Roadmap 2025' and the programme `Economy of Simple
-Things'.
+Офис-менеджер мониторит график событий в течение недели и при
+необходимости оказывает организационно-техническую поддержку участникам.
+Исходя из оценки руководства и ответственного лица, офис-менеджер по
+каждому проведенному событию присваивает баллы дисциплины и качества
+исполнения.
 
-According to the list of goods for priority projects subject to lending,
-favourable lending and loan guarantees are provided to entrepreneurs.
-For 2023, 125 projects were subsidised for a total loan amount of 194.58
-billion tenge.
+На основе графика событий недели каждый день формируется «Расписание
+событий дня» (РСД)\emph{.} РСД позволяет обеспечитьт актуализацию планов
+и координацию действий всех участников на ежедневной основе.
 
-During the project implementation period, SMEs created more than 106
-thousand new jobs, produced products and services worth 36 trillion
-tenge, and paid taxes to the budget totalling 2.3 trillion tenge.
+Таким образом, модель АУСН интегрирует стратегическое и оперативное
+планирование, контроль, оценку и мотивацию в единый управленческий
+процесс, направленный на повышение эффективности взаимодействия и
+производительности в организации, ориентированной на знания.
 
-{\bfseries Results of the discussion.} The following objectives are
-envisaged in the state regulation of entrepreneurial activity:
+Особенности этого управленческого процесса заключается в следующем:
 
-- development of entrepreneurship in the interests of the state and
-society;
+а) проводится первым руководителем;
 
-- protecting the legitimate interests and rights of entrepreneurs;
+б) в оперативном совещании участвуют руководители структурных
+подразделений (которые, как правило, и входят в состав команды
+управления развитием организации);
 
-- ensuring the equality of all business entities before the law.
+в) день проведения -- понедельник - первый рабочий день недели;
 
-As for non-financial support for entrepreneurs under the National
-Entrepreneurship Development Project for 2021-2025, it includes a set of
-projects to provide training and advisory support to potential and
-aspiring entrepreneurs on how to run a business. Entrepreneur Service
-Centres are functioning in regional and district centres,
-single-industry towns and small towns. They will provide assistance
-under the Business Roadmap 2025 programme, the Simple Things Economy
-programme, and the Enbek programme on a free-of-charge basis, offline
-and online. In addition, entrepreneurs are provided with service support
-in running their existing business in the form of accounting and tax
-accounting, statistical reporting, internet marketing, legal services,
-information technology coverage, public procurement, and assistance to
-domestic producers in selling their products.
+г) время проведения -- 11 часов дня (дается возможность участникам
+подготовиться к началу совещания);
 
-Also within the framework of the `National Project on Entrepreneurship
-Development for 2021-2025' it is envisaged to provide microcredits at
-6\% interest rates. For mono and small towns and rural communities,
-these loans are provided without sectoral restrictions, for investment
-purposes in an amount not exceeding 20 million tenge, and for
-replenishment of working capital on an unsecured basis at 5\% up to 5
-million tenge.
+д) совещание проводится с визуализацией отчета по ГСН за предыдущую
+неделю и ГСН на предстоящую неделю на экране в офлайн формате или на
+компьютере при онлайн подключении с использованием Zoom или других
+приложений.
 
-In addition, the implementation of lending mechanisms for priority
-projects, such as subsidising part of the interest rate and private loan
-guarantees, is ongoing.
+Ключевые этапы процесса еженедельной ретроспективы включают:
 
-Youth is the most important link in the entrepreneurial environment.
-Youth today, youth entrepreneurship in 10 years will determine the face
-of our country. Economic growth and the pace of development of the
-country of tomorrow depend on the development of youth business today.
+\begin{itemize}
+\item
+  Мониторинг ГСН в течение недели;
+\item
+  Оценка и анализ событий в ГСН за предыдущую неделю;
+\item
+  Формирование и актуализацию ГСН на текущую неделю;
+\item
+  Обсуждение результатов событий, их влияния на реализацию приоритетов и
+  стратегии развития организации, потенциальные возможности (по РАПИ
+  коду), ,
+\item
+  Актуализацию календаря года, планирование событий на предстоящую
+  неделю.
+\end{itemize}
 
-Currently, youth entrepreneurship has become one of the key areas of
-small business development in Kazakhstan. The creation of favourable
-conditions to encourage young people to engage in entrepreneurial
-activities is considered in various programmes at the national and
-regional levels.
+Ключевыми участниками данного процесса являются: топ-менеджеры,
+руководители структурных подразделений и офис-менеджер. Эти оперативные
+совещания направлены на эффективное использование коллективных ресурсов.
 
-However, many regions of Kazakhstan lack platforms that would allow
-young people to gain relevant knowledge and skills, share information,
-develop ideas and receive expert advice. As a result, innovative ideas
-are either not realised or remain within universities and research
-laboratories without reaching the market.
+Офис-менеджер совместно с менеджером по управлению знаниями готовит
+анализ для оценки исполнения намеченных и фактически выполненных
+событий, мероприятий, встреч, внутренних процессов. Выходом данного
+анализа является оценка полноты и качества исполнения запланированных
+событий прошедшей недели и формирование плана действий на предстоящую
+неделю. Одновременно оценивается активность взаимодействия и
+сравнительный прирост интеллектуальной активности через анализ
+Генерального реестра информационных объектов (ГРИО).
 
-According to statistics, approximately 300 million young people between
-the ages of 18 and 30 worldwide are either unemployed or not working at
-all. About 20\% of them have the ability to start their own business,
-but only 5\% of them can realise this potential for various reasons.
+Одной из ключевых задач еженедельной Agile-оперативки, проводимой первым
+руководителем по модели АУСН, является мониторинг влияния текущих
+событий на статус зарегистрированных возможностей и выявление
+предпосылок для регистрации новых возможностей. В настоящее время авторы
+сосредоточены на оптимизации процесса регистрации активности
+топ-менеджеров, касающейся инициации событий, включаемых в НСГ, и оценки
+дисциплины и качества исполнения.
 
-The singling out of youth entrepreneurship as a separate category is due
-to its unique characteristics, strengths and weaknesses compared to
-other types of entrepreneurship:
+После завершения настройки этих параметров, планируется интеграция
+процедуры рассмотрения вопросов, внесенных в матрицу регистрации
+возможностей, в еженедельные оперативные совещания. Для топ-менеджеров и
+руководителей структур полезно при подготовке к оперативному совещанию
+рассмтривать статус возможностей на предмет планирования встреч и
+мероприятий для их реализации.
 
-Strengths of youth entrepreneurship:
+Каждый субъект управления обозначает выходы прошедшей недели, и
+планируемых выходов на предстоящую неделю.
 
-- High innovative activity and creativity.
+Данный подход поможет проанализировать то, как командные взаимодействия,
+подверженные влиянию внешних факторов, соотносятся с внутренними
+факторами организации и активами ее внутренних процессов.
 
-- Flexibility, speed of action and ability to develop new markets.
+Итоговое резюме руководителя на оперативном совещании представляет собой
+ключевой компонент процесса управления, направленного на систематизацию
+и оценку результатов работы, выявление перспектив для развития и
+разрешение проблемных аспектов внутри организации. В резюме должны быть
+«снивелированы» дискуссионные моменты, которые могут возникать по ходу
+обсуждения и изложены «точки приложения усилий» членов команды
+управления на предстоящий период. Резюме служит инструментом для
+обобщения итогов оперативного совещания, определения направлений для
+дальнейшего улучшения и обеспечения согласованности действий членов
+команды управления. Резюме состоит из следующих разделов:
 
-- The ability to systematically update knowledge and skills in line with
-market changes.
+1. Выходы рабочей недели (outputs)
 
-- Potential to withstand high labour and nervous loads, especially at
-the initial stage.
+«Выходы рабочей недели» (outputs) обозначают конкретные результаты и
+достижения, полученные в рамках запланированных мероприятий за отчетный
+период. Эти результаты могут включать завершенные задачи, подготовленные
+отчеты, проведенные мероприятия и достигнутые цели. Оценка выходов
+позволяет определить продуктивность работы и соответствие деятельности
+намеченным планам.
 
-- risk appetite.
+2. Точки роста
 
-Weaknesses of youth entrepreneurship:
+«Точки роста» обозначают новые возможности и области для улучшения,
+выявленные в ходе работы за неделю. Они касаются как внутренних
+процессов, так и внешних факторов, таких как изменения на рынке или
+новые потребности клиентов. Анализ точек роста позволяет выявить
+перспективные направления для развития и оптимизации.
 
-- Lack of social experience.
+3. Точки дискомфорта
 
-- lack of business reputation.
+«Точки дискомфорта» обозначают аспекты работы, которые вызывают
+неудовлетворенность или проблемы у сотрудников. Эти точки могут быть
+связаны как с внутренними процессами, так и с внешними факторами.
+Определение и анализ точек дискомфорта позволяют быстро реагировать на
+возникающие проблемы и предотвращать их эскалацию. Анализ точек
+дискомфорта позволяет улучшить рабочие условия, повысить мотивацию
+сотрудников и создать более эффективную рабочую среду.
 
-- weak practical skills in applying economic principles.
+Систематизация данных в заключительносм резюме помогает обеспечить
+ясность в управлении, согласованность действий и стратегическую
+направленность на достижение поставленных целей.
 
-- problems with the formation of start-up capital.
+Таким образом, процесс еженедельной ретроспективы событий недели АГ-2 в
+процессе Agile-управления событиями недели обеспечивает систематический
+подход к оценке и улучшению взаимодействий внутри организации. Это
+способствует более целенаправленной и эффективной работе, улучшению
+управления временем и ресурсами, а также повышению конкурентоспособности
+организации.
 
-- Lack of personal connections in business and power structures.
+Информационно-техническая поддержка проведения оперативного совещания
+базируется на разработанном шаблоне документа «Информация о выполнении
+ГСН» (\emph{см. рис. 3}), который визуализирует оценку активности,
+дисциплины и качества исполнения и ценности полученных выходов (out-put)
+для развития организации.
 
-- vulnerability to bureaucratic obstacles and criminal influence.
 
-These characteristics highlight key challenges in supporting youth
-entrepreneurship, including developing strengths and overcoming
-weaknesses.
+Для заполнения документа «Информация о выполнении ГСН» офис-менеджер в
+течение недели заполняет форму первичного отчета в excel (см. табл. 1).
 
-To date, several problems affecting the willingness of young people to
-create their own business projects remain unresolved:
+После заполнения формы первичного отчета автоматически в сводной таблице
+(в excel) формируются данные согласно разделам Информации о выполнении
+ГСН.
 
-- social mood. Entrepreneurial spirit, willingness to take risks and
-create something new, is not yet so pronounced among young people who
-prefer careers in big business or public service.
-
-- Public perception of entrepreneurs. Entrepreneurial activity is
-perceived as a way of overcoming difficulties rather than as an
-endeavour to achieve success.
-
-- Educational content. Traditional educational institutions provide
-basic economic knowledge, but do not develop the incentives and
-competences necessary for successful business.
-
-- start-up conditions. Small business support measures for young people
-have not yet yielded noticeable results, and administrative, legal and
-financial barriers are still significant.
-
-- Young people' s lack of awareness of state
-organisations supporting small businesses.
-
-Young people are the most active part of society, able to react quickly
-to changes and take advantage of them. Therefore, it can be argued that
-young people have a significant potential for entrepreneurship. Support
-of youth entrepreneurship requires special attention from the state
-authorities. Properly organised and targeted support will help to
-develop small business in the region, leading to economic growth and
-increasing its attractiveness.
-
-However, young people face great difficulties on the way to creating
-this entrepreneurship. These challenges are related to both the
-financial difficulties in setting up a business and the lack of
-education of young people. They include high rates of interest and taxes
-on credit, lack of start-up capital in the hands of young people,
-limited or no economic and productive linkages due to the short-term
-nature of their activities and lack of experience. These and other
-problems require mandatory solutions through government support for
-youth entrepreneurship. Due to the lack of awareness of young people
-about the existing methods of support for youth entrepreneurship, there
-is a need for various campaigns, competitions, creation of information
-bases in educational institutions. All these measures will help to stop
-young people' s perception of entrepreneurship and
-business as an inaccessible sphere of activity {[}9{]}.
-
-The growth of production output and increase in revenues from sales in
-small businesses contribute to the increase in tax revenues to the
-budget. In particular, there is a positive trend in the corporate income
-tax (CIT) expenditures of small businesses.
-
-- Over the last five years, small business expenditures on KPN have
-increased more than 5 times, reaching 6,381.6 billion tenge in 2023.
-
-- The share of small business expenditures on KPN in the total volume of
-all enterprises increased from 26.2 per cent to 53.4 per cent.
-
-Despite the positive analysis, there are still problems that hinder the
-development of the industry:
-
-Today, a large number of small businesses operate in low-productivity
-sectors, with trade remaining the dominant activity, with about 35 per
-cent of all small businesses in the country.
-
-Trade is an important sector of the economy; at the same time, it is
-necessary to ensure growth in the number of small and medium-sized
-enterprises, especially in the manufacturing sector.
-
-The contribution of medium-sized companies to GDP will remain at the
-2019 level, which is about 6 per cent. At the same time, about 30\% of
-medium-sized companies show losses in the first half of 2023.
-
-Instruments to facilitate business growth and expansion for effective
-implementation should be strengthened. Further work is needed to improve
-the business climate in the country.
-
-Domestic Entrepreneurship Challenges:
-
-Lack of engineering industrial infrastructure, difficulties in business
-planning due to price controls and export bans.
-
-The number of active SMEs over the last 5 years is 46.5\%. And the
-number of medium-sized enterprises is only 11.6\%. SMEs account for only
-0.2\% of medium-sized industries, and 99.8\% of small enterprises are
-fertilised.
-
-Over the last five years, the number of operating SMEs has increased by
-46.5\%. The main contribution to this growth was a one and a half times
-increase in the number of individual entrepreneurs. At the same time,
-the number of medium-sized businesses has increased by only 11.6 per
-cent. Currently, only 0.2 per cent of operating SMEs belong to
-medium-sized businesses, while 99.8 per cent are small enterprises.
-
-It is necessary to revise the system and mechanisms of state support for
-entrepreneurship. Despite the long-term operation of a number of
-programmes for the development of domestic business, their effectiveness
-is subject to criticism.
-
-Firstly, there is limited coverage of the commercial establishment with
-recommended support measures, such as cash injections, from the budget.
-
-The purpose of the national programme is an important issue, but
-compliance with these objectives is another entrepreneurial problem. An
-example is the Economics of Simple Things programme.
-
-An example is the Economy of Simple Things programme, which was created
-to saturate the domestic market with goods and services from domestic
-producers. However, 35 per cent of the activities (53 out of 150)
-eligible for concessional financing did not meet the stated objective.
-This trend reduces the effectiveness of state support measures and is
-observed in the framework of the National Project for the Development of
-Entrepreneurship. Grant support for business is particularly
-problematic.
-
-Firstly, there are problems with monitoring the targeted use of grant
-support funds. Today, monitoring is carried out only selectively and
-covers a very narrow range of projects. For example, in 2022 only 27 out
-of 264 projects approved in Almaty were checked, i.e. only one in ten. A
-similar situation occurs in other regions. All grant financing projects
-should be covered by control over the targeted use of funds and
-achievement of final results.
-
-Secondly, grant support is most often aimed at small projects with
-funding of 5 million tenge, which leads to the dispersion of budgetary
-funds. No account is taken of promising directions and orientation
-towards final results.
-
-Thirdly, there are legal gaps, such as the lack of a clear definition of
-`novelty of a business idea', which leads to different interpretations
-of this concept by both entrepreneurs and members of competition
-commissions. There is also no requirement to confirm the `novelty',
-which is a key condition for receiving a grant.
-
-The criteria for determining the priority sectors of the economy for
-which state support measures are provided also remain unclear. There are
-plans to include in the list of priority sectors such areas as food
-retailing (e.g., `convenience stores'), property rental, building
-maintenance, and passenger car leasing.
-
-Government support should help to increase domestic production, develop
-the manufacturing industry and target sectors specialising in the
-production of finished goods.
-
-The business community continues to rely on government assistance, as
-bank lending conditions remain unacceptable. Despite the growth in
-lending to SMEs, the share of such loans in the total loan portfolio
-decreased from 33\% in 2019 to 26\%. (Figure 4)
+Первый раздел содержит общую информацию по ГСН. Определяется количество
+запланированных событий в ГСН, из них количество состоявшихся, не
+состоявшихся, перенесенных, в том числе, перенесенных больше двух раз и
+«потерянных».
 \end{multicols}
-
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ekon/image2.3}
-	\caption*{Figure 4 - Dynamics of business lending in the RK}
-	\caption*{Note: Compiled by the author on the basis of data from the CIS
-  Internet portal /
-  \href{https://e-cis.info/news\%20\%5b10}{https://e-cis.info/news
-  {[}10}{]}.}
+	\includegraphics[width=0.8\textwidth]{media/ekon/image3}
+	\caption*{Рис.- 3 Пример документа «Информация о выполнении ГСН»}
 \end{figure}
 
 
+
+
+\begin{figure}[H]
+  \caption*{Таблица 1 Форма первичного отчета о выполнении ГСН в excel}
+	\centering
+	\includegraphics[width=\textwidth]{media/ekon/image3.2}
+\end{figure}
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.2699}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0596}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0745}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0744}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0447}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0745}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0447}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0448}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0448}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0448}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0447}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0446}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0447}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0447}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0447}}@{}}
+% \toprule\noalign{}
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \_n-НЕДЕЛЯ
+% \end{minipage} &
+% \multicolumn{6}{>{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.3725} + 10\tabcolsep}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% Количество событий
+% \end{minipage}} &
+% \multicolumn{4}{>{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.1790} + 6\tabcolsep}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% Внутренние
+% \end{minipage}} &
+% \multicolumn{4}{>{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.1786} + 6\tabcolsep}@{}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% Внешние
+% \end{minipage}} \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% Структурs & Запланированные & Состоявшиеся & Не состоявшиеся &
+% Перенесенные & Перенесенные
+
+% более 2-х раз & Потерянные & Р & А & П & И & Р & А & П & И \\
+% АГ-2 ({\bfseries Ω}) & & & & & & & & & & & & & & \\
+% Руководитель ({\bfseries Ρ}) & & & & & & & & & & & & & & \\
+% Дирекция СПМ РК ({\bfseries Ν}) & & & & & & & & & & & & & & \\
+% ДКП ({\bfseries Δ}) & & & & & & & & & & & & & & \\
+% Центр Консалт ({\bfseries K}) & & & & & & & & & & & & & & \\
+% Центр сертиф. ({\bfseries ϛ}) & & & & & & & & & & & & & & \\
+% МАИН (общая) ({\bfseries μ}) & & & & & & & & & & & & & & \\
+% МАИН (устав.) ({\bfseries μ1}) & & & & & & & & & & & & & & \\
+% МАИН (контр.) ({\bfseries μ2}) & & & & & & & & & & & & & & \\
+% НИС АГ-2 ({\bfseries π}) & & & & & & & & & & & & & & \\
+% ELAN ({\bfseries Σ}) & & & & & & & & & & & & & & \\
+% Филиал МиМЭ ({\bfseries φ}) & & & & & & & & & & & & & & \\
+% Итого по стуктурам & & & & & & & & & & & & & & \\
+% \end{longtable}
+
 \begin{multicols}{2}
 
-According to the National Bank, last year 52 per cent of the total
-volume of loans granted by banks to businesses went to large
-entrepreneurs, 34 per cent to small businesses and only 14 per cent to
-medium-sized enterprises. The largest share of loans (51 per cent) went
-to the trading sector, with more than half (54 per cent) of these funds
-going to large entrepreneurs. The manufacturing sectors, on the other
-hand, remain on the sidelines and do not receive sufficient support from
-banks.
 
-Trade also dominates the receipt of government support through the Damu
-fund. More than one-third of the subsidised (37\%) and guaranteed (39\%)
-projects are trade-related. This points to the need for a fundamental
-review of approaches and mechanisms of state support.
+Процессом «Еженедельная ретроспектива графика событий недели»
+измеряется:
 
-There are serious problems with tax policy in relation to small and
-medium-sized enterprises. The business community expresses
-dissatisfaction, especially with the proposal to increase the value
-added tax (VAT) rate from 12 per cent to 16 per cent. This issue
-requires detailed discussion with domestic entrepreneurs. It is also
-necessary to address the problems of VAT refunds and the high tax and
-social burden on employers, which reaches 39 per cent.
+а) активность членов команды управления, включая СЕО (в баллах, исходя
+из количества инициированных ими событий в НСГ), рис.3;
 
-Fiscal measures should be aimed at stimulating the growth of small
-businesses and their consolidation.
+б) дисциплину исполнения запланированных событий (в баллах), рис. 3;
 
-In rail transport, business faces serious problems, including
-deteriorated infrastructure and corruption risks in the provision of
-freight wagons. An example of business dissatisfaction is the lack of
-equality in freight tariffs, where the national carrier emphasises
-transit traffic as its tariffs are 2.5 times higher.
+в) качество исполнения (с учётом системы оценки «выходов» (outputs), в
+баллах.
 
-According to Atameken, the government has imposed export restrictions on
-15 types of agricultural products over the past two years. These
-measures, which are aimed at stabilising prices in the domestic market,
-lead to negative consequences for business, such as the disruption of
-contracts, spoilage of products, stoppage of production and loss of
-foreign markets.
+Эффективность этого процесса будет зависеть от факторов, неисследованных
+на текущий момент, среди которых -- корректность метрик, используемых
+для анализа выходов (outputs) недели и алгоритма формирования фокуса
+действий на предстоящий период (как правило --неделя).
 
-In addition, there have been more than 50 changes to industry subsidy
-rules over the past five years. Constant changes disorient farmers and
-investors, preventing them from building long-term development plans.
+Модель АУСН реальной жизнедеятельности способствует формированию
+Agile-мышления, прежде всего у субъекта управления высшего уровня, каким
+является СЕО, а затем и у членов команды управления развитием и далее --
+будет поддерживать динамику создания конкурентоспособного корпоративного
+знания (как правило, в формализованном виде) {[}11{]}.
 
-{\bfseries Conclusions.} In Kazakhstan, entrepreneurship plays an
-increasingly important role in the economy. It is designed to address
-key challenges such as:
+Интенсивное и качественное взаимодействие субъектов управления
+способстует приросту корпоративных знаний. Чем больше коммуницируют
+члены команды управления, тем продуктивнее компания {[}12{]}.
 
-- Production of consumer goods and services using local sources of raw
-materials without significant capital investment.
+{\bfseries Выводы.~}Продуктивная модель Agile-управления событиями недели
+(АУСН), основанная на технологии ПАУПРО, представляет собой
+инновационный подход к управлению развитием организации. Ориентированная
+на гибкость, адаптивность и эффективность, данная модель позволяет
+интегрировать Agile-принципы с системой управления знаниями, что создаёт
+уникальную основу для успешного роста и развития в условиях быстро
+меняющегося бизнес-окружения.
 
-- Creating conditions for the employment of labour force released from
-large enterprises.
+АУСН позволяет организациям оперативно адаптироваться к рыночным
+изменениям, эффективно реагировать на новые вызовы и возможности, а
+также рационально использовать ресурсы. Систематический анализ и оценка
+событий и мероприятий недели помогают команде управления принимать
+обоснованные решения, способствующие достижению стратегических целей.
 
-- Acceleration of scientific and technological progress in the country.
+Применение модели АУСН способствует формированию предпринимательской
+среды «Новой волны», где ключевыми факторами являются гибкость,
+инновации и непрерывное обучение. Этот подход поддерживает развитие
+малого бизнеса в Казахстане, предоставляя компаниям возможность успешно
+конкурировать на рынке и расширять свои возможности.
 
-- Creation of a positive alternative to criminal business.
+Таким образом, модель АУСН является важным инструментом для организаций,
+стремящихся к устойчивому развитию и конкурентным преимуществам в
+современном бизнесе. Ее использование содействует созданию гибкой и
+адаптивной корпоративной культуры, где инновации и знания играют
+центральную роль в достижении успеха.
 
-As already mentioned, the state is implementing many projects to improve
-and revive domestic entrepreneurship. The future of Kazakhstan depends
-on entrepreneurial activity and the ability to develop an effective
-concept. Therefore, a professional approach to entrepreneurial activity
-and fulfilment of entrepreneurial functions is required.
+\emph{{\bfseries Финансирование.} Статья выполнена в рамках проекта НИР
+АР14871548 «}\emph{Разработка} \emph{продуктивных моделей}
+\emph{управления портфелем развития организаций малого и среднего
+бизнеса для условий Казахстана на основе идей и принципов
+Agile-технологий».}
 \end{multicols}
+
 
 \begin{center}
-  {\bfseries References}
+  {\bfseries Литература}
   \end{center}
   
   \begin{references}
+1.Сазерленд Дж. Scrum. Революционный метод управления проектами/ Джефф
+Сазерленд; пер. с англ. Марии Гескиной. - Москва: Манн, Иванов и Фербер,
+2016.- 272 с.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Lapusta, M.G. Predprinimatel' stvo: Uchebnik / M.G.
-  Lapusta - M:INFRA-M, 2009. - 608 s.{[}in Russian{]} ISBN
-  978-5-16-003252-8 {[}in Russian{]}
-\item
-  Predprinimatel' skij kodeks Respubliki Kazahstan ot 29
-  oktjabrja 2015 goda № 375 -- V ZRK(s izmenenijami i dopolnenijami po
-  sostojaniju na 16.01.2021 g.).{[}in Russian{]}
-\item
-  Poslanie Glavy gosudarstva Kasym-Zhomarta Tokaeva narodu Kazahstana:
-  «Kazahstan v novojreal' nosti: vremja dejstvij» ot 1
-  sentjabrja 2020 g.{[}in Russian{]}
-\item
-  Poslanie Glavy gosudarstva Kasym-Zhomarta Tokaeva narodu Kazahstana:
-  «Konstruktivnyj obshhestvennyj dialog -- osnova
-  stabil' nosti i procvetanija Kazahstana» ot 2
-  sentjabrja 2019 goda {[}in Russian{]}
-\item
-  Oficial' nyj informacionnyj resurs
-  Prem' er Ministra RK / Moratorij na proverkii
-  osvobozhdenie ot nalogov --- kak budet razvivat' sja
-  biznes v RK v blizhajshie 3 goda. URL: \url{https://primeminister.kz/}
-  {[}in Russian{]}
-\item
-  Oficial' nye dannye agentstva po strategicheskomu
-  planirovaniju i reformam RK / Osnovnye pokazateli kolichestva
-  sub\#ektov v Respublike Kazahstan. URL:
-  \url{https://stat.gov.kz/}{[}in Russian{]}
-\item
-  Oficial' nyedannye AO «Fond razvitija
-  predprinimatel' stva «Damu» /
-  Nacional' nyj proekt po
-  razvitijupredprinimatel' stvana 2021-2025 gody. URL:
-  \url{https://damu.kz/programmi}{[}in Russian{]}
-\item
-  Kapital -- centrdelovojinformacii / V Kazahstane opredelili 10 zadach
-  po razvitiju predprinimatel' stva. URL:
-  \url{https://kapital.kz} {[}in Russian{]}
-\item
-  Oficial' nye dannye Nacional' noj palaty
-  predprinimatelej RK «Atameken» / Problemy, meshajushhie uspeshnomu
-  razvitiju molodezhnogo predprinimatel' stva. URL:
-  \url{https://atameken.kz/} {[}in Russian{]}
-\item
-  Internet portal SNG / Razvitie malogo i srednego biznesa v Kazahstane:
-  problem i reshenija. URL: \url{https://e-cis.info/news} {[}in
-  Russian{]}
-\end{enumerate}
+ISBN 9785001465096
+
+2.Адизес, И. Управление жизненным циклом корпораций / Ицхак Калдерон
+Адизес; пер. с англ. В.Кузина. -- М.: Манн, Иванов и Фербер, 2014.- 512
+с. ISBN 978-5-00057-151-4
+
+3.Daraojimba E.Ch., Nwasike Chi.N., Adegbite A.O., Ezeigweneme Ch.A.,
+Gidiagba J.O. Comprehensive review of Agile methodologies in project
+management //
+\href{https://www.researchgate.net/journal/Computer-Science-IT-Research-Journal-2709-0051?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJfZGlyZWN0In19}{Computer
+Science \& IT Research Journal}. - 2024.-Vol.5(1).- P.190-218. DOI
+\href{http://dx.doi.org/10.51594/csitrj.v5i1.717}{10.51594/csitrj.v5i1.717}
+
+4. Борисов Н.С. Применение методов Agile в управлении проектами //
+Индустриальная экономика.-2021 -Vol.1.- P. 74-77. DOI
+\href{https://doi.org/10.47576/2712-7559_2021_1_74}{10.47576/2712-7559\_2021\_1\_74}
+
+5. Sudhakar Babu S. Trends in IT Project Management: Agile Methodologies
+and Their Impact on Project Success // Journal of Recent Trends in
+Computer Science and Engineering (JRTCSE). -2024.-Vol. 12(2). - P.
+73-81. https://jrtcse.com
+
+6.\href{https://www.researchgate.net/scientific-contributions/Haibo-Li-2290691805?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJfZGlyZWN0In19}{Haibo
+L.} Application and Practice of Agile Methods in Project Management //
+\href{https://www.researchgate.net/journal/Journal-of-Applied-Economics-and-Policy-Studies-2977-571X?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJfZGlyZWN0In19}{Journal
+of Applied Economics and Policy Studies}. -- 2024. Vol. 7(1).- P .71-74
+DOI
+\href{http://dx.doi.org/10.54254/2977-5701/7/2024076}{10.54254/2977-5701/7/2024076}
+
+7.Agile: Практическое руководство / {[}пер. с англ.{]} --- М.:
+Издательство «Олимп--Бизнес». -- 2019.-182 с. ISBN 978-5-9693-0403-1
+(рус.) ISBN 978-1-62825-418-1 (англ.)
+
+8. Коллинз Д. От хорошего к великому / Д. Коллинз -- М.: Манн, Иванов и
+Фербер, 2017. -- 378 с.пер.с анг.
+
+9.Цеховой А.Ф., Степанов А.В., Некрасова Н.А., Жолтаева А.С.
+Профессиональные управленческие знания как фактор ускоренного развития
+Казахстана // Вестник университета «Туран».-2023.- Vol.3.- С. 75-89.
+\href{https://doi.org/10.46914/1562-2959-2023-1-3-75-89}{DOI10.46914/1562-2959-2023-1-3-75-89}
+
+10.Хаббард Д. Как измерить все, что угодно. Оценка стоимости
+нематериального в бизнесе / Дуглас У. Хаббард; пер. с англ. Е.
+Пестеревой. -- М.: ЗАО «Олимп-Бизнес», 2009. -- 320 с.
+
+11. \href{https://www.emerald.com/insight/search?q=Mahmoud\%20Mohammad\%20Migdadi}{Migdadi
+M.M.} Knowledge management processes: innovation capability and
+organizational performance //
+\href{https://www.emerald.com/insight/publication/issn/1741-0401}{International
+Journal of Productivity and Performance Management}. -- 2022. -- Vol.
+71(1)- P.182-210. \href{https://doi.org/10.1108/ijppm-04-2020-0154}{DOI
+10.1108/ijppm-04-2020-0154}
+
+12.Цеховой А.Ф., Ли А., Азиева З. О роли организаций, ориентированных на
+знания, в придании импульса развитию МСБ в Казахстане // Материалы
+Международной научно-практической конференции КСТУ имени академика
+З.Алдамжара. -- 2020. -- 224 с.
 \end{references}
+
+\begin{center}
+{\bfseries References}
+\end{center}
+
+\begin{references}
+
+1.Sazerlend Dzh. Scrum. Revoljucionnyj metod upravlenija proektami/
+Dzheff Sazerlend; per. s angl. Marii Geskinoj. - Moskva: Mann, Ivanov i
+Ferber, 2016.- 272 s. ISBN 9785001465096.
+
+{[}in Russian{]}
+
+2.Adizes, I. Upravlenie zhiznennym ciklom korporacij / Ichak Kalderon
+Adizes; per. s angl. V.Kuzina. -- M.: Mann, Ivanov i Ferber, 2014.- 512
+s. ISBN 978-5-00057-151{\bfseries -}4.{[}in Russian{]}
+
+3.Daraojimba E.Ch., Nwasike Chi.N., Adegbite A.O., Ezeigweneme Ch.A.,
+Gidiagba J.O. Comprehensive review of Agile methodologies in project
+management //
+\href{https://www.researchgate.net/journal/Computer-Science-IT-Research-Journal-2709-0051?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJfZGlyZWN0In19}{Computer
+Science \& IT Research Journal}. - 2024.-Vol.5(1).- P.190-218. DOI
+\href{http://dx.doi.org/10.51594/csitrj.v5i1.717}{10.51594/csitrj.v5i1.717}
+
+4. Borisov N.S. Primenenie metodov Agile v upravlenii proektami //
+Industrial' naja jekonomika.-2021 -Vol.1.- P. 74-77. DOI
+10.47576/2712-7559\_2021\_1\_74.{[}in Russian{]}
+
+5. Sudhakar Babu S. Trends in IT Project Management: Agile Methodologies
+and Their Impact on Project Success // Journal of Recent Trends in
+Computer Science and Engineering (JRTCSE). -2024.-Vol. 12(2). - P.
+73-81. https://jrtcse.com.{[}in Russian{]}
+
+6.\href{https://www.researchgate.net/scientific-contributions/Haibo-Li-2290691805?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJfZGlyZWN0In19}{Haibo
+L.} Application and Practice of Agile Methods in Project Management //
+\href{https://www.researchgate.net/journal/Journal-of-Applied-Economics-and-Policy-Studies-2977-571X?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJfZGlyZWN0In19}{Journal
+of Applied Economics and Policy Studies}.-2024. Vol. 7(1).- P .71-74.
+
+DOI
+\href{http://dx.doi.org/10.54254/2977-5701/7/2024076}{10.54254/2977-5701/7/2024076}.
+{[}in Russian{]}
+
+8. Kollinz D. Ot horoshego k velikomu / D. Kollinz - M.: Mann, Ivanov i
+Ferber, 2017. -378 s. {[}in Russian{]}
+
+9.Cehovoj A.F., Stepanov A.V., Nekrasova N.A., Zholtaeva A.S.
+Professional' nye upravlencheskie znanija kak faktor
+uskorennogo razvitija Kazahstana // Vestnik universiteta «Turan».-2023.-
+Vol.3.- S. 75-89. DOI10.46914/1562-2959-2023-1-3-75-89.{[}in Russian{]}
+
+10.Habbard D. Kak izmerit'{} vse, chto ugodno. Ocenka
+stoimosti nematerial' nogo v biznese / Duglas U. Habbard;
+per. s angl. E. Pesterevoj.- M.: ZAO «Olimp-Biznes», 2009.-320 s.
+
+{[}in Russian{]}
+
+11.
+\href{https://www.emerald.com/insight/search?q=Mahmoud\%20Mohammad\%20Migdadi}{Migdadi
+M.M.} Knowledge management processes: innovation capability and
+organizational performance //
+\href{https://www.emerald.com/insight/publication/issn/1741-0401}{International
+Journal of Productivity and Performance Management}.- 2022.- Vol. 71(1)-
+P.182-210. \href{https://doi.org/10.1108/ijppm-04-2020-0154}{DOI
+10.1108/ijppm-04-2020-0154}
+
+12.Cehovoj A.F., Li A., Azieva Z. O roli organizacij, orientirovannyh na
+znanija, v pridanii impul' sa razvitiju MSB v Kazahstane
+// Materialy Mezhdunarodnoj nauchno-prakticheskoj konferencii KSTU imeni
+akademika Z.Aldamzhara. -2020.- S 224. {[}in Russian{]}
+\end{references}
+
 \begin{authorinfo}
-\hspace{1em}\emph{{\bfseries Information about the authors}}
-
-Zhumazhanova M. - Senior Lecturer, Master's Degree, Kazakh University of
-Technology and Business named after K. Kulazhanov, Astana, Kazakhstan,
-e-mail: maral2804@mail.ru;
-
-Zhappasova R. -- PhD, ass.Professor, Kazakh University of Technology and
-Business named after K. Kulazhanov, Astana, Kazakhstan, e-mail:
-zhappasova\_77@mail.ru;
-
-OryntayevaA. - lecturer Master's Degree, Kazakh University of Technology
-and Business named after K. Kulazhanov, Astana, Kazakhstan, e-mail:
-Oryntayeva\_aye@mail.ru
-
-
 \hspace{1em}\emph{{\bfseries Сведения об авторах}}
 
-Жумажанова М.Т. - старший преподаватель, магистр, Казахский университет
-технологии и бизнеса им.К.Кулажанова, Астана, Казахстан, e-mail:
-maral2804@mail.ru;
+Цеховой А.Ф. {\bfseries -} д.т.н., профессор, Сатпаев Университет, Алматы,
+Казахстан, e-mail: \href{mailto:tsaf@list.ru}{\nolinkurl{tsaf@list.ru}};
 
-Жаппасова Р.Е. - к.э.н., асс.профессор, Казахский университет технологии
-и бизнеса им.К.Кулажанова, Астана, Казахстан, e-mail: zhappasova\_77@mail.ru;
+Некрасова Н.А. {\bfseries -} Союз проектных менеджеров Республики
+Казахстан, Алматы, Казахстан, e-mail:
+\href{mailto:info@spmrk.kz}{\nolinkurl{info@spmrk.kz}};
 
-Орынтаева А.Е. - преподаватель, магистр, Казахский университет
-технологии и бизнеса им.К.Кулажанова, Астана, Казахстан, e-mail: Oryntayeva\_aye@mail.ru
+Жолтаева А.С. - PhD, Сатпаев Университет{\bfseries ,} Алматы, Казахстан,
+e-mail:
+\href{mailto:a_zholtayeva@mail.ru}{\nolinkurl{a\_zholtayeva@mail.ru}};
+
+Султанбекова Ж.Ж. {\bfseries -} к.т.н., ассоциированный профессор, Сатпаев
+Университет{\bfseries ,} Алматы, Казахстан, e-mail:
+\href{mailto:z.sultanbekova@satbayev.university}{\nolinkurl{z.sultanbekova@satbayev.university}};
+
+Турегельдинова А.Ж. - PhD, ассоциированный профессор, Сатпаев
+Университет{\bfseries ,} Алматы, Казахстан, e-mail:
+\href{mailto:a.turegeldinova@satbayev.university}{\nolinkurl{a.turegeldinova@satbayev.university}}.
+
+\hspace{1em}\emph{{\bfseries Information about the authors}}
+
+Tsekhovoy А.Ph{\bfseries . -} d.t.s., professor, Satbayev University,
+Almaty, Kazakhstan, e-mail:
+\href{mailto:tsaf@list.ru}{\nolinkurl{tsaf@list.ru}};
+
+Nekrassova N.А. {\bfseries -} Union of Project Managers of the Republic of
+Kazakhstan, Almaty, Kazakhstan, e-mail:
+\href{mailto:info@spmrk.kz}{\nolinkurl{info@spmrk.kz}};
+
+Zholtayeva А.S. - PhD, Satbayev University, Almaty, Kazakhstan, e-mail:
+\href{mailto:a_zholtayeva@mail.ru}{\nolinkurl{a\_zholtayeva@mail.ru}};
+
+Sultanbekova Zh.Zh. {\bfseries -} candidate of technical sciences Satbayev
+University, , associate professor, Almaty, Kazakhstan, e-mail:
+\href{mailto:z.sultanbekova@satbayev.university}{\nolinkurl{z.sultanbekova@satbayev.university}};
+
+Turegeldinova А.Zh.-PhD, associate professor Satbayev University Almaty,
+Kazakhstan, e-mail:
+
+\href{mailto:a.turegeldinova@satbayev.university}{\nolinkurl{a.turegeldinova@satbayev.university}}.
 \end{authorinfo}

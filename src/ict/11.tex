@@ -12,7 +12,7 @@ Lamasheva, S.Serikbayeva\textsuperscript{\envelope },}
 \textsuperscript{1}L. N. Gumilyov Eurasian National University, Astana,
 Kazakhstan,
 
-{\bfseries \textsuperscript{\envelope }}Correspondent-author: \href{mailto:inf_8585@mail.ru}{\nolinkurl{inf\_8585@mail.ru}}
+\raggedright {\bfseries \textsuperscript{\envelope }}Correspondent-author: \href{mailto:inf_8585@mail.ru}{\nolinkurl{inf\_8585@mail.ru}}
 \end{affiliation}
 
 One of the traditional methods for community detection in knowledge
@@ -267,17 +267,11 @@ includes a set of entity classes: E\textsubscript{Recruitment} =
 \{Vacancy, Skill, Requirement, Responsibility\} and a set of
 relationships: R\textsubscript{Recruitment} = \{REQUIRE,
 HAS\_REQUIREMENT, HAS\_RESPONSIBILITY\}.
-
-Figure 1 presents a subgraph centered on the node representing the
-vacancy "Senior IT Project Specialist (Aksai)" and other related skills
-and vacancies. This node is connected to other nodes representing
-skills, requirements, and responsibilities that describe various aspects
-of its role and qualifications.
 \end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image104}
+	\includegraphics[width=0.75\textwidth]{media/ict/image104}
 	\caption*{Fig. 1. - Example of a subgraph of vacancies and skills. The
 node representing the vacancy is marked in purple, skill nodes are
 marked in red, requirement nodes are marked in blue, and responsibility
@@ -285,6 +279,12 @@ nodes are marked in yellow}
 \end{figure}
 
 \begin{multicols}{2}
+Figure 1 presents a subgraph centered on the node representing the
+vacancy "Senior IT Project Specialist (Aksai)" and other related skills
+and vacancies. This node is connected to other nodes representing
+skills, requirements, and responsibilities that describe various aspects
+of its role and qualifications.
+
 A notable feature of this graph is the presence of many paraphrased
 skills that share the same meaning. Subsequently, it is necessary to
 construct communities of semantically similar paraphrased skills for the
@@ -376,88 +376,269 @@ for three initial parameters (the first three columns), with
 programmatically evaluation of cluster quality by silhouette and
 Calinski-Harabasz coefficient algorithms.
 \end{multicols}
+\small{
+\begin{longtable}[c]{|llllllll|}
+\caption*{Table 1 - Parameters and results of experiments} \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Clustering parameters}} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+   \\ \cline{1-3}
+\multicolumn{1}{|l|}{\textbf{Metric}} &
+  \multicolumn{1}{l|}{\textbf{Linkage}} &
+  \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Distance\_\\  threshold\end{tabular}}} &
+  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Number \\ of \\ clusters\end{tabular}}}} &
+  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Average \\ silhouette c\\ oefficient of \\ all clusters\end{tabular}}}} &
+  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Percentage of\\  clusters with \\ silhouette \\ coefficient \\ greater than \\ 0.03\end{tabular}}}} &
+  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Percentage of \\ clusters with \\ negative \\ silhouette \\ coefficient\end{tabular}}}} &
+  \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Average \\ Calinski-\\Harabasz \\ index\end{tabular}}} \\
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} & \\
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} & \\
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} & \\
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{} & \\ \hline
+\endfirsthead
+%
+\endhead
+%
+%
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.2} &
+  \multicolumn{1}{l|}{1669} &
+  \multicolumn{1}{l|}{0.25506} &
+  \multicolumn{1}{l|}{33.97\%} &
+  \multicolumn{1}{l|}{0\%} &
+  9.60789 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.24} &
+  \multicolumn{1}{l|}{1403} &
+  \multicolumn{1}{l|}{0.26764} &
+  \multicolumn{1}{l|}{40.77\%} &
+  \multicolumn{1}{l|}{0.07\%} &
+  9.03752 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.25} &
+  \multicolumn{1}{l|}{1335} &
+  \multicolumn{1}{l|}{0.27106} &
+  \multicolumn{1}{l|}{42.77\%} &
+  \multicolumn{1}{l|}{0.07\%} &
+  9.03694 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.26} &
+  \multicolumn{1}{l|}{1280} &
+  \multicolumn{1}{l|}{0.26711} &
+  \multicolumn{1}{l|}{43.44\%} &
+  \multicolumn{1}{l|}{0.07\%} &
+  8.88383 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.27} &
+  \multicolumn{1}{l|}{1221} &
+  \multicolumn{1}{l|}{0.26728} &
+  \multicolumn{1}{l|}{44.31\%} &
+  \multicolumn{1}{l|}{0\%} &
+  8.83944 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.28} &
+  \multicolumn{1}{l|}{1166} &
+  \multicolumn{1}{l|}{0.27018} &
+  \multicolumn{1}{l|}{46.14\%} &
+  \multicolumn{1}{l|}{0\%} &
+  8.77975 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.29} &
+  \multicolumn{1}{l|}{1121} &
+  \multicolumn{1}{l|}{0.27126} &
+  \multicolumn{1}{l|}{47.55\%} &
+  \multicolumn{1}{l|}{0\%} &
+  8.76839 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.3} &
+  \multicolumn{1}{l|}{1077} &
+  \multicolumn{1}{l|}{0.27041} &
+  \multicolumn{1}{l|}{48.75\%} &
+  \multicolumn{1}{l|}{0.09\%} &
+  8.76821 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.31} &
+  \multicolumn{1}{l|}{1023} &
+  \multicolumn{1}{l|}{0.26873} &
+  \multicolumn{1}{l|}{49.76\%} &
+  \multicolumn{1}{l|}{0.09\%} &
+  8.74085 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.32} &
+  \multicolumn{1}{l|}{978} &
+  \multicolumn{1}{l|}{0.26798} &
+  \multicolumn{1}{l|}{51.43\%} &
+  \multicolumn{1}{l|}{0.1\%} &
+  8.77425 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.4} &
+  \multicolumn{1}{l|}{636} &
+  \multicolumn{1}{l|}{0.23460} &
+  \multicolumn{1}{l|}{61.16\%} &
+  \multicolumn{1}{l|}{0.31\%} &
+  8.96599 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{\multirow{-12}{*}{average}} &
+  \multicolumn{1}{l|}{0.5} &
+  \multicolumn{1}{l|}{357} &
+  \multicolumn{1}{l|}{0.17152} &
+  \multicolumn{1}{l|}{72.55\%} &
+  \multicolumn{1}{l|}{0.84\%} &
+  9.38007 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.29} &
+  \multicolumn{1}{l|}{1342} &
+  \multicolumn{1}{l|}{0.28119} &
+  \multicolumn{1}{l|}{{\color[HTML]{212121} 49.93\%}} &
+  \multicolumn{1}{l|}{2.6\%} &
+  9.45677 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.3} &
+  \multicolumn{1}{l|}{1295} &
+  \multicolumn{1}{l|}{0.28338} &
+  \multicolumn{1}{l|}{51.43\%} &
+  \multicolumn{1}{l|}{2.78\%} &
+  9.48204 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.31} &
+  \multicolumn{1}{l|}{1257} &
+  \multicolumn{1}{l|}{0.28413} &
+  \multicolumn{1}{l|}{52.51\%} &
+  \multicolumn{1}{l|}{2.86\%} &
+  9.43280 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.32} &
+  \multicolumn{1}{l|}{1222} &
+  \multicolumn{1}{l|}{0.28468} &
+  \multicolumn{1}{l|}{53.68\%} &
+  \multicolumn{1}{l|}{2.86\%} &
+  9.43222 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.33} &
+  \multicolumn{1}{l|}{1175} &
+  \multicolumn{1}{l|}{0.28383} &
+  \multicolumn{1}{l|}{55.15\%} &
+  \multicolumn{1}{l|}{2.89\%} &
+  9.33287 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.34} &
+  \multicolumn{1}{l|}{1143} &
+  \multicolumn{1}{l|}{0.28272} &
+  \multicolumn{1}{l|}{55.47\%} &
+  \multicolumn{1}{l|}{3.32\%} &
+  9.31358 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.35} &
+  \multicolumn{1}{l|}{1099} &
+  \multicolumn{1}{l|}{0.28272} &
+  \multicolumn{1}{l|}{57.23\%} &
+  \multicolumn{1}{l|}{3.37\%} &
+  9.30610 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{\multirow{-8}{*}{complete}} &
+  \multicolumn{1}{l|}{0.4} &
+  \multicolumn{1}{l|}{916} &
+  \multicolumn{1}{l|}{0.27294} &
+  \multicolumn{1}{l|}{63.54\%} &
+  \multicolumn{1}{l|}{3 .93\%} &
+  9.39409 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.2} &
+  \multicolumn{1}{l|}{1045} &
+  \multicolumn{1}{l|}{-0.18031} &
+  \multicolumn{1}{l|}{19.14\%} &
+  \multicolumn{1}{l|}{0.27\%} &
+  2.39889 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{0.29} &
+  \multicolumn{1}{l|}{406} &
+  \multicolumn{1}{l|}{-0.28775} &
+  \multicolumn{1}{l|}{{\color[HTML]{212121} 17.24\%}} &
+  \multicolumn{1}{l|}{0.49\%} &
+  1.84882 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{\multirow{-23}{*}{cosine}} &
+  \multicolumn{1}{l|}{\multirow{-3}{*}{single}} &
+  \multicolumn{1}{l|}{0.39} &
+  \multicolumn{1}{l|}{106} &
+  \multicolumn{1}{l|}{-0.19031} &
+  \multicolumn{1}{l|}{17.92\%} &
+  \multicolumn{1}{l|}{0.94\%} &
+  1.89379 \\ \hline
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{1316} &
+  \multicolumn{1}{l|}{0.25526} &
+  \multicolumn{1}{l|}{47.72\%} &
+  \multicolumn{1}{l|}{4.79\%} &
+  10.69402 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{} &
+  \multicolumn{1}{l|}{} &
+  \multicolumn{1}{l|}{2.5} &
+  \multicolumn{1}{l|}{894} &
+  \multicolumn{1}{l|}{0.26155} &
+  \multicolumn{1}{l|}{62.08\%} &
+  \multicolumn{1}{l|}{7.49\%} &
+  10.48007 \\ \cline{3-8} 
+\multicolumn{1}{|l|}{\multirow{-3}{*}{euclidean}} &
+  \multicolumn{1}{l|}{\multirow{-3}{*}{ward}} &
+  \multicolumn{1}{l|}{2.9} &
+  \multicolumn{1}{l|}{666} &
+  \multicolumn{1}{l|}{0.24942} &
+  \multicolumn{1}{l|}{{\color[HTML]{212121} 72.67\%}} &
+  \multicolumn{1}{l|}{9.46\%} &
+  10.89370 \\ \hline
+\multicolumn{8}{|l|}{\textbf{Note - Compiled by the author}} \\ \hline
+\end{longtable}}
 
-{\bfseries Table 1 - Parameters and results of experiments}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1062}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1074}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1198}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1198}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1358}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1470}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1322}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1317}}@{}}
-% \toprule\noalign{}
-% \multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.3334} + 4\tabcolsep}}{%
-% \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Clustering parameters}
-% \end{minipage}} &
-% \multirow{2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Number of clusters}
-% \end{minipage}} &
-% \multirow{2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Average silhouette coefficient of all clusters}
-% \end{minipage}} &
-% \multirow{2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Percentage of clusters with silhouette coefficient greater than
-% 0.03}
-% \end{minipage}} &
-% \multirow{2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Percentage of clusters with negative silhouette coefficient}
-% \end{minipage}} &
-% \multirow{2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Average Calinski-Harabasz index}
-% \end{minipage}} \\
-% \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Metric}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Linkage}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Distance\_}
-% 
-% {\bfseries threshold}
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \multirow{23}{=}{cosine} & \multirow{12}{=}{average} & 0.2 & 1669 &
-% 0.25506 & 33.97\% & 0\% & 9.60789 \\
-% & & 0.24 & 1403 & 0.26764 & 40.77\% & 0.07\% & 9.03752 \\
-% & & 0.25 & 1335 & 0.27106 & 42.77\% & 0.07\% & 9.03694 \\
-% & & 0.26 & 1280 & 0.26711 & 43.44\% & 0.07\% & 8.88383 \\
-% & & 0.27 & 1221 & 0.26728 & 44.31\% & 0\% & 8.83944 \\
-% & & 0.28 & 1166 & 0.27018 & 46.14\% & 0\% & 8.77975 \\
-% & & 0.29 & 1121 & 0.27126 & 47.55\% & 0\% & 8.76839 \\
-% & & 0.3 & 1077 & 0.27041 & 48.75\% & 0.09\% & 8.76821 \\
-% & & 0.31 & 1023 & 0.26873 & 49.76\% & 0.09\% & 8.74085 \\
-% & & 0.32 & 978 & 0.26798 & 51.43\% & 0.1\% & 8.77425 \\
-% & & 0.4 & 636 & 0.23460 & 61.16\% & 0.31\% & 8.96599 \\
-% & & 0.5 & 357 & 0.17152 & 72.55\% & 0.84\% & 9.38007 \\
-% & \multirow{8}{=}{complete} & 0.29 & 1342 & 0.28119 & 49.93\% & 2.6\% &
-% 9.45677 \\
-% & & 0.3 & 1295 & 0.28338 & 51.43\% & 2.78\% & 9.48204 \\
-% & & 0.31 & 1257 & 0.28413 & 52.51\% & 2.86\% & 9.43280 \\
-% & & 0.32 & 1222 & 0.28468 & 53.68\% & 2.86\% & 9.43222 \\
-% & & 0.33 & 1175 & 0.28383 & 55.15\% & 2.89\% & 9.33287 \\
-% & & 0.34 & 1143 & 0.28272 & 55.47\% & 3.32\% & 9.31358 \\
-% & & 0.35 & 1099 & 0.28272 & 57.23\% & 3.37\% & 9.30610 \\
-% & & 0.4 & 916 & 0.27294 & 63.54\% & 3 .93\% & 9.39409 \\
-% & \multirow{3}{=}{single} & 0.2 & 1045 & -0.18031 & 19.14\% & 0.27\% &
-% 2.39889 \\
-% & & 0.29 & 406 & -0.28775 & 17.24\% & 0.49\% & 1.84882 \\
-% & & 0.39 & 106 & -0.19031 & 17.92\% & 0.94\% & 1.89379 \\
-% \multirow{3}{=}{euclidean} & \multirow{3}{=}{ward} & 2 & 1316 & 0.25526
-% & 47.72\% & 4.79\% & 10.69402 \\
-% & & 2.5 & 894 & 0.26155 & 62.08\% & 7.49\% & 10.48007 \\
-% & & 2.9 & 666 & 0.24942 & 72.67\% & 9.46\% & 10.89370 \\
-% \multicolumn{8}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{1.0000} + 14\tabcolsep}@{}}{%
-% {\bfseries Note
-% -~\href{https://context.reverso.net/\%D0\%BF\%D0\%B5\%D1\%80\%D0\%B5\%D0\%B2\%D0\%BE\%D0\%B4/\%D0\%B0\%D0\%BD\%D0\%B3\%D0\%BB\%D0\%B8\%D0\%B9\%D1\%81\%D0\%BA\%D0\%B8\%D0\%B9-\%D1\%80\%D1\%83\%D1\%81\%D1\%81\%D0\%BA\%D0\%B8\%D0\%B9/Compiled+by+the+author}{Compiled
-% by the author}}} \\
-% \end{longtable}
-
+\begin{multicols}{2}
 When using cosine similarity with average linkage, a significant
 reduction in the number of clusters from 1669 to 357 is observed as the
 distance threshold increases from 0.2 to 0.5. In this parameter
@@ -501,6 +682,7 @@ Figure 2 depicts the distribution of skill clusters using average
 linkage with cosine similarity at a distance threshold of 0.29, where
 each point represents a specific skill, and the color indicates
 membership in one of the clusters.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -509,6 +691,7 @@ membership in one of the clusters.
 with cosine similarity at a distance threshold of 0.29}
 \end{figure}
 
+\begin{multicols}{2}
 The points are evenly distributed across the graph, although there is
 some concentration in the center. This may indicate common or frequently
 occurring skills that do not exhibit distinct unique properties, in
@@ -521,49 +704,6 @@ clustering data was collected in Russian and English. In this case, the
 phrases in the data could be completely in the same language or contain
 elements of both languages at the same time.
 
-{\bfseries Table 2 - Example of clusters}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1084}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.7571}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1331}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0015}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Cluster number}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Skills in the cluster}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Silhouette coefficient}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% 248 & тестирование мобильного приложения, тестирование мобильных
-% приложений, диагностика смартфонов & 0.53794 & \\
-% 130 & автоматизированное тестирование, автотестирование, автоматизация
-% тестирования, automation test, auto-testing & 0.5163 & \\
-% 214 & тестирование пользовательского интерфейса, тестирование новых
-% девайсов & 0.18981 & \\
-% 478 & проведение ux/ui тестирований, unit testing, ui test & 0.1366 & \\
-% 116 & test case, проведение тестирований, тестирование api,
-% функциональное тестирование, нагрузочное тестирование, диагностика, a/b
-% testing, ручное тестирование, тестирование, модульное тестирование,
-% регрессионное тестирование, a/b тесты, диагностика пк, a/b тестирование,
-% регресcионное тестирование, functional testing, кроссбраузерное
-% тестирование, тестовая документация, тест-кейсы, testing framework,
-% тест-дизайн, a/b-тестирование & 0.09042 & \\
-% 976 & интеграционное тестирование & 0.0 & \\
-% 1057 & beta-тестирования & 0.0 & \\
-% 818 & тестирование qa & 0.0 & \\
-% \multicolumn{4}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{1.0000} + 6\tabcolsep}@{}}{%
-% {\bfseries Note
-% -~\href{https://context.reverso.net/\%D0\%BF\%D0\%B5\%D1\%80\%D0\%B5\%D0\%B2\%D0\%BE\%D0\%B4/\%D0\%B0\%D0\%BD\%D0\%B3\%D0\%BB\%D0\%B8\%D0\%B9\%D1\%81\%D0\%BA\%D0\%B8\%D0\%B9-\%D1\%80\%D1\%83\%D1\%81\%D1\%81\%D0\%BA\%D0\%B8\%D0\%B9/Compiled+by+the+author}{Compiled
-% by the author}}} \\
-% \end{longtable}
-
 The list of clusters containing both Russian and English terms
 highlights the bilingual nature of the data. Including skills in both
 languages can enhance the understanding of professional competency
@@ -575,46 +715,58 @@ boundaries between skills or the proximity of their content. Cluster 33
 is the last cluster with a silhouette coefficient greater than zero.
 Table 3 shows cluster 33, which includes many unrelated abbreviations
 and monosyllabic terms.
+\end{multicols}
 
-{\bfseries Table 3 - Cluster 33}
+\begin{table}[H]
+\caption*{Table 2 - Example of clusters}
+\centering
+\begin{tabular}{|llp{0.13\textwidth}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Cluster number}} &
+  \multicolumn{1}{c|}{\textbf{Skills in the cluster}} &
+  \textbf{Silhouette coefficient} \\ \hline
+\multicolumn{1}{|l|}{248} &
+  \multicolumn{1}{p{0.6\textwidth}|}{тестирование мобильного приложения, тестирование мобильных приложений, диагностика смартфонов} &
+  0.53794 \\ \hline
+\multicolumn{1}{|l|}{130} &
+  \multicolumn{1}{p{0.6\textwidth}|}{автоматизированное тестирование, автотестирование, автоматизация тестирования, automation test, auto-testing} &
+  0.5163 \\ \hline
+\multicolumn{1}{|l|}{214} &
+  \multicolumn{1}{p{0.6\textwidth}|}{тестирование пользовательского интерфейса, тестирование новых девайсов} &
+  0.18981 \\ \hline
+\multicolumn{1}{|l|}{478} &
+  \multicolumn{1}{p{0.6\textwidth}|}{проведение ux/ui тестирований, unit testing, ui test} &
+  0.1366 \\ \hline
+\multicolumn{1}{|l|}{116} &
+  \multicolumn{1}{p{0.6\textwidth}|}{test case, проведение тестирований, тестирование api, функциональное тестирование, нагрузочное тестирование, диагностика, a/b testing, ручное тестирование, тестирование, модульное тестирование, регрессионное тестирование, a/b тесты, диагностика пк, a/b тестирование, регресcионное тестирование, functional testing, кроссбраузерное тестирование, тестовая документация, тест-кейсы, testing framework, тест-дизайн, a/b-тестирование} &
+  0.09042 \\ \hline
+\multicolumn{1}{|l|}{976} &
+  \multicolumn{1}{l|}{интеграционное тестирование} &
+  0.0 \\ \hline
+\multicolumn{1}{|l|}{1057} &
+  \multicolumn{1}{l|}{beta-тестирования} &
+  0.0 \\ \hline
+\multicolumn{1}{|l|}{818} &
+  \multicolumn{1}{l|}{тестирование qa} &
+  0.0 \\ \hline
+\multicolumn{3}{|l|}{\textbf{Note - Compiled by the author}} \\ \hline
+\end{tabular}%
+\end{table}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1083}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.7564}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1329}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0025}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Cluster number}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Skills in the cluster}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Silhouette coefficient}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% 33 & java, верстка, vue, лвс, ui, vuejs, veam, sap fi, osi, скд, с\#,
-% релиз, jpa, lte, асутп, сапр, asana, kotlin, впр, pestel, ge/m, vlan,
-% java ee, сопровождение по, снип, itil, otrs, presales, nat, онбординг,
-% sono, siem, unix, java se, idef, trello, глонасс, rtos, mbedos, срм,
-% iis, koin di, vue js, pascal, kafka для очередей, fastapi, vuetify,
-% фронтенд, удаленка, абис, uix, jest, nestjs, nodejs, цод, vrrp,
-% айдентика, aiohtpp, парсер, сбор трейсов, zbrush, спецпроекты, ar, lld,
-% асу тп, стпо, ai, impa, ррл, vite, бэм, плк, геттеры, смр, olap, aris,
-% erspan, cacti, xunit, gradle, prd, gke, maven, ремонт п, пайка,
-% переустановка по, trc, bem, сметы, гис, эсф, perco, vr, по, опс,
-% java/kotlin, xamarin, лендинг, vtiger, биот, эдо, эквайринг, предовос,
-% пэк, ппм, ндв, пдс, сзз, palo alto, jvm, суиб, волс, talend, пресейл,
-% presale, pam, estaff, актуарий, uart, serdes, отладка, saml, элеткрик,
-% пк, екв, в2в., wcdma & 0.0063 & \\
-% \multicolumn{4}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{1.0000} + 6\tabcolsep}@{}}{%
-% {\bfseries Note
-% -~\href{https://context.reverso.net/\%D0\%BF\%D0\%B5\%D1\%80\%D0\%B5\%D0\%B2\%D0\%BE\%D0\%B4/\%D0\%B0\%D0\%BD\%D0\%B3\%D0\%BB\%D0\%B8\%D0\%B9\%D1\%81\%D0\%BA\%D0\%B8\%D0\%B9-\%D1\%80\%D1\%83\%D1\%81\%D1\%81\%D0\%BA\%D0\%B8\%D0\%B9/Compiled+by+the+author}{Compiled
-% by the author}}} \\
-% \end{longtable}
+\begin{table}[H]
+\caption*{Table 3 - Cluster 33}
+\centering
+\begin{tabular}{|p{0.1\textwidth}lp{0.11\textwidth}|}
+\hline
+\multicolumn{1}{|p{0.1\textwidth}|}{\textbf{Cluster number}} &
+  \multicolumn{1}{l|}{\textbf{Skills in the cluster}} &
+  \textbf{Silhouette coefficient} \\ \hline
+\multicolumn{1}{|l|}{33} &
+  \multicolumn{1}{p{0.7\textwidth}|}{java, верстка, vue, лвс, ui, vuejs, veam, sap fi, osi, скд, с\#, релиз, jpa, lte, асутп, сапр, asana, kotlin, впр, pestel, ge/m, vlan, java ee, сопровождение по, снип, itil, otrs, presales, nat, онбординг, sono, siem, unix, java se, idef, trello, глонасс, rtos, mbedos, срм, iis, koin di, vue js, pascal, kafka для очередей, fastapi, vuetify, фронтенд, удаленка, абис, uix, jest, nestjs, nodejs, цод, vrrp, айдентика, aiohtpp, парсер, сбор трейсов, zbrush, спецпроекты, ar, lld, асу тп, стпо, ai, impa, ррл, vite, бэм, плк, геттеры, смр, olap, aris, erspan, cacti, xunit, gradle, prd, gke, maven, ремонт п, пайка, переустановка по, trc, bem, сметы, гис, эсф, perco, vr, по, опс, java/kotlin, xamarin, лендинг, vtiger, биот, эдо, эквайринг, предовос, пэк, ппм, ндв, пдс, сзз, palo alto, jvm, суиб, волс, talend, пресейл, presale, pam, estaff, актуарий, uart, serdes, отладка, saml, элеткрик, пк, екв, в2в., wcdma} &
+  0.0063 \\ \hline
+\multicolumn{3}{|l|}{\textbf{Note - Compiled by the author}} \\ \hline
+\end{tabular}%
+\end{table}
 
 \begin{multicols}{2}
 An analysis of the table for Cluster 33 reveals a large number of
@@ -674,34 +826,29 @@ before and after training. The correctness of cluster formation was
 evaluated by an expert.
 \end{multicols}
 
-{\bfseries Table 4 - Comparison of erroneous clusters before and after
+\begin{table}[H]
+\caption*{Table 4 - Comparison of erroneous clusters before and after
 training the embedding model}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1926}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1463}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2549}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2282}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1781}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Embedding model}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Silhouette coefficient}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Number of clusters (including single terms)}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Percentage of Single Terms from Total Skills (3047)}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Percentage of erroneous clusters}
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% Before training & 0,27126 & 1121 & 19,17\% & 19,74\% \\
-% After training & 0,2851 & 1407 & 24\% & 13,97\% \\
-% \end{longtable}
+\centering
+\begin{tabular}{|p{0.12\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|}
+\hline
+\textbf{Embedding model} &
+  \textbf{Silhouette coefficient} &
+  \textbf{Number of clusters (including single terms)} &
+  \textbf{Percentage of Single Terms from Total Skills (3047)} &
+  \textbf{Percentage of erroneous clusters} \\ \hline
+Before training &
+  0,27126 &
+  1121 &
+  19,17\% &
+  19,74\% \\ \hline
+After training &
+  0,2851 &
+  1407 &
+  24\% &
+  13,97\% \\ \hline
+\end{tabular}%
+\end{table}
 
 \begin{multicols}{2}
 Fine-tuning the model led to an increase in the number of clusters,
@@ -771,14 +918,10 @@ Republic of Kazakhstan (Grant No. AP22783030).}
 \end{center}
 
 \begin{references}
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Fortunato, S. (2010). Community detection in graphs// Physics
-  Reports.- 2010.-Vol.486(3-5).-P. 75-174.
-  \href{https://doi.org/10.1016/j.physrep.2009.11.002}{DOI
-  10.1016/j.physrep.2009.11.002}
-\end{enumerate}
+1. Fortunato, S. (2010). Community detection in graphs// Physics
+Reports.- 2010.-Vol.486(3-5).-P. 75-174.
+\href{https://doi.org/10.1016/j.physrep.2009.11.002}{DOI
+10.1016/j.physrep.2009.11.002}
 
 2. Oti, E., \& Olusola, M. (2024). Overview of agglomerative
 hierarchical clustering methods //British Journal of Computer,
@@ -788,109 +931,88 @@ Networking and Information Technology.-2024.-Vol., 7(2).-P 14-23.
 
 3.Tokuda, E. K., Comin, C. H., \& Costa, L. F. (2022). Revisiting
 agglomerative clustering// Physica A: Statistical Mechanics and Its
-Applications.- Vol.585, Article 126433.
-
-DOI
+Applications.- Vol.585, Article 126433. DOI
 \href{https://doi.org/10.1016/j.physa.2021.126433}{10.1016/j.physa.2021.126433}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  Sumengen, B. (2021). Scaling hierarchical agglomerative clustering to
-  billion-sized datasets. arXiv, 2021. DOI
-  \href{https://doi.org/10.48550/arXiv.2105.11653}{10.48550/arXiv.2105.11653}
-\item
-  Cena, A., \& Gagolewski, M. (2020). Genie+OWA: Robustifying
-  hierarchical clustering with OWA-based linkages// Information
-  Sciences.-2020.-Vol. 520.-P. 324-336.
-\end{enumerate}
 
+4. Sumengen, B. (2021). Scaling hierarchical agglomerative clustering to
+billion-sized datasets. arXiv, 2021. DOI
+\href{https://doi.org/10.48550/arXiv.2105.11653}{10.48550/arXiv.2105.11653}
+
+5. Cena, A., \& Gagolewski, M. (2020). Genie+OWA: Robustifying
+hierarchical clustering with OWA-based linkages// Information
+Sciences.-2020.-Vol. 520.-P. 324-336.
 \href{https://doi.org/10.1016/j.ins.2020.02.025}{DOI
 10.1016/j.ins.2020.02.025}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\item
-  Gagolewski, M., Bartoszuk, M., \& Cena, A. Are cluster validity
-  measures (in)valid? //Information Sciences.-2021.-Vol. 581.- P.
-  620-634. \href{https://doi.org/10.1016/j.ins.2021.10.004}{DOI
-  10.1016/j.ins.2021.10.004}
-\item
-  Söküt Açar, T., \& Öz, N. A. The determination of optimal cluster
-  number by silhouette index at clustering of the European Union member
-  countries and candidate Turkey by waste indicators// Politeknik
-  Dergisi.-2020.-Vol. 26(3).
-  \href{https://doi.org/10.5505/pajes.2019.49932}{DOI
-  10.5505/pajes.2019.49932}
-\item
-  TabassumA., Patil R. R. A survey on text pre-processing \& feature
-  extraction techniques in natural language processing.//International
-  Research Journal of Engineering and Technology.-2020ю-Vol.7(6).-
-  P.4864-4867.
-  \url{https://www.semanticscholar.org/paper/A-Survey-on-Text-Pre-Processing-\%26-Feature-in-Tabassum-Patil/f308488e996599115fe478c03b74a0b19b9a8f06}
-\item
-  Pugachev L., BurtsevM. (2021). Short text clustering with
-  transformers, ArXiv:21.02.00541v1
-\end{enumerate}
+
+6. Gagolewski, M., Bartoszuk, M., \& Cena, A. Are cluster validity
+measures (in)valid? //Information Sciences.-2021.-Vol. 581.- P.
+620-634. \href{https://doi.org/10.1016/j.ins.2021.10.004}{DOI
+10.1016/j.ins.2021.10.004}
+
+7. Söküt Açar, T., \& Öz, N. A. The determination of optimal cluster
+number by silhouette index at clustering of the European Union member
+countries and candidate Turkey by waste indicators// Politeknik
+Dergisi.-2020.-Vol. 26(3). \href{https://doi.org/10.5505/pajes.2019.49932}{DOI 10.5505/pajes.2019.49932}
+
+8. TabassumA., Patil R. R. A survey on text pre-processing \& feature
+extraction techniques in natural language processing.//International
+Research Journal of Engineering and Technology.-2020ю-Vol.7(6).-
+P.4864-4867. \\\href{https://www.semanticscholar.org/paper/A-Survey-on-Text-Pre-Processing-\%26-Feature-in-Tabassum-Patil/f308488e996599115fe478c03b74a0b19b9a8f06}{https://www.semanticscholar.org}
+
+9. Pugachev L., BurtsevM. (2021). Short text clustering with
+transformers, ArXiv:21.02.00541v1
 
 DOI
 \href{http://dx.doi.org/10.28995/2075-7182-2021-20-571-577}{10.28995/2075-7182-2021-20-571-577}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
-\item
-  GalliC., Donos N.,CalciolariE. Performance of 4 pre-trained sentence
-  transformer models in the semantic query of a systematic review
-  dataset on peri-implantitis//Information.- 2024.- Vol.15(2), Article
-  68. \href{https://doi.org/10.3390/info15020068}{DOI
-  10.3390/info15020068}
-\item
-  Ternikov A. A. (2022). Skill-based clustering algorithm for online job
-  advertisements// Izvestiya of Saratov University. Mathematics.
-  Mechanics. Informatics.-2022.- Vol.22(2).-P. 250-265.
-  \href{https://doi.org/10.18500/1816-9791-2022-22-2-250-265}{DOI
-  10.18500/1816-9791-2022-22-2-250-265}
-\item
-  Karthikeyan, B. A comparative study on K-means clustering and
-  agglomerative hierarchical clustering// International Journal of
-  Emerging Trends in Engineering Researc.-2020.-Vol. 8(5).-P. 1600-1604.
-  \href{https://doi.org/10.30534/ijeter/2020/20852020}{DOI
-  10.30534/ijeter/2020/20852020}
-\item
-  Bafna, P., Pramod, D., \& Vaidya, A. (2016, March). Document
-  clustering: TF-IDF approach. In 2016 International Conference on
-  Electrical, Electronics, and Optimization Techniques (ICEEOT) (pp.
-  61-66). \href{https://doi.org/10.1109/ICEEOT.2016.7754750}{DOI
-  10.1109/ICEEOT.2016.7754750}
-\item
-  Srivastava, R., Hingmire, S., \& Palshikar, G. K. (2020). Clustering
-  skills for industrial learning. TCS Research, Tata Research Design \&
-  Development Centre, Hadapsar, Pune.
-  \url{https://www.cse.msu.edu/~wangzh65/AI4EDU/papers/15.pdf}
-\item
-  Biloshchytskyi, A., Shamgunova, . M. ., \& Biloshchytska , S. .
-  (2024). Exploration of the thematic clustering and collaboration
-  opportunities in Kazakhstani research//Scientific Journal of Astana IT
-  University.-2024.-Vol. 17(17).-P.106-121.
-  \href{https://doi.org/10.37943/17ALVR8114}{DOI 10.37943/17ALVR8114}
-\item
-  Ternikov, A. A. Skill-based clustering algorithm for online job
-  advertisements// Izvestiya of Saratov University. Mathematics.
-  Mechanics. Informatics,.-2022.- 22(2).-P. 250 - 265.
-\end{enumerate}
+10. GalliC., Donos N.,CalciolariE. Performance of 4 pre-trained sentence
+transformer models in the semantic query of a systematic review
+dataset on peri-implantitis//Information.- 2024.- Vol.15(2), Article
+68. \\\href{https://doi.org/10.3390/info15020068}{DOI
+10.3390/info15020068}
 
+11. Ternikov A. A. (2022). Skill-based clustering algorithm for online job
+advertisements// Izvestiya of Saratov University. Mathematics.
+Mechanics. Informatics.-2022.- Vol.22(2).-P. 250-265.
 \href{https://doi.org/10.18500/1816-9791-2022-22-2-250-265}{DOI
 10.18500/1816-9791-2022-22-2-250-265}
 
-15. Dikov M.E., Shirobokova S.N. O variante formalizacii zadachi
+12. Karthikeyan, B. A comparative study on K-means clustering and
+agglomerative hierarchical clustering// Interna-tional Journal of
+Emerging Trends in Engineering Researc.-2020.-Vol. 8(5).-P. 1600-1604.
+\href{https://doi.org/10.30534/ijeter/2020/20852020}{DOI
+\\10.30534/ijeter/2020/20852020}
+
+13. Bafna, P., Pramod, D., \& Vaidya, A. (2016, March). Document
+clustering: TF-IDF approach. In 2016 International Conference on
+Electrical, Electronics, and Optimization Techniques (ICEEOT) (pp.
+61-66). \\\href{https://doi.org/10.1109/ICEEOT.2016.7754750}{DOI
+10.1109/ICEEOT.2016.7754750}
+
+14. Srivastava, R., Hingmire, S., \& Palshikar, G. K. (2020). Clustering
+skills for industrial learning. TCS Research, Tata Research Design \&
+Development Centre, Hadapsar, Pune.
+\href{https://www.cse.msu.edu/~wangzh65/AI4EDU/papers/15.pdf}{https://www.cse.msu.edu}
+
+15. Biloshchytskyi, A., Shamgunova, . M. ., \& Biloshchytska , S. .
+(2024). Exploration of the thematic clustering and collaboration
+opportunities in Kazakhstani research//Scientific Journal of Astana IT
+University.-2024.-Vol. 17(17).-P.106-121.
+\href{https://doi.org/10.37943/17ALVR8114}{DOI 10.37943/17ALVR8114}
+
+16. Ternikov, A. A. Skill-based clustering algorithm for online job
+advertisements// Izvestiya of Saratov University. Mathematics.
+Mechanics. Informatics,.-2022.- 22(2).-P. 250 - 265.
+\href{https://doi.org/10.18500/1816-9791-2022-22-2-250-265}{DOI
+10.18500/1816-9791-2022-22-2-250-265}
+
+17. Dikov M.E., Shirobokova S.N. O variante formalizacii zadachi
 izvlechenija kljuchevyh navykov i klasternogo analiza vakansij pri
 realizacii kompleksnogo instrumentarij cifrovoj proforientacii.//
 Inzhenernyj vestnik Dona.-2024.- № 3.- S.1-10.{[}in Russian{]}
-
-\url{https://cyberleninka.ru/article/n/o-variante-formalizatsii-zadachi-izvlecheniya-klyuchevyh-navykov-i-klasternogo-analiza-vakansiy-pri-realizatsii-kompleksnogo}
+\href{https://cyberleninka.ru/article/n/o-variante-formalizatsii-zadachi-izvlecheniya-klyuchevyh-navykov-i-klasternogo-analiza-vakansiy-pri-realizatsii-kompleksnogo}{https://cyberleninka.ru}
 \end{references}
 
 \begin{authorinfo}
@@ -907,7 +1029,7 @@ Inzhenernyj vestnik Dona.-2024.- № 3.- S.1-10.{[}in Russian{]}
 \href{mailto:madina_jgtu@mail.ru}{\nolinkurl{madina\_jgtu@mail.ru}};
 
 Тохметов А. Т. - доцент, Евразийский национальный университет им. Л.Н.
-Гумилева, Астана, Казахстан, E-mail:
+Гумилева, Астана, Казахстан, e-mail:\\
 \href{mailto:attohmetov@mail.ru}{\nolinkurl{attohmetov@mail.ru}};
 
 Ламашева Ж. Б. - PhD, Евразийский национальный университет им. Л. Н.

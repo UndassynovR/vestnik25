@@ -1,4 +1,47 @@
 (undo-tree-save-format-version . 1)
-"06b2a3aaee7d452bbfec8430d0a1629f01c516e6"
-[nil current nil nil (26477 10221 93833 566000) 0 nil]
+"a7868a7813c1b6fdccd103914f36df42338a133b"
+[nil nil nil nil (26479 58221 734578 590000) 0 nil]
+([nil nil ((8370 . 8371)) ((#("-" 0 1 (fontified t)) . 8370) (t 26479 58200 448919 6000)) (26479 58223 424825 998000) 0 nil])
+([nil nil ((12468 . 12469) (t 26479 58200 448919 6000)) nil (26479 58228 403105 268000) 0 nil])
+([nil nil ((#("\\begin{multicols}{2}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (latex-env-pair t fontified t) 7 16 (face font-lock-function-name-face latex-env-pair t fontified t) 16 17 (latex-env-pair t fontified t) 17 21 (fontified t)) . 17539) (undo-tree-id6 . -19) (undo-tree-id7 . -20) 17558 (t 26479 58228 406645 822000)) nil (26479 58261 52589 576000) 0 nil])
+([nil nil ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (latex-env-pair t fontified t) 5 14 (face font-lock-function-name-face latex-env-pair t fontified t) 14 15 (latex-env-pair t fontified t) 15 16 (fontified t)) . 17316) (undo-tree-id4 . -15) (undo-tree-id5 . -14) 17330) nil (26479 58261 52588 33000) 0 nil])
+([nil nil ((#("
+В рентгеновских дифракционных моделях в монтмориллоните были установлены
+отражения в угловом диапазоне 2\\textsuperscript{θ}, равном 6,06, а также
+2 = 19,78° и 2\\textsuperscript{θ} = 26,57° минералла кристаболита,
+плагиоклаза, гидромики. Образована структура бентонита из
+интерстициальных пространств, где расстояние между слоями равен 12,77 Å.
+
+Результаты и обсуждение. В 2020-2022 года из сорбентов был разработан
+модифицированный фильтр из бентонита, цеолита и диатомита взятых в
+разных процентых соотношениях (рисунок 4). (0,5 кг) (0,8 кг) (0,5 кг)
+\\end{multicols}
+" 0 1 (fontified t) 1 73 (fontified t) 73 74 (fontified t) 74 105 (fontified t) 105 121 (face font-lock-keyword-face fontified t) 121 161 (fontified t) 161 177 (face font-lock-keyword-face fontified t) 177 553 (fontified t) 553 557 (face font-lock-keyword-face fontified t) 557 558 (fontified t latex-env-pair t) 558 567 (face font-lock-function-name-face fontified t latex-env-pair t) 567 568 (fontified t latex-env-pair t) 568 569 (fontified t)) . 17522) (undo-tree-id0 . -553) (undo-tree-id1 . -568) (undo-tree-id2 . -553) (undo-tree-id3 . -553) 18075) nil (26479 58261 52584 737000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 17315 . 17316) (#("
+" 0 1 (fontified nil)) . -17884) (17315 . 17885) 17299) nil (26479 58295 624584 910000) 0 nil])
+([nil nil ((#("6" 0 1 (fontified t)) . -18148) (t 26479 58296 113983 561000) (18149 . 18150) 18148 (t 26479 58296 113983 561000)) nil (26479 58303 131637 589000) 0 nil] [nil nil ((#("8" 0 1 (fontified t)) . -15713) (t 26479 58261 61326 494000) (15714 . 15715) 15713 (t 26479 58261 61326 494000)) ((#("7" 0 1 (fontified nil)) . 15714) (15713 . 15714) (t 26479 58280 93140 327000)) (26479 58280 86849 812000) 0 nil])
+([nil nil ((19642 . 19647) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -19642) (undo-tree-id8 . -1) (19631 . 19643) (#("l" 0 1 (fontified t)) . -19631) (undo-tree-id9 . -1) 19632 (t 26479 58303 137914 805000)) nil (26479 58364 261466 983000) 0 nil])
+nil
+([nil nil ((#("6" 0 1 (fontified t)) . -19635) (t 26479 58364 268316 143000) (19636 . 19637) 19635 (t 26479 58364 268316 143000)) nil (26479 58372 194061 672000) 0 nil])
+([nil nil ((nil fontified t 19635 . 19636) (#("5" 0 1 (fontified t)) . -19635) (19636 . 19637) 19635) nil (26479 58372 194057 153000) 0 nil])
+([nil nil ((20547 . 20548) (#("x" 0 1 (fontified t)) . 20547) (undo-tree-id10 . -1) (t 26479 58372 198238 435000)) nil (26479 58414 531965 78000) 0 nil])
+([nil nil ((#("4" 0 1 (fontified t)) . -21031) (t 26479 58414 538823 234000) (21032 . 21033) 21031 (t 26479 58414 538823 234000)) nil (26479 58522 540492 948000) 0 nil])
+([nil nil ((21031 . 21032) (t 26479 58522 550762 729000)) nil (26479 58535 284580 199000) 0 nil])
+([nil nil ((21383 . 21384)) nil (26479 58535 284576 71000) 0 nil])
+([nil nil ((#("\\begin{multicols}{2}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 21 (fontified t)) . 20597) (undo-tree-id57 . -20) (undo-tree-id58 . -19) (undo-tree-id59 . -19) (undo-tree-id60 . -19) (undo-tree-id61 . -19) (undo-tree-id62 . -19) (undo-tree-id63 . -19) (undo-tree-id64 . -19) (undo-tree-id65 . -19) (undo-tree-id66 . -19) (undo-tree-id67 . -19) (undo-tree-id68 . -19) (undo-tree-id69 . -19) (undo-tree-id70 . -19) (undo-tree-id71 . -19) (undo-tree-id72 . -19) (undo-tree-id73 . -19) (undo-tree-id74 . -19) (undo-tree-id75 . -19) (undo-tree-id76 . -19) (undo-tree-id77 . -19) (undo-tree-id78 . -19) (undo-tree-id79 . -19) (undo-tree-id80 . -19) (undo-tree-id81 . -19) (undo-tree-id82 . -19) (undo-tree-id83 . -19) (undo-tree-id84 . -19) (undo-tree-id85 . -19) (undo-tree-id86 . -19) (undo-tree-id87 . -19) (undo-tree-id88 . -19) (undo-tree-id89 . -19) (undo-tree-id90 . -19) (undo-tree-id91 . -19) (undo-tree-id92 . -21) 20616 (t 26479 58535 291637 515000)) nil (26479 58568 420729 720000) 0 nil])
+([nil nil ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 20513) (undo-tree-id11 . -15) (undo-tree-id12 . -16) (undo-tree-id13 . -16) (undo-tree-id14 . -16) (undo-tree-id15 . -16) (undo-tree-id16 . -16) (undo-tree-id17 . -16) (undo-tree-id18 . -16) (undo-tree-id19 . -16) (undo-tree-id20 . -16) (undo-tree-id21 . -16) (undo-tree-id22 . -16) (undo-tree-id23 . -16) (undo-tree-id24 . -16) (undo-tree-id25 . -16) (undo-tree-id26 . -16) (undo-tree-id27 . -14) (undo-tree-id28 . -14) (undo-tree-id29 . -14) (undo-tree-id30 . -14) (undo-tree-id31 . -14) (undo-tree-id32 . -14) (undo-tree-id33 . -14) (undo-tree-id34 . -14) (undo-tree-id35 . -14) (undo-tree-id36 . -14) (undo-tree-id37 . -14) (undo-tree-id38 . -14) (undo-tree-id39 . -14) (undo-tree-id40 . -14) (undo-tree-id41 . -14) (undo-tree-id42 . -14) (undo-tree-id43 . -14) (undo-tree-id44 . -14) (undo-tree-id45 . -14) (undo-tree-id46 . -14) (undo-tree-id47 . -14) (undo-tree-id48 . -14) (undo-tree-id49 . -14) (undo-tree-id50 . -14) (undo-tree-id51 . -14) (undo-tree-id52 . -14) (undo-tree-id53 . -14) (undo-tree-id54 . -14) (undo-tree-id55 . -14) (undo-tree-id56 . -16) 20527) nil (26479 58568 420715 22000) 0 nil])
+([nil nil ((29332 . 29334) (t 26479 58568 424311 716000)) nil (26479 58589 271078 154000) 0 nil])
+([nil nil ((32045 . 32046) (t 26479 58589 277106 574000)) nil (26479 58621 202538 444000) 0 nil])
+([nil nil ((31938 . 31939) (t 26479 58621 206792 299000)) nil (26479 58640 389560 993000) 0 nil])
+([nil nil ((#("-" 0 1 (fontified t)) . 31938) (undo-tree-id93 . -1) (undo-tree-id94 . -1) (t 26479 58640 393603 351000)) nil (26479 58647 439412 753000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 31939 . 31940) (nil fontified nil 31939 . 31940) (31939 . 31940) 31938) nil (26479 58647 439400 500000) 0 nil])
+([nil nil ((#("-" 0 1 (face font-lock-string-face fontified t)) . 32046) (undo-tree-id95 . -1) (undo-tree-id96 . -1) (undo-tree-id97 . -1) (undo-tree-id98 . -1) (undo-tree-id99 . -1) (undo-tree-id100 . -1) (undo-tree-id101 . -1) (t 26479 58647 446533 893000)) nil (26479 58655 405612 147000) 0 nil])
+([nil nil ((32137 . 32139) (t 26479 58655 411455 425000)) nil (26479 58663 186910 945000) 0 nil])
+([nil nil ((34867 . 34869) (t 26479 58663 193378 736000)) nil (26479 58677 90990 399000) 0 nil])
+([nil nil ((37867 . 37869) (t 26479 58677 97241 691000)) nil (26479 58701 136261 767000) 0 nil])
+([nil current ((37867 . 37868)) nil (26479 58701 136258 551000) 0 nil])
 nil
