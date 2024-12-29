@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"b9d0de78937b88c1bd3c16097691562d19d0fee7"
+"5554bdab50301e971e495a78dfd1df47bbb408aa"
 [nil nil nil nil (26475 35129 286836 563000) 0 nil]
 ([nil nil ((apply -3 1200 1250 undo--wrap-and-run-primitive-undo 1200 1250 ((1200 . 1203) 1222))) nil (26475 35129 286835 430000) 0 nil])
 ([nil nil ((apply -3 1351 1403 undo--wrap-and-run-primitive-undo 1351 1403 ((1351 . 1354) 1374))) nil (26475 35129 286832 122000) 0 nil])
@@ -256,5 +256,9 @@ nil
 ([nil nil ((apply -3 704 753 undo--wrap-and-run-primitive-undo 704 753 ((704 . 707) 726))) nil (26481 30662 887644 441000) 0 nil])
 ([nil nil ((#("%% \\input{src/pish/5.tex}
 " 0 3 (face font-lock-comment-delimiter-face fontified t) 3 9 (face font-lock-comment-face fontified t) 9 10 (face font-lock-comment-face fontified t) 10 24 (face font-lock-comment-face fontified t) 24 25 (face font-lock-comment-face fontified t) 25 26 (face font-lock-comment-face fontified t)) . 1119) (undo-tree-id60 . -25) (undo-tree-id61 . -26) (undo-tree-id62 . -26) (undo-tree-id63 . -26) (undo-tree-id64 . -26) (undo-tree-id65 . -26) (undo-tree-id66 . -26) (undo-tree-id67 . -26) (undo-tree-id68 . -26) (undo-tree-id69 . -26) (undo-tree-id70 . -26) (undo-tree-id71 . -26)) nil (26481 30662 887641 636000) 0 nil])
-([nil current ((apply 2 1120 1142 undo--wrap-and-run-primitive-undo 1120 1142 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1120) 1144))) nil (26481 30672 606543 189000) 0 nil])
+([nil nil ((apply 2 1120 1142 undo--wrap-and-run-primitive-undo 1120 1142 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1120) 1144))) nil (26481 30672 606543 189000) 0 nil])
+([nil nil ((apply -3 1120 1169 undo--wrap-and-run-primitive-undo 1120 1169 ((1120 . 1123) 1142))) nil (26481 32888 21181 644000) 0 nil])
+([nil nil ((apply 2 1145 1167 undo--wrap-and-run-primitive-undo 1145 1167 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1145) 1169))) nil (26481 32888 21176 144000) 0 nil])
+([nil nil ((apply 10 1167 1277 undo--wrap-and-run-primitive-undo 1167 1277 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1255) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1233) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1211) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1189) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1167) 1287))) nil (26481 32933 869963 469000) 0 nil])
+([nil current ((apply -18 1145 1296 undo--wrap-and-run-primitive-undo 1145 1296 ((1270 . 1273) (1245 . 1248) (1220 . 1223) (1195 . 1198) (1170 . 1173) (1145 . 1148)))) nil (26481 37295 196150 192000) 0 nil])
 nil
