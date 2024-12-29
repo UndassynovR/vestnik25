@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"5554bdab50301e971e495a78dfd1df47bbb408aa"
+"59c649426a81463793788b329b98f60da3656591"
 [nil nil nil nil (26475 35129 286836 563000) 0 nil]
 ([nil nil ((apply -3 1200 1250 undo--wrap-and-run-primitive-undo 1200 1250 ((1200 . 1203) 1222))) nil (26475 35129 286835 430000) 0 nil])
 ([nil nil ((apply -3 1351 1403 undo--wrap-and-run-primitive-undo 1351 1403 ((1351 . 1354) 1374))) nil (26475 35129 286832 122000) 0 nil])
@@ -260,5 +260,8 @@ nil
 ([nil nil ((apply -3 1120 1169 undo--wrap-and-run-primitive-undo 1120 1169 ((1120 . 1123) 1142))) nil (26481 32888 21181 644000) 0 nil])
 ([nil nil ((apply 2 1145 1167 undo--wrap-and-run-primitive-undo 1145 1167 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1145) 1169))) nil (26481 32888 21176 144000) 0 nil])
 ([nil nil ((apply 10 1167 1277 undo--wrap-and-run-primitive-undo 1167 1277 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1255) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1233) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1211) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1189) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1167) 1287))) nil (26481 32933 869963 469000) 0 nil])
-([nil current ((apply -18 1145 1296 undo--wrap-and-run-primitive-undo 1145 1296 ((1270 . 1273) (1245 . 1248) (1220 . 1223) (1195 . 1198) (1170 . 1173) (1145 . 1148)))) nil (26481 37295 196150 192000) 0 nil])
+([nil nil ((apply -18 1145 1296 undo--wrap-and-run-primitive-undo 1145 1296 ((1270 . 1273) (1245 . 1248) (1220 . 1223) (1195 . 1198) (1170 . 1173) (1145 . 1148)))) nil (26481 37295 196150 192000) 0 nil])
+([nil nil ((apply 2 1496 1519 undo--wrap-and-run-primitive-undo 1496 1519 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1496) 1521))) nil (26481 37340 311200 790000) 0 nil])
+([nil nil ((apply -3 1496 1548 undo--wrap-and-run-primitive-undo 1496 1548 ((1496 . 1499) 1519))) nil (26481 40536 870218 797000) 0 nil])
+([nil current ((apply 2 1522 1546 undo--wrap-and-run-primitive-undo 1522 1546 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1522)))) nil (26481 40536 870213 617000) 0 nil])
 nil
