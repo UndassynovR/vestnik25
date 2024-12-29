@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"fa778079d0539d7fa1ab37b4a7275ce1eb334436"
+"7819b60bd84cccb93ac9ad14569a9e81332f4571"
 [nil nil nil nil (26475 35129 286836 563000) 0 nil]
 ([nil nil ((apply -3 1200 1250 undo--wrap-and-run-primitive-undo 1200 1250 ((1200 . 1203) 1222))) nil (26475 35129 286835 430000) 0 nil])
 ([nil nil ((apply -3 1351 1403 undo--wrap-and-run-primitive-undo 1351 1403 ((1351 . 1354) 1374))) nil (26475 35129 286832 122000) 0 nil])
@@ -247,5 +247,10 @@ nil
 " 0 2 (face font-lock-comment-delimiter-face fontified t) 2 24 (face font-lock-comment-face fontified t) 24 25 (face font-lock-comment-face fontified t)) . 857) (undo-tree-id2 . -24) (undo-tree-id3 . -24) (undo-tree-id4 . -2) (undo-tree-id5 . -2) (undo-tree-id6 . -2) (undo-tree-id7 . -2) (undo-tree-id8 . -2) (undo-tree-id9 . -2) (undo-tree-id10 . -2) (undo-tree-id11 . -2) (undo-tree-id12 . -2) (undo-tree-id13 . -2) (undo-tree-id14 . -2) (undo-tree-id15 . -2) (undo-tree-id16 . -2) (undo-tree-id17 . -2) (undo-tree-id18 . -25) 859) nil (26481 29770 502419 17000) 0 nil])
 ([nil nil ((#(">>>>>>> d03f77bb04c1846dadb1dd468b4f48611e8daa71
 " 0 2 (fontified t) 2 48 (fontified t) 48 49 (fontified t)) . 857) (undo-tree-id0 . -48) (undo-tree-id1 . -2) 859) nil (26481 29770 502411 132000) 0 nil])
-([nil current ((apply -3 987 1014 undo--wrap-and-run-primitive-undo 987 1014 ((987 . 990) 1010))) nil (26481 29770 502387 97000) 0 nil])
+([nil nil ((apply -3 987 1014 undo--wrap-and-run-primitive-undo 987 1014 ((987 . 990) 1010))) nil (26481 29770 502387 97000) 0 nil])
+([nil nil ((apply 16 1014 1152 undo--wrap-and-run-primitive-undo 1014 1152 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1129) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -1106) (#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -1083) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -1060) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -1037) (#("%% " 0 3 (face font-lock-comment-delimiter-face fontified t)) . -1014) 1168))) nil (26481 29884 150174 350000) 0 nil])
+([nil nil ((#("\\input{src/pish/5.tex}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t) 7 21 (face font-lock-builtin-face fontified t) 21 22 (fontified t) 22 23 (fontified t)) . 1129) (undo-tree-id52 . -22) (undo-tree-id53 . -23) (undo-tree-id54 . -23) (undo-tree-id55 . -23) (undo-tree-id56 . -23) (undo-tree-id57 . -23) (undo-tree-id58 . -22) (undo-tree-id59 . -23)) nil (26481 29884 150170 954000) 0 nil])
+([nil nil ((apply -15 1014 1145 undo--wrap-and-run-primitive-undo 1014 1145 ((1118 . 1121) (1092 . 1095) (1066 . 1069) (1040 . 1043) (1014 . 1017)))) nil (26481 30100 110308 275000) 0 nil])
+([nil current ((apply 2 704 726 undo--wrap-and-run-primitive-undo 704 726 ((#("% " 0 2 (face font-lock-comment-delimiter-face fontified t)) . -704) 728))) nil (26481 30100 110303 546000) 0 nil])
 nil
