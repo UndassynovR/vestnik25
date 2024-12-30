@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"a20484e68d535fde645f86c45612cd11f9a10efe"
+"10906cb7bbd1ef3188ef1215b29c32e26bfd854f"
 [nil nil nil nil (26474 23279 446922 888000) 0 nil]
 ([nil nil ((712 . 713) (#("
 " 0 1 (fontified t)) . -712) (undo-tree-id0 . -1) 652 (t 26474 22916 24024 768000)) nil (26474 23279 446921 921000) 0 nil])
@@ -576,98 +576,515 @@ c_0 = -30.242, \\quad c_1 = 0.161, \\quad c_2 = -30.391, \\quad c_3 = -0.730, \\
 ([nil nil ((#("," 0 1 (fontified nil)) . -29707) (29708 . 29709) (#("," 0 1 (fontified nil)) . -29687) (29688 . 29689) (#("," 0 1 (fontified t)) . -29668) (29669 . 29670) (#("," 0 1 (fontified nil)) . -29650) (29651 . 29652) (#("," 0 1 (fontified nil)) . -29629) (29630 . 29631) (#("," 0 1 (fontified t)) . -29610) (t 26478 22336 892480 596000) (29611 . 29612) (t 26478 22336 892480 596000)) nil (26478 22356 27020 683000) 0 nil])
 ([nil nil ((28283 . 28290) (#("\\" 0 1 (fontified t)) . -28283) (undo-tree-id818 . -1) 28284 (28283 . 28284) (28282 . 28283) (t 26478 22356 83893 568000) 28282) nil (26478 23035 618874 311000) 0 nil])
 ([nil nil ((29174 . 29175)) nil (26478 23035 618862 102000) 0 nil])
-([nil nil ((16559 . 16560) (t 26478 35274 38120 251000)) nil (26479 49844 700020 261000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 30360) (undo-tree-id6 . -1)) nil (26479 49844 700019 871000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 30360) (undo-tree-id5 . -1)) nil (26479 49844 700019 9000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 30360)) nil (26479 49844 700018 408000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 30689) (undo-tree-id4 . -1)) nil (26479 49844 700018 97000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 30689) (undo-tree-id3 . -1)) nil (26479 49844 700017 436000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 30690)) nil (26479 49844 700016 695000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 31248) (undo-tree-id2 . -1)) nil (26479 49844 700016 294000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 31248) (undo-tree-id1 . -1)) nil (26479 49844 700015 212000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 31248) (undo-tree-id0 . -1)) nil (26479 49844 700011 635000) 0 nil])
-([nil nil ((#("
-" 0 1 (fontified t)) . 31421) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (t 26479 49844 711136 978000)) nil (26479 49846 113317 415000) 0 nil])
-([nil nil ((#("
+([nil nil ((16559 . 39596) (#("- сурет. RFCC каталитикалық крекинг қондырғысының реактор және
+регенератор блогының технологиялық сызбасы}
+\\end{figure}
+
+\\begin{multicols}{2}
+1-суретте RFCC 1000 титулды каталитикалық крекинг қондырғысының реактор
+және регенератор блогының технологиялық схемасы көрсетілген {[}13{]}.
+Қондырғының шикізаты - шикізатты араластыру контейнеріне берілетін
+тікелей айдау мазуты немесе мазут қоспасы және тікелей айдау вакуумды
+газойль фракциясының қоспасы. Араластыру контейнеріне шикізат сорғымен
+реакторға беріледі, алдымен текше өнім ағындарының, жеңіл газойль
+фракциясының (қажет болған жағдайда) және текше циркуляциялық суарудың
+жылуы есебінен шикізат жылу алмастырғыштар блогында қызады. Реакторға
+кіретін шикізаттың температурасы соңғы жылу алмастырғыштың айналма
+жолындағы клапанмен реттеледі.
+
+RFCC каталитикалық крекинг қондырғысында жұмыс жасайтын өндіріс
+қызметкерлерінің, сарапшылардың сауалнамасынан алынған ақпарат реактор
+блогының технологиялық жұмыс режимінің параметрлерінің өзгеру себептері
+реакторға кіретін температураның өзгеруі, катализаторға жиналатын кокс
+мөлшерінің өзгеруіне, сондай-ақ қоршаған ауа температурасының өзгеруіне
+әкелетінін көрсетеді. Бұл өзгерістер регенератордың шығысындағы
+катализаторының температурасына және реактордың кірісіндегі
+катализатордың температурасына әсер етеді. Бұл каталитикалық крекинг
+процесінің параметрлерінің өзгеруіне әкеледі {[}14{]}. Қазіргі уақытта
+RFCC каталитикалық крекинг қондырғысында реактор мен регенератор
+блогының жұмысын басқаруды өндіріс операторы параметрлерді (автоматты)
+тұрақтандыру жүйелерінің параметрлерін, реактордағы, шикізат пен бу
+шығынын, регенератордағы ауа мен бу шығынын, диспенсердегі бу мен ауа
+шығынын, катализатордың қалыпты айналымын қамтамасыз ету мақсатында
+өзгерту арқылы қолмен жүзеге асырады. Осы себепті қажетті октан саны бар
+сапалы бензин алу үшін каталитикалық крекинг процесін басқару үшін шешім
+қабылдауды автоматтандыру өзекті мәселе болып табылады {[}15{]}.
+
+Реактор-регенератор блогының жұмысын сипаттайтын негізгі көрсеткіштер
+реактордағы температура мен қысым болып табылады, бұл регенератордағы
+температураның өзгеруіне әсер етеді, нәтижесінде қондырғының тұрақты
+жұмысына, конверсия дәрежесіне, өнімнің тығыздығы мен фракциялық
+құрамына әсер етеді. Көптеген басқа технологиялық процестер сияқты RFCC
+каталитикалық крекинг қондырғысында жүретін зерттелетін процесс алынған
+бензиннің сапасы туралы айқын емес бастапқы ақпаратпен сипатталады, ол
+модельдерді әзірлеу және каталитикалық крекинг процесін оңтайландыру
+үшін қажет. Бұл жағдайда сараптамалық білімді ұсынудың айқын емес
+модельдерін қолдана отырып, каталитикалық крекинг қондырғысының
+реактор-регенератор блогындағы технологиялық процесті басқарудың
+интеллектуалды жүйесінің алгоритмдерін жасау қажет. Сарапшылардың
+тәжірибесіне, біліміне және түйсігіне сүйене отырып, толық емес ақпарат
+жағдайында лингвистикалық айнымалылардың мәндері үшін тиістілік
+функциялары автоматты түрде қалыптасады {[}16{]}. Реактор-регенератор
+блогының кіріс және шығыс параметрлері айқын емес лингвистикалық
+модельдерді синтездеу әдісі сараптамалық бағалау әдістеріне және айқын
+емес шартты қорытынды ережесіне негізделген.
+
+Каталитикалық крекинг қондырғысынан өнімнің шығуын болжау үшін Шымкент
+мұнай өңдеу зауытында жиналған деректер пайдаланылды. Деректер
+жиынтығына келесі параметрлер кірді: шикізат көлемі, шикізат тығыздығы,
+шикізат температурасы, реактор температурасы, реактор қысымы,
+катализатор шығыны, бензин шығысы. Деректер үш жылдық кезеңді қамтыды.
+Процеске әсер ететін негізгі параметрлер 1-кестеде көрсетілген.
+\\end{multicols}
+
+\\begin{table}[H]
+\\caption*{1 - кесте. Процестің негізгі кіріс, шығыс параметрлері}
+\\centering
+\\begin{tabular}{|l|l|l|l|}
+\\hline
+№ & Белгіленуі & Параметр атауы        & Өлшем бірлігі \\\\ \\hline
+1 & (x1)       & Шикізат шығыны        & т/тәулік      \\\\ \\hline
+2 & (x2)       & Шикізат тығыздығы     & т/м3          \\\\ \\hline
+3 & (x3)       & Шикізат температурасы & С             \\\\ \\hline
+4 & (x4)       & Реактор температурасы & С             \\\\ \\hline
+5 & (x5)       & Реактор қысымы        & кгс/см2       \\\\ \\hline
+6 & (x6)       & Катализатор шығыны    & т/тәулік      \\\\ \\hline
+7 & \\textit{Y} & Бензин көлемі         & \\%            \\\\ \\hline
+\\end{tabular}
+\\end{table}
+
+\\begin{longtable}[c]{|l|l|l|l|l|l|l|l|l|l|}
+\\caption*{2 - кесте. Каталитикалық крекинг процесінің параметрлерінің
+статистикалық көрсеткіштеріне сәйкес болжау} \\\\
+\\hline
+№ & \\textit{x1} & \\textit{x2} & \\textit{x3} & \\textit{x4} & \\textit{x5} & \\textit{x6} & \\begin{minipage}{1.5cm}\\textit{y-тің өндірістегі мәні}\\end{minipage} & \\begin{minipage}{1.5cm}\\textit{y-тің анықталған мәні}\\end{minipage} & Ауытқу \\\\ \\hline
+\\endfirsthead
+%
+\\endhead
+%
+1  & 241.8 & 0.899 & 206.3 & 517.8 & 2.26 & 1679.46 & 48.7 & 49.028339 & -0.328339 \\\\ \\hline
+2  & 241.6 & 0.898 & 208.8 & 518.0 & 2.3  & 1692.4  & 48.6 & 48.719417 & -0.119417 \\\\ \\hline
+3  & 242.5 & 0.898 & 209.1 & 517.6 & 2.3  & 1695.8  & 49.2 & 48.755016 & 0.444984  \\\\ \\hline
+4  & 241.4 & 0.898 & 208.8 & 517.7 & 2.3  & 1684.0  & 49.1 & 48.665739 & 0.434261  \\\\ \\hline
+5  & 240.9 & 0.901 & 210.4 & 517.8 & 2.2  & 1725.0  & 48.8 & 48.503400 & 0.296600  \\\\ \\hline
+6  & 241.6 & 0.901 & 213.4 & 517.9 & 2.3  & 1763.0  & 48.7 & 47.988852 & 0.711148  \\\\ \\hline
+7  & 241.9 & 0.899 & 212.4 & 517.9 & 2.3  & 1771.5  & 48.5 & 48.136549 & 0.363451  \\\\ \\hline
+8  & 241.4 & 0.900 & 212.3 & 517.6 & 2.3  & 1752.8  & 48.8 & 48.053057 & 0.746943  \\\\ \\hline
+9  & 240.2 & 0.900 & 214.3 & 518.3 & 2.2  & 1767.4  & 48.4 & 48.057432 & 0.342568  \\\\ \\hline
+10 & 240.8 & 0.901 & 214.1 & 518.1 & 2.3  & 1780.7  & 47.9 & 47.774196 & 0.125804  \\\\ \\hline
+11 & 155.6 & 0.901 & 196.6 & 515.4 & 2.2  & 1099.6  & 37.1 & 37.843743 & -0.743743 \\\\ \\hline
+12 & 237.6 & 0.901 & 211.7 & 517.6 & 2.2  & 1745.1  & 47.3 & 47.758377 & -0.458377 \\\\ \\hline
+13 & 239.2 & 0.900 & 213.0 & 518.1 & 2.2  & 1781.6  & 48.8 & 47.896658 & 0.903342  \\\\ \\hline
+14 & 239.6 & 0.901 & 217.1 & 518.0 & 2.2  & 1766.9  & 48.4 & 47.672751 & 0.727249  \\\\ \\hline
+15 & 239.6 & 0.901 & 216.5 & 518.3 & 2.2  & 1774.4  & 48.1 & 47.741578 & 0.358422  \\\\ \\hline
+16 & 239.4 & 0.901 & 215.6 & 518.3 & 2.2  & 1754.3  & 47.9 & 47.856243 & 0.043757  \\\\ \\hline
+17 & 239.8 & 0.902 & 213.8 & 518.5 & 2.2  & 1742.1  & 47.9 & 48.107864 & -0.207864 \\\\ \\hline
+18 & 239.8 & 0.901 & 213.4 & 518.7 & 2.3  & 1748.7  & 48.0 & 47.904229 & 0.095771  \\\\ \\hline
+19 & 239.8 & 0.901 & 214.5 & 519.0 & 2.2  & 1743.1  & 48.0 & 48.175504 & -0.175504 \\\\ \\hline
+20 & 239.8 & 0.901 & 211.9 & 519.0 & 2.2  & 1743.0  & 47.5 & 48.365504 & -0.865504 \\\\ \\hline
+21 & 239.1 & 0.901 & 212.9 & 519.1 & 2.3  & 1735.5  & 47.1 & 47.955085 & -0.855085 \\\\ \\hline
+22 & 223.8 & 0.900 & 214.7 & 518.9 & 2.2  & 1762.5  & 46.3 & 45.514946 & 0.785054  \\\\ \\hline
+23 & 216.4 & 0.901 & 209.5 & 519.5 & 2.2  & 1560.2  & 47.5 & 45.599599 & 1.900401  \\\\ \\hline
+24 & 231.0 & 0.901 & 211.8 & 519.2 & 2.2  & 1689.0  & 50.5 & 47.209394 & 3.290606  \\\\ \\hline
+25 & 238.0 & 0.900 & 214.9 & 519.0 & 2.2  & 1761.9  & 46.5 & 47.810517 & -1.310517 \\\\ \\hline
+26 & 237.7 & 0.901 & 214.2 & 519.0 & 2.2  & 1773.7  & 46.7 & 47.735090 & -1.035090 \\\\ \\hline
+27 & 237.6 & 0.901 & 214.4 & 518.9 & 2.3  & 1754.7  & 46.7 & 47.489306 & -0.789306 \\\\ \\hline
+28 & 237.5 & 0.901 & 214.1 & 518.9 & 2.3  & 1766.6  & 46.9 & 47.446940 & -0.546940 \\\\ \\hline
+29 & 237.8 & 0.901 & 213.1 & 518.9 & 2.2  & 1752.4  & 47.0 & 47.899089 & -0.899089 \\\\ \\hline
+30 & 238.0 & 0.900 & 212.2 & 518.8 & 2.2  & 1739.9  & 47.2 & 48.059431 & 0.859431  \\\\ \\hline
+31 & 237.7 & 0.900 & 212.9 & 519.0 & 2.2  & 1740.7  & 47.0 & 47.993722 & -0.993722 \\\\ \\hline
+32 & 237.7 & 0.900 & 212.6 & 518.9 & 2.2  & 1765.0  & 47.1 & 47.898868 & -0.798868 \\\\ \\hline
+33 & 237.6 & 0.899 & 212.2 & 519.0 & 2.3  & 1757.4  & 47.3 & 47.718064 & -0.418064 \\\\ \\hline
+34 & 238.6 & 0.899 & 212.5 & 518.9 & 2.2  & 1744.3  & 47.2 & 48.165351 & -0.965351 \\\\ \\hline
+35 & 240.2 & 0.898 & 212.1 & 518.9 & 2.3  & 1763.5  & 47.3 & 48.131774 & -0.831774 \\\\ \\hline
+36 & 240.8 & 0.898 & 212.7 & 518.9 & 2.2  & 1775.6  & 48.2 & 48.409264 & -0.209264 \\\\ \\hline
+37 & 241.4 & 0.899 & 212.9 & 518.9 & 2.2  & 1767.8  & 48.5 & 48.492558 & 0.007442  \\\\ \\hline
+38 & 241.0 & 0.899 & 212.3 & 518.8 & 2.2  & 1793.4  & 49.0 & 48.349838 & 0.650162  \\\\ \\hline
+39 & 240.2 & 0.898 & 210.4 & 519.1 & 2.3  & 1770.4  & 49.1 & 48.264773 & 0.835227  \\\\ \\hline
+40 & 240.9 & 0.899 & 208.4 & 518.9 & 2.2  & 1789.6  & 49.0 & 48.651943 & 0.348057  \\\\ \\hline
+\\end{longtable}
+
+\\begin{multicols}{2}
+Анықтауға арналған негізгі құрал ретінде регрессиялық модель таңдалды.
+Бұл әдіс оны талдауға ыңғайлы болуы мен қарапайымдылығы байланысты
+таңдалды. Регрессия моделі Python-дағы scikit-learn кітапханасының
+көмегімен жүзеге асырылды. Регрессия функциясы тәуелсіз айнымалылар
+(шикізат көлемі, шикізат тығыздығы, шикізат температурасы, реактор
+температурасы, реактор қысымы, катализатор шығыны) мен тәуелді айнымалы
+(бензин шығымы) арасындағы байланыс болды (2-кесте). Модельдің дәлдігін
+бағалау үшін келесі көрсеткіштер қолданылды:
+
+- Орташа квадраттық қате (MSE): болжау қателіктерінің орташа квадратын
+өлшеу;
+
+- Детерминация коэффициенті (R2): тәуелді айнымалы модель арқылы
+түсіндірілетін дисперсияның үлесін көрсететін көрсеткіш.
+
+Талдау мен модельдеуді орындау үшін келесі бағдарламалық құралдар
+қолданылды:
+
+- Python 3.9-деректерді өңдеуге және модель құруға арналған
+бағдарламалау тілі;
+
+- Pandas-деректерді тазарту және талдау құралдарын қамтитын деректер
+кітапханасы;
+
+- Сандық есептеулерді орындауға арналған NumPy-кітапхана;
+
+- scikit-learn-Машиналық оқыту модельдерін құруға және бағалауға
+арналған кітапхана.
+
+- Matplotlib және Seaborn-деректер мен модельдеу нәтижелерін
+визуализациялауға арналған кітапханалар.
+
+Болжау нәтижелерін визуализациялау үшін болжамды мәндердің нақты
+мәндерге тәуелділік графиктері, сондай-ақ болжау қателерінің графиктері
+қолданылды. Бұл модельдің дәлдігін нақты көрсетуге және ықтимал
+кемшіліктерді анықтауға мүмкіндік берді.
+
+Нәтижелер мен талқылау. Әдебиеттерді талдау және жүргізілген
+зерттеулер негізінде реактор мен регенератордың математикалық
+модельдерінің құрылымын таңдау жүргізілді {[}17,18,19{]}. Реактор мен
+Регенератор блогын басқару алгоритмінде каталитикалық крекинг
+қондырғысының RFCC қондырғысымен жұмыс жасайтын персоналдың
+тәжірибесін қолданған жөн.  Сараптамалық білімді ресімдеу мақсатында
+сарапшыларға сауалнама жүргізілді, ол каталитикалық крекинг процесіне
+әсер ететін негізгі параметрлерді анықтауға мүмкіндік
+берді. Блоктардағы қалыпты режимді бұзатын негізгі ауытқытушы
+параметрлер шикізаттың шығыны $x_1$, тығыздығы $x_2$, температурасы $x_3$ болып
+табылады. Процеске әсер ететін негізгі факторлар - реактордағы
+температура $x_4$ мен қысым $x_5$, қалпына келтірілген катализатордың шығыны
+$x_6$. Қондырғының кіріс параметрлерінің тиімділігін сипаттайтын шығыс
+параметрінің математикалық тәуелділігін алу үшін Шымкент мұнай өңдеу
+зауытының статистикалық деректері негізінде эксперимент
+жүргізілді. Реактордағы температура мен қысым мәндері бергіштің
+көрсеткіштеріне сәйкес келеді. Шикізат пен сұйық газды тұтыну мәндері
+шығын өлшегіштердің көмегімен анықталады. Алайда, реактордан шыққан
+кезде бензинді өлшейтін шығын өлшегіштің болмауына байланысты үлкен
+қиындықтар болды. y параметрінің мәні субъективті түрде, әр бақылау
+кезінде қондырғы операторының технологына сауалнама жүргізу арқылы
+алынды. Бұл y параметрінің мәндеріндегі айқын емес ретінде
+түсіндірілетін белгісіздікке әкелді.
+
+Процесті сипаттайтын регрессия теңдеуі мына түрде таңдалды:
+\\end{multicols}
+
+\\begin{equation}
+\\tilde{y}=\\tilde{c_0}+\\tilde{c_1}x_1+\\tilde{c_2}x_2+\\tilde{c_3}x_3+\\tilde{c_4}x_4+\\tilde{c_5}x_5+\\tilde{c_6}x_6
+\\end{equation}
+
+бағалау коэффиценттерін анықтау үшін Python тілінде бағдарламалық код жазылды:
+
+\\small{
+\\begin{lstlisting}
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.datasets import make_regression
+
+df = pd.read_excel('StableGasoline.xlsx')
+x = df[['x1']]  # , 'x2', 'x3', 'x4', 'x5', 'x6']]
+y = df['y']
+
+model = LinearRegression()
+model.fit(x, y)
+
+LinearRegression()
+
+predictions = model.predict(x)
+y_pred = model.predict(x)
+
+intercept = model.intercept_
+coefficients = model.coef_
+
+from sklearn.metrics import r2_score
+r2 = r2_score(y, predictions)
+
+n = len(y)
+p = x.shape[1]
+
+adjusted_r2 = 1 - (1 - r2) * (n - 1) / (n - p - 1)
+
+sse = np.sum((y - predictions) ** 2)
+ssr = np.sum((y_pred - np.mean(y)) ** 2)
+
+residuals = y - predictions
+
+plt.xlabel(\"Шикізат\")
+plt.ylabel(\"Бензин шығымы\")
+plt.scatter(x, y)
+plt.plot(x, y_pred)
+\\end{lstlisting}}
+
+\\begin{multicols}{2}
+Регрессия моделі шикізат құрамы, процесс шарттары және катализатордың
+сипаттамалары туралы мәліметтер негізінде сәтті құрылды. Талдау
+нәтижесінде каталитикалық крекинг қондырғысынан бензиннің шығуына
+факторлардың әрқайсысының әсерін көрсететін регрессия коэффициенттері
+алынды
+
+Статистикаға сәйкес (1) теңдеу коэффициенттерін есептеу нәтижелері
+келесідей:
+\\end{multicols}
+
+\\begin{equation*}
+\\begin{aligned}
+c_0 &= -30.242; \\quad c_1 = 0.161; \\quad c_2 = -30.391; \\\\
+c_3 &= -0.730; \\quad c_4 = 0.185; \\quad c_5 = -2.734; \\quad c_6 = -0.004.
+\\end{aligned}
+\\end{equation*}
+
+Осылайша, бензин шығысының параметрлерге айқын емес тәуелділігін
+сипаттайтын теңдеу келесідей болады:
+
+\\begin{equation}
+y=-30.342_0+0.161x_1-30.391x_2-0.730x_3+0.185x_4-2.734x_5-0.004x_6
+\\end{equation}
+
+Тұрғызылған модельге сәйкес шикізат шығыны, катализатор, реактор мен
+регенератордың температурасы, реактордағы қысым сияқты кіріс
+параметрлеріне өнімнің шығысының (тұрақты бензин) графиктері алынды
+(2-5-суреттер).
+
 \\begin{figure}[H]
 	\\centering
 	\\includegraphics[width=0.8\\textwidth]{media/ict/image95}
 	\\caption*{2-сурет. Бензин шығымының шикізат тығыздығынан тәуелділігі}
 \\end{figure}
-" 0 1 (fontified t) 1 7 (face font-lock-keyword-face fontified t) 7 8 (fontified t latex-env-pair t) 8 11 (face font-lock-function-name-face fontified t latex-env-pair t) 11 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 20 (fontified t) 20 30 (face font-lock-keyword-face fontified t) 30 32 (fontified t) 32 48 (face font-lock-keyword-face fontified t) 48 58 (fontified t) 58 68 (face font-lock-keyword-face fontified t) 68 70 (fontified t) 70 87 (face font-lock-builtin-face fontified t) 87 90 (fontified t) 90 99 (face font-lock-keyword-face fontified t) 99 160 (fontified t) 160 164 (face font-lock-keyword-face fontified t) 164 165 (fontified t latex-env-pair t) 165 166 (face font-lock-function-name-face fontified t latex-env-pair t) 166 171 (fontified t face font-lock-function-name-face latex-env-pair t) 171 172 (fontified t latex-env-pair t) 172 173 (fontified t)) . 30187) (undo-tree-id24 . -160) (undo-tree-id25 . -172) (undo-tree-id26 . -160) (undo-tree-id27 . -160) 30347 (t 26479 49846 120121 19000)) nil (26479 51674 912264 120000) 0 nil])
-([nil nil ((nil rear-nonsticky nil 29570 . 29571) (#("
-" 0 1 (fontified nil)) . -29743) (29570 . 29744) 29555) nil (26479 51674 912250 575000) 0 nil])
-([nil nil ((30146 . 30167) (30512 . 30528) (t 26479 51674 921668 411000)) nil (26479 51700 344022 364000) 0 nil])
-([nil nil ((30727 . 30748) (31106 . 31122)) nil (26479 51734 206681 562000) 0 nil])
-([nil nil ((35234 . 35236) (t 26479 51734 662003 433000)) nil (26479 51773 637409 6000) 0 nil] [nil nil ((29629 . 29630) (t 26479 51722 145142 795000)) ((#("5" 0 1 (fontified t)) . 29629) (t 26479 51726 691092 184000)) (26479 51726 681996 998000) 0 nil] [nil nil ((30607 . 30608) (t 26479 51700 352385 381000)) ((#("5" 0 1 (fontified t)) . 30607) (t 26479 51713 214242 224000)) (26479 51713 208127 654000) 0 nil])
-([nil nil ((#("\\begin{enumerate}
-" 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 18 (fontified t)) . 33980) (undo-tree-id34 . -17) (undo-tree-id35 . -3) 33983 (t 26479 51759 901722 391000)) nil (26479 51848 583868 160000) 0 nil] [nil nil ((#("\\def\\labelenumi{\\arabic{enumi}.}
-" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t) 5 15 (face font-lock-function-name-face fontified t) 15 16 (fontified t) 16 23 (face font-lock-keyword-face fontified t) 23 33 (fontified t)) . 33998) (undo-tree-id28 . -32) (undo-tree-id29 . -3) 34001 (t 26479 51759 901722 391000)) ((33998 . 34031)) (26479 51773 637211 256000) 0 nil])
-nil
-nil
-([nil nil ((#("\\def\\labelenumi{\\arabic{enumi}.}
-" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t) 5 15 (face font-lock-function-name-face fontified t) 15 16 (fontified t) 16 23 (face font-lock-keyword-face fontified t) 23 32 (fontified t) 32 33 (fontified t)) . 33980) (undo-tree-id32 . -32) (undo-tree-id33 . -3) 33983) nil (26479 51848 583866 787000) 0 nil])
-nil
-([nil nil ((#("\\end{enumerate}
-" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 35725) (undo-tree-id30 . -15) (undo-tree-id31 . -3) 35728) nil (26479 51848 583865 315000) 0 nil])
-([nil nil ((nil fontified t 35195 . 35196) (nil face font-lock-keyword-face 35195 . 35196) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 7 (fontified t)) . -35195) (35202 . 35205) (nil fontified t 34836 . 34837) (nil face font-lock-keyword-face 34836 . 34837) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 7 (fontified t)) . -34836) (34843 . 34846) (nil fontified t 34580 . 34581) (nil face font-lock-keyword-face 34580 . 34581) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 7 (fontified t)) . -34580) (34587 . 34590) (nil fontified t 34273 . 34274) (nil face font-lock-keyword-face 34273 . 34274) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 7 (fontified t)) . -34273) (34280 . 34283) (nil fontified t 33981 . 33982) (nil fontified t 33980 . 33981) (nil face font-lock-keyword-face 33980 . 33981) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 6 (fontified t) 6 7 (fontified t)) . -33980) (33987 . 33990)) nil (26479 51848 583856 288000) 0 nil])
-([nil nil ((nil fontified t 35526 . 35527) (nil face font-lock-keyword-face 35526 . 35527) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 7 (fontified t)) . -35526) (35533 . 35536)) nil (26479 51848 583917 773000) 0 nil])
-([nil nil ((nil fontified t 35527 . 35528) (#("1" 0 1 (fontified t)) . -35527) (35528 . 35529) (#("1" 0 1 (fontified t)) . -35196) (35197 . 35198) (#("1" 0 1 (fontified t)) . -34837) (34838 . 34839) (#("1" 0 1 (fontified t)) . -34581) (34582 . 34583) (#("1" 0 1 (fontified t)) . -34274) (34275 . 34276) 34274) nil (26479 51859 271219 68000) 0 nil] [nil nil ((35528 . 35529)) ((#(" " 0 1 (fontified t)) . 35528)) (26479 51848 583851 198000) 0 nil])
-([nil nil ((#("\\begin{enumerate}
-" 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 18 (fontified t)) . 35791) (undo-tree-id40 . -17) (t 26479 51859 280614 988000)) nil (26479 51872 660391 861000) 0 nil])
-nil
-([nil nil ((#("\\def\\labelenumi{\\arabic{enumi}.}
-" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t) 5 15 (face font-lock-function-name-face fontified t) 15 16 (fontified t) 16 23 (face font-lock-keyword-face fontified t) 23 32 (fontified t) 32 33 (fontified t)) . 35791) (undo-tree-id39 . -32)) nil (26479 51872 660391 100000) 0 nil])
-([nil nil ((#("\\setcounter{enumi}{6}
-" 0 4 (face font-lock-keyword-face fontified t) 4 11 (face font-lock-keyword-face fontified t) 11 12 (fontified t) 12 17 (face font-lock-variable-name-face fontified t) 17 21 (fontified t) 21 22 (fontified t)) . 35791) (undo-tree-id38 . -21)) nil (26479 51872 660390 439000) 0 nil])
-([nil nil ((#("\\end{enumerate}
-" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 36486) (undo-tree-id37 . -15)) nil (26479 51872 660389 607000) 0 nil])
-([nil nil ((nil fontified t 36172 . 36173) (nil face font-lock-keyword-face 36172 . 36173) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 7 (fontified t)) . -36172) (36179 . 36182) (nil fontified t 35792 . 35793) (nil fontified t 35791 . 35792) (nil face font-lock-keyword-face 35791 . 35792) (#("\\item
- " 0 5 (face font-lock-keyword-face fontified t) 5 6 (fontified t) 6 7 (fontified t)) . -35791) (35798 . 35801)) nil (26479 51872 660447 856000) 0 nil])
-([nil nil ((35792 . 35793) (#("1" 0 1 (fontified t)) . 35792) (undo-tree-id42 . -1)) nil (26479 51876 614318 798000) 0 nil] [nil nil ((35860 . 35861) (#(" " 0 1 (fontified t)) . 35860) (undo-tree-id36 . -1)) ((35860 . 35861) (#("n" 0 1 (fontified t)) . 35860)) (26479 51872 660386 40000) 0 nil])
-([nil nil ((36173 . 36174) (#("1" 0 1 (fontified t)) . 36173) (undo-tree-id41 . -1)) nil (26479 51876 614315 241000) 0 nil])
-nil
-([nil nil ((35704 . 35705) (#("
-" 0 1 (fontified t)) . -35704) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (35700 . 35701) (#("
-" 0 1 (fontified t)) . -35700) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1) (undo-tree-id58 . -1) (undo-tree-id59 . -1) (#("
-" 0 1 (fontified t)) . -35700) (undo-tree-id60 . -1) (undo-tree-id61 . -1) (undo-tree-id62 . -1) (undo-tree-id63 . -1) (undo-tree-id64 . -1) (undo-tree-id65 . -1) (undo-tree-id66 . -1) (undo-tree-id67 . -1) (undo-tree-id68 . -1) (undo-tree-id69 . -1) (undo-tree-id70 . -1) 35669 (t 26479 51876 620421 644000)) nil (26479 51901 242178 770000) 0 nil])
-([nil nil ((35425 . 35426) (#("  " 0 2 (fontified nil)) . 35425) (#("
-" 0 1 (fontified t)) . -35425) (undo-tree-id71 . -1) (undo-tree-id72 . -1) 35424 (t 26479 51901 251146 936000)) nil (26479 51906 244622 90000) 0 nil])
-([nil nil ((36392 . 36393) (#("  " 0 2 (fontified nil)) . 36392) (#("
-" 0 1 (fontified t)) . -36392) (undo-tree-id127 . -1) (undo-tree-id128 . -1) 36391 (t 26479 51906 253091 132000)) nil (26479 51924 785140 871000) 0 nil])
-([nil nil ((36393 . 36395)) nil (26479 51924 785139 248000) 0 nil])
-([nil nil ((#("@" 0 1 (fontified t)) . -36393) (undo-tree-id73 . -1) (undo-tree-id74 . -1) (undo-tree-id75 . -1) (undo-tree-id76 . -1) (undo-tree-id77 . -1) (undo-tree-id78 . -1) (undo-tree-id79 . -1) (undo-tree-id80 . -1) (undo-tree-id81 . -1) (undo-tree-id82 . -1) (undo-tree-id83 . -1) (undo-tree-id84 . -1) (undo-tree-id85 . -1) (undo-tree-id86 . -1) (undo-tree-id87 . -1) (undo-tree-id88 . -1) (undo-tree-id89 . -1) (undo-tree-id90 . -1) (undo-tree-id91 . -1) (undo-tree-id92 . -1) (undo-tree-id93 . -1) (undo-tree-id94 . -1) (undo-tree-id95 . -1) (undo-tree-id96 . -1) (undo-tree-id97 . -1) (undo-tree-id98 . -1) (undo-tree-id99 . -1) (undo-tree-id100 . -1) (undo-tree-id101 . -1) (undo-tree-id102 . -1) (undo-tree-id103 . -1) (undo-tree-id104 . -1) (undo-tree-id105 . -1) (undo-tree-id106 . -1) (undo-tree-id107 . -1) (undo-tree-id108 . -1) (undo-tree-id109 . -1) (#("\\" 0 1 (face font-lock-warning-face fontified t)) . -36394) (undo-tree-id110 . -1) (undo-tree-id111 . -1) (undo-tree-id112 . -1) (undo-tree-id113 . -1) (undo-tree-id114 . -1) (undo-tree-id115 . -1) (undo-tree-id116 . -1) (undo-tree-id117 . -1) (undo-tree-id118 . -1) (undo-tree-id119 . -1) (undo-tree-id120 . -1) (undo-tree-id121 . -1) (undo-tree-id122 . -1) (undo-tree-id123 . -1) (undo-tree-id124 . -1) (undo-tree-id125 . -1) (undo-tree-id126 . -1) 36395) nil (26479 51924 785137 415000) 0 nil])
-([nil nil ((36393 . 36395)) nil (26479 51924 785097 871000) 0 nil])
-([nil nil ((#("i" 0 1 (face font-lock-warning-face fontified nil)) . -36395) (undo-tree-id129 . -1) (36395 . 36396) (t 26479 51924 790884 301000)) nil (26479 51932 53112 526000) 0 nil])
-([nil nil ((#("  " 0 2 (fontified t)) . -36321) (#("  " 0 2 (fontified t)) . -36255) (#("  " 0 2 (fontified t)) . -36185) (#("  " 0 2 (fontified t)) . -36037) (#("  " 0 2 (fontified t)) . -36012) (#("  " 0 2 (fontified t)) . -35941) (#("  " 0 2 (fontified t)) . -35879) (#("  " 0 1 (fontified t) 1 2 (fontified t)) . -35811) (#("  " 0 2 (fontified t)) . -35623) (#("  " 0 2 (fontified t)) . -35552) (#("  " 0 2 (fontified t)) . -35447) (#("  " 0 2 (fontified t)) . -35372) (#("  " 0 2 (fontified t)) . -35301) (#("  " 0 2 (fontified t)) . -35232) (#("  " 0 2 (fontified t)) . -35133) (#("  " 0 2 (fontified t)) . -35084) (#("  " 0 2 (fontified t)) . -35013) (#("  " 0 2 (fontified t)) . -34952) (#("  " 0 2 (fontified t)) . -34883) (#("  " 0 2 (fontified t)) . -34784) (#("  " 0 2 (fontified t)) . -34730) (#("  " 0 2 (fontified t)) . -34706) (#("  " 0 2 (fontified t)) . -34636) (#("  " 0 2 (fontified t)) . -34541) (#("  " 0 2 (fontified t)) . -34472) (#("  " 0 2 (fontified t)) . -34406) (#("  " 0 2 (fontified t)) . -34338) (#("  " 0 2 (fontified t)) . -34234) (#("  " 0 2 (fontified t)) . -34177) (#("  " 0 2 (fontified t)) . -34115) (#("  " 0 2 (fontified t)) . -34054) 33994 (t 26479 51924 790884 301000)) nil (26479 51932 53101 436000) 0 nil])
-([nil nil ((36848 . 36849) (#("
-" 0 1 (fontified t)) . -36848) (undo-tree-id130 . -1) (36844 . 36845) (#("
-" 0 1 (fontified t)) . -36844) (undo-tree-id131 . -1) (#("
-" 0 1 (fontified t)) . -36844) (undo-tree-id132 . -1) (undo-tree-id133 . -1) (undo-tree-id134 . -1) (undo-tree-id135 . -1) (undo-tree-id136 . -1) (undo-tree-id137 . -1) (undo-tree-id138 . -1) (undo-tree-id139 . -1) (undo-tree-id140 . -1) (undo-tree-id141 . -1) (undo-tree-id142 . -1) 36818 (t 26479 51932 61803 165000)) nil (26479 51939 860341 107000) 0 nil])
-([nil nil ((37146 . 37147) (#("
-" 0 1 (fontified t)) . -37146) (undo-tree-id143 . -1) 37145 (t 26479 51939 869716 39000)) nil (26479 51958 179487 576000) 0 nil])
-([nil nil ((37147 . 37149)) nil (26479 51958 179475 714000) 0 nil])
-([nil nil ((#("i" 0 1 (face font-lock-warning-face fontified nil)) . -37149) (undo-tree-id144 . -1) (37149 . 37150) (t 26479 51958 188511 575000)) nil (26479 51984 395939 277000) 0 nil])
-([nil nil ((#("i" 0 1 (fontified nil)) . -37602) (undo-tree-id228 . -1) (undo-tree-id229 . -1) (undo-tree-id230 . -1) (undo-tree-id231 . -1) (undo-tree-id232 . -1) (undo-tree-id233 . -1) (37601 . 37603)) nil (26479 52018 688351 962000) 0 nil] [nil nil ((37603 . 37604) (t 26479 51958 188511 575000)) ((#("-" 0 1 (fontified t)) . 37603) (undo-tree-id145 . -1) (undo-tree-id146 . -1) (undo-tree-id147 . -1) (undo-tree-id148 . -1) (undo-tree-id149 . -1) (undo-tree-id150 . -1) (undo-tree-id151 . -1) (undo-tree-id152 . -1) (undo-tree-id153 . -1) (undo-tree-id154 . -1) (undo-tree-id155 . -1) (undo-tree-id156 . -1) (undo-tree-id157 . -1) (undo-tree-id158 . -1) (undo-tree-id159 . -1) (undo-tree-id160 . -1) (undo-tree-id161 . -1) (undo-tree-id162 . -1) (undo-tree-id163 . -1) (undo-tree-id164 . -1) (undo-tree-id165 . -1) (undo-tree-id166 . -1) (undo-tree-id167 . -1) (undo-tree-id168 . -1) (undo-tree-id169 . -1) (undo-tree-id170 . -1) (undo-tree-id171 . -1) (undo-tree-id172 . -1) (undo-tree-id173 . -1) (undo-tree-id174 . -1) (undo-tree-id175 . -1) (undo-tree-id176 . -1) (undo-tree-id177 . -1) (undo-tree-id178 . -1) (undo-tree-id179 . -1) (undo-tree-id180 . -1) (undo-tree-id181 . -1) (undo-tree-id182 . -1) (undo-tree-id183 . -1) (undo-tree-id184 . -1) (undo-tree-id185 . -1) (undo-tree-id186 . -1) (undo-tree-id187 . -1) (undo-tree-id188 . -1) (undo-tree-id189 . -1) (undo-tree-id190 . -1) (undo-tree-id191 . -1) (undo-tree-id192 . -1) (undo-tree-id193 . -1) (undo-tree-id194 . -1) (undo-tree-id195 . -1) (undo-tree-id196 . -1) (undo-tree-id197 . -1) (undo-tree-id198 . -1) (undo-tree-id199 . -1) (undo-tree-id200 . -1) (undo-tree-id201 . -1) (undo-tree-id202 . -1) (undo-tree-id203 . -1) (undo-tree-id204 . -1) (undo-tree-id205 . -1) (undo-tree-id206 . -1) (undo-tree-id207 . -1) (undo-tree-id208 . -1) (undo-tree-id209 . -1) (undo-tree-id210 . -1) (undo-tree-id211 . -1) (undo-tree-id212 . -1) (undo-tree-id213 . -1) (undo-tree-id214 . -1) (undo-tree-id215 . -1) (undo-tree-id216 . -1) (undo-tree-id217 . -1) (undo-tree-id218 . -1) (undo-tree-id219 . -1) (undo-tree-id220 . -1) (undo-tree-id221 . -1) (undo-tree-id222 . -1) (undo-tree-id223 . -1) (undo-tree-id224 . -1) (undo-tree-id225 . -1) (undo-tree-id226 . -1) (undo-tree-id227 . -1) (t 26479 51977 728293 425000)) (26479 51977 718973 332000) 0 nil])
-([nil nil ((#("i" 0 1 (fontified nil)) . -37038) (undo-tree-id234 . -1) (undo-tree-id235 . -1) (undo-tree-id236 . -1) (undo-tree-id237 . -1) (undo-tree-id238 . -1) (undo-tree-id239 . -1) (37037 . 37039) (t 26479 52018 697835 897000)) nil (26479 52039 772618 179000) 0 nil])
-nil
-([nil nil ((37905 . 37906) (t 26479 52039 781600 365000)) nil (26479 52049 583587 938000) 0 nil])
-([nil nil ((#("i" 0 1 (fontified nil)) . -37906) (undo-tree-id240 . -1) (37906 . 37907) (t 26479 52049 593490 721000)) nil (26479 52075 327652 150000) 0 nil])
-([nil current ((39594 . 39596) (t 26479 52049 593490 721000)) nil (26479 52075 327641 891000) 0 nil])
+
+
+
+
+2-суретте бензин шығымының шикізат тығыздығына тәуелділік графигі
+тұрғызылған. График бензин тығыздығының бензин шығымына кері
+тәуелділігін көрсетеді.
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image96}
+	\\caption*{3-сурет. Бензин шығымының шикізат температурасынан тәуелділігі}
+\\end{figure}
+
+
+
+
+3-суретте бензин шығымының шикізат температурасынан тәуелділігінің
+өндірістік және есептелген мәндерінің сәйкестігін көруге болады. Шикізат
+температурасын суретте көрсетілген мәнге дейін арттыру арқылы бензин
+шығымын айтарлықтай көбейтуге болады. Сондай-ақ тұрғызылған графиктен
+модель арқылы есептелген мәннің өндірістік мәндерге жақын болуы
+модельдің адекваттылығын көрсетеді.
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image97}
+	\\caption*{4 - сурет. Бензин шығымының реактор температурасынан
+тәуелділігі}
+\\end{figure}
+
+
+
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image98}
+	\\caption*{5-сурет. Бензин шығымының реактордағы қысымнан тәуелділігі}
+\\end{figure}
+
+
+\\begin{multicols}{2}
+4,5-суреттерде бензин шығымының сәйкесінше реактор температурасы мен
+қысымынан тәуелділік графигін көруге болады. Каталитикалық крекинг
+бойынша негізгі процестер реактор бөлігінде жүргізілетіндіктен
+реактордың параметрлерін есепке алу маңызды. Алынған графиктен
+өндірістік және есептелген мәннің шамаларының жақындығын байқауға
+болады.
+
+Сынауға арналған деректер жиынтығындағы модельдің дәлдігін бағалау
+орташа қалдық қате (MSE) 0.754-ке тең екенін көрсетті. Бұл мән болжанған
+мәндердің нақты мәндерден ауытқуының рұқсат етілген деңгейін көрсетеді.
+Детерминация коэффициенті (R2) 0.792-ге тең. R2 мәні модель тәуелді
+айнымалының 79\\% вариациясын көрсетеді, бұл көптеген әсер ететін
+факторлары бар өнеркәсіптік процесс үшін жақсы нәтиже. Регрессия
+коэффициенттері өнімнің шығуына әсер ететін ең маңызды факторлар мыналар
+екенін көрсетті:
+
+- реактордың температурасы: температураның жоғарылауы бензин сияқты
+жеңіл өнімдердің шығуына оң әсер етеді;
+
+- катализатордың сипаттамалары: катализатордың белсенділігі күткенге
+сәйкес келетін бензин шығымымен тікелей корреляцияны көрсетті.
+
+Регрессия моделі өзін өнімнің шығуын болжаудың сенімді құралы ретінде
+көрсетті. Алайда, сызықтық емес тәуелділіктер немесе ескерілмеген
+айнымалылар арасындағы өзара әрекеттесулер болған кезде оның дәлдігі
+төмендеуі мүмкін. Болашақта болжамдардың дәлдігін жақсарту үшін гибридті
+модельдерді қолдануды қарастырған жөн.
+
+{\\bfseries Қорытынды.} Бұл жұмыста Python бағдарламалық ортасында сызықтық
+регрессия әдістерін қолдана отырып, каталитикалық крекинг қондырғысынан
+өнімнің шығуын анықтау әдісі жасалды және бағаланды. Зерттеу нәтижелері
+ұсынылған модельдің жоғары дәлдігін көрсетті, бұл оның өнеркәсіптік
+тәжірибеде қолдану тиімділігін растайды. Регрессия моделін қолдану
+өнімнің шығымына әсер ететін негізгі технологиялық параметрлерді
+анықтауға және каталитикалық крекинг процесін оңтайландыруға мүмкіндік
+берді. Детерминация коэффициентін (R2) және қалдық қателерді талдауды
+қолдана отырып, модельдің сапасын бағалау болжамды мәндердің нақты
+деректерге сәйкестігінің жоғары дәрежесін көрсетті. Осылайша, ұсынылған
+тәсілді мұнай өңдеудегі технологиялық процестерді одан әрі оңтайландыру
+үшін қолдануға болады, бұл каталитикалық крекинг қондырғыларының
+өнімділігі мен тиімділігін арттырады. Болашақта болжамдардың дәлдігін
+жақсарту үшін машиналық оқытудың күрделі әдістерін біріктіруге болады.
+\\end{multicols}
+
+\\begin{center}
+{\\bfseries Әдебиеттер}
+\\end{center}
+
+\\begin{references}
+\\begin{enumerate}
+\\def\\labelenumi{\\arabic{enumi}.}
+\\item
+  Han I.-S., Chung C.-B. Dynamic modeling and simulation of a fluidized
+  catalytic cracking process. Part II: Property estimation and
+  simulation // Chem. Eng. Sci. -2022. -Vol. 56. -P. 1973-1990.
+  \\href{https://doi.org/10.1016/S0009-2509(00)00494-2}{DOI
+  10.1016/S0009-2509(00)00494-2}
+\\item
+  Emberru R.E., Patel R., Mujtaba I.M., John Y.M. A Review of Catalyst
+  Modification and Process Factors in the Production of Light Olefins
+  from Direct Crude Oil Catalytic Cracking // Chemical Engineering,
+  Faculty of Engineering \\& Digital Technologies. -2024. --Vol. 6(11).
+  DOI 10.3390/sci6010011
+\\item
+  Palos R., Rodríguez, E., Gutiérrez A., Bilbao J., \\& Arandes, J. M.
+  Kinetic modeling for the catalytic cracking of tires pyrolysis oil //
+  Fuel. -2022. -Vol. 309.
+  \\href{https://doi.org/10.1016/j.fuel.2021.122055}{DOI
+  10.1016/j.fuel.2021.122055}
+\\item
+  Orazbayev B.B., Shangitova Z.Y., Orazbayeva K.N., Serimbetov B.A.,
+  Shagayeva A.B. Studying the Dependence of the Performance Efficiency
+  of a Claus Reactor on Technological Factors with the Quality
+  Evaluation of Sulfur on the Basis of Fuzzy Information //Theor. Found.
+  Chem. Eng., -2020.-Vol. 54. - P. 1235--1241. DOI
+  10.1134/S0040579520060093
+\\item
+  Taşkin H., Kubat C., Uygun Ö., Arslankaya S. FUZZYFCC: Fuzzy logic
+  control of a fluid catalytic cracking unit (FCCU) to improve dynamic
+  performance // Computers \\& chemical engineering. -2006. - Vol. 30(5).
+  - P. 850-863.
+  \\href{https://doi.org/10.1016/j.compchemeng.2005.12.016}{DOI
+  10.1016/j.compchemeng.2005.12.016}
+\\item
+  Precup R.E., Nguyen A.T., Blažič S. A survey on fuzzy control for
+  mechatronics applications //International Journal of Systems Science.-
+  2024.- Vol.55(4).-P. 771-813.
+\\end{enumerate}
+
+DOI
+\\href{https://doi.org/10.1080/00207721.2023.2293486}{10.1080/00207721.2023.2293486}
+
+\\begin{enumerate}
+\\def\\labelenumi{\\arabic{enumi}.}
+\\setcounter{enumi}{6}
+\\item
+  Hе G., Zhou C., Luo T., Zhou L., Dai Y., Dang, Y., Ji, X. Online
+  optimization of Fluid Catalytic Cracking process via a Hybrid model
+  based on Simplified structure-Oriented Lumping and case-based
+  reasoning // Industrial \\& Engineering Chemistry Research. -2020.-Vol.
+  60(1). - P. 412-424. DOI
+  \\href{http://dx.doi.org/10.1021/acs.iecr.0c04109}{10.1021/acs.iecr.0c04109}
+\\item
+  Beatriz Flamia Azevedo, Ana Maria A.C. Rocha, Ana I. Pereira Hybrid
+  approaches to~optimization and~machine learning methods: a~systematic
+  literature review. Machine Learning. -2024. -Vol 113. - P. 4055 -
+  4097. DOI
+  \\href{http://dx.doi.org/10.1007/s10994-023-06467-x}{10.1007/s10994-023-06467-x}
+\\end{enumerate}
+
+9.Orazbayev B.B., Kenzhebayeva S.T., Orazbayeva K. N. Development of
+Mathematical Models and Modelling of Chemical Technological Systems
+using Fuzzy-Output Systems//Applied Mathematics \\& Information Sciences
+-2019. -Vol. 13(4).-P.653-664.DOI 10.18576/amis/130417
+
+10.Yang F., Xu M., Lei W., Lv J. Artificial intelligence methods applied
+to catalytic cracking processes//Big Data Mining and
+Analytics.-2023.-Vol. 6(3).-P. 361-380.
+
+DOI
+\\href{http://dx.doi.org/10.26599/BDMA.2023.9020002}{10.26599/BDMA.2023.9020002}
+
+11.Santander V. Kuppuraj, C.A. Harrison, M. Baldea An open source FCC
+model to support developing and benchmarking process control and
+operations strategies // Computers \\& Chemical Engineering. -2022. -Vol.
+164. DOI
+\\href{https://doi.org/10.1016/j.compchemeng.2022.107900}{10.1016/j.compchemeng.2022.107900}
+
+12.Josiah P.N., Otaraku I.J., Evbuomwan B.O. Servo and Regulatory
+Response of an Industrial Fluid Catalytic Cracking (FCC) Unit under
+Fuzzy Logic Supervisory Control // Eng. Technol. J. -2023. -Vol.41. -P.
+1139-1151. DOI 10.30684/etj.2023.139485.1432
+
+13.Orazbayev B., Boranbayeva N., Makhatova V., Rzayeva L., OspanovY.,
+Kurmashev I., Kurmangaziyeva L. Development and Synthesis of Linguistic
+Models for Catalytic Cracking Unit in a Fuzzy Environment. Processes.
+-2024. -Vol. 12(8). DOI
+\\href{https://doi.org/10.3390/pr12081543}{10.3390/pr12081543}
+
+14. Oloruntoba A., Zhang Y., Hsu C.S. State-of-the-Art Review of Fluid
+Catalytic Cracking (FCC) Catalyst Regeneration Intensification
+Technologies//Energies.-2022.-Vol.15.
+
+DOI 10.3390/en15062061
+
+15.Letzsch W. Fluid Catalytic Cracking (FCC) in Petroleum Refining. In:
+Treese, S., Pujadó, P., Jones, D. (eds) Handbook of Petroleum Processing
+// Springer, Cham. -2015. DOI10.1007/978-3-319-14529-7\\_2
+
+16.Amblard, B., Singh R., Gbordzoe E., Raynal L.CFD modeling of the coke
+combustion in an industrial FCC regenerator // Chemical Engineering
+Science.- 2016. - P. 731- 742.
+
+DOI
+\\href{http://dx.doi.org/10.1016/j.ces.2016.12.055}{10.1016/j.ces.2016.12.055}
+
+17. Idris M., Burn A. CFD Modelling Gas-Solid Flows in CFB // FCC Riser
+Reactors: Simulation Using Kinetic Theory of Granular Flow (KTGF) in a
+Fully Developed Flow Situation. -American institute of chemical
+engineers, 2008. 1-19
+
+18. Barbosa et.al., A. C., Three-Dimensional Simulation of Catalytic
+Cracking Reactions in an Industrial Scale Riser Using a 11-lump Kinetic
+Model. Chem. Eng. Trans. -2013.- 32. -P. 637-642 DOI
+\\href{http://dx.doi.org/10.3303/ACOS1311004}{10.3303/ACOS1311004}
+
+19. Sabzi H.Z. Developing an intelligent expert system for streamflow
+prediction, integrated in a dynamic decision support system for managing
+multiple reservoirs: a case study // Expert systems with applications.
+-2017. -Vol. 82. -№3. -C.145--163. DOI 10.1016/j.eswa.2017.04.039
+\\end{references}
+
+\\begin{authorinfo}
+\\hspace{1em}\\emph{{\\bfseries Авторлар туралы мәліметтер}}
+
+Боранбаева Н.Б. -- докторант, Л.Н.Гумилев атындағы Еуразия Ұлттық
+университеті, сеньор лектор, Astana IT University, Астана, Қазақстан,
+e-mail: ades\\_98@mail.ru;
+
+Оразбаев Б.Б.- профессор, т.ғ.д., Л.Н.Гумилев атындағы Еуразия Ұлттық
+университеті, Астана, Қазақстан, e-mail: " 0 111 (fontified nil) 111 119 (latex-env-pair t fontified nil) 119 127 (fontified nil) 127 138 (latex-env-pair t fontified nil) 138 1341 (fontified nil) 1341 2841 (fontified t) 2841 2857 (fontified t) 2857 3576 (fontified t) 3576 3580 (face font-lock-keyword-face fontified t) 3580 3581 (latex-env-pair t fontified t) 3581 3590 (face font-lock-function-name-face latex-env-pair t fontified t) 3590 3591 (latex-env-pair t fontified t) 3591 3593 (fontified t) 3593 3599 (face font-lock-keyword-face fontified t) 3599 3600 (latex-env-pair t fontified t) 3600 3603 (face font-lock-function-name-face latex-env-pair t fontified t) 3603 3605 (face font-lock-function-name-face latex-env-pair t fontified t) 3605 3606 (latex-env-pair t fontified t) 3606 3610 (fontified t) 3610 3619 (face font-lock-keyword-face fontified t) 3619 3676 (fontified t) 3676 3686 (face font-lock-keyword-face fontified t) 3686 3687 (fontified t) 3687 3693 (face font-lock-keyword-face fontified t) 3693 3694 (latex-env-pair t fontified t) 3694 3701 (face font-lock-function-name-face latex-env-pair t fontified t) 3701 3702 (latex-env-pair t fontified t) 3702 3714 (fontified t) 3714 3720 (face font-lock-keyword-face fontified t) 3720 3776 (fontified t) 3776 3778 (face font-lock-warning-face fontified t) 3778 3779 (fontified t) 3779 3785 (face font-lock-keyword-face fontified t) 3785 3841 (fontified t) 3841 3843 (face font-lock-warning-face fontified t) 3843 3844 (fontified t) 3844 3850 (face font-lock-keyword-face fontified t) 3850 3906 (fontified t) 3906 3908 (face font-lock-warning-face fontified t) 3908 3909 (fontified t) 3909 3915 (face font-lock-keyword-face fontified t) 3915 3971 (fontified t) 3971 3973 (face font-lock-warning-face fontified t) 3973 3974 (fontified t) 3974 3980 (face font-lock-keyword-face fontified t) 3980 4036 (fontified t) 4036 4038 (face font-lock-warning-face fontified t) 4038 4039 (fontified t) 4039 4045 (face font-lock-keyword-face fontified t) 4045 4101 (fontified t) 4101 4103 (face font-lock-warning-face fontified t) 4103 4104 (fontified t) 4104 4110 (face font-lock-keyword-face fontified t) 4110 4166 (fontified t) 4166 4168 (face font-lock-warning-face fontified t) 4168 4169 (fontified t) 4169 4175 (face font-lock-keyword-face fontified t) 4175 4180 (fontified t) 4180 4187 (face font-lock-keyword-face fontified t) 4187 4188 (fontified t) 4188 4189 (face (italic) fontified t) 4189 4217 (fontified t) 4217 4219 (face font-lock-keyword-face fontified t) 4219 4231 (fontified t) 4231 4233 (face font-lock-warning-face fontified t) 4233 4234 (fontified t) 4234 4240 (face font-lock-keyword-face fontified t) 4240 4241 (fontified t) 4241 4245 (face font-lock-keyword-face fontified t) 4245 4246 (latex-env-pair t fontified t) 4246 4253 (face font-lock-function-name-face latex-env-pair t fontified t) 4253 4254 (latex-env-pair t fontified t) 4254 4255 (fontified t) 4255 4259 (face font-lock-keyword-face fontified t) 4259 4260 (latex-env-pair t fontified t) 4260 4265 (face font-lock-function-name-face latex-env-pair t fontified t) 4265 4266 (latex-env-pair t fontified t) 4266 4267 (fontified t) 4267 4268 (fontified t) 4268 4274 (face font-lock-keyword-face fontified t) 4274 4275 (fontified t latex-env-pair t) 4275 4284 (face font-lock-function-name-face fontified t latex-env-pair t) 4284 4285 (fontified t latex-env-pair t) 4285 4311 (fontified t) 4311 4312 (fontified t rear-nonsticky t) 4312 4321 (face font-lock-keyword-face fontified t) 4321 4381 (fontified t) 4381 4382 (fontified t) 4382 4427 (fontified t) 4427 4429 (face font-lock-warning-face fontified t) 4429 4430 (fontified t) 4430 4436 (face font-lock-keyword-face fontified t) 4436 4437 (fontified t) 4437 4441 (fontified t) 4441 4448 (face font-lock-keyword-face fontified t) 4448 4449 (fontified t) 4449 4451 (face (italic) fontified t) 4451 4455 (fontified t) 4455 4462 (face font-lock-keyword-face fontified t) 4462 4463 (fontified t) 4463 4465 (face (italic) fontified t) 4465 4469 (fontified t) 4469 4476 (face font-lock-keyword-face fontified t) 4476 4477 (fontified t) 4477 4479 (face (italic) fontified t) 4479 4483 (fontified t) 4483 4490 (face font-lock-keyword-face fontified t) 4490 4491 (fontified t) 4491 4493 (face (italic) fontified t) 4493 4497 (fontified t) 4497 4504 (face font-lock-keyword-face fontified t) 4504 4505 (fontified t) 4505 4507 (face (italic) fontified t) 4507 4511 (fontified t) 4511 4518 (face font-lock-keyword-face fontified t) 4518 4519 (fontified t) 4519 4521 (face (italic) fontified t) 4521 4525 (fontified t) 4525 4531 (face font-lock-keyword-face fontified t) 4531 4532 (latex-env-pair t fontified t) 4532 4540 (face font-lock-function-name-face latex-env-pair t fontified t) 4540 4541 (latex-env-pair t fontified t) 4541 4547 (fontified t) 4547 4548 (rear-nonsticky t fontified t) 4548 4555 (face font-lock-keyword-face fontified t) 4555 4556 (fontified t) 4556 4578 (face (italic) fontified t) 4578 4579 (fontified t) 4579 4583 (face font-lock-keyword-face fontified t) 4583 4584 (latex-env-pair t fontified t) 4584 4592 (face font-lock-function-name-face latex-env-pair t fontified t) 4592 4593 (latex-env-pair t fontified t) 4593 4596 (fontified t) 4596 4602 (face font-lock-keyword-face fontified t) 4602 4603 (latex-env-pair t fontified t) 4603 4611 (face font-lock-function-name-face latex-env-pair t fontified t) 4611 4619 (latex-env-pair t fontified t) 4619 4620 (face font-lock-keyword-face fontified t) 4620 4626 (face font-lock-keyword-face fontified t) 4626 4627 (fontified t) 4627 4648 (face (italic) fontified t) 4648 4649 (fontified t) 4649 4653 (face font-lock-keyword-face fontified t) 4653 4654 (latex-env-pair t fontified t) 4654 4662 (face font-lock-function-name-face latex-env-pair t fontified t) 4662 4663 (latex-env-pair t fontified t) 4663 4673 (fontified t) 4673 4675 (face font-lock-warning-face fontified t) 4675 4676 (fontified t) 4676 4682 (face font-lock-keyword-face fontified t) 4682 4683 (fontified t) 4683 4696 (face font-lock-keyword-face fontified t) 4696 4697 (fontified t) 4697 4698 (face font-lock-comment-delimiter-face fontified t) 4698 4699 (face font-lock-comment-face fontified t) 4699 4707 (face font-lock-keyword-face fontified t) 4707 4708 (fontified t) 4708 4709 (face font-lock-comment-delimiter-face fontified t) 4709 4710 (face font-lock-comment-face fontified t) 4710 4793 (fontified t) 4793 4795 (face font-lock-warning-face fontified t) 4795 4796 (fontified t) 4796 4802 (face font-lock-keyword-face fontified t) 4802 4886 (fontified t) 4886 4888 (face font-lock-warning-face fontified t) 4888 4889 (fontified t) 4889 4895 (face font-lock-keyword-face fontified t) 4895 4979 (fontified t) 4979 4981 (face font-lock-warning-face fontified t) 4981 4982 (fontified t) 4982 4988 (face font-lock-keyword-face fontified t) 4988 5072 (fontified t) 5072 5074 (face font-lock-warning-face fontified t) 5074 5075 (fontified t) 5075 5081 (face font-lock-keyword-face fontified t) 5081 5165 (fontified t) 5165 5167 (face font-lock-warning-face fontified t) 5167 5168 (fontified t) 5168 5174 (face font-lock-keyword-face fontified t) 5174 5258 (fontified t) 5258 5260 (face font-lock-warning-face fontified t) 5260 5261 (fontified t) 5261 5267 (face font-lock-keyword-face fontified t) 5267 5351 (fontified t) 5351 5353 (face font-lock-warning-face fontified t) 5353 5354 (fontified t) 5354 5360 (face font-lock-keyword-face fontified t) 5360 5444 (fontified t) 5444 5446 (face font-lock-warning-face fontified t) 5446 5447 (fontified t) 5447 5453 (face font-lock-keyword-face fontified t) 5453 5537 (fontified t) 5537 5539 (face font-lock-warning-face fontified t) 5539 5540 (fontified t) 5540 5546 (face font-lock-keyword-face fontified t) 5546 5630 (fontified t) 5630 5632 (face font-lock-warning-face fontified t) 5632 5633 (fontified t) 5633 5639 (face font-lock-keyword-face fontified t) 5639 5723 (fontified t) 5723 5725 (face font-lock-warning-face fontified t) 5725 5726 (fontified t) 5726 5732 (face font-lock-keyword-face fontified t) 5732 5751 (fontified t) 5751 5810 (fontified t) 5810 5816 (fontified t) 5816 5818 (face font-lock-warning-face fontified t) 5818 5819 (fontified t) 5819 5825 (face font-lock-keyword-face fontified t) 5825 5826 (fontified t) 5826 5886 (fontified t) 5886 5909 (fontified t) 5909 5911 (face font-lock-warning-face fontified t) 5911 5912 (fontified t) 5912 5918 (face font-lock-keyword-face fontified t) 5918 5919 (fontified t) 5919 6002 (fontified t) 6002 6004 (face font-lock-warning-face fontified t) 6004 6005 (fontified t) 6005 6011 (face font-lock-keyword-face fontified t) 6011 6095 (fontified t) 6095 6097 (face font-lock-warning-face fontified t) 6097 6098 (fontified t) 6098 6104 (face font-lock-keyword-face fontified t) 6104 6183 (fontified t) 6183 6188 (fontified t) 6188 6190 (fontified t face font-lock-warning-face) 6190 6191 (fontified t) 6191 6197 (fontified t face font-lock-keyword-face) 6197 6198 (fontified t) 6198 6281 (fontified t) 6281 6283 (face font-lock-warning-face fontified t) 6283 6284 (fontified t) 6284 6290 (face font-lock-keyword-face fontified t) 6290 6374 (fontified t) 6374 6376 (face font-lock-warning-face fontified t) 6376 6377 (fontified t) 6377 6383 (face font-lock-keyword-face fontified t) 6383 6467 (fontified t) 6467 6469 (face font-lock-warning-face fontified t) 6469 6470 (fontified t) 6470 6476 (face font-lock-keyword-face fontified t) 6476 6560 (fontified t) 6560 6562 (face font-lock-warning-face fontified t) 6562 6563 (fontified t) 6563 6569 (face font-lock-keyword-face fontified t) 6569 6653 (fontified t) 6653 6655 (face font-lock-warning-face fontified t) 6655 6656 (fontified t) 6656 6662 (face font-lock-keyword-face fontified t) 6662 6746 (fontified t) 6746 6748 (face font-lock-warning-face fontified t) 6748 6749 (fontified t) 6749 6755 (face font-lock-keyword-face fontified t) 6755 6839 (fontified t) 6839 6841 (face font-lock-warning-face fontified t) 6841 6842 (fontified t) 6842 6848 (face font-lock-keyword-face fontified t) 6848 6932 (fontified t) 6932 6934 (face font-lock-warning-face fontified t) 6934 6935 (fontified t) 6935 6941 (face font-lock-keyword-face fontified t) 6941 7025 (fontified t) 7025 7027 (face font-lock-warning-face fontified t) 7027 7028 (fontified t) 7028 7034 (face font-lock-keyword-face fontified t) 7034 7118 (fontified t) 7118 7120 (face font-lock-warning-face fontified t) 7120 7121 (fontified t) 7121 7127 (face font-lock-keyword-face fontified t) 7127 7211 (fontified t) 7211 7213 (face font-lock-warning-face fontified t) 7213 7214 (fontified t) 7214 7220 (face font-lock-keyword-face fontified t) 7220 7304 (fontified t) 7304 7306 (face font-lock-warning-face fontified t) 7306 7307 (fontified t) 7307 7313 (face font-lock-keyword-face fontified t) 7313 7326 (fontified t) 7326 7397 (fontified t) 7397 7399 (face font-lock-warning-face fontified t) 7399 7400 (fontified t) 7400 7406 (face font-lock-keyword-face fontified t) 7406 7407 (fontified t) 7407 7419 (fontified t) 7419 7490 (fontified t) 7490 7492 (face font-lock-warning-face fontified t) 7492 7493 (fontified t) 7493 7499 (face font-lock-keyword-face fontified t) 7499 7500 (fontified t) 7500 7583 (fontified t) 7583 7585 (face font-lock-warning-face fontified t) 7585 7586 (fontified t) 7586 7592 (face font-lock-keyword-face fontified t) 7592 7676 (fontified t) 7676 7678 (face font-lock-warning-face fontified t) 7678 7679 (fontified t) 7679 7685 (face font-lock-keyword-face fontified t) 7685 7698 (fontified t) 7698 7769 (fontified t) 7769 7771 (fontified t face font-lock-warning-face) 7771 7772 (fontified t) 7772 7778 (fontified t face font-lock-keyword-face) 7778 7779 (fontified t) 7779 7862 (fontified t) 7862 7864 (face font-lock-warning-face fontified t) 7864 7865 (fontified t) 7865 7871 (face font-lock-keyword-face fontified t) 7871 7955 (fontified t) 7955 7957 (face font-lock-warning-face fontified t) 7957 7958 (fontified t) 7958 7964 (face font-lock-keyword-face fontified t) 7964 8048 (fontified t) 8048 8050 (face font-lock-warning-face fontified t) 8050 8051 (fontified t) 8051 8057 (face font-lock-keyword-face fontified t) 8057 8141 (fontified t) 8141 8143 (face font-lock-warning-face fontified t) 8143 8144 (fontified t) 8144 8150 (face font-lock-keyword-face fontified t) 8150 8234 (fontified t) 8234 8236 (face font-lock-warning-face fontified t) 8236 8237 (fontified t) 8237 8243 (face font-lock-keyword-face fontified t) 8243 8327 (fontified t) 8327 8329 (face font-lock-warning-face fontified t) 8329 8330 (fontified t) 8330 8336 (face font-lock-keyword-face fontified t) 8336 8420 (fontified t) 8420 8422 (face font-lock-warning-face fontified t) 8422 8423 (fontified t) 8423 8429 (face font-lock-keyword-face fontified t) 8429 8430 (fontified t) 8430 8434 (face font-lock-keyword-face fontified t) 8434 8435 (fontified t latex-env-pair t) 8435 8444 (face font-lock-function-name-face fontified t latex-env-pair t) 8444 8445 (fontified t latex-env-pair t rear-nonsticky t) 8445 8446 (fontified t) 8446 8447 (fontified t) 8453 8464 (latex-env-pair t) 9501 9502 (fontified t) 9502 9567 (fontified t) 9567 9587 (fontified t) 9587 9588 (fontified t) 9588 9934 (fontified t) 9934 9967 (fontified t) 9967 9968 (fontified t) 9968 9994 (fontified t) 9994 9995 (fontified t) 9995 10006 (fontified t) 10006 10056 (fontified t) 10056 10057 (fontified t) 10057 10126 (fontified t) 10126 10127 (fontified t) 10127 10188 (fontified t) 10188 10189 (fontified t) 10189 10208 (fontified t) 10208 10248 (fontified t) 10248 10249 (fontified t) 10249 10277 (fontified t) 10277 10317 (fontified t) 10317 10318 (fontified t) 10318 10387 (fontified t) 10387 10388 (fontified t) 10388 10441 (fontified t) 10441 10442 (fontified t) 10442 10477 (fontified t) 10477 10503 (fontified t) 10503 10504 (fontified t) 10504 10527 (fontified t) 10527 10534 (fontified t) 10534 10537 (face tex-math fontified t) 10537 10538 (face (tex-math subscript) display (raise -0.2) fontified t) 10538 10539 (face tex-math fontified t) 10539 10540 (display nil fontified t) 10540 10551 (fontified t) 10551 10554 (face tex-math fontified t) 10554 10555 (face (tex-math subscript) display (raise -0.2) fontified t) 10555 10556 (face tex-math rear-nonsticky t fontified t) 10556 10572 (fontified t) 10572 10575 (face tex-math fontified t) 10575 10576 (display (raise -0.2) face (tex-math subscript) fontified t) 10576 10577 (face tex-math rear-nonsticky t fontified t) 10577 10578 (fontified t) 10578 10583 (fontified t) 10583 10584 (fontified t) 10584 10646 (fontified t) 10646 10647 (fontified t) 10647 10659 (fontified t) 10659 10662 (face tex-math fontified t) 10662 10663 (face (tex-math subscript) display (raise -0.2) fontified t) 10663 10664 (face tex-math rear-nonsticky t fontified t) 10664 10675 (fontified t) 10675 10678 (face tex-math fontified t) 10678 10679 (display (raise -0.2) face (tex-math subscript) fontified t) 10679 10680 (face tex-math rear-nonsticky t fontified t) 10680 10723 (fontified t) 10723 10724 (fontified t) 10724 10727 (face tex-math fontified t) 10727 10728 (display (raise -0.2) face (tex-math subscript) fontified t) 10728 10729 (face tex-math rear-nonsticky t fontified t) 10729 10741 (fontified t) 10741 10742 (fontified t rear-nonsticky t) 10742 10743 (fontified t) 10743 10777 (fontified t) 10777 10794 (fontified t) 10794 10795 (fontified t) 10795 10843 (fontified t) 10843 10844 (fontified t) 10844 10863 (fontified t) 10863 10864 (fontified t) 10864 10919 (fontified t) 10919 10920 (fontified t) 10920 10983 (fontified t) 10983 10984 (fontified t) 10984 11053 (fontified t) 11053 11054 (fontified t) 11054 11121 (fontified t) 11121 11122 (fontified t) 11122 11189 (fontified t) 11189 11190 (fontified t) 11190 11257 (fontified t) 11257 11258 (fontified t) 11258 11324 (fontified t) 11324 11325 (fontified t) 11325 11383 (fontified t) 11383 11384 (fontified t) 11384 11421 (fontified t) 11421 11422 (fontified t) 11422 11423 (fontified t) 11423 11481 (fontified t) 11481 11482 (fontified t rear-nonsticky t) 11482 11486 (face font-lock-keyword-face fontified t) 11486 11487 (fontified t latex-env-pair t) 11487 11496 (face font-lock-function-name-face fontified t latex-env-pair t) 11496 11497 (fontified t latex-env-pair t) 11497 11498 (fontified t) 11498 11499 (fontified t) 11499 11505 (face font-lock-keyword-face fontified t) 11505 11506 (latex-env-pair t fontified t) 11506 11514 (face font-lock-function-name-face latex-env-pair t fontified t) 11514 11515 (latex-env-pair t fontified t) 11515 11516 (fontified t) 11516 11522 (face font-lock-keyword-face fontified t) 11522 11523 (fontified t) 11523 11525 (fontified t) 11525 11526 (fontified t) 11526 11532 (face font-lock-keyword-face fontified t) 11532 11533 (fontified t rear-nonsticky t) 11533 11535 (fontified t) 11535 11536 (face (subscript) fontified t display (raise -0.2)) 11536 11537 (fontified t) 11537 11538 (fontified t) 11538 11544 (face font-lock-keyword-face fontified t) 11544 11547 (fontified t) 11547 11548 (face (subscript) fontified t display (raise -0.2)) 11548 11551 (fontified t) 11551 11552 (face (subscript) fontified t display (raise -0.2)) 11552 11553 (fontified t rear-nonsticky t) 11553 11559 (face font-lock-keyword-face fontified t) 11559 11562 (fontified t) 11562 11563 (face (subscript) display (raise -0.2) fontified t) 11563 11566 (fontified t) 11566 11567 (face (subscript) display (raise -0.2) fontified t) 11567 11568 (fontified t rear-nonsticky t) 11568 11574 (face font-lock-keyword-face fontified t) 11574 11577 (fontified t) 11577 11578 (face (subscript) display (raise -0.2) fontified t) 11578 11581 (fontified t) 11581 11582 (face (subscript) display (raise -0.2) fontified t) 11582 11583 (fontified t rear-nonsticky t) 11583 11589 (face font-lock-keyword-face fontified t) 11589 11592 (fontified t) 11592 11593 (face (subscript) display (raise -0.2) fontified t) 11593 11596 (fontified t) 11596 11597 (face (subscript) display (raise -0.2) fontified t) 11597 11598 (fontified t rear-nonsticky t) 11598 11604 (face font-lock-keyword-face fontified t) 11604 11607 (fontified t) 11607 11608 (face (subscript) display (raise -0.2) fontified t) 11608 11611 (fontified t) 11611 11612 (face (subscript) display (raise -0.2) fontified t) 11612 11613 (fontified t rear-nonsticky t) 11613 11619 (face font-lock-keyword-face fontified t) 11619 11622 (fontified t) 11622 11623 (face (subscript) display (raise -0.2) fontified t) 11623 11626 (fontified t) 11626 11627 (face (subscript) display (raise -0.2) fontified t) 11627 11628 (fontified t) 11628 11632 (face font-lock-keyword-face fontified t) 11632 11633 (fontified t latex-env-pair t) 11633 11641 (face font-lock-function-name-face fontified t latex-env-pair t) 11641 11642 (fontified t latex-env-pair t) 11642 11643 (fontified t) 11643 11644 (rear-nonsticky t fontified t) 11644 11721 (fontified t) 11721 11722 (rear-nonsticky t fontified t) 11722 11723 (fontified t) 11723 11724 (fontified t) 11724 11730 (face font-lock-keyword-face fontified t) 11730 11731 (fontified t) 11731 11732 (rear-nonsticky t fontified t) 11732 11738 (face font-lock-keyword-face) 11738 11739 (latex-env-pair t) 11739 11749 (face font-lock-function-name-face latex-env-pair t) 11749 11750 (latex-env-pair t) 11790 11791 (face (subscript) display (raise -0.2)) 11959 11960 (face (subscript) display (raise -0.2)) 11984 11985 (face (subscript) display (raise -0.2)) 12076 12174 (fontified t) 12174 12175 (face (subscript) fontified t display (raise -0.2)) 12175 12287 (fontified t) 12287 12288 (face (subscript) fontified t display (raise -0.2)) 12288 12301 (fontified t) 12301 12302 (face (subscript) fontified t display (raise -0.2)) 12302 12360 (fontified t) 12360 12361 (face (subscript) fontified t display (raise -0.2)) 12361 12456 (fontified t) 12456 12457 (face (subscript) fontified t display (raise -0.2)) 12457 12579 (fontified t) 12579 12593 (fontified t) 12593 12594 (face (subscript) fontified t display (raise -0.2)) 12594 12598 (fontified t) 12598 12599 (fontified t) 12599 12603 (face font-lock-keyword-face fontified t) 12603 12604 (fontified t latex-env-pair t) 12604 12614 (face font-lock-function-name-face fontified t latex-env-pair t) 12614 12616 (fontified t latex-env-pair t) 12616 12617 (fontified t rear-nonsticky t) 12617 12618 (fontified t) 12618 12624 (face font-lock-keyword-face fontified t) 12624 12625 (fontified t latex-env-pair t) 12625 12634 (face font-lock-function-name-face fontified t latex-env-pair t) 12634 12635 (fontified t latex-env-pair t) 12635 12639 (fontified t) 12639 12670 (fontified t) 12670 12671 (fontified t) 12671 12709 (fontified t) 12709 12984 (fontified t) 12984 12994 (fontified t) 12994 12995 (fontified t rear-nonsticky t) 12995 12999 (face font-lock-keyword-face fontified t) 12999 13000 (fontified t latex-env-pair t) 13000 13009 (face font-lock-function-name-face fontified t latex-env-pair t) 13009 13010 (fontified t latex-env-pair t) 13010 13011 (fontified t) 13011 13012 (fontified t) 13012 13018 (face font-lock-keyword-face fontified t) 13018 13019 (fontified t latex-env-pair t) 13019 13028 (face font-lock-function-name-face fontified t latex-env-pair t) 13028 13029 (fontified t latex-env-pair t) 13029 13030 (fontified t) 13030 13036 (face font-lock-keyword-face fontified t) 13036 13037 (fontified t latex-env-pair t) 13037 13044 (face font-lock-function-name-face fontified t latex-env-pair t) 13044 13045 (fontified t latex-env-pair t) 13045 13046 (fontified t) 13046 13048 (fontified t) 13048 13049 (face (subscript) fontified t display (raise -0.2)) 13049 13060 (fontified t) 13060 13061 (fontified t) 13061 13062 (fontified t) 13062 13067 (face font-lock-keyword-face fontified t) 13067 13070 (fontified t) 13070 13071 (face (subscript) fontified t display (raise -0.2)) 13071 13079 (fontified t) 13079 13080 (fontified t) 13080 13081 (fontified t) 13081 13086 (face font-lock-keyword-face fontified t) 13086 13089 (fontified t) 13089 13090 (face (subscript) fontified t display (raise -0.2)) 13090 13100 (fontified t) 13100 13101 (fontified t) 13101 13102 (fontified t) 13102 13104 (face font-lock-warning-face fontified t) 13104 13105 (fontified t) 13105 13107 (fontified t) 13107 13108 (face (subscript) fontified t display (raise -0.2)) 13108 13118 (fontified t) 13118 13119 (fontified t) 13119 13120 (fontified t) 13120 13125 (face font-lock-keyword-face fontified t) 13125 13128 (fontified t) 13128 13129 (face (subscript) fontified t display (raise -0.2)) 13129 13137 (fontified t) 13137 13138 (fontified t) 13138 13139 (fontified t) 13139 13144 (face font-lock-keyword-face fontified t) 13144 13147 (fontified t) 13147 13148 (face (subscript) fontified t display (raise -0.2)) 13148 13157 (fontified t) 13157 13158 (fontified t) 13158 13159 (fontified t) 13159 13164 (face font-lock-keyword-face fontified t) 13164 13167 (fontified t) 13167 13168 (face (subscript) fontified t display (raise -0.2)) 13168 13178 (fontified t) 13178 13179 (fontified t) 13179 13183 (face font-lock-keyword-face fontified t) 13183 13184 (fontified t latex-env-pair t) 13184 13191 (face font-lock-function-name-face fontified t latex-env-pair t) 13191 13192 (fontified t latex-env-pair t) 13192 13193 (fontified t) 13193 13197 (face font-lock-keyword-face fontified t) 13197 13198 (fontified t latex-env-pair t) 13198 13207 (face font-lock-function-name-face fontified t latex-env-pair t) 13207 13208 (fontified t latex-env-pair t rear-nonsticky t) 13208 13209 (fontified t) 13209 13210 (fontified t) 13210 13233 (fontified t) 13233 13275 (fontified t) 13275 13312 (fontified t) 13312 13313 (fontified t) 13313 13319 (face font-lock-keyword-face fontified t) 13319 13320 (fontified t latex-env-pair t) 13320 13328 (face font-lock-function-name-face fontified t latex-env-pair t) 13328 13329 (fontified t latex-env-pair t) 13329 13330 (fontified t) 13330 13340 (fontified t) 13340 13341 (face (subscript) fontified t display (raise -0.2)) 13341 13349 (fontified t) 13349 13350 (face (subscript) fontified t display (raise -0.2)) 13350 13359 (fontified t) 13359 13360 (face (subscript) fontified t display (raise -0.2)) 13360 13368 (fontified t) 13368 13369 (face (subscript) fontified t display (raise -0.2)) 13369 13377 (fontified t) 13377 13378 (face (subscript) fontified t display (raise -0.2)) 13378 13386 (fontified t) 13386 13387 (face (subscript) fontified t display (raise -0.2)) 13387 13395 (fontified t) 13395 13396 (face (subscript) fontified t display (raise -0.2)) 13396 13397 (fontified t) 13397 13401 (face font-lock-keyword-face fontified t) 13401 13402 (fontified t latex-env-pair t) 13402 13410 (face font-lock-function-name-face fontified t latex-env-pair t) 13410 13411 (fontified t latex-env-pair t) 13411 13412 (fontified t) 13412 13413 (fontified t) 13413 13576 (fontified t) 13576 13611 (fontified t) 13628 13634 (face font-lock-keyword-face) 13634 13635 (latex-env-pair t) 13635 13641 (face font-lock-function-name-face latex-env-pair t) 13641 13642 (latex-env-pair t) 13647 13657 (face font-lock-keyword-face) 13659 13675 (face font-lock-keyword-face) 13685 13695 (face font-lock-keyword-face) 13697 13714 (face font-lock-builtin-face) 13717 13726 (face font-lock-keyword-face) 13787 13791 (face font-lock-keyword-face) 13791 13792 (latex-env-pair t) 13792 13798 (face font-lock-function-name-face latex-env-pair t) 13798 13799 (latex-env-pair t) 13956 13962 (face font-lock-keyword-face) 13962 13963 (latex-env-pair t) 13963 13969 (face font-lock-function-name-face latex-env-pair t) 13969 13970 (latex-env-pair t) 13975 13985 (face font-lock-keyword-face) 13987 14003 (face font-lock-keyword-face) 14013 14023 (face font-lock-keyword-face) 14025 14042 (face font-lock-builtin-face) 14045 14054 (face font-lock-keyword-face) 14119 14123 (face font-lock-keyword-face) 14123 14124 (latex-env-pair t) 14124 14130 (face font-lock-function-name-face latex-env-pair t) 14130 14131 (latex-env-pair t) 14516 14522 (face font-lock-keyword-face) 14522 14523 (latex-env-pair t) 14523 14529 (face font-lock-function-name-face latex-env-pair t) 14529 14530 (latex-env-pair t) 14535 14540 (face font-lock-keyword-face) 14540 14545 (face font-lock-keyword-face) 14547 14563 (face font-lock-keyword-face) 14573 14583 (face font-lock-keyword-face) 14585 14600 (face font-lock-builtin-face) 14600 14602 (face font-lock-builtin-face) 14605 14614 (face font-lock-keyword-face) 14681 14685 (face font-lock-keyword-face) 14685 14686 (latex-env-pair t) 14686 14692 (face font-lock-function-name-face latex-env-pair t) 14692 14693 (latex-env-pair t) 14698 14704 (face font-lock-keyword-face) 14704 14705 (latex-env-pair t) 14705 14709 (face font-lock-function-name-face latex-env-pair t) 14709 14711 (face font-lock-function-name-face latex-env-pair t) 14711 14712 (latex-env-pair t) 14717 14727 (face font-lock-keyword-face) 14729 14745 (face font-lock-keyword-face) 14755 14765 (face font-lock-keyword-face) 14767 14775 (face font-lock-builtin-face) 14775 14784 (face font-lock-builtin-face) 14787 14796 (face font-lock-keyword-face) 14857 14861 (face font-lock-keyword-face) 14861 14862 (latex-env-pair t) 14862 14868 (face font-lock-function-name-face latex-env-pair t) 14868 14869 (latex-env-pair t) 14872 14878 (face font-lock-keyword-face) 14878 14879 (latex-env-pair t) 14879 14885 (face font-lock-function-name-face latex-env-pair t) 14885 14888 (face font-lock-function-name-face latex-env-pair t) 14888 14889 (latex-env-pair t)) . 16559) (undo-tree-id0 . -13179) (undo-tree-id1 . -13046) (undo-tree-id2 . -13178) (undo-tree-id3 . -13046) (undo-tree-id4 . 10038) (undo-tree-id5 . -13059) (undo-tree-id6 . -13118) (undo-tree-id7 . -4268) (undo-tree-id8 . 10601) (undo-tree-id9 . -7182) (undo-tree-id10 . -4649) (undo-tree-id11 . -4596) (undo-tree-id12 . -4267) (undo-tree-id13 . -4596) (undo-tree-id14 . -4525) (undo-tree-id15 . -4579) (undo-tree-id16 . -4524) (undo-tree-id17 . -4649) (undo-tree-id18 . -4596) (undo-tree-id19 . -12076) (undo-tree-id20 . -12655) (undo-tree-id21 . -8447) (undo-tree-id22 . -8997) (undo-tree-id23 . -9076) (undo-tree-id24 . -9199) (undo-tree-id25 . -9278) (undo-tree-id26 . -9359) (undo-tree-id27 . -9442) (undo-tree-id28 . -9501) (undo-tree-id29 . -9587) (undo-tree-id30 . -9690) (undo-tree-id31 . -9933) (undo-tree-id32 . -10527) (undo-tree-id33 . -11643) (undo-tree-id34 . -12604) (undo-tree-id35 . -12510) (undo-tree-id36 . -12481) (undo-tree-id37 . -12402) (undo-tree-id38 . -12402) (undo-tree-id39 . -12350) (undo-tree-id40 . -12350) (undo-tree-id41 . -12323) (undo-tree-id42 . -12323) (undo-tree-id43 . -12255) (undo-tree-id44 . -12255) (undo-tree-id45 . -12198) (undo-tree-id46 . -12198) (undo-tree-id47 . -12140) (undo-tree-id48 . -12140) (undo-tree-id49 . -11748) (undo-tree-id50 . -11748) (undo-tree-id51 . -11970) (undo-tree-id52 . -11970) (undo-tree-id53 . -12076) (undo-tree-id54 . -12076) (undo-tree-id55 . -12120) (undo-tree-id56 . -11643) (undo-tree-id57 . -11644) (undo-tree-id58 . -11643) (undo-tree-id59 . -11643) (undo-tree-id60 . -12618) (undo-tree-id61 . -13395) (undo-tree-id62 . -13328) (undo-tree-id63 . -13209) (undo-tree-id64 . -13059) (undo-tree-id65 . -13118) (undo-tree-id66 . -13046) (t 26478 23035 667083 875000)) nil (26482 9439 743787 764000) 0 nil])
+([nil nil ((20 . 64) 19 (t 26482 8606 887748 234000)) nil (26482 9439 743630 673000) 0 nil])
+([nil nil ((40836 . 40838) (t 26482 9439 788086 461000)) nil (26482 10509 292775 237000) 0 nil])
+([nil nil ((#("}" 0 1 (fontified t)) . 29219) (t 26482 10509 331823 499000)) nil (26482 10816 915832 680000) 0 nil])
+([nil nil ((#("\\small{
+" 0 3 (fontified t face font-lock-keyword-face) 3 6 (face font-lock-keyword-face fontified t) 6 8 (fontified t)) . 28328) (undo-tree-id67 . -7) (undo-tree-id68 . -6) (undo-tree-id69 . -6) (undo-tree-id70 . -6) (undo-tree-id71 . -6) (undo-tree-id72 . -6) (undo-tree-id73 . -6) (undo-tree-id74 . -6) (undo-tree-id75 . -6) (undo-tree-id76 . -6) (undo-tree-id77 . -6) (undo-tree-id78 . -6) (undo-tree-id79 . -6) (undo-tree-id80 . -6) (undo-tree-id81 . -6) (undo-tree-id82 . -6) (undo-tree-id83 . -6) (undo-tree-id84 . -6) (undo-tree-id85 . -6) (undo-tree-id86 . -6) (undo-tree-id87 . -6) (undo-tree-id88 . -6) (undo-tree-id89 . -6) (undo-tree-id90 . -6) (undo-tree-id91 . -6) (undo-tree-id92 . -6) (undo-tree-id93 . -6) (undo-tree-id94 . -6) (undo-tree-id95 . -6) (undo-tree-id96 . -6) (undo-tree-id97 . -6) (undo-tree-id98 . -6) (undo-tree-id99 . -6) (undo-tree-id100 . -6) (undo-tree-id101 . -8) 28334) nil (26482 10816 915828 633000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -30641) (t 26482 10816 947873 207000) (30642 . 30643) 30641 (t 26482 10816 947873 207000)) nil (26482 10889 750057 137000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -31235) (31236 . 31237) 31235) nil (26482 10889 750055 792000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -31414) (31415 . 31416) 31414) nil (26482 10889 750051 478000) 0 nil])
+([nil nil ((38912 . 38914) (t 26482 10889 792752 40000)) nil (26482 10925 397353 739000) 0 nil])
+([nil nil ((35620 . 35621) (t 26482 10925 440713 778000)) nil (26482 10960 911110 338000) 0 nil])
+([nil current ((36073 . 36075) (t 26482 10960 955679 251000)) nil (26482 10966 134269 130000) 0 nil])
 nil

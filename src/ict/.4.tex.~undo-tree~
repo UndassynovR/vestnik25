@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"dc3a692184f80551735c84226075a590f3df15b6"
+"8b8ff70b9cc8c63e05f37dd5c2c3f2c686744c03"
 [nil nil nil nil (26474 23243 175334 467000) 0 nil]
 ([nil nil ((667 . 668) (#("
 " 0 1 (fontified t)) . -667) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . -1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) 606 (t 26474 22916 23024 797000)) nil (26474 23243 175332 504000) 0 nil])
@@ -247,5 +247,421 @@ nil
 ([nil nil ((nil rear-nonsticky nil 35441 . 35442) (nil fontified nil 35430 . 35442) (35430 . 35442)) nil (26477 3440 601718 900000) 0 nil])
 ([nil nil ((35430 . 35449) (37394 . 37411)) nil (26477 3440 601717 320000) 0 nil])
 ([nil nil ((30921 . 30940) (35429 . 35446) 30921) nil (26477 3440 601709 125000) 0 nil])
-([nil current ((20640 . 20653) (t 26477 3440 634340 704000)) nil (26477 14144 204059 896000) 0 nil])
+([nil nil ((20640 . 20653) (t 26477 3440 634340 704000)) nil (26477 14144 204059 896000) 0 nil])
+([nil nil ((20640 . 37130) (#("% TODO graphs
+Text, reviews
+
+Feature extraction
+
+TF-IDF
+
+ML models
+
+Logistic regression
+
+SVM
+
+XGBoost
+
+Multi.Naive Bayes
+
+LSTM
+
+Preprocessing
+
+token
+
+Stop words
+
+pos.
+
+neg.
+
+Sentiments
+
+{\\bfseries Figure 4 - Steps of processing text data using machine learning}
+
+The data set was divided into training and test sets using the
+train\\_test\\_split function of the scikit-learn library. The Test\\_size
+parameter was set to 0.2, that is, 20\\% of this data was used for
+testing, and 80\\% was used for training. Using the converted TF-IDF
+data, a version of the LogisticRegression class was developed, which was
+displayed by the logistic regression algorithm. As the logistic
+regression algorithm and target labels are trained through the training
+data, the identification method adjusts the sample parameters to find
+the best fit for the given data. The accuracy, classification
+calculation, and confusion matrix for estimating sample performance are
+as follows (Figure 5):
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image12}
+	\\caption*{Figure 5 - Accuracy of logistic regression algorithm}
+\\end{figure}
+
+And to use the Multinomial Naive Bayes model, the sklearn.naive\\_bayes
+function was used. A Multinomial Naive Bayes classifier was instantiated
+and trained on the training data represented by the TF-IDF vectorized
+feature matrix and the corresponding feature matrix. The features of the
+test data were predicted using the trained MNB classifier. The accuracy
+score was calculated by comparing the predicted signs with the real
+signs (accuracy indicators are shown in Figure 6).
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image13}
+	\\caption*{Figure 6-Accuracy of Multinomial Naive Bayes model}
+\\end{figure}
+
+In addition, Linear SVM and XGboost models of machine learning are also
+tested. Their results are lower than logistic regression (Linear
+SVM-79.25\\%, Xgboost-80.1\\%).
+
+\\emph{Implementation of sentimental data analysis with deep learning
+algorithms.} In order to use the Recurrent Neural Network (RNN) method,
+it is necessary to build a vocabulary. This is an efficient lookup table
+where each unique word in the data set has a corresponding index
+(integer). Based on the reviews, the following dictionary was compiled:
+
+\\emph{{[}«Керемет телефон екен», «Маған ұнады әдемі», «Қуаты өте ұзаққа
+шыдайды»{]} → vocabulary \\{«\\textless unk\\textgreater»:0, «әдемі»:1,
+«екен»:2, «керемет»:3, «маған»:4, «телефон»:5, «қуат»: 6, «ұзаққа»:7,
+«ұнады»:8, «өте»:9, «шыдайды»:10, «pad»:11\\}}
+
+Then, using a dictionary, we assigned indexes to the text data in the
+test set, replacing each word in the data with the corresponding index
+in the dictionary. In this step, the textual data is converted into
+numerical representations that can be used as input to the RNN. The
+following conversion is obtained:
+
+\\emph{{[}«Керемет телефон екен», «Маған ұнады әдемі», «Қуаты өте ұзаққа
+шыдайды»{]} → vocabulary \\{«\\textless unk\\textgreater»:0, «әдемі»:1,
+«екен»:2, «керемет»:3, «маған»:4, «телефон»:5, «қуат»: 6, «ұзаққа»:7,
+«ұнады»:8, «өте»:9, «шыдайды»:10, «pad»:11\\} → \\{\\{«Керемет телефон
+екен»: {[}3 5 2 11{]}\\}, \\{«Маған ұнады әдімі»: {[}4 8 1 11{]}\\},
+\\{«Қуат өте ұзаққа шыдайды»: {[}6 9 7 10{]}\\}\\}}
+
+Each index is used to create a vector for each word. One-hot vector is a
+vector whose size is the total number of unique words in the dictionary,
+where only one element is 1, and all other elements are 0 (Figure 7).
+Tourch libbrary was used for this task.
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image14}
+	\\caption*{Figure 7-One-hot vector}
+\\end{figure}
+
+An embedding layer was used to transform a one-hot vector into a dense
+embedding vector. The model constructor consists of the size of the
+input dictionary, the number of unique tokens in the textual data
+(input\\_dim), the dimensionality of the embedding vectors representing
+the input tokens (embedding\\_dim), the number of units in the hidden
+state of the LSTM (hidden\\_dim), the dimensionality of the output
+representing the sentiment prediction (output\\_dim). The implementation
+of the model is presented in Figure 8.
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image15}
+	\\caption*{Figure 8 - RNN model creation}
+\\end{figure}
+
+In addition, the torch.nn.Embedding module was created, which is
+responsible for learning and matching input tokens with dense embedding
+vectors. And the torch.nn.LSTM module was built to implement the long
+LSTM layer. This module takes embedded input as input and processes the
+serial information to generate hidden states. Next, a torch.nn.Linear
+module was created which maps the last hidden state to the output
+dimension responsible for sentiment prediction.
+
+The Forward method is responsible for the forward movement of the model.
+It accepts text as input text data. An embedded tensor is obtained by
+passing the input text through an embedding layer, performing a search
+to transform the input tokens into dense vector representations. The
+embedded tensor is then passed through the RNN layer and returns the
+(hidden, cell) values containing the output features of the LSTM for
+each time step and the final hidden state of the LSTM. The latent tensor
+is filtered along the first dimension to remove the extra dimension
+added by the LSTM.
+
+Next, the created model was trained. This process consisted of 10
+stages. Logs the training progress, updating model parameters based on
+calculated gradients. It also evaluates the performance of the model on
+the training and validation sets after each phase. Finally, 60\\%
+accuracy was obtained from model training. 60\\% is not considered a good
+result, so ways to improve its accuracy rate were considered.
+
+To increase the accuracy of the model, various modifications were made
+to the LSTM algorithm, including the embedded use of the packed padded
+sequences method, which gave good results. Important aspects of packed
+padded sequences are defined (example implementation code is shown in
+Figure 9):
+
+\\begin{itemize}
+\\item
+  Efficient computation: Stacked filled sequences allow for more
+  efficient computation during training and inference. In RNNs, input
+  sequences are usually processed in parallel in a small batch. Filled
+  circuits avoid unnecessary computations on filled elements, resulting
+  in faster training and reduced inference time.
+\\item
+  Memory efficiency: padded circuits increase memory requirements
+  because they introduce a significant number of padded elements. By
+  wrapping strings, filled elements are effectively masked, reducing the
+  memory footprint and optimizing memory usage.
+\\item
+  Improved model performance: Overloaded circuits can negatively impact
+  model performance by introducing noise and unnecessary calculations.
+\\end{itemize}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image16}
+	\\caption*{Figure 9 - Improved LSTM algorithm code}
+\\end{figure}
+
+This function creates a boxed sequence object which represents sequences
+without padding tokens. Using this method, 84\\% accuracy was achieved.
+
+\\emph{Discussion of results.} Let' s look at which method
+gives better results by comparing the results of sentimental analysis
+made using Logistic Regression, Multinomial Naive Bayes, Liner SVM,
+XGBoost, Long short-term memory (LSTM), LSTM-pack sequence learning
+methods to improve LSTM on collected Kazakh comments. Table 1 shows the
+results of the above-mentioned models and algorithms evaluation
+experiment
+
+\\begin{table}[H]
+\\caption*{Table 1 - Results of algorithm}
+\\centering
+\\begin{tabular}{|l|l|l|}
+\\hline
+№ & Algorithm name              & Accuracy \\\\ \\hline
+1 & Logistic regression         & 83.96\\%  \\\\ \\hline
+2 & Multinomial Naive Bayes     & 83.49\\%  \\\\ \\hline
+3 & Linear SVM                  & 79,25\\%  \\\\ \\hline
+4 & XGboost                     & 80,1\\%   \\\\ \\hline
+5 & LSTM                        & 60.00\\%  \\\\ \\hline
+6 & Improved LSTM               & 84.12\\%  \\\\ \\hline
+\\end{tabular}
+\\end{table}
+
+\\begin{multicols}{2}
+Due to the lack of a large collection of data, machine learning methods
+have shown that they do not give more accurate results. A logistic
+regression algorithm can be effective if there is low-dimensional data
+and their capability is linearly distributed, but a large data set is
+required to achieve good results. Although the LSTM model showed only 60
+percent accuracy, it increased its accuracy using the packed packed
+sequences method and achieved better results than everyone else. The
+LSTM model has shown poor performance on very little data. When we
+increased the number of reviews from 500 to 1500, we noticed a
+improvement in the result.
+
+{\\bfseries Conclusion.} This paper is devoted to the study of ways of
+sentimental analysis of Kazakh language reviews. The introduction of the
+article explains sentimental analysis and gives citations for its
+importance. The paper considered lexicon (rule) based methods, machine
+learning based methods and deep learning methods as methods of
+sentimental data analysis. Among them, we differentiated the
+possibilities of determining the mood in Kazakh-language opinions using
+methods based on machine learning and deep learning methods, which are
+currently being extensively researched and are well used in practical
+developments.
+
+Kazakh-language reviews used in sentimental analysis were collected from
+Kaspi online-market, nur.kz and 2GIS. Collected opinions were subjected
+to initial processing such as preliminary processing and preparation of
+the data set, analysis (review) of the processed data set, extraction of
+features from the processed data. Further, the prepared data were
+sentimentally analyzed using Logistic regression, Multinomial Naive
+Bayes, Linear SVM, Xgboost and deep learning LSTM models of machine
+learning and the accuracy indicators of the obtained results were
+determined. After all samples were analyzed, a comparative analysis of
+their accuracy indicators was performed. Comparative analysis showed
+that the best result was the deep learning improved LSTM model
+(accuracy-84.12\\%), followed by the machine learning Logistic regression
+model (accuracy-83.96\\%).
+\\end{multicols}
+
+\\begin{center}
+{\\bfseries References}
+\\end{center}
+
+\\begin{references}
+1. Bolshakova E.I., Voroncov K.V., Efremova N.E., Klyshinskij E.S.,
+Lukashevich N.V., Sapin A.S. Avtomaticheskaya obrabotka tekstov na
+estestvennom yazyke i analiz dannyh. - M.: Izd-vo NIU VShE, 2017. - 269
+s. {[}in Russian{]}
+
+2.~Pasolini, Roberto. Learning Methods and Algorithms for Semantic Text
+Classification across Multiple Domains, {[}Dissertation thesis{]}. Alma
+Mater Studiorum Università di Bologna. Dottorato di ricerca in
+Ingegneria elettronica, informatica delle telecomunicazioni, 27 Ciclo.
+DOI 10.6092/unibo/amsdottorato/7058.
+
+3. Jingli Shi, Weihua Li, Quan Bai, Yi Yang, Jianhua Jiang.
+Syntax-Enhanced Aspect-Based Sentiment Analysis with Multi-Layer
+Attention // Neurocomputing. -2023.
+
+DOI
+\\href{https://doi.org/10.1016/j.neucom.2023.126730}{10.1016/j.neucom.2023.126730}
+
+4. Malliga Subramanian, Veerappampalayam Easwaramoorthy Sathiskumar, G.
+Deepalakshmi, Jaehyuk Cho, G. Manikandan. A survey on hate speech
+detection and sentiment analysis using machine learning and deep
+learning models // Alexandria Engineering Journal. -- 2023. --Vol.
+80(2). - P. 110-121.
+DOI\\href{http://dx.doi.org/10.1016/j.aej.2023.08.038}{10.1016/j.aej.2023.08.038}
+
+5. Arwa A. Al Shamsi, Sherief Abdallah. Ensemble Stacking Model for
+Sentiment Analysis of Emirati and Arabic Dialects // Journal of King
+Saud University. -2023. -Vol. 35(8).
+
+\\href{https://doi.org/10.1016/j.jksuci.2023.101691}{DOI
+10.1016/j.jksuci.2023.101691}
+
+6. Meng Li, Yucheng Shi. Sentiment analysis and prediction model based
+on Chinese government affairs microblogs // Heliyon. - 2023. DOI
+\\href{https://doi.org/10.1016/j.heliyon.2023.e19091}{10.1016/j.heliyon.2023.e19091}
+
+7. Chetviorkin, I.; Loukachevitch, N. Evaluating Sentiment Analysis
+Systems in Russian // In Proceedings of the 4th Biennial International
+Workshop on Balto-Slavic Natural Language Processing, Sofia, Bulgaria,
+8--9 August 2013; Association for Computational Linguistics . - Sofia,
+Bulgaria, 2013. -P. 12--17.
+
+8. Nugumanova A., Baiburin Ye., Alimzhanov Ye.. Sentiment Analysis of
+Reviews in Kazakh With Transfer Learning Techniques // SIST 2022 - 2022
+International Conference on Smart Information Systems and Technologies,
+Proceedings, ISBN 978-166546790. - 2022.
+
+DOI 10.1109/SIST54437.2022.9945811
+
+9.~Karyukin Vladislav, Mutanov Galimkair, Mamykova Zhanl, Nassimova
+Gulnar, Torekul Saule, Sundetova Zhanerke, Negri Matteo. On the
+development of an information system for monitoring user opinion and its
+role for the public // Journal of Big Data. -2022. - Vol. 9.
+
+DOI 10.1186/s40537-022-00660-w
+
+10. Narynov S.S., Zharmagambetov A.S.: On One Approach of Solving
+Sentiment Analyis Task for Kazakh and Russian Languages Using Deep
+Learning // International Conference on Computational Collective
+Intelligence. - Springer, 2016. - Vol. 9876.
+
+DOI 10.1007/978-3-319-45246-3\\_51
+
+11. Saraswathi N., Sasirooba T., Chakaravarthi S. Improving the accuracy
+of sentiment analysis using a linguistic rule-based feature selection
+method in tourism reviews // Measurement: Sensors. - 2023. - Vol. 29. -
+DOI
+\\href{https://doi.org/10.1016/j.measen.2023.100888}{10.1016/j.measen.2023.100888}
+
+12. Gulmira Bekmanova, Gaziza Yelibayeva, Saltanat Aubakirova, Nurgul
+Dyussupova, Altynbek Sharipbay, Rozamgul Nyazova. Methods for analyzing
+polarity of the Kazakh texts related to the terrorist threats //
+Computational Science and Its Applications - ICCSA 2019. - P. 717-730.
+
+DOI 10.1007/978-3-030-24289-3\\_53
+
+13. Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani. An
+Introduction to Statistical Learning with Applications in R // Springer
+Science and Business Media. - New York, 2013.
+
+DOI 10.1007/978-1-4614-7138-7
+
+14. Dinara Gimadi, Richard Evans, Kiril Simov. Web-sentiment Analysis Of
+Public Comments (Public Reviews) For Languages With Limited Resources
+Such As The Kazakh Language. - 2021. DOI
+10.26615/issn.2603-2821.2021\\_010
+
+15. Huseyn Hasanli , Burak Ordin , Samir Rustamov. Sentiment analysis on
+twitter data for azerbaijani language // Journal of Modern Technology
+and Engineering.-2019. - Vol.4. - No.2.\\\\
+- P.109-121. 2019.
+
+16.~Sebastian Raschka, Vahid Mirjalili. Python Machine Learning: Machine
+Learning and Deep Learning with Python, scikit-learn, and TensorFlow 2.
+- 2019. P. 770.
+
+17. Ugo Erra, Sabrina Senatore, Fernando Minnella, Giuseppe Caggianese.
+Approximate TF--IDF based on topic extraction from massive message
+stream using the GPU // Information Sciences, January. - 2015. --Vol.
+292. -P. 143-161. DOI10.1016/j.ins.2014.08.062
+\\end{references}
+
+\\begin{authorinfo}
+\\hspace{1em}\\emph{{\\bfseries Information about the authors}}
+
+Mukazhanov N. K. - doctor Ph.D., associate professor, Satbayev
+University, Almaty, Kazakhstan, е-mail:
+\\href{mailto:n.mukazhanov@satbayev.university}{\\nolinkurl{n.mukazhanov@satbayev.university}};
+
+Cherikbayeva L.Sh. - doctor Ph.D., Al-Farabi Kazakh National University,
+Almaty, Kazakhstan, е-mail:
+\\href{mailto:cherikbayeva.lyailya@gmail.com}{\\nolinkurl{cherikbayeva.lyailya@gmail.com}};
+
+Kasenkhan A.M. -- doctor Ph.D., Satbayev University, Almaty, Kazakhstan,
+e-mail:
+\\href{mailto:a.kassenkhan@satbayev.university}{\\nolinkurl{a.kassenkhan@satbayev.university}};
+
+Alibieva Zh.M. - doctor Ph.D., associate professor, Satbayev University,
+Almaty, Kazakhstan, е-mail:
+\\href{mailto:zh.alibiyeva@satbayev.university}{\\nolinkurl{zh.alibiyeva@satbayev.university}};
+
+Turdalyuly M. - doctor Ph.D., associate professor, International
+Engineering and Technological University, Almaty, Kazakhstan, е-mail:
+m.turdalyuly@gmail.com
+
+\\hspace{1em}\\emph{{\\bfseries Сведения об авторах}}
+
+Мукажанов Н.К. - доктор Ph.D, ассоциированный профессор, Satbayev
+University, Алматы, Казахстан, е-mail:
+\\href{mailto:n.mukazhanov@satbayev.university}{\\nolinkurl{n.mukazhanov@satbayev.university}};
+
+Черикбаева Л.Ш. - доктор Ph.D, Казахский национальный университет им.
+Аль-Фараби, Алматы, Казахстан, е-mail:
+\\href{mailto:cherikbayeva.lyailya@gmail.com}{\\nolinkurl{cherikbayeva.lyailya@gmail.com}};
+
+Қасенхан А.М - доктор Ph.D, Satbayev University, Алматы, Казахстан,
+e-mail:
+\\href{mailto:a.kassenkhan@satbayev.university}{\\nolinkurl{a.kassenkhan@satbayev.university}};
+
+Алибиева Ж.М. - доктор Ph.D, ассоциированный профессор, Satbayev
+University, Алматы, Казахстан, " 0 2 (face font-lock-comment-delimiter-face fontified t) 2 13 (face font-lock-comment-face fontified t) 13 14 (face font-lock-comment-face fontified t) 14 187 (fontified t) 187 196 (face font-lock-keyword-face fontified t) 196 260 (face (bold) fontified t) 260 331 (fontified t) 331 333 (face font-lock-keyword-face fontified t) 333 337 (fontified t) 337 339 (face font-lock-keyword-face fontified t) 339 391 (fontified t) 391 393 (face font-lock-keyword-face fontified t) 393 435 (fontified t) 435 437 (face font-lock-keyword-face fontified t) 437 479 (fontified t) 479 481 (face font-lock-keyword-face fontified t) 481 802 (fontified t) 802 811 (fontified t) 811 969 (fontified t) 969 975 (face font-lock-keyword-face fontified t) 975 976 (fontified t latex-env-pair t) 976 982 (face font-lock-function-name-face fontified t latex-env-pair t) 982 983 (fontified t latex-env-pair t) 983 988 (fontified t) 988 998 (face font-lock-keyword-face fontified t) 998 1000 (fontified t) 1000 1016 (face font-lock-keyword-face fontified t) 1016 1026 (fontified t) 1026 1036 (face font-lock-keyword-face fontified t) 1036 1038 (fontified t) 1038 1055 (face font-lock-builtin-face fontified t) 1055 1058 (fontified t) 1058 1067 (face font-lock-keyword-face fontified t) 1067 1122 (fontified t) 1122 1126 (face font-lock-keyword-face fontified t) 1126 1127 (fontified t latex-env-pair t) 1127 1133 (face font-lock-function-name-face fontified t latex-env-pair t) 1133 1134 (fontified t latex-env-pair t) 1134 1199 (fontified t) 1199 1201 (face font-lock-keyword-face fontified t) 1201 1512 (fontified t) 1512 1514 (fontified t) 1514 1563 (fontified t)) . 20640) (undo-tree-id0 . -115) (undo-tree-id1 . 16547) (t 26477 14144 265462 85000)) nil (26482 9343 884386 164000) 0 nil])
+([nil nil ((20 . 64) 19 (t 26482 8606 885748 293000)) nil (26482 9343 884364 365000) 0 nil])
+([nil nil ((#("
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.6\\textwidth]{media/ict/image10.2}
+	\\caption*{Figure 4 - Steps of processing text data using machine learning}
+\\end{figure}
+" 0 1 (fontified t) 1 7 (face font-lock-keyword-face fontified t) 7 8 (fontified t latex-env-pair t) 8 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 20 (fontified t) 20 30 (face font-lock-keyword-face fontified t) 30 32 (fontified t) 32 48 (face font-lock-keyword-face fontified t) 48 58 (fontified t) 58 68 (face font-lock-keyword-face fontified t) 68 70 (fontified t) 70 89 (face font-lock-builtin-face fontified t) 89 92 (fontified t) 92 101 (face font-lock-keyword-face fontified t) 101 167 (fontified t) 167 171 (face font-lock-keyword-face fontified t) 171 172 (fontified t latex-env-pair t) 172 178 (face font-lock-function-name-face fontified t latex-env-pair t) 178 179 (fontified t latex-env-pair t) 179 180 (fontified t)) . 20685) (undo-tree-id2 . -167) (undo-tree-id3 . -113) (undo-tree-id4 . -113) (undo-tree-id5 . -113) (undo-tree-id6 . -167) (undo-tree-id7 . -167) (undo-tree-id8 . -179) 20852 (t 26482 9343 943886 706000)) nil (26482 9686 879233 242000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 19533 . 19534) (#("
+" 0 1 (fontified nil)) . -19713) (19533 . 19714) 19521) nil (26482 9686 879215 241000) 0 nil])
+([nil nil ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 20848) (undo-tree-id21 . -15) (t 26482 9686 931861 738000)) nil (26482 9691 820287 419000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 21554 . 21555) (#("
+" 0 1 (fontified nil)) . -21570) (21554 . 21571) 21532) nil (26482 9691 820285 505000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 20849) (undo-tree-id9 . 1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1)) nil (26482 9691 820282 113000) 0 nil])
+([nil nil ((#("6" 0 1 (fontified t)) . -19591) (t 26482 9691 855717 740000) (19592 . 19593) 19591 (t 26482 9691 855717 740000)) nil (26482 9725 639315 757000) 0 nil])
+([nil nil ((nil fontified t 19591 . 19592) (#("7" 0 1 (fontified t)) . -19591) (19592 . 19593) 19591) nil (26482 9725 639310 956000) 0 nil])
+([nil nil ((21738 . 21759) (22216 . 22232) (t 26482 9725 679728 513000)) nil (26482 9759 339523 8000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -22310) (22311 . 22312) 22310) nil (26482 9759 339521 853000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -21627) (21628 . 21629) 21627) nil (26482 9759 339517 850000) 0 nil])
+([nil nil ((22419 . 22440) (24160 . 24176) (t 26482 9759 368743 136000)) nil (26482 9764 73513 551000) 0 nil])
+([nil nil ((#("
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ict/image15}
+	\\caption*{Figure 8 - RNN model creation}
+\\end{figure}
+" 0 1 (fontified t) 1 7 (face font-lock-keyword-face fontified t) 7 8 (fontified t latex-env-pair t) 8 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 17 (fontified t) 17 19 (fontified t) 19 20 (fontified t) 20 30 (face font-lock-keyword-face fontified t) 30 32 (fontified t) 32 48 (face font-lock-keyword-face fontified t) 48 58 (fontified t) 58 68 (face font-lock-keyword-face fontified t) 68 70 (fontified t) 70 87 (face font-lock-builtin-face fontified t) 87 90 (fontified t) 90 99 (face font-lock-keyword-face fontified t) 99 131 (fontified t) 131 135 (face font-lock-keyword-face fontified t) 135 136 (fontified t latex-env-pair t) 136 142 (face font-lock-function-name-face fontified t latex-env-pair t) 142 143 (fontified t latex-env-pair t) 143 144 (fontified t)) . 24858) (undo-tree-id22 . -131) (undo-tree-id23 . -131) (undo-tree-id24 . -143) (undo-tree-id25 . -29) (undo-tree-id26 . -131) 24989 (t 26482 9764 125603 992000)) nil (26482 9788 515981 872000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 24334 . 24335) (#("
+" 0 1 (fontified nil)) . -24478) (24334 . 24479) 24322) nil (26482 9788 515971 107000) 0 nil])
+([nil nil ((24480 . 24501) (27528 . 27544)) nil (26482 9788 515967 11000) 0 nil])
+([nil current ((27720 . 27741) (28276 . 28292) (t 26482 9788 566889 31000)) nil (26482 9814 524616 303000) 0 nil])
 nil

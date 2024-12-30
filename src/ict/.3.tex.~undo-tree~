@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"f41b875a5a8244ec697886a38f4debd35c0f46dd"
+"6db04546f7e531fba73dd8bd9a2bf9dc15260517"
 [nil nil nil nil (26474 23225 749735 204000) 0 nil]
 ([nil nil ((703 . 704) (#("
 " 0 1 (fontified t)) . -703) 642 (t 26474 22916 23024 797000)) nil (26474 23244 585024 703000) 0 nil] [nil nil ((nil rear-nonsticky nil 665 . 666) (nil fontified nil 642 . 666) (642 . 666) (t 26474 22916 23024 797000)) ((#("put_newpage_and_bfseries" 0 4 (fontified nil) 4 5 (face (subscript) display (raise -0.2) fontified nil) 5 12 (fontified nil) 12 13 (face (subscript) display (raise -0.2) fontified nil) 13 16 (fontified nil) 16 17 (face (subscript) display (raise -0.2) fontified nil) 17 23 (fontified nil) 23 24 (rear-nonsticky nil fontified nil)) . 642) (undo-tree-id0 . -23) (undo-tree-id1 . -23) (undo-tree-id2 . -23) (undo-tree-id3 . -23) (undo-tree-id4 . -23) (nil rear-nonsticky t 665 . 666)) (26474 23225 749463 676000) 0 nil])
@@ -585,5 +585,6 @@ nil
 ([nil nil ((28174 . 28176) (t 26477 13807 245162 856000)) nil (26477 13817 566883 605000) 0 nil])
 nil
 ([nil nil ((27518 . 27580) (#("jomartova@mail.ru" 0 17 (fontified t)) . 27518) (undo-tree-id24 . -17) (undo-tree-id25 . -16) (t 26477 13817 602864 546000)) nil (26477 13831 557744 826000) 0 nil])
-([nil current ((27365 . 27425) (#("tmazakov@mail.ru" 0 16 (fontified t)) . 27365) (undo-tree-id22 . -16) (undo-tree-id23 . -15)) nil (26477 13831 557740 31000) 0 nil])
+([nil nil ((27365 . 27425) (#("tmazakov@mail.ru" 0 16 (fontified t)) . 27365) (undo-tree-id22 . -16) (undo-tree-id23 . -15)) nil (26477 13831 557740 31000) 0 nil])
+([nil current ((20 . 64) 19 (t 26477 13831 585461 855000)) nil (26482 9322 856591 172000) 0 nil])
 nil
