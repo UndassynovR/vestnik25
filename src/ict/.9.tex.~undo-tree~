@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"d67797c0df3b3d2bb3a9d773be6c1b7b51b6ea30"
+"a520f759853769ad71777bc893248666de70b00c"
 [nil nil nil nil (26474 23279 446922 888000) 0 nil]
 ([nil nil ((712 . 713) (#("
 " 0 1 (fontified t)) . -712) (undo-tree-id0 . -1) 652 (t 26474 22916 24024 768000)) nil (26474 23279 446921 921000) 0 nil])
@@ -1161,6 +1161,8 @@ University, Shymkent, Kazakhstan, \\\\e-mail:
 \\href{mailto:jalal45@mail.ru}{\\nolinkurl{jalal45@mail.ru}}.
 >>>>>>> 232a5f89987fee5b54088a5ba14778a0fd29fbdd
 " 0 7 (face smerge-markers fontified t) 7 8 (face nil fontified t) 8 42 (face (smerge-lower) fontified t) 42 44 (face (smerge-lower font-lock-warning-face) fontified t) 44 52 (face (smerge-lower) fontified t) 52 57 (face (smerge-lower font-lock-keyword-face) fontified t) 57 58 (face (smerge-lower) fontified t) 58 80 (face (smerge-lower tex-verbatim) fontified t) 80 82 (face (smerge-lower) fontified t) 82 92 (face (smerge-lower font-lock-keyword-face) fontified t) 92 93 (face (smerge-lower) fontified t) 93 108 (face (smerge-lower tex-verbatim) fontified t) 108 112 (face (smerge-lower) fontified t) 112 114 (face font-lock-keyword-face fontified t) 114 160 (face smerge-markers fontified t) 160 161 (face smerge-markers fontified t)) . 40907) (undo-tree-id12 . -112) (undo-tree-id13 . -160) (undo-tree-id14 . -112) (undo-tree-id15 . -112) (t 26482 12644 841618 363000)) nil (26482 12683 13138 714000) 0 nil])
-([nil current ((#("<<<<<<< HEAD
+([nil nil ((#("<<<<<<< HEAD
 " 0 1 (face font-lock-keyword-face smerge-refine-part (19051 . 2) fontified t) 1 2 (face font-lock-keyword-face fontified t) 2 13 (face smerge-markers fontified t)) . 40790) (undo-tree-id0 . -12) (undo-tree-id1 . -13) (undo-tree-id2 . -13) (undo-tree-id3 . -13) (undo-tree-id4 . -13) (undo-tree-id5 . -13) (undo-tree-id6 . -13) (undo-tree-id7 . -13) (undo-tree-id8 . -13) (undo-tree-id9 . -13) (undo-tree-id10 . -13) (undo-tree-id11 . -13)) nil (26482 12683 13132 933000) 0 nil])
+([nil nil ((26108 . 26109) (#("s" 0 1 (fontified t)) . 26108) (undo-tree-id0 . -1) (t 26482 28669 295106 114000)) nil (26482 42403 30002 217000) 0 nil])
+([nil current ((26538 . 26572) (#("Нәтижелер мен талқылау" 0 22 (fontified t)) . -26538) (undo-tree-id1 . -21) (undo-tree-id2 . -21) (undo-tree-id3 . -21) (undo-tree-id4 . -21) (undo-tree-id5 . -21) (undo-tree-id6 . -21) (undo-tree-id7 . -21) (undo-tree-id8 . -21) (undo-tree-id9 . -21) (undo-tree-id10 . -21) (undo-tree-id11 . -21) (undo-tree-id12 . -21) (undo-tree-id13 . -21) (undo-tree-id14 . -21) (undo-tree-id15 . -21) (undo-tree-id16 . -21) (undo-tree-id17 . -21) (undo-tree-id18 . -21) (undo-tree-id19 . -21) (undo-tree-id20 . -21) (undo-tree-id21 . -21) (undo-tree-id22 . -21) (undo-tree-id23 . -21) (undo-tree-id24 . -21) (undo-tree-id25 . -21) (undo-tree-id26 . -21) (undo-tree-id27 . -21) (undo-tree-id28 . -21) (undo-tree-id29 . -21) (undo-tree-id30 . -21) (undo-tree-id31 . -21) (undo-tree-id32 . -21) (undo-tree-id33 . -21) (undo-tree-id34 . -22) 26560 (t 26482 42403 39704 428000)) nil (26482 42456 291403 856000) 0 nil])
 nil

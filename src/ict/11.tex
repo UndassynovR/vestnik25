@@ -272,7 +272,7 @@ HAS\_REQUIREMENT, HAS\_RESPONSIBILITY\}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{media/ict/image104}
-	\caption*{Fig. 1. - Example of a subgraph of vacancies and skills. The
+	\caption*{Fig. 1 - Example of a subgraph of vacancies and skills. The
 node representing the vacancy is marked in purple, skill nodes are
 marked in red, requirement nodes are marked in blue, and responsibility
 nodes are marked in yellow}
@@ -827,27 +827,17 @@ evaluated by an expert.
 \end{multicols}
 
 \begin{table}[H]
-\caption*{Table 4 - Comparison of erroneous clusters before and after
-training the embedding model}
-\centering
-\begin{tabular}{|p{0.12\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|}
-\hline
-\textbf{Embedding model} &
-  \textbf{Silhouette coefficient} &
-  \textbf{Number of clusters (including single terms)} &
-  \textbf{Percentage of Single Terms from Total Skills (3047)} &
-  \textbf{Percentage of erroneous clusters} \\ \hline
-Before training &
-  0,27126 &
-  1121 &
-  19,17\% &
-  19,74\% \\ \hline
-After training &
-  0,2851 &
-  1407 &
-  24\% &
-  13,97\% \\ \hline
-\end{tabular}%
+    \centering
+    \caption*{Table 4 - Comparison of erroneous clusters before and after training the embedding model}
+    \begin{tabular}{|>{\centering\arraybackslash}p{0.12\textwidth}|>{\centering\arraybackslash}p{0.1\textwidth}|>{\centering\arraybackslash}p{0.2\textwidth}|>{\centering\arraybackslash}p{0.2\textwidth}|>{\centering\arraybackslash}p{0.2\textwidth}|}
+        \hline
+        \textbf{Embedding model} & \textbf{Silhouette coefficient} & \textbf{Number of clusters (including single terms)} & \textbf{Percentage of Single Terms from Total Skills (3047)} & \textbf{Percentage of erroneous clusters} \\ 
+        \hline
+        Before training & 0,27126 & 1121 & 19,17\% & 19,74\% \\ 
+        \hline
+        After training & 0,2851 & 1407 & 24\% & 13,97\% \\ 
+        \hline
+    \end{tabular}
 \end{table}
 
 \begin{multicols}{2}
