@@ -1,5 +1,6 @@
 (undo-tree-save-format-version . 1)
-"20b58c3c9501cf4281de585c4a5d7dbe4fc35001"
+"c605195ca56fabf54fe24182f79b018a04221708"
 [nil nil nil nil (26481 29918 465885 143000) 0 nil]
-([nil current ((#("bfseries " 0 9 (fontified t)) . 94) (undo-tree-id0 . -9) (undo-tree-id1 . -8) (t 26481 29756 754067 481000)) nil (26481 29918 465875 575000) 0 nil])
+([nil nil ((#("bfseries " 0 9 (fontified t)) . 94) (undo-tree-id0 . -9) (undo-tree-id1 . -8) (t 26481 29756 754067 481000)) nil (26481 29918 465875 575000) 0 nil])
+([nil current ((20 . 64) 19 (t 26482 8606 888748 204000)) nil (26482 13842 786466 633000) 0 nil])
 nil
