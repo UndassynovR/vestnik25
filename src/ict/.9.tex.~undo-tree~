@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"10906cb7bbd1ef3188ef1215b29c32e26bfd854f"
+"d67797c0df3b3d2bb3a9d773be6c1b7b51b6ea30"
 [nil nil nil nil (26474 23279 446922 888000) 0 nil]
 ([nil nil ((712 . 713) (#("
 " 0 1 (fontified t)) . -712) (undo-tree-id0 . -1) 652 (t 26474 22916 24024 768000)) nil (26474 23279 446921 921000) 0 nil])
@@ -1086,5 +1086,81 @@ e-mail: ades\\_98@mail.ru;
 ([nil nil ((#("8" 0 1 (fontified t)) . -31414) (31415 . 31416) 31414) nil (26482 10889 750051 478000) 0 nil])
 ([nil nil ((38912 . 38914) (t 26482 10889 792752 40000)) nil (26482 10925 397353 739000) 0 nil])
 ([nil nil ((35620 . 35621) (t 26482 10925 440713 778000)) nil (26482 10960 911110 338000) 0 nil])
-([nil current ((36073 . 36075) (t 26482 10960 955679 251000)) nil (26482 10966 134269 130000) 0 nil])
+([nil nil ((36073 . 36075) (t 26482 10960 955679 251000)) nil (26482 10966 134269 130000) 0 nil])
+([nil nil ((38006 . 41067) (#("
+DOI 10.3390/en15062061
+
+15.Letzsch W. Fluid Catalytic Cracking (FCC) in Petroleum Refining. In:
+Treese, S., Pujadó, P., Jones, D. (eds) Handbook of Petroleum Processing
+// Springer, Cham. -2015. DOI10.1007/978-3-319-14529-7\\_2
+
+16.Amblard, B., Singh R., Gbordzoe E., Raynal L.CFD modeling of the coke
+combustion in an industrial FCC regenerator // Chemical Engineering
+Science.- 2016. - P. 731- 742.
+
+DOI
+\\href{http://dx.doi.org/10.1016/j.ces.2016.12.055}{10.1016/j.ces.2016.12.055}
+
+17. Idris M., Burn A. CFD Modelling Gas-Solid Flows in CFB // FCC Riser
+Reactors: Simulation Using Kinetic Theory of Granular Flow (KTGF) in a
+Fully Developed Flow Situation. -American institute of chemical
+engineers, 2008. 1-19
+
+18. Barbosa et.al., A. C., Three-Dimensional Simulation of Catalytic
+Cracking Reactions in an Industrial Scale Riser Using a 11-lump Kinetic
+Model. Chem. Eng. Trans. -2013.- 32. -P. 637-642 DOI
+\\\\\\href{http://dx.doi.org/10.3303/ACOS1311004}{10.3303/ACOS1311004}
+
+19. Sabzi H.Z. Developing an intelligent expert system for streamflow
+prediction, integrated in a dynamic decision support system for managing
+multiple reservoirs: a case study // Expert systems with applications.
+-2017. -Vol. 82. -№3. -C.145--163. DOI 10.1016/j.eswa.2017.04.039
+\\end{references}
+
+\\begin{authorinfo}
+\\hspace{1em}\\emph{{\\bfseries Авторлар туралы мәліметтер}}
+
+Боранбаева Н.Б. -- докторант, Л.Н.Гумилев атындағы Еуразия Ұлттық
+университеті, сеньор лектор, Astana IT University, Астана, Қазақстан,
+e-mail: ades\\_98@mail.ru;
+
+Оразбаев Б.Б.- профессор, т.ғ.д., Л.Н.Гумилев атындағы Еуразия Ұлттық
+университеті, Астана, Қазақстан, e-mail: \\\\batyr\\_o@mail.ru;
+
+Рзаева Л.Г.- қауымдастырылған профессор, Astana IT University, Астана,
+Қазақстан, e-mail:
+\\href{mailto:l.rzayeva@astanait.edu.kz}{\\nolinkurl{l.rzayeva@astanait.edu.kz}};
+
+Карабаев Ж.А. -PhD, аға оқытушы, М.Әуезов атындағы Оңтүстік Қазақстан
+университеті, Шымкент, Қазақстан, e-mail:jalal45@mail.ru
+
+Серимбетов Б.А.- техникалық ғылымдар кандидаты, қауымдастырылған
+профессор, Қ.Құлажанов атындағы Қазақ технология және бизнес
+университеті ,Астана, Қазастан, e-mail:
+\\href{mailto:sba_rnmc@mail.ru}{\\nolinkurl{sba\\_rnmc@mail.ru}}.
+
+\\hspace{1em}\\emph{{\\bfseries Information about the authors}}
+
+Boranbayeva N.- doctoral student at L. N. Gumilyov Eurasian National
+University, senior lecturer, Astana IT University, Astana, Kazakhstan,
+e-mail: ades\\_98@mail.ru;
+
+Orazbayev B.- Doctor of Technical Sciences, Professor, L.N.Gumilyov
+Eurasian National University, Astana, Kazakhstan, e-mail:
+batyr\\_o@mail.ru;
+
+Rzayeva L.- Associate Professor, Astana IT University, Astana,
+Kazakhsta, e-mail:
+\\href{mailto:l.rzayeva@astanait.edu.kz}{\\nolinkurl{l.rzayeva@astanait.edu.kz}};
+
+Karabayev Zh.- PhD, senior lecturer, Mukhtar Ayezov South Kazakhstan
+University, Shymkent, Kazakhstan, e-mail:
+\\\\\\href{mailto:jalal45@mail.ru}{\\nolinkurl{jalal45@mail.ru}}." 224 226 (face font-lock-keyword-face) 406 411 (face font-lock-keyword-face) 412 455 (face tex-verbatim) 909 911 (face font-lock-warning-face) 911 912 (face font-lock-keyword-face) 912 916 (face font-lock-keyword-face) 917 954 (face tex-verbatim) 1258 1262 (face font-lock-keyword-face) 1262 1263 (latex-env-pair t) 1263 1273 (face font-lock-function-name-face latex-env-pair t) 1273 1274 (latex-env-pair t) 1276 1282 (face font-lock-keyword-face) 1282 1283 (latex-env-pair t) 1283 1293 (face font-lock-function-name-face latex-env-pair t) 1293 1294 (latex-env-pair t) 1295 1302 (face font-lock-keyword-face) 1307 1312 (face font-lock-keyword-face) 1313 1314 (face (italic)) 1314 1323 (face (font-lock-keyword-face italic)) 1323 1350 (face (italic bold)) 1350 1351 (face (italic)) 1502 1504 (face font-lock-keyword-face) 1628 1630 (face font-lock-warning-face) 1635 1637 (face font-lock-keyword-face) 1739 1744 (face font-lock-keyword-face) 1745 1777 (face tex-verbatim) 1779 1789 (face font-lock-keyword-face) 1790 1815 (face tex-verbatim) 2114 2119 (face font-lock-keyword-face) 2120 2143 (face tex-verbatim) 2145 2155 (face font-lock-keyword-face) 2156 2173 (face tex-verbatim) 2178 2185 (face font-lock-keyword-face) 2190 2195 (face font-lock-keyword-face) 2196 2197 (face (italic)) 2197 2206 (face (font-lock-keyword-face italic)) 2206 2236 (face (italic bold)) 2236 2237 (face (italic)) 2392 2394 (face font-lock-keyword-face) 2538 2540 (face font-lock-keyword-face) 2634 2639 (face font-lock-keyword-face) 2640 2672 (face tex-verbatim) 2674 2684 (face font-lock-keyword-face) 2685 2710 (face tex-verbatim) 2826 2828 (face font-lock-warning-face) 2828 2829 (face font-lock-keyword-face) 2829 2833 (face font-lock-keyword-face) 2834 2856 (face tex-verbatim) 2858 2868 (face font-lock-keyword-face) 2869 2884 (face tex-verbatim)) . 38006) (undo-tree-id16 . -2532) (undo-tree-id17 . 195) (undo-tree-id18 . -2532) (undo-tree-id19 . -2691) (undo-tree-id20 . -2532) (t 26482 10966 162527 566000)) nil (26482 12683 13142 899000) 0 nil])
+([nil nil ((#("=======
+University, Shymkent, Kazakhstan, \\\\e-mail:
+\\href{mailto:jalal45@mail.ru}{\\nolinkurl{jalal45@mail.ru}}.
+>>>>>>> 232a5f89987fee5b54088a5ba14778a0fd29fbdd
+" 0 7 (face smerge-markers fontified t) 7 8 (face nil fontified t) 8 42 (face (smerge-lower) fontified t) 42 44 (face (smerge-lower font-lock-warning-face) fontified t) 44 52 (face (smerge-lower) fontified t) 52 57 (face (smerge-lower font-lock-keyword-face) fontified t) 57 58 (face (smerge-lower) fontified t) 58 80 (face (smerge-lower tex-verbatim) fontified t) 80 82 (face (smerge-lower) fontified t) 82 92 (face (smerge-lower font-lock-keyword-face) fontified t) 92 93 (face (smerge-lower) fontified t) 93 108 (face (smerge-lower tex-verbatim) fontified t) 108 112 (face (smerge-lower) fontified t) 112 114 (face font-lock-keyword-face fontified t) 114 160 (face smerge-markers fontified t) 160 161 (face smerge-markers fontified t)) . 40907) (undo-tree-id12 . -112) (undo-tree-id13 . -160) (undo-tree-id14 . -112) (undo-tree-id15 . -112) (t 26482 12644 841618 363000)) nil (26482 12683 13138 714000) 0 nil])
+([nil current ((#("<<<<<<< HEAD
+" 0 1 (face font-lock-keyword-face smerge-refine-part (19051 . 2) fontified t) 1 2 (face font-lock-keyword-face fontified t) 2 13 (face smerge-markers fontified t)) . 40790) (undo-tree-id0 . -12) (undo-tree-id1 . -13) (undo-tree-id2 . -13) (undo-tree-id3 . -13) (undo-tree-id4 . -13) (undo-tree-id5 . -13) (undo-tree-id6 . -13) (undo-tree-id7 . -13) (undo-tree-id8 . -13) (undo-tree-id9 . -13) (undo-tree-id10 . -13) (undo-tree-id11 . -13)) nil (26482 12683 13132 933000) 0 nil])
 nil
