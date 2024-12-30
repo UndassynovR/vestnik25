@@ -200,63 +200,35 @@ tetrakis(3-(3,5-di-tert-butyl4-hydroxyphenyl) propionate) produced by
 BASF was used as a stabilizer.
 \end{multicols}
 
-{\bfseries Table 1 -- Characteristics of polymers}
+\begin{table}[H]
+\caption*{Table 1 -- Characteristics of polymers}
+\centering
+\begin{tabular}{|p{0.12\textwidth}|p{0.12\textwidth}|p{0.12\textwidth}|p{0.12\textwidth}|p{0.12\textwidth}|p{0.12\textwidth}|}
+\hline
+Polymer   & Melt flow rate, g/10 min, T=190ºС & Melting point, ºС        & Yield strength, MPa       & Tensile breaking stress, MPa & Relative elongation at break, \% \\ \hline
+15313-003 & \multicolumn{1}{r|}{0,35}         & \multicolumn{1}{r|}{106} & \multicolumn{1}{r|}{10,8} & \multicolumn{1}{r|}{14}      & \multicolumn{1}{r|}{450}         \\ \hline
+\end{tabular}
+\end{table}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1567}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1567}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1642}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1550}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1776}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1899}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% Polymer
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Melt flow rate, g/10 min, T=190ºС
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Melting point, ºС
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Yield strength, MPa
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Tensile breaking stress, MPa
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Relative elongation at break, \%
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% 15313-003 & 0,35 & 106 & 10,8 & 14,0 & 450 \\
-% \end{longtable}
-
-{\bfseries Table 2- Chemical composition of carbon-silica filler}
-
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5002}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4998}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Chemical composition}
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% {\bfseries Contents, \%}
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% Carbon & 47,26 \\
-% SiO\textsubscript{2} & 50,38 \\
-% Na\textsubscript{2}O & 0,04 \\
-% MgO & 0,16 \\
-% Al\textsubscript{2}O\textsubscript{3} & 0,01 \\
-% P\textsubscript{2}O\textsubscript{5} & 0,11 \\
-% K\textsubscript{2}O & 1,72 \\
-% CaO & 0,28 \\
-% TiO\textsubscript{2} & 0,01 \\
-% MnO & 0,02 \\
-% Fe\textsubscript{2}O\textsubscript{3} & 0,01 \\
-% \end{longtable}
+\begin{table}[H]
+\caption*{Table 2- Chemical composition of carbon-silica filler}
+\centering
+\begin{tabular}{|l|r|}
+\hline
+\textbf{Chemical composition} & \multicolumn{1}{l|}{\textbf{Contents, \%}} \\ \hline
+Carbon                        & 47,26                                      \\ \hline
+SiO2                          & 50,38                                      \\ \hline
+Na2O                          & 0,04                                       \\ \hline
+MgO                           & 0,16                                       \\ \hline
+Al2O3                         & 0,01                                       \\ \hline
+P2O5                          & 0,11                                       \\ \hline
+K2O                           & 1,72                                       \\ \hline
+CaO                           & 0,28                                       \\ \hline
+TiO2                          & 0,01                                       \\ \hline
+MnO                           & 0,02                                       \\ \hline
+Fe2O3                         & 0,01                                       \\ \hline
+\end{tabular}
+\end{table}
 
 \begin{multicols}{2}
 Polymer compositions were prepared by mixing in melt in a Brabender
@@ -294,9 +266,24 @@ with a similar amount of other dispersed fillers.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/chem/image19}
+	\includegraphics[width=0.4\textwidth]{media/chem/image19}
 	\caption*{Fig. 1 -- Influence of CSF concentration on deformation and
 strength characteristics of LDPE}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=\textwidth]{media/chem/image20}
+    \end{subfigure}
+    \hspace{0.05\textwidth} % Adjust horizontal space between the subfigures
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=\textwidth]{media/chem/image21}
+    \end{subfigure}
+    \caption*{Fig. 2 -- Change of yield strength (a) and breaking stress (b)
+of composites in the process of thermal aging}
 \end{figure}
 
 \begin{multicols}{2}
@@ -323,19 +310,21 @@ antioxidant.
 \end{multicols}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/chem/image20}
-	\caption*{Fig. 2 -- Change of yield strength (a) and breaking stress (b)
-of composites in the process of thermal aging}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/chem/image22}
-	\caption*{Fig. 3 -- Rate of yield stress (a) and failure stress (b) of
+    \centering
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=\textwidth]{media/chem/image22}
+    \end{subfigure}
+    \hspace{0.05\textwidth} % Adjust horizontal space between the subfigures
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=\textwidth]{media/chem/image23}
+    \end{subfigure}
+    \caption*{Fig. 3 -- Rate of yield stress (a) and failure stress (b) of
 composites in the process of thermal aging}
 \end{figure}
 
+\begin{multicols}{2}
 Polyethylene filled with CSF has significantly worse elasticity than the
 original one (Fig. 1), but in the process of its thermal aging the
 decrease in relative elongation at break is much slower (Fig. 4).
@@ -346,11 +335,20 @@ of phenolic type Irganox1010 almost completely stops the reduction of
 elasticity of the aged material. However, it is necessary to take into
 account the lower value of elongation at break when filling
 polyethylene.
+\end{multicols}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/chem/image24}
-	\caption*{Fig. 4 -- Change of yield strength (a) and breaking stress (b)
+    \centering
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=\textwidth]{media/chem/image24}
+    \end{subfigure}
+    \hspace{0.05\textwidth} % Adjust horizontal space between the subfigures
+    \begin{subfigure}[t]{0.4\textwidth} % Align at the top
+        \centering
+        \includegraphics[width=\textwidth]{media/chem/image25}
+    \end{subfigure}
+    \caption*{Fig. 4 -- Change of yield strength (a) and breaking stress (b)
 of composites in the process of thermal aging}
 \end{figure}
 
@@ -394,14 +392,14 @@ stabilizacionnuyu ustojchivost'{} kompozicij polietilena
 - 2009. - № 4. - S. 109-112. (In Russian).
 
 2.Manulenko A.F., Lenartovich L.A., Prokopchuk N.R. Vliyanie
-superkoncentratov napolnitelej i stabilizatorov na
+superkoncentratov napolnitelej i \\stabilizatorov na
 termostabil' nost'{} polietilena // Trudy
-BGTU. Seriya 2: Himicheskie tekhnologii, biotekhnologiya, geoekologiya.
+BGTU. Seriya 2: Himicheskie tekhnologii,\\ biotekhnologiya, geoekologiya.
 - 2016. - № 4(186). - S. 106-113. (In Russian)
 
 3.Afashagova Z.H., Ovcharenko E.N., Kozlov G.V., Mikitaev A.K.
 Termicheskie svojstva dispersno-napolnennogo polimernogo nanokompozita
-// Izvestiya vuzov. Severo-Kavkazskij region. Seriya: Estestvennye
+// Izvestiya vuzov. Severo-Kavkazskij region. Seriya:\\ Estestvennye
 nauki. 2007. №5.- S.34-36. (In Russian)
 
 4.Lenartovich L.A., Prokopchuk N.R., SHkodich V.F. Teplovoe starenie
@@ -410,7 +408,7 @@ Tekhnologicheskogo universiteta. -2015. -T. 18.- № 9. -S. 41-48. (In
 Russian)
 
 5.Evrazijskij patent 045499 V1, MPK C08K 3/013, C08K 3/04, C08K 3/34.
-Primenenie uglerod-kremnistogo kompozita v kachestve napolnitelya,
+Primenenie \\uglerod-kremnistogo kompozita v kachestve napolnitelya,
 zayavl. 30.06.2021, opubl. 29.11. 2023. (In Russian)
 
 6.Bobrova V.V., Prokopchuk N.R., Efremov S.A., Nechipurenko S.V.
@@ -431,7 +429,7 @@ Matrix // Polymer Composites. - 2014.- V. 35 - № 8. - P. 1466--1472.
 https://doi.org/10.1002/pc.22800
 
 9.Sattayanurak S., Sahakaro K., Kaewsakul W., Dierkes W. K., Reuvekamp
-L.A.E.M., Blume A., Noordermeer J.W.M. Synergistic effect by high
+L.A.E.M., Blume A., \\Noordermeer J.W.M. Synergistic effect by high
 specific surface area carbon black as secondary filler in silica
 reinforced natural rubber tire tread compounds // Polymer Testing --
 2020-V.21-APP. 106173. DOI 10.1016/j.polymertesting.2019.106173
@@ -450,21 +448,19 @@ elastomernyh kompozicij // Vestnik Tekhnologicheskogo universiteta. -
 12.Bobrova V.V., Prokopchuk N.R., Efremov S.A., Nechipurenko S.V.
 Svojstva elastomernyh kompozicij, napolnennyh uglerod-kremnistym
 kompozitom // Trudy BGTU. Seriya 2: Himicheskie tekhnologii,
-biotekhnologiya, geoekologiya. - 2022. - № 2 (259). - S. 156-164.DOI
+\\biotekhnologiya, geoekologiya. - 2022. - № 2 (259). - S. 156-164.DOI
 10.52065/2520-2669-2022-259-2-156-164 (In Russian)
 
 13.Bobrova V.V., Prokopchuk N.R., Efremov S.A., Nechipurenko S.V.,
 Stoyanov O.V. Elastomernye kompozicii, napolnennye produktom pererabotki
 risa // Vestnik Tekhnologicheskogo universiteta. - 2023. - T. 26. - № 2.
-- S. 60-63.
-
-\url{https://elib.belstu.by/handle/123456789/65005/} (In Russian).
+- S. 60-63. \href{https://elib.belstu.by/handle/123456789/65005/}{https://elib.belstu.by} (In Russian).
 
 14.Bobrova V.V., Prokopchuk N.R., Efremov S.A., Nechipurenko S.V.,
 Stoyanov O.V. Vliyanie napolnitelya na osnove produktov pererabotki risa
 na dolyu svyazannogo polimera v elastomernyh kompoziciyah // Vestnik
 Tekhnologicheskogo universiteta. - 2023. - T. 26. - № 3. - S.
-50-52..\url{https://elib.belstu.by/handle/123456789/65006}. (In Russian)
+50-52.. \href{https://elib.belstu.by/handle/123456789/65006}{https://elib.belstu.by}. (In Russian)
 
 15.Bobrova V.V., Prokopchuk N.R., Efremov S.A., Nechipurenko S.V.
 Primenenie uglerod-kremnistogo napolnitelya v elastomernyh kompoziciyah
@@ -526,7 +522,7 @@ KazNANS, National Engineering Academy of RK, Almaty, Kazakhstan, e-mail:
 ведущий научный сотрудник, Казахский национальный университет им.
 аль-Фараби, Национальная инженерная академия РК, Алматы, Казахстан,
 e-mail:
-\href{mailto:nechipurenkos@mail.ru}{\nolinkurl{nechipurenkos@mail.ru}};
+\\\href{mailto:nechipurenkos@mail.ru}{\nolinkurl{nechipurenkos@mail.ru}};
 
 Ермухамбетова Б.Б.-кандидат химических наук, ведущий научный сотрудник,
 Казахский национальный университет им. аль-Фараби, Национальная
@@ -540,7 +536,7 @@ e-mail:
 ведущий научный сотрудник, Казахский национальный университет им.
 аль-Фараби, Национальная инженерная академия РК, Алматы, Казахстан,
 e-mail:
-\href{mailto:galiya.irm@gmail.com}{\nolinkurl{galiya.irm@gmail.com}};
+\\\href{mailto:galiya.irm@gmail.com}{\nolinkurl{galiya.irm@gmail.com}};
 
 Аликулов А.Ж.- магистр технических наук, старший преподаватель, научный
 сотрудник, Казахский национальный университет им. аль-Фараби,
@@ -559,5 +555,5 @@ e-mail:
 сотрудник, Казахский национальный университет им. аль-Фараби,
 Национальная инженерная академия РК, академик КазНАЕН, Алматы,
 Казахстан, e-mail:
-\href{mailto:efremsa@mail.ru}{\nolinkurl{efremsa@mail.ru}}
+\\\href{mailto:efremsa@mail.ru}{\nolinkurl{efremsa@mail.ru}}
 \end{authorinfo}

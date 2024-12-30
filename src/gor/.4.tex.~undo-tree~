@@ -1,0 +1,10 @@
+(undo-tree-save-format-version . 1)
+"745079acece3457091c6a7227392d578111fd8d2"
+[nil nil nil nil (26481 36881 229824 615000) 0 nil]
+([nil nil ((#("{\\bfseries 1-кесте. Мұнайдың тұтқырлығы мен қабат қысымы арасындағы
+пропорционалдылық коэффициентінің тәуелділігі}" 0 1 (fontified t) 1 10 (face font-lock-keyword-face fontified t) 10 113 (face (bold) fontified t) 113 114 (fontified t)) . -16552) (undo-tree-id1 . -11) (undo-tree-id2 . -11) 16563 (t 26477 28463 302887 499000)) nil (26481 36881 229823 743000) 0 nil])
+([nil nil ((16840 . 16845) (#("i" 0 1 (face font-lock-keyword-face fontified nil)) . -16840) (undo-tree-id0 . -1) (16835 . 16841) (16830 . 16835) 16744) nil (26481 36881 229821 429000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 16946 . 16947) (nil fontified nil 16845 . 16947) (16845 . 16947) 16844) nil (26481 36881 229803 836000) 0 nil])
+([nil nil ((16947 . 16948)) nil (26481 36881 229803 215000) 0 nil])
+([nil current ((16948 . 16951)) nil (26481 36881 229799 47000) 0 nil])
+nil
