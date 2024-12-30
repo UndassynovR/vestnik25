@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"ffb219400fe5685f2bdbd97aa4825814824b1569"
+"76c3d54f3988c672a64cd6bade6b1e2970be5cfa"
 [nil nil nil nil (26481 30779 77581 912000) 0 nil]
 ([nil nil ((nil rear-nonsticky nil 12787 . 12788) (nil fontified nil 12011 . 12788) (12011 . 12788) (#("\\begin{figure}[H]
     \\centering
@@ -673,6 +673,9 @@ nil
 " 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 21 (fontified t)) . 34156) (undo-tree-id2399 . -21) (undo-tree-id2400 . -21) (undo-tree-id2401 . -21) (undo-tree-id2402 . -21) (undo-tree-id2403 . -20) (undo-tree-id2404 . -21) (undo-tree-id2405 . -21) (undo-tree-id2406 . -21) (undo-tree-id2407 . -21) (undo-tree-id2408 . -21) (undo-tree-id2409 . -21) (undo-tree-id2410 . -21) (undo-tree-id2411 . -21) (undo-tree-id2412 . -21) (undo-tree-id2413 . -21) (undo-tree-id2414 . -21) (undo-tree-id2415 . -21) (undo-tree-id2416 . -21) (undo-tree-id2417 . -21) (undo-tree-id2418 . -21) (undo-tree-id2419 . -21) (undo-tree-id2420 . -21) (undo-tree-id2421 . -21)) nil (26481 32802 919944 869000) 0 nil])
 ([nil nil ((#("\\end{multicols}
 " 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 34156) (undo-tree-id2395 . 16) (undo-tree-id2396 . -15) (undo-tree-id2397 . -15) (undo-tree-id2398 . -16)) nil (26481 32802 919935 291000) 0 nil])
-([nil current ((#("
+([nil nil ((#("
 " 0 1 (fontified t)) . 34156) (undo-tree-id2393 . 1) (undo-tree-id2394 . -1)) nil (26481 32802 919929 310000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 1) (t 26482 8606 880748 441000)) nil (26482 14095 433964 697000) 0 nil])
+([nil current ((20 . 64) 19) nil (26482 14095 433961 75000) 0 nil])
 nil
