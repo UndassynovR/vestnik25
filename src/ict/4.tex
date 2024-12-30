@@ -1,4 +1,4 @@
-\id{IRSTI 28.23.25}
+\id{IRSTI 28.23.25}{https://doi.org/10.58805/kazutb.v.4.25-426}
 
 \begin{articleheader}
 \sectionwithauthors{N.K. Mukazhanov, L.Sh. Cherikbayeva, A.M. Kassenkhan, Zh.M. Alibieva, M. Turdalyuly}{IDENTIFYING EFFECTIVE MACHINE LEARNING ALGORITHMS FOR SENTIMENTAL ANALYSIS OF COMMENTS IN THE KAZAKH LANGUAGE}
@@ -365,6 +365,12 @@ Inverse Document Frequency (IDF) {[}17{]}.
 	\caption*{Figure 3 - Bigram analysis for negative and positive reviews}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image10.2}
+	\caption*{Figure 4 - Steps of processing text data using machine learning}
+\end{figure}
+
 \begin{multicols}{2}
 A matrix of numeric vectors was created by applying the TF-IDF formula
 on the corpus of documents. Each row of the matrix represents a
@@ -384,14 +390,6 @@ and test sets were transformed into numerical feature vectors based on
 the TF-IDF representation. This transformation allows machine learning
 algorithms to work efficiently with textual data, as they typically
 require numerical input.
-\end{multicols}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{media/ict/image10.2}
-	\caption*{Figure 4 - Steps of processing text data using machine learning}
-\end{figure}
 
 The data set was divided into training and test sets using the
 train\_test\_split function of the scikit-learn library. The Test\_size
@@ -404,13 +402,15 @@ data, the identification method adjusts the sample parameters to find
 the best fit for the given data. The accuracy, classification
 calculation, and confusion matrix for estimating sample performance are
 as follows (Figure 5):
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image12}
+	\includegraphics[width=0.7\textwidth]{media/ict/image12}
 	\caption*{Figure 5 - Accuracy of logistic regression algorithm}
 \end{figure}
 
+\begin{multicols}{2}
 And to use the Multinomial Naive Bayes model, the sklearn.naive\_bayes
 function was used. A Multinomial Naive Bayes classifier was instantiated
 and trained on the training data represented by the TF-IDF vectorized
@@ -418,13 +418,15 @@ feature matrix and the corresponding feature matrix. The features of the
 test data were predicted using the trained MNB classifier. The accuracy
 score was calculated by comparing the predicted signs with the real
 signs (accuracy indicators are shown in Figure 6).
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image13}
+	\includegraphics[width=0.7\textwidth]{media/ict/image13}
 	\caption*{Figure 6-Accuracy of Multinomial Naive Bayes model}
 \end{figure}
 
+\begin{multicols}{2}
 In addition, Linear SVM and XGboost models of machine learning are also
 tested. Their results are lower than logistic regression (Linear
 SVM-79.25\%, Xgboost-80.1\%).
@@ -457,6 +459,7 @@ Each index is used to create a vector for each word. One-hot vector is a
 vector whose size is the total number of unique words in the dictionary,
 where only one element is 1, and all other elements are 0 (Figure 7).
 Tourch libbrary was used for this task.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -464,6 +467,13 @@ Tourch libbrary was used for this task.
 	\caption*{Figure 7-One-hot vector}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{media/ict/image15}
+	\caption*{Figure 8 - RNN model creation}
+\end{figure}
+
+\begin{multicols}{2}
 An embedding layer was used to transform a one-hot vector into a dense
 embedding vector. The model constructor consists of the size of the
 input dictionary, the number of unique tokens in the textual data
@@ -472,12 +482,6 @@ the input tokens (embedding\_dim), the number of units in the hidden
 state of the LSTM (hidden\_dim), the dimensionality of the output
 representing the sentiment prediction (output\_dim). The implementation
 of the model is presented in Figure 8.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image15}
-	\caption*{Figure 8 - RNN model creation}
-\end{figure}
 
 In addition, the torch.nn.Embedding module was created, which is
 responsible for learning and matching input tokens with dense embedding
@@ -526,6 +530,7 @@ Figure 9):
   Improved model performance: Overloaded circuits can negatively impact
   model performance by introducing noise and unnecessary calculations.
 \end{itemize}
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
@@ -533,6 +538,7 @@ Figure 9):
 	\caption*{Figure 9 - Improved LSTM algorithm code}
 \end{figure}
 
+\begin{multicols}{2}
 This function creates a boxed sequence object which represents sequences
 without padding tokens. Using this method, 84\% accuracy was achieved.
 
@@ -543,6 +549,7 @@ XGBoost, Long short-term memory (LSTM), LSTM-pack sequence learning
 methods to improve LSTM on collected Kazakh comments. Table 1 shows the
 results of the above-mentioned models and algorithms evaluation
 experiment
+\end{multicols}
 
 \begin{table}[H]
 \caption*{Table 1 - Results of algorithm}

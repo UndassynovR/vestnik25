@@ -204,10 +204,11 @@
 \exhyphenpenalty=5000
 
 % Environments
-\newcommand{\id}[1]{%
-    {\fontsize{11}{13}\selectfont%
-    \newpage%
-    #1\par}%
+\newcommand{\id}[2]{%
+    \newpage
+    {\fontsize{11}{10}\selectfont #1}%
+    \hfill {\bfseries \href{#2}{#2}}%
+    \ignorespaces%
 }
 
 \newenvironment{articleheader}{%
