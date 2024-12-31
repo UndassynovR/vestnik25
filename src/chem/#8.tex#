@@ -689,6 +689,38 @@ NaCl с концентрациями 9\%, 18\% и 25\%. Исходные и вы
    &
    &
   \multicolumn{1}{l|}{} \\ \hline
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{|rr|rrl|rrl|l|r|}
+\hline
+\multicolumn{2}{|l|}{\multirow{2}{*}{Время}} &
+  \multicolumn{3}{l|}{Начальная концентрация исходного раствора – 3,7\%} &
+  \multicolumn{3}{l|}{Начальная концентрация вытяжного раствора – 18\%} &
+  \multirow{3}{*}{Δπ, Па} &
+  \multicolumn{1}{l|}{\multirow{3}{*}{Поток воды Jw, л·м⁻²·ч⁻¹}} \\ \cline{3-8}
+\multicolumn{2}{|l|}{} &
+  \multicolumn{2}{l|}{Концентрация исходного раствора} &
+  \multirow{2}{*}{Осмотичес-кое давление (π) FS, Па} &
+  \multicolumn{2}{l|}{Концентрация вытяжного раствора} &
+  \multirow{2}{*}{Осмотичес-кое давление (π) DS, Па} &
+   &
+  \multicolumn{1}{l|}{} \\ \cline{1-4} \cline{6-7}
+\multicolumn{1}{|l|}{час} &
+  \multicolumn{1}{l|}{день} &
+  \multicolumn{1}{l|}{\%} &
+  \multicolumn{1}{l|}{моль/л} &
+   &
+  \multicolumn{1}{l|}{\%} &
+  \multicolumn{1}{l|}{моль/л} &
+   &
+   &
+  \multicolumn{1}{l|}{} \\ \hline
+\endfirsthead
+%
+\endhead
+%
 \multicolumn{1}{|r|}{0} &
   0 &
   \multicolumn{1}{r|}{3,7} &
@@ -703,145 +735,143 @@ NaCl с концентрациями 9\%, 18\% и 25\%. Исходные и вы
   0,5 &
   \multicolumn{1}{r|}{4,27} &
   \multicolumn{1}{r|}{0,73} &
-  1,808*$10^3$ &
+  1,808*103 &
   \multicolumn{1}{r|}{17,43} &
   \multicolumn{1}{r|}{2,979} &
-  7,382*$10^3$ &
-  5,573*$10^3$ &
+  7,382*103 &
+  5,573*103 &
   55,7 \\ \hline
 \multicolumn{1}{|r|}{24} &
   1 &
   \multicolumn{1}{r|}{4,83} &
   \multicolumn{1}{r|}{0,826} &
-  2,046*$10^3$ &
+  2,046*103 &
   \multicolumn{1}{r|}{16,87} &
   \multicolumn{1}{r|}{2,884} &
-  7,145*$10^3$ &
-  5,099*$10^3$ &
+  7,145*103 &
+  5,099*103 &
   51 \\ \hline
 \multicolumn{1}{|r|}{36} &
   1,5 &
   \multicolumn{1}{r|}{5,38} &
   \multicolumn{1}{r|}{0,92} &
-  2,279*$10^3$ &
+  2,279*103 &
   \multicolumn{1}{r|}{16,32} &
   \multicolumn{1}{r|}{2,79} &
-  6,912*$10^3$ &
-  4,633*$10^3$ &
+  6,912*103 &
+  4,633*103 &
   46,3 \\ \hline
 \multicolumn{1}{|r|}{48} &
   2 &
   \multicolumn{1}{r|}{5,92} &
   \multicolumn{1}{r|}{1,012} &
-  2,507*$10^3$ &
+  2,507*103 &
   \multicolumn{1}{r|}{15,78} &
   \multicolumn{1}{r|}{2,697} &
-  6,683*$10^3$ &
-  4,176*$10^3$ &
+  6,683*103 &
+  4,176*103 &
   41,8 \\ \hline
 \multicolumn{1}{|r|}{60} &
   2,5 &
   \multicolumn{1}{r|}{6,45} &
-  \multicolumn{1}{r|}{1,$10^3$} &
-  2,732*$10^3$ &
+  \multicolumn{1}{r|}{1,103} &
+  2,732*103 &
   \multicolumn{1}{r|}{15,25} &
   \multicolumn{1}{r|}{2,607} &
-  6,459*$10^3$ &
-  3,727*$10^3$ &
+  6,459*103 &
+  3,727*103 &
   37,3 \\ \hline
 \multicolumn{1}{|r|}{72} &
   3 &
   \multicolumn{1}{r|}{6,97} &
   \multicolumn{1}{r|}{1,191} &
-  2,952*$10^3$ &
+  2,952*103 &
   \multicolumn{1}{r|}{14,73} &
   \multicolumn{1}{r|}{2,518} &
-  6,238*$10^3$ &
-  3,286*$10^3$ &
+  6,238*103 &
+  3,286*103 &
   32,9 \\ \hline
 \multicolumn{1}{|r|}{84} &
   3,5 &
   \multicolumn{1}{r|}{7,48} &
   \multicolumn{1}{r|}{1,279} &
-  3,168*$10^3$ &
+  3,168*103 &
   \multicolumn{1}{r|}{14,22} &
   \multicolumn{1}{r|}{2,431} &
-  6,022*$10^3$ &
-  2,855*$10^3$ &
+  6,022*103 &
+  2,855*103 &
   28,5 \\ \hline
 \multicolumn{1}{|r|}{96} &
   4 &
   \multicolumn{1}{r|}{7,98} &
   \multicolumn{1}{r|}{1,364} &
-  3,380*$10^3$ &
+  3,380*103 &
   \multicolumn{1}{r|}{13,72} &
   \multicolumn{1}{r|}{2,345} &
-  5,811*$10^3$ &
-  2,431*$10^3$ &
+  5,811*103 &
+  2,431*103 &
   24,3 \\ \hline
 \multicolumn{1}{|r|}{108} &
   4,5 &
   \multicolumn{1}{r|}{8,47} &
   \multicolumn{1}{r|}{1,448} &
-  3,587*$10^3$ &
+  3,587*103 &
   \multicolumn{1}{r|}{13,23} &
   \multicolumn{1}{r|}{2,262} &
-  5,603*$10^3$ &
-  2,016*$10^3$ &
+  5,603*103 &
+  2,016*103 &
   20,2 \\ \hline
 \multicolumn{1}{|r|}{120} &
   5 &
   \multicolumn{1}{r|}{8,95} &
   \multicolumn{1}{r|}{1,53} &
-  3,790*$10^3$ &
+  3,790*103 &
   \multicolumn{1}{r|}{12,75} &
   \multicolumn{1}{r|}{2,179} &
-  5,400*$10^3$ &
-  1,609*$10^3$ &
+  5,400*103 &
+  1,609*103 &
   16,1 \\ \hline
 \multicolumn{1}{|r|}{132} &
   5,5 &
   \multicolumn{1}{r|}{9,42} &
   \multicolumn{1}{r|}{1,61} &
-  3,990*$10^3$ &
+  3,990*103 &
   \multicolumn{1}{r|}{12,28} &
   \multicolumn{1}{r|}{2,099} &
-  5,201*$10^3$ &
-  1,211*$10^3$ &
+  5,201*103 &
+  1,211*103 &
   12,1 \\ \hline
 \multicolumn{1}{|r|}{144} &
   6 &
   \multicolumn{1}{r|}{9,88} &
   \multicolumn{1}{r|}{1,689} &
-  4,184*$10^3$ &
+  4,184*103 &
   \multicolumn{1}{r|}{11,82} &
   \multicolumn{1}{r|}{2,021} &
-  5,006*$10^3$ &
-  0,822*$10^3$ &
+  5,006*103 &
+  0,822*103 &
   8,2 \\ \hline
 \multicolumn{1}{|r|}{156} &
   6,5 &
   \multicolumn{1}{r|}{10,33} &
   \multicolumn{1}{r|}{1,766} &
-  4,375*$10^3$ &
+  4,375*103 &
   \multicolumn{1}{r|}{11,37} &
   \multicolumn{1}{r|}{1,944} &
-  4,815*$10^3$ &
-  0,440*$10^3$ &
+  4,815*103 &
+  0,440*103 &
   4,4 \\ \hline
 \multicolumn{1}{|r|}{168} &
   7 &
   \multicolumn{1}{r|}{10,77} &
   \multicolumn{1}{r|}{1,841} &
-  4,561*$10^3$ &
+  4,561*103 &
   \multicolumn{1}{r|}{10,93} &
   \multicolumn{1}{r|}{1,868} &
-  4,629*$10^3$ &
-  0,068*$10^3$ &
+  4,629*103 &
+  0,068*103 &
   0,7 \\ \hline
-\end{tabular}%
-}
-\end{table}
+\end{longtable}
 
 \begin{figure}[H]
 	\centering
@@ -1204,7 +1234,7 @@ NaCl с концентрациями 9\%, 18\% и 25\%. Исходные и вы
   \multicolumn{1}{r|}{4,109} &
   1,018*104 &
   9,100*10$^3$ &
-  91,0 \\ \hline
+  91 \\ \hline
 \multicolumn{1}{|r|}{24} &
   1 &
   \multicolumn{1}{r|}{3,47} &
@@ -1264,7 +1294,7 @@ NaCl с концентрациями 9\%, 18\% и 25\%. Исходные и вы
   \multicolumn{1}{r|}{3,301} &
   8,178*10$^3$ &
   5,095*10$^3$ &
-  51,0 \\ \hline
+  51 \\ \hline
 \multicolumn{1}{|r|}{96} &
   4 &
   \multicolumn{1}{r|}{7,9} &
@@ -1975,7 +2005,7 @@ https://www.undp.org/ru/kazakhstan/stories/kak-izmenenie-klimata-vliyaet-na-vodn
 
 2. He C. et al. Future global urban water scarcity and potential
 solutions //Nature Communications. 2021. Vol. 12(1).
-DOI:10.$10^3$8/s41467-021-25026-3
+DOI:10.1038/s41467-021-25026-3
 
 3. Khawaji A.D., Kutubkhanah I.K., Wie J.M. Advances in seawater
 desalination technologies // \\Desalination. -- 2008. - Vol. 221(1-3). -
