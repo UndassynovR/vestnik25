@@ -1,12 +1,51 @@
 (undo-tree-save-format-version . 1)
-"648571553372eca1294df7ba54d27292b139be89"
-[nil nil nil nil (26482 14402 222735 322000) 0 nil]
+"b73c91fb2a4e90a858ea394cc23a087e59a76be9"
+[nil nil nil nil (26489 25937 150184 126000) 0 nil]
 ([nil nil ((#("
-" 0 1 (fontified t)) . 1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (t 26482 8606 877748 530000)) nil (26482 14402 222733 685000) 0 nil])
+" 0 1 (fontified t)) . 20639)) ((20639 . 20640)) (26489 25938 286189 654000) 0 nil] [nil nil ((#("
+Over the past five years, agriculture has been enjoying significant
+investments amounting to approx. 1.7 trillion tenge in subsidies. This
+includes 486.7 billion tenge for livestock farming, 366.8 billion tenge
+for crop production, and 729.3 billion tenge as financial instruments.
+
+Table 1 shows Kazakhstan's main economic statistics for the past period
+of time. Studying its trend allows us to get an idea of the
+organizational form development in our agriculture.
+" 0 468 (fontified t)) . 15700) (undo-tree-id0 . -416) (undo-tree-id1 . -416) (undo-tree-id2 . -416) (undo-tree-id3 . -467) 16116 (t 26483 53321 181115 541000)) ((15700 . 16168) (t 26489 25844 589592 405000)) (26489 25844 585821 546000) 0 nil])
 ([nil nil ((#("
-" 0 1 (fontified t)) . 1) (undo-tree-id1 . -1)) nil (26482 14402 222791 170000) 0 nil])
-([nil nil ((46987 . 46988) 21) nil (26482 14402 808437 182000) 0 nil] [nil nil ((#("
-" 0 1 (fontified t)) . 21) (undo-tree-id0 . -1)) ((21 . 22)) (26482 14402 222715 584000) 0 nil])
-([nil current ((20 . 64) 19 (t 26482 14402 830405 655000)) nil (26482 14414 762555 323000) 0 nil])
+" 0 1 (fontified t)) . 20639)) ((20639 . 20640)) (26489 25938 456202 976000) 0 nil])
 nil
+([nil current ((#("
+" 0 1 (fontified t)) . 20639)) ((20639 . 20640)) (26489 25938 725260 0) 0 nil])
+([nil nil ((#("Table 1 shows that in 2023 compared to 2022, gross livestock output rose
+by 24.3\\% and gross crop output rose by 15.5\\%. However, there is a
+reduction in gross livestock production in rural areas of Akmola and
+Almaty regions and a reduction in gross crop production in Akmola and
+Shymkent regions.
+
+" 0 80 (fontified t) 80 82 (face font-lock-keyword-face fontified t) 82 99 (fontified t) 99 117 (fontified t) 117 119 (face font-lock-keyword-face fontified t) 119 141 (fontified t) 141 299 (fontified t)) . 20640) (undo-tree-id4 . -298) (undo-tree-id5 . -298) (undo-tree-id6 . -298) (undo-tree-id7 . -298) 20938) ((20640 . 20939)) (26489 25933 746279 987000) 0 nil])
+([nil nil ((16167 . 16168) 16116) ((#("
+" 0 1 (fontified t)) . 16167) (undo-tree-id63 . -1) (undo-tree-id64 . -1) (undo-tree-id65 . -1) (undo-tree-id66 . -1) (undo-tree-id67 . -1) (undo-tree-id68 . -1) (undo-tree-id69 . -1) (undo-tree-id70 . -1) (undo-tree-id71 . -1) (undo-tree-id72 . -1) (undo-tree-id73 . -1) (undo-tree-id74 . -1) (undo-tree-id75 . -1) (undo-tree-id76 . -1) (undo-tree-id77 . -1) (undo-tree-id78 . -1) (undo-tree-id79 . -1) (undo-tree-id80 . -1) (undo-tree-id81 . -1) (undo-tree-id82 . -1) (undo-tree-id83 . -1) (undo-tree-id84 . -1) (undo-tree-id85 . -1) (undo-tree-id86 . -1) (undo-tree-id87 . -1) (undo-tree-id88 . -1) (undo-tree-id89 . -1) (undo-tree-id90 . -1) (undo-tree-id91 . -1) (undo-tree-id92 . -1) (undo-tree-id93 . -1) (undo-tree-id94 . -1) (undo-tree-id95 . -1) (undo-tree-id96 . -1) (undo-tree-id97 . -1) (undo-tree-id98 . -1) (undo-tree-id99 . -1) (undo-tree-id100 . -1) (undo-tree-id101 . -1) (undo-tree-id102 . -1) (undo-tree-id103 . -1) (undo-tree-id104 . -1) (undo-tree-id105 . -1) (undo-tree-id106 . -1) (undo-tree-id107 . -1) (undo-tree-id108 . -1) (undo-tree-id109 . -1) (undo-tree-id110 . -1) (undo-tree-id111 . -1) (undo-tree-id112 . -1) (undo-tree-id113 . -1) (undo-tree-id114 . -1) (undo-tree-id115 . -1) (undo-tree-id116 . -1) (undo-tree-id117 . -1) (undo-tree-id118 . -1)) (26489 25932 975260 812000) 0 nil] [nil nil ((nil rear-nonsticky nil 16183 . 16184) (#("
+" 0 1 (fontified nil)) . -16482) (16183 . 16483) 16168) ((#("
+Table 1 shows that in 2023 compared to 2022, gross livestock output rose
+by 24.3\\% and gross crop output rose by 15.5\\%. However, there is a
+reduction in gross livestock production in rural areas of Akmola and
+Almaty regions and a reduction in gross crop production in Akmola and
+Shymkent regions.
+
+" 0 1 (rear-nonsticky nil fontified nil) 1 74 (fontified nil) 74 81 (fontified t) 81 83 (face font-lock-keyword-face fontified t) 83 100 (fontified t) 100 118 (fontified t) 118 120 (face font-lock-keyword-face fontified t) 120 142 (fontified t) 142 299 (fontified t) 299 300 (fontified nil)) . 16183) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -299) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (16482 . 16483) (nil rear-nonsticky t 16183 . 16184)) (26489 25916 232796 390000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 16168 . 16169) (#("
+" 0 1 (fontified nil)) . -16467) (16168 . 16468)) ((#("
+Table 1 shows that in 2023 compared to 2022, gross livestock output rose
+by 24.3\\% and gross crop output rose by 15.5\\%. However, there is a
+reduction in gross livestock production in rural areas of Akmola and
+Almaty regions and a reduction in gross crop production in Akmola and
+Shymkent regions.
+
+" 0 1 (rear-nonsticky nil fontified nil) 1 74 (fontified nil) 74 81 (fontified t) 81 83 (face font-lock-keyword-face fontified t) 83 100 (fontified t) 100 118 (fontified t) 118 120 (face font-lock-keyword-face fontified t) 120 142 (fontified t) 142 299 (fontified t) 299 300 (fontified nil)) . 16168) (undo-tree-id44 . -299) (undo-tree-id45 . -299) (undo-tree-id46 . -299) (undo-tree-id47 . -299) (undo-tree-id48 . -299) (undo-tree-id49 . -299) (undo-tree-id50 . -299) (undo-tree-id51 . -299) (undo-tree-id52 . -299) (undo-tree-id53 . -299) (undo-tree-id54 . -299) (undo-tree-id55 . -299) (undo-tree-id56 . -299) (undo-tree-id57 . -299) (undo-tree-id58 . -299) (undo-tree-id59 . -299) (undo-tree-id60 . -299) (undo-tree-id61 . -299) (undo-tree-id62 . -299) (16467 . 16468) (nil rear-nonsticky t 16168 . 16169)) (26489 25932 597157 531000) 0 nil])
+nil
+([nil nil ((#("
+" 0 1 (fontified t)) . 16467) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . 1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1)) ((16467 . 16468)) (26489 25932 150310 28000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16483)) ((16483 . 16484) (t 26489 25919 717782 552000)) (26489 25919 711004 429000) 0 nil])
 nil

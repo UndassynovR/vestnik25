@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"068247a39e54e14483caf68930de796df8bf39de"
+"ceb10ba27e61cc9d2cfa58b26159bd8bd7e729c5"
 [nil nil nil nil (26483 41786 96198 323000) 0 nil]
 ([nil nil ((nil rear-nonsticky nil 15495 . 15496) (nil fontified nil 14121 . 15496) (14121 . 15496) (t 26483 41606 958333 504000)) nil (26483 41786 96196 999000) 0 nil])
 ([nil nil ((#("% Please add the following required packages to your document preamble:
@@ -638,6 +638,130 @@ nil
 " 0 1 (fontified t)) . 54078) (undo-tree-id704 . 1) (undo-tree-id705 . -1) (t 26483 42706 640275 78000)) nil (26483 42708 757743 362000) 0 nil])
 ([nil nil ((#("}
 " 0 2 (fontified t)) . 54064) (undo-tree-id708 . -1) (t 26483 42708 805211 924000)) nil (26483 42718 528630 504000) 0 nil])
-([nil current ((#("\\resizebox{\\textwidth}{!}{%
+([nil nil ((#("\\resizebox{\\textwidth}{!}{%
 " 0 10 (face font-lock-keyword-face fontified t) 10 11 (fontified t) 11 21 (face font-lock-keyword-face fontified t) 21 26 (fontified t) 26 28 (face font-lock-comment-face fontified t)) . 51707) (undo-tree-id706 . -27) (undo-tree-id707 . -28)) nil (26483 42718 528626 536000) 0 nil])
+([nil nil ((2 . 4) (#("id" 0 2 (face font-lock-keyword-face fontified t)) . 2) (t 26483 53321 179115 556000)) nil (26489 23572 437140 189000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 73 . 74) (nil fontified nil 1 . 74) (1 . 74) (1 . 2) 2) nil (26489 23584 726313 394000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 154 . 155) (nil fontified nil 75 . 155) (75 . 155) (74 . 75) (t 26489 23572 448198 500000) 73) nil (26489 23587 858077 910000) 0 nil] [nil nil ((nil rear-nonsticky nil 153 . 154) (nil fontified nil 74 . 154) (74 . 154) 75 (74 . 75) (t 26489 23572 448198 500000) 73) ((#("
+" 0 1 (fontified nil)) . 74) (undo-tree-id0 . 1) (#("\\begin{center}
+{\\large\\bfseries\\itshape Экономика, бизнес и услуги}
+\\end{center}" 0 6 (face font-lock-keyword-face fontified nil) 6 7 (latex-env-pair t fontified nil) 7 13 (face font-lock-function-name-face latex-env-pair t fontified nil) 13 14 (latex-env-pair t fontified nil) 14 16 (fontified nil) 16 22 (face font-lock-keyword-face fontified nil) 22 31 (face font-lock-keyword-face fontified nil) 31 39 (face (font-lock-keyword-face bold) fontified nil) 39 66 (face (bold) fontified nil) 66 68 (fontified nil) 68 72 (face font-lock-keyword-face fontified nil) 72 73 (latex-env-pair t fontified nil) 73 79 (face font-lock-function-name-face latex-env-pair t fontified nil) 79 80 (latex-env-pair t rear-nonsticky nil fontified nil)) . 74) (undo-tree-id1 . -79) (undo-tree-id2 . -68) (undo-tree-id3 . -80) (undo-tree-id4 . -79) (undo-tree-id5 . -79) (nil fontified t 140 . 142) (nil fontified t 113 . 140) (nil fontified t 105 . 113) (nil fontified t 96 . 105) (nil fontified t 90 . 96) (nil fontified t 88 . 90) (nil fontified t 87 . 88) (nil fontified t 81 . 87) (nil fontified t 80 . 81) (nil fontified t 74 . 80) (nil rear-nonsticky t 153 . 154)) (26489 23584 726092 582000) 0 nil])
+([nil nil ((#("
+Ең нашар нәтижелерді Солтүстік Қазақстан облысы 674,8 млрд. теңге
+көрсеткенін байқауға болады. Жамбыл облысында да бұл көрсеткіш деңгейі
+2023 жылы 856,2 млрд. теңгені құрайды. Түркістан және Қызылорда
+облыстары айтарлықтай төмен көрсеткіштерді көрсетіп отыр. Мәселен, 2023
+жылы Түркістан облысында өнеркәсіп өнімін өндіру көлемі 1054,7 млрд.
+теңгені, ал Қызылорда облысында 1043,5 млрд. теңгені құрады.
+" 0 404 (fontified t)) . 33397) (undo-tree-id6 . -343) (undo-tree-id7 . -343) (undo-tree-id8 . -403) (undo-tree-id9 . -343) 33740 (t 26489 23587 867029 458000)) nil (26489 24882 773576 307000) 0 nil])
+nil
+([nil nil ((38482 . 38483) (t 26489 24882 782955 779000) 38467) nil (26489 24899 687296 204000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 38482 . 38483) (#("
+" 0 1 (fontified nil)) . -38886) (38482 . 38887) 38462) nil (26489 24899 687295 503000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 38483) (undo-tree-id10 . -1)) nil (26489 25082 130260 407000) 0 nil])
+([nil nil ((#("\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ekon/image1.3}
+	\\caption*{2 -- сурет. 2022-2023 жж. ҚР өңірлері бойынша негізгі капиталға
+	инвестициялар көлемінің серпіні, млрд. теңге}
+	\\caption*{{\\normalfont \\emph{Ескерту - stat.gov.kz деректер негізінде автор құрастырған}}}
+\\end{figure}
+
+\\begin{multicols}{2}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 24 (fontified t latex-env-pair t) 24 30 (face font-lock-function-name-face fontified t latex-env-pair t) 30 31 (fontified t latex-env-pair t) 31 36 (fontified t) 36 46 (face font-lock-keyword-face fontified t) 46 48 (fontified t) 48 64 (face font-lock-keyword-face fontified t) 64 74 (fontified t) 74 84 (face font-lock-keyword-face fontified t) 84 86 (fontified t) 86 97 (face font-lock-builtin-face fontified t) 97 105 (face font-lock-builtin-face fontified t) 105 107 (fontified t) 107 108 (fontified t) 108 117 (face font-lock-keyword-face fontified t) 117 121 (fontified t) 121 182 (fontified t) 182 230 (fontified t) 230 239 (face font-lock-keyword-face fontified t) 239 241 (fontified t) 241 252 (face font-lock-keyword-face fontified t) 252 253 (fontified t) 253 258 (face font-lock-keyword-face fontified t) 258 259 (fontified t) 259 317 (face (italic) fontified t) 317 321 (fontified t) 321 325 (face font-lock-keyword-face fontified t) 325 326 (fontified t latex-env-pair t) 326 332 (face font-lock-function-name-face fontified t latex-env-pair t) 332 333 (fontified t latex-env-pair t) 333 335 (fontified t) 335 341 (face font-lock-keyword-face fontified t) 341 342 (fontified t latex-env-pair t) 342 351 (face font-lock-function-name-face fontified t latex-env-pair t) 351 352 (fontified t latex-env-pair t) 352 356 (fontified t)) . 40265) (undo-tree-id55 . -349) (undo-tree-id56 . -349) (undo-tree-id57 . -14) (undo-tree-id58 . -355) (undo-tree-id59 . -349) (undo-tree-id60 . -349) (undo-tree-id61 . -349) (undo-tree-id62 . -349) (undo-tree-id63 . -349) (undo-tree-id64 . -349) (undo-tree-id65 . -349) (undo-tree-id66 . -349) (undo-tree-id67 . -349) (undo-tree-id68 . -349) (undo-tree-id69 . -349) (undo-tree-id70 . -349) (undo-tree-id71 . -349) (undo-tree-id72 . -349) (undo-tree-id73 . -349) (undo-tree-id74 . -349) (undo-tree-id75 . -349) (undo-tree-id76 . -349) (undo-tree-id77 . -349) (undo-tree-id78 . -349) (undo-tree-id79 . -349) (undo-tree-id80 . -349) (undo-tree-id81 . -349) (undo-tree-id82 . -349) (undo-tree-id83 . -349) (undo-tree-id84 . -349) (undo-tree-id85 . -349) (undo-tree-id86 . -349) (undo-tree-id87 . -349) (undo-tree-id88 . -349) (undo-tree-id89 . -349) (undo-tree-id90 . -349) (undo-tree-id91 . -349) (undo-tree-id92 . -349) (undo-tree-id93 . -349) (undo-tree-id94 . -349) (undo-tree-id95 . -349) (undo-tree-id96 . -349) (undo-tree-id97 . -349) (undo-tree-id98 . -349) (undo-tree-id99 . -349) (undo-tree-id100 . -349) (undo-tree-id101 . -349) (undo-tree-id102 . -349) (undo-tree-id103 . -349) (undo-tree-id104 . -349) (undo-tree-id105 . -349) (undo-tree-id106 . -349) (undo-tree-id107 . -334) (undo-tree-id108 . -334) (undo-tree-id109 . -334) (undo-tree-id110 . -334) (undo-tree-id111 . -334) (undo-tree-id112 . -334) (undo-tree-id113 . -334) (undo-tree-id114 . -334) (undo-tree-id115 . -334) (undo-tree-id116 . -334) (undo-tree-id117 . -334) (undo-tree-id118 . -334) (undo-tree-id119 . -334) (undo-tree-id120 . -334) (undo-tree-id121 . -334) (undo-tree-id122 . -334) (undo-tree-id123 . -334) (undo-tree-id124 . -333) (undo-tree-id125 . -333) (undo-tree-id126 . -333) (undo-tree-id127 . -333) (undo-tree-id128 . -333) (undo-tree-id129 . -240) (undo-tree-id130 . -240) (undo-tree-id131 . -240) (undo-tree-id132 . -240) (undo-tree-id133 . -240) (undo-tree-id134 . -193) (undo-tree-id135 . -193) (undo-tree-id136 . -193) (undo-tree-id137 . -193) (undo-tree-id138 . -193) (undo-tree-id139 . -118) (undo-tree-id140 . -118) (undo-tree-id141 . -118) (undo-tree-id142 . -118) (undo-tree-id143 . -118) (undo-tree-id144 . -58) (undo-tree-id145 . -58) (undo-tree-id146 . -58) (undo-tree-id147 . -58) (undo-tree-id148 . -58) (undo-tree-id149 . -46) (undo-tree-id150 . -46) (undo-tree-id151 . -46) (undo-tree-id152 . -46) (undo-tree-id153 . -46) (undo-tree-id154 . -31) (undo-tree-id155 . -31) (undo-tree-id156 . -31) (undo-tree-id157 . -31) (undo-tree-id158 . -31) (undo-tree-id159 . -31) (undo-tree-id160 . -31) (undo-tree-id161 . -31) (undo-tree-id162 . -31) (undo-tree-id163 . -31) (undo-tree-id164 . -31) (undo-tree-id165 . -31) (undo-tree-id166 . -31) (undo-tree-id167 . -31) (undo-tree-id168 . -31) (undo-tree-id169 . -16) (undo-tree-id170 . -16) (undo-tree-id171 . -16) (undo-tree-id172 . -16) (undo-tree-id173 . -16) (undo-tree-id174 . -16) (undo-tree-id175 . -16) (undo-tree-id176 . -16) (undo-tree-id177 . -16) (undo-tree-id178 . -16) (undo-tree-id179 . -16) (undo-tree-id180 . -16) (undo-tree-id181 . -16) (undo-tree-id182 . -16) (undo-tree-id183 . -16) (undo-tree-id184 . -14) (undo-tree-id185 . -14) (undo-tree-id186 . -14) (undo-tree-id187 . -14) (undo-tree-id188 . -14) (undo-tree-id189 . -14) (undo-tree-id190 . -14) (undo-tree-id191 . -14) (undo-tree-id192 . -14) (undo-tree-id193 . -14) (undo-tree-id194 . -14) (undo-tree-id195 . -14) (undo-tree-id196 . -14) (undo-tree-id197 . -14) (undo-tree-id198 . -14) (undo-tree-id199 . -14) (undo-tree-id200 . -14) (undo-tree-id201 . -14) (undo-tree-id202 . -14) (undo-tree-id203 . -14) (undo-tree-id204 . -14) (undo-tree-id205 . -14) (undo-tree-id206 . -356) 40279) nil (26489 25086 434351 474000) 0 nil] [nil nil ((#("\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ekon/image1.3}
+	\\caption*{2 -- сурет. 2022-2023 жж. ҚР өңірлері бойынша негізгі капиталға
+	инвестициялар көлемінің серпіні, млрд. теңге}
+	\\caption*{{\\normalfont \\emph{Ескерту - stat.gov.kz деректер негізінде автор құрастырған}}}
+\\end{figure}
+
+\\begin{multicols}{2}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 24 (fontified t latex-env-pair t) 24 30 (face font-lock-function-name-face fontified t latex-env-pair t) 30 31 (fontified t latex-env-pair t) 31 36 (fontified t) 36 46 (face font-lock-keyword-face fontified t) 46 48 (fontified t) 48 64 (face font-lock-keyword-face fontified t) 64 74 (fontified t) 74 84 (face font-lock-keyword-face fontified t) 84 86 (fontified t) 86 97 (face font-lock-builtin-face fontified t) 97 105 (face font-lock-builtin-face fontified t) 105 107 (fontified t) 107 108 (fontified t) 108 117 (face font-lock-keyword-face fontified t) 117 121 (fontified t) 121 182 (fontified t) 182 230 (fontified t) 230 239 (face font-lock-keyword-face fontified t) 239 241 (fontified t) 241 252 (face font-lock-keyword-face fontified t) 252 253 (fontified t) 253 258 (face font-lock-keyword-face fontified t) 258 259 (fontified t) 259 317 (face (italic) fontified t) 317 321 (fontified t) 321 325 (face font-lock-keyword-face fontified t) 325 326 (fontified t latex-env-pair t) 326 332 (face font-lock-function-name-face fontified t latex-env-pair t) 332 333 (fontified t latex-env-pair t) 333 335 (fontified t) 335 341 (face font-lock-keyword-face fontified t) 341 342 (fontified t latex-env-pair t) 342 351 (face font-lock-function-name-face fontified t latex-env-pair t) 351 352 (fontified t latex-env-pair t) 352 356 (fontified t)) . 40265) (undo-tree-id42 . -349) (undo-tree-id43 . -14) (undo-tree-id44 . -349) (undo-tree-id45 . -355) (undo-tree-id46 . -74) (undo-tree-id47 . -349) 40614 (t 26489 24899 692773 690000)) ((40265 . 40621)) (26489 25081 753459 898000) 0 nil])
+([nil nil ((40264 . 40265) 40230) nil (26489 25086 434276 805000) 0 nil])
+([nil nil ((40264 . 40265) 40230) ((#("
+" 0 1 (fontified t)) . 40264) (t 26489 25056 464085 775000)) (26489 25081 501039 525000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 39602 . 39603) (#("
+" 0 1 (fontified nil)) . -39958) (39602 . 39959)) nil (26489 25086 434272 947000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 39672 . 39673) (#("
+" 0 1 (fontified nil)) . -39673) (39672 . 39674) 39603 (t 26489 25056 464085 775000)) ((#("
+
+" 0 1 (rear-nonsticky nil fontified nil) 1 2 (fontified nil)) . 39672) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (39673 . 39674) (nil rear-nonsticky t 39672 . 39673)) (26489 25081 500818 322000) 0 nil] [nil nil ((nil rear-nonsticky nil 38482 . 38483) (#("
+" 0 1 (fontified nil)) . -38838) (38482 . 38839) 38462) ((#("
+\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/ekon/image1.3}
+	\\caption*{2 -- сурет. 2022-2023 жж. ҚР өңірлері бойынша негізгі капиталға
+	инвестициялар көлемінің серпіні, млрд. теңге}
+	\\caption*{{\\normalfont \\emph{Ескерту - stat.gov.kz деректер негізінде автор құрастырған}}}
+\\end{figure}
+
+\\begin{multicols}{2}
+" 0 1 (rear-nonsticky nil fontified nil) 1 5 (face font-lock-keyword-face fontified nil) 5 6 (fontified nil latex-env-pair t) 6 15 (face font-lock-function-name-face fontified nil latex-env-pair t) 15 16 (fontified nil latex-env-pair t) 16 17 (fontified nil) 17 18 (fontified t) 18 24 (face font-lock-keyword-face fontified t) 24 25 (fontified t latex-env-pair t) 25 31 (face font-lock-function-name-face fontified t latex-env-pair t) 31 32 (fontified t latex-env-pair t) 32 35 (fontified t) 35 36 (fontified t) 36 37 (fontified t) 37 47 (face font-lock-keyword-face fontified t) 47 49 (fontified t) 49 65 (face font-lock-keyword-face fontified t) 65 75 (fontified t) 75 85 (face font-lock-keyword-face fontified t) 85 87 (fontified t) 87 98 (face font-lock-builtin-face fontified t) 98 106 (face font-lock-builtin-face fontified t) 106 108 (fontified t) 108 109 (fontified t) 109 118 (face font-lock-keyword-face fontified t) 118 122 (fontified t) 122 183 (fontified t) 183 231 (fontified t) 231 240 (face font-lock-keyword-face fontified t) 240 242 (fontified t) 242 253 (face font-lock-keyword-face fontified t) 253 254 (fontified t) 254 259 (face font-lock-keyword-face fontified t) 259 260 (fontified t) 260 318 (face (italic) fontified t) 318 322 (fontified t) 322 326 (face font-lock-keyword-face fontified t) 326 327 (fontified t latex-env-pair t) 327 333 (face font-lock-function-name-face fontified t latex-env-pair t) 333 334 (fontified t latex-env-pair t) 334 336 (fontified t) 336 342 (face font-lock-keyword-face fontified nil) 342 343 (fontified nil latex-env-pair t) 343 352 (face font-lock-function-name-face fontified nil latex-env-pair t) 352 353 (fontified nil latex-env-pair t) 353 356 (fontified nil) 356 357 (fontified nil)) . 38482) (undo-tree-id48 . -16) (38838 . 38839) (nil rear-nonsticky t 38482 . 38483)) (26489 25055 478473 613000) 0 nil])
+([nil nil ((#("
+Өңірлер бөлінісінде 2023 жылы рейтингті дәстүрлі түрде 10815,0 млрд.
+теңге көрсеткішімен Атырау облысы алады. Жалпы, Атырау облысы бірнеше
+жыл қатарынан ҚР негізгі макроэкономикалық көрсеткіштері бойынша бірінші
+орында тұр. Одан кейін Қарағанды өңірі 3531,6 млрд.теңге, Батыс
+Қазақстан облысы -- 3527,1 млрд. теңге, Павлодар облысы -- 3157,6 млрд.
+теңге. Бұдан әрі 3065,7 млрд. теңге көрсеткішімен Маңғыстау облысы және
+2319,9 млрд. теңге көрсеткішімен Шығыс Қазақстан облысы орналасқан.
+Бұдан кейін Ақтөбе облысы 2544,9 млрд. теңге көрсеткішімен келеді.
+Қазақстан бойынша Республикалық маңызы бар қалалар арасында Астана қ.осы
+көрсеткіш бойынша орташа деңгейі 1933,0 млрд. теңге, Алматы қаласы
+2096,0 млрд. теңгені құрайды.
+" 0 103 (fontified t) 103 140 (fontified t) 140 629 (fontified t) 629 668 (fontified t) 668 726 (fontified t)) . 32671) (undo-tree-id207 . -696) (undo-tree-id208 . -696) (undo-tree-id209 . -725) (undo-tree-id210 . -696) 33367 (t 26489 25086 443763 28000)) nil (26489 25145 859951 336000) 0 nil])
+nil
+([nil nil ((#("\\begin{multicols}{2}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (latex-env-pair t fontified t) 7 16 (face font-lock-function-name-face latex-env-pair t fontified t) 16 17 (latex-env-pair t fontified t) 17 20 (fontified t) 20 21 (rear-nonsticky t fontified t)) . 38462) (undo-tree-id15 . -20) (undo-tree-id17 . -21) (undo-tree-id19 . -21) (undo-tree-id21 . -21) (undo-tree-id23 . -21) (undo-tree-id25 . -21) (undo-tree-id27 . -21) (undo-tree-id29 . -21) (undo-tree-id31 . -21) (undo-tree-id33 . -21) (undo-tree-id35 . -21) (undo-tree-id37 . -21) (undo-tree-id39 . -21) (undo-tree-id41 . -21)) ((38462 . 38483)) (26489 25055 308498 390000) 0 nil])
+([nil nil ((37756 . 37757) 37736) nil (26489 25145 859938 542000) 0 nil])
+([nil nil ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 38462) (undo-tree-id12 . -15) (undo-tree-id14 . -16)) ((38462 . 38478)) (26489 25054 908092 181000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 37756 . 37757) (#("
+" 0 1 (fontified nil)) . -38482) (37756 . 38483) 37736) nil (26489 25145 859933 493000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 38462)) ((38462 . 38463) (t 26489 25048 178174 978000)) (26489 25048 171144 116000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 37757) (undo-tree-id211 . -1) (t 26489 25145 870123 379000)) nil (26489 25159 508203 753000) 0 nil])
+nil
+([nil nil ((#("
+Бұдан әрі негізгі капиталға инвестициялар тарту бойынша үздік өңірлердің
+тізімін ірі іскерлік орталық -- Алматы қаласы алады, 2022 жылы
+көрсеткіші 1407,9 млрд.теңге, 2023 жылы 1803,1 млрд. теңгені құрады.
+Жоғарыда көрсетілген сандардан Алматы қаласы бойынша бұл көрсеткіштің
+артып келе жатқанын байқауға болады. Өсім салыстырмалы түрде 128\\%
+құрады.
+
+Инвестициялар көлемі деңгейі бойынша рейтингте келесі орынды Астана
+қаласы алады. 2022 жылы бұл көрсеткіштің мәні 1462,5 млрд.теңгені, 2023
+жылы 1655,0 млрд. теңгені құрады. Берілген сандар бойынша осы
+көрсеткіштің тұрақты өсуін байқауға болады, өсім 113,1\\% құрады.
+
+Бұдан әрі негізінен өнеркәсіптік өңірлер орналасқан аймақтар алады, олар
+Шығыс Қазақстан облысы, Қарағанды облысы, Маңғыстау облысы, Алматы
+облысы, Ақмола облысы және т.б.
+
+Инвестиция тарту бойынша ең төмен нәтижелерді Солтүстік Қазақстан облысы
+көрсетеді. Мәселен, осы өңірде негізгі қаражатқа инвестициялар тарту
+көрсеткіші 2022 жылы 368,4 млрд.теңгені құрады, 2023 жылы бұл көрсеткіш
+443,6 млрд.теңгеге дейін ұлғайды. Салыстырмалы түрде өсім 120,4\\%
+құрады. Біздің ойымызша, бұл жақсы нәтиже және біз бұл аймақтың қазіргі
+уақытта өте қарқынды дамып келе жатқанын көріп отырмыз.
+" 0 40 (fontified t) 40 74 (fontified t) 74 323 (fontified t) 323 340 (fontified t) 340 342 (face font-lock-keyword-face fontified t) 342 343 (fontified t) 343 530 (fontified t) 530 554 (fontified t) 554 608 (fontified t) 608 610 (face font-lock-keyword-face fontified t) 610 859 (fontified t) 859 866 (fontified t) 866 1070 (fontified t) 1070 1072 (face font-lock-keyword-face fontified t) 1072 1135 (fontified t) 1135 1145 (fontified t) 1145 1201 (fontified t)) . 41543) (undo-tree-id212 . -1145) (undo-tree-id213 . -1145) (undo-tree-id214 . -1200) (undo-tree-id215 . -351) (undo-tree-id216 . -1) (undo-tree-id217 . -1007) (undo-tree-id218 . -1145) (undo-tree-id219 . -1145) (undo-tree-id220 . -1145) (undo-tree-id221 . -1145) (undo-tree-id222 . -1145) (undo-tree-id223 . -1145) (undo-tree-id224 . -1145) (undo-tree-id225 . -1145) (undo-tree-id226 . -1145) (undo-tree-id227 . -1145) (undo-tree-id228 . -1145) (undo-tree-id229 . -1145) (undo-tree-id230 . -1145) (undo-tree-id231 . -1145) (undo-tree-id232 . -1145) (undo-tree-id233 . -1145) (undo-tree-id234 . -1145) (undo-tree-id235 . -1145) (undo-tree-id236 . -1145) (undo-tree-id237 . -1145) (undo-tree-id238 . -1145) (undo-tree-id239 . -1145) (undo-tree-id240 . -1145) (undo-tree-id241 . -1145) (undo-tree-id242 . -1145) (undo-tree-id243 . -1145) (undo-tree-id244 . -1145) (undo-tree-id245 . -1145) (undo-tree-id246 . -1145) (undo-tree-id247 . -1145) (undo-tree-id248 . -1145) (undo-tree-id249 . -1145) (undo-tree-id250 . -1145) (undo-tree-id251 . -1145) (undo-tree-id252 . -1145) (undo-tree-id253 . -1145) (undo-tree-id254 . -1145) (undo-tree-id255 . -1145) (undo-tree-id256 . -1073) (undo-tree-id257 . -1073) (undo-tree-id258 . -1073) (undo-tree-id259 . -1073) (undo-tree-id260 . -1073) (undo-tree-id261 . -1073) (undo-tree-id262 . -1073) (undo-tree-id263 . -1073) (undo-tree-id264 . -1073) (undo-tree-id265 . -1073) (undo-tree-id266 . -1073) (undo-tree-id267 . -1073) (undo-tree-id268 . -1073) (undo-tree-id269 . -1073) (undo-tree-id270 . -1073) (undo-tree-id271 . -1073) (undo-tree-id272 . -1073) (undo-tree-id273 . -1007) (undo-tree-id274 . -1007) (undo-tree-id275 . -1007) (undo-tree-id276 . -1007) (undo-tree-id277 . -1007) (undo-tree-id278 . -935) (undo-tree-id279 . -935) (undo-tree-id280 . -935) (undo-tree-id281 . -935) (undo-tree-id282 . -935) (undo-tree-id283 . -866) (undo-tree-id284 . -866) (undo-tree-id285 . -866) (undo-tree-id286 . -866) (undo-tree-id287 . -866) (undo-tree-id288 . -793) (undo-tree-id289 . -793) (undo-tree-id290 . -793) (undo-tree-id291 . -793) (undo-tree-id292 . -793) (undo-tree-id293 . -792) (undo-tree-id294 . -792) (undo-tree-id295 . -792) (undo-tree-id296 . -792) (undo-tree-id297 . -792) (undo-tree-id298 . -760) (undo-tree-id299 . -760) (undo-tree-id300 . -760) (undo-tree-id301 . -760) (undo-tree-id302 . -760) (undo-tree-id303 . -693) (undo-tree-id304 . -693) (undo-tree-id305 . -693) (undo-tree-id306 . -693) (undo-tree-id307 . -693) (undo-tree-id308 . -620) (undo-tree-id309 . -620) (undo-tree-id310 . -620) (undo-tree-id311 . -620) (undo-tree-id312 . -620) (undo-tree-id313 . -619) (undo-tree-id314 . -619) (undo-tree-id315 . -619) (undo-tree-id316 . -619) (undo-tree-id317 . -619) (undo-tree-id318 . -554) (undo-tree-id319 . -554) (undo-tree-id320 . -554) (undo-tree-id321 . -554) (undo-tree-id322 . -554) (undo-tree-id323 . -492) (undo-tree-id324 . -492) (undo-tree-id325 . -492) (undo-tree-id326 . -492) (undo-tree-id327 . -492) (undo-tree-id328 . -420) (undo-tree-id329 . -420) (undo-tree-id330 . -420) (undo-tree-id331 . -420) (undo-tree-id332 . -420) (undo-tree-id333 . -352) (undo-tree-id334 . -352) (undo-tree-id335 . -352) (undo-tree-id336 . -352) (undo-tree-id337 . -352) (undo-tree-id338 . -351) (undo-tree-id339 . -351) (undo-tree-id340 . -351) (undo-tree-id341 . -351) (undo-tree-id342 . -351) (undo-tree-id343 . -343) (undo-tree-id344 . -343) (undo-tree-id345 . -343) (undo-tree-id346 . -343) (undo-tree-id347 . -343) (undo-tree-id348 . -276) (undo-tree-id349 . -276) (undo-tree-id350 . -276) (undo-tree-id351 . -276) (undo-tree-id352 . -276) (undo-tree-id353 . -206) (undo-tree-id354 . -206) (undo-tree-id355 . -206) (undo-tree-id356 . -206) (undo-tree-id357 . -206) (undo-tree-id358 . -137) (undo-tree-id359 . -137) (undo-tree-id360 . -137) (undo-tree-id361 . -137) (undo-tree-id362 . -137) (undo-tree-id363 . -74) (undo-tree-id364 . -74) (undo-tree-id365 . -74) (undo-tree-id366 . -74) (undo-tree-id367 . -74) (undo-tree-id368 . -1) (undo-tree-id369 . -1) (undo-tree-id370 . -1) (undo-tree-id371 . -1) (undo-tree-id372 . -1) (undo-tree-id373 . -1) (undo-tree-id374 . -1) (undo-tree-id375 . -1) (undo-tree-id376 . -1) (undo-tree-id377 . -1) (undo-tree-id378 . -1) (undo-tree-id379 . -1) (undo-tree-id380 . -1) (undo-tree-id381 . -1) (undo-tree-id382 . -1) (undo-tree-id383 . -1) (undo-tree-id384 . -1) (undo-tree-id385 . -1) (undo-tree-id386 . -1) (undo-tree-id387 . -1) (undo-tree-id388 . -1201) (t 26489 25159 517976 478000)) nil (26489 25181 80763 653000) 0 nil])
+([nil nil ((46803 . 46804) (t 26489 25181 90744 298000) 46788) nil (26489 25194 328096 985000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 46803 . 46804) (#("
+" 0 1 (fontified nil)) . -48004) (46803 . 48005) 46783) nil (26489 25194 328091 535000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 46804) (undo-tree-id389 . -1) (t 26489 25194 335601 750000)) nil (26489 26231 92519 570000) 0 nil])
+([nil nil ((412 . 413)) nil (26489 26238 628089 949000) 0 nil] [nil nil ((411 . 412) (t 26489 25195 199592 451000)) ((#("\\" 0 1 (face font-lock-keyword-face fontified t)) . 411) (t 26489 26183 990934 707000)) (26489 26183 981268 191000) 0 nil])
+([nil nil ((413 . 414)) nil (26489 26238 628089 598000) 0 nil])
+nil
+([nil current ((411 . 412)) nil (26489 26238 628084 989000) 0 nil])
 nil

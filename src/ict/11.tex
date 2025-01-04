@@ -360,7 +360,266 @@ silhouette coefficient (should be maximum), the percentage of clusters
 with negative silhouette coefficient (should be closer to zero), and
 visual inspection of the clusters was observed. The program for the
 cyclic process was implemented in Python using the Scikit-learn library.
+\end{multicols}
 
+\begin{table}[H]
+\caption*{Table 1 - Parameters and results of experiments}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|cccccccc|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Clustering parameters}} &
+  \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Number \\ of\\  clusters\end{tabular}}}} &
+  \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Average \\ silhouette\\  coefficient \\ of all clusters\end{tabular}}}} &
+  \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Percentage \\ of clusters \\ with silhouette \\ coefficient \\ greater\\  than 0.03\end{tabular}}}} &
+  \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Percentage \\ of clusters \\ with negative \\ silhouette \\ coefficient\end{tabular}}}} &
+  \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Average \\ Calinski-\\ Harabasz \\ index\end{tabular}}} \\ \cline{1-3}
+\multicolumn{1}{|c|}{\textbf{Metric}} &
+  \multicolumn{1}{c|}{\textbf{Linkage}} &
+  \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Distance\_\\  threshold\end{tabular}}} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+   \\ 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+   \\
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+   \\ 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{} &
+   \\ \hline
+\multicolumn{1}{|c|}{\multirow{23}{*}{cosine}} &
+  \multicolumn{1}{c|}{\multirow{12}{*}{average}} &
+  \multicolumn{1}{c|}{0.2} &
+  \multicolumn{1}{c|}{1669} &
+  \multicolumn{1}{c|}{0.25506} &
+  \multicolumn{1}{c|}{33.97\%} &
+  \multicolumn{1}{c|}{0\%} &
+  9.60789 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.24} &
+  \multicolumn{1}{c|}{1403} &
+  \multicolumn{1}{c|}{0.26764} &
+  \multicolumn{1}{c|}{40.77\%} &
+  \multicolumn{1}{c|}{0.07\%} &
+  9.03752 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.25} &
+  \multicolumn{1}{c|}{1335} &
+  \multicolumn{1}{c|}{0.27106} &
+  \multicolumn{1}{c|}{42.77\%} &
+  \multicolumn{1}{c|}{0.07\%} &
+  9.03694 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.26} &
+  \multicolumn{1}{c|}{1280} &
+  \multicolumn{1}{c|}{0.26711} &
+  \multicolumn{1}{c|}{43.44\%} &
+  \multicolumn{1}{c|}{0.07\%} &
+  8.88383 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.27} &
+  \multicolumn{1}{c|}{1221} &
+  \multicolumn{1}{c|}{0.26728} &
+  \multicolumn{1}{c|}{44.31\%} &
+  \multicolumn{1}{c|}{0\%} &
+  8.83944 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.28} &
+  \multicolumn{1}{c|}{1166} &
+  \multicolumn{1}{c|}{0.27018} &
+  \multicolumn{1}{c|}{46.14\%} &
+  \multicolumn{1}{c|}{0\%} &
+  8.77975 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.29} &
+  \multicolumn{1}{c|}{1121} &
+  \multicolumn{1}{c|}{0.27126} &
+  \multicolumn{1}{c|}{47.55\%} &
+  \multicolumn{1}{c|}{0\%} &
+  8.76839 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.3} &
+  \multicolumn{1}{c|}{1077} &
+  \multicolumn{1}{c|}{0.27041} &
+  \multicolumn{1}{c|}{48.75\%} &
+  \multicolumn{1}{c|}{0.09\%} &
+  8.76821 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.31} &
+  \multicolumn{1}{c|}{1023} &
+  \multicolumn{1}{c|}{0.26873} &
+  \multicolumn{1}{c|}{49.76\%} &
+  \multicolumn{1}{c|}{0.09\%} &
+  8.74085 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.32} &
+  \multicolumn{1}{c|}{978} &
+  \multicolumn{1}{c|}{0.26798} &
+  \multicolumn{1}{c|}{51.43\%} &
+  \multicolumn{1}{c|}{0.1\%} &
+  8.77425 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.4} &
+  \multicolumn{1}{c|}{636} &
+  \multicolumn{1}{c|}{0.23460} &
+  \multicolumn{1}{c|}{61.16\%} &
+  \multicolumn{1}{c|}{0.31\%} &
+  8.96599 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.5} &
+  \multicolumn{1}{c|}{357} &
+  \multicolumn{1}{c|}{0.17152} &
+  \multicolumn{1}{c|}{72.55\%} &
+  \multicolumn{1}{c|}{0.84\%} &
+  9.38007 \\ \cline{2-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{\multirow{8}{*}{complete}} &
+  \multicolumn{1}{c|}{0.29} &
+  \multicolumn{1}{c|}{1342} &
+  \multicolumn{1}{c|}{0.28119} &
+  \multicolumn{1}{c|}{49.93\%} &
+  \multicolumn{1}{c|}{2.6\%} &
+  9.45677 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.3} &
+  \multicolumn{1}{c|}{1295} &
+  \multicolumn{1}{c|}{0.28338} &
+  \multicolumn{1}{c|}{51.43\%} &
+  \multicolumn{1}{c|}{2.78\%} &
+  9.48204 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.31} &
+  \multicolumn{1}{c|}{1257} &
+  \multicolumn{1}{c|}{0.28413} &
+  \multicolumn{1}{c|}{52.51\%} &
+  \multicolumn{1}{c|}{2.86\%} &
+  9.43280 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.32} &
+  \multicolumn{1}{c|}{1222} &
+  \multicolumn{1}{c|}{0.28468} &
+  \multicolumn{1}{c|}{53.68\%} &
+  \multicolumn{1}{c|}{2.86\%} &
+  9.43222 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.33} &
+  \multicolumn{1}{c|}{1175} &
+  \multicolumn{1}{c|}{0.28383} &
+  \multicolumn{1}{c|}{55.15\%} &
+  \multicolumn{1}{c|}{2.89\%} &
+  9.33287 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.34} &
+  \multicolumn{1}{c|}{1143} &
+  \multicolumn{1}{c|}{0.28272} &
+  \multicolumn{1}{c|}{55.47\%} &
+  \multicolumn{1}{c|}{3.32\%} &
+  9.31358 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.35} &
+  \multicolumn{1}{c|}{1099} &
+  \multicolumn{1}{c|}{0.28272} &
+  \multicolumn{1}{c|}{57.23\%} &
+  \multicolumn{1}{c|}{3.37\%} &
+  9.30610 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.4} &
+  \multicolumn{1}{c|}{916} &
+  \multicolumn{1}{c|}{0.27294} &
+  \multicolumn{1}{c|}{63.54\%} &
+  \multicolumn{1}{c|}{3 .93\%} &
+  9.39409 \\ \cline{2-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{\multirow{3}{*}{single}} &
+  \multicolumn{1}{c|}{0.2} &
+  \multicolumn{1}{c|}{1045} &
+  \multicolumn{1}{c|}{-0.18031} &
+  \multicolumn{1}{c|}{19.14\%} &
+  \multicolumn{1}{c|}{0.27\%} &
+  2.39889 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.29} &
+  \multicolumn{1}{c|}{406} &
+  \multicolumn{1}{c|}{-0.28775} &
+  \multicolumn{1}{c|}{17.24\%} &
+  \multicolumn{1}{c|}{0.49\%} &
+  1.84882 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{0.39} &
+  \multicolumn{1}{c|}{106} &
+  \multicolumn{1}{c|}{-0.19031} &
+  \multicolumn{1}{c|}{17.92\%} &
+  \multicolumn{1}{c|}{0.94\%} &
+  1.89379 \\ \hline
+\multicolumn{1}{|c|}{\multirow{3}{*}{euclidean}} &
+  \multicolumn{1}{c|}{\multirow{3}{*}{ward}} &
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{c|}{1316} &
+  \multicolumn{1}{c|}{0.25526} &
+  \multicolumn{1}{c|}{47.72\%} &
+  \multicolumn{1}{c|}{4.79\%} &
+  10.69402 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{2.5} &
+  \multicolumn{1}{c|}{894} &
+  \multicolumn{1}{c|}{0.26155} &
+  \multicolumn{1}{c|}{62.08\%} &
+  \multicolumn{1}{c|}{7.49\%} &
+  10.48007 \\ \cline{3-8} 
+\multicolumn{1}{|c|}{} &
+  \multicolumn{1}{c|}{} &
+  \multicolumn{1}{c|}{2.9} &
+  \multicolumn{1}{c|}{666} &
+  \multicolumn{1}{c|}{0.24942} &
+  \multicolumn{1}{c|}{72.67\%} &
+  \multicolumn{1}{c|}{9.46\%} &
+  10.89370 \\ \hline
+\multicolumn{8}{|l|}{\textbf{Note - Compiled by the author}} \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\begin{multicols}{2}
 {\bfseries Results and discussions.} As a result of the experiments, 3047
 skill phrases were processed. Table 1 presents data on various metrics
 (cosine, euclidean), linkage types (average, complete, single, ward),
@@ -375,270 +634,7 @@ a result of cyclic operation of the agglomerative clustering algorithm
 for three initial parameters (the first three columns), with
 programmatically evaluation of cluster quality by silhouette and
 Calinski-Harabasz coefficient algorithms.
-\end{multicols}
-\small{
-\begin{longtable}[c]{|llllllll|}
-\caption*{Table 1 - Parameters and results of experiments} \\
-\hline
-\multicolumn{3}{|l|}{\textbf{Clustering parameters}} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-   \\ \cline{1-3}
-\multicolumn{1}{|l|}{\textbf{Metric}} &
-  \multicolumn{1}{l|}{\textbf{Linkage}} &
-  \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Distance\_\\  threshold\end{tabular}}} &
-  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Number \\ of \\ clusters\end{tabular}}}} &
-  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Average \\ silhouette c\\ oefficient of \\ all clusters\end{tabular}}}} &
-  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Percentage of\\  clusters with \\ silhouette \\ coefficient \\ greater than \\ 0.03\end{tabular}}}} &
-  \multicolumn{1}{l|}{\multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Percentage of \\ clusters with \\ negative \\ silhouette \\ coefficient\end{tabular}}}} &
-  \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Average \\ Calinski-\\Harabasz \\ index\end{tabular}}} \\
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} & \\
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} & \\
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} & \\
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{} & \\ \hline
-\endfirsthead
-%
-\endhead
-%
-%
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.2} &
-  \multicolumn{1}{l|}{1669} &
-  \multicolumn{1}{l|}{0.25506} &
-  \multicolumn{1}{l|}{33.97\%} &
-  \multicolumn{1}{l|}{0\%} &
-  9.60789 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.24} &
-  \multicolumn{1}{l|}{1403} &
-  \multicolumn{1}{l|}{0.26764} &
-  \multicolumn{1}{l|}{40.77\%} &
-  \multicolumn{1}{l|}{0.07\%} &
-  9.03752 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.25} &
-  \multicolumn{1}{l|}{1335} &
-  \multicolumn{1}{l|}{0.27106} &
-  \multicolumn{1}{l|}{42.77\%} &
-  \multicolumn{1}{l|}{0.07\%} &
-  9.03694 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.26} &
-  \multicolumn{1}{l|}{1280} &
-  \multicolumn{1}{l|}{0.26711} &
-  \multicolumn{1}{l|}{43.44\%} &
-  \multicolumn{1}{l|}{0.07\%} &
-  8.88383 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.27} &
-  \multicolumn{1}{l|}{1221} &
-  \multicolumn{1}{l|}{0.26728} &
-  \multicolumn{1}{l|}{44.31\%} &
-  \multicolumn{1}{l|}{0\%} &
-  8.83944 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.28} &
-  \multicolumn{1}{l|}{1166} &
-  \multicolumn{1}{l|}{0.27018} &
-  \multicolumn{1}{l|}{46.14\%} &
-  \multicolumn{1}{l|}{0\%} &
-  8.77975 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.29} &
-  \multicolumn{1}{l|}{1121} &
-  \multicolumn{1}{l|}{0.27126} &
-  \multicolumn{1}{l|}{47.55\%} &
-  \multicolumn{1}{l|}{0\%} &
-  8.76839 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.3} &
-  \multicolumn{1}{l|}{1077} &
-  \multicolumn{1}{l|}{0.27041} &
-  \multicolumn{1}{l|}{48.75\%} &
-  \multicolumn{1}{l|}{0.09\%} &
-  8.76821 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.31} &
-  \multicolumn{1}{l|}{1023} &
-  \multicolumn{1}{l|}{0.26873} &
-  \multicolumn{1}{l|}{49.76\%} &
-  \multicolumn{1}{l|}{0.09\%} &
-  8.74085 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.32} &
-  \multicolumn{1}{l|}{978} &
-  \multicolumn{1}{l|}{0.26798} &
-  \multicolumn{1}{l|}{51.43\%} &
-  \multicolumn{1}{l|}{0.1\%} &
-  8.77425 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.4} &
-  \multicolumn{1}{l|}{636} &
-  \multicolumn{1}{l|}{0.23460} &
-  \multicolumn{1}{l|}{61.16\%} &
-  \multicolumn{1}{l|}{0.31\%} &
-  8.96599 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{\multirow{-12}{*}{average}} &
-  \multicolumn{1}{l|}{0.5} &
-  \multicolumn{1}{l|}{357} &
-  \multicolumn{1}{l|}{0.17152} &
-  \multicolumn{1}{l|}{72.55\%} &
-  \multicolumn{1}{l|}{0.84\%} &
-  9.38007 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.29} &
-  \multicolumn{1}{l|}{1342} &
-  \multicolumn{1}{l|}{0.28119} &
-  \multicolumn{1}{l|}{{\color[HTML]{212121} 49.93\%}} &
-  \multicolumn{1}{l|}{2.6\%} &
-  9.45677 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.3} &
-  \multicolumn{1}{l|}{1295} &
-  \multicolumn{1}{l|}{0.28338} &
-  \multicolumn{1}{l|}{51.43\%} &
-  \multicolumn{1}{l|}{2.78\%} &
-  9.48204 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.31} &
-  \multicolumn{1}{l|}{1257} &
-  \multicolumn{1}{l|}{0.28413} &
-  \multicolumn{1}{l|}{52.51\%} &
-  \multicolumn{1}{l|}{2.86\%} &
-  9.43280 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.32} &
-  \multicolumn{1}{l|}{1222} &
-  \multicolumn{1}{l|}{0.28468} &
-  \multicolumn{1}{l|}{53.68\%} &
-  \multicolumn{1}{l|}{2.86\%} &
-  9.43222 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.33} &
-  \multicolumn{1}{l|}{1175} &
-  \multicolumn{1}{l|}{0.28383} &
-  \multicolumn{1}{l|}{55.15\%} &
-  \multicolumn{1}{l|}{2.89\%} &
-  9.33287 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.34} &
-  \multicolumn{1}{l|}{1143} &
-  \multicolumn{1}{l|}{0.28272} &
-  \multicolumn{1}{l|}{55.47\%} &
-  \multicolumn{1}{l|}{3.32\%} &
-  9.31358 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.35} &
-  \multicolumn{1}{l|}{1099} &
-  \multicolumn{1}{l|}{0.28272} &
-  \multicolumn{1}{l|}{57.23\%} &
-  \multicolumn{1}{l|}{3.37\%} &
-  9.30610 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{\multirow{-8}{*}{complete}} &
-  \multicolumn{1}{l|}{0.4} &
-  \multicolumn{1}{l|}{916} &
-  \multicolumn{1}{l|}{0.27294} &
-  \multicolumn{1}{l|}{63.54\%} &
-  \multicolumn{1}{l|}{3 .93\%} &
-  9.39409 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.2} &
-  \multicolumn{1}{l|}{1045} &
-  \multicolumn{1}{l|}{-0.18031} &
-  \multicolumn{1}{l|}{19.14\%} &
-  \multicolumn{1}{l|}{0.27\%} &
-  2.39889 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{0.29} &
-  \multicolumn{1}{l|}{406} &
-  \multicolumn{1}{l|}{-0.28775} &
-  \multicolumn{1}{l|}{{\color[HTML]{212121} 17.24\%}} &
-  \multicolumn{1}{l|}{0.49\%} &
-  1.84882 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{\multirow{-23}{*}{cosine}} &
-  \multicolumn{1}{l|}{\multirow{-3}{*}{single}} &
-  \multicolumn{1}{l|}{0.39} &
-  \multicolumn{1}{l|}{106} &
-  \multicolumn{1}{l|}{-0.19031} &
-  \multicolumn{1}{l|}{17.92\%} &
-  \multicolumn{1}{l|}{0.94\%} &
-  1.89379 \\ \hline
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{2} &
-  \multicolumn{1}{l|}{1316} &
-  \multicolumn{1}{l|}{0.25526} &
-  \multicolumn{1}{l|}{47.72\%} &
-  \multicolumn{1}{l|}{4.79\%} &
-  10.69402 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{} &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{1}{l|}{2.5} &
-  \multicolumn{1}{l|}{894} &
-  \multicolumn{1}{l|}{0.26155} &
-  \multicolumn{1}{l|}{62.08\%} &
-  \multicolumn{1}{l|}{7.49\%} &
-  10.48007 \\ \cline{3-8} 
-\multicolumn{1}{|l|}{\multirow{-3}{*}{euclidean}} &
-  \multicolumn{1}{l|}{\multirow{-3}{*}{ward}} &
-  \multicolumn{1}{l|}{2.9} &
-  \multicolumn{1}{l|}{666} &
-  \multicolumn{1}{l|}{0.24942} &
-  \multicolumn{1}{l|}{{\color[HTML]{212121} 72.67\%}} &
-  \multicolumn{1}{l|}{9.46\%} &
-  10.89370 \\ \hline
-\multicolumn{8}{|l|}{\textbf{Note - Compiled by the author}} \\ \hline
-\end{longtable}}
 
-\begin{multicols}{2}
 When using cosine similarity with average linkage, a significant
 reduction in the number of clusters from 1669 to 357 is observed as the
 distance threshold increases from 0.2 to 0.5. In this parameter
@@ -703,18 +699,6 @@ testing. As described in the Materials and methods section, the
 clustering data was collected in Russian and English. In this case, the
 phrases in the data could be completely in the same language or contain
 elements of both languages at the same time.
-
-The list of clusters containing both Russian and English terms
-highlights the bilingual nature of the data. Including skills in both
-languages can enhance the understanding of professional competency
-requirements across different regions, thereby increasing the
-universality of research in employment and education.
-
-Some clusters overlap with each other, which may result from fuzzy
-boundaries between skills or the proximity of their content. Cluster 33
-is the last cluster with a silhouette coefficient greater than zero.
-Table 3 shows cluster 33, which includes many unrelated abbreviations
-and monosyllabic terms.
 \end{multicols}
 
 \begin{table}[H]
@@ -769,6 +753,18 @@ and monosyllabic terms.
 \end{table}
 
 \begin{multicols}{2}
+The list of clusters containing both Russian and English terms
+highlights the bilingual nature of the data. Including skills in both
+languages can enhance the understanding of professional competency
+requirements across different regions, thereby increasing the
+universality of research in employment and education.
+
+Some clusters overlap with each other, which may result from fuzzy
+boundaries between skills or the proximity of their content. Cluster 33
+is the last cluster with a silhouette coefficient greater than zero.
+Table 3 shows cluster 33, which includes many unrelated abbreviations
+and monosyllabic terms.
+
 An analysis of the table for Cluster 33 reveals a large number of
 diverse skills, ranging from programming (Java, Kotlin, Node.js) to
 specialized technical and engineering areas (soldering, repair, software
@@ -819,11 +815,6 @@ generation algorithms and conduct additional clustering. The additional
 training of the multilingual Paraphrase-multilingual-mpnet-base-v2 model
 used for generating embeddings based on the paraphrase data set "short
 abbreviation-full form" partially solved the problem.
-
-Let' s consider the ratio of individual skills and
-erroneous clusters with a positive silhouette coefficient obtained
-before and after training. The correctness of cluster formation was
-evaluated by an expert.
 \end{multicols}
 
 \begin{table}[H]
@@ -841,6 +832,11 @@ evaluated by an expert.
 \end{table}
 
 \begin{multicols}{2}
+Let' s consider the ratio of individual skills and
+erroneous clusters with a positive silhouette coefficient obtained
+before and after training. The correctness of cluster formation was
+evaluated by an expert.
+
 Fine-tuning the model led to an increase in the number of clusters,
 which may indicate more detailed segmentation of skills. The increase in
 the average silhouette coefficient and the percentage of successful
@@ -916,7 +912,7 @@ Reports.- 2010.-Vol.486(3-5).-P. 75-174.
 2. Oti, E., \& Olusola, M. (2024). Overview of agglomerative
 hierarchical clustering methods //British Journal of Computer,
 Networking and Information Technology.-2024.-Vol., 7(2).-P 14-23.
-\href{https://doi.org/10.52589/BJCNIT-CV9POOGW}{DOI
+\\\href{https://doi.org/10.52589/BJCNIT-CV9POOGW}{DOI
 10.52589/BJCNIT-CV9POOGW}
 
 3.Tokuda, E. K., Comin, C. H., \& Costa, L. F. (2022). Revisiting
@@ -949,7 +945,7 @@ Dergisi.-2020.-Vol. 26(3). \href{https://doi.org/10.5505/pajes.2019.49932}{DOI 1
 8. TabassumA., Patil R. R. A survey on text pre-processing \& feature
 extraction techniques in natural language processing.//International
 Research Journal of Engineering and Technology.-2020ю-Vol.7(6).-
-P.4864-4867. \\\href{https://www.semanticscholar.org/paper/A-Survey-on-Text-Pre-Processing-\%26-Feature-in-Tabassum-Patil/f308488e996599115fe478c03b74a0b19b9a8f06}{https://www.semanticscholar.org}
+P.4864-4867. \href{https://www.semanticscholar.org/paper/A-Survey-on-Text-Pre-Processing-\%26-Feature-in-Tabassum-Patil/f308488e996599115fe478c03b74a0b19b9a8f06}{https://www.semanticscholar.org}
 
 9. Pugachev L., BurtsevM. (2021). Short text clustering with
 transformers, ArXiv:21.02.00541v1
@@ -958,15 +954,15 @@ DOI
 \href{http://dx.doi.org/10.28995/2075-7182-2021-20-571-577}{10.28995/2075-7182-2021-20-571-577}
 
 10. GalliC., Donos N.,CalciolariE. Performance of 4 pre-trained sentence
-transformer models in the semantic query of a systematic review
+transformer models in the \\semantic query of a systematic review
 dataset on peri-implantitis//Information.- 2024.- Vol.15(2), Article
-68. \\\href{https://doi.org/10.3390/info15020068}{DOI
+68. \href{https://doi.org/10.3390/info15020068}{DOI
 10.3390/info15020068}
 
 11. Ternikov A. A. (2022). Skill-based clustering algorithm for online job
 advertisements// Izvestiya of Saratov University. Mathematics.
 Mechanics. Informatics.-2022.- Vol.22(2).-P. 250-265.
-\href{https://doi.org/10.18500/1816-9791-2022-22-2-250-265}{DOI
+\\\href{https://doi.org/10.18500/1816-9791-2022-22-2-250-265}{DOI
 10.18500/1816-9791-2022-22-2-250-265}
 
 12. Karthikeyan, B. A comparative study on K-means clustering and
@@ -989,7 +985,7 @@ Development Centre, Hadapsar, Pune.
 15. Biloshchytskyi, A., Shamgunova, . M. ., \& Biloshchytska , S. .
 (2024). Exploration of the thematic clustering and collaboration
 opportunities in Kazakhstani research//Scientific Journal of Astana IT
-University.-2024.-Vol. 17(17).-P.106-121.
+\\University.-2024.-Vol. 17(17).-P.106-121.
 \href{https://doi.org/10.37943/17ALVR8114}{DOI 10.37943/17ALVR8114}
 
 16. Ternikov, A. A. Skill-based clustering algorithm for online job
@@ -1001,7 +997,7 @@ Mechanics. Informatics,.-2022.- 22(2).-P. 250 - 265.
 17. Dikov M.E., Shirobokova S.N. O variante formalizacii zadachi
 izvlechenija kljuchevyh navykov i klasternogo analiza vakansij pri
 realizacii kompleksnogo instrumentarij cifrovoj proforientacii.//
-Inzhenernyj vestnik Dona.-2024.- № 3.- S.1-10.{[}in Russian{]}
+\\Inzhenernyj vestnik Dona.-2024.- № 3.- S.1-10.{[}in Russian{]}
 \href{https://cyberleninka.ru/article/n/o-variante-formalizatsii-zadachi-izvlecheniya-klyuchevyh-navykov-i-klasternogo-analiza-vakansiy-pri-realizatsii-kompleksnogo}{https://cyberleninka.ru}
 \end{references}
 

@@ -1,6 +1,10 @@
-% Packages for Font and Language Support
+% Document packages
+% -----------------
+
+% Font and language packages
 \usepackage{fontspec}                 % Kazakh and Russian fonts
 \usepackage{polyglossia}              % Multilingual support
+
 \setmainlanguage{russian}
 \setotherlanguages{english}
 \defaultfontfeatures{Ligatures=TeX}
@@ -8,49 +12,9 @@
 \setsansfont{FreeSans}
 \setmonofont{FreeMono}
 
-% Packages for Page Layout and Formatting
-\usepackage[margin=2cm]{geometry}     % Customizing page layout and margins
-\usepackage{sectsty}                  % Customizing section headings
-\usepackage{titlesec}                 % Formatting sections and chapters
-\usepackage{fancyhdr}                 % Custom headers and footers
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyhead[LO]{\MakeUppercase{\leftmark}}
-\fancyhead[RE]{ҚазТБУ ХАБАРШЫСЫ - VESTNIK KazUTB - ВЕСТНИК КазУТБ}
-
-\setlength{\headheight}{22pt}
-\addtolength{\topmargin}{-10pt}
-
-\renewcommand{\headrule}{\hbox to\headwidth{%
-  \color{lightblue}\leaders\hrule height \headrulewidth\hfill}
-}
-\renewcommand{\headrulewidth}{2pt}% 2pt header rule
-
-\renewcommand{\footrule}{\hbox to\headwidth{%
-  \color{lightblue}\leaders\hrule height \footrulewidth\hfill}
-}
-\renewcommand{\footrulewidth}{2pt}
-
-\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
-\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
-
-\addto\captionsrussian{
-    \renewcommand{\contentsname}{}
-}
-
-% Packages for Links and Hypertext
-\usepackage{hyperref}                 % Hyperlinks within the document
+% Hyperlink and color packages
+\usepackage{hyperref}      % Hyperlinks within the document
 \usepackage{xcolor}                   % Color support
-\hypersetup{
-    colorlinks=true, 
-    linkcolor=black, 
-    urlcolor=black, 
-    bookmarks=true,
-    bookmarksopen=true,
-    bookmarksnumbered=true
-}
-\definecolor{lightblue}{RGB}{0,116,180}
 
 % Table packages
 \usepackage{booktabs}                 % Enhanced table formatting
@@ -60,53 +24,90 @@
 \usepackage{makecell}                 % Additional table commands
 \usepackage{chngcntr}                 % Customizing table and figure numbering
 
-% Packages for Graphics and Figures
+% Graphics packages
 \usepackage{graphicx}                 % Including graphics in the document
-\usepackage{svg}                      % Scalable Vector Graphics support
-\usepackage{float}                    % Enhanced placement of figures and tables
-\usepackage{subcaption}               % Subfigures and subtables
-%% \graphicspath{{assets}}
+\usepackage{svg}
+%\usepackage{wrapfig}                  % Wrapping text around figures
 
-% Packages for Mathematics
+% Mathematical packages
 \usepackage{amsmath}                  % Additional math symbols and environments
-\usepackage{unicode-math}             % Support for Unicode math symbols
+\usepackage{unicode-math}
 
-% Packages for Text Formatting
+% Document settings
+% ----------------
+
+% Page layout package
+\usepackage[margin=2cm]{geometry}     % Customizing page layout and margins
+
+% Text formatting packages
 \usepackage[normalem]{ulem}           % Underlining and emphasis styles
 \usepackage{calc}                     % Mathematical calculations in LaTeX commands
 \usepackage{soul}                     % Additional text formatting options
-\usepackage{multicol}                 % Multi-column layout
-\usepackage{listings}                 % Code listings
-\lstset{
-    language=Python,  % You can set the language, or leave it for generic code
-    basicstyle=\ttfamily\small, % Use a monospaced font with smaller size
-    keywordstyle=\color{blue}, % Color keywords
-    commentstyle=\color{gray}, % Color comments
-    stringstyle=\color{red}, % Color strings
-    numbers=none, % Disable line numbers
-    tabsize=4, % Set tab size
-    breaklines=true, % Automatically break long lines
-}
+\usepackage{multicol}
 
-\setlength{\parskip}{0.3em}
-\setlength{\parindent}{1em}
-
+% Section formatting package
+\usepackage{sectsty}                  % Customizing section headings
+\usepackage{titlesec}
 % Redefine the format of the section title
 \titleformat{\section}[block]{\centering\bfseries\large}{}{0pt}{}[]
 \titleformat{\chapter}[display]
   {\centering\large\bfseries\itshape}{}{1em}{\large}
 % Decrease the top margin for chapter titles
 \titlespacing*{\chapter}{0pt}{-100pt}{1em}
+% Additional packages
+% -------------------
 
-% Customization for Lists and Enumerations
-\usepackage{enumitem}                 % Custom list environments
+% Float and caption packages
+\usepackage{float}                    % Enhanced placement of figures and tables
+\usepackage{subcaption}               % Subfigures and subtables
+
+% Links and URL package
+\hypersetup{
+    colorlinks=true,                   % Color links instead of boxes
+    linkcolor=black,                    % Color of internal links
+    urlcolor=black,               % Color of external links
+    bookmarks=true,
+    bookmarksopen=true,
+    bookmarksnumbered=true,
+}
+
+% Graphics path
+\graphicspath{{assets}}
+
+% Colors
+\definecolor{lightblue}{RGB}{0,116,180}
+
+% Header packages
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\fancyfoot[LE,RO]{\thepage}
+\fancyhead[RE]{ҚазТБУ ХАБАРШЫСЫ - VESTNIK KazUTB - ВЕСТНИК КазУТБ}
+\renewcommand{\headrulewidth}{2pt}% 2pt header rule
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{lightblue}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\headheight}{22pt}
+\addtolength{\topmargin}{-10pt}
+\renewcommand{\footrulewidth}{2pt}
+\renewcommand{\footrule}{\hbox to\headwidth{%
+  \color{lightblue}\leaders\hrule height \footrulewidth\hfill}}
+\addto\captionsrussian{\renewcommand{\contentsname}{\large МАЗМҰНЫ – СОДЕРЖАНИЕ – CONTENTS}}
+
+\setlength{\parskip}{0.3em}
+\setlength{\parindent}{1em}
+\usepackage{enumitem}
+
+% Decrease padding in itemize
 \setlist[itemize]{itemsep=0.0em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.1em}
+
+% Decrease padding in enumerate
 \setlist[enumerate]{itemsep=0.0em, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=0.1em}
 
-% Packages for Document Structure
-\usepackage{tocloft}                  % Customizing Table of Contents
-\usepackage{pdfpages}                 % Including PDF pages
+\usepackage{mdframed}
 
+\usepackage{tocloft}
 % Adjust vertical space before and after TOC title
 \setlength{\cftbeforetoctitleskip}{-3em} % Space before the TOC title
 \setlength{\cftaftertoctitleskip}{-2em} % Space after the TOC title
@@ -140,15 +141,20 @@
 
 \renewcommand{\part}[1]{\addcontentsline{toc}{part}{#1}}
 
-% Additional Packages and Customizations
-\usepackage{mdframed}                 % Framed boxes
-\usepackage{ragged2e}                 % Advanced text alignment
-%% \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Centered column type for tables
-%% \newcolumntype{X}[1]{>{\raggedright\arraybackslash}p{#1}} % Left-aligned column type
+\newcommand{\sectionwithauthors}[2]{%
+  \section*{#2}%
+  \vspace{-1em}%
+  \addcontentsline{toc}{section}{%
+    #1 \\ % Authors
+    \normalfont\normalsize\itshape #2 % Section Title
+  }%
+  \setcounter{figure}{0}%
+  \setcounter{table}{0}%
+  \setcounter{equation}{0}%
+}
 
-% Define a new column type 'C' for centered p columns
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} 
-\newcolumntype{X}[1]{>{\raggedright\arraybackslash}p{#1}}
+% Front page
+\usepackage{pdfpages}
 
 % Рис.1 -
 \usepackage{caption}
@@ -169,10 +175,29 @@
 \newcommand{\tsp}[1]{\textsuperscript{#1}}
 \newcommand{\tsb}[1]{\textsubscript{#1}}
 
+\usepackage{makecell}
+
 \newcommand{\envelope}{\textsuperscript{\includegraphics[width=1em]{media/envelope}}}
 
+
 \titleformat{\section}[block]{\normalfont\centering\fontsize{11}{13}\selectfont\bfseries}{}{0pt}{}
+
 \titlespacing{\section}{0pt}{1em}{1ex plus .2ex}
+
+\usepackage{listings}
+\lstset{
+    language=Python,  % You can set the language, or leave it for generic code
+    basicstyle=\ttfamily\small, % Use a monospaced font with smaller size
+    keywordstyle=\color{blue}, % Color keywords
+    commentstyle=\color{gray}, % Color comments
+    stringstyle=\color{red}, % Color strings
+    numbers=none, % Disable line numbers
+    tabsize=4, % Set tab size
+    breaklines=true, % Automatically break long lines
+}
+
+% Define a new column type 'C' for centered p columns
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} 
 
 % Hyphentation penalty
 \hyphenpenalty=5000
@@ -186,30 +211,11 @@
     \ignorespaces%
 }
 
-\newcommand{\ID}[2]{%
-    {\fontsize{11}{10}\selectfont #1}%
-    \hfill {\bfseries \href{#2}{#2}}%
-    \ignorespaces%
-}
-
 \newenvironment{articleheader}{%
     \begin{center}%
     \fontsize{11}{12}\selectfont % Slightly smaller line height for the header
 }{%
     \end{center}%
-}
-
-\newcommand{\sectionwithauthors}[2]{%
-  \phantomsection
-  \section*{#2}%
-  \vspace{-1em}%
-  \addcontentsline{toc}{section}{%
-    #1 \\ % Authors
-    \normalsize\itshape #2 % Section Title
-  }%
-  \setcounter{figure}{0}%
-  \setcounter{table}{0}%
-  \setcounter{equation}{0}%
 }
 
 \newenvironment{affiliation}{%
@@ -240,4 +246,6 @@
   \par%
 }
 
+\usepackage{ragged2e}
+\newcolumntype{X}[1]{>{\raggedright\arraybackslash}p{#1}}
 \renewcommand{\nolinkurl}[1]{#1}

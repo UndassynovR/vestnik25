@@ -1,5 +1,101 @@
 (undo-tree-save-format-version . 1)
-"a0c39bac591ffa9ef28f051aacbe67480240732d"
-[nil nil nil nil (26482 14193 360460 50000) 0 nil]
-([nil current ((64 . 108) 63 (t 26482 12644 841618 363000)) nil (26482 14193 360456 138000) 0 nil])
+"ad6b091a0c0ef697dbe146034539e6ef1c0e0382"
+[nil nil nil nil (26489 23346 380113 201000) 0 nil]
+([nil nil ((#("
+" 0 1 (fontified t)) . 10565) (undo-tree-id161 . -1) (undo-tree-id162 . -1) (undo-tree-id163 . -1) (t 26489 23349 411646 91000)) nil (26489 23358 916942 91000) 0 nil] [nil nil ((#("\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/gor/image27}
+	\\caption*{Рис. 1 -- Повышение уровня выполнения БВР и использование
+	геотехнической блочной модели (при составлении БВР) для улучшения
+	параметров карьера проекта Жолымбет}
+\\end{figure}
+
+\\begin{multicols}{2}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (latex-env-pair t fontified t) 5 14 (face font-lock-function-name-face latex-env-pair t fontified t) 14 15 (latex-env-pair t fontified t) 15 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 24 (latex-env-pair t fontified t) 24 27 (face font-lock-function-name-face latex-env-pair t fontified t) 27 30 (face font-lock-function-name-face latex-env-pair t fontified t) 30 31 (latex-env-pair t fontified t) 31 36 (fontified t) 36 46 (face font-lock-keyword-face fontified t) 46 48 (fontified t) 48 64 (face font-lock-keyword-face fontified t) 64 74 (fontified t) 74 84 (face font-lock-keyword-face fontified t) 84 86 (fontified t) 86 103 (face font-lock-builtin-face fontified t) 103 106 (fontified t) 106 115 (face font-lock-keyword-face fontified t) 115 279 (fontified t) 279 283 (face font-lock-keyword-face fontified t) 283 284 (latex-env-pair t fontified t) 284 290 (face font-lock-function-name-face latex-env-pair t fontified t) 290 291 (latex-env-pair t fontified t) 291 293 (fontified t) 293 299 (face font-lock-keyword-face fontified t) 299 300 (latex-env-pair t fontified t) 300 309 (face font-lock-function-name-face latex-env-pair t fontified t) 309 310 (latex-env-pair t fontified t) 310 314 (fontified t)) . 9473) (undo-tree-id0 . -300) (undo-tree-id1 . -7) (undo-tree-id2 . -300) (undo-tree-id4 . -292) (undo-tree-id6 . -292) (undo-tree-id8 . -292) (undo-tree-id10 . -292) (undo-tree-id12 . -292) (undo-tree-id14 . -300) (undo-tree-id16 . -300) (undo-tree-id18 . -300) (undo-tree-id20 . -300) (undo-tree-id22 . -300) (undo-tree-id24 . -300) (undo-tree-id26 . -300) (undo-tree-id28 . -300) (undo-tree-id30 . -300) (undo-tree-id32 . -300) (undo-tree-id34 . -300) (undo-tree-id36 . -300) (undo-tree-id37 . -300) (undo-tree-id39 . -300) (undo-tree-id41 . -314) (undo-tree-id42 . -313) 9773 (t 26483 53321 182115 534000)) ((9473 . 9787)) (26489 23346 54371 571000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 10580 . 10581) (#("
+" 0 1 (fontified nil)) . -10581) (10580 . 10582) 10565) nil (26489 23358 916928 996000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 9998 . 9999) (#("
+" 0 1 (fontified nil)) . -10019) (9998 . 10020)) ((#("
+\\begin{multicols}{2}
+" 0 1 (rear-nonsticky nil fontified nil) 1 7 (face font-lock-keyword-face fontified nil) 7 8 (fontified nil latex-env-pair t) 8 17 (face font-lock-function-name-face fontified nil latex-env-pair t) 17 18 (fontified nil latex-env-pair t) 18 21 (fontified nil) 21 22 (fontified nil)) . 9998) (undo-tree-id155 . -1) (undo-tree-id156 . -1) (undo-tree-id157 . -21) (undo-tree-id158 . -1) (undo-tree-id159 . -1) (undo-tree-id160 . -1) (10019 . 10020) (nil rear-nonsticky t 9998 . 9999)) (26489 23346 54296 871000) 0 nil] [nil nil ((nil rear-nonsticky nil 10267 . 10268) (#("
+" 0 1 (fontified nil)) . -10581) (10267 . 10582) 10252 (t 26489 23277 96440 454000)) ((#("
+\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/gor/image27}
+	\\caption*{Рис. 1 -- Повышение уровня выполнения БВР и использование
+	геотехнической блочной модели (при составлении БВР) для улучшения
+	параметров карьера проекта Жолымбет}
+\\end{figure}
+
+\\begin{multicols}{2}
+" 0 1 (rear-nonsticky nil fontified nil) 1 5 (face font-lock-keyword-face fontified nil) 5 6 (fontified nil latex-env-pair t) 6 15 (face font-lock-function-name-face fontified nil latex-env-pair t) 15 16 (fontified nil latex-env-pair t) 16 17 (fontified nil) 17 18 (fontified t) 18 24 (face font-lock-keyword-face fontified t) 24 25 (fontified t latex-env-pair t) 25 28 (face font-lock-function-name-face fontified t latex-env-pair t) 28 31 (face font-lock-function-name-face fontified t latex-env-pair t) 31 32 (fontified t latex-env-pair t) 32 37 (fontified t) 37 47 (face font-lock-keyword-face fontified t) 47 48 (fontified t) 48 49 (fontified t) 49 65 (face font-lock-keyword-face fontified t) 65 74 (fontified t) 74 75 (fontified t) 75 85 (face font-lock-keyword-face fontified t) 85 87 (fontified t) 87 104 (face font-lock-builtin-face fontified t) 104 106 (fontified t) 106 107 (fontified t) 107 116 (face font-lock-keyword-face fontified t) 116 280 (fontified t) 280 284 (face font-lock-keyword-face fontified t) 284 285 (fontified t latex-env-pair t) 285 291 (face font-lock-function-name-face fontified t latex-env-pair t) 291 292 (fontified t latex-env-pair t) 292 294 (fontified t) 294 300 (face font-lock-keyword-face fontified nil) 300 301 (fontified nil latex-env-pair t) 301 310 (face font-lock-function-name-face fontified nil latex-env-pair t) 310 311 (fontified nil latex-env-pair t) 311 314 (fontified nil) 314 315 (fontified nil)) . 10267) (undo-tree-id84 . -1) (undo-tree-id85 . -74) (undo-tree-id86 . -74) (undo-tree-id87 . -74) (undo-tree-id88 . -74) (undo-tree-id89 . -74) (undo-tree-id90 . -74) (undo-tree-id91 . -74) (undo-tree-id92 . -74) (undo-tree-id93 . -74) (undo-tree-id94 . -74) (undo-tree-id95 . -74) (undo-tree-id96 . -74) (undo-tree-id97 . -74) (undo-tree-id98 . -74) (undo-tree-id99 . -74) (undo-tree-id100 . -74) (undo-tree-id101 . -74) (undo-tree-id102 . -74) (undo-tree-id103 . -74) (undo-tree-id104 . -74) (undo-tree-id105 . -74) (undo-tree-id106 . -74) (undo-tree-id107 . -74) (undo-tree-id108 . -74) (undo-tree-id109 . -74) (undo-tree-id110 . -74) (undo-tree-id111 . -74) (undo-tree-id112 . -74) (undo-tree-id113 . -74) (undo-tree-id114 . -74) (undo-tree-id115 . -74) (undo-tree-id116 . -74) (undo-tree-id117 . -74) (undo-tree-id118 . -294) (undo-tree-id119 . -294) (undo-tree-id120 . -294) (undo-tree-id121 . -294) (undo-tree-id122 . -294) (undo-tree-id123 . -294) (undo-tree-id124 . -294) (undo-tree-id125 . -294) (undo-tree-id126 . -294) (undo-tree-id127 . -294) (undo-tree-id128 . -74) (undo-tree-id129 . -294) (undo-tree-id130 . -1) (undo-tree-id131 . -1) (undo-tree-id132 . -1) (undo-tree-id133 . -1) (undo-tree-id134 . -1) (undo-tree-id135 . -1) (undo-tree-id136 . -1) (undo-tree-id137 . -1) (undo-tree-id138 . -1) (undo-tree-id139 . -1) (undo-tree-id140 . -1) (undo-tree-id141 . -1) (undo-tree-id142 . -1) (undo-tree-id143 . -1) (undo-tree-id144 . -1) (undo-tree-id145 . -1) (undo-tree-id146 . -1) (undo-tree-id147 . -1) (undo-tree-id148 . -1) (undo-tree-id149 . -74) (undo-tree-id150 . -1) (undo-tree-id151 . -1) (undo-tree-id152 . -1) (undo-tree-id153 . -294) (undo-tree-id154 . -1) (10581 . 10582) (nil rear-nonsticky t 10267 . 10268)) (26489 23343 336329 113000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 9787) (undo-tree-id164 . 1) (undo-tree-id165 . -1) (t 26489 23358 923541 638000)) nil (26489 23361 137928 702000) 0 nil])
+nil
+([nil nil ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (fontified t)) . 10268) (undo-tree-id83 . -15)) ((10268 . 10284)) (26489 23343 166073 441000) 0 nil] [nil nil ((#("\\end{multicols}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (fontified t latex-env-pair t) 5 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 16 (rear-nonsticky t fontified t)) . 10252) (undo-tree-id43 . -15) (undo-tree-id44 . -16) (undo-tree-id45 . -16) (undo-tree-id46 . -16) (undo-tree-id47 . -16) (undo-tree-id48 . -16) (undo-tree-id49 . -16) (undo-tree-id50 . -16) (undo-tree-id51 . -16) (undo-tree-id52 . -16) (undo-tree-id53 . -16) (undo-tree-id54 . -16) (undo-tree-id55 . -16) (undo-tree-id56 . -16) (undo-tree-id57 . -16) (undo-tree-id58 . -16) (undo-tree-id59 . -16) (undo-tree-id60 . -16) (undo-tree-id61 . -16) (undo-tree-id62 . -16) (undo-tree-id63 . -16) (undo-tree-id64 . -16) (undo-tree-id65 . -16) (undo-tree-id66 . -16) (undo-tree-id67 . -16) (undo-tree-id68 . -16) (undo-tree-id69 . -16) (undo-tree-id70 . -16) (undo-tree-id71 . -16) (undo-tree-id72 . -16) (undo-tree-id73 . -16) (undo-tree-id74 . -16) (undo-tree-id75 . -16) (undo-tree-id76 . -16) (undo-tree-id77 . -16) (undo-tree-id78 . -16) (undo-tree-id79 . -16) (undo-tree-id80 . -16)) ((10252 . 10268) (t 26489 23306 301119 576000)) (26489 23306 295336 687000) 0 nil])
+([nil nil ((10192 . 10194) (#(" " 0 1 (fontified t)) . -10192) (undo-tree-id339 . -1) (undo-tree-id340 . -1) (undo-tree-id341 . -1) (undo-tree-id342 . -1) (undo-tree-id343 . -1) (undo-tree-id344 . -1) (undo-tree-id345 . -1) (undo-tree-id346 . -1) (undo-tree-id347 . -1) (undo-tree-id348 . -1) (undo-tree-id349 . -1) (undo-tree-id350 . -1) (undo-tree-id351 . -1) (undo-tree-id352 . -1) (undo-tree-id353 . -1) (undo-tree-id354 . -1) (undo-tree-id355 . -1) 10193 (10190 . 10193) (10189 . 10190) (t 26489 23361 141517 282000) 10122) nil (26489 23395 865104 583000) 0 nil])
+([nil nil ((#("\\begin{multicols}{2}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (fontified t latex-env-pair t) 7 16 (face font-lock-function-name-face fontified t latex-env-pair t) 16 17 (fontified t latex-env-pair t) 17 20 (fontified t) 20 21 (fontified t)) . 10545) (undo-tree-id81 . -20)) ((10545 . 10566)) (26489 23342 972266 289000) 0 nil])
+nil
+([nil nil ((10193 . 10194) (#("i" 0 1 (fontified nil)) . -10193) (undo-tree-id333 . -1) (undo-tree-id334 . -1) (undo-tree-id335 . -1) (undo-tree-id336 . -1) (undo-tree-id337 . -1) (undo-tree-id338 . -1) (10193 . 10194)) nil (26489 23395 865098 361000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -10325) (t 26489 23312 405052 524000) (10326 . 10327) 10325 (t 26489 23312 405052 524000)) ((#("7" 0 1 (fontified nil)) . 10326) (10325 . 10326) (t 26489 23325 392909 869000)) (26489 23325 386377 404000) 0 nil])
+([nil nil ((#("qp=iq
+" 0 5 (fontified t) 5 6 (fontified t)) . 10190) (undo-tree-id166 . -5) (undo-tree-id167 . -2) (undo-tree-id168 . -2) (undo-tree-id169 . -2) (undo-tree-id170 . -2) (undo-tree-id171 . -2) (undo-tree-id172 . -2) (undo-tree-id173 . -2) (undo-tree-id174 . -2) (undo-tree-id175 . -2) (undo-tree-id176 . -2) (undo-tree-id177 . -2) (undo-tree-id178 . -2) (undo-tree-id179 . -2) (undo-tree-id180 . -2) (undo-tree-id181 . -2) (undo-tree-id182 . -5) (undo-tree-id183 . -5) (undo-tree-id184 . -5) (undo-tree-id185 . -5) (undo-tree-id186 . -5) (undo-tree-id187 . -5) (undo-tree-id188 . -5) (undo-tree-id189 . -5) (undo-tree-id190 . -5) (undo-tree-id191 . -5) (undo-tree-id192 . -5) (undo-tree-id193 . -5) (undo-tree-id194 . -5) (undo-tree-id195 . -5) (undo-tree-id196 . -5) (undo-tree-id197 . -5) (undo-tree-id198 . -5) (undo-tree-id199 . -5) (undo-tree-id200 . -5) (undo-tree-id201 . -5) (undo-tree-id202 . -5) (undo-tree-id203 . -5) (undo-tree-id204 . -5) (undo-tree-id205 . -5) (undo-tree-id206 . -5) (undo-tree-id207 . -5) (undo-tree-id208 . -5) (undo-tree-id209 . -5) (undo-tree-id210 . -5) (undo-tree-id211 . -5) (undo-tree-id212 . -5) (undo-tree-id213 . -5) (undo-tree-id214 . -5) (undo-tree-id215 . -5) (undo-tree-id216 . -5) (undo-tree-id217 . -5) (undo-tree-id218 . -5) (undo-tree-id219 . -5) (undo-tree-id220 . -5) (undo-tree-id221 . -5) (undo-tree-id222 . -5) (undo-tree-id223 . -5) (undo-tree-id224 . -5) (undo-tree-id225 . -5) (undo-tree-id226 . -5) (undo-tree-id227 . -5) (undo-tree-id228 . -5) (undo-tree-id229 . -5) (undo-tree-id230 . -5) (undo-tree-id231 . -5) (undo-tree-id232 . -5) (undo-tree-id233 . -5) (undo-tree-id234 . -5) (undo-tree-id235 . -5) (undo-tree-id236 . -5) (undo-tree-id237 . -5) (undo-tree-id238 . -5) (undo-tree-id239 . -5) (undo-tree-id240 . -5) (undo-tree-id241 . -5) (undo-tree-id242 . -5) (undo-tree-id243 . -5) (undo-tree-id244 . -5) (undo-tree-id245 . -5) (undo-tree-id246 . -5) (undo-tree-id247 . -5) (undo-tree-id248 . -5) (undo-tree-id249 . -5) (undo-tree-id250 . -5) (undo-tree-id251 . -5) (undo-tree-id252 . -5) (undo-tree-id253 . -5) (undo-tree-id254 . -5) (undo-tree-id255 . -5) (undo-tree-id256 . 2) (undo-tree-id257 . -3) (undo-tree-id258 . -3) (undo-tree-id259 . -3) (undo-tree-id260 . -3) (undo-tree-id261 . -3) (undo-tree-id262 . -3) (undo-tree-id263 . -3) (undo-tree-id264 . -3) (undo-tree-id265 . -3) (undo-tree-id266 . -3) (undo-tree-id267 . -3) (undo-tree-id268 . -3) (undo-tree-id269 . -3) (undo-tree-id270 . -3) (undo-tree-id271 . -3) (undo-tree-id272 . -3) (undo-tree-id273 . -3) (undo-tree-id274 . -3) (undo-tree-id275 . -3) (undo-tree-id276 . -3) (undo-tree-id277 . -3) (undo-tree-id278 . -3) (undo-tree-id279 . -3) (undo-tree-id280 . -3) (undo-tree-id281 . -3) (undo-tree-id282 . -3) (undo-tree-id283 . -3) (undo-tree-id284 . -3) (undo-tree-id285 . -3) (undo-tree-id286 . -3) (undo-tree-id287 . -3) (undo-tree-id288 . -3) (undo-tree-id289 . -3) (undo-tree-id290 . -3) (undo-tree-id291 . -4) (undo-tree-id292 . -4) (undo-tree-id293 . -4) (undo-tree-id294 . -4) (undo-tree-id295 . -4) (undo-tree-id296 . -4) (undo-tree-id297 . -4) (undo-tree-id298 . -4) (undo-tree-id299 . -4) (undo-tree-id300 . -4) (undo-tree-id301 . -4) (undo-tree-id302 . -4) (undo-tree-id303 . -4) (undo-tree-id304 . -4) (undo-tree-id305 . -4) (undo-tree-id306 . -3) (undo-tree-id307 . -3) (undo-tree-id308 . -3) (undo-tree-id309 . -3) (undo-tree-id310 . -3) (undo-tree-id311 . -3) (undo-tree-id312 . -3) (undo-tree-id313 . -3) (undo-tree-id314 . -3) (undo-tree-id315 . -3) (undo-tree-id316 . -3) (undo-tree-id317 . -3) (undo-tree-id318 . -3) (undo-tree-id319 . -3) (undo-tree-id320 . -3) (undo-tree-id321 . -3) (undo-tree-id322 . -3) (undo-tree-id323 . -3) (undo-tree-id324 . -3) (undo-tree-id325 . -3) (undo-tree-id326 . -3) (undo-tree-id327 . -3) (undo-tree-id328 . -3) (undo-tree-id329 . -3) (undo-tree-id330 . -3) (undo-tree-id331 . -3) (undo-tree-id332 . -6) 10193) nil (26489 23395 865091 909000) 0 nil])
+nil
+([nil nil ((#("\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/gor/image27}
+	\\caption*{Рис. 1 -- Повышение уровня выполнения БВР и использование
+	геотехнической блочной модели (при составлении БВР) для улучшения
+	параметров карьера проекта Жолымбет}
+\\end{figure}
+
+\\begin{multicols}{2}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (latex-env-pair t fontified t) 5 14 (face font-lock-function-name-face latex-env-pair t fontified t) 14 15 (latex-env-pair t fontified t) 15 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 24 (latex-env-pair t fontified t) 24 27 (face font-lock-function-name-face latex-env-pair t fontified t) 27 30 (face font-lock-function-name-face latex-env-pair t fontified t) 30 31 (latex-env-pair t fontified t) 31 36 (fontified t) 36 46 (face font-lock-keyword-face fontified t) 46 48 (fontified t) 48 64 (face font-lock-keyword-face fontified t) 64 74 (fontified t) 74 84 (face font-lock-keyword-face fontified t) 84 86 (fontified t) 86 103 (face font-lock-builtin-face fontified t) 103 106 (fontified t) 106 115 (face font-lock-keyword-face fontified t) 115 279 (fontified t) 279 283 (face font-lock-keyword-face fontified t) 283 284 (latex-env-pair t fontified t) 284 290 (face font-lock-function-name-face latex-env-pair t fontified t) 290 291 (latex-env-pair t fontified t) 291 293 (fontified t) 293 299 (face font-lock-keyword-face fontified t) 299 300 (latex-env-pair t fontified t) 300 309 (face font-lock-function-name-face latex-env-pair t fontified t) 309 310 (latex-env-pair t fontified t) 310 314 (fontified t)) . 9473) (undo-tree-id357 . -293) (undo-tree-id358 . -293) (undo-tree-id359 . -313) (undo-tree-id360 . -293) 9766 (t 26489 23395 868136 6000)) nil (26489 23413 720816 183000) 0 nil])
+([nil nil ((9472 . 9473) 9465) nil (26489 23413 720813 618000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 8051 . 8052) (#("
+" 0 1 (fontified nil)) . -8365) (8051 . 8366) 8039) nil (26489 23413 720812 616000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 8366) (undo-tree-id356 . -1)) nil (26489 23413 720809 591000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 15956) (t 26489 23413 726939 974000)) nil (26489 23478 612249 682000) 0 nil])
+([nil nil ((#("\\end{multicols}
+
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/gor/image29}
+	\\caption*{Рис. 2 - Проект массового взрыва блок 270-007}
+\\end{figure}
+" 0 4 (face font-lock-keyword-face fontified t) 4 5 (latex-env-pair t fontified t) 5 14 (face font-lock-function-name-face latex-env-pair t fontified t) 14 15 (latex-env-pair t fontified t) 15 16 (fontified t) 16 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 24 (latex-env-pair t fontified t) 24 30 (face font-lock-function-name-face latex-env-pair t fontified t) 30 31 (latex-env-pair t fontified t) 31 36 (fontified t) 36 46 (face font-lock-keyword-face fontified t) 46 48 (fontified t) 48 64 (face font-lock-keyword-face fontified t) 64 74 (fontified t) 74 84 (face font-lock-keyword-face fontified t) 84 86 (fontified t) 86 103 (face font-lock-builtin-face fontified t) 103 106 (fontified t) 106 115 (face font-lock-keyword-face fontified t) 115 163 (fontified t) 163 167 (face font-lock-keyword-face fontified t) 167 168 (latex-env-pair t fontified t) 168 174 (face font-lock-function-name-face latex-env-pair t fontified t) 174 175 (latex-env-pair t fontified t) 175 176 (fontified t)) . 15940) (undo-tree-id361 . -163) (undo-tree-id362 . -163) (undo-tree-id363 . -175) (undo-tree-id364 . -163) 16103) nil (26489 23478 612248 860000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 15077 . 15078) (#("
+" 0 1 (fontified nil)) . -15253) (15077 . 15254) 15028) nil (26489 23478 612185 962000) 0 nil])
+([nil nil ((15255 . 15276) (16116 . 16132)) nil (26489 23478 612181 925000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 16153) (t 26489 23478 616227 762000)) nil (26489 23515 243709 772000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 18205)) nil (26489 23515 243709 271000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 18204)) nil (26489 23515 243708 670000) 0 nil])
+([nil nil ((#("
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width=0.8\\textwidth]{media/gor/image31}
+	\\caption*{Рис. 4 -- Качество взрыва на визуальный осмотр}
+\\end{figure}
+" 0 1 (fontified t) 1 7 (face font-lock-keyword-face fontified t) 7 8 (fontified t latex-env-pair t) 8 14 (face font-lock-function-name-face fontified t latex-env-pair t) 14 15 (fontified t latex-env-pair t) 15 20 (fontified t) 20 30 (face font-lock-keyword-face fontified t) 30 32 (fontified t) 32 48 (face font-lock-keyword-face fontified t) 48 58 (fontified t) 58 68 (face font-lock-keyword-face fontified t) 68 70 (fontified t) 70 87 (face font-lock-builtin-face fontified t) 87 90 (fontified t) 90 99 (face font-lock-keyword-face fontified t) 99 148 (fontified t) 148 152 (face font-lock-keyword-face fontified t) 152 153 (fontified t latex-env-pair t) 153 159 (face font-lock-function-name-face fontified t latex-env-pair t) 159 160 (fontified t latex-env-pair t) 160 161 (fontified t)) . 18022) (undo-tree-id366 . -148) (undo-tree-id367 . -148) (undo-tree-id368 . -160) (undo-tree-id369 . -148) 18170) nil (26489 23515 243708 79000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 16314 . 16315) (#("
+" 0 1 (fontified nil)) . -16475) (16314 . 16476) 16302) nil (26489 23515 243705 544000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 18181) (undo-tree-id365 . -1)) nil (26489 23515 243704 292000) 0 nil])
+([nil nil ((#("  " 0 2 (fontified t)) . -18163)) nil (26489 23515 243692 540000) 0 nil])
+([nil nil ((#("8" 0 1 (fontified t)) . -16210) (t 26489 23515 249825 850000) (16211 . 16212) 16210 (t 26489 23515 249825 850000)) nil (26489 23529 553359 192000) 0 nil])
+([nil current ((#("8" 0 1 (fontified t)) . -16372) (16373 . 16374) 16372) nil (26489 23529 553353 862000) 0 nil])
 nil

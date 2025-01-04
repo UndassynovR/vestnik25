@@ -1,8 +1,116 @@
 (undo-tree-save-format-version . 1)
-"e0a6b9e2675a9825b6fca1d427fbe1aef7447ed1"
-[nil nil nil nil (26482 14322 52534 715000) 0 nil]
-([nil nil ((20 . 64) 19 (t 26482 8606 866748 857000)) nil (26482 14322 52533 384000) 0 nil])
+"c0b6f07a0065753e5d42f481b7bae06737392dc5"
+[nil nil nil nil (26489 25415 962770 407000) 0 nil]
 ([nil nil ((#("
-" 0 1 (fontified t)) . 87)) nil (26482 14322 52531 981000) 0 nil])
-([nil current ((65 . 66)) nil (26482 14322 52528 414000) 0 nil])
+" 0 1 (fontified t)) . 29708) (t 26483 53321 179115 556000)) nil (26489 25415 962769 626000) 0 nil])
+([nil nil ((#("
+% \\begin{longtable}[]{@{}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.2699}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0596}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0745}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0744}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0447}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0745}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0447}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0448}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0448}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0448}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0447}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0446}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0447}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0447}}
+%   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.0447}}@{}}
+% \\toprule\\noalign{}
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% \\_n-НЕДЕЛЯ
+% \\end{minipage} &
+% \\multicolumn{6}{>{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.3725} + 10\\tabcolsep}}{%
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% Количество событий
+% \\end{minipage}} &
+% \\multicolumn{4}{>{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.1790} + 6\\tabcolsep}}{%
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% Внутренние
+% \\end{minipage}} &
+% \\multicolumn{4}{>{\\raggedright\\arraybackslash}p{(\\columnwidth - 28\\tabcolsep) * \\real{0.1786} + 6\\tabcolsep}@{}}{%
+% \\begin{minipage}[b]{\\linewidth}\\raggedright
+% Внешние
+% \\end{minipage}} \\\\
+% \\midrule\\noalign{}
+% \\endhead
+% \\bottomrule\\noalign{}
+% \\endlastfoot
+% Структурs & Запланированные & Состоявшиеся & Не состоявшиеся &
+% Перенесенные & Перенесенные
+
+% более 2-х раз & Потерянные & Р & А & П & И & Р & А & П & И \\\\
+% АГ-2 ({\\bfseries Ω}) & & & & & & & & & & & & & & \\\\
+% Руководитель ({\\bfseries Ρ}) & & & & & & & & & & & & & & \\\\
+% Дирекция СПМ РК ({\\bfseries Ν}) & & & & & & & & & & & & & & \\\\
+% ДКП ({\\bfseries Δ}) & & & & & & & & & & & & & & \\\\
+% Центр Консалт ({\\bfseries K}) & & & & & & & & & & & & & & \\\\
+% Центр сертиф. ({\\bfseries ϛ}) & & & & & & & & & & & & & & \\\\
+% МАИН (общая) ({\\bfseries μ}) & & & & & & & & & & & & & & \\\\
+% МАИН (устав.) ({\\bfseries μ1}) & & & & & & & & & & & & & & \\\\
+% МАИН (контр.) ({\\bfseries μ2}) & & & & & & & & & & & & & & \\\\
+% НИС АГ-2 ({\\bfseries π}) & & & & & & & & & & & & & & \\\\
+% ELAN ({\\bfseries Σ}) & & & & & & & & & & & & & & \\\\
+% Филиал МиМЭ ({\\bfseries φ}) & & & & & & & & & & & & & & \\\\
+% Итого по стуктурам & & & & & & & & & & & & & & \\\\
+% \\end{longtable}
+" 0 1 (fontified t) 1 3 (face font-lock-comment-delimiter-face fontified t) 3 9 (face font-lock-comment-face fontified t) 9 20 (face font-lock-comment-face latex-env-pair t fontified t) 20 27 (face font-lock-comment-face fontified t) 27 31 (face font-lock-comment-delimiter-face fontified t) 31 110 (face font-lock-comment-face fontified t) 110 114 (face font-lock-comment-delimiter-face fontified t) 114 193 (face font-lock-comment-face fontified t) 193 197 (face font-lock-comment-delimiter-face fontified t) 197 276 (face font-lock-comment-face fontified t) 276 280 (face font-lock-comment-delimiter-face fontified t) 280 359 (face font-lock-comment-face fontified t) 359 363 (face font-lock-comment-delimiter-face fontified t) 363 442 (face font-lock-comment-face fontified t) 442 446 (face font-lock-comment-delimiter-face fontified t) 446 525 (face font-lock-comment-face fontified t) 525 529 (face font-lock-comment-delimiter-face fontified t) 529 608 (face font-lock-comment-face fontified t) 608 612 (face font-lock-comment-delimiter-face fontified t) 612 691 (face font-lock-comment-face fontified t) 691 695 (face font-lock-comment-delimiter-face fontified t) 695 774 (face font-lock-comment-face fontified t) 774 778 (face font-lock-comment-delimiter-face fontified t) 778 857 (face font-lock-comment-face fontified t) 857 861 (face font-lock-comment-delimiter-face fontified t) 861 940 (face font-lock-comment-face fontified t) 940 944 (face font-lock-comment-delimiter-face fontified t) 944 1023 (face font-lock-comment-face fontified t) 1023 1027 (face font-lock-comment-delimiter-face fontified t) 1027 1106 (face font-lock-comment-face fontified t) 1106 1110 (face font-lock-comment-delimiter-face fontified t) 1110 1189 (face font-lock-comment-face fontified t) 1189 1193 (face font-lock-comment-delimiter-face fontified t) 1193 1276 (face font-lock-comment-face fontified t) 1276 1278 (face font-lock-comment-delimiter-face fontified t) 1278 1297 (face font-lock-comment-face fontified t) 1297 1299 (face font-lock-comment-delimiter-face fontified t) 1299 1305 (face font-lock-comment-face fontified t) 1305 1315 (face font-lock-comment-face latex-env-pair t fontified t) 1315 1343 (face font-lock-comment-face fontified t) 1343 1345 (face font-lock-comment-delimiter-face fontified t) 1345 1356 (face font-lock-comment-face fontified t) 1356 1358 (face font-lock-comment-delimiter-face fontified t) 1358 1362 (face font-lock-comment-face fontified t) 1362 1372 (face font-lock-comment-face latex-env-pair t fontified t) 1372 1375 (face font-lock-comment-face fontified t) 1375 1377 (face font-lock-comment-delimiter-face fontified t) 1377 1490 (face font-lock-comment-face fontified t) 1490 1492 (face font-lock-comment-delimiter-face fontified t) 1492 1498 (face font-lock-comment-face fontified t) 1498 1508 (face font-lock-comment-face latex-env-pair t fontified t) 1508 1536 (face font-lock-comment-face fontified t) 1536 1538 (face font-lock-comment-delimiter-face fontified t) 1538 1557 (face font-lock-comment-face fontified t) 1557 1559 (face font-lock-comment-delimiter-face fontified t) 1559 1563 (face font-lock-comment-face fontified t) 1563 1573 (face font-lock-comment-face latex-env-pair t fontified t) 1573 1577 (face font-lock-comment-face fontified t) 1577 1579 (face font-lock-comment-delimiter-face fontified t) 1579 1691 (face font-lock-comment-face fontified t) 1691 1693 (face font-lock-comment-delimiter-face fontified t) 1693 1699 (face font-lock-comment-face fontified t) 1699 1709 (face font-lock-comment-face latex-env-pair t fontified t) 1709 1737 (face font-lock-comment-face fontified t) 1737 1739 (face font-lock-comment-delimiter-face fontified t) 1739 1750 (face font-lock-comment-face fontified t) 1750 1752 (face font-lock-comment-delimiter-face fontified t) 1752 1756 (face font-lock-comment-face fontified t) 1756 1766 (face font-lock-comment-face latex-env-pair t fontified t) 1766 1770 (face font-lock-comment-face fontified t) 1770 1772 (face font-lock-comment-delimiter-face fontified t) 1772 1887 (face font-lock-comment-face fontified t) 1887 1889 (face font-lock-comment-delimiter-face fontified t) 1889 1895 (face font-lock-comment-face fontified t) 1895 1905 (face font-lock-comment-face latex-env-pair t fontified t) 1905 1933 (face font-lock-comment-face fontified t) 1933 1935 (face font-lock-comment-delimiter-face fontified t) 1935 1943 (face font-lock-comment-face fontified t) 1943 1945 (face font-lock-comment-delimiter-face fontified t) 1945 1949 (face font-lock-comment-face fontified t) 1949 1959 (face font-lock-comment-face latex-env-pair t fontified t) 1959 1964 (face font-lock-comment-face fontified t) 1964 1966 (face font-lock-comment-delimiter-face fontified t) 1966 1985 (face font-lock-comment-face fontified t) 1985 1987 (face font-lock-comment-delimiter-face fontified t) 1987 1996 (face font-lock-comment-face fontified t) 1996 1998 (face font-lock-comment-delimiter-face fontified t) 1998 2020 (face font-lock-comment-face fontified t) 2020 2022 (face font-lock-comment-delimiter-face fontified t) 2022 2035 (face font-lock-comment-face fontified t) 2035 2037 (face font-lock-comment-delimiter-face fontified t) 2037 2100 (face font-lock-comment-face fontified t) 2100 2102 (face font-lock-comment-delimiter-face fontified t) 2102 2130 (face font-lock-comment-face fontified t) 2130 2131 (fontified t) 2131 2133 (face font-lock-comment-delimiter-face fontified t) 2133 2195 (face font-lock-comment-face fontified t) 2195 2197 (face font-lock-comment-delimiter-face fontified t) 2197 2249 (face font-lock-comment-face fontified t) 2249 2251 (face font-lock-comment-delimiter-face fontified t) 2251 2311 (face font-lock-comment-face fontified t) 2311 2313 (face font-lock-comment-delimiter-face fontified t) 2313 2376 (face font-lock-comment-face fontified t) 2376 2378 (face font-lock-comment-delimiter-face fontified t) 2378 2429 (face font-lock-comment-face fontified t) 2429 2431 (face font-lock-comment-delimiter-face fontified t) 2431 2492 (face font-lock-comment-face fontified t) 2492 2494 (face font-lock-comment-delimiter-face fontified t) 2494 2555 (face font-lock-comment-face fontified t) 2555 2557 (face font-lock-comment-delimiter-face fontified t) 2557 2617 (face font-lock-comment-face fontified t) 2617 2619 (face font-lock-comment-delimiter-face fontified t) 2619 2681 (face font-lock-comment-face fontified t) 2681 2683 (face font-lock-comment-delimiter-face fontified t) 2683 2745 (face font-lock-comment-face fontified t) 2745 2747 (face font-lock-comment-delimiter-face fontified t) 2747 2803 (face font-lock-comment-face fontified t) 2803 2805 (face font-lock-comment-delimiter-face fontified t) 2805 2857 (face font-lock-comment-face fontified t) 2857 2859 (face font-lock-comment-delimiter-face fontified t) 2859 2918 (face font-lock-comment-face fontified t) 2918 2920 (face font-lock-comment-delimiter-face fontified t) 2920 2970 (face font-lock-comment-face fontified t) 2970 2972 (face font-lock-comment-delimiter-face fontified t) 2972 2976 (face font-lock-comment-face fontified t) 2976 2987 (face font-lock-comment-face latex-env-pair t fontified t) 2987 2988 (face font-lock-comment-face fontified t)) . 26698) (undo-tree-id3 . -2970) (undo-tree-id4 . -2987) (undo-tree-id5 . -2970)) nil (26489 25415 962769 85000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 26522) (undo-tree-id2 . -1)) nil (26489 25415 962767 191000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 26522) (undo-tree-id1 . -1)) nil (26489 25415 962766 129000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 26522) (undo-tree-id0 . -1)) nil (26489 25415 962762 142000) 0 nil])
+([nil nil ((#("
+Процессом «Еженедельная ретроспектива графика событий недели»
+измеряется:
+
+а) активность членов команды управления, включая СЕО (в баллах, исходя
+из количества инициированных ими событий в НСГ), рис.3;
+
+б) дисциплину исполнения запланированных событий (в баллах), рис. 3;
+
+в) качество исполнения (с учётом системы оценки «выходов» (outputs), в
+баллах.
+
+Эффективность этого процесса будет зависеть от факторов, неисследованных
+на текущий момент, среди которых -- корректность метрик, используемых
+для анализа выходов (outputs) недели и алгоритма формирования фокуса
+действий на предстоящий период (как правило --неделя).
+
+" 0 1 (fontified t) 1 11 (fontified t) 11 12 (face font-lock-keyword-face fontified t) 12 61 (face font-lock-string-face fontified t) 61 62 (face font-lock-keyword-face fontified t) 62 63 (fontified t) 63 75 (fontified t) 75 76 (fontified t) 76 147 (fontified t) 147 203 (fontified t) 203 204 (fontified t) 204 273 (fontified t) 273 274 (fontified t) 274 322 (fontified t) 322 323 (face font-lock-keyword-face fontified t) 323 330 (face font-lock-string-face fontified t) 330 331 (face font-lock-keyword-face fontified t) 331 345 (fontified t) 345 353 (fontified t) 353 354 (fontified t) 354 427 (fontified t) 427 497 (fontified t) 497 566 (fontified t) 566 621 (fontified t) 621 622 (fontified t)) . 26717) (undo-tree-id6 . -621) (undo-tree-id7 . -621) (undo-tree-id8 . -621) (undo-tree-id9 . -621) 27338 (t 26489 25415 966215 233000)) nil (26489 25440 942259 530000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 26336 . 26337) (#("
+" 0 1 (fontified nil)) . -26958) (26336 . 26959) 26323) nil (26489 25442 667101 34000) 0 nil] [nil nil ((26336 . 26337) 26323) ((#("
+" 0 1 (fontified t)) . 26336) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . -1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1)) (26489 25440 43381 302000) 0 nil])
+([nil nil ((27033 . 27034) (t 26489 25442 673927 47000)) nil (26489 25457 83189 105000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 26337 . 26338) (#("
+" 0 1 (fontified nil)) . -26959) (26337 . 26960)) ((#("
+
+Процессом «Еженедельная ретроспектива графика событий недели»
+измеряется:
+
+а) активность членов команды управления, включая СЕО (в баллах, исходя
+из количества инициированных ими событий в НСГ), рис.3;
+
+б) дисциплину исполнения запланированных событий (в баллах), рис. 3;
+
+в) качество исполнения (с учётом системы оценки «выходов» (outputs), в
+баллах.
+
+Эффективность этого процесса будет зависеть от факторов, неисследованных
+на текущий момент, среди которых -- корректность метрик, используемых
+для анализа выходов (outputs) недели и алгоритма формирования фокуса
+действий на предстоящий период (как правило --неделя).
+
+" 0 1 (rear-nonsticky nil fontified nil) 1 2 (fontified nil) 2 12 (fontified t) 12 13 (face font-lock-keyword-face fontified t) 13 62 (face font-lock-string-face fontified t) 62 63 (face font-lock-keyword-face fontified t) 63 64 (fontified t) 64 76 (fontified t) 76 77 (fontified t) 77 148 (fontified t) 148 204 (fontified t) 204 205 (fontified t) 205 274 (fontified t) 274 275 (fontified t) 275 323 (fontified t) 323 324 (face font-lock-keyword-face fontified t) 324 331 (face font-lock-string-face fontified t) 331 332 (face font-lock-keyword-face fontified t) 332 346 (fontified t) 346 354 (fontified t) 354 355 (fontified t) 355 428 (fontified t) 428 498 (fontified t) 498 567 (fontified t) 567 622 (fontified t) 622 623 (fontified nil)) . 26337) (undo-tree-id10 . -1) (undo-tree-id11 . -622) (26959 . 26960) (nil rear-nonsticky t 26337 . 26338)) (26489 25440 43287 838000) 0 nil])
+([nil nil ((#("82" 0 2 (fontified t)) . -27032) (t 26489 25457 89771 499000) (27034 . 27036) 27033 (t 26489 25457 89771 499000)) nil (26489 25465 158188 527000) 0 nil])
+nil
+([nil nil ((#("
+" 0 1 (fontified t)) . 26958) (undo-tree-id40 . -1)) nil (26489 25465 158185 10000) 0 nil])
+([nil nil ((nil fontified t 27031 . 27033) (t 26489 25465 162684 411000) (#("83" 0 2 (fontified t)) . -27031) (t 26489 25465 162684 411000) (27033 . 27035) 27032 (t 26489 25465 162684 411000)) nil (26489 25470 340178 397000) 0 nil])
+([nil current ((35139 . 35141) (t 26489 25470 345628 495000)) nil (26489 25523 696319 276000) 0 nil])
 nil

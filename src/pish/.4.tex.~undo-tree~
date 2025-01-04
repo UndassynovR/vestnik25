@@ -1,7 +1,13 @@
 (undo-tree-save-format-version . 1)
-"b85141b93b7c02c601e58707a0a483ece5416b2b"
-[nil nil nil nil (26482 13872 916606 231000) 0 nil]
-([nil nil ((20 . 64) 19 (t 26482 12644 843618 304000)) nil (26482 13872 916602 9000) 0 nil])
-([nil nil ((3231 . 3233) (t 26482 13872 963851 12000)) nil (26482 13974 424119 935000) 0 nil])
-([nil current ((9520 . 9522) (t 26482 13974 474892 448000)) nil (26482 13989 874988 319000) 0 nil])
+"be3e3d969d31e3c9709b257813cec25bd0b6ac1f"
+[nil nil nil nil (26489 22766 660405 146000) 0 nil]
+([nil nil ((40856 . 40857) (t 26483 53321 184115 518000)) nil (26489 22766 660469 6000) 0 nil])
+([nil nil ((41037 . 41043)) nil (26489 22776 130880 724000) 0 nil] [nil nil ((41037 . 41059) (41072 . 41092)) ((#("\\end{articleheader}
+" 0 4 (face font-lock-keyword-face fontified nil) 4 5 (latex-env-pair t fontified nil) 5 18 (face font-lock-function-name-face latex-env-pair t fontified nil) 18 19 (latex-env-pair t fontified nil) 19 20 (fontified nil)) . 41072) (undo-tree-id0 . 20) (#("\\begin{articleheader}
+" 0 6 (face font-lock-keyword-face fontified t) 6 7 (latex-env-pair t fontified t) 7 20 (face font-lock-function-name-face latex-env-pair t fontified t) 20 21 (latex-env-pair t fontified t) 21 22 (fontified t)) . 41037) (undo-tree-id1 . -22)) (26489 22766 660400 618000) 0 nil])
+([nil nil ((41078 . 41080)) nil (26489 22776 130880 423000) 0 nil])
+nil
+([nil nil ((nil rear-nonsticky nil 41096 . 41097) (nil fontified nil 41080 . 41097) (41080 . 41097) 41079) nil (26489 22776 130879 932000) 0 nil])
+([nil nil ((41097 . 41098)) nil (26489 22776 130876 95000) 0 nil])
+([nil current ((41390 . 41392) (t 26489 22776 133821 109000)) nil (26489 22792 312414 604000) 0 nil])
 nil

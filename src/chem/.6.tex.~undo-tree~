@@ -1,5 +1,5 @@
 (undo-tree-save-format-version . 1)
-"019f07242d138074c90d3ce3d15b0c030f03bf81"
+"363969398a66a46b9a3464a64df20e1576728d11"
 [nil nil nil nil (26481 22387 632568 175000) 0 nil]
 ([nil nil ((nil rear-nonsticky nil 9930 . 9931) (nil fontified nil 9522 . 9931) (9522 . 9931) (#("% \\begin{longtable}[]{@{}
 %   >{\\raggedright\\arraybackslash}p{(\\columnwidth - 10\\tabcolsep) * \\real{0.1567}}
@@ -220,5 +220,9 @@ antioxidant.
 ([nil nil ((21339 . 21343) (#("url" 0 3 (fontified t face font-lock-keyword-face)) . 21339) (undo-tree-id169 . -2) (t 26483 35388 179585 491000)) nil (26483 35457 336997 87000) 0 nil])
 ([nil nil ((21389 . 21390)) nil (26483 35457 336988 777000) 0 nil])
 ([nil nil ((nil rear-nonsticky nil 21412 . 21413) (nil fontified nil 21390 . 21413) (21390 . 21413) 21389) nil (26483 35457 336987 737000) 0 nil])
-([nil current ((21413 . 21414)) nil (26483 35457 336983 515000) 0 nil])
+([nil nil ((21413 . 21414)) nil (26489 22438 339023 431000) 0 nil])
+([nil nil ((1445 . 1446) (t 26483 53321 176115 578000)) nil (26489 22451 977894 504000) 0 nil] [nil nil ((1443 . 1444) (t 26483 53321 176115 578000)) ((#("w" 0 1 (fontified t)) . 1443)) (26489 22438 338848 464000) 0 nil] [nil nil ((1442 . 1443) (t 26483 53321 176115 578000)) ((#("-" 0 1 (fontified t)) . 1442)) (26489 22433 723471 180000) 0 nil])
+([nil current ((1665 . 1666) (t 26489 22451 982299 300000)) nil (26489 22481 740482 962000) 0 nil])
+nil
+nil
 nil
